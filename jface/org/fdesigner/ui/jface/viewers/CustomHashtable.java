@@ -13,7 +13,7 @@
  *     Nick Edgar - added element comparer support
  *******************************************************************************/
 
-package org.eclipse.jface.viewers;
+package org.fdesigner.ui.jface.viewers;
 
 import java.util.Enumeration;
 import java.util.NoSuchElementException;

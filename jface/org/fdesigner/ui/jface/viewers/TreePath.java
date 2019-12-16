@@ -12,9 +12,9 @@
  *     IBM Corporation - initial API and implementation
  *     Lars Vogel <Lars.Vogel@gmail.com> - Bug 430873
  *******************************************************************************/
-package org.eclipse.jface.viewers;
+package org.fdesigner.ui.jface.viewers;
 
-import org.eclipse.core.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.Assert;
 
 /**
  * A tree path denotes a model element in a tree viewer. Tree path objects have

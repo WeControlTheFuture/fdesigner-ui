@@ -11,10 +11,8 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.jface.preference;
+package org.fdesigner.ui.jface.preference;
 
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.jface.resource.JFaceResources;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.FocusAdapter;
 import org.eclipse.swt.events.FocusEvent;
@@ -25,6 +23,8 @@ import org.eclipse.swt.graphics.Point;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Text;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.ui.jface.resource.JFaceResources;
 
 /**
  * A field editor for a string type preference.

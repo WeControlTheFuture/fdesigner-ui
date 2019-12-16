@@ -11,10 +11,10 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.jface.preference;
+package org.fdesigner.ui.jface.preference;
 
-import org.eclipse.jface.dialogs.IDialogPage;
 import org.eclipse.swt.graphics.Point;
+import org.fdesigner.ui.jface.dialogs.IDialogPage;
 
 /**
  * An interface for a preference page. This interface

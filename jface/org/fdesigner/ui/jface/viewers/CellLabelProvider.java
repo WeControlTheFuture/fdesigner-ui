@@ -14,10 +14,9 @@
  *     											- bug fixes for 182443
  *******************************************************************************/
 
-package org.eclipse.jface.viewers;
+package org.fdesigner.ui.jface.viewers;
 
 import org.eclipse.swt.SWT;
-import org.eclipse.swt.custom.CLabel;
 import org.eclipse.swt.graphics.Color;
 import org.eclipse.swt.graphics.Font;
 import org.eclipse.swt.graphics.Image;

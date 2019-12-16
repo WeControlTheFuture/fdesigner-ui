@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.jface.viewers;
+package org.fdesigner.ui.jface.viewers;
 
 /**
  * Interface to provide checked and grayed state information about data in trees

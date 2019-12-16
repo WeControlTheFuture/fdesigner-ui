@@ -11,14 +11,14 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.jface.wizard;
+package org.fdesigner.ui.jface.wizard;
 
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.jface.dialogs.DialogPage;
-import org.eclipse.jface.dialogs.IDialogSettings;
-import org.eclipse.jface.resource.ImageDescriptor;
 import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.widgets.Shell;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.ui.jface.dialogs.DialogPage;
+import org.fdesigner.ui.jface.dialogs.IDialogSettings;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
 
 /**
  * An abstract base implementation of a wizard page.

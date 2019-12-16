@@ -11,11 +11,11 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.jface.viewers;
+package org.fdesigner.ui.jface.viewers;
 
 import java.util.EventObject;
 
-import org.eclipse.core.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.Assert;
 
 /**
  * Event object describing an open which may be generated from a

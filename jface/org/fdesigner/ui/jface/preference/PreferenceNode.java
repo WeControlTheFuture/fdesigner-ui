@@ -11,15 +11,15 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.jface.preference;
+package org.fdesigner.ui.jface.preference;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.jface.resource.ImageDescriptor;
 import org.eclipse.swt.graphics.Image;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
 
 /**
  * A concrete implementation of a node in a preference dialog tree. This class

@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.jface.menus;
+package org.fdesigner.ui.jface.menus;
 
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Composite;

@@ -12,13 +12,13 @@
  *     Matthew Hall - initial API and implementation (bug 264286)
  *******************************************************************************/
 
-package org.eclipse.jface.internal.databinding.swt;
+package org.fdesigner.ui.jface.databinding.internal.databinding.swt;
 
-import org.eclipse.core.databinding.property.value.IValueProperty;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.custom.StyledText;
 import org.eclipse.swt.widgets.Text;
 import org.eclipse.swt.widgets.Widget;
+import org.fdesigner.databinding.property.value.IValueProperty;
 
 /**
  * @param <S> type of the source object

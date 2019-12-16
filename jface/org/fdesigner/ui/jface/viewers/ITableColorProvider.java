@@ -13,7 +13,7 @@
  *     IBM Corporation - further revisions
  *******************************************************************************/
 
-package org.eclipse.jface.viewers;
+package org.fdesigner.ui.jface.viewers;
 
 import org.eclipse.swt.graphics.Color;
 

@@ -12,9 +12,9 @@
  *     Matthew Hall - initial API and implementation (bug 215531)
  ******************************************************************************/
 
-package org.eclipse.jface.internal.databinding.viewers;
+package org.fdesigner.ui.jface.databinding.internal.databinding.viewers;
 
-import org.eclipse.jface.viewers.IElementComparer;
+import org.fdesigner.ui.jface.viewers.IElementComparer;
 
 /**
  * A wrapper class for viewer elements, which uses an {@link IElementComparer}

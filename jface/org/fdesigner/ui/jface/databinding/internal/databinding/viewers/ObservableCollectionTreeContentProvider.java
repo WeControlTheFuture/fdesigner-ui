@@ -15,7 +15,7 @@
  *     Conrad Groth - Bug 371756
  ******************************************************************************/
 
-package org.eclipse.jface.internal.databinding.viewers;
+package org.fdesigner.ui.jface.databinding.internal.databinding.viewers;
 
 import java.util.Collection;
 import java.util.Collections;
@@ -23,25 +23,25 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.Set;
 
-import org.eclipse.core.databinding.observable.IObservableCollection;
-import org.eclipse.core.databinding.observable.IObservablesListener;
-import org.eclipse.core.databinding.observable.Observables;
-import org.eclipse.core.databinding.observable.Realm;
-import org.eclipse.core.databinding.observable.masterdetail.IObservableFactory;
-import org.eclipse.core.databinding.observable.masterdetail.MasterDetailObservables;
-import org.eclipse.core.databinding.observable.set.IObservableSet;
-import org.eclipse.core.databinding.observable.value.IObservableValue;
-import org.eclipse.core.databinding.observable.value.WritableValue;
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.jface.databinding.swt.DisplayRealm;
-import org.eclipse.jface.databinding.viewers.TreeStructureAdvisor;
-import org.eclipse.jface.viewers.AbstractTreeViewer;
-import org.eclipse.jface.viewers.CheckboxTreeViewer;
-import org.eclipse.jface.viewers.IElementComparer;
-import org.eclipse.jface.viewers.ITreeContentProvider;
-import org.eclipse.jface.viewers.StructuredViewer;
-import org.eclipse.jface.viewers.Viewer;
 import org.eclipse.swt.widgets.Display;
+import org.fdesigner.databinding.observable.IObservableCollection;
+import org.fdesigner.databinding.observable.IObservablesListener;
+import org.fdesigner.databinding.observable.Observables;
+import org.fdesigner.databinding.observable.Realm;
+import org.fdesigner.databinding.observable.masterdetail.IObservableFactory;
+import org.fdesigner.databinding.observable.masterdetail.MasterDetailObservables;
+import org.fdesigner.databinding.observable.set.IObservableSet;
+import org.fdesigner.databinding.observable.value.IObservableValue;
+import org.fdesigner.databinding.observable.value.WritableValue;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.ui.jface.databinding.swt.DisplayRealm;
+import org.fdesigner.ui.jface.databinding.viewers.TreeStructureAdvisor;
+import org.fdesigner.ui.jface.viewers.AbstractTreeViewer;
+import org.fdesigner.ui.jface.viewers.CheckboxTreeViewer;
+import org.fdesigner.ui.jface.viewers.IElementComparer;
+import org.fdesigner.ui.jface.viewers.ITreeContentProvider;
+import org.fdesigner.ui.jface.viewers.StructuredViewer;
+import org.fdesigner.ui.jface.viewers.Viewer;
 
 /**
  * NON-API - Abstract base class for {@link ITreeContentProvider}s which use an

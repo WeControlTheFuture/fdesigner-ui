@@ -11,9 +11,9 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.jface.viewers.deferred;
+package org.fdesigner.ui.jface.viewers.deferred;
 
-import org.eclipse.core.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
 
 /**
  * A more efficient alternative to an IProgressMonitor. In particular, the

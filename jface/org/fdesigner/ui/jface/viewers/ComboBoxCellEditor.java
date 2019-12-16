@@ -13,12 +13,11 @@
  *     Tom Schindl <tom.schindl@bestsolution.at> - bugfix in 174739
  *******************************************************************************/
 
-package org.eclipse.jface.viewers;
+package org.fdesigner.ui.jface.viewers;
 
 import java.text.MessageFormat; // Not using ICU to support standalone JFace
 // scenario
 
-import org.eclipse.core.runtime.Assert;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.custom.CCombo;
 import org.eclipse.swt.events.FocusAdapter;
@@ -30,6 +29,7 @@ import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.graphics.GC;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
+import org.fdesigner.runtime.common.runtime.Assert;
 
 /**
  * A cell editor that presents a list of items in a combo box. The cell editor's

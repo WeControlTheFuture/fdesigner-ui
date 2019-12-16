@@ -11,32 +11,9 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.jface.dialogs;
+package org.fdesigner.ui.jface.dialogs;
 
-/**
- * Various dialog-related constants.
- * <p>
- * Within the dialog framework, all buttons are referred to by a button id.
- * Various common buttons, like "OK", "Cancel", and "Finish", have pre-assigned
- * button ids for convenience. If an application requires other dialog buttons,
- * they should be assigned application-specific button ids counting up from
- * <code>CLIENT_ID</code>.
- * </p>
- * <p>
- * Button label constants are also provided for the common buttons. JFace
- * automatically localizes these strings to the current locale; that is,
- * <code>YES_LABEL</code> would be bound to the string <code>"Si"</code> in
- * a Spanish locale, but to <code>"Oui"</code> in a French one.
- * </p>
- * <p>
- * All margins, spacings, and sizes are given in "dialog units" (DLUs), where
- * <ul>
- * <li>1 horizontal DLU = 1/4 average character width</li>
- * <li>1 vertical DLU = 1/8 average character height</li>
- * </ul>
- * </p>
- */
-import org.eclipse.jface.resource.JFaceResources;
+import org.fdesigner.ui.jface.resource.JFaceResources;
 
 /**
  * IDialogConstants is the interface for common dialog strings and ids used throughout JFace. It is

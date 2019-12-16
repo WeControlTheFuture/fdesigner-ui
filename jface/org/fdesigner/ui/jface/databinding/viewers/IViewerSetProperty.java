@@ -12,11 +12,11 @@
  *     Matthew Hall - initial API and implementation (bug 264286)
  *******************************************************************************/
 
-package org.eclipse.jface.databinding.viewers;
+package org.fdesigner.ui.jface.databinding.viewers;
 
-import org.eclipse.core.databinding.observable.set.IObservableSet;
-import org.eclipse.core.databinding.property.set.ISetProperty;
-import org.eclipse.jface.viewers.Viewer;
+import org.fdesigner.databinding.observable.set.IObservableSet;
+import org.fdesigner.databinding.property.set.ISetProperty;
+import org.fdesigner.ui.jface.viewers.Viewer;
 
 /**
  * {@link ISetProperty} for observing a JFace viewer

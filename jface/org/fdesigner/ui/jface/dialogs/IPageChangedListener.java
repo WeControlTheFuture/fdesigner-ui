@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.jface.dialogs;
+package org.fdesigner.ui.jface.dialogs;
 
 /**
  * A listener which is notified when the current page of the multi-page dialog

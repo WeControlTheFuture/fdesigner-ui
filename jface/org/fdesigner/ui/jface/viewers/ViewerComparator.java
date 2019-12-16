@@ -14,14 +14,14 @@
  *     Andrey Loskutov <loskutov@gmx.de> - Bug 364735
  ******************************************************************************/
 
-package org.eclipse.jface.viewers;
+package org.fdesigner.ui.jface.viewers;
 
 import java.util.Arrays;
 import java.util.Comparator;
 
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.jface.util.Policy;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.ui.jface.util.Policy;
 
 /**
  * A viewer comparator is used by a {@link StructuredViewer} to

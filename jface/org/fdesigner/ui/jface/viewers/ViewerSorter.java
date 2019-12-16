@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *     Lars Vogel - <Lars.Vogel@vogella.com> - Bug 402464
  *******************************************************************************/
-package org.eclipse.jface.viewers;
+package org.fdesigner.ui.jface.viewers;
 
 import java.text.Collator; // can't use ICU - Collator used in public API
 

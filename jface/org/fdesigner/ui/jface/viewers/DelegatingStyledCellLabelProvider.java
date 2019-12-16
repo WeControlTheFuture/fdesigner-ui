@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *     Robin Stocker - Bug 236006 - [Viewers] Add tooltip support for DelegatingStyledCellLabelProvider
  *******************************************************************************/
-package org.eclipse.jface.viewers;
+package org.fdesigner.ui.jface.viewers;
 
 import java.util.Arrays;
 

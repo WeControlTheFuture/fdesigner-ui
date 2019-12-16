@@ -15,7 +15,7 @@
  *     Ruediger Herrmann <ruediger.herrmann@gmx.de> - bug 92518
  *     Björn Michael <b.michael@gmx.de> - bug 543082 [JFace]
  *******************************************************************************/
-package org.eclipse.jface.dialogs;
+package org.fdesigner.ui.jface.dialogs;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

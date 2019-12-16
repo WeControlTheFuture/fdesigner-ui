@@ -12,15 +12,15 @@
  *     IBM Corporation - initial API and implementation
  *     Brian de Alwis (MTI) - bug 432826: accumulate task-name too
  *******************************************************************************/
-package org.eclipse.jface.operation;
+package org.fdesigner.ui.jface.operation;
 
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.IProgressMonitorWithBlocking;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.ProgressMonitorWrapper;
-import org.eclipse.jface.dialogs.Dialog;
 import org.eclipse.swt.widgets.Display;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IProgressMonitorWithBlocking;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.ProgressMonitorWrapper;
+import org.fdesigner.ui.jface.dialogs.Dialog;
 
 /**
  * A progress monitor that accumulates <code>setTaskName</code>,

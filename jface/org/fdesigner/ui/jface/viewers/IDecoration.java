@@ -11,11 +11,11 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.jface.viewers;
+package org.fdesigner.ui.jface.viewers;
 
-import org.eclipse.jface.resource.ImageDescriptor;
 import org.eclipse.swt.graphics.Color;
 import org.eclipse.swt.graphics.Font;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
 
 /**
  * Defines the result of decorating an element.

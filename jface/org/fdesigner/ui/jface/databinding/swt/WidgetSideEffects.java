@@ -12,13 +12,11 @@
  *     Simon Scholz <simon.scholz@vogella.com> - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.jface.databinding.swt;
+package org.fdesigner.ui.jface.databinding.swt;
 
-import org.eclipse.core.databinding.observable.sideeffect.CompositeSideEffect;
-import org.eclipse.core.databinding.observable.sideeffect.ISideEffect;
-import org.eclipse.core.databinding.observable.sideeffect.ISideEffectFactory;
-import org.eclipse.swt.events.DisposeListener;
 import org.eclipse.swt.widgets.Widget;
+import org.fdesigner.databinding.observable.sideeffect.CompositeSideEffect;
+import org.fdesigner.databinding.observable.sideeffect.ISideEffectFactory;
 
 /**
  * A factory for the creation of an {@link ISideEffectFactory}, which internally

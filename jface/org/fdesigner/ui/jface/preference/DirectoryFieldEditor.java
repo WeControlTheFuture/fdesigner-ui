@@ -12,14 +12,14 @@
  *     IBM Corporation - initial API and implementation
  *     Baltasar Belyavsky - fix for 300539 - Add ability to specify filter-path
  *******************************************************************************/
-package org.eclipse.jface.preference;
+package org.fdesigner.ui.jface.preference;
 
 import java.io.File;
 
-import org.eclipse.jface.resource.JFaceResources;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.DirectoryDialog;
+import org.fdesigner.ui.jface.resource.JFaceResources;
 
 /**
  * A field editor for a directory path type preference. A standard directory

@@ -12,15 +12,15 @@
  *     IBM Corporation - initial API and implementation
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 440270
  *******************************************************************************/
-package org.eclipse.jface.fieldassist;
+package org.fdesigner.ui.jface.fieldassist;
 
 import java.util.HashMap;
 import java.util.Iterator;
 
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.jface.resource.ImageRegistry;
-import org.eclipse.jface.resource.JFaceResources;
 import org.eclipse.swt.graphics.Image;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.ui.jface.resource.ImageRegistry;
+import org.fdesigner.ui.jface.resource.JFaceResources;
 
 /**
  * FieldDecorationRegistry is a common registry used to define shared field

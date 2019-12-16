@@ -11,7 +11,7 @@
 * Contributors:
 *     Lars Vogel <Lars.Vogel@vogella.com> - initial version
 ******************************************************************************/
-package org.eclipse.jface.widgets;
+package org.fdesigner.ui.jface.widgets;
 
 
 import org.eclipse.swt.widgets.Button;

@@ -15,26 +15,26 @@
  *     Conrad Groth - Bug 371756
  ******************************************************************************/
 
-package org.eclipse.jface.internal.databinding.viewers;
+package org.fdesigner.ui.jface.databinding.internal.databinding.viewers;
 
-import org.eclipse.core.databinding.observable.IObservableCollection;
-import org.eclipse.core.databinding.observable.Observables;
-import org.eclipse.core.databinding.observable.masterdetail.IObservableFactory;
-import org.eclipse.core.databinding.observable.masterdetail.MasterDetailObservables;
-import org.eclipse.core.databinding.observable.set.IObservableSet;
-import org.eclipse.core.databinding.observable.value.IObservableValue;
-import org.eclipse.core.databinding.observable.value.WritableValue;
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.jface.databinding.swt.DisplayRealm;
-import org.eclipse.jface.databinding.viewers.IViewerUpdater;
-import org.eclipse.jface.viewers.AbstractListViewer;
-import org.eclipse.jface.viewers.AbstractTableViewer;
-import org.eclipse.jface.viewers.CheckboxTableViewer;
-import org.eclipse.jface.viewers.IElementComparer;
-import org.eclipse.jface.viewers.IStructuredContentProvider;
-import org.eclipse.jface.viewers.StructuredViewer;
-import org.eclipse.jface.viewers.Viewer;
 import org.eclipse.swt.widgets.Display;
+import org.fdesigner.databinding.observable.IObservableCollection;
+import org.fdesigner.databinding.observable.Observables;
+import org.fdesigner.databinding.observable.masterdetail.IObservableFactory;
+import org.fdesigner.databinding.observable.masterdetail.MasterDetailObservables;
+import org.fdesigner.databinding.observable.set.IObservableSet;
+import org.fdesigner.databinding.observable.value.IObservableValue;
+import org.fdesigner.databinding.observable.value.WritableValue;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.ui.jface.databinding.swt.DisplayRealm;
+import org.fdesigner.ui.jface.databinding.viewers.IViewerUpdater;
+import org.fdesigner.ui.jface.viewers.AbstractListViewer;
+import org.fdesigner.ui.jface.viewers.AbstractTableViewer;
+import org.fdesigner.ui.jface.viewers.CheckboxTableViewer;
+import org.fdesigner.ui.jface.viewers.IElementComparer;
+import org.fdesigner.ui.jface.viewers.IStructuredContentProvider;
+import org.fdesigner.ui.jface.viewers.StructuredViewer;
+import org.fdesigner.ui.jface.viewers.Viewer;
 
 /**
  * NON-API - Abstract base class for content providers where the viewer input is

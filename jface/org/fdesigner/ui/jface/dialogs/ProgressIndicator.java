@@ -13,7 +13,7 @@
  *     Mark Siegel <mark.siegel@businessobjects.com> - Fix for Bug 184533
  *     			[Progress] ProgressIndicator uses hardcoded style for ProgressBar
  *******************************************************************************/
-package org.eclipse.jface.dialogs;
+package org.fdesigner.ui.jface.dialogs;
 
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.custom.StackLayout;

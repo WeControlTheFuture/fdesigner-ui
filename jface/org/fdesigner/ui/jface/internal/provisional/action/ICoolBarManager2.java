@@ -11,13 +11,13 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.jface.internal.provisional.action;
+package org.fdesigner.ui.jface.internal.provisional.action;
 
-import org.eclipse.jface.action.IContributionItem;
-import org.eclipse.jface.action.IContributionManagerOverrides;
-import org.eclipse.jface.action.ICoolBarManager;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
+import org.fdesigner.ui.jface.action.IContributionItem;
+import org.fdesigner.ui.jface.action.IContributionManagerOverrides;
+import org.fdesigner.ui.jface.action.ICoolBarManager;
 
 /**
  * Extends <code>ICoolBarManager</code> to allow clients to be decoupled

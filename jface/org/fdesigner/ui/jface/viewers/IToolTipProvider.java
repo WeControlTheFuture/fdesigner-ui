@@ -11,7 +11,7 @@
  * Contributors:
  *     Robin Stocker - extracted API out of CellLabelProvider
  *******************************************************************************/
-package org.eclipse.jface.viewers;
+package org.fdesigner.ui.jface.viewers;
 
 /**
  * Interface to provide tool tip information for a given element.

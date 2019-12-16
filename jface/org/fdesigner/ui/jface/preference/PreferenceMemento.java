@@ -11,7 +11,7 @@
  * Contributors:
  *     Paul Pazderski - initial API and implementation
  *******************************************************************************/
-package org.eclipse.jface.preference;
+package org.fdesigner.ui.jface.preference;
 
 import java.util.HashMap;
 import java.util.Map;

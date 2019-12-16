@@ -13,16 +13,16 @@
  *     Matthew Hall - bugs 226765, 230296, 226292, 312926
  ******************************************************************************/
 
-package org.eclipse.jface.internal.databinding.viewers;
+package org.fdesigner.ui.jface.databinding.internal.databinding.viewers;
 
 import java.util.Objects;
 
-import org.eclipse.jface.viewers.AbstractTreeViewer;
-import org.eclipse.jface.viewers.IElementComparer;
-import org.eclipse.jface.viewers.ITreeSelection;
-import org.eclipse.jface.viewers.TreePath;
-import org.eclipse.jface.viewers.TreeSelection;
-import org.eclipse.jface.viewers.TreeViewer;
+import org.fdesigner.ui.jface.viewers.AbstractTreeViewer;
+import org.fdesigner.ui.jface.viewers.IElementComparer;
+import org.fdesigner.ui.jface.viewers.ITreeSelection;
+import org.fdesigner.ui.jface.viewers.TreePath;
+import org.fdesigner.ui.jface.viewers.TreeSelection;
+import org.fdesigner.ui.jface.viewers.TreeViewer;
 
 /**
  * NON-API - An interface for sending updates to an {@link AbstractTreeViewer}.

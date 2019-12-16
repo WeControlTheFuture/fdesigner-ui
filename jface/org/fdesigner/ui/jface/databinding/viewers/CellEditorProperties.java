@@ -12,12 +12,12 @@
  *     Matthew Hall - initial API and implementation (bug 234496)
  ******************************************************************************/
 
-package org.eclipse.jface.databinding.viewers;
+package org.fdesigner.ui.jface.databinding.viewers;
 
-import org.eclipse.core.databinding.property.value.IValueProperty;
-import org.eclipse.jface.internal.databinding.viewers.CellEditorControlProperty;
-import org.eclipse.jface.viewers.CellEditor;
 import org.eclipse.swt.widgets.Control;
+import org.fdesigner.databinding.property.value.IValueProperty;
+import org.fdesigner.ui.jface.databinding.internal.databinding.viewers.CellEditorControlProperty;
+import org.fdesigner.ui.jface.viewers.CellEditor;
 
 /**
  * A factory for creating properties of JFace {@link CellEditor cell editors}.

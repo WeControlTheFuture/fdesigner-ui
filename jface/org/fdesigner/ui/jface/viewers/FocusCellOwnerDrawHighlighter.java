@@ -14,15 +14,15 @@
  * 												 - fix for bug 183850, 182652, 182800, 215069
  *******************************************************************************/
 
-package org.eclipse.jface.viewers;
+package org.fdesigner.ui.jface.viewers;
 
-import org.eclipse.core.runtime.Assert;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.Color;
 import org.eclipse.swt.graphics.GC;
 import org.eclipse.swt.graphics.Rectangle;
 import org.eclipse.swt.widgets.Event;
 import org.eclipse.swt.widgets.Listener;
+import org.fdesigner.runtime.common.runtime.Assert;
 
 /**
  * A concrete implementation of {@link FocusCellHighlighter} using by setting

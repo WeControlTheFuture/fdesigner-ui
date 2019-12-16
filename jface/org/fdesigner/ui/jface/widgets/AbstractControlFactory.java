@@ -12,7 +12,7 @@
 *     SAP SE - initial version
 *     Simon Scholz <simon.scholz@vogella.com> - Bug 544471
 ******************************************************************************/
-package org.eclipse.jface.widgets;
+package org.fdesigner.ui.jface.widgets;
 
 import java.util.function.Supplier;
 

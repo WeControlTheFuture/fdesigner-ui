@@ -11,9 +11,9 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.jface.preference;
+package org.fdesigner.ui.jface.preference;
 
-import org.eclipse.jface.util.IPropertyChangeListener;
+import org.fdesigner.ui.jface.util.IPropertyChangeListener;
 
 /**
  * The <code>IPreferenceStore</code> interface represents a table mapping

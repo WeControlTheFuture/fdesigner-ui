@@ -13,24 +13,10 @@
  *     Roman Dawydkin - bug 55116
  *******************************************************************************/
 
-package org.eclipse.jface.window;
+package org.fdesigner.ui.jface.window;
 
 import java.lang.reflect.InvocationTargetException;
 
-import org.eclipse.core.runtime.NullProgressMonitor;
-import org.eclipse.jface.action.CoolBarManager;
-import org.eclipse.jface.action.ICoolBarManager;
-import org.eclipse.jface.action.IToolBarManager;
-import org.eclipse.jface.action.MenuManager;
-import org.eclipse.jface.action.StatusLineManager;
-import org.eclipse.jface.action.ToolBarManager;
-import org.eclipse.jface.internal.provisional.action.ICoolBarManager2;
-import org.eclipse.jface.internal.provisional.action.IToolBarManager2;
-import org.eclipse.jface.operation.IRunnableContext;
-import org.eclipse.jface.operation.IRunnableWithProgress;
-import org.eclipse.jface.operation.ModalContext;
-import org.eclipse.jface.resource.JFaceResources;
-import org.eclipse.jface.util.Util;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.custom.BusyIndicator;
 import org.eclipse.swt.graphics.Font;
@@ -46,6 +32,20 @@ import org.eclipse.swt.widgets.Layout;
 import org.eclipse.swt.widgets.Menu;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.ToolBar;
+import org.fdesigner.runtime.common.runtime.NullProgressMonitor;
+import org.fdesigner.ui.jface.action.CoolBarManager;
+import org.fdesigner.ui.jface.action.ICoolBarManager;
+import org.fdesigner.ui.jface.action.IToolBarManager;
+import org.fdesigner.ui.jface.action.MenuManager;
+import org.fdesigner.ui.jface.action.StatusLineManager;
+import org.fdesigner.ui.jface.action.ToolBarManager;
+import org.fdesigner.ui.jface.internal.provisional.action.ICoolBarManager2;
+import org.fdesigner.ui.jface.internal.provisional.action.IToolBarManager2;
+import org.fdesigner.ui.jface.operation.IRunnableContext;
+import org.fdesigner.ui.jface.operation.IRunnableWithProgress;
+import org.fdesigner.ui.jface.operation.ModalContext;
+import org.fdesigner.ui.jface.resource.JFaceResources;
+import org.fdesigner.ui.jface.util.Util;
 
 /**
  * An application window is a high-level "main window", with built-in support

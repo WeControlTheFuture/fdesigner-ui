@@ -11,11 +11,11 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.jface.operation;
+package org.fdesigner.ui.jface.operation;
 
 import java.lang.reflect.InvocationTargetException;
 
-import org.eclipse.core.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
 
 /**
  * The <code>IRunnableWithProgress</code> interface should be implemented by any

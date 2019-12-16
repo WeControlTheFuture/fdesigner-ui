@@ -12,11 +12,11 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.jface.dialogs;
+package org.fdesigner.ui.jface.dialogs;
 
-import org.eclipse.core.runtime.IStatus;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
+import org.fdesigner.runtime.common.runtime.IStatus;
 
 /**
  * A ErrorSupportProvider defines the area to be shown in an error dialog for extra support information.

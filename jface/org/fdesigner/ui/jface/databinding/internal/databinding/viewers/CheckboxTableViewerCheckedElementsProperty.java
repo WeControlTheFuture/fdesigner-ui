@@ -13,15 +13,15 @@
  *     Matthew Hall - bug 259380
  ******************************************************************************/
 
-package org.eclipse.jface.internal.databinding.viewers;
+package org.fdesigner.ui.jface.databinding.internal.databinding.viewers;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.Set;
 
-import org.eclipse.core.databinding.observable.set.SetDiff;
-import org.eclipse.jface.viewers.CheckboxTableViewer;
-import org.eclipse.jface.viewers.ICheckable;
+import org.fdesigner.databinding.observable.set.SetDiff;
+import org.fdesigner.ui.jface.viewers.CheckboxTableViewer;
+import org.fdesigner.ui.jface.viewers.ICheckable;
 
 /**
  * @param <S> type of the source object

@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.jface.wizard;
+package org.fdesigner.ui.jface.wizard;
 
 import java.util.ArrayList;
 import java.util.List;

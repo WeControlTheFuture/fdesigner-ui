@@ -13,15 +13,15 @@
  *     Rüdiger Herrmann - 395426: [JFace] StatusDialog should escape ampersand in status message
  *     Alexander Fedorov <alexander.fedorov@arsysop.ru> - Bug 546991
  *******************************************************************************/
-package org.eclipse.jface.dialogs;
+package org.fdesigner.ui.jface.dialogs;
 
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.jface.action.LegacyActionTools;
-import org.eclipse.jface.resource.JFaceResources;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.custom.CLabel;
 import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.widgets.Composite;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.ui.jface.action.LegacyActionTools;
+import org.fdesigner.ui.jface.resource.JFaceResources;
 
 /**
  * A message line displaying a status.

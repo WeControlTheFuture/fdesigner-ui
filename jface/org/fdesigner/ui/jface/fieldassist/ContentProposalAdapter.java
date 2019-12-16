@@ -12,17 +12,10 @@
  *     IBM Corporation - initial API and implementation
  *     Hannes Erven <hannes@erven.at> - Bug 293841 - [FieldAssist] NumLock keyDown event should not close the proposal popup [with patch]
  *******************************************************************************/
-package org.eclipse.jface.fieldassist;
+package org.fdesigner.ui.jface.fieldassist;
 
 import java.util.ArrayList;
 
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.core.runtime.ListenerList;
-import org.eclipse.jface.bindings.keys.KeyStroke;
-import org.eclipse.jface.dialogs.PopupDialog;
-import org.eclipse.jface.preference.JFacePreferences;
-import org.eclipse.jface.resource.JFaceResources;
-import org.eclipse.jface.viewers.ILabelProvider;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.FocusAdapter;
 import org.eclipse.swt.events.FocusEvent;
@@ -43,6 +36,13 @@ import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Table;
 import org.eclipse.swt.widgets.TableItem;
 import org.eclipse.swt.widgets.Text;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.ListenerList;
+import org.fdesigner.ui.jface.bindings.keys.KeyStroke;
+import org.fdesigner.ui.jface.dialogs.PopupDialog;
+import org.fdesigner.ui.jface.preference.JFacePreferences;
+import org.fdesigner.ui.jface.resource.JFaceResources;
+import org.fdesigner.ui.jface.viewers.ILabelProvider;
 
 /**
  * ContentProposalAdapter can be used to attach content proposal behavior to a

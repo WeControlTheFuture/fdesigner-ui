@@ -13,7 +13,7 @@
  *     Matthew Hall - bug 230296, 238296
  ******************************************************************************/
 
-package org.eclipse.jface.internal.databinding.viewers;
+package org.fdesigner.ui.jface.databinding.internal.databinding.viewers;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -21,11 +21,11 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
 
-import org.eclipse.jface.databinding.viewers.IViewerUpdater;
-import org.eclipse.jface.viewers.IElementComparer;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.jface.viewers.StructuredSelection;
-import org.eclipse.jface.viewers.StructuredViewer;
+import org.fdesigner.ui.jface.databinding.viewers.IViewerUpdater;
+import org.fdesigner.ui.jface.viewers.IElementComparer;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.ui.jface.viewers.StructuredSelection;
+import org.fdesigner.ui.jface.viewers.StructuredViewer;
 
 /**
  * NON-API - An interface for updating a viewer's elements.

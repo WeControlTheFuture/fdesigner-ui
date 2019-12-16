@@ -16,15 +16,15 @@
  *     Brock Janiczak <brockj@tpg.com.au> - bug 182443
  *******************************************************************************/
 
-package org.eclipse.jface.viewers;
+package org.fdesigner.ui.jface.viewers;
 
-import org.eclipse.jface.util.Policy;
-import org.eclipse.jface.window.DefaultToolTip;
-import org.eclipse.jface.window.ToolTip;
 import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.graphics.Point;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Event;
+import org.fdesigner.ui.jface.util.Policy;
+import org.fdesigner.ui.jface.window.DefaultToolTip;
+import org.fdesigner.ui.jface.window.ToolTip;
 
 /**
  * The ColumnViewerTooltipSupport is the class that provides tool tips for

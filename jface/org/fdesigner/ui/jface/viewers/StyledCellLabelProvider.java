@@ -13,10 +13,8 @@
  *     Michael Krkoska - initial API and implementation (bug 188333)
  *     Pawel Piech - Bug 291245 - [Viewers] StyledCellLabelProvider.paint(...) does not respect column alignment
  *******************************************************************************/
-package org.eclipse.jface.viewers;
+package org.fdesigner.ui.jface.viewers;
 
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.jface.viewers.StyledString.Styler;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.custom.StyleRange;
 import org.eclipse.swt.graphics.Color;
@@ -26,6 +24,8 @@ import org.eclipse.swt.graphics.Rectangle;
 import org.eclipse.swt.graphics.TextLayout;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Event;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.ui.jface.viewers.StyledString.Styler;
 
 /**
  * A {@link StyledCellLabelProvider} supports styled labels by using owner

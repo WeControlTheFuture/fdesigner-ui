@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.jface.resource;
+package org.fdesigner.ui.jface.resource;
 
 import java.net.URL;
 

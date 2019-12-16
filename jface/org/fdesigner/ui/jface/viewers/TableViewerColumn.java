@@ -13,7 +13,7 @@
  *     Boris Bokowski (IBM Corporation) - Javadoc improvements
  ******************************************************************************/
 
-package org.eclipse.jface.viewers;
+package org.fdesigner.ui.jface.viewers;
 
 import org.eclipse.swt.widgets.Table;
 import org.eclipse.swt.widgets.TableColumn;

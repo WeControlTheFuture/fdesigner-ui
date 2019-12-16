@@ -14,7 +14,7 @@
  *     											- fix in bug: 195908, 210752
  *******************************************************************************/
 
-package org.eclipse.jface.viewers;
+package org.fdesigner.ui.jface.viewers;
 
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.Rectangle;

@@ -12,7 +12,7 @@
  *     Tom Schindl <tom.schindl@bestsolution.at> - initial API and implementation (bug 174739)
  ******************************************************************************/
 
-package org.eclipse.jface.viewers;
+package org.fdesigner.ui.jface.viewers;
 
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.custom.CCombo;

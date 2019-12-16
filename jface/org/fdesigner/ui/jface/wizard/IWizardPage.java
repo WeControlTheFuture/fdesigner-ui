@@ -11,9 +11,9 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.jface.wizard;
+package org.fdesigner.ui.jface.wizard;
 
-import org.eclipse.jface.dialogs.IDialogPage;
+import org.fdesigner.ui.jface.dialogs.IDialogPage;
 
 /**
  * Interface for a wizard page.

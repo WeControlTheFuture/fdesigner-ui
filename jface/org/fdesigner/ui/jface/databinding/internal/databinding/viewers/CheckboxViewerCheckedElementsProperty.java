@@ -13,22 +13,22 @@
  *     Matthew Hall - bugs 195222, 259380, 263413, 265561
  ******************************************************************************/
 
-package org.eclipse.jface.internal.databinding.viewers;
+package org.fdesigner.ui.jface.databinding.internal.databinding.viewers;
 
 import java.util.Collections;
 import java.util.Set;
 
-import org.eclipse.core.databinding.observable.Diffs;
-import org.eclipse.core.databinding.observable.set.SetDiff;
-import org.eclipse.core.databinding.property.INativePropertyListener;
-import org.eclipse.core.databinding.property.IProperty;
-import org.eclipse.core.databinding.property.ISimplePropertyListener;
-import org.eclipse.core.databinding.property.NativePropertyListener;
-import org.eclipse.jface.databinding.viewers.ViewerSetProperty;
-import org.eclipse.jface.viewers.CheckStateChangedEvent;
-import org.eclipse.jface.viewers.ICheckStateListener;
-import org.eclipse.jface.viewers.ICheckable;
-import org.eclipse.jface.viewers.StructuredViewer;
+import org.fdesigner.databinding.observable.Diffs;
+import org.fdesigner.databinding.observable.set.SetDiff;
+import org.fdesigner.databinding.property.INativePropertyListener;
+import org.fdesigner.databinding.property.IProperty;
+import org.fdesigner.databinding.property.ISimplePropertyListener;
+import org.fdesigner.databinding.property.NativePropertyListener;
+import org.fdesigner.ui.jface.databinding.viewers.ViewerSetProperty;
+import org.fdesigner.ui.jface.viewers.CheckStateChangedEvent;
+import org.fdesigner.ui.jface.viewers.ICheckStateListener;
+import org.fdesigner.ui.jface.viewers.ICheckable;
+import org.fdesigner.ui.jface.viewers.StructuredViewer;
 
 /**
  * @param <S> type of the source object

@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *     Pierre-Yves B. <pyvesdev@gmail.com> - Bug 497619 - ComboFieldEditor doesnt fire PropertyChangeEvent for doLoadDefault and doLoad
  *******************************************************************************/
-package org.eclipse.jface.preference;
+package org.fdesigner.ui.jface.preference;
 
 import static org.eclipse.swt.events.SelectionListener.widgetSelectedAdapter;
 

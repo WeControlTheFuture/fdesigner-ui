@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *     Stefan Xenos, IBM - bug 156790: Adopt GridLayoutFactory within JFace
  *******************************************************************************/
-package org.eclipse.jface.dialogs;
+package org.fdesigner.ui.jface.dialogs;
 
 import static org.eclipse.swt.events.SelectionListener.widgetSelectedAdapter;
 
@@ -39,21 +39,19 @@ import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.ToolBar;
 import org.eclipse.swt.widgets.ToolItem;
 import org.eclipse.swt.widgets.Tracker;
-
-import org.eclipse.core.runtime.Assert;
-
-import org.eclipse.jface.action.Action;
-import org.eclipse.jface.action.GroupMarker;
-import org.eclipse.jface.action.IAction;
-import org.eclipse.jface.action.IMenuManager;
-import org.eclipse.jface.action.MenuManager;
-import org.eclipse.jface.action.Separator;
-import org.eclipse.jface.layout.GridDataFactory;
-import org.eclipse.jface.layout.GridLayoutFactory;
-import org.eclipse.jface.preference.JFacePreferences;
-import org.eclipse.jface.resource.JFaceResources;
-import org.eclipse.jface.util.Util;
-import org.eclipse.jface.window.Window;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.ui.jface.action.Action;
+import org.fdesigner.ui.jface.action.GroupMarker;
+import org.fdesigner.ui.jface.action.IAction;
+import org.fdesigner.ui.jface.action.IMenuManager;
+import org.fdesigner.ui.jface.action.MenuManager;
+import org.fdesigner.ui.jface.action.Separator;
+import org.fdesigner.ui.jface.layout.GridDataFactory;
+import org.fdesigner.ui.jface.layout.GridLayoutFactory;
+import org.fdesigner.ui.jface.preference.JFacePreferences;
+import org.fdesigner.ui.jface.resource.JFaceResources;
+import org.fdesigner.ui.jface.util.Util;
+import org.fdesigner.ui.jface.window.Window;
 
 /**
  * A lightweight, transient dialog that is popped up to show contextual or

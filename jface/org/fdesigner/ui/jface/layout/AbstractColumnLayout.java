@@ -14,15 +14,8 @@
  *                                               - fix for bug 178280, 184342, 184045, 208014, 214532
  *     Micah Hainline <micah_hainline@yahoo.com> - fix in bug: 208335
  *******************************************************************************/
-package org.eclipse.jface.layout;
+package org.fdesigner.ui.jface.layout;
 
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.jface.util.Policy;
-import org.eclipse.jface.util.Util;
-import org.eclipse.jface.viewers.ColumnLayoutData;
-import org.eclipse.jface.viewers.ColumnPixelData;
-import org.eclipse.jface.viewers.ColumnWeightData;
-import org.eclipse.jface.viewers.TableLayout;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.Point;
 import org.eclipse.swt.graphics.Rectangle;
@@ -32,6 +25,12 @@ import org.eclipse.swt.widgets.Listener;
 import org.eclipse.swt.widgets.ScrollBar;
 import org.eclipse.swt.widgets.Scrollable;
 import org.eclipse.swt.widgets.Widget;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.ui.jface.util.Policy;
+import org.fdesigner.ui.jface.util.Util;
+import org.fdesigner.ui.jface.viewers.ColumnLayoutData;
+import org.fdesigner.ui.jface.viewers.ColumnPixelData;
+import org.fdesigner.ui.jface.viewers.ColumnWeightData;
 
 /**
  * The AbstractColumnLayout is a {@link Layout} used to set the size of a table

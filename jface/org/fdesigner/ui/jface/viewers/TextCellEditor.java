@@ -13,13 +13,12 @@
  *     Tom Eicher <eclipse@tom.eicher.name> - fix minimum width
  *******************************************************************************/
 
-package org.eclipse.jface.viewers;
+package org.fdesigner.ui.jface.viewers;
 
 import static org.eclipse.swt.events.SelectionListener.widgetDefaultSelectedAdapter;
 
 import java.text.MessageFormat;	// Not using ICU to support standalone JFace scenario
 
-import org.eclipse.core.runtime.Assert;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.FocusAdapter;
 import org.eclipse.swt.events.FocusEvent;
@@ -33,6 +32,7 @@ import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Text;
+import org.fdesigner.runtime.common.runtime.Assert;
 
 /**
  * A cell editor that manages a text entry field.

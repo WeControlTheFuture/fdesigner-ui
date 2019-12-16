@@ -13,7 +13,7 @@
  *     Amir Kouchekinia <amir@pyrus.us> - Bug 200762
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 525783
  *******************************************************************************/
-package org.eclipse.jface.fieldassist;
+package org.fdesigner.ui.jface.fieldassist;
 
 import java.util.ArrayList;
 

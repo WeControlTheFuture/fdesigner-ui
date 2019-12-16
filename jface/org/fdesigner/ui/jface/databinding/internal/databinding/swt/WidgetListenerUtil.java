@@ -12,12 +12,12 @@
  *     Matthew Hall - initial API and implementation (bug 281723)
  ******************************************************************************/
 
-package org.eclipse.jface.internal.databinding.swt;
+package org.fdesigner.ui.jface.databinding.internal.databinding.swt;
 
-import org.eclipse.jface.databinding.swt.DisplayRealm;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Listener;
 import org.eclipse.swt.widgets.Widget;
+import org.fdesigner.ui.jface.databinding.swt.DisplayRealm;
 
 /**
  * @since 3.4

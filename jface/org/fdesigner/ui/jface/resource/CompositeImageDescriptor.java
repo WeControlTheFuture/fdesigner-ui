@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *     Stephan Wahlbrink - fix for bug 341702 - incorrect mixing of images with alpha channel
  *******************************************************************************/
-package org.eclipse.jface.resource;
+package org.fdesigner.ui.jface.resource;
 
 import java.util.Objects;
 import java.util.function.ToIntFunction;

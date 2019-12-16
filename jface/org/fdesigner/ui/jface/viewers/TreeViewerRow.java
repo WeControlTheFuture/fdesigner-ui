@@ -14,11 +14,10 @@
  *     											 - fix in bug: 174355,171126,,195908,198035,215069,227421
  *******************************************************************************/
 
-package org.eclipse.jface.viewers;
+package org.fdesigner.ui.jface.viewers;
 
 import java.util.LinkedList;
 
-import org.eclipse.core.runtime.Assert;
 import org.eclipse.swt.graphics.Color;
 import org.eclipse.swt.graphics.Font;
 import org.eclipse.swt.graphics.Image;
@@ -27,6 +26,7 @@ import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Tree;
 import org.eclipse.swt.widgets.TreeItem;
 import org.eclipse.swt.widgets.Widget;
+import org.fdesigner.runtime.common.runtime.Assert;
 
 /**
  * TreeViewerRow is the Tree implementation of ViewerRow.

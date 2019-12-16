@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.jface.resource;
+package org.fdesigner.ui.jface.resource;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -21,10 +21,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import org.eclipse.core.runtime.Assert;
 import org.eclipse.swt.graphics.Color;
 import org.eclipse.swt.graphics.RGB;
 import org.eclipse.swt.widgets.Display;
+import org.fdesigner.runtime.common.runtime.Assert;
 
 /**
  * A color registry maintains a mapping between symbolic color names and SWT

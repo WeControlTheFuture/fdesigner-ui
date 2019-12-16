@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *     Lars Vogel <Lars.Vogel@gmail.com> - Bug 431093, 440080, 440270, 475873
  *******************************************************************************/
-package org.eclipse.jface.resource;
+package org.fdesigner.ui.jface.resource;
 
 import java.net.URL;
 import java.text.MessageFormat;
@@ -21,19 +21,19 @@ import java.util.Map;
 import java.util.MissingResourceException;
 import java.util.ResourceBundle;
 
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.core.runtime.FileLocator;
-import org.eclipse.core.runtime.Path;
-import org.eclipse.jface.dialogs.Dialog;
-import org.eclipse.jface.dialogs.PopupDialog;
-import org.eclipse.jface.dialogs.TitleAreaDialog;
-import org.eclipse.jface.preference.PreferenceDialog;
-import org.eclipse.jface.wizard.Wizard;
 import org.eclipse.swt.graphics.Font;
 import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.widgets.Display;
-import org.osgi.framework.Bundle;
-import org.osgi.framework.FrameworkUtil;
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.framework.framework.FrameworkUtil;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.FileLocator;
+import org.fdesigner.runtime.common.runtime.Path;
+import org.fdesigner.ui.jface.dialogs.Dialog;
+import org.fdesigner.ui.jface.dialogs.PopupDialog;
+import org.fdesigner.ui.jface.dialogs.TitleAreaDialog;
+import org.fdesigner.ui.jface.preference.PreferenceDialog;
+import org.fdesigner.ui.jface.wizard.Wizard;
 
 /**
  * Utility methods to access JFace-specific resources.

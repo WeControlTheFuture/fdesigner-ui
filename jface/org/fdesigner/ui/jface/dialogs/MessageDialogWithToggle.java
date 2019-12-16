@@ -14,15 +14,13 @@
  *     David Weister <david.weiser@vogella.com> - Bug 511626
  *******************************************************************************/
 
-package org.eclipse.jface.dialogs;
+package org.fdesigner.ui.jface.dialogs;
 
 
 import static org.eclipse.swt.events.SelectionListener.widgetSelectedAdapter;
 
 import java.util.LinkedHashMap;
 
-import org.eclipse.jface.preference.IPreferenceStore;
-import org.eclipse.jface.resource.JFaceResources;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.layout.GridData;
@@ -30,6 +28,8 @@ import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Shell;
+import org.fdesigner.ui.jface.preference.IPreferenceStore;
+import org.fdesigner.ui.jface.resource.JFaceResources;
 
 /**
  * <p>

@@ -13,12 +13,12 @@
  *     Lars Vogel <Lars.Vogel@gmail.com> - Bug 430873
  *     Mikael Barbero (Eclipse Foundation) - Bug 254570
  *******************************************************************************/
-package org.eclipse.jface.viewers;
+package org.fdesigner.ui.jface.viewers;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import org.eclipse.core.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.Assert;
 
 /**
  * A concrete implementation of the <code>ITreeSelection</code> interface,

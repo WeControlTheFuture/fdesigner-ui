@@ -12,8 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *     Stefan Xenos <sxenos@gmail.com> - Bug 474061
  *******************************************************************************/
-package org.eclipse.jface.layout;
-import org.eclipse.jface.util.Geometry;
+package org.fdesigner.ui.jface.layout;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.ModifyListener;
 import org.eclipse.swt.graphics.Point;
@@ -25,6 +24,7 @@ import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Layout;
 import org.eclipse.swt.widgets.Link;
 import org.eclipse.swt.widgets.Scrollable;
+import org.fdesigner.ui.jface.util.Geometry;
 
 /* package */class LayoutGenerator {
 

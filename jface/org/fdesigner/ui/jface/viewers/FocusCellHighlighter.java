@@ -14,7 +14,7 @@
  *     											   bugfix in: 182800
  ******************************************************************************/
 
-package org.eclipse.jface.viewers;
+package org.fdesigner.ui.jface.viewers;
 
 /**
  * @since 3.3

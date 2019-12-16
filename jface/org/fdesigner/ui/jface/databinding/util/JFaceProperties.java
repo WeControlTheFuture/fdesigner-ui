@@ -12,12 +12,10 @@
  *     IBM Corporation - initial API and implementation
  *     Jeanderson Candido <http://jeandersonbc.github.io> - Bug 413611
  *******************************************************************************/
-package org.eclipse.jface.databinding.util;
+package org.fdesigner.ui.jface.databinding.util;
 
-import org.eclipse.core.databinding.observable.value.IObservableValue;
-import org.eclipse.core.databinding.property.value.IValueProperty;
-import org.eclipse.jface.internal.databinding.util.JFaceProperty;
-import org.eclipse.jface.util.IPropertyChangeListener;
+import org.fdesigner.databinding.property.value.IValueProperty;
+import org.fdesigner.ui.jface.databinding.internal.databinding.util.JFaceProperty;
 
 /**
  * Helper class for providing {@link IObservableValue} instances for properties

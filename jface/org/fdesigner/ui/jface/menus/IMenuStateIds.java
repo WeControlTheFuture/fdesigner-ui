@@ -12,11 +12,9 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.jface.menus;
+package org.fdesigner.ui.jface.menus;
 
-import org.eclipse.core.commands.INamedHandleStateIds;
-import org.eclipse.jface.commands.RadioState;
-import org.eclipse.jface.commands.ToggleState;
+import org.fdesigner.commands.INamedHandleStateIds;
 
 /**
  * <p>

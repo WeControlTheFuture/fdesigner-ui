@@ -13,18 +13,18 @@
  *     Matthew Hall - bug 195222, 263413, 265561
  ******************************************************************************/
 
-package org.eclipse.jface.internal.databinding.viewers;
+package org.fdesigner.ui.jface.databinding.internal.databinding.viewers;
 
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-import org.eclipse.core.databinding.observable.set.SetDiff;
-import org.eclipse.core.databinding.property.INativePropertyListener;
-import org.eclipse.core.databinding.property.ISimplePropertyListener;
-import org.eclipse.jface.databinding.viewers.ViewerSetProperty;
-import org.eclipse.jface.viewers.StructuredViewer;
-import org.eclipse.jface.viewers.ViewerFilter;
+import org.fdesigner.databinding.observable.set.SetDiff;
+import org.fdesigner.databinding.property.INativePropertyListener;
+import org.fdesigner.databinding.property.ISimplePropertyListener;
+import org.fdesigner.ui.jface.databinding.viewers.ViewerSetProperty;
+import org.fdesigner.ui.jface.viewers.StructuredViewer;
+import org.fdesigner.ui.jface.viewers.ViewerFilter;
 
 /**
  * @param <S> type of the source object

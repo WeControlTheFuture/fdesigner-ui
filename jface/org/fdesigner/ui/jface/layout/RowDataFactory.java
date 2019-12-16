@@ -12,7 +12,7 @@
  *     Stefan Xenos, IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.jface.layout;
+package org.fdesigner.ui.jface.layout;
 
 import org.eclipse.swt.graphics.Point;
 import org.eclipse.swt.layout.RowData;

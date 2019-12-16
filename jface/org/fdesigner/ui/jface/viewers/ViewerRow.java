@@ -14,11 +14,10 @@
  *                                               - fix in bug: 166346,167325,174355,195908,198035,215069,227421
  *******************************************************************************/
 
-package org.eclipse.jface.viewers;
+package org.fdesigner.ui.jface.viewers;
 
 import java.util.Objects;
 
-import org.eclipse.jface.util.Policy;
 import org.eclipse.swt.custom.StyleRange;
 import org.eclipse.swt.graphics.Color;
 import org.eclipse.swt.graphics.Font;
@@ -27,6 +26,7 @@ import org.eclipse.swt.graphics.Point;
 import org.eclipse.swt.graphics.Rectangle;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Widget;
+import org.fdesigner.ui.jface.util.Policy;
 
 /**
  * ViewerRow is the abstract superclass of the part that represents items in a

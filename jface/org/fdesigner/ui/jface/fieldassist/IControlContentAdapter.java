@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.jface.fieldassist;
+package org.fdesigner.ui.jface.fieldassist;
 
 import org.eclipse.swt.graphics.Rectangle;
 import org.eclipse.swt.widgets.Control;

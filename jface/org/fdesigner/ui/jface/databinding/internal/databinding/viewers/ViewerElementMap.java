@@ -13,7 +13,7 @@
  *     Matthew Hall - bug 228125
  ******************************************************************************/
 
-package org.eclipse.jface.internal.databinding.viewers;
+package org.fdesigner.ui.jface.databinding.internal.databinding.viewers;
 
 import java.lang.reflect.Array;
 import java.util.Collection;
@@ -23,9 +23,8 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.Set;
 
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.jface.viewers.IElementComparer;
-import org.eclipse.jface.viewers.StructuredViewer;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.ui.jface.viewers.IElementComparer;
 
 /**
  * A {@link Map} whose keys are elements in a {@link StructuredViewer}. The keys

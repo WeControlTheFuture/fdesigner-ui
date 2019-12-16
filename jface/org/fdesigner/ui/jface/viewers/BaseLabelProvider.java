@@ -12,10 +12,10 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.jface.viewers;
+package org.fdesigner.ui.jface.viewers;
 
-import org.eclipse.core.commands.common.EventManager;
-import org.eclipse.jface.util.SafeRunnable;
+import org.fdesigner.commands.common.EventManager;
+import org.fdesigner.ui.jface.util.SafeRunnable;
 
 /**
  * BaseLabelProvider is a default concrete implementation of

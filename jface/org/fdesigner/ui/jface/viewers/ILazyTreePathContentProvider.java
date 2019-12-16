@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *     John Cortell, Freescale - bug 289409
  *******************************************************************************/
-package org.eclipse.jface.viewers;
+package org.fdesigner.ui.jface.viewers;
 
 /**
  * The ILazyTreePathContentProvider is a tree path-based content provider for

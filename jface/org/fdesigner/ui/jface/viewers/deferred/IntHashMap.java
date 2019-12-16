@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.jface.viewers.deferred;
+package org.fdesigner.ui.jface.viewers.deferred;
 
 import java.util.HashMap;
 

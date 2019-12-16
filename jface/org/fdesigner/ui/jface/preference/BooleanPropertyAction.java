@@ -12,9 +12,9 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.jface.preference;
+package org.fdesigner.ui.jface.preference;
 
-import org.eclipse.jface.action.Action;
+import org.fdesigner.ui.jface.action.Action;
 
 /**
  * The BooleanPropertyAction is an action that set the values of a

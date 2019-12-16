@@ -13,21 +13,21 @@
  *     Matthew Hall - bug 234496
  *******************************************************************************/
 
-package org.eclipse.jface.databinding.viewers;
+package org.fdesigner.ui.jface.databinding.viewers;
 
-import org.eclipse.core.databinding.Binding;
-import org.eclipse.core.databinding.DataBindingContext;
-import org.eclipse.core.databinding.UpdateValueStrategy;
-import org.eclipse.core.databinding.observable.value.IObservableValue;
-import org.eclipse.core.databinding.property.value.IValueProperty;
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.jface.viewers.CellEditor;
-import org.eclipse.jface.viewers.ColumnViewer;
-import org.eclipse.jface.viewers.ColumnViewerEditorActivationEvent;
-import org.eclipse.jface.viewers.ColumnViewerEditorActivationListener;
-import org.eclipse.jface.viewers.ColumnViewerEditorDeactivationEvent;
-import org.eclipse.jface.viewers.EditingSupport;
-import org.eclipse.jface.viewers.ViewerCell;
+import org.fdesigner.databinding.Binding;
+import org.fdesigner.databinding.DataBindingContext;
+import org.fdesigner.databinding.UpdateValueStrategy;
+import org.fdesigner.databinding.observable.value.IObservableValue;
+import org.fdesigner.databinding.property.value.IValueProperty;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.ui.jface.viewers.CellEditor;
+import org.fdesigner.ui.jface.viewers.ColumnViewer;
+import org.fdesigner.ui.jface.viewers.ColumnViewerEditorActivationEvent;
+import org.fdesigner.ui.jface.viewers.ColumnViewerEditorActivationListener;
+import org.fdesigner.ui.jface.viewers.ColumnViewerEditorDeactivationEvent;
+import org.fdesigner.ui.jface.viewers.EditingSupport;
+import org.fdesigner.ui.jface.viewers.ViewerCell;
 
 /**
  * {@link EditingSupport} using the JFace Data Binding concepts to handle the

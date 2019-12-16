@@ -13,9 +13,8 @@
  *     Matthew Hall - bug 169876
  *******************************************************************************/
 
-package org.eclipse.jface.internal.databinding.swt;
+package org.fdesigner.ui.jface.databinding.internal.databinding.swt;
 
-import org.eclipse.core.databinding.property.value.IValueProperty;
 import org.eclipse.swt.custom.CCombo;
 import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Combo;
@@ -26,6 +25,7 @@ import org.eclipse.swt.widgets.Scale;
 import org.eclipse.swt.widgets.Slider;
 import org.eclipse.swt.widgets.Spinner;
 import org.eclipse.swt.widgets.Widget;
+import org.fdesigner.databinding.property.value.IValueProperty;
 
 /**
  * @param <S> type of the source object

@@ -12,18 +12,18 @@
  *     IBM Corporation - initial API and implementation
  *     Sergey Prigogin (Google) - [464838] ModalContext.run method should call done() on the progress monitor passed to the constructor
  *******************************************************************************/
-package org.eclipse.jface.operation;
+package org.fdesigner.ui.jface.operation;
 
 import java.lang.reflect.InvocationTargetException;
 
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.OperationCanceledException;
-import org.eclipse.core.runtime.ProgressMonitorWrapper;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.jface.util.Policy;
 import org.eclipse.swt.widgets.Display;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.OperationCanceledException;
+import org.fdesigner.runtime.common.runtime.ProgressMonitorWrapper;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.ui.jface.util.Policy;
 
 /**
  * Utility class for supporting modal operations. The runnable passed to the

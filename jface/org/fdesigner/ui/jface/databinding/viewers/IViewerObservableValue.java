@@ -12,9 +12,9 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.jface.databinding.viewers;
+package org.fdesigner.ui.jface.databinding.viewers;
 
-import org.eclipse.core.databinding.observable.value.IObservableValue;
+import org.fdesigner.databinding.observable.value.IObservableValue;
 
 /**
  * {@link IObservableValue} observing a JFace Viewer.

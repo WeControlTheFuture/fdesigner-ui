@@ -11,7 +11,7 @@
  * Contributors:
  *     Marcus Hoepfner - initial API and implementation
  *******************************************************************************/
-package org.eclipse.jface.widgets;
+package org.fdesigner.ui.jface.widgets;
 
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Layout;

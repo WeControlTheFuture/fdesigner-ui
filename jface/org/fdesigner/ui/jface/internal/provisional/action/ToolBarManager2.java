@@ -12,15 +12,15 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.jface.internal.provisional.action;
+package org.fdesigner.ui.jface.internal.provisional.action;
 
-import org.eclipse.core.runtime.ListenerList;
-import org.eclipse.jface.action.ToolBarManager;
-import org.eclipse.jface.util.IPropertyChangeListener;
-import org.eclipse.jface.util.PropertyChangeEvent;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.ToolBar;
+import org.fdesigner.runtime.common.runtime.ListenerList;
+import org.fdesigner.ui.jface.action.ToolBarManager;
+import org.fdesigner.ui.jface.util.IPropertyChangeListener;
+import org.fdesigner.ui.jface.util.PropertyChangeEvent;
 
 /**
  * Extends <code>ToolBarManager</code> to implement <code>IToolBarManager2</code>.

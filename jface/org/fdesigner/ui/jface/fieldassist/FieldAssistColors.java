@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.jface.fieldassist;
+package org.fdesigner.ui.jface.fieldassist;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -19,12 +19,12 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import org.eclipse.jface.resource.JFaceColors;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.Color;
 import org.eclipse.swt.graphics.RGB;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Display;
+import org.fdesigner.ui.jface.resource.JFaceColors;
 
 /**
  * FieldAssistColors defines protocol for retrieving colors that can be used to

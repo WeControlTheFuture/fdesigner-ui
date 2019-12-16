@@ -12,11 +12,10 @@
  *     IBM Corporation - initial API and implementation
  *     Björn Michael <b.michael@gmx.de> - bug 129722 [JFace]
  *******************************************************************************/
-package org.eclipse.jface.preference;
+package org.fdesigner.ui.jface.preference;
 
 import static org.eclipse.swt.events.SelectionListener.widgetSelectedAdapter;
 
-import org.eclipse.core.runtime.Assert;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.Font;
 import org.eclipse.swt.layout.GridData;
@@ -25,6 +24,7 @@ import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Group;
+import org.fdesigner.runtime.common.runtime.Assert;
 
 /**
  * A field editor for an enumeration type preference.

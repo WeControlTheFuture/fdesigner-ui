@@ -13,12 +13,10 @@
  *                                                 bugfix in: 195137, 198089, 225190
  *******************************************************************************/
 
-package org.eclipse.jface.window;
+package org.fdesigner.ui.jface.window;
 
 import java.util.HashMap;
 
-import org.eclipse.jface.viewers.ColumnViewer;
-import org.eclipse.jface.viewers.ViewerCell;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.Point;
 import org.eclipse.swt.graphics.Rectangle;

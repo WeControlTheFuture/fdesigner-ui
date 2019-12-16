@@ -15,12 +15,12 @@
  *     Ashley Cambrell - bug 199179
  *     Ovidio Mallo - bug 235195, 237856
  *******************************************************************************/
-package org.eclipse.jface.databinding.wizard;
+package org.fdesigner.ui.jface.databinding.wizard;
 
-import org.eclipse.core.databinding.DataBindingContext;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.jface.databinding.dialog.DialogPageSupport;
-import org.eclipse.jface.wizard.WizardPage;
+import org.fdesigner.databinding.DataBindingContext;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.ui.jface.databinding.dialog.DialogPageSupport;
+import org.fdesigner.ui.jface.wizard.WizardPage;
 
 /**
  * Connects the validation result from the given data binding context to the

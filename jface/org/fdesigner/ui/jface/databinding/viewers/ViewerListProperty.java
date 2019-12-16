@@ -13,14 +13,14 @@
  *     Matthew Hall - bugs 263413, 264286
  ******************************************************************************/
 
-package org.eclipse.jface.databinding.viewers;
+package org.fdesigner.ui.jface.databinding.viewers;
 
-import org.eclipse.core.databinding.observable.Realm;
-import org.eclipse.core.databinding.observable.list.IObservableList;
-import org.eclipse.core.databinding.property.list.SimpleListProperty;
-import org.eclipse.jface.databinding.swt.DisplayRealm;
-import org.eclipse.jface.internal.databinding.viewers.ViewerObservableListDecorator;
-import org.eclipse.jface.viewers.Viewer;
+import org.fdesigner.databinding.observable.Realm;
+import org.fdesigner.databinding.observable.list.IObservableList;
+import org.fdesigner.databinding.property.list.SimpleListProperty;
+import org.fdesigner.ui.jface.databinding.internal.databinding.viewers.ViewerObservableListDecorator;
+import org.fdesigner.ui.jface.databinding.swt.DisplayRealm;
+import org.fdesigner.ui.jface.viewers.Viewer;
 
 /**
  * Abstract list property implementation for {@link Viewer} properties. This

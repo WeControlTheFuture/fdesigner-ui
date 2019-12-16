@@ -12,11 +12,10 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.jface.menus;
+package org.fdesigner.ui.jface.menus;
 
-import org.eclipse.core.commands.INamedHandleStateIds;
-import org.eclipse.jface.commands.PersistentState;
-import org.eclipse.jface.preference.IPreferenceStore;
+import org.fdesigner.ui.jface.commands.PersistentState;
+import org.fdesigner.ui.jface.preference.IPreferenceStore;
 
 /**
  * <p>

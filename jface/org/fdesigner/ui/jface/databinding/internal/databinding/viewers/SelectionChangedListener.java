@@ -13,16 +13,16 @@
  *     Ovidio Mallo - bug 270494
  ******************************************************************************/
 
-package org.eclipse.jface.internal.databinding.viewers;
+package org.fdesigner.ui.jface.databinding.internal.databinding.viewers;
 
-import org.eclipse.core.databinding.observable.IDiff;
-import org.eclipse.core.databinding.property.IProperty;
-import org.eclipse.core.databinding.property.ISimplePropertyListener;
-import org.eclipse.core.databinding.property.NativePropertyListener;
-import org.eclipse.jface.viewers.IPostSelectionProvider;
-import org.eclipse.jface.viewers.ISelectionChangedListener;
-import org.eclipse.jface.viewers.ISelectionProvider;
-import org.eclipse.jface.viewers.SelectionChangedEvent;
+import org.fdesigner.databinding.observable.IDiff;
+import org.fdesigner.databinding.property.IProperty;
+import org.fdesigner.databinding.property.ISimplePropertyListener;
+import org.fdesigner.databinding.property.NativePropertyListener;
+import org.fdesigner.ui.jface.viewers.IPostSelectionProvider;
+import org.fdesigner.ui.jface.viewers.ISelectionChangedListener;
+import org.fdesigner.ui.jface.viewers.ISelectionProvider;
+import org.fdesigner.ui.jface.viewers.SelectionChangedEvent;
 
 class SelectionChangedListener<S extends ISelectionProvider, D extends IDiff> extends NativePropertyListener<S, D>
 		implements

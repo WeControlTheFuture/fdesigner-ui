@@ -13,7 +13,7 @@
  *     Tom Schindl <tom.schindl@bestsolution.at> - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.jface.viewers;
+package org.fdesigner.ui.jface.viewers;
 
 /**
  * TreeViewerLabelProvider is the ViewerLabelProvider that handles TreePaths.

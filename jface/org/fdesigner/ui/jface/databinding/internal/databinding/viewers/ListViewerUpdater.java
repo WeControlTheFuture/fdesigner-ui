@@ -13,9 +13,9 @@
  *     Matthew Hall - bug 226765
  ******************************************************************************/
 
-package org.eclipse.jface.internal.databinding.viewers;
+package org.fdesigner.ui.jface.databinding.internal.databinding.viewers;
 
-import org.eclipse.jface.viewers.AbstractListViewer;
+import org.fdesigner.ui.jface.viewers.AbstractListViewer;
 
 /**
  * NON-API - A {@link ViewerUpdater} that updates {@link AbstractListViewer}

@@ -13,14 +13,14 @@
  *     Matthew Hall - bugs 263413, 264286
  ******************************************************************************/
 
-package org.eclipse.jface.databinding.viewers;
+package org.fdesigner.ui.jface.databinding.viewers;
 
-import org.eclipse.core.databinding.observable.Realm;
-import org.eclipse.core.databinding.observable.value.IObservableValue;
-import org.eclipse.core.databinding.property.value.SimpleValueProperty;
-import org.eclipse.jface.databinding.swt.DisplayRealm;
-import org.eclipse.jface.internal.databinding.viewers.ViewerObservableValueDecorator;
-import org.eclipse.jface.viewers.Viewer;
+import org.fdesigner.databinding.observable.Realm;
+import org.fdesigner.databinding.observable.value.IObservableValue;
+import org.fdesigner.databinding.property.value.SimpleValueProperty;
+import org.fdesigner.ui.jface.databinding.internal.databinding.viewers.ViewerObservableValueDecorator;
+import org.fdesigner.ui.jface.databinding.swt.DisplayRealm;
+import org.fdesigner.ui.jface.viewers.Viewer;
 
 /**
  * Abstract value property implementation for {@link Viewer} properties. This

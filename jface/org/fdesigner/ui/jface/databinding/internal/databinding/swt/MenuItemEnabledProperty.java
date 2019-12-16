@@ -12,7 +12,7 @@
  *     Matthew Hall - initial API and implementation (bug 280157)
  ******************************************************************************/
 
-package org.eclipse.jface.internal.databinding.swt;
+package org.fdesigner.ui.jface.databinding.internal.databinding.swt;
 
 import org.eclipse.swt.widgets.MenuItem;
 

@@ -13,14 +13,14 @@
  *     Matthew Hall - bugs 263413, 264286
  ******************************************************************************/
 
-package org.eclipse.jface.databinding.viewers;
+package org.fdesigner.ui.jface.databinding.viewers;
 
-import org.eclipse.core.databinding.observable.Realm;
-import org.eclipse.core.databinding.observable.set.IObservableSet;
-import org.eclipse.core.databinding.property.set.SimpleSetProperty;
-import org.eclipse.jface.databinding.swt.DisplayRealm;
-import org.eclipse.jface.internal.databinding.viewers.ViewerObservableSetDecorator;
-import org.eclipse.jface.viewers.Viewer;
+import org.fdesigner.databinding.observable.Realm;
+import org.fdesigner.databinding.observable.set.IObservableSet;
+import org.fdesigner.databinding.property.set.SimpleSetProperty;
+import org.fdesigner.ui.jface.databinding.internal.databinding.viewers.ViewerObservableSetDecorator;
+import org.fdesigner.ui.jface.databinding.swt.DisplayRealm;
+import org.fdesigner.ui.jface.viewers.Viewer;
 
 /**
  * Abstract set property implementation for {@link Viewer} properties. This

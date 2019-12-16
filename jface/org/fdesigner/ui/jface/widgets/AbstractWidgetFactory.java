@@ -11,7 +11,7 @@
 * Contributors:
 *     SAP SE - initial version
 ******************************************************************************/
-package org.eclipse.jface.widgets;
+package org.fdesigner.ui.jface.widgets;
 
 import java.util.ArrayList;
 import java.util.List;

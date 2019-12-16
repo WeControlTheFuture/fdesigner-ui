@@ -13,11 +13,11 @@
  *     Matthew Hall - bug 251611
  ******************************************************************************/
 
-package org.eclipse.jface.internal.databinding.swt;
+package org.fdesigner.ui.jface.databinding.internal.databinding.swt;
 
-import org.eclipse.core.databinding.observable.list.ListDiff;
-import org.eclipse.core.databinding.observable.list.ListDiffVisitor;
 import org.eclipse.swt.widgets.List;
+import org.fdesigner.databinding.observable.list.ListDiff;
+import org.fdesigner.databinding.observable.list.ListDiffVisitor;
 
 /**
  * @since 3.3

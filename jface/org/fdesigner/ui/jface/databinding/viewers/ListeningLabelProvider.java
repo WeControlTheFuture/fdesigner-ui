@@ -12,11 +12,11 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.jface.databinding.viewers;
+package org.fdesigner.ui.jface.databinding.viewers;
 
-import org.eclipse.core.databinding.observable.set.IObservableSet;
-import org.eclipse.core.databinding.observable.set.ISetChangeListener;
-import org.eclipse.jface.internal.databinding.provisional.viewers.ViewerLabelProvider;
+import org.fdesigner.databinding.observable.set.IObservableSet;
+import org.fdesigner.databinding.observable.set.ISetChangeListener;
+import org.fdesigner.ui.jface.databinding.internal.databinding.provisional.viewers.ViewerLabelProvider;
 
 /**
  * @param <E> type of the viewer elements that labels are provided for

@@ -11,10 +11,9 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
-package org.eclipse.jface.internal;
+package org.fdesigner.ui.jface.internal;
 
-import org.eclipse.jface.util.BidiUtils;
-import org.osgi.framework.FrameworkUtil;
+import org.fdesigner.framework.framework.FrameworkUtil;
 
 /**
  * Internal class used for non-API debug flags.

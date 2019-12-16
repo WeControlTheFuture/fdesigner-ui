@@ -14,17 +14,16 @@
  *                                                 fixes in bug 198665, 200731
  *******************************************************************************/
 
-package org.eclipse.jface.viewers;
+package org.fdesigner.ui.jface.viewers;
 
 import java.util.List;
 
-import org.eclipse.jface.viewers.CellEditor.LayoutData;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.custom.TableEditor;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Item;
-import org.eclipse.swt.widgets.Table;
 import org.eclipse.swt.widgets.TableItem;
+import org.fdesigner.ui.jface.viewers.CellEditor.LayoutData;
 
 /**
  * This is an editor-implementation for {@link Table}

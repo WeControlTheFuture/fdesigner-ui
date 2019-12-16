@@ -12,11 +12,11 @@
  *     Chris Gross (schtoo@schtoo.com) - initial API and implementation for bug 16179
  *     IBM Corporation - revisions to initial contribution
  *******************************************************************************/
-package org.eclipse.jface.dialogs;
+package org.fdesigner.ui.jface.dialogs;
 
 import java.util.EventObject;
 
-import org.eclipse.core.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.Assert;
 
 /**
  * Event object describing an <code>IDialogPage</code> in the midst of changing.

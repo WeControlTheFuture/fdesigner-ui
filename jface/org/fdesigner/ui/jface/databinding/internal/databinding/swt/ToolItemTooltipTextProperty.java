@@ -13,7 +13,7 @@
  *     Matthew Hall - bug 262946
  ******************************************************************************/
 
-package org.eclipse.jface.internal.databinding.swt;
+package org.fdesigner.ui.jface.databinding.internal.databinding.swt;
 
 import org.eclipse.swt.widgets.ToolItem;
 

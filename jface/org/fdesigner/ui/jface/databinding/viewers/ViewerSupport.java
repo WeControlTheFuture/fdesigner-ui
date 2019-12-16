@@ -14,19 +14,18 @@
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 481928
  ******************************************************************************/
 
-package org.eclipse.jface.databinding.viewers;
+package org.fdesigner.ui.jface.databinding.viewers;
 
-import org.eclipse.core.databinding.observable.Realm;
-import org.eclipse.core.databinding.observable.list.IObservableList;
-import org.eclipse.core.databinding.observable.set.IObservableSet;
-import org.eclipse.core.databinding.property.Properties;
-import org.eclipse.core.databinding.property.list.IListProperty;
-import org.eclipse.core.databinding.property.set.ISetProperty;
-import org.eclipse.core.databinding.property.value.IValueProperty;
-import org.eclipse.jface.databinding.swt.DisplayRealm;
-import org.eclipse.jface.viewers.AbstractTableViewer;
-import org.eclipse.jface.viewers.AbstractTreeViewer;
-import org.eclipse.jface.viewers.StructuredViewer;
+import org.fdesigner.databinding.observable.Realm;
+import org.fdesigner.databinding.observable.list.IObservableList;
+import org.fdesigner.databinding.observable.set.IObservableSet;
+import org.fdesigner.databinding.property.Properties;
+import org.fdesigner.databinding.property.list.IListProperty;
+import org.fdesigner.databinding.property.set.ISetProperty;
+import org.fdesigner.databinding.property.value.IValueProperty;
+import org.fdesigner.ui.jface.databinding.swt.DisplayRealm;
+import org.fdesigner.ui.jface.viewers.AbstractTreeViewer;
+import org.fdesigner.ui.jface.viewers.StructuredViewer;
 
 /**
  * Helper methods for binding observables to a {@link StructuredViewer} or

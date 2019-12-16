@@ -11,12 +11,12 @@
  * Contributors:
  *     Matthew Hall - initial API and implementation (bug 239900)
  *******************************************************************************/
-package org.eclipse.jface.databinding.preference;
+package org.fdesigner.ui.jface.databinding.preference;
 
-import org.eclipse.core.databinding.DataBindingContext;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.jface.databinding.dialog.DialogPageSupport;
-import org.eclipse.jface.preference.PreferencePage;
+import org.fdesigner.databinding.DataBindingContext;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.ui.jface.databinding.dialog.DialogPageSupport;
+import org.fdesigner.ui.jface.preference.PreferencePage;
 
 /**
  * Connects the validation result from the given data binding context to the

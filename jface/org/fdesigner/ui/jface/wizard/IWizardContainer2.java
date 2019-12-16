@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.jface.wizard;
+package org.fdesigner.ui.jface.wizard;
 
 /**
  * <p><code>IWizardContainer2</code> is a supplement to

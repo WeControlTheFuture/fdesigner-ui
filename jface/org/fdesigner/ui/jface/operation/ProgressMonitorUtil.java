@@ -11,11 +11,11 @@
  * Contributors:
  *     Red Hat Inc. - initial API and implementation
  *******************************************************************************/
-package org.eclipse.jface.operation;
+package org.fdesigner.ui.jface.operation;
 
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.IProgressMonitorWithBlocking;
 import org.eclipse.swt.widgets.Display;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IProgressMonitorWithBlocking;
 
 /**
  * Contains static methods for constructing and manipulating progress monitors.

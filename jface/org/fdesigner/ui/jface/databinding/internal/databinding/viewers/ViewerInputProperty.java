@@ -13,13 +13,13 @@
  *     Matthew Hall - bug 195222, 263413
  ******************************************************************************/
 
-package org.eclipse.jface.internal.databinding.viewers;
+package org.fdesigner.ui.jface.databinding.internal.databinding.viewers;
 
-import org.eclipse.core.databinding.observable.value.ValueDiff;
-import org.eclipse.core.databinding.property.INativePropertyListener;
-import org.eclipse.core.databinding.property.ISimplePropertyListener;
-import org.eclipse.jface.databinding.viewers.ViewerValueProperty;
-import org.eclipse.jface.viewers.Viewer;
+import org.fdesigner.databinding.observable.value.ValueDiff;
+import org.fdesigner.databinding.property.INativePropertyListener;
+import org.fdesigner.databinding.property.ISimplePropertyListener;
+import org.fdesigner.ui.jface.databinding.viewers.ViewerValueProperty;
+import org.fdesigner.ui.jface.viewers.Viewer;
 
 /**
  * @param <S> type of the source object

@@ -11,16 +11,16 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.jface.viewers;
+package org.fdesigner.ui.jface.viewers;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import org.eclipse.jface.preference.JFacePreferences;
-import org.eclipse.jface.resource.ColorRegistry;
-import org.eclipse.jface.resource.JFaceResources;
 import org.eclipse.swt.custom.StyleRange;
 import org.eclipse.swt.graphics.TextStyle;
+import org.fdesigner.ui.jface.preference.JFacePreferences;
+import org.fdesigner.ui.jface.resource.ColorRegistry;
+import org.fdesigner.ui.jface.resource.JFaceResources;
 
 /**
  * A mutable string with styled ranges. All ranges mark substrings of the string

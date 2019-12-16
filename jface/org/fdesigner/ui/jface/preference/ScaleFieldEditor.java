@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *     Wedia - Joel DRIGO (joel.drigo@wedia-group.com): Bug 470866
  *******************************************************************************/
-package org.eclipse.jface.preference;
+package org.fdesigner.ui.jface.preference;
 
 import static org.eclipse.swt.events.SelectionListener.widgetSelectedAdapter;
 

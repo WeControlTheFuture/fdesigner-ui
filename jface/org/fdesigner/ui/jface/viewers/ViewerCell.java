@@ -14,7 +14,7 @@
  *     											 - fix in bug: 195908,198035,215069,215735,227421
  *******************************************************************************/
 
-package org.eclipse.jface.viewers;
+package org.fdesigner.ui.jface.viewers;
 
 import java.util.Objects;
 

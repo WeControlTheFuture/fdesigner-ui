@@ -11,17 +11,17 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.jface.viewers;
+package org.fdesigner.ui.jface.viewers;
 
 import java.util.Arrays;
 import java.util.function.Supplier;
 
-import org.eclipse.jface.resource.CompositeImageDescriptor;
-import org.eclipse.jface.resource.ImageDescriptor;
 import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.graphics.ImageData;
 import org.eclipse.swt.graphics.ImageDataProvider;
 import org.eclipse.swt.graphics.Point;
+import org.fdesigner.ui.jface.resource.CompositeImageDescriptor;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
 
 /**
  * A <code>DecorationOverlayIcon</code> is an image descriptor that can be used

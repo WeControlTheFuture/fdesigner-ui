@@ -12,7 +12,7 @@
  *     Chris Gross (schtoo@schtoo.com) - initial API and implementation for bug 16179
  *     IBM Corporation - revisions to initial contribution
  *******************************************************************************/
-package org.eclipse.jface.dialogs;
+package org.fdesigner.ui.jface.dialogs;
 
 /**
  * A listener which is notified when the current page of a multi-page dialog is

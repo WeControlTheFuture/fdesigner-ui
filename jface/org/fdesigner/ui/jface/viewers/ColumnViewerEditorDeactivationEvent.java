@@ -14,7 +14,7 @@
  *                                                 fixes in bug: 178946
  *******************************************************************************/
 
-package org.eclipse.jface.viewers;
+package org.fdesigner.ui.jface.viewers;
 
 import java.util.EventObject;
 

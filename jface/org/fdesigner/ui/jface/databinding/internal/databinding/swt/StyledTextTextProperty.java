@@ -13,13 +13,13 @@
  *     Matthew Hall - bugs 256543, 262287
  ******************************************************************************/
 
-package org.eclipse.jface.internal.databinding.swt;
+package org.fdesigner.ui.jface.databinding.internal.databinding.swt;
 
-import org.eclipse.core.databinding.observable.value.IObservableValue;
-import org.eclipse.jface.databinding.swt.ISWTObservableValue;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.custom.StyledText;
 import org.eclipse.swt.widgets.Widget;
+import org.fdesigner.databinding.observable.value.IObservableValue;
+import org.fdesigner.ui.jface.databinding.swt.ISWTObservableValue;
 
 /**
  * @since 3.3

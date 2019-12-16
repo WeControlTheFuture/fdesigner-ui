@@ -12,12 +12,12 @@
  *     Matthew Hall - initial API and implementation (bug 194734)
  ******************************************************************************/
 
-package org.eclipse.jface.internal.databinding.viewers;
+package org.fdesigner.ui.jface.databinding.internal.databinding.viewers;
 
-import org.eclipse.core.databinding.observable.set.DecoratingObservableSet;
-import org.eclipse.core.databinding.observable.set.IObservableSet;
-import org.eclipse.jface.databinding.viewers.IViewerObservableSet;
-import org.eclipse.jface.viewers.Viewer;
+import org.fdesigner.databinding.observable.set.DecoratingObservableSet;
+import org.fdesigner.databinding.observable.set.IObservableSet;
+import org.fdesigner.ui.jface.databinding.viewers.IViewerObservableSet;
+import org.fdesigner.ui.jface.viewers.Viewer;
 
 /**
  * @param <E>

@@ -12,9 +12,9 @@
  *     Matthew Hall - initial API and implementation (bug 226292)
  ******************************************************************************/
 
-package org.eclipse.jface.internal.databinding.viewers;
+package org.fdesigner.ui.jface.databinding.internal.databinding.viewers;
 
-import org.eclipse.jface.viewers.CheckboxTableViewer;
+import org.fdesigner.ui.jface.viewers.CheckboxTableViewer;
 
 /**
  * @param <E> type of the elements in the updated viewer

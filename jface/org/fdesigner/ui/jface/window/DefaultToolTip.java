@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.jface.window;
+package org.fdesigner.ui.jface.window;
 
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.custom.CLabel;

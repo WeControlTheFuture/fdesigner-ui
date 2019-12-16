@@ -13,16 +13,16 @@
  *     Tom Schindl - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.jface.internal.databinding.swt;
+package org.fdesigner.ui.jface.databinding.internal.databinding.swt;
 
-import org.eclipse.core.databinding.observable.Diffs;
-import org.eclipse.core.databinding.observable.value.ValueDiff;
-import org.eclipse.core.databinding.property.INativePropertyListener;
-import org.eclipse.core.databinding.property.IProperty;
-import org.eclipse.core.databinding.property.ISimplePropertyListener;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Event;
+import org.fdesigner.databinding.observable.Diffs;
+import org.fdesigner.databinding.observable.value.ValueDiff;
+import org.fdesigner.databinding.property.INativePropertyListener;
+import org.fdesigner.databinding.property.IProperty;
+import org.fdesigner.databinding.property.ISimplePropertyListener;
 
 /**
  * @param <S> type of the source object

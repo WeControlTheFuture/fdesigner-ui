@@ -15,17 +15,17 @@
  *     Alexander Kurtakov <akurtako@redhat.com> - Bug 459761
  *******************************************************************************/
 
-package org.eclipse.jface.databinding.viewers;
+package org.fdesigner.ui.jface.databinding.viewers;
 
 import java.util.Set;
 
-import org.eclipse.core.databinding.observable.map.IMapChangeListener;
-import org.eclipse.core.databinding.observable.map.IObservableMap;
-import org.eclipse.core.databinding.observable.map.MapChangeEvent;
-import org.eclipse.jface.viewers.ITableLabelProvider;
-import org.eclipse.jface.viewers.LabelProvider;
-import org.eclipse.jface.viewers.LabelProviderChangedEvent;
 import org.eclipse.swt.graphics.Image;
+import org.fdesigner.databinding.observable.map.IMapChangeListener;
+import org.fdesigner.databinding.observable.map.IObservableMap;
+import org.fdesigner.databinding.observable.map.MapChangeEvent;
+import org.fdesigner.ui.jface.viewers.ITableLabelProvider;
+import org.fdesigner.ui.jface.viewers.LabelProvider;
+import org.fdesigner.ui.jface.viewers.LabelProviderChangedEvent;
 
 /**
  * A label provider based on one or more observable maps that track attributes

@@ -15,19 +15,18 @@
  *     IBM Corporation - API refactoring and general maintenance
  *******************************************************************************/
 
-package org.eclipse.jface.layout;
+package org.fdesigner.ui.jface.layout;
 
 
-import org.eclipse.jface.viewers.ColumnLayoutData;
-import org.eclipse.jface.viewers.ColumnPixelData;
 import org.eclipse.swt.events.TreeEvent;
 import org.eclipse.swt.events.TreeListener;
 import org.eclipse.swt.widgets.Composite;
-import org.eclipse.swt.widgets.Layout;
 import org.eclipse.swt.widgets.Scrollable;
 import org.eclipse.swt.widgets.Tree;
 import org.eclipse.swt.widgets.TreeColumn;
 import org.eclipse.swt.widgets.Widget;
+import org.fdesigner.ui.jface.viewers.ColumnLayoutData;
+import org.fdesigner.ui.jface.viewers.ColumnPixelData;
 
 /**
  * The TreeColumnLayout is the {@link Layout} used to maintain {@link TreeColumn} sizes in a

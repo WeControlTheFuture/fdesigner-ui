@@ -13,20 +13,20 @@
  *     Matthew Hall - bug 259380, 283204
  ******************************************************************************/
 
-package org.eclipse.jface.internal.databinding.viewers;
+package org.fdesigner.ui.jface.databinding.internal.databinding.viewers;
 
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.Set;
 
-import org.eclipse.core.databinding.observable.Diffs;
-import org.eclipse.core.databinding.observable.Realm;
-import org.eclipse.core.databinding.observable.set.AbstractObservableSet;
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.jface.viewers.ICheckStateListener;
-import org.eclipse.jface.viewers.ICheckable;
-import org.eclipse.jface.viewers.IElementComparer;
+import org.fdesigner.databinding.observable.Diffs;
+import org.fdesigner.databinding.observable.Realm;
+import org.fdesigner.databinding.observable.set.AbstractObservableSet;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.ui.jface.viewers.ICheckStateListener;
+import org.fdesigner.ui.jface.viewers.ICheckable;
+import org.fdesigner.ui.jface.viewers.IElementComparer;
 
 /**
  * @param <E> the type of the elements in this set

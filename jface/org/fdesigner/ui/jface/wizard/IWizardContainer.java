@@ -11,10 +11,10 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.jface.wizard;
+package org.fdesigner.ui.jface.wizard;
 
-import org.eclipse.jface.operation.IRunnableContext;
 import org.eclipse.swt.widgets.Shell;
+import org.fdesigner.ui.jface.operation.IRunnableContext;
 
 /**
  * Interface for containers that can host a wizard. It displays

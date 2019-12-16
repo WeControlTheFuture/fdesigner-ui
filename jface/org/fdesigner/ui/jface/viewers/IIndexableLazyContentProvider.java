@@ -11,7 +11,7 @@
  * Contributors:
  *     Peter Centgraf - initial API and implementation (bug 251575)
  *******************************************************************************/
-package org.eclipse.jface.viewers;
+package org.fdesigner.ui.jface.viewers;
 
 /**
  * Adds efficient element indexing support to ILazyContentProvider.

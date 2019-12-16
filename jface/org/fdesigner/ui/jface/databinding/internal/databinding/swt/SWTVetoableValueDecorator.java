@@ -13,16 +13,16 @@
  *     Matthew Hall - bug 256543, 190881, 263691, 281723
  ******************************************************************************/
 
-package org.eclipse.jface.internal.databinding.swt;
+package org.fdesigner.ui.jface.databinding.internal.databinding.swt;
 
-import org.eclipse.core.databinding.observable.Diffs;
-import org.eclipse.core.databinding.observable.value.DecoratingVetoableValue;
-import org.eclipse.core.databinding.observable.value.IObservableValue;
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.jface.databinding.swt.ISWTObservableValue;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Listener;
 import org.eclipse.swt.widgets.Widget;
+import org.fdesigner.databinding.observable.Diffs;
+import org.fdesigner.databinding.observable.value.DecoratingVetoableValue;
+import org.fdesigner.databinding.observable.value.IObservableValue;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.ui.jface.databinding.swt.ISWTObservableValue;
 
 /**
  * @since 3.3

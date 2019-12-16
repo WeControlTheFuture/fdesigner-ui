@@ -11,7 +11,7 @@
  *     IBM Corporation - initial API and implementation
  *     Alexander Fedorov <alexander.fedorov@arsysop.ru> - Bug 520080
  *******************************************************************************/
-package org.eclipse.jface.resource;
+package org.fdesigner.ui.jface.resource;
 
 import java.net.MalformedURLException;
 import java.net.URI;
@@ -19,11 +19,10 @@ import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.Optional;
 
-import org.eclipse.core.runtime.FileLocator;
-import org.eclipse.core.runtime.IPath;
-import org.eclipse.core.runtime.Path;
-import org.osgi.framework.Bundle;
-import org.osgi.framework.FrameworkUtil;
+import org.fdesigner.framework.framework.FrameworkUtil;
+import org.fdesigner.runtime.common.runtime.FileLocator;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.Path;
 
 /**
  * This class contains a collection of helper methods for finding JFace

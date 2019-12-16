@@ -12,16 +12,16 @@
  *     Matthew Hall - initial API and implementation (bug 264286)
  *******************************************************************************/
 
-package org.eclipse.jface.internal.databinding.viewers;
+package org.fdesigner.ui.jface.databinding.internal.databinding.viewers;
 
-import org.eclipse.core.databinding.property.set.DelegatingSetProperty;
-import org.eclipse.core.databinding.property.set.ISetProperty;
-import org.eclipse.jface.databinding.swt.DisplayRealm;
-import org.eclipse.jface.databinding.viewers.IViewerObservableSet;
-import org.eclipse.jface.databinding.viewers.IViewerSetProperty;
-import org.eclipse.jface.viewers.CheckboxTableViewer;
-import org.eclipse.jface.viewers.CheckboxTreeViewer;
-import org.eclipse.jface.viewers.Viewer;
+import org.fdesigner.databinding.property.set.DelegatingSetProperty;
+import org.fdesigner.databinding.property.set.ISetProperty;
+import org.fdesigner.ui.jface.databinding.swt.DisplayRealm;
+import org.fdesigner.ui.jface.databinding.viewers.IViewerObservableSet;
+import org.fdesigner.ui.jface.databinding.viewers.IViewerSetProperty;
+import org.fdesigner.ui.jface.viewers.CheckboxTableViewer;
+import org.fdesigner.ui.jface.viewers.CheckboxTreeViewer;
+import org.fdesigner.ui.jface.viewers.Viewer;
 
 /**
  * @param <S> type of the source object

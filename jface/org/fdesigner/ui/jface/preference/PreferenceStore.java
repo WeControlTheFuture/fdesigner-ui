@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *     Pawel Pogorzelski - <Pawel.Pogorzelski@pl.ibm.com> - fix for bug 289599
  *******************************************************************************/
-package org.eclipse.jface.preference;
+package org.fdesigner.ui.jface.preference;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -24,12 +24,12 @@ import java.io.PrintWriter;
 import java.util.Properties;
 import java.util.Set;
 
-import org.eclipse.core.commands.common.EventManager;
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.jface.resource.JFaceResources;
-import org.eclipse.jface.util.IPropertyChangeListener;
-import org.eclipse.jface.util.PropertyChangeEvent;
-import org.eclipse.jface.util.SafeRunnable;
+import org.fdesigner.commands.common.EventManager;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.ui.jface.resource.JFaceResources;
+import org.fdesigner.ui.jface.util.IPropertyChangeListener;
+import org.fdesigner.ui.jface.util.PropertyChangeEvent;
+import org.fdesigner.ui.jface.util.SafeRunnable;
 
 /**
  * A concrete preference store implementation based on an internal

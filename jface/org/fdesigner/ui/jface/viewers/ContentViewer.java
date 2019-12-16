@@ -13,15 +13,15 @@
  *     Steven Spungin <steven@spungin.tv> - Bug 401439
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 475844, 475689
  *******************************************************************************/
-package org.eclipse.jface.viewers;
+package org.fdesigner.ui.jface.viewers;
 
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.jface.internal.InternalPolicy;
-import org.eclipse.jface.util.Policy;
 import org.eclipse.swt.events.DisposeEvent;
 import org.eclipse.swt.widgets.Control;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.ui.jface.internal.InternalPolicy;
+import org.fdesigner.ui.jface.util.Policy;
 
 /**
  * A content viewer is a model-based adapter on a widget which accesses its

@@ -13,7 +13,7 @@
  *     Stefan Xenos, IBM - initial implementation, bug 178888
  *     Karsten Stoeckmann - bug 156982
  *******************************************************************************/
-package org.eclipse.jface.layout;
+package org.fdesigner.ui.jface.layout;
 import org.eclipse.swt.graphics.Point;
 import org.eclipse.swt.graphics.Rectangle;
 import org.eclipse.swt.layout.GridLayout;

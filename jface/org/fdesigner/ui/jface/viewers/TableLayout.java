@@ -12,14 +12,11 @@
  *     IBM Corporation - initial API and implementation
  *     Florian Priester - bug 106059
  *******************************************************************************/
-package org.eclipse.jface.viewers;
+package org.fdesigner.ui.jface.viewers;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.jface.layout.TableColumnLayout;
-import org.eclipse.jface.util.Util;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.Point;
 import org.eclipse.swt.widgets.Composite;
@@ -29,6 +26,8 @@ import org.eclipse.swt.widgets.Table;
 import org.eclipse.swt.widgets.TableColumn;
 import org.eclipse.swt.widgets.Tree;
 import org.eclipse.swt.widgets.TreeColumn;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.ui.jface.util.Util;
 
 /**
  * A layout for a table. Call <code>addColumnData</code> to add columns.

@@ -15,23 +15,21 @@
  *                    283351
  *******************************************************************************/
 
-package org.eclipse.jface.databinding.viewers;
+package org.fdesigner.ui.jface.databinding.viewers;
 
 import java.util.Set;
 
-import org.eclipse.core.databinding.observable.IObservableCollection;
-import org.eclipse.core.databinding.observable.list.IListChangeListener;
-import org.eclipse.core.databinding.observable.list.IObservableList;
-import org.eclipse.core.databinding.observable.list.ListChangeEvent;
-import org.eclipse.core.databinding.observable.list.ListDiffVisitor;
-import org.eclipse.core.databinding.observable.set.IObservableSet;
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.jface.internal.databinding.viewers.ObservableCollectionContentProvider;
-import org.eclipse.jface.internal.databinding.viewers.ViewerElementSet;
-import org.eclipse.jface.viewers.AbstractListViewer;
-import org.eclipse.jface.viewers.AbstractTableViewer;
-import org.eclipse.jface.viewers.IStructuredContentProvider;
-import org.eclipse.jface.viewers.Viewer;
+import org.fdesigner.databinding.observable.IObservableCollection;
+import org.fdesigner.databinding.observable.list.IListChangeListener;
+import org.fdesigner.databinding.observable.list.IObservableList;
+import org.fdesigner.databinding.observable.list.ListChangeEvent;
+import org.fdesigner.databinding.observable.list.ListDiffVisitor;
+import org.fdesigner.databinding.observable.set.IObservableSet;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.ui.jface.databinding.internal.databinding.viewers.ObservableCollectionContentProvider;
+import org.fdesigner.ui.jface.databinding.internal.databinding.viewers.ViewerElementSet;
+import org.fdesigner.ui.jface.viewers.IStructuredContentProvider;
+import org.fdesigner.ui.jface.viewers.Viewer;
 
 /**
  * A {@link IStructuredContentProvider content provider} for

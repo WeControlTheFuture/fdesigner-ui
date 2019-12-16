@@ -13,23 +13,23 @@
  *     Matthew Hall - bugs 226765, 222991, 226292, 266038, 283351
  *******************************************************************************/
 
-package org.eclipse.jface.databinding.viewers;
+package org.fdesigner.ui.jface.databinding.viewers;
 
 import java.util.Set;
 
-import org.eclipse.core.databinding.observable.IObservableCollection;
-import org.eclipse.core.databinding.observable.IObservablesListener;
-import org.eclipse.core.databinding.observable.list.IListChangeListener;
-import org.eclipse.core.databinding.observable.list.IObservableList;
-import org.eclipse.core.databinding.observable.list.ListChangeEvent;
-import org.eclipse.core.databinding.observable.list.ListDiffVisitor;
-import org.eclipse.core.databinding.observable.masterdetail.IObservableFactory;
-import org.eclipse.core.databinding.observable.set.IObservableSet;
-import org.eclipse.jface.internal.databinding.viewers.ObservableCollectionTreeContentProvider;
-import org.eclipse.jface.internal.databinding.viewers.ViewerElementSet;
-import org.eclipse.jface.viewers.AbstractTreeViewer;
-import org.eclipse.jface.viewers.ITreeContentProvider;
-import org.eclipse.jface.viewers.Viewer;
+import org.fdesigner.databinding.observable.IObservableCollection;
+import org.fdesigner.databinding.observable.IObservablesListener;
+import org.fdesigner.databinding.observable.list.IListChangeListener;
+import org.fdesigner.databinding.observable.list.IObservableList;
+import org.fdesigner.databinding.observable.list.ListChangeEvent;
+import org.fdesigner.databinding.observable.list.ListDiffVisitor;
+import org.fdesigner.databinding.observable.masterdetail.IObservableFactory;
+import org.fdesigner.databinding.observable.set.IObservableSet;
+import org.fdesigner.ui.jface.databinding.internal.databinding.viewers.ObservableCollectionTreeContentProvider;
+import org.fdesigner.ui.jface.databinding.internal.databinding.viewers.ViewerElementSet;
+import org.fdesigner.ui.jface.viewers.ITreeContentProvider;
+import org.fdesigner.ui.jface.viewers.TreeNode;
+import org.fdesigner.ui.jface.viewers.Viewer;
 
 /**
  * An {@link ITreeContentProvider} for use with an {@link AbstractTreeViewer},

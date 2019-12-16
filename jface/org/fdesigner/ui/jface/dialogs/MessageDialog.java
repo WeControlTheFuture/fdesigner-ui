@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  * 	   Lars Vogel <Lars.Vogel@vogella.com> - Bug 472690
  *******************************************************************************/
-package org.eclipse.jface.dialogs;
+package org.fdesigner.ui.jface.dialogs;
 
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.custom.CLabel;

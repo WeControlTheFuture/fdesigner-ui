@@ -12,9 +12,7 @@
  *     Matthew Hall - initial API and implementation (bug 238296)
  ******************************************************************************/
 
-package org.eclipse.jface.databinding.viewers;
-
-import org.eclipse.jface.viewers.StructuredViewer;
+package org.fdesigner.ui.jface.databinding.viewers;
 
 /**
  * A strategy interface for updating the elements in a {@link StructuredViewer}.

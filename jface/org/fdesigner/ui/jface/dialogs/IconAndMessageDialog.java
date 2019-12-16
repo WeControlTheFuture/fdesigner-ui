@@ -12,13 +12,8 @@
  *     IBM Corporation - initial API and implementation
  *     Stefan Xenos, IBM - bug 156790: Adopt GridLayoutFactory within JFace
  *******************************************************************************/
-package org.eclipse.jface.dialogs;
+package org.fdesigner.ui.jface.dialogs;
 
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.jface.layout.GridDataFactory;
-import org.eclipse.jface.layout.GridLayoutFactory;
-import org.eclipse.jface.layout.LayoutConstants;
-import org.eclipse.jface.resource.JFaceResources;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.accessibility.AccessibleAdapter;
 import org.eclipse.swt.accessibility.AccessibleEvent;
@@ -29,6 +24,11 @@ import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Shell;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.ui.jface.layout.GridDataFactory;
+import org.fdesigner.ui.jface.layout.GridLayoutFactory;
+import org.fdesigner.ui.jface.layout.LayoutConstants;
+import org.fdesigner.ui.jface.resource.JFaceResources;
 
 /**
  * The IconAndMessageDialog is the abstract superclass of dialogs that have an

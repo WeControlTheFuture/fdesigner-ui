@@ -13,20 +13,18 @@
  *     Brad Reynolds - bug 116920
  *     Matthew Hall - bugs 215531, 226765, 222991, 238296, 266038, 283351
  *******************************************************************************/
-package org.eclipse.jface.databinding.viewers;
+package org.fdesigner.ui.jface.databinding.viewers;
 
 import java.util.Set;
 
-import org.eclipse.core.databinding.observable.IObservableCollection;
-import org.eclipse.core.databinding.observable.set.IObservableSet;
-import org.eclipse.core.databinding.observable.set.ISetChangeListener;
-import org.eclipse.core.databinding.observable.set.SetChangeEvent;
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.jface.internal.databinding.viewers.ObservableCollectionContentProvider;
-import org.eclipse.jface.viewers.AbstractListViewer;
-import org.eclipse.jface.viewers.AbstractTableViewer;
-import org.eclipse.jface.viewers.IStructuredContentProvider;
-import org.eclipse.jface.viewers.Viewer;
+import org.fdesigner.databinding.observable.IObservableCollection;
+import org.fdesigner.databinding.observable.set.IObservableSet;
+import org.fdesigner.databinding.observable.set.ISetChangeListener;
+import org.fdesigner.databinding.observable.set.SetChangeEvent;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.ui.jface.databinding.internal.databinding.viewers.ObservableCollectionContentProvider;
+import org.fdesigner.ui.jface.viewers.IStructuredContentProvider;
+import org.fdesigner.ui.jface.viewers.Viewer;
 
 /**
  * A {@link IStructuredContentProvider content provider} for

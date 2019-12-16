@@ -12,9 +12,8 @@
  *     Matthew Hall - initial API and implementation (bug 264286)
  *******************************************************************************/
 
-package org.eclipse.jface.internal.databinding.swt;
+package org.fdesigner.ui.jface.databinding.internal.databinding.swt;
 
-import org.eclipse.core.databinding.property.value.IValueProperty;
 import org.eclipse.swt.custom.CTabItem;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.TabItem;
@@ -23,6 +22,7 @@ import org.eclipse.swt.widgets.ToolItem;
 import org.eclipse.swt.widgets.TrayItem;
 import org.eclipse.swt.widgets.TreeColumn;
 import org.eclipse.swt.widgets.Widget;
+import org.fdesigner.databinding.property.value.IValueProperty;
 
 /**
  * @param <S> type of the source object

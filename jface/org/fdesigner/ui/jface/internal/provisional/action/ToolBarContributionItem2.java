@@ -12,10 +12,10 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.jface.internal.provisional.action;
+package org.fdesigner.ui.jface.internal.provisional.action;
 
-import org.eclipse.jface.action.IToolBarManager;
-import org.eclipse.jface.action.ToolBarContributionItem;
+import org.fdesigner.ui.jface.action.IToolBarManager;
+import org.fdesigner.ui.jface.action.ToolBarContributionItem;
 
 /**
  * Extends <code>ToolBarContributionItem</code> to implement <code>IToolBarContributionItem</code>.

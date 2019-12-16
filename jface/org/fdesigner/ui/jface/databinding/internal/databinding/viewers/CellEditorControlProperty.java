@@ -12,14 +12,14 @@
  *     Matthew Hall - initial API and implementation (bug 234496)
  ******************************************************************************/
 
-package org.eclipse.jface.internal.databinding.viewers;
+package org.fdesigner.ui.jface.databinding.internal.databinding.viewers;
 
-import org.eclipse.core.databinding.observable.value.ValueDiff;
-import org.eclipse.core.databinding.property.INativePropertyListener;
-import org.eclipse.core.databinding.property.ISimplePropertyListener;
-import org.eclipse.core.databinding.property.value.SimpleValueProperty;
-import org.eclipse.jface.viewers.CellEditor;
 import org.eclipse.swt.widgets.Control;
+import org.fdesigner.databinding.observable.value.ValueDiff;
+import org.fdesigner.databinding.property.INativePropertyListener;
+import org.fdesigner.databinding.property.ISimplePropertyListener;
+import org.fdesigner.databinding.property.value.SimpleValueProperty;
+import org.fdesigner.ui.jface.viewers.CellEditor;
 
 /**
  * @since 3.3

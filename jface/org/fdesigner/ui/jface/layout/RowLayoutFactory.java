@@ -12,7 +12,7 @@
  *     Micah Hainline - initial API and implementation
  *     Stefan Xenos, IBM Corporation - review, javadoc, and extendedMargins(Rectangle)
  *******************************************************************************/
-package org.eclipse.jface.layout;
+package org.fdesigner.ui.jface.layout;
 
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.Point;

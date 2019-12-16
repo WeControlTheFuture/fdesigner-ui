@@ -14,24 +14,21 @@
  *     Ovidio Mallo - bug 270494
  ******************************************************************************/
 
-package org.eclipse.jface.databinding.viewers.typed;
+package org.fdesigner.ui.jface.databinding.viewers.typed;
 
-import org.eclipse.jface.databinding.viewers.IViewerListProperty;
-import org.eclipse.jface.databinding.viewers.IViewerSetProperty;
-import org.eclipse.jface.databinding.viewers.IViewerValueProperty;
-import org.eclipse.jface.internal.databinding.viewers.SelectionProviderMultipleSelectionProperty;
-import org.eclipse.jface.internal.databinding.viewers.SelectionProviderSingleSelectionProperty;
-import org.eclipse.jface.internal.databinding.viewers.StructuredViewerFiltersProperty;
-import org.eclipse.jface.internal.databinding.viewers.ViewerCheckedElementsProperty;
-import org.eclipse.jface.internal.databinding.viewers.ViewerInputProperty;
-import org.eclipse.jface.viewers.CheckboxTableViewer;
-import org.eclipse.jface.viewers.CheckboxTreeViewer;
-import org.eclipse.jface.viewers.ICheckable;
-import org.eclipse.jface.viewers.IPostSelectionProvider;
-import org.eclipse.jface.viewers.ISelectionProvider;
-import org.eclipse.jface.viewers.StructuredViewer;
-import org.eclipse.jface.viewers.Viewer;
-import org.eclipse.jface.viewers.ViewerFilter;
+import org.fdesigner.ui.jface.databinding.internal.databinding.viewers.SelectionProviderMultipleSelectionProperty;
+import org.fdesigner.ui.jface.databinding.internal.databinding.viewers.SelectionProviderSingleSelectionProperty;
+import org.fdesigner.ui.jface.databinding.internal.databinding.viewers.StructuredViewerFiltersProperty;
+import org.fdesigner.ui.jface.databinding.internal.databinding.viewers.ViewerCheckedElementsProperty;
+import org.fdesigner.ui.jface.databinding.internal.databinding.viewers.ViewerInputProperty;
+import org.fdesigner.ui.jface.databinding.viewers.IViewerListProperty;
+import org.fdesigner.ui.jface.databinding.viewers.IViewerSetProperty;
+import org.fdesigner.ui.jface.databinding.viewers.IViewerValueProperty;
+import org.fdesigner.ui.jface.viewers.ICheckable;
+import org.fdesigner.ui.jface.viewers.ISelectionProvider;
+import org.fdesigner.ui.jface.viewers.StructuredViewer;
+import org.fdesigner.ui.jface.viewers.Viewer;
+import org.fdesigner.ui.jface.viewers.ViewerFilter;
 
 /**
  * A factory for creating properties of JFace {@link Viewer viewers}.

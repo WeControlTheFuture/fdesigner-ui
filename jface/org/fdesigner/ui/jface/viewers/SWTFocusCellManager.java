@@ -14,7 +14,7 @@
  *                                               - bug fix for bug 187189, 182800, 215069
  *******************************************************************************/
 
-package org.eclipse.jface.viewers;
+package org.fdesigner.ui.jface.viewers;
 
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.accessibility.ACC;
@@ -24,8 +24,7 @@ import org.eclipse.swt.events.DisposeListener;
 import org.eclipse.swt.graphics.Point;
 import org.eclipse.swt.widgets.Event;
 import org.eclipse.swt.widgets.Listener;
-
-import org.eclipse.core.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.Assert;
 
 /**
  * This class is responsible to provide cell management base features for the

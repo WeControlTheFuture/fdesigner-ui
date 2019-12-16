@@ -14,11 +14,11 @@
  *     does not fire property change all the time
  *     Jan-Ove Weichel <janove.weichel@vogella.com> - Bug 475879
  *******************************************************************************/
-package org.eclipse.jface.preference;
+package org.fdesigner.ui.jface.preference;
 
-import org.eclipse.jface.resource.JFaceResources;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Text;
+import org.fdesigner.ui.jface.resource.JFaceResources;
 
 /**
  * A field editor for an integer type preference.

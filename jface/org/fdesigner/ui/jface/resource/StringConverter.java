@@ -12,18 +12,18 @@
  *     IBM Corporation - initial API and implementation
  *     Christian Georgi <christian.georgi@sap.com> - [Themes] Invalid RGB color value in themes extension makes workbench unusable - http://bugs.eclipse.org/419435
  *******************************************************************************/
-package org.eclipse.jface.resource;
+package org.fdesigner.ui.jface.resource;
 
 import java.util.ArrayList;
 import java.util.NoSuchElementException;
 import java.util.StringTokenizer;
 
-import org.eclipse.core.runtime.Assert;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.FontData;
 import org.eclipse.swt.graphics.Point;
 import org.eclipse.swt.graphics.RGB;
 import org.eclipse.swt.graphics.Rectangle;
+import org.fdesigner.runtime.common.runtime.Assert;
 
 /**
  * Helper class for converting various data types to and from

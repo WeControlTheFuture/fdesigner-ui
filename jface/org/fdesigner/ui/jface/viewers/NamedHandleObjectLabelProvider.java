@@ -12,10 +12,10 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.jface.viewers;
+package org.fdesigner.ui.jface.viewers;
 
-import org.eclipse.core.commands.common.NamedHandleObject;
-import org.eclipse.core.commands.common.NotDefinedException;
+import org.fdesigner.commands.common.NamedHandleObject;
+import org.fdesigner.commands.common.NotDefinedException;
 
 /**
  * A label provider for instances of <code>NamedHandlerObject</code>, which

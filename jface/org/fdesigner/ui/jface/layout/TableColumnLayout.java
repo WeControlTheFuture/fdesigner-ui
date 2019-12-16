@@ -14,16 +14,15 @@
  *     IBM Corporation - API refactoring and general maintenance
  *******************************************************************************/
 
-package org.eclipse.jface.layout;
+package org.fdesigner.ui.jface.layout;
 
-import org.eclipse.jface.viewers.ColumnLayoutData;
-import org.eclipse.jface.viewers.ColumnPixelData;
 import org.eclipse.swt.widgets.Composite;
-import org.eclipse.swt.widgets.Layout;
 import org.eclipse.swt.widgets.Scrollable;
 import org.eclipse.swt.widgets.Table;
 import org.eclipse.swt.widgets.TableColumn;
 import org.eclipse.swt.widgets.Widget;
+import org.fdesigner.ui.jface.viewers.ColumnLayoutData;
+import org.fdesigner.ui.jface.viewers.ColumnPixelData;
 
 /**
  * The TableColumnLayout is the {@link Layout} used to maintain

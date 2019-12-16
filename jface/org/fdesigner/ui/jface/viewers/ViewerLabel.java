@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *     Tom Schindl <tom.shindl@bestsolution.at> - tooltip support
  *******************************************************************************/
-package org.eclipse.jface.viewers;
+package org.fdesigner.ui.jface.viewers;
 
 import org.eclipse.swt.graphics.Color;
 import org.eclipse.swt.graphics.Font;

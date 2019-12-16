@@ -16,11 +16,11 @@
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 475689
  *******************************************************************************/
 
-package org.eclipse.jface.viewers;
+package org.fdesigner.ui.jface.viewers;
 
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.jface.util.Policy;
 import org.eclipse.swt.widgets.Widget;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.ui.jface.util.Policy;
 
 /**
  * Instances of this class represent a column of a {@link ColumnViewer}. Label

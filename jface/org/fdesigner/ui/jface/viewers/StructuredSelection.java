@@ -12,15 +12,15 @@
  *     IBM Corporation - initial API and implementation
  *     Mikael Barbero (Eclipse Foundation) - Bug 254570
  *******************************************************************************/
-package org.eclipse.jface.viewers;
+package org.fdesigner.ui.jface.viewers;
 
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Objects;
 
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.jface.resource.JFaceResources;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.ui.jface.resource.JFaceResources;
 
 /**
  * A concrete implementation of the <code>IStructuredSelection</code> interface,

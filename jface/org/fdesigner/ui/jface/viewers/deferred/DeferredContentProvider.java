@@ -11,19 +11,19 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.jface.viewers.deferred;
+package org.fdesigner.ui.jface.viewers.deferred;
 
 import java.util.Comparator;
 
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.jface.viewers.AcceptAllFilter;
-import org.eclipse.jface.viewers.IFilter;
-import org.eclipse.jface.viewers.ILazyContentProvider;
-import org.eclipse.jface.viewers.TableViewer;
-import org.eclipse.jface.viewers.Viewer;
 import org.eclipse.swt.graphics.Rectangle;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Table;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.ui.jface.viewers.AcceptAllFilter;
+import org.fdesigner.ui.jface.viewers.IFilter;
+import org.fdesigner.ui.jface.viewers.ILazyContentProvider;
+import org.fdesigner.ui.jface.viewers.TableViewer;
+import org.fdesigner.ui.jface.viewers.Viewer;
 
 /**
  * Content provider that performs sorting and filtering in a background thread.

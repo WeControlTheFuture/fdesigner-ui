@@ -16,9 +16,8 @@
  *     Andrew Obuchowicz <aobuchow@redhat.com> - Bug 549194: Add TABBING_CYCLE_IN_VIEWER
  *******************************************************************************/
 
-package org.eclipse.jface.viewers;
+package org.fdesigner.ui.jface.viewers;
 
-import org.eclipse.core.runtime.ListenerList;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.DisposeListener;
 import org.eclipse.swt.events.FocusAdapter;
@@ -31,6 +30,7 @@ import org.eclipse.swt.events.TraverseEvent;
 import org.eclipse.swt.events.TraverseListener;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Item;
+import org.fdesigner.runtime.common.runtime.ListenerList;
 
 /**
  * This is the base for all editor implementations of Viewers. ColumnViewer

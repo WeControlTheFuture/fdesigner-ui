@@ -13,19 +13,19 @@
  *     Matthew Hall - bug 283204
  ******************************************************************************/
 
-package org.eclipse.jface.internal.databinding.viewers;
+package org.fdesigner.ui.jface.databinding.internal.databinding.viewers;
 
 import java.util.Set;
 
-import org.eclipse.core.databinding.observable.Realm;
-import org.eclipse.core.databinding.observable.set.IObservableSet;
-import org.eclipse.core.databinding.observable.set.SetDiff;
-import org.eclipse.core.databinding.property.set.SetProperty;
-import org.eclipse.jface.databinding.swt.DisplayRealm;
-import org.eclipse.jface.viewers.ICheckable;
-import org.eclipse.jface.viewers.IElementComparer;
-import org.eclipse.jface.viewers.StructuredViewer;
-import org.eclipse.jface.viewers.Viewer;
+import org.fdesigner.databinding.observable.Realm;
+import org.fdesigner.databinding.observable.set.IObservableSet;
+import org.fdesigner.databinding.observable.set.SetDiff;
+import org.fdesigner.databinding.property.set.SetProperty;
+import org.fdesigner.ui.jface.databinding.swt.DisplayRealm;
+import org.fdesigner.ui.jface.viewers.ICheckable;
+import org.fdesigner.ui.jface.viewers.IElementComparer;
+import org.fdesigner.ui.jface.viewers.StructuredViewer;
+import org.fdesigner.ui.jface.viewers.Viewer;
 
 /**
  * @param <S> type of the source object

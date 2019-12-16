@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.jface.window;
+package org.fdesigner.ui.jface.window;
 
 import org.eclipse.swt.widgets.Shell;
 

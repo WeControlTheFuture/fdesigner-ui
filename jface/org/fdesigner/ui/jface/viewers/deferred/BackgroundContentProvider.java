@@ -11,17 +11,17 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.jface.viewers.deferred;
+package org.fdesigner.ui.jface.viewers.deferred;
 
 import java.util.Comparator;
 
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.NullProgressMonitor;
-import org.eclipse.jface.resource.JFaceResources;
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.jface.viewers.AcceptAllFilter;
-import org.eclipse.jface.viewers.IFilter;
-import org.eclipse.jface.viewers.deferred.ConcurrentTableUpdator.Range;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.NullProgressMonitor;
+import org.fdesigner.ui.jface.resource.JFaceResources;
+import org.fdesigner.ui.jface.viewers.AcceptAllFilter;
+import org.fdesigner.ui.jface.viewers.IFilter;
+import org.fdesigner.ui.jface.viewers.deferred.ConcurrentTableUpdator.Range;
 
 /**
  * Contains the algorithm for performing background sorting and filtering in a virtual

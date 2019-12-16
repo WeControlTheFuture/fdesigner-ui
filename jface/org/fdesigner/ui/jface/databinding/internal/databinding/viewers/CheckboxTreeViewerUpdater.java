@@ -12,9 +12,9 @@
  *     Matthew Hall - initial API and implementation (bug 226292)
  ******************************************************************************/
 
-package org.eclipse.jface.internal.databinding.viewers;
+package org.fdesigner.ui.jface.databinding.internal.databinding.viewers;
 
-import org.eclipse.jface.viewers.CheckboxTreeViewer;
+import org.fdesigner.ui.jface.viewers.CheckboxTreeViewer;
 
 /**
  * @since 3.3

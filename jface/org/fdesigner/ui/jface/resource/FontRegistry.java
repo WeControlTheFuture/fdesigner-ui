@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *     Red Hat Inc. - bug 544026
  *******************************************************************************/
-package org.eclipse.jface.resource;
+package org.fdesigner.ui.jface.resource;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -26,14 +26,14 @@ import java.util.MissingResourceException;
 import java.util.ResourceBundle;
 import java.util.Set;
 
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.jface.util.Policy;
-import org.eclipse.jface.util.Util;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.SWTException;
 import org.eclipse.swt.graphics.Font;
 import org.eclipse.swt.graphics.FontData;
 import org.eclipse.swt.widgets.Display;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.ui.jface.util.Policy;
+import org.fdesigner.ui.jface.util.Util;
 
 /**
  * A font registry maintains a mapping between symbolic font names

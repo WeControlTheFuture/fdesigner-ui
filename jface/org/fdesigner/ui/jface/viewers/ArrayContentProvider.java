@@ -13,7 +13,7 @@
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 487940
  *******************************************************************************/
 
-package org.eclipse.jface.viewers;
+package org.fdesigner.ui.jface.viewers;
 
 import java.util.Collection;
 

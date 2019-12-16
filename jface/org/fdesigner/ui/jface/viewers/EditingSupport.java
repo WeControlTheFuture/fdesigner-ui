@@ -14,9 +14,9 @@
  *     											   fix in bug 151295,167325,201905
  *******************************************************************************/
 
-package org.eclipse.jface.viewers;
+package org.fdesigner.ui.jface.viewers;
 
-import org.eclipse.core.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.Assert;
 
 /**
  * EditingSupport is the abstract superclass of the support for cell editing.

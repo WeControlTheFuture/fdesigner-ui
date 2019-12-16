@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *     Matthew Hall - bug 265062
  ******************************************************************************/
-package org.eclipse.jface.databinding.viewers;
+package org.fdesigner.ui.jface.databinding.viewers;
 
 /**
  * Instances of this class can be used to improve accuracy and performance of an

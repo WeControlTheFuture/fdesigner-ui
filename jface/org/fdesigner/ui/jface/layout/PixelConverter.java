@@ -11,14 +11,13 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.jface.layout;
+package org.fdesigner.ui.jface.layout;
 
 import org.eclipse.swt.graphics.Font;
 import org.eclipse.swt.graphics.FontMetrics;
 import org.eclipse.swt.graphics.GC;
 import org.eclipse.swt.widgets.Control;
-
-import org.eclipse.jface.dialogs.Dialog;
+import org.fdesigner.ui.jface.dialogs.Dialog;
 
 /**
  * PixelConverter performs various conversions from device-independent units
