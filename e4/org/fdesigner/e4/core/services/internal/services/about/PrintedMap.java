@@ -11,7 +11,7 @@
  *  Contributors:
  *      Alexander Fedorov <alexander.fedorov@arsysop.ru> - initial API and implementation
  *******************************************************************************/
-package org.eclipse.e4.core.internal.services.about;
+package org.fdesigner.e4.core.services.internal.services.about;
 
 import java.io.PrintWriter;
 import java.util.Map.Entry;
@@ -19,7 +19,8 @@ import java.util.TreeMap;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
-import org.eclipse.e4.core.services.about.ISystemInformation;
+
+import org.fdesigner.e4.core.services.about.ISystemInformation;
 
 abstract class PrintedMap implements ISystemInformation {
 

@@ -13,7 +13,7 @@
  *     Dirk Fauth <dirk.fauth@googlemail.com> - modifications to instance creation
  *     Dirk Fauth <dirk.fauth@googlemail.com> - Bug 460308
  ******************************************************************************/
-package org.eclipse.e4.core.internal.services;
+package org.fdesigner.e4.core.services.internal.services;
 
 import java.lang.ref.Reference;
 import java.lang.ref.SoftReference;
@@ -29,18 +29,20 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.ResourceBundle;
+
 import javax.annotation.PostConstruct;
-import org.eclipse.e4.core.services.nls.IMessageFactoryService;
-import org.eclipse.e4.core.services.nls.Message;
-import org.eclipse.e4.core.services.nls.Message.ReferenceType;
-import org.eclipse.e4.core.services.translation.ResourceBundleProvider;
-import org.osgi.framework.Bundle;
-import org.osgi.framework.FrameworkUtil;
-import org.osgi.service.component.annotations.Component;
-import org.osgi.service.component.annotations.ReferenceCardinality;
-import org.osgi.service.component.annotations.ReferencePolicy;
-import org.osgi.service.log.Logger;
-import org.osgi.service.log.LoggerFactory;
+
+import org.fdesigner.e4.core.services.nls.IMessageFactoryService;
+import org.fdesigner.e4.core.services.nls.Message;
+import org.fdesigner.e4.core.services.nls.Message.ReferenceType;
+import org.fdesigner.e4.core.services.translation.ResourceBundleProvider;
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.framework.framework.FrameworkUtil;
+import org.fdesigner.services.component.annotations.Component;
+import org.fdesigner.services.component.annotations.ReferenceCardinality;
+import org.fdesigner.services.component.annotations.ReferencePolicy;
+import org.fdesigner.services.log.Logger;
+import org.fdesigner.services.log.LoggerFactory;
 
 @Component
 public class MessageFactoryServiceImpl implements IMessageFactoryService {
@@ -271,7 +273,7 @@ public class MessageFactoryServiceImpl implements IMessageFactoryService {
 		}
 	}
 
-	@org.osgi.service.component.annotations.Reference(cardinality = ReferenceCardinality.OPTIONAL, policy = ReferencePolicy.DYNAMIC)
+	@org.fdesigner.services.component.annotations.Reference(cardinality = ReferenceCardinality.OPTIONAL, policy = ReferencePolicy.DYNAMIC)
 	void setLogger(LoggerFactory factory) {
 		this.factory = factory;
 		this.logger = factory.getLogger(getClass());

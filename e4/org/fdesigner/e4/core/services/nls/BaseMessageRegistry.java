@@ -11,7 +11,7 @@
  * Contributors:
  *    Dirk Fauth <dirk.fauth@googlemail.com> - initial API and implementation
  *******************************************************************************/
-package org.eclipse.e4.core.services.nls;
+package org.fdesigner.e4.core.services.nls;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
@@ -21,11 +21,13 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
+
 import javax.annotation.PreDestroy;
 import javax.inject.Inject;
-import org.eclipse.e4.core.di.annotations.Optional;
-import org.osgi.service.log.Logger;
-import org.osgi.service.log.LoggerFactory;
+
+import org.fdesigner.e4.core.di.annotations.Optional;
+import org.fdesigner.services.log.Logger;
+import org.fdesigner.services.log.LoggerFactory;
 
 /**
  * Using this MessageRegistry allows to register controls for attributes in a

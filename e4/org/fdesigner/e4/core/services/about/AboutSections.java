@@ -11,7 +11,7 @@
  *  Contributors:
  *      Alexander Fedorov <alexander.fedorov@arsysop.ru> - initial API and implementation
  *******************************************************************************/
-package org.eclipse.e4.core.services.about;
+package org.fdesigner.e4.core.services.about;
 
 /**
  * This class consists exclusively of static methods and constants that operate

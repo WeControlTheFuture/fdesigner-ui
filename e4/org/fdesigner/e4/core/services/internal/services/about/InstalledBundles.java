@@ -11,7 +11,7 @@
  *  Contributors:
  *      Alexander Fedorov <alexander.fedorov@arsysop.ru> - initial API and implementation
  *******************************************************************************/
-package org.eclipse.e4.core.internal.services.about;
+package org.fdesigner.e4.core.services.internal.services.about;
 
 import java.io.PrintWriter;
 import java.text.Collator;
@@ -20,12 +20,13 @@ import java.util.Comparator;
 import java.util.Locale;
 import java.util.Map;
 import java.util.stream.Collectors;
-import org.eclipse.e4.core.services.about.AboutSections;
-import org.eclipse.e4.core.services.about.ISystemInformation;
-import org.osgi.framework.Bundle;
-import org.osgi.framework.Constants;
-import org.osgi.framework.FrameworkUtil;
-import org.osgi.service.component.annotations.Component;
+
+import org.fdesigner.e4.core.services.about.AboutSections;
+import org.fdesigner.e4.core.services.about.ISystemInformation;
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.framework.framework.Constants;
+import org.fdesigner.framework.framework.FrameworkUtil;
+import org.fdesigner.services.component.annotations.Component;
 
 @Component(service = { ISystemInformation.class }, property = { AboutSections.SECTION + '=' + AboutSections.SECTION_INSTALLED_BUNDLES })
 public class InstalledBundles implements ISystemInformation {

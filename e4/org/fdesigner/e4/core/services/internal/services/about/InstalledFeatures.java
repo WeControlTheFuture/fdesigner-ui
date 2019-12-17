@@ -11,7 +11,7 @@
  *  Contributors:
  *      Alexander Fedorov <alexander.fedorov@arsysop.ru> - initial API and implementation
  *******************************************************************************/
-package org.eclipse.e4.core.internal.services.about;
+package org.fdesigner.e4.core.services.internal.services.about;
 
 import java.io.PrintWriter;
 import java.text.Collator;
@@ -21,13 +21,14 @@ import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Locale;
-import org.eclipse.core.runtime.IBundleGroup;
-import org.eclipse.core.runtime.IBundleGroupProvider;
-import org.eclipse.e4.core.services.about.AboutSections;
-import org.eclipse.e4.core.services.about.ISystemInformation;
-import org.osgi.service.component.annotations.Component;
-import org.osgi.service.component.annotations.Reference;
-import org.osgi.service.component.annotations.ReferenceCardinality;
+
+import org.fdesigner.e4.core.services.about.AboutSections;
+import org.fdesigner.e4.core.services.about.ISystemInformation;
+import org.fdesigner.runtime.common.runtime.IBundleGroup;
+import org.fdesigner.runtime.common.runtime.IBundleGroupProvider;
+import org.fdesigner.services.component.annotations.Component;
+import org.fdesigner.services.component.annotations.Reference;
+import org.fdesigner.services.component.annotations.ReferenceCardinality;
 
 @Component(service = { ISystemInformation.class }, property = { AboutSections.SECTION + '=' + AboutSections.SECTION_INSTALLED_FEATURES })
 public class InstalledFeatures implements ISystemInformation {

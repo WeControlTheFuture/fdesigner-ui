@@ -11,7 +11,7 @@
  * Contributors:
  *     Tom Schindl <tom.schindl@bestsolution.at> - initial API and implementation
  *******************************************************************************/
-package org.eclipse.e4.core.services.nls;
+package org.fdesigner.e4.core.services.nls;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;

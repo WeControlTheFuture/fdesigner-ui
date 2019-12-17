@@ -11,9 +11,9 @@
  *  Contributors:
  *      Alexander Fedorov <alexander.fedorov@arsysop.ru> - initial API and implementation
  *******************************************************************************/
-package org.eclipse.e4.core.internal.services.about;
+package org.fdesigner.e4.core.services.internal.services.about;
 
-import org.eclipse.osgi.util.NLS;
+import org.fdesigner.supplement.util.NLS;
 
 public class AboutMessages extends NLS {
 

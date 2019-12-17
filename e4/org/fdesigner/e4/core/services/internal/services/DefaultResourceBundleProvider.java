@@ -11,14 +11,15 @@
  * Contributors:
  *     Dirk Fauth <dirk.fauth@googlemail.com> - initial API and implementation
  ******************************************************************************/
-package org.eclipse.e4.core.internal.services;
+package org.fdesigner.e4.core.services.internal.services;
 
 import java.util.ResourceBundle;
-import org.eclipse.e4.core.services.translation.ResourceBundleProvider;
-import org.eclipse.osgi.service.localization.BundleLocalization;
-import org.osgi.framework.Bundle;
-import org.osgi.service.component.annotations.Component;
-import org.osgi.service.component.annotations.Reference;
+
+import org.fdesigner.e4.core.services.translation.ResourceBundleProvider;
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.services.component.annotations.Component;
+import org.fdesigner.services.component.annotations.Reference;
+import org.fdesigner.supplement.service.localization.BundleLocalization;
 
 /**
  * Default implementation of {@link ResourceBundleProvider} that simply delegates to the

@@ -12,7 +12,7 @@
  *     Tom Schindl <tom.schindl@bestsolution.at> - initial API and implementation
  *     Dirk Fauth <dirk.fauth@googlemail.com> - modifications to support locale changes at runtime
  ******************************************************************************/
-package org.eclipse.e4.core.internal.services;
+package org.fdesigner.e4.core.services.internal.services;
 
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
@@ -25,21 +25,23 @@ import java.util.ResourceBundle;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Predicate;
+
 import javax.inject.Inject;
 import javax.inject.Named;
-import org.eclipse.e4.core.contexts.IEclipseContext;
-import org.eclipse.e4.core.di.annotations.Optional;
-import org.eclipse.e4.core.di.suppliers.ExtendedObjectSupplier;
-import org.eclipse.e4.core.di.suppliers.IObjectDescriptor;
-import org.eclipse.e4.core.di.suppliers.IRequestor;
-import org.eclipse.e4.core.services.nls.IMessageFactoryService;
-import org.eclipse.e4.core.services.nls.Message;
-import org.eclipse.e4.core.services.translation.ResourceBundleProvider;
-import org.eclipse.e4.core.services.translation.TranslationService;
-import org.eclipse.osgi.service.localization.BundleLocalization;
-import org.osgi.service.component.annotations.Component;
-import org.osgi.service.event.Event;
-import org.osgi.service.event.EventHandler;
+
+import org.fdesigner.e4.core.contexts.IEclipseContext;
+import org.fdesigner.e4.core.di.annotations.Optional;
+import org.fdesigner.e4.core.di.suppliers.ExtendedObjectSupplier;
+import org.fdesigner.e4.core.di.suppliers.IObjectDescriptor;
+import org.fdesigner.e4.core.di.suppliers.IRequestor;
+import org.fdesigner.e4.core.services.nls.IMessageFactoryService;
+import org.fdesigner.e4.core.services.nls.Message;
+import org.fdesigner.e4.core.services.translation.ResourceBundleProvider;
+import org.fdesigner.e4.core.services.translation.TranslationService;
+import org.fdesigner.services.component.annotations.Component;
+import org.fdesigner.services.event.Event;
+import org.fdesigner.services.event.EventHandler;
+import org.fdesigner.supplement.service.localization.BundleLocalization;
 
 @Component(service = { ExtendedObjectSupplier.class, EventHandler.class }, property = {
 		"dependency.injection.annotation=org.eclipse.e4.core.services.nls.Translation",

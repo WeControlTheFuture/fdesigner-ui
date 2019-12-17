@@ -11,10 +11,10 @@
  *  Contributors:
  *      IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.e4.core.services.contributions;
+package org.fdesigner.e4.core.services.contributions;
 
-import org.eclipse.e4.core.contexts.IEclipseContext;
-import org.osgi.framework.Bundle;
+import org.fdesigner.e4.core.contexts.IEclipseContext;
+import org.fdesigner.framework.framework.Bundle;
 
 // TBD only used by Languages block, move it there?
 public interface IContributionFactorySpi {

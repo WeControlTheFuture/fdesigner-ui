@@ -14,7 +14,7 @@
  *     Lars Vogel <Lars.Vogel@gmail.com> - Bug 440444, 440445
  *     Markus Keller <markus_keller@ch.ibm.com> - Bug 440445
  *******************************************************************************/
-package org.eclipse.e4.core.services.nls;
+package org.fdesigner.e4.core.services.nls;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

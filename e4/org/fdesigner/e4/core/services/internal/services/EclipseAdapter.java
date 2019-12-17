@@ -12,10 +12,10 @@
  *     IBM Corporation - initial API and implementation
  *     Simon Scholz <simon.scholz@vogella.com> - Bug 460405, 480098
  ******************************************************************************/
-package org.eclipse.e4.core.internal.services;
+package org.fdesigner.e4.core.services.internal.services;
 
-import org.eclipse.core.runtime.Adapters;
-import org.eclipse.e4.core.services.adapter.Adapter;
+import org.fdesigner.e4.core.services.adapter.Adapter;
+import org.fdesigner.runtime.common.runtime.Adapters;
 
 public class EclipseAdapter extends Adapter {
 

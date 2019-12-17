@@ -12,7 +12,7 @@
  *     Dirk Fauth <dirk.fauth@gmail.com> - initial API and implementation
  *     Ragnar Nevries <r.eclipse@nevri.es> - Bug 458798
  ******************************************************************************/
-package org.eclipse.e4.core.internal.services;
+package org.fdesigner.e4.core.services.internal.services;
 
 import java.util.MissingResourceException;
 import java.util.ResourceBundle;

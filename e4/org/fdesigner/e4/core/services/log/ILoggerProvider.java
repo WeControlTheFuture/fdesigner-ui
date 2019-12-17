@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.e4.core.services.log;
+package org.fdesigner.e4.core.services.log;
 
 public interface ILoggerProvider {
 	Logger getClassLogger(Class<?> clazz);

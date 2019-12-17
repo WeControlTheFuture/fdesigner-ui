@@ -11,11 +11,12 @@
  * Contributors:
  *     Dirk Fauth <dirk.fauth@gmail.com> - initial API and implementation
  ******************************************************************************/
-package org.eclipse.e4.core.services.translation;
+package org.fdesigner.e4.core.services.translation;
 
 import java.util.ResourceBundle;
-import org.eclipse.osgi.service.localization.BundleLocalization;
-import org.osgi.framework.Bundle;
+
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.supplement.service.localization.BundleLocalization;
 
 /**
  * The interface of the service that gets {@link ResourceBundle} objects from a given bundle with a

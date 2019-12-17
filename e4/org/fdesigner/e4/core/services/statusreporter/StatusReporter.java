@@ -11,10 +11,10 @@
  *  Contributors:
  *      IBM Corporation - initial API and implementation
  ******************************************************************************/
-package org.eclipse.e4.core.services.statusreporter;
+package org.fdesigner.e4.core.services.statusreporter;
 
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.e4.core.services.log.Logger;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.services.log.Logger;
 
 /**
  * Handling warnings or errors, with the intent of making the end user aware of these. Strings are

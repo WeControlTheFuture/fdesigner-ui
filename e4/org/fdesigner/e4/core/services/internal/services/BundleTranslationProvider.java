@@ -12,15 +12,17 @@
  *     IBM Corporation - initial API and implementation
  *     Dirk Fauth <dirk.fauth@googlemail.com> - Bug 428427
  ******************************************************************************/
-package org.eclipse.e4.core.internal.services;
+package org.fdesigner.e4.core.services.internal.services;
 
 import java.util.ResourceBundle;
+
 import javax.inject.Inject;
-import org.eclipse.e4.core.di.annotations.Optional;
-import org.eclipse.e4.core.services.translation.ResourceBundleProvider;
-import org.eclipse.e4.core.services.translation.TranslationService;
-import org.osgi.service.log.Logger;
-import org.osgi.service.log.LoggerFactory;
+
+import org.fdesigner.e4.core.di.annotations.Optional;
+import org.fdesigner.e4.core.services.translation.ResourceBundleProvider;
+import org.fdesigner.e4.core.services.translation.TranslationService;
+import org.fdesigner.services.log.Logger;
+import org.fdesigner.services.log.LoggerFactory;
 
 public class BundleTranslationProvider extends TranslationService {
 

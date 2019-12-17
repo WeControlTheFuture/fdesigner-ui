@@ -11,7 +11,7 @@
  * Contributors:
  *     Dirk Fauth <dirk.fauth@gmail.com> - initial API and implementation
  ******************************************************************************/
-package org.eclipse.e4.core.internal.services;
+package org.fdesigner.e4.core.services.internal.services;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -29,16 +29,17 @@ import java.util.MissingResourceException;
 import java.util.PropertyResourceBundle;
 import java.util.ResourceBundle;
 import java.util.ResourceBundle.Control;
-import org.eclipse.e4.core.services.translation.ResourceBundleProvider;
-import org.osgi.framework.Bundle;
-import org.osgi.framework.BundleContext;
-import org.osgi.framework.FrameworkUtil;
-import org.osgi.framework.ServiceReference;
-import org.osgi.service.log.LogService;
-import org.osgi.service.log.Logger;
-import org.osgi.service.log.LoggerFactory;
-import org.osgi.util.tracker.ServiceTracker;
-import org.osgi.util.tracker.ServiceTrackerCustomizer;
+
+import org.fdesigner.e4.core.services.translation.ResourceBundleProvider;
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.framework.framework.BundleContext;
+import org.fdesigner.framework.framework.FrameworkUtil;
+import org.fdesigner.framework.framework.ServiceReference;
+import org.fdesigner.framework.util.tracker.ServiceTracker;
+import org.fdesigner.framework.util.tracker.ServiceTrackerCustomizer;
+import org.fdesigner.services.log.LogService;
+import org.fdesigner.services.log.Logger;
+import org.fdesigner.services.log.LoggerFactory;
 
 /**
  * Helper class for retrieving {@link ResourceBundle}s out of OSGi {@link Bundle}s.

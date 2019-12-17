@@ -11,12 +11,13 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.e4.core.services.events;
+package org.fdesigner.e4.core.services.events;
 
 import java.util.Dictionary;
 import java.util.Map;
-import org.eclipse.e4.core.contexts.IEclipseContext;
-import org.osgi.service.event.EventHandler;
+
+import org.fdesigner.e4.core.contexts.IEclipseContext;
+import org.fdesigner.services.event.EventHandler;
 
 /**
  * To obtain an instance of the event broker service from the

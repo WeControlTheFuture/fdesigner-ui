@@ -11,11 +11,11 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
-package org.eclipse.e4.core.services.translation;
+package org.fdesigner.e4.core.services.translation;
 
-import org.eclipse.e4.core.contexts.ContextInjectionFactory;
-import org.eclipse.e4.core.contexts.IEclipseContext;
-import org.eclipse.e4.core.internal.services.BundleTranslationProvider;
+import org.fdesigner.e4.core.contexts.ContextInjectionFactory;
+import org.fdesigner.e4.core.contexts.IEclipseContext;
+import org.fdesigner.e4.core.services.internal.services.BundleTranslationProvider;
 
 /**
  * Factory for translation providers.

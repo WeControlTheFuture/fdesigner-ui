@@ -11,9 +11,9 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.e4.core.services.log;
+package org.fdesigner.e4.core.services.log;
 
-import org.eclipse.e4.core.services.statusreporter.StatusReporter;
+import org.fdesigner.e4.core.services.statusreporter.StatusReporter;
 
 /**
  * Logging warnings, errors, information, as well as capturing debug and trace information.

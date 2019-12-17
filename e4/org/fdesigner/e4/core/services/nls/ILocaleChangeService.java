@@ -11,10 +11,11 @@
  * Contributors:
  *    Dirk Fauth <dirk.fauth@googlemail.com> - initial API and implementation
  *******************************************************************************/
-package org.eclipse.e4.core.services.nls;
+package org.fdesigner.e4.core.services.nls;
 
 import java.util.Locale;
-import org.eclipse.e4.core.contexts.ContextFunction;
+
+import org.fdesigner.e4.core.contexts.ContextFunction;
 
 /**
  * Service that is used to change the {@link Locale} at runtime.

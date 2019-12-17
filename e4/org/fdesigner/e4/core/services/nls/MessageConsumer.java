@@ -11,7 +11,7 @@
  * Contributors:
  *    Dirk Fauth <dirk.fauth@googlemail.com> - initial API and implementation
  *******************************************************************************/
-package org.eclipse.e4.core.services.nls;
+package org.fdesigner.e4.core.services.nls;
 
 /**
  * Consumer interface that is used to bind a method of an object (e.g. a SWT

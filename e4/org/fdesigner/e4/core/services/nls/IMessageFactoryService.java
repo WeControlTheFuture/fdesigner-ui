@@ -11,11 +11,12 @@
  * Contributors:
  *     Tom Schindl <tom.schindl@bestsolution.at> - initial API and implementation
  *******************************************************************************/
-package org.eclipse.e4.core.services.nls;
+package org.fdesigner.e4.core.services.nls;
 
 import java.util.Locale;
 import java.util.ResourceBundle;
-import org.eclipse.e4.core.services.translation.ResourceBundleProvider;
+
+import org.fdesigner.e4.core.services.translation.ResourceBundleProvider;
 
 /**
  * Service that is responsible for creating and managing message class instances.

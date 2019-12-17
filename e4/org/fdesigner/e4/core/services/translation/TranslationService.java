@@ -13,7 +13,7 @@
  *     Dirk Fauth <dirk.fauth@googlemail.com> - Bug 428427
  *     Lars Vogel <Lars.Vogel@vogell.com> - Bug 445444
  ******************************************************************************/
-package org.eclipse.e4.core.services.translation;
+package org.fdesigner.e4.core.services.translation;
 
 import java.util.Locale;
 import java.util.MissingResourceException;
