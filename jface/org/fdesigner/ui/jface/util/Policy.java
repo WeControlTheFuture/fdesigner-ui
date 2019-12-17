@@ -198,7 +198,7 @@ public class Policy {
 	 * @since 3.2
 	 */
 	public static void setComparator(Comparator<Object> comparator) {
-		org.eclipse.core.runtime.Assert.isTrue(viewerComparator == null);
+		Assert.isTrue(viewerComparator == null);
 		viewerComparator = comparator;
 	}
 

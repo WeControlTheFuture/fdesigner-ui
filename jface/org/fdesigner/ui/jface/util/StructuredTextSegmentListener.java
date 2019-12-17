@@ -14,15 +14,15 @@
 
 package org.fdesigner.ui.jface.util;
 
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.equinox.bidi.StructuredTextTypeHandlerFactory;
-import org.eclipse.equinox.bidi.advanced.IStructuredTextExpert;
-import org.eclipse.equinox.bidi.advanced.StructuredTextEnvironment;
-import org.eclipse.equinox.bidi.advanced.StructuredTextExpertFactory;
-import org.eclipse.equinox.bidi.custom.StructuredTextTypeHandler;
 import org.eclipse.swt.events.SegmentEvent;
 import org.eclipse.swt.events.SegmentListener;
+import org.fdesigner.bidi.StructuredTextTypeHandlerFactory;
+import org.fdesigner.bidi.advanced.IStructuredTextExpert;
+import org.fdesigner.bidi.advanced.StructuredTextEnvironment;
+import org.fdesigner.bidi.advanced.StructuredTextExpertFactory;
+import org.fdesigner.bidi.custom.StructuredTextTypeHandler;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
 
 /**
  * Segment listener that implements bidi-structured text reordering.

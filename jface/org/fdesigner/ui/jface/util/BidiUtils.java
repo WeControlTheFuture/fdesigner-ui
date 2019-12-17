@@ -17,8 +17,6 @@ package org.fdesigner.ui.jface.util;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.eclipse.equinox.bidi.StructuredTextTypeHandlerFactory;
-import org.eclipse.jface.internal.InternalPolicy;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.custom.StyledText;
 import org.eclipse.swt.events.SegmentListener;
@@ -26,6 +24,8 @@ import org.eclipse.swt.widgets.Combo;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Text;
+import org.fdesigner.bidi.StructuredTextTypeHandlerFactory;
+import org.fdesigner.ui.jface.internal.InternalPolicy;
 
 /**
  * This class provides API to handle Base Text Direction (BTD) and
