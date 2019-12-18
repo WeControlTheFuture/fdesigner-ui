@@ -11,17 +11,17 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.about;
+package org.fdesigner.workbench.internal.about;
 
-import org.eclipse.core.runtime.Assert;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.custom.CTabFolder;
 import org.eclipse.swt.custom.CTabItem;
 import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.about.InstallationPage;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.about.InstallationPage;
 
 /**
  * Abstract superclass of the individual about dialogs that appear outside of

@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 440810, 472654
  *******************************************************************************/
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -22,20 +22,21 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
-import org.eclipse.core.commands.common.NotDefinedException;
-import org.eclipse.core.commands.contexts.Context;
-import org.eclipse.e4.ui.services.EContextService;
-import org.eclipse.jface.action.IAction;
-import org.eclipse.jface.commands.ActionHandler;
-import org.eclipse.ui.IKeyBindingService;
-import org.eclipse.ui.INestableKeyBindingService;
-import org.eclipse.ui.IWorkbenchPartSite;
-import org.eclipse.ui.IWorkbenchSite;
-import org.eclipse.ui.LegacyHandlerSubmissionExpression;
-import org.eclipse.ui.handlers.IHandlerActivation;
-import org.eclipse.ui.handlers.IHandlerService;
-import org.eclipse.ui.internal.actions.CommandAction;
-import org.eclipse.ui.internal.handlers.CommandLegacyActionWrapper;
+
+import org.fdesigner.commands.common.NotDefinedException;
+import org.fdesigner.commands.contexts.Context;
+import org.fdesigner.e4.ui.services.EContextService;
+import org.fdesigner.ui.jface.action.IAction;
+import org.fdesigner.ui.jface.commands.ActionHandler;
+import org.fdesigner.workbench.IKeyBindingService;
+import org.fdesigner.workbench.INestableKeyBindingService;
+import org.fdesigner.workbench.IWorkbenchPartSite;
+import org.fdesigner.workbench.IWorkbenchSite;
+import org.fdesigner.workbench.LegacyHandlerSubmissionExpression;
+import org.fdesigner.workbench.handlers.IHandlerActivation;
+import org.fdesigner.workbench.handlers.IHandlerService;
+import org.fdesigner.workbench.internal.actions.CommandAction;
+import org.fdesigner.workbench.internal.handlers.CommandLegacyActionWrapper;
 
 /**
  * This service provides a nestable implementation of a key binding service.

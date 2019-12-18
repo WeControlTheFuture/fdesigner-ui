@@ -11,17 +11,17 @@
  *  Contributors:
  *     Julian Honnen <julian.honnen@vector.com> - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.about;
+package org.fdesigner.workbench.internal.about;
 
-import org.eclipse.core.commands.AbstractHandler;
-import org.eclipse.core.commands.ExecutionEvent;
 import org.eclipse.swt.dnd.Clipboard;
 import org.eclipse.swt.dnd.TextTransfer;
 import org.eclipse.swt.dnd.Transfer;
 import org.eclipse.swt.widgets.Table;
 import org.eclipse.swt.widgets.TableItem;
-import org.eclipse.ui.ISources;
-import org.eclipse.ui.handlers.HandlerUtil;
+import org.fdesigner.commands.AbstractHandler;
+import org.fdesigner.commands.ExecutionEvent;
+import org.fdesigner.workbench.ISources;
+import org.fdesigner.workbench.handlers.HandlerUtil;
 
 class CopyTableSelectionHandler extends AbstractHandler {
 

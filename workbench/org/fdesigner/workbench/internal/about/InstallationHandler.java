@@ -11,13 +11,13 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.about;
+package org.fdesigner.workbench.internal.about;
 
-import org.eclipse.core.commands.AbstractHandler;
-import org.eclipse.core.commands.ExecutionEvent;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.handlers.HandlerUtil;
+import org.fdesigner.commands.AbstractHandler;
+import org.fdesigner.commands.ExecutionEvent;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.handlers.HandlerUtil;
 
 public class InstallationHandler extends AbstractHandler {
 

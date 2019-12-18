@@ -14,7 +14,7 @@
 
 package org.fdesigner.workbench.internal.services;
 
-import org.eclipse.e4.core.contexts.IEclipseContext;
+import org.fdesigner.e4.core.contexts.IEclipseContext;
 import org.fdesigner.workbench.services.AbstractServiceFactory;
 import org.fdesigner.workbench.services.IDisposable;
 import org.fdesigner.workbench.services.IServiceLocator;

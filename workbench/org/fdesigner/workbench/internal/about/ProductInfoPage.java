@@ -11,16 +11,8 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.about;
+package org.fdesigner.workbench.internal.about;
 
-import org.eclipse.core.expressions.EvaluationResult;
-import org.eclipse.core.expressions.Expression;
-import org.eclipse.core.expressions.ExpressionInfo;
-import org.eclipse.core.expressions.IEvaluationContext;
-import org.eclipse.core.runtime.IProduct;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.jface.resource.JFaceResources;
-import org.eclipse.jface.window.IShellProvider;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionListener;
 import org.eclipse.swt.layout.GridData;
@@ -30,15 +22,23 @@ import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Menu;
 import org.eclipse.swt.widgets.MenuItem;
 import org.eclipse.swt.widgets.Table;
-import org.eclipse.ui.ISharedImages;
-import org.eclipse.ui.ISources;
-import org.eclipse.ui.IWorkbenchCommandConstants;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.about.InstallationPage;
-import org.eclipse.ui.handlers.IHandlerActivation;
-import org.eclipse.ui.handlers.IHandlerService;
-import org.eclipse.ui.internal.WorkbenchMessages;
-import org.eclipse.ui.swt.IFocusService;
+import org.fdesigner.expressions.EvaluationResult;
+import org.fdesigner.expressions.Expression;
+import org.fdesigner.expressions.ExpressionInfo;
+import org.fdesigner.expressions.IEvaluationContext;
+import org.fdesigner.runtime.core.IProduct;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.ui.jface.resource.JFaceResources;
+import org.fdesigner.ui.jface.window.IShellProvider;
+import org.fdesigner.workbench.ISharedImages;
+import org.fdesigner.workbench.ISources;
+import org.fdesigner.workbench.IWorkbenchCommandConstants;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.about.InstallationPage;
+import org.fdesigner.workbench.handlers.IHandlerActivation;
+import org.fdesigner.workbench.handlers.IHandlerService;
+import org.fdesigner.workbench.internal.WorkbenchMessages;
+import org.fdesigner.workbench.swt.IFocusService;
 
 /**
  * Abstract superclass of about dialog installation pages. The ProductInfoPage
