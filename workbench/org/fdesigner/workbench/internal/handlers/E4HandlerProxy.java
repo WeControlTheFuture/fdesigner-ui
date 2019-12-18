@@ -12,39 +12,41 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal.handlers;
+package org.fdesigner.workbench.internal.handlers;
 
 import java.util.Collections;
 import java.util.Map;
+
 import javax.inject.Named;
-import org.eclipse.core.commands.Command;
-import org.eclipse.core.commands.ExecutionEvent;
-import org.eclipse.core.commands.ExecutionException;
-import org.eclipse.core.commands.HandlerEvent;
-import org.eclipse.core.commands.IHandler;
-import org.eclipse.core.commands.IHandler2;
-import org.eclipse.core.commands.IHandlerListener;
-import org.eclipse.core.commands.NotHandledException;
-import org.eclipse.core.expressions.IEvaluationContext;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.e4.core.commands.ExpressionContext;
-import org.eclipse.e4.core.commands.internal.HandlerServiceHandler;
-import org.eclipse.e4.core.commands.internal.HandlerServiceImpl;
-import org.eclipse.e4.core.commands.internal.SetEnabled;
-import org.eclipse.e4.core.contexts.IEclipseContext;
-import org.eclipse.e4.core.di.annotations.CanExecute;
-import org.eclipse.e4.core.di.annotations.Execute;
-import org.eclipse.e4.core.di.annotations.Optional;
-import org.eclipse.e4.ui.internal.workbench.Activator;
-import org.eclipse.e4.ui.internal.workbench.Policy;
-import org.eclipse.e4.ui.model.application.MApplication;
+
 import org.eclipse.swt.widgets.Event;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.commands.IElementUpdater;
-import org.eclipse.ui.internal.Workbench;
-import org.eclipse.ui.internal.WorkbenchPlugin;
-import org.eclipse.ui.menus.UIElement;
+import org.fdesigner.commands.Command;
+import org.fdesigner.commands.ExecutionEvent;
+import org.fdesigner.commands.ExecutionException;
+import org.fdesigner.commands.HandlerEvent;
+import org.fdesigner.commands.IHandler;
+import org.fdesigner.commands.IHandler2;
+import org.fdesigner.commands.IHandlerListener;
+import org.fdesigner.commands.NotHandledException;
+import org.fdesigner.e4.core.commands.ExpressionContext;
+import org.fdesigner.e4.core.commands.internal.HandlerServiceHandler;
+import org.fdesigner.e4.core.commands.internal.HandlerServiceImpl;
+import org.fdesigner.e4.core.commands.internal.SetEnabled;
+import org.fdesigner.e4.core.contexts.IEclipseContext;
+import org.fdesigner.e4.core.di.annotations.CanExecute;
+import org.fdesigner.e4.core.di.annotations.Execute;
+import org.fdesigner.e4.core.di.annotations.Optional;
+import org.fdesigner.e4.ui.model.application.MApplication;
+import org.fdesigner.e4.ui.workbench.internal.workbench.Activator;
+import org.fdesigner.e4.ui.workbench.internal.workbench.Policy;
+import org.fdesigner.expressions.IEvaluationContext;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.commands.IElementUpdater;
+import org.fdesigner.workbench.internal.Workbench;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
+import org.fdesigner.workbench.menus.UIElement;
 
 /**
  * @since 3.5

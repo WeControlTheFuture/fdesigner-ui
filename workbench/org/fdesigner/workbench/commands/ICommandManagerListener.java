@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.commands;
+package org.fdesigner.workbench.commands;
 
 /**
  * An instance of this interface can be used by clients to receive notification

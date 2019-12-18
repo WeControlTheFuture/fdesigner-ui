@@ -17,18 +17,18 @@ package org.fdesigner.workbench.handlers;
 
 import java.util.List;
 
-import org.eclipse.e4.ui.model.application.MApplication;
-import org.eclipse.e4.ui.model.application.descriptor.basic.MPartDescriptor;
-import org.eclipse.e4.ui.model.application.ui.advanced.MPlaceholder;
-import org.eclipse.e4.ui.model.application.ui.basic.MPart;
-import org.eclipse.e4.ui.model.application.ui.basic.MWindow;
-import org.eclipse.e4.ui.workbench.modeling.EModelService;
-import org.eclipse.e4.ui.workbench.modeling.EPartService;
 import org.eclipse.swt.widgets.Shell;
 import org.fdesigner.commands.AbstractHandler;
 import org.fdesigner.commands.ExecutionEvent;
 import org.fdesigner.commands.ExecutionException;
 import org.fdesigner.e4.core.contexts.IEclipseContext;
+import org.fdesigner.e4.ui.model.application.MApplication;
+import org.fdesigner.e4.ui.model.application.descriptor.basic.MPartDescriptor;
+import org.fdesigner.e4.ui.model.application.ui.advanced.MPlaceholder;
+import org.fdesigner.e4.ui.model.application.ui.basic.MPart;
+import org.fdesigner.e4.ui.model.application.ui.basic.MWindow;
+import org.fdesigner.e4.ui.workbench.modeling.EModelService;
+import org.fdesigner.e4.ui.workbench.modeling.EPartService;
 import org.fdesigner.ui.jface.window.Window;
 import org.fdesigner.workbench.IWorkbenchCommandConstants;
 import org.fdesigner.workbench.IWorkbenchPage;

@@ -11,17 +11,17 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.commands;
+package org.fdesigner.workbench.commands;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import org.eclipse.core.commands.ExecutionEvent;
-import org.eclipse.core.commands.ExecutionException;
-import org.eclipse.core.commands.HandlerEvent;
-import org.eclipse.core.commands.IHandlerAttributes;
+import org.fdesigner.commands.ExecutionEvent;
+import org.fdesigner.commands.ExecutionException;
+import org.fdesigner.commands.HandlerEvent;
+import org.fdesigner.commands.IHandlerAttributes;
 
 /**
  * This class is a partial implementation of <code>IHandler</code>. This
@@ -42,7 +42,7 @@ import org.eclipse.core.commands.IHandlerAttributes;
  */
 @Deprecated
 @SuppressWarnings({ "unchecked" })
-public abstract class AbstractHandler extends org.eclipse.core.commands.AbstractHandler implements IHandler {
+public abstract class AbstractHandler extends org.fdesigner.commands.AbstractHandler implements IHandler {
 
 	/**
 	 * Those interested in hearing about changes to this instance of
@@ -86,7 +86,7 @@ public abstract class AbstractHandler extends org.eclipse.core.commands.Abstract
 	public Object execute(final ExecutionEvent event) throws ExecutionException {
 		try {
 			return execute(event.getParameters());
-		} catch (final org.eclipse.ui.commands.ExecutionException e) {
+		} catch (final org.fdesigner.workbench.commands.ExecutionException e) {
 			throw new ExecutionException(e.getMessage(), e.getCause());
 		}
 	}
@@ -121,7 +121,7 @@ public abstract class AbstractHandler extends org.eclipse.core.commands.Abstract
 			} else {
 				previousAttributes = null;
 			}
-			final org.eclipse.ui.commands.HandlerEvent legacyEvent = new org.eclipse.ui.commands.HandlerEvent(this,
+			final org.fdesigner.workbench.commands.HandlerEvent legacyEvent = new org.fdesigner.workbench.commands.HandlerEvent(this,
 					attributesChanged, previousAttributes);
 
 			for (int i = 0; i < handlerListeners.size(); i++) {
@@ -135,7 +135,7 @@ public abstract class AbstractHandler extends org.eclipse.core.commands.Abstract
 	 */
 	@SuppressWarnings("rawtypes")
 	@Deprecated
-	protected void fireHandlerChanged(final org.eclipse.ui.commands.HandlerEvent handlerEvent) {
+	protected void fireHandlerChanged(final org.fdesigner.workbench.commands.HandlerEvent handlerEvent) {
 		if (handlerEvent == null) {
 			throw new NullPointerException();
 		}

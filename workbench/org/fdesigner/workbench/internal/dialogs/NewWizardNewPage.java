@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.dialogs;
+package org.fdesigner.workbench.internal.dialogs;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -20,20 +20,7 @@ import java.util.Hashtable;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.Path;
-import org.eclipse.jface.dialogs.Dialog;
-import org.eclipse.jface.dialogs.IDialogSettings;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.jface.viewers.ISelectionChangedListener;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.jface.viewers.SelectionChangedEvent;
-import org.eclipse.jface.viewers.StructuredSelection;
-import org.eclipse.jface.viewers.TreeViewer;
-import org.eclipse.jface.viewers.ViewerFilter;
-import org.eclipse.jface.wizard.IWizard;
-import org.eclipse.jface.wizard.IWizardContainer;
-import org.eclipse.jface.wizard.IWizardContainer2;
+
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.custom.CLabel;
 import org.eclipse.swt.events.SelectionAdapter;
@@ -46,15 +33,29 @@ import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Label;
-import org.eclipse.ui.IWorkbenchWizard;
-import org.eclipse.ui.activities.WorkbenchActivityHelper;
-import org.eclipse.ui.dialogs.FilteredTree;
-import org.eclipse.ui.internal.WorkbenchMessages;
-import org.eclipse.ui.internal.registry.WizardsRegistryReader;
-import org.eclipse.ui.model.AdaptableList;
-import org.eclipse.ui.model.WorkbenchLabelProvider;
-import org.eclipse.ui.wizards.IWizardCategory;
-import org.eclipse.ui.wizards.IWizardDescriptor;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.Path;
+import org.fdesigner.ui.jface.dialogs.Dialog;
+import org.fdesigner.ui.jface.dialogs.IDialogSettings;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.ui.jface.viewers.ISelectionChangedListener;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.ui.jface.viewers.SelectionChangedEvent;
+import org.fdesigner.ui.jface.viewers.StructuredSelection;
+import org.fdesigner.ui.jface.viewers.TreeViewer;
+import org.fdesigner.ui.jface.viewers.ViewerFilter;
+import org.fdesigner.ui.jface.wizard.IWizard;
+import org.fdesigner.ui.jface.wizard.IWizardContainer;
+import org.fdesigner.ui.jface.wizard.IWizardContainer2;
+import org.fdesigner.workbench.IWorkbenchWizard;
+import org.fdesigner.workbench.activities.WorkbenchActivityHelper;
+import org.fdesigner.workbench.dialogs.FilteredTree;
+import org.fdesigner.workbench.internal.WorkbenchMessages;
+import org.fdesigner.workbench.internal.registry.WizardsRegistryReader;
+import org.fdesigner.workbench.model.AdaptableList;
+import org.fdesigner.workbench.model.WorkbenchLabelProvider;
+import org.fdesigner.workbench.wizards.IWizardCategory;
+import org.fdesigner.workbench.wizards.IWizardDescriptor;
 
 /**
  * New wizard selection tab that allows the user to select a registered 'New'

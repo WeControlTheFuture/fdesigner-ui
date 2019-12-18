@@ -12,28 +12,29 @@
  *     IBM Corporation - initial API and implementation
  *     Jan-Hendrik Diederich, Bredex GmbH - bug 201052
  *******************************************************************************/
-package org.eclipse.ui.internal.dialogs;
+package org.fdesigner.workbench.internal.dialogs;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import org.eclipse.core.runtime.IAdaptable;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.core.runtime.IPath;
-import org.eclipse.core.runtime.Path;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.jface.viewers.Viewer;
-import org.eclipse.jface.viewers.ViewerFilter;
-import org.eclipse.ui.IPluginContribution;
-import org.eclipse.ui.ISharedImages;
-import org.eclipse.ui.activities.WorkbenchActivityHelper;
-import org.eclipse.ui.internal.WorkbenchImages;
-import org.eclipse.ui.internal.registry.IWorkbenchRegistryConstants;
-import org.eclipse.ui.model.AdaptableList;
-import org.eclipse.ui.model.IWorkbenchAdapter;
-import org.eclipse.ui.wizards.IWizardCategory;
-import org.eclipse.ui.wizards.IWizardDescriptor;
+
+import org.fdesigner.runtime.common.runtime.IAdaptable;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.Path;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.ui.jface.viewers.Viewer;
+import org.fdesigner.ui.jface.viewers.ViewerFilter;
+import org.fdesigner.workbench.IPluginContribution;
+import org.fdesigner.workbench.ISharedImages;
+import org.fdesigner.workbench.activities.WorkbenchActivityHelper;
+import org.fdesigner.workbench.internal.WorkbenchImages;
+import org.fdesigner.workbench.internal.registry.IWorkbenchRegistryConstants;
+import org.fdesigner.workbench.model.AdaptableList;
+import org.fdesigner.workbench.model.IWorkbenchAdapter;
+import org.fdesigner.workbench.wizards.IWizardCategory;
+import org.fdesigner.workbench.wizards.IWizardDescriptor;
 
 /**
  * Instances of this class are a collection of WizardCollectionElements, thereby

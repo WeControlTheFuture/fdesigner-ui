@@ -12,19 +12,19 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.actions;
+package org.fdesigner.workbench.internal.actions;
 
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.jface.action.Action;
-import org.eclipse.jface.window.Window;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.IWorkingSet;
-import org.eclipse.ui.IWorkingSetManager;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.actions.WorkingSetFilterActionGroup;
-import org.eclipse.ui.dialogs.IWorkingSetSelectionDialog;
-import org.eclipse.ui.internal.IWorkbenchHelpContextIds;
-import org.eclipse.ui.internal.WorkbenchMessages;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.ui.jface.action.Action;
+import org.fdesigner.ui.jface.window.Window;
+import org.fdesigner.workbench.IWorkingSet;
+import org.fdesigner.workbench.IWorkingSetManager;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.actions.WorkingSetFilterActionGroup;
+import org.fdesigner.workbench.dialogs.IWorkingSetSelectionDialog;
+import org.fdesigner.workbench.internal.IWorkbenchHelpContextIds;
+import org.fdesigner.workbench.internal.WorkbenchMessages;
 
 /**
  * Displays an IWorkingSetSelectionDialog and sets the selected working set in

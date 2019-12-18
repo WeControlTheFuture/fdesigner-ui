@@ -11,12 +11,13 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.dialogs;
+package org.fdesigner.workbench.internal.dialogs;
 
 import java.util.ArrayList;
-import org.eclipse.jface.viewers.ITreeContentProvider;
-import org.eclipse.jface.viewers.Viewer;
-import org.eclipse.ui.model.AdaptableList;
+
+import org.fdesigner.ui.jface.viewers.ITreeContentProvider;
+import org.fdesigner.ui.jface.viewers.Viewer;
+import org.fdesigner.workbench.model.AdaptableList;
 
 /**
  * Provider used by the NewWizardNewPage.

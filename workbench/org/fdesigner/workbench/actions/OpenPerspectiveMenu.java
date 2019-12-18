@@ -12,19 +12,19 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.actions;
+package org.fdesigner.workbench.actions;
 
-import org.eclipse.core.runtime.IAdaptable;
-import org.eclipse.jface.action.IMenuManager;
 import org.eclipse.swt.events.SelectionEvent;
-import org.eclipse.ui.IPerspectiveDescriptor;
-import org.eclipse.ui.IWorkbenchPreferenceConstants;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.WorkbenchException;
-import org.eclipse.ui.internal.WorkbenchMessages;
-import org.eclipse.ui.internal.misc.StatusUtil;
-import org.eclipse.ui.internal.util.PrefUtil;
-import org.eclipse.ui.statushandlers.StatusManager;
+import org.fdesigner.runtime.common.runtime.IAdaptable;
+import org.fdesigner.ui.jface.action.IMenuManager;
+import org.fdesigner.workbench.IPerspectiveDescriptor;
+import org.fdesigner.workbench.IWorkbenchPreferenceConstants;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.WorkbenchException;
+import org.fdesigner.workbench.internal.WorkbenchMessages;
+import org.fdesigner.workbench.internal.misc.StatusUtil;
+import org.fdesigner.workbench.internal.util.PrefUtil;
+import org.fdesigner.workbench.statushandlers.StatusManager;
 
 /**
  * A menu for window creation in the workbench.

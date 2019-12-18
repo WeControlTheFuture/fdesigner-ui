@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.contexts;
+package org.fdesigner.workbench.contexts;
 
 /**
  * Signals that an attempt was made to access the properties of an undefined
@@ -49,7 +49,7 @@ public final class NotDefinedException extends ContextException {
 	 * @param e The exception being thrown; must not be <code>null</code>.
 	 * @since 3.1
 	 */
-	public NotDefinedException(org.eclipse.core.commands.common.NotDefinedException e) {
+	public NotDefinedException(org.fdesigner.commands.common.NotDefinedException e) {
 		super(e.getMessage(), e);
 	}
 }

@@ -13,9 +13,8 @@
  *     Lars Vogel <Lars.Vogel@gmail.com> - Bug 440810
  *******************************************************************************/
 
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
-import com.ibm.icu.text.Collator;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -24,38 +23,41 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-import org.eclipse.core.commands.Command;
-import org.eclipse.core.commands.ExecutionException;
-import org.eclipse.core.commands.IParameter;
-import org.eclipse.core.commands.NotEnabledException;
-import org.eclipse.core.commands.NotHandledException;
-import org.eclipse.core.commands.Parameterization;
-import org.eclipse.core.commands.ParameterizedCommand;
-import org.eclipse.core.commands.common.NotDefinedException;
-import org.eclipse.jface.action.Action;
-import org.eclipse.jface.action.ContributionItem;
-import org.eclipse.jface.action.IContributionItem;
-import org.eclipse.jface.action.IMenuListener;
-import org.eclipse.jface.action.IMenuManager;
-import org.eclipse.jface.action.MenuManager;
-import org.eclipse.jface.action.Separator;
+
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Menu;
 import org.eclipse.swt.widgets.MenuItem;
-import org.eclipse.ui.IPluginContribution;
-import org.eclipse.ui.IWorkbenchCommandConstants;
-import org.eclipse.ui.IWorkbenchPage;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.activities.WorkbenchActivityHelper;
-import org.eclipse.ui.commands.ICommandService;
-import org.eclipse.ui.handlers.IHandlerService;
-import org.eclipse.ui.internal.intro.IIntroConstants;
-import org.eclipse.ui.internal.registry.ViewDescriptor;
-import org.eclipse.ui.menus.CommandContributionItem;
-import org.eclipse.ui.menus.CommandContributionItemParameter;
-import org.eclipse.ui.services.IServiceLocator;
-import org.eclipse.ui.views.IViewDescriptor;
-import org.eclipse.ui.views.IViewRegistry;
+import org.fdesigner.commands.Command;
+import org.fdesigner.commands.ExecutionException;
+import org.fdesigner.commands.IParameter;
+import org.fdesigner.commands.NotEnabledException;
+import org.fdesigner.commands.NotHandledException;
+import org.fdesigner.commands.Parameterization;
+import org.fdesigner.commands.ParameterizedCommand;
+import org.fdesigner.commands.common.NotDefinedException;
+import org.fdesigner.ui.jface.action.Action;
+import org.fdesigner.ui.jface.action.ContributionItem;
+import org.fdesigner.ui.jface.action.IContributionItem;
+import org.fdesigner.ui.jface.action.IMenuListener;
+import org.fdesigner.ui.jface.action.IMenuManager;
+import org.fdesigner.ui.jface.action.MenuManager;
+import org.fdesigner.ui.jface.action.Separator;
+import org.fdesigner.workbench.IPluginContribution;
+import org.fdesigner.workbench.IWorkbenchCommandConstants;
+import org.fdesigner.workbench.IWorkbenchPage;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.activities.WorkbenchActivityHelper;
+import org.fdesigner.workbench.commands.ICommandService;
+import org.fdesigner.workbench.handlers.IHandlerService;
+import org.fdesigner.workbench.internal.intro.IIntroConstants;
+import org.fdesigner.workbench.internal.registry.ViewDescriptor;
+import org.fdesigner.workbench.menus.CommandContributionItem;
+import org.fdesigner.workbench.menus.CommandContributionItemParameter;
+import org.fdesigner.workbench.services.IServiceLocator;
+import org.fdesigner.workbench.views.IViewDescriptor;
+import org.fdesigner.workbench.views.IViewRegistry;
+
+import com.ibm.icu.text.Collator;
 
 /**
  * A <code>ShowViewMenu</code> is used to populate a menu manager with Show View

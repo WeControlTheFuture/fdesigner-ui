@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.commands;
+package org.fdesigner.workbench.commands;
 
 /**
  * Signals that an exception occurred within the command architecture.

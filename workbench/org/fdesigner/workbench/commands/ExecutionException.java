@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.commands;
+package org.fdesigner.workbench.commands;
 
 /**
  * Signals that an exception occured during the execution of a command.
@@ -55,7 +55,7 @@ public final class ExecutionException extends CommandException {
 	 *          be <code>null</code>.
 	 * @since 3.1
 	 */
-	public ExecutionException(final org.eclipse.core.commands.ExecutionException e) {
+	public ExecutionException(final org.fdesigner.commands.ExecutionException e) {
 		super(e.getMessage(), e);
 	}
 }

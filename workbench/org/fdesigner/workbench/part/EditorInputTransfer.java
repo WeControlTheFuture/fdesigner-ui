@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.part;
+package org.fdesigner.workbench.part;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -21,15 +21,16 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.StringReader;
 import java.io.StringWriter;
-import org.eclipse.core.runtime.IAdaptable;
+
 import org.eclipse.swt.dnd.ByteArrayTransfer;
 import org.eclipse.swt.dnd.TransferData;
-import org.eclipse.ui.IEditorInput;
-import org.eclipse.ui.IElementFactory;
-import org.eclipse.ui.IPersistableElement;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.WorkbenchException;
-import org.eclipse.ui.XMLMemento;
+import org.fdesigner.runtime.common.runtime.IAdaptable;
+import org.fdesigner.workbench.IEditorInput;
+import org.fdesigner.workbench.IElementFactory;
+import org.fdesigner.workbench.IPersistableElement;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.WorkbenchException;
+import org.fdesigner.workbench.XMLMemento;
 
 /**
  * The <code>EditorInputTransfer</code> class is used to transfer an

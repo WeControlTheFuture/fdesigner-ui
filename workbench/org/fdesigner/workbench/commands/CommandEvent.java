@@ -11,11 +11,12 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.commands;
+package org.fdesigner.workbench.commands;
 
 import java.util.Collections;
 import java.util.Map;
-import org.eclipse.ui.internal.util.Util;
+
+import org.fdesigner.workbench.internal.util.Util;
 
 /**
  * An instance of this class describes changes to an instance of

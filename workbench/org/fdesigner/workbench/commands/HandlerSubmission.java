@@ -11,11 +11,11 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.commands;
+package org.fdesigner.workbench.commands;
 
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.IWorkbenchPartSite;
-import org.eclipse.ui.internal.util.Util;
+import org.fdesigner.workbench.IWorkbenchPartSite;
+import org.fdesigner.workbench.internal.util.Util;
 
 /**
  * <p>

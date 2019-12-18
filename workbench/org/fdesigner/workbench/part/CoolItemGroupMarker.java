@@ -11,9 +11,9 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.part;
+package org.fdesigner.workbench.part;
 
-import org.eclipse.jface.action.GroupMarker;
+import org.fdesigner.ui.jface.action.GroupMarker;
 
 /**
  * A group marker used by EditorActionBars to delineate CoolItem groups. Use

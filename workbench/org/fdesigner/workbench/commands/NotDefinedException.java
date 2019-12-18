@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.commands;
+package org.fdesigner.workbench.commands;
 
 /**
  * Signals that an attempt was made to access the properties of an undefined
@@ -56,7 +56,7 @@ public final class NotDefinedException extends CommandException {
 	 * @since 3.1
 	 */
 	@Deprecated
-	public NotDefinedException(final org.eclipse.core.commands.common.NotDefinedException e) {
+	public NotDefinedException(final org.fdesigner.commands.common.NotDefinedException e) {
 		super(e.getMessage(), e);
 	}
 }

@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.services;
+package org.fdesigner.workbench.internal.services;
 
 /**
  * <p>

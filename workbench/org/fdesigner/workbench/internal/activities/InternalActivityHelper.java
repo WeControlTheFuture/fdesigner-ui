@@ -11,13 +11,14 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.activities;
+package org.fdesigner.workbench.internal.activities;
 
 import java.util.HashSet;
 import java.util.Set;
-import org.eclipse.ui.activities.IActivityManager;
-import org.eclipse.ui.activities.ICategory;
-import org.eclipse.ui.activities.ICategoryActivityBinding;
+
+import org.fdesigner.workbench.activities.IActivityManager;
+import org.fdesigner.workbench.activities.ICategory;
+import org.fdesigner.workbench.activities.ICategoryActivityBinding;
 
 /**
  * Internal modifications to the (regrettably) public API in

@@ -11,18 +11,19 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.part;
+package org.fdesigner.workbench.part;
 
 import java.util.Objects;
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.ui.IMemento;
-import org.eclipse.ui.IPropertyListener;
-import org.eclipse.ui.IViewPart;
-import org.eclipse.ui.IViewSite;
-import org.eclipse.ui.IWorkbenchPartConstants;
-import org.eclipse.ui.IWorkbenchPartSite;
-import org.eclipse.ui.PartInitException;
+
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.workbench.IMemento;
+import org.fdesigner.workbench.IPropertyListener;
+import org.fdesigner.workbench.IViewPart;
+import org.fdesigner.workbench.IViewSite;
+import org.fdesigner.workbench.IWorkbenchPartConstants;
+import org.fdesigner.workbench.IWorkbenchPartSite;
+import org.fdesigner.workbench.PartInitException;
 
 /**
  * Abstract base implementation of all workbench views.

@@ -12,24 +12,25 @@
  *     IBM Corporation - initial API and implementation
  *     Lars Vogel <Lars.Vogel@gmail.com> - Bug 440810
  *******************************************************************************/
-package org.eclipse.ui.application;
+package org.fdesigner.workbench.application;
 
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.jface.action.IAction;
-import org.eclipse.jface.action.ICoolBarManager;
-import org.eclipse.jface.action.IMenuManager;
-import org.eclipse.jface.action.IStatusLineManager;
-import org.eclipse.ui.IMemento;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.actions.ActionFactory;
-import org.eclipse.ui.actions.RetargetAction;
-import org.eclipse.ui.internal.handlers.IActionCommandMappingService;
+
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.ui.jface.action.IAction;
+import org.fdesigner.ui.jface.action.ICoolBarManager;
+import org.fdesigner.ui.jface.action.IMenuManager;
+import org.fdesigner.ui.jface.action.IStatusLineManager;
+import org.fdesigner.workbench.IMemento;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.actions.ActionFactory;
+import org.fdesigner.workbench.actions.RetargetAction;
+import org.fdesigner.workbench.internal.handlers.IActionCommandMappingService;
 
 /**
  * Public base class for configuring the action bars of a workbench window.

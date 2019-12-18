@@ -12,31 +12,32 @@
  *     IBM Corporation - initial API and implementation
  *     Alexander Fedorov <alexander.fedorov@arsysop.ru> - Bug 548799
  *******************************************************************************/
-package org.eclipse.ui.part;
+package org.fdesigner.workbench.part;
 
 import java.util.Objects;
 import java.util.Optional;
-import org.eclipse.core.commands.common.EventManager;
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.core.runtime.IExecutableExtension;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.core.runtime.SafeRunner;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.jface.resource.JFaceResources;
-import org.eclipse.jface.resource.ResourceLocator;
-import org.eclipse.jface.util.SafeRunnable;
+
 import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.widgets.Composite;
-import org.eclipse.ui.IMemento;
-import org.eclipse.ui.IPropertyListener;
-import org.eclipse.ui.ISharedImages;
-import org.eclipse.ui.PartInitException;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.intro.IntroMessages;
-import org.eclipse.ui.internal.registry.IWorkbenchRegistryConstants;
-import org.eclipse.ui.intro.IIntroPart;
-import org.eclipse.ui.intro.IIntroSite;
+import org.fdesigner.commands.common.EventManager;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.SafeRunner;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.runtime.registry.runtime.IExecutableExtension;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.ui.jface.resource.JFaceResources;
+import org.fdesigner.ui.jface.resource.ResourceLocator;
+import org.fdesigner.ui.jface.util.SafeRunnable;
+import org.fdesigner.workbench.IMemento;
+import org.fdesigner.workbench.IPropertyListener;
+import org.fdesigner.workbench.ISharedImages;
+import org.fdesigner.workbench.PartInitException;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.internal.intro.IntroMessages;
+import org.fdesigner.workbench.internal.registry.IWorkbenchRegistryConstants;
+import org.fdesigner.workbench.intro.IIntroPart;
+import org.fdesigner.workbench.intro.IIntroSite;
 
 /**
  * Abstract base implementation of an intro part.

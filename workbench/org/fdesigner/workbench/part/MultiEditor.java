@@ -13,18 +13,18 @@
  *     Nikolay Botev - bug 240651
  ******************************************************************************/
 
-package org.eclipse.ui.part;
+package org.fdesigner.workbench.part;
 
-import org.eclipse.jface.resource.ColorRegistry;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.Color;
 import org.eclipse.swt.layout.FillLayout;
 import org.eclipse.swt.widgets.Composite;
-import org.eclipse.ui.IEditorPart;
-import org.eclipse.ui.IEditorReference;
-import org.eclipse.ui.internal.IWorkbenchThemeConstants;
-import org.eclipse.ui.internal.WorkbenchWindow;
-import org.eclipse.ui.themes.ITheme;
+import org.fdesigner.ui.jface.resource.ColorRegistry;
+import org.fdesigner.workbench.IEditorPart;
+import org.fdesigner.workbench.IEditorReference;
+import org.fdesigner.workbench.internal.IWorkbenchThemeConstants;
+import org.fdesigner.workbench.internal.WorkbenchWindow;
+import org.fdesigner.workbench.themes.ITheme;
 
 /**
  * A MultiEditor is a composite of editors.

@@ -13,19 +13,19 @@
  *     Nikolay Botev - bug 240651
  *******************************************************************************/
 
-package org.eclipse.ui.part;
+package org.fdesigner.workbench.part;
 
-import org.eclipse.core.runtime.IProgressMonitor;
 import org.eclipse.swt.widgets.Composite;
-import org.eclipse.ui.IEditorInput;
-import org.eclipse.ui.IEditorPart;
-import org.eclipse.ui.IEditorReference;
-import org.eclipse.ui.IEditorSite;
-import org.eclipse.ui.IPartListener2;
-import org.eclipse.ui.IWorkbenchPart;
-import org.eclipse.ui.IWorkbenchPartReference;
-import org.eclipse.ui.PartInitException;
-import org.eclipse.ui.internal.e4.compatibility.E4Util;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.workbench.IEditorInput;
+import org.fdesigner.workbench.IEditorPart;
+import org.fdesigner.workbench.IEditorReference;
+import org.fdesigner.workbench.IEditorSite;
+import org.fdesigner.workbench.IPartListener2;
+import org.fdesigner.workbench.IWorkbenchPart;
+import org.fdesigner.workbench.IWorkbenchPartReference;
+import org.fdesigner.workbench.PartInitException;
+import org.fdesigner.workbench.internal.e4.compatibility.E4Util;
 
 /**
  * A AbstractMultiEditor is a composite of editors.

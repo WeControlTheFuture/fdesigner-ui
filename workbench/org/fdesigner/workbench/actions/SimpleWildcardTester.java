@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.actions;
+package org.fdesigner.workbench.actions;
 
 /**
  * Implements an algorithm for very simple pattern matching in a string. There

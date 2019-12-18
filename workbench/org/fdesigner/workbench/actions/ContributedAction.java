@@ -17,11 +17,6 @@ package org.fdesigner.workbench.actions;
 
 import java.util.Collections;
 
-import org.eclipse.core.expressions.EvaluationContext;
-import org.eclipse.core.expressions.IEvaluationContext;
-import org.eclipse.e4.core.commands.EHandlerService;
-import org.eclipse.e4.core.commands.internal.HandlerServiceImpl;
-import org.eclipse.e4.core.contexts.IEclipseContext;
 import org.eclipse.swt.widgets.Event;
 import org.fdesigner.commands.ExecutionException;
 import org.fdesigner.commands.IHandler;
@@ -29,6 +24,11 @@ import org.fdesigner.commands.IHandler2;
 import org.fdesigner.commands.NotEnabledException;
 import org.fdesigner.commands.NotHandledException;
 import org.fdesigner.commands.common.NotDefinedException;
+import org.fdesigner.e4.core.commands.EHandlerService;
+import org.fdesigner.e4.core.commands.internal.HandlerServiceImpl;
+import org.fdesigner.e4.core.contexts.IEclipseContext;
+import org.fdesigner.expressions.EvaluationContext;
+import org.fdesigner.expressions.IEvaluationContext;
 import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
 import org.fdesigner.ui.jface.viewers.StructuredSelection;
 import org.fdesigner.workbench.IEditorSite;

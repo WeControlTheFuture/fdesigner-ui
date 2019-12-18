@@ -13,41 +13,42 @@
  *     Lars Vogel <Lars.Vogel@gmail.com> - Bug 440810
  ******************************************************************************/
 
-package org.eclipse.ui.internal.services;
+package org.fdesigner.workbench.internal.services;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
-import org.eclipse.core.expressions.IEvaluationContext;
-import org.eclipse.core.runtime.Adapters;
-import org.eclipse.jface.util.IPropertyChangeListener;
-import org.eclipse.jface.viewers.ISelection;
-import org.eclipse.jface.viewers.ISelectionProvider;
+
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Listener;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.AbstractSourceProvider;
-import org.eclipse.ui.IEditorInput;
-import org.eclipse.ui.IEditorPart;
-import org.eclipse.ui.IEditorSite;
-import org.eclipse.ui.INullSelectionListener;
-import org.eclipse.ui.IPartListener;
-import org.eclipse.ui.IPerspectiveDescriptor;
-import org.eclipse.ui.IPerspectiveListener;
-import org.eclipse.ui.IPropertyListener;
-import org.eclipse.ui.ISources;
-import org.eclipse.ui.IWindowListener;
-import org.eclipse.ui.IWorkbench;
-import org.eclipse.ui.IWorkbenchPage;
-import org.eclipse.ui.IWorkbenchPart;
-import org.eclipse.ui.IWorkbenchPartSite;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.contexts.IContextService;
-import org.eclipse.ui.internal.WorkbenchWindow;
-import org.eclipse.ui.part.IShowInSource;
-import org.eclipse.ui.part.ShowInContext;
-import org.eclipse.ui.services.IServiceLocator;
+import org.fdesigner.expressions.IEvaluationContext;
+import org.fdesigner.runtime.common.runtime.Adapters;
+import org.fdesigner.ui.jface.util.IPropertyChangeListener;
+import org.fdesigner.ui.jface.viewers.ISelection;
+import org.fdesigner.ui.jface.viewers.ISelectionProvider;
+import org.fdesigner.workbench.AbstractSourceProvider;
+import org.fdesigner.workbench.IEditorInput;
+import org.fdesigner.workbench.IEditorPart;
+import org.fdesigner.workbench.IEditorSite;
+import org.fdesigner.workbench.INullSelectionListener;
+import org.fdesigner.workbench.IPartListener;
+import org.fdesigner.workbench.IPerspectiveDescriptor;
+import org.fdesigner.workbench.IPerspectiveListener;
+import org.fdesigner.workbench.IPropertyListener;
+import org.fdesigner.workbench.ISources;
+import org.fdesigner.workbench.IWindowListener;
+import org.fdesigner.workbench.IWorkbench;
+import org.fdesigner.workbench.IWorkbenchPage;
+import org.fdesigner.workbench.IWorkbenchPart;
+import org.fdesigner.workbench.IWorkbenchPartSite;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.contexts.IContextService;
+import org.fdesigner.workbench.internal.WorkbenchWindow;
+import org.fdesigner.workbench.part.IShowInSource;
+import org.fdesigner.workbench.part.ShowInContext;
+import org.fdesigner.workbench.services.IServiceLocator;
 
 /**
  * @since 3.5

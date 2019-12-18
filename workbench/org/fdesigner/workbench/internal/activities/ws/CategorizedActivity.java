@@ -11,16 +11,17 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.activities.ws;
+package org.fdesigner.workbench.internal.activities.ws;
 
 import java.util.Set;
-import org.eclipse.core.expressions.Expression;
-import org.eclipse.ui.activities.IActivity;
-import org.eclipse.ui.activities.IActivityListener;
-import org.eclipse.ui.activities.IActivityPatternBinding;
-import org.eclipse.ui.activities.IActivityRequirementBinding;
-import org.eclipse.ui.activities.ICategory;
-import org.eclipse.ui.activities.NotDefinedException;
+
+import org.fdesigner.expressions.Expression;
+import org.fdesigner.workbench.activities.IActivity;
+import org.fdesigner.workbench.activities.IActivityListener;
+import org.fdesigner.workbench.activities.IActivityPatternBinding;
+import org.fdesigner.workbench.activities.IActivityRequirementBinding;
+import org.fdesigner.workbench.activities.ICategory;
+import org.fdesigner.workbench.activities.NotDefinedException;
 
 /**
  * IActivity proxy that is used by the

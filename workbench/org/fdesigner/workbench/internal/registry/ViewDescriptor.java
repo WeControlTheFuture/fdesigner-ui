@@ -13,25 +13,25 @@
  *     Markus Alexander Kuppe, Versant Corporation - bug #215797
  *     Friederike Schertel <friederike@schertel.org> - Bug 478336
  *******************************************************************************/
-package org.eclipse.ui.internal.registry;
+package org.fdesigner.workbench.internal.registry;
 
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.e4.ui.model.LocalizationHelper;
-import org.eclipse.e4.ui.model.application.MApplication;
-import org.eclipse.e4.ui.model.application.descriptor.basic.MPartDescriptor;
-import org.eclipse.e4.ui.workbench.IResourceUtilities;
 import org.eclipse.e4.ui.workbench.swt.util.ISWTResourceUtilities;
 import org.eclipse.emf.common.util.URI;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.ui.IPluginContribution;
-import org.eclipse.ui.ISharedImages;
-import org.eclipse.ui.IViewPart;
-import org.eclipse.ui.IWorkbench;
-import org.eclipse.ui.internal.WorkbenchPlugin;
-import org.eclipse.ui.views.IViewDescriptor;
+import org.fdesigner.e4.ui.model.LocalizationHelper;
+import org.fdesigner.e4.ui.model.application.MApplication;
+import org.fdesigner.e4.ui.model.application.descriptor.basic.MPartDescriptor;
+import org.fdesigner.e4.ui.workbench.IResourceUtilities;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.workbench.IPluginContribution;
+import org.fdesigner.workbench.ISharedImages;
+import org.fdesigner.workbench.IViewPart;
+import org.fdesigner.workbench.IWorkbench;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
+import org.fdesigner.workbench.views.IViewDescriptor;
 
 public class ViewDescriptor implements IViewDescriptor, IPluginContribution {
 

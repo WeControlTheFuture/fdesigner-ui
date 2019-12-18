@@ -11,11 +11,11 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.commands;
+package org.fdesigner.workbench.commands;
 
-import org.eclipse.core.expressions.Expression;
-import org.eclipse.ui.ISources;
-import org.eclipse.ui.internal.util.Util;
+import org.fdesigner.expressions.Expression;
+import org.fdesigner.workbench.ISources;
+import org.fdesigner.workbench.internal.util.Util;
 
 /**
  * <p>

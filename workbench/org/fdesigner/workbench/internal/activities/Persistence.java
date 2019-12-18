@@ -12,13 +12,13 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.activities;
+package org.fdesigner.workbench.internal.activities;
 
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.osgi.util.NLS;
-import org.eclipse.ui.IMemento;
-import org.eclipse.ui.internal.WorkbenchPlugin;
-import org.eclipse.ui.internal.util.ConfigurationElementMemento;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.workbench.IMemento;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
+import org.fdesigner.workbench.internal.util.ConfigurationElementMemento;
 
 public final class Persistence {
 	static final String PACKAGE_BASE = "activities"; //$NON-NLS-1$

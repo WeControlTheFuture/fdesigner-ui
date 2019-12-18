@@ -11,10 +11,11 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.browser;
+package org.fdesigner.workbench.browser;
 
 import java.net.URL;
-import org.eclipse.ui.PartInitException;
+
+import org.fdesigner.workbench.PartInitException;
 
 /**
  * An opened Web browser instance (either internal or external).

@@ -13,14 +13,13 @@
  *     Lars Vogel <Lars.Vogel@gmail.com> - Bug 440810
  ******************************************************************************/
 
-package org.eclipse.ui.part;
+package org.fdesigner.workbench.part;
 
-import org.eclipse.jface.resource.ImageDescriptor;
-
-import org.eclipse.ui.IWorkbenchCommandConstants;
-import org.eclipse.ui.IWorkbenchPart;
-import org.eclipse.ui.handlers.IHandlerService;
-import org.eclipse.ui.internal.handlers.CyclePageHandler;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.workbench.IWorkbenchCommandConstants;
+import org.fdesigner.workbench.IWorkbenchPart;
+import org.fdesigner.workbench.handlers.IHandlerService;
+import org.fdesigner.workbench.internal.handlers.CyclePageHandler;
 
 /**
  * Provides the implementation for switching pages in a view. A view may track

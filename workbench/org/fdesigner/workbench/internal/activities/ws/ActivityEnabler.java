@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.activities.ws;
+package org.fdesigner.workbench.internal.activities.ws;
 
 import static org.eclipse.swt.events.SelectionListener.widgetSelectedAdapter;
 
@@ -22,17 +22,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Properties;
 import java.util.Set;
-import org.eclipse.jface.dialogs.Dialog;
-import org.eclipse.jface.dialogs.IDialogConstants;
-import org.eclipse.jface.resource.JFaceResources;
-import org.eclipse.jface.viewers.AbstractTreeViewer;
-import org.eclipse.jface.viewers.CheckStateChangedEvent;
-import org.eclipse.jface.viewers.CheckboxTreeViewer;
-import org.eclipse.jface.viewers.ICheckStateListener;
-import org.eclipse.jface.viewers.ISelectionChangedListener;
-import org.eclipse.jface.viewers.StructuredSelection;
-import org.eclipse.jface.viewers.TableViewer;
-import org.eclipse.jface.viewers.ViewerComparator;
+
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.FontMetrics;
 import org.eclipse.swt.graphics.GC;
@@ -44,12 +34,23 @@ import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Text;
-import org.eclipse.ui.activities.ActivitiesPreferencePage;
-import org.eclipse.ui.activities.IActivity;
-import org.eclipse.ui.activities.ICategory;
-import org.eclipse.ui.activities.IMutableActivityManager;
-import org.eclipse.ui.activities.NotDefinedException;
-import org.eclipse.ui.internal.activities.InternalActivityHelper;
+import org.fdesigner.ui.jface.dialogs.Dialog;
+import org.fdesigner.ui.jface.dialogs.IDialogConstants;
+import org.fdesigner.ui.jface.resource.JFaceResources;
+import org.fdesigner.ui.jface.viewers.AbstractTreeViewer;
+import org.fdesigner.ui.jface.viewers.CheckStateChangedEvent;
+import org.fdesigner.ui.jface.viewers.CheckboxTreeViewer;
+import org.fdesigner.ui.jface.viewers.ICheckStateListener;
+import org.fdesigner.ui.jface.viewers.ISelectionChangedListener;
+import org.fdesigner.ui.jface.viewers.StructuredSelection;
+import org.fdesigner.ui.jface.viewers.TableViewer;
+import org.fdesigner.ui.jface.viewers.ViewerComparator;
+import org.fdesigner.workbench.activities.ActivitiesPreferencePage;
+import org.fdesigner.workbench.activities.IActivity;
+import org.fdesigner.workbench.activities.ICategory;
+import org.fdesigner.workbench.activities.IMutableActivityManager;
+import org.fdesigner.workbench.activities.NotDefinedException;
+import org.fdesigner.workbench.internal.activities.InternalActivityHelper;
 
 /**
  * A simple control provider that will allow the user to toggle on/off the

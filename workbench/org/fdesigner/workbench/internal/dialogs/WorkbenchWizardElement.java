@@ -13,31 +13,31 @@
  *     Fair Isaac Corporation <Hemant.Singh@Gmail.com> - Bug 326695
  *     Alexander Fedorov <alexander.fedorov@arsysop.ru> - Bug 548799
  *******************************************************************************/
-package org.eclipse.ui.internal.dialogs;
+package org.fdesigner.workbench.internal.dialogs;
 
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IAdaptable;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.jface.resource.ResourceLocator;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.jface.viewers.StructuredSelection;
-import org.eclipse.ui.IPluginContribution;
-import org.eclipse.ui.IWorkbenchWizard;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.SelectionEnabler;
-import org.eclipse.ui.internal.ISelectionConversionService;
-import org.eclipse.ui.internal.WorkbenchPlugin;
-import org.eclipse.ui.internal.registry.IWorkbenchRegistryConstants;
-import org.eclipse.ui.internal.registry.KeywordRegistry;
-import org.eclipse.ui.internal.registry.RegistryReader;
-import org.eclipse.ui.model.IWorkbenchAdapter;
-import org.eclipse.ui.model.IWorkbenchAdapter2;
-import org.eclipse.ui.model.IWorkbenchAdapter3;
-import org.eclipse.ui.model.WorkbenchAdapter;
-import org.eclipse.ui.wizards.IWizardCategory;
-import org.eclipse.ui.wizards.IWizardDescriptor;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IAdaptable;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.ui.jface.resource.ResourceLocator;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.ui.jface.viewers.StructuredSelection;
+import org.fdesigner.workbench.IPluginContribution;
+import org.fdesigner.workbench.IWorkbenchWizard;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.SelectionEnabler;
+import org.fdesigner.workbench.internal.ISelectionConversionService;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
+import org.fdesigner.workbench.internal.registry.IWorkbenchRegistryConstants;
+import org.fdesigner.workbench.internal.registry.KeywordRegistry;
+import org.fdesigner.workbench.internal.registry.RegistryReader;
+import org.fdesigner.workbench.model.IWorkbenchAdapter;
+import org.fdesigner.workbench.model.IWorkbenchAdapter2;
+import org.fdesigner.workbench.model.IWorkbenchAdapter3;
+import org.fdesigner.workbench.model.WorkbenchAdapter;
+import org.fdesigner.workbench.wizards.IWizardCategory;
+import org.fdesigner.workbench.wizards.IWizardDescriptor;
 
 /**
  * Instances represent registered wizards.

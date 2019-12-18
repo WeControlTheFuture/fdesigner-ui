@@ -11,13 +11,13 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.activities.ws;
+package org.fdesigner.workbench.internal.activities.ws;
 
-import org.eclipse.jface.viewers.LabelProvider;
 import org.eclipse.swt.graphics.Image;
-import org.eclipse.ui.activities.IActivity;
-import org.eclipse.ui.activities.IActivityManager;
-import org.eclipse.ui.activities.NotDefinedException;
+import org.fdesigner.ui.jface.viewers.LabelProvider;
+import org.fdesigner.workbench.activities.IActivity;
+import org.fdesigner.workbench.activities.IActivityManager;
+import org.fdesigner.workbench.activities.NotDefinedException;
 
 /**
  * Provides labels for <code>IActivity</code> objects. They may be passed

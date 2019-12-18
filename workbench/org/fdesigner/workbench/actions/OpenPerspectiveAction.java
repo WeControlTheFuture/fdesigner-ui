@@ -11,16 +11,16 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.actions;
+package org.fdesigner.workbench.actions;
 
-import org.eclipse.jface.action.Action;
 import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.widgets.Event;
-import org.eclipse.ui.IPerspectiveDescriptor;
-import org.eclipse.ui.IPluginContribution;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.internal.IWorkbenchHelpContextIds;
-import org.eclipse.ui.internal.util.Util;
+import org.fdesigner.ui.jface.action.Action;
+import org.fdesigner.workbench.IPerspectiveDescriptor;
+import org.fdesigner.workbench.IPluginContribution;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.internal.IWorkbenchHelpContextIds;
+import org.fdesigner.workbench.internal.util.Util;
 
 /**
  * Opens a perspective.

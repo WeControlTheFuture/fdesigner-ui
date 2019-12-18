@@ -13,28 +13,28 @@
  *     Lars Vogel <Lars.Vogel@gmail.com> - Bug 440810
  *******************************************************************************/
 
-package org.eclipse.ui.fieldassist;
+package org.fdesigner.workbench.fieldassist;
 
-import org.eclipse.core.commands.AbstractHandler;
-import org.eclipse.core.commands.ExecutionEvent;
-import org.eclipse.core.commands.IHandler;
-import org.eclipse.jface.fieldassist.ContentProposalAdapter;
-import org.eclipse.jface.fieldassist.ControlDecoration;
-import org.eclipse.jface.fieldassist.FieldDecoration;
-import org.eclipse.jface.fieldassist.FieldDecorationRegistry;
-import org.eclipse.jface.fieldassist.IContentProposalProvider;
-import org.eclipse.jface.fieldassist.IControlContentAdapter;
-import org.eclipse.osgi.util.NLS;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.FocusEvent;
 import org.eclipse.swt.events.FocusListener;
 import org.eclipse.swt.widgets.Control;
-import org.eclipse.ui.IWorkbenchCommandConstants;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.handlers.IHandlerActivation;
-import org.eclipse.ui.handlers.IHandlerService;
-import org.eclipse.ui.internal.WorkbenchMessages;
-import org.eclipse.ui.keys.IBindingService;
+import org.fdesigner.commands.AbstractHandler;
+import org.fdesigner.commands.ExecutionEvent;
+import org.fdesigner.commands.IHandler;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.ui.jface.fieldassist.ContentProposalAdapter;
+import org.fdesigner.ui.jface.fieldassist.ControlDecoration;
+import org.fdesigner.ui.jface.fieldassist.FieldDecoration;
+import org.fdesigner.ui.jface.fieldassist.FieldDecorationRegistry;
+import org.fdesigner.ui.jface.fieldassist.IContentProposalProvider;
+import org.fdesigner.ui.jface.fieldassist.IControlContentAdapter;
+import org.fdesigner.workbench.IWorkbenchCommandConstants;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.handlers.IHandlerActivation;
+import org.fdesigner.workbench.handlers.IHandlerService;
+import org.fdesigner.workbench.internal.WorkbenchMessages;
+import org.fdesigner.workbench.keys.IBindingService;
 
 /**
  * ContentAssistCommandAdapter extends {@link ContentProposalAdapter} to invoke

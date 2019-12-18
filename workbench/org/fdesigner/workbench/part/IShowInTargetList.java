@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.part;
+package org.fdesigner.workbench.part;
 
 /**
  * Show In sources which need to provide additional entries to the Show In list

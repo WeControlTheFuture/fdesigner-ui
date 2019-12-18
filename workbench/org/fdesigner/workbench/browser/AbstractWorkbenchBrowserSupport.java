@@ -11,9 +11,9 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.browser;
+package org.fdesigner.workbench.browser;
 
-import org.eclipse.ui.PartInitException;
+import org.fdesigner.workbench.PartInitException;
 
 /**
  * Implements <code>IWorkbenchBrowserSupport</code> while leaving some methods

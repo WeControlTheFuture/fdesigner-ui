@@ -12,16 +12,17 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.commands;
+package org.fdesigner.workbench.commands;
 
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Hashtable;
 import java.util.Map;
 import java.util.StringTokenizer;
-import org.eclipse.core.commands.IParameterValues;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.core.runtime.IExecutableExtension;
+
+import org.fdesigner.commands.IParameterValues;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.runtime.registry.runtime.IExecutableExtension;
 
 /**
  * <p>

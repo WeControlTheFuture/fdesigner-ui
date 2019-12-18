@@ -13,20 +13,20 @@
  *     Lars Vogel <Lars.Vogel@gmail.com> - Bug 440810
  *******************************************************************************/
 
-package org.eclipse.ui.fieldassist;
+package org.fdesigner.workbench.fieldassist;
 
-import org.eclipse.jface.fieldassist.DecoratedField;
-import org.eclipse.jface.fieldassist.FieldDecoration;
-import org.eclipse.jface.fieldassist.FieldDecorationRegistry;
-import org.eclipse.jface.fieldassist.IContentProposalProvider;
-import org.eclipse.jface.fieldassist.IControlContentAdapter;
-import org.eclipse.jface.fieldassist.IControlCreator;
-import org.eclipse.osgi.util.NLS;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Composite;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.WorkbenchMessages;
-import org.eclipse.ui.keys.IBindingService;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.ui.jface.fieldassist.DecoratedField;
+import org.fdesigner.ui.jface.fieldassist.FieldDecoration;
+import org.fdesigner.ui.jface.fieldassist.FieldDecorationRegistry;
+import org.fdesigner.ui.jface.fieldassist.IContentProposalProvider;
+import org.fdesigner.ui.jface.fieldassist.IControlContentAdapter;
+import org.fdesigner.ui.jface.fieldassist.IControlCreator;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.internal.WorkbenchMessages;
+import org.fdesigner.workbench.keys.IBindingService;
 
 /**
  * ContentAssistField utilizes the concepts of a {@link DecoratedField} and the

@@ -12,10 +12,10 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.util;
+package org.fdesigner.workbench.internal.util;
 
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.ui.IMemento;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.workbench.IMemento;
 
 public final class ConfigurationElementMemento implements IMemento {
 

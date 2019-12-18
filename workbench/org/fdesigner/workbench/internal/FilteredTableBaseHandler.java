@@ -12,31 +12,12 @@
  *     Patrik Suzzi <psuzzi@gmail.com> - Bug 368977, 504088, 504089, 504090, 504091, 509232, 506019
  ******************************************************************************/
 
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
 import java.util.HashMap;
 import java.util.Map;
-import org.eclipse.core.commands.AbstractHandler;
-import org.eclipse.core.commands.ExecutionEvent;
-import org.eclipse.core.commands.ExecutionException;
-import org.eclipse.core.commands.ParameterizedCommand;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.core.runtime.IExecutableExtension;
+
 import org.eclipse.e4.ui.internal.workbench.renderers.swt.AbstractTableInformationControl;
-import org.eclipse.e4.ui.model.application.ui.basic.MStackElement;
-import org.eclipse.e4.ui.workbench.modeling.EPartService;
-import org.eclipse.e4.ui.workbench.modeling.EPartService.PartState;
-import org.eclipse.jface.bindings.Trigger;
-import org.eclipse.jface.bindings.TriggerSequence;
-import org.eclipse.jface.bindings.keys.KeyStroke;
-import org.eclipse.jface.bindings.keys.SWTKeySupport;
-import org.eclipse.jface.preference.IPreferenceStore;
-import org.eclipse.jface.viewers.ArrayContentProvider;
-import org.eclipse.jface.viewers.ColumnLabelProvider;
-import org.eclipse.jface.viewers.TableViewer;
-import org.eclipse.jface.viewers.TableViewerColumn;
-import org.eclipse.jface.viewers.ViewerFilter;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.FocusAdapter;
 import org.eclipse.swt.events.FocusEvent;
@@ -65,16 +46,36 @@ import org.eclipse.swt.widgets.Table;
 import org.eclipse.swt.widgets.TableColumn;
 import org.eclipse.swt.widgets.TableItem;
 import org.eclipse.swt.widgets.Text;
-import org.eclipse.ui.IEditorReference;
-import org.eclipse.ui.IPerspectiveDescriptor;
-import org.eclipse.ui.IWorkbenchPage;
-import org.eclipse.ui.IWorkbenchPart;
-import org.eclipse.ui.IWorkbenchPartReference;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.contexts.IContextService;
-import org.eclipse.ui.handlers.HandlerUtil;
-import org.eclipse.ui.keys.IBindingService;
-import org.eclipse.ui.model.PerspectiveLabelProvider;
+import org.fdesigner.commands.AbstractHandler;
+import org.fdesigner.commands.ExecutionEvent;
+import org.fdesigner.commands.ExecutionException;
+import org.fdesigner.commands.ParameterizedCommand;
+import org.fdesigner.e4.ui.model.application.ui.basic.MStackElement;
+import org.fdesigner.e4.ui.workbench.modeling.EPartService;
+import org.fdesigner.e4.ui.workbench.modeling.EPartService.PartState;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.runtime.registry.runtime.IExecutableExtension;
+import org.fdesigner.ui.jface.bindings.Trigger;
+import org.fdesigner.ui.jface.bindings.TriggerSequence;
+import org.fdesigner.ui.jface.bindings.keys.KeyStroke;
+import org.fdesigner.ui.jface.bindings.keys.SWTKeySupport;
+import org.fdesigner.ui.jface.preference.IPreferenceStore;
+import org.fdesigner.ui.jface.viewers.ArrayContentProvider;
+import org.fdesigner.ui.jface.viewers.ColumnLabelProvider;
+import org.fdesigner.ui.jface.viewers.TableViewer;
+import org.fdesigner.ui.jface.viewers.TableViewerColumn;
+import org.fdesigner.ui.jface.viewers.ViewerFilter;
+import org.fdesigner.workbench.IEditorReference;
+import org.fdesigner.workbench.IPerspectiveDescriptor;
+import org.fdesigner.workbench.IWorkbenchPage;
+import org.fdesigner.workbench.IWorkbenchPart;
+import org.fdesigner.workbench.IWorkbenchPartReference;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.contexts.IContextService;
+import org.fdesigner.workbench.handlers.HandlerUtil;
+import org.fdesigner.workbench.keys.IBindingService;
+import org.fdesigner.workbench.model.PerspectiveLabelProvider;
 
 /**
  * Base class to open a dialog to filter and select elements of a {@link Table}.

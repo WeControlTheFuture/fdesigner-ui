@@ -11,13 +11,14 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.activities.ws;
+package org.fdesigner.workbench.internal.activities.ws;
 
 import java.util.HashMap;
 import java.util.Map;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.ui.internal.activities.Persistence;
-import org.eclipse.ui.internal.registry.IWorkbenchRegistryConstants;
+
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.workbench.internal.activities.Persistence;
+import org.fdesigner.workbench.internal.registry.IWorkbenchRegistryConstants;
 
 /**
  * @since 3.1

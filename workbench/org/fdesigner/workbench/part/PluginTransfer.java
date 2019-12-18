@@ -11,16 +11,17 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.part;
+package org.fdesigner.workbench.part;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
+
 import org.eclipse.swt.dnd.ByteArrayTransfer;
 import org.eclipse.swt.dnd.TransferData;
-import org.eclipse.ui.internal.WorkbenchPlugin;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
 
 /**
  * This class can be used to transfer an instance of

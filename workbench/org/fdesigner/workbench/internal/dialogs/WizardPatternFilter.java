@@ -12,11 +12,12 @@
  *     IBM Corporation - initial API and implementation
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 472654
  *******************************************************************************/
-package org.eclipse.ui.internal.dialogs;
+package org.fdesigner.workbench.internal.dialogs;
 
 import java.util.ArrayList;
-import org.eclipse.jface.viewers.Viewer;
-import org.eclipse.ui.dialogs.PatternFilter;
+
+import org.fdesigner.ui.jface.viewers.Viewer;
+import org.fdesigner.workbench.dialogs.PatternFilter;
 
 /**
  * A class that handles filtering wizard node items based on a supplied matching

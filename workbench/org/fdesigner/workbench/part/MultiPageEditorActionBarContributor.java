@@ -11,9 +11,9 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.part;
+package org.fdesigner.workbench.part;
 
-import org.eclipse.ui.IEditorPart;
+import org.fdesigner.workbench.IEditorPart;
 
 /**
  * Abstract base class for managing the installation/deinstallation of global

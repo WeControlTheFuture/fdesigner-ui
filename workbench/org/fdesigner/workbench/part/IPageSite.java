@@ -11,12 +11,12 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.part;
+package org.fdesigner.workbench.part;
 
-import org.eclipse.jface.action.MenuManager;
-import org.eclipse.jface.viewers.ISelectionProvider;
-import org.eclipse.ui.IActionBars;
-import org.eclipse.ui.IWorkbenchSite;
+import org.fdesigner.ui.jface.action.MenuManager;
+import org.fdesigner.ui.jface.viewers.ISelectionProvider;
+import org.fdesigner.workbench.IActionBars;
+import org.fdesigner.workbench.IWorkbenchSite;
 
 /**
  * The primary interface between a page and the outside world.

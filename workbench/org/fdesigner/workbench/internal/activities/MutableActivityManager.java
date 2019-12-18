@@ -13,7 +13,7 @@
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 474273
  *******************************************************************************/
 
-package org.eclipse.ui.internal.activities;
+package org.fdesigner.workbench.internal.activities;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -27,31 +27,32 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 import java.util.TreeMap;
-import org.eclipse.core.expressions.Expression;
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.core.runtime.jobs.IJobFunction;
-import org.eclipse.core.runtime.jobs.Job;
-import org.eclipse.jface.util.IPropertyChangeListener;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.activities.ActivityEvent;
-import org.eclipse.ui.activities.ActivityManagerEvent;
-import org.eclipse.ui.activities.CategoryEvent;
-import org.eclipse.ui.activities.IActivity;
-import org.eclipse.ui.activities.IActivityPatternBinding;
-import org.eclipse.ui.activities.IActivityRequirementBinding;
-import org.eclipse.ui.activities.ICategory;
-import org.eclipse.ui.activities.ICategoryActivityBinding;
-import org.eclipse.ui.activities.IIdentifier;
-import org.eclipse.ui.activities.IMutableActivityManager;
-import org.eclipse.ui.activities.ITriggerPointAdvisor;
-import org.eclipse.ui.activities.IdentifierEvent;
-import org.eclipse.ui.progress.UIJob;
-import org.eclipse.ui.services.IEvaluationReference;
-import org.eclipse.ui.services.IEvaluationService;
+
+import org.fdesigner.expressions.Expression;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.runtime.jobs.runtime.jobs.IJobFunction;
+import org.fdesigner.runtime.jobs.runtime.jobs.Job;
+import org.fdesigner.ui.jface.util.IPropertyChangeListener;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.activities.ActivityEvent;
+import org.fdesigner.workbench.activities.ActivityManagerEvent;
+import org.fdesigner.workbench.activities.CategoryEvent;
+import org.fdesigner.workbench.activities.IActivity;
+import org.fdesigner.workbench.activities.IActivityPatternBinding;
+import org.fdesigner.workbench.activities.IActivityRequirementBinding;
+import org.fdesigner.workbench.activities.ICategory;
+import org.fdesigner.workbench.activities.ICategoryActivityBinding;
+import org.fdesigner.workbench.activities.IIdentifier;
+import org.fdesigner.workbench.activities.IMutableActivityManager;
+import org.fdesigner.workbench.activities.ITriggerPointAdvisor;
+import org.fdesigner.workbench.activities.IdentifierEvent;
+import org.fdesigner.workbench.progress.UIJob;
+import org.fdesigner.workbench.services.IEvaluationReference;
+import org.fdesigner.workbench.services.IEvaluationService;
 
 /**
  * An activity registry that may be altered.

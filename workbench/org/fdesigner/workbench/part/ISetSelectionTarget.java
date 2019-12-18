@@ -11,9 +11,9 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.part;
+package org.fdesigner.workbench.part;
 
-import org.eclipse.jface.viewers.ISelection;
+import org.fdesigner.ui.jface.viewers.ISelection;
 
 /**
  * Interface for views which support reveal and select.

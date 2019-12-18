@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.activities;
+package org.fdesigner.workbench.activities;
 
 /**
  * An instance of this class describes changes to an instance of

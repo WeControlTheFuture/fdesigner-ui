@@ -12,11 +12,12 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.commands;
+package org.fdesigner.workbench.commands;
 
 import java.util.Map;
 import java.util.Set;
-import org.eclipse.ui.keys.KeySequence;
+
+import org.fdesigner.workbench.keys.KeySequence;
 
 /**
  * <p>

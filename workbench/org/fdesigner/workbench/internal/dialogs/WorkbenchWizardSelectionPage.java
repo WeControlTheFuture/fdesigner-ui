@@ -11,18 +11,18 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.dialogs;
+package org.fdesigner.workbench.internal.dialogs;
 
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.jface.viewers.TableViewer;
-import org.eclipse.jface.wizard.IWizardNode;
-import org.eclipse.jface.wizard.IWizardPage;
-import org.eclipse.jface.wizard.WizardSelectionPage;
-import org.eclipse.ui.IWorkbench;
-import org.eclipse.ui.activities.ITriggerPoint;
-import org.eclipse.ui.activities.WorkbenchActivityHelper;
-import org.eclipse.ui.internal.WorkbenchMessages;
-import org.eclipse.ui.model.AdaptableList;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.ui.jface.viewers.TableViewer;
+import org.fdesigner.ui.jface.wizard.IWizardNode;
+import org.fdesigner.ui.jface.wizard.IWizardPage;
+import org.fdesigner.ui.jface.wizard.WizardSelectionPage;
+import org.fdesigner.workbench.IWorkbench;
+import org.fdesigner.workbench.activities.ITriggerPoint;
+import org.fdesigner.workbench.activities.WorkbenchActivityHelper;
+import org.fdesigner.workbench.internal.WorkbenchMessages;
+import org.fdesigner.workbench.model.AdaptableList;
 
 /**
  * Page for selecting a wizard from a group of available wizards.

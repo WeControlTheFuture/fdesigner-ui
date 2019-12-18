@@ -12,14 +12,15 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.activities;
+package org.fdesigner.workbench.internal.activities;
 
 import java.util.Set;
-import org.eclipse.ui.activities.ActivityManagerEvent;
-import org.eclipse.ui.activities.IActivity;
-import org.eclipse.ui.activities.IActivityManager;
-import org.eclipse.ui.activities.ICategory;
-import org.eclipse.ui.activities.IIdentifier;
+
+import org.fdesigner.workbench.activities.ActivityManagerEvent;
+import org.fdesigner.workbench.activities.IActivity;
+import org.fdesigner.workbench.activities.IActivityManager;
+import org.fdesigner.workbench.activities.ICategory;
+import org.fdesigner.workbench.activities.IIdentifier;
 
 public final class ProxyActivityManager extends AbstractActivityManager {
 	private IActivityManager activityManager;

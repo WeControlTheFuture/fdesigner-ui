@@ -11,13 +11,13 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.activities.ws;
+package org.fdesigner.workbench.internal.activities.ws;
 
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.ui.activities.ITriggerPointAdvisor;
-import org.eclipse.ui.internal.registry.IWorkbenchRegistryConstants;
-import org.eclipse.ui.internal.registry.RegistryReader;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.workbench.activities.ITriggerPointAdvisor;
+import org.fdesigner.workbench.internal.registry.IWorkbenchRegistryConstants;
+import org.fdesigner.workbench.internal.registry.RegistryReader;
 
 /**
  * Descriptor for trigger point advisor extensions.

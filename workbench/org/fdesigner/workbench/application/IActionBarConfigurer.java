@@ -11,12 +11,12 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.application;
+package org.fdesigner.workbench.application;
 
-import org.eclipse.jface.action.IAction;
-import org.eclipse.jface.action.ICoolBarManager;
-import org.eclipse.jface.action.IMenuManager;
-import org.eclipse.jface.action.IStatusLineManager;
+import org.fdesigner.ui.jface.action.IAction;
+import org.fdesigner.ui.jface.action.ICoolBarManager;
+import org.fdesigner.ui.jface.action.IMenuManager;
+import org.fdesigner.ui.jface.action.IStatusLineManager;
 
 /**
  * Interface providing special access for configuring the action bars of a

@@ -11,11 +11,12 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.activities.ws;
+package org.fdesigner.workbench.internal.activities.ws;
 
 import java.util.Collection;
-import org.eclipse.jface.viewers.IStructuredContentProvider;
-import org.eclipse.ui.activities.IActivityManager;
+
+import org.fdesigner.ui.jface.viewers.IStructuredContentProvider;
+import org.fdesigner.workbench.activities.IActivityManager;
 
 /**
  * @since 3.0

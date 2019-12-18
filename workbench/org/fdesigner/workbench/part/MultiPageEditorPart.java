@@ -13,29 +13,13 @@
  *     Lars Vogel <Lars.Vogel@gmail.com> - Bug 440810
  *     Vincent Lorenzo <vincent.lorenzo@cea.fr> - Bug 546847
  *******************************************************************************/
-package org.eclipse.ui.part;
+package org.fdesigner.workbench.part;
 
 import static org.eclipse.swt.events.SelectionListener.widgetSelectedAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
-import org.eclipse.core.commands.AbstractHandler;
-import org.eclipse.core.commands.ExecutionEvent;
-import org.eclipse.core.commands.ExecutionException;
-import org.eclipse.core.commands.util.Tracing;
-import org.eclipse.core.runtime.Adapters;
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.core.runtime.ISafeRunnable;
-import org.eclipse.core.runtime.ListenerList;
-import org.eclipse.core.runtime.SafeRunner;
-import org.eclipse.e4.ui.model.application.ui.basic.MPart;
-import org.eclipse.jface.dialogs.IPageChangeProvider;
-import org.eclipse.jface.dialogs.IPageChangedListener;
-import org.eclipse.jface.dialogs.PageChangedEvent;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.jface.util.SafeRunnable;
-import org.eclipse.jface.viewers.ISelectionProvider;
-import org.eclipse.jface.viewers.SelectionChangedEvent;
+
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.custom.CTabFolder;
 import org.eclipse.swt.custom.CTabItem;
@@ -47,24 +31,41 @@ import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Item;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Widget;
-import org.eclipse.ui.IEditorActionBarContributor;
-import org.eclipse.ui.IEditorInput;
-import org.eclipse.ui.IEditorPart;
-import org.eclipse.ui.IEditorSite;
-import org.eclipse.ui.IKeyBindingService;
-import org.eclipse.ui.INestableKeyBindingService;
-import org.eclipse.ui.IPartService;
-import org.eclipse.ui.IWorkbenchPart;
-import org.eclipse.ui.IWorkbenchPartSite;
-import org.eclipse.ui.PartInitException;
-import org.eclipse.ui.handlers.IHandlerService;
-import org.eclipse.ui.internal.PartSite;
-import org.eclipse.ui.internal.WorkbenchPlugin;
-import org.eclipse.ui.internal.misc.Policy;
-import org.eclipse.ui.internal.services.INestable;
-import org.eclipse.ui.internal.services.IServiceLocatorCreator;
-import org.eclipse.ui.services.IDisposable;
-import org.eclipse.ui.services.IServiceLocator;
+import org.fdesigner.commands.AbstractHandler;
+import org.fdesigner.commands.ExecutionEvent;
+import org.fdesigner.commands.ExecutionException;
+import org.fdesigner.commands.util.Tracing;
+import org.fdesigner.e4.ui.model.application.ui.basic.MPart;
+import org.fdesigner.runtime.common.runtime.Adapters;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.ISafeRunnable;
+import org.fdesigner.runtime.common.runtime.ListenerList;
+import org.fdesigner.runtime.common.runtime.SafeRunner;
+import org.fdesigner.ui.jface.dialogs.IPageChangeProvider;
+import org.fdesigner.ui.jface.dialogs.IPageChangedListener;
+import org.fdesigner.ui.jface.dialogs.PageChangedEvent;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.ui.jface.util.SafeRunnable;
+import org.fdesigner.ui.jface.viewers.ISelectionProvider;
+import org.fdesigner.ui.jface.viewers.SelectionChangedEvent;
+import org.fdesigner.workbench.IEditorActionBarContributor;
+import org.fdesigner.workbench.IEditorInput;
+import org.fdesigner.workbench.IEditorPart;
+import org.fdesigner.workbench.IEditorSite;
+import org.fdesigner.workbench.IKeyBindingService;
+import org.fdesigner.workbench.INestableKeyBindingService;
+import org.fdesigner.workbench.IPartService;
+import org.fdesigner.workbench.IWorkbenchPart;
+import org.fdesigner.workbench.IWorkbenchPartSite;
+import org.fdesigner.workbench.PartInitException;
+import org.fdesigner.workbench.handlers.IHandlerService;
+import org.fdesigner.workbench.internal.PartSite;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
+import org.fdesigner.workbench.internal.misc.Policy;
+import org.fdesigner.workbench.internal.services.INestable;
+import org.fdesigner.workbench.internal.services.IServiceLocatorCreator;
+import org.fdesigner.workbench.services.IDisposable;
+import org.fdesigner.workbench.services.IServiceLocator;
 
 /**
  * A multi-page editor is an editor with multiple pages, each of which may

@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.branding;
+package org.fdesigner.workbench.branding;
 
 /**
  * These constants define the set of properties that the UI expects to be

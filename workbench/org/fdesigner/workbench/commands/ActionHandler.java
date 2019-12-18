@@ -11,16 +11,17 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.commands;
+package org.fdesigner.workbench.commands;
 
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
-import org.eclipse.core.commands.IHandlerAttributes;
-import org.eclipse.jface.action.IAction;
-import org.eclipse.jface.util.IPropertyChangeListener;
+
 import org.eclipse.swt.widgets.Event;
-import org.eclipse.ui.actions.RetargetAction;
+import org.fdesigner.commands.IHandlerAttributes;
+import org.fdesigner.ui.jface.action.IAction;
+import org.fdesigner.ui.jface.util.IPropertyChangeListener;
+import org.fdesigner.workbench.actions.RetargetAction;
 
 /**
  * This class adapts instances of <code>IAction</code> to <code>IHandler</code>.

@@ -12,12 +12,12 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.activities;
+package org.fdesigner.workbench.internal.activities;
 
-import org.eclipse.core.runtime.ListenerList;
-import org.eclipse.ui.activities.ActivityManagerEvent;
-import org.eclipse.ui.activities.IActivityManager;
-import org.eclipse.ui.activities.IActivityManagerListener;
+import org.fdesigner.runtime.common.runtime.ListenerList;
+import org.fdesigner.workbench.activities.ActivityManagerEvent;
+import org.fdesigner.workbench.activities.IActivityManager;
+import org.fdesigner.workbench.activities.IActivityManagerListener;
 
 public abstract class AbstractActivityManager implements IActivityManager {
 	private ListenerList<IActivityManagerListener> activityManagerListeners;

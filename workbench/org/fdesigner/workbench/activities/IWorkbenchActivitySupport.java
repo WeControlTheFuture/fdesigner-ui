@@ -11,10 +11,11 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.activities;
+package org.fdesigner.workbench.activities;
 
 import java.util.Set;
-import org.eclipse.jface.resource.ImageDescriptor;
+
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
 
 /**
  * An instance of this interface provides support for managing

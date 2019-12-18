@@ -12,34 +12,35 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.actions;
+package org.fdesigner.workbench.actions;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.jface.action.IContributionItem;
-import org.eclipse.jface.action.IMenuManager;
-import org.eclipse.jface.action.Separator;
-import org.eclipse.jface.util.IPropertyChangeListener;
-import org.eclipse.jface.util.PropertyChangeEvent;
+
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.IActionBars;
-import org.eclipse.ui.IMemento;
-import org.eclipse.ui.IWorkbenchActionConstants;
-import org.eclipse.ui.IWorkbenchPage;
-import org.eclipse.ui.IWorkbenchPreferenceConstants;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.IWorkingSet;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.WorkingSetComparator;
-import org.eclipse.ui.internal.WorkingSetMenuContributionItem;
-import org.eclipse.ui.internal.actions.ClearWorkingSetAction;
-import org.eclipse.ui.internal.actions.EditWorkingSetAction;
-import org.eclipse.ui.internal.actions.SelectWorkingSetAction;
-import org.eclipse.ui.internal.util.Util;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.ui.jface.action.IContributionItem;
+import org.fdesigner.ui.jface.action.IMenuManager;
+import org.fdesigner.ui.jface.action.Separator;
+import org.fdesigner.ui.jface.util.IPropertyChangeListener;
+import org.fdesigner.ui.jface.util.PropertyChangeEvent;
+import org.fdesigner.workbench.IActionBars;
+import org.fdesigner.workbench.IMemento;
+import org.fdesigner.workbench.IWorkbenchActionConstants;
+import org.fdesigner.workbench.IWorkbenchPage;
+import org.fdesigner.workbench.IWorkbenchPreferenceConstants;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.IWorkingSet;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.internal.WorkingSetComparator;
+import org.fdesigner.workbench.internal.WorkingSetMenuContributionItem;
+import org.fdesigner.workbench.internal.actions.ClearWorkingSetAction;
+import org.fdesigner.workbench.internal.actions.EditWorkingSetAction;
+import org.fdesigner.workbench.internal.actions.SelectWorkingSetAction;
+import org.fdesigner.workbench.internal.util.Util;
 
 /**
  * Adds working set filter actions (set / clear / edit)

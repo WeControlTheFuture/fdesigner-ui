@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.util;
+package org.fdesigner.workbench.internal.util;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -31,17 +31,18 @@ import java.util.SortedMap;
 import java.util.SortedSet;
 import java.util.TreeMap;
 import java.util.TreeSet;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.osgi.util.NLS;
+
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.IWorkbench;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.WorkbenchMessages;
-import org.eclipse.ui.internal.WorkbenchPlugin;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.workbench.IWorkbench;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.internal.WorkbenchMessages;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
 
 public final class Util {
 
@@ -669,7 +670,7 @@ public final class Util {
 	 * @since 3.3
 	 */
 	public static String replaceAll(String src, String find, String replacement) {
-		return org.eclipse.jface.util.Util.replaceAll(src, find, replacement);
+		return org.fdesigner.ui.jface.util.Util.replaceAll(src, find, replacement);
 	}
 
 	/**

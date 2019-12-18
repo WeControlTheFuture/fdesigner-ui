@@ -12,9 +12,9 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.application;
+package org.fdesigner.workbench.application;
 
-import org.eclipse.ui.internal.UISynchronizer;
+import org.fdesigner.workbench.internal.UISynchronizer;
 
 /**
  * This class provides static methods that help RCP applications interact with

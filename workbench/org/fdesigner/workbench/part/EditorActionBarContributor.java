@@ -11,17 +11,17 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.part;
+package org.fdesigner.workbench.part;
 
-import org.eclipse.jface.action.ICoolBarManager;
-import org.eclipse.jface.action.IMenuManager;
-import org.eclipse.jface.action.IStatusLineManager;
-import org.eclipse.jface.action.IToolBarManager;
-import org.eclipse.ui.IActionBars;
-import org.eclipse.ui.IActionBars2;
-import org.eclipse.ui.IEditorActionBarContributor;
-import org.eclipse.ui.IEditorPart;
-import org.eclipse.ui.IWorkbenchPage;
+import org.fdesigner.ui.jface.action.ICoolBarManager;
+import org.fdesigner.ui.jface.action.IMenuManager;
+import org.fdesigner.ui.jface.action.IStatusLineManager;
+import org.fdesigner.ui.jface.action.IToolBarManager;
+import org.fdesigner.workbench.IActionBars;
+import org.fdesigner.workbench.IActionBars2;
+import org.fdesigner.workbench.IEditorActionBarContributor;
+import org.fdesigner.workbench.IEditorPart;
+import org.fdesigner.workbench.IWorkbenchPage;
 
 /**
  * Standard implementation of <code>IEditorActionBarContributor</code>.

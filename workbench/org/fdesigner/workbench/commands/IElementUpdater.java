@@ -12,11 +12,11 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.commands;
+package org.fdesigner.workbench.commands;
 
 import java.util.Map;
 
-import org.eclipse.ui.menus.UIElement;
+import org.fdesigner.workbench.menus.UIElement;
 
 /**
  * An IHandler for a command that expects to provide feedback through the

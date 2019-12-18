@@ -14,7 +14,6 @@
  *******************************************************************************/
 package org.fdesigner.workbench.splash;
 
-import org.eclipse.e4.ui.css.swt.CSSSWTConstants;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.Color;
 import org.eclipse.swt.graphics.Font;
@@ -25,6 +24,7 @@ import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Shell;
+import org.fdesigner.e4.ui.css.swt.CSSSWTConstants;
 import org.fdesigner.runtime.common.runtime.IProgressMonitor;
 import org.fdesigner.ui.jface.dialogs.ProgressIndicator;
 import org.fdesigner.ui.jface.window.Window;

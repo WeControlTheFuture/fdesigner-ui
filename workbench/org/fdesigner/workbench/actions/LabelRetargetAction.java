@@ -11,12 +11,12 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.actions;
+package org.fdesigner.workbench.actions;
 
-import org.eclipse.jface.action.IAction;
-import org.eclipse.jface.action.LegacyActionTools;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.jface.util.PropertyChangeEvent;
+import org.fdesigner.ui.jface.action.IAction;
+import org.fdesigner.ui.jface.action.LegacyActionTools;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.ui.jface.util.PropertyChangeEvent;
 
 /**
  * A <code>LabelRetargetAction</code> extends the behavior of RetargetAction. It

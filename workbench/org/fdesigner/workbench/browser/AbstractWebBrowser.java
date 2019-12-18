@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.browser;
+package org.fdesigner.workbench.browser;
 
 /**
  * Clients that supply implementation of the workbench browser support should

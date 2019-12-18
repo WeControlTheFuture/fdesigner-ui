@@ -12,11 +12,11 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.contexts;
+package org.fdesigner.workbench.contexts;
 
 import java.util.Set;
 
-import org.eclipse.ui.internal.util.Util;
+import org.fdesigner.workbench.internal.util.Util;
 
 /**
  * An instance of this class describes changes to an instance of

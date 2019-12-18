@@ -11,9 +11,9 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.part;
+package org.fdesigner.workbench.part;
 
-import org.eclipse.ui.PartInitException;
+import org.fdesigner.workbench.PartInitException;
 
 /**
  * Interface for a page in a pagebook view.

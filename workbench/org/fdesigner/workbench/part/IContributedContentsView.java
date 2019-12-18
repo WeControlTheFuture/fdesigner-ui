@@ -11,9 +11,9 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.part;
+package org.fdesigner.workbench.part;
 
-import org.eclipse.ui.IWorkbenchPart;
+import org.fdesigner.workbench.IWorkbenchPart;
 
 /**
  * This interface is used to identify workbench views which allow other parts

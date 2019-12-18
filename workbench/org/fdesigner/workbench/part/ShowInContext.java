@@ -12,9 +12,9 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.part;
+package org.fdesigner.workbench.part;
 
-import org.eclipse.jface.viewers.ISelection;
+import org.fdesigner.ui.jface.viewers.ISelection;
 
 /**
  * Carries the context for the Show In action. The default implementation

@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.activities;
+package org.fdesigner.workbench.activities;
 
 /**
  * A trigger point represents a place within the Workbench that has the

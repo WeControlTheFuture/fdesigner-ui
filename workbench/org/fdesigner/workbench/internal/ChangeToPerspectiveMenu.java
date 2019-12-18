@@ -12,29 +12,29 @@
  *     IBM Corporation - initial API and implementation
  *     Lars Vogel <Lars.Vogel@gmail.com> - Bug 440810
  *******************************************************************************/
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import org.eclipse.core.commands.Command;
-import org.eclipse.core.commands.ExecutionException;
-import org.eclipse.core.commands.NotEnabledException;
-import org.eclipse.core.commands.NotHandledException;
-import org.eclipse.core.commands.ParameterizedCommand;
-import org.eclipse.core.commands.common.NotDefinedException;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.jface.preference.IPreferenceStore;
-import org.eclipse.ui.IPerspectiveDescriptor;
-import org.eclipse.ui.IWorkbenchCommandConstants;
-import org.eclipse.ui.IWorkbenchPage;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.actions.PerspectiveMenu;
-import org.eclipse.ui.commands.ICommandService;
-import org.eclipse.ui.handlers.IHandlerService;
-import org.eclipse.ui.internal.util.PrefUtil;
-import org.eclipse.ui.statushandlers.StatusManager;
+import org.fdesigner.commands.Command;
+import org.fdesigner.commands.ExecutionException;
+import org.fdesigner.commands.NotEnabledException;
+import org.fdesigner.commands.NotHandledException;
+import org.fdesigner.commands.ParameterizedCommand;
+import org.fdesigner.commands.common.NotDefinedException;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.ui.jface.preference.IPreferenceStore;
+import org.fdesigner.workbench.IPerspectiveDescriptor;
+import org.fdesigner.workbench.IWorkbenchCommandConstants;
+import org.fdesigner.workbench.IWorkbenchPage;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.actions.PerspectiveMenu;
+import org.fdesigner.workbench.commands.ICommandService;
+import org.fdesigner.workbench.handlers.IHandlerService;
+import org.fdesigner.workbench.internal.util.PrefUtil;
+import org.fdesigner.workbench.statushandlers.StatusManager;
 
 /**
  * Change the perspective of the active page in the window to the selected one.

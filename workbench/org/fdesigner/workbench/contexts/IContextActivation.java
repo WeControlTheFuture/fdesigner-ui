@@ -12,10 +12,10 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.contexts;
+package org.fdesigner.workbench.contexts;
 
-import org.eclipse.core.expressions.IEvaluationContext;
-import org.eclipse.ui.internal.services.IEvaluationResultCache;
+import org.fdesigner.expressions.IEvaluationContext;
+import org.fdesigner.workbench.internal.services.IEvaluationResultCache;
 
 /**
  * <p>

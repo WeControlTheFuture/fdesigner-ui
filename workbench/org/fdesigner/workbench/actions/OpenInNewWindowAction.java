@@ -11,21 +11,19 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.actions;
+package org.fdesigner.workbench.actions;
 
-import org.eclipse.core.runtime.IAdaptable;
-
-import org.eclipse.jface.action.Action;
-
-import org.eclipse.ui.IWorkbenchCommandConstants;
-import org.eclipse.ui.IWorkbenchPage;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.WorkbenchException;
-import org.eclipse.ui.internal.IWorkbenchHelpContextIds;
-import org.eclipse.ui.internal.Workbench;
-import org.eclipse.ui.internal.WorkbenchMessages;
-import org.eclipse.ui.internal.misc.StatusUtil;
-import org.eclipse.ui.statushandlers.StatusManager;
+import org.fdesigner.runtime.common.runtime.IAdaptable;
+import org.fdesigner.ui.jface.action.Action;
+import org.fdesigner.workbench.IWorkbenchCommandConstants;
+import org.fdesigner.workbench.IWorkbenchPage;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.WorkbenchException;
+import org.fdesigner.workbench.internal.IWorkbenchHelpContextIds;
+import org.fdesigner.workbench.internal.Workbench;
+import org.fdesigner.workbench.internal.WorkbenchMessages;
+import org.fdesigner.workbench.internal.misc.StatusUtil;
+import org.fdesigner.workbench.statushandlers.StatusManager;
 
 /**
  * Opens a new window. The initial perspective for the new window will be the

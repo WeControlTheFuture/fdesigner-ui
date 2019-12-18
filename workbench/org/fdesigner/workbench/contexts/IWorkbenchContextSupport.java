@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.contexts;
+package org.fdesigner.workbench.contexts;
 
 import java.util.Collection;
 

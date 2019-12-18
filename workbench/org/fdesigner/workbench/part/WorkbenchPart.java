@@ -13,40 +13,42 @@
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 472654
  *     Alexander Fedorov <alexander.fedorov@arsysop.ru> - Bug 548799
  *******************************************************************************/
-package org.eclipse.ui.part;
+package org.fdesigner.workbench.part;
 
-import com.ibm.icu.text.MessageFormat;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
 import java.util.Optional;
-import org.eclipse.core.commands.common.EventManager;
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.core.runtime.IExecutableExtension;
-import org.eclipse.core.runtime.ListenerList;
-import org.eclipse.core.runtime.Platform;
+
 import org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.jface.resource.JFaceResources;
-import org.eclipse.jface.resource.ResourceLocator;
-import org.eclipse.jface.util.IPropertyChangeListener;
-import org.eclipse.jface.util.PropertyChangeEvent;
-import org.eclipse.jface.window.Window;
 import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.widgets.Composite;
-import org.eclipse.ui.IPropertyListener;
-import org.eclipse.ui.ISharedImages;
-import org.eclipse.ui.IWorkbenchPart;
-import org.eclipse.ui.IWorkbenchPart3;
-import org.eclipse.ui.IWorkbenchPartConstants;
-import org.eclipse.ui.IWorkbenchPartSite;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.PartSite;
-import org.eclipse.ui.internal.WorkbenchMessages;
-import org.eclipse.ui.internal.WorkbenchPlugin;
-import org.eclipse.ui.internal.util.Util;
+import org.fdesigner.commands.common.EventManager;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.ListenerList;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.runtime.registry.runtime.IExecutableExtension;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.ui.jface.resource.JFaceResources;
+import org.fdesigner.ui.jface.resource.ResourceLocator;
+import org.fdesigner.ui.jface.util.IPropertyChangeListener;
+import org.fdesigner.ui.jface.util.PropertyChangeEvent;
+import org.fdesigner.ui.jface.window.Window;
+import org.fdesigner.workbench.IPropertyListener;
+import org.fdesigner.workbench.ISharedImages;
+import org.fdesigner.workbench.IWorkbenchPart;
+import org.fdesigner.workbench.IWorkbenchPart3;
+import org.fdesigner.workbench.IWorkbenchPartConstants;
+import org.fdesigner.workbench.IWorkbenchPartSite;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.internal.PartSite;
+import org.fdesigner.workbench.internal.WorkbenchMessages;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
+import org.fdesigner.workbench.internal.util.Util;
+
+import com.ibm.icu.text.MessageFormat;
 
 /**
  * Abstract base implementation of all workbench parts.

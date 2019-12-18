@@ -12,14 +12,14 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.contexts;
+package org.fdesigner.workbench.internal.contexts;
 
-import org.eclipse.core.expressions.Expression;
-import org.eclipse.core.expressions.IEvaluationContext;
-import org.eclipse.ui.ISources;
-import org.eclipse.ui.contexts.IContextActivation;
-import org.eclipse.ui.contexts.IContextService;
-import org.eclipse.ui.internal.services.EvaluationResultCache;
+import org.fdesigner.expressions.Expression;
+import org.fdesigner.expressions.IEvaluationContext;
+import org.fdesigner.workbench.ISources;
+import org.fdesigner.workbench.contexts.IContextActivation;
+import org.fdesigner.workbench.contexts.IContextService;
+import org.fdesigner.workbench.internal.services.EvaluationResultCache;
 
 /**
  * <p>

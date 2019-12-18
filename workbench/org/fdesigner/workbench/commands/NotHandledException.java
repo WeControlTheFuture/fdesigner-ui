@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.commands;
+package org.fdesigner.workbench.commands;
 
 /**
  * Signals that an attempt was made to access the properties of an unhandled
@@ -56,7 +56,7 @@ public final class NotHandledException extends CommandException {
 	 * @since 3.1
 	 */
 	@Deprecated
-	public NotHandledException(final org.eclipse.core.commands.NotHandledException e) {
+	public NotHandledException(final org.fdesigner.commands.NotHandledException e) {
 		super(e.getMessage(), e);
 	}
 }

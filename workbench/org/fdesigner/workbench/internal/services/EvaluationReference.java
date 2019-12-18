@@ -12,20 +12,20 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal.services;
+package org.fdesigner.workbench.internal.services;
 
-import org.eclipse.core.expressions.EvaluationResult;
-import org.eclipse.core.expressions.Expression;
-import org.eclipse.core.expressions.IEvaluationContext;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.e4.core.commands.ExpressionContext;
-import org.eclipse.e4.core.contexts.IEclipseContext;
-import org.eclipse.e4.core.contexts.RunAndTrack;
-import org.eclipse.e4.ui.internal.workbench.Activator;
-import org.eclipse.jface.util.IPropertyChangeListener;
-import org.eclipse.jface.util.PropertyChangeEvent;
-import org.eclipse.ui.services.IEvaluationReference;
-import org.osgi.service.log.LogService;
+import org.fdesigner.e4.core.commands.ExpressionContext;
+import org.fdesigner.e4.core.contexts.IEclipseContext;
+import org.fdesigner.e4.core.contexts.RunAndTrack;
+import org.fdesigner.e4.ui.workbench.internal.workbench.Activator;
+import org.fdesigner.expressions.EvaluationResult;
+import org.fdesigner.expressions.Expression;
+import org.fdesigner.expressions.IEvaluationContext;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.services.log.LogService;
+import org.fdesigner.ui.jface.util.IPropertyChangeListener;
+import org.fdesigner.ui.jface.util.PropertyChangeEvent;
+import org.fdesigner.workbench.services.IEvaluationReference;
 
 /**
  * @since 3.3

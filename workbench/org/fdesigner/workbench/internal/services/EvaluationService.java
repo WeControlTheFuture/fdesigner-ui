@@ -13,7 +13,7 @@
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 472654
  *******************************************************************************/
 
-package org.eclipse.ui.internal.services;
+package org.fdesigner.workbench.internal.services;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -23,29 +23,30 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Map;
 import java.util.Map.Entry;
-import org.eclipse.core.expressions.Expression;
-import org.eclipse.core.expressions.ExpressionInfo;
-import org.eclipse.core.expressions.IEvaluationContext;
-import org.eclipse.core.runtime.ISafeRunnable;
-import org.eclipse.core.runtime.ListenerList;
-import org.eclipse.core.runtime.SafeRunner;
-import org.eclipse.e4.core.commands.ExpressionContext;
-import org.eclipse.e4.core.contexts.ContextFunction;
-import org.eclipse.e4.core.contexts.IEclipseContext;
-import org.eclipse.e4.core.contexts.RunAndTrack;
-import org.eclipse.e4.core.services.events.IEventBroker;
-import org.eclipse.e4.ui.services.IServiceConstants;
-import org.eclipse.e4.ui.workbench.UIEvents;
-import org.eclipse.jface.util.IPropertyChangeListener;
-import org.eclipse.jface.util.PropertyChangeEvent;
-import org.eclipse.jface.viewers.ISelection;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.ui.ISourceProvider;
-import org.eclipse.ui.ISourceProviderListener;
-import org.eclipse.ui.ISources;
-import org.eclipse.ui.internal.WorkbenchPlugin;
-import org.eclipse.ui.services.IEvaluationReference;
-import org.eclipse.ui.services.IEvaluationService;
+
+import org.fdesigner.e4.core.commands.ExpressionContext;
+import org.fdesigner.e4.core.contexts.ContextFunction;
+import org.fdesigner.e4.core.contexts.IEclipseContext;
+import org.fdesigner.e4.core.contexts.RunAndTrack;
+import org.fdesigner.e4.core.services.events.IEventBroker;
+import org.fdesigner.e4.ui.services.IServiceConstants;
+import org.fdesigner.e4.ui.workbench.UIEvents;
+import org.fdesigner.expressions.Expression;
+import org.fdesigner.expressions.ExpressionInfo;
+import org.fdesigner.expressions.IEvaluationContext;
+import org.fdesigner.runtime.common.runtime.ISafeRunnable;
+import org.fdesigner.runtime.common.runtime.ListenerList;
+import org.fdesigner.runtime.common.runtime.SafeRunner;
+import org.fdesigner.ui.jface.util.IPropertyChangeListener;
+import org.fdesigner.ui.jface.util.PropertyChangeEvent;
+import org.fdesigner.ui.jface.viewers.ISelection;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.workbench.ISourceProvider;
+import org.fdesigner.workbench.ISourceProviderListener;
+import org.fdesigner.workbench.ISources;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
+import org.fdesigner.workbench.services.IEvaluationReference;
+import org.fdesigner.workbench.services.IEvaluationService;
 
 /**
  * @since 3.3

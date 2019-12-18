@@ -14,31 +14,33 @@
  *     Patrik Suzzi <psuzzi@gmail.com> - Bug 504091
  ******************************************************************************/
 
-package org.eclipse.ui.internal.handlers;
+package org.fdesigner.workbench.internal.handlers;
 
 import java.util.ArrayList;
 import java.util.List;
-import org.eclipse.core.commands.Command;
-import org.eclipse.core.commands.ExecutionEvent;
-import org.eclipse.core.commands.ExecutionException;
-import org.eclipse.core.commands.ParameterizedCommand;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.jface.resource.JFaceResources;
-import org.eclipse.jface.resource.LocalResourceManager;
-import org.eclipse.jface.util.Geometry;
+
 import org.eclipse.swt.graphics.Point;
 import org.eclipse.swt.graphics.Rectangle;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.IWorkbenchCommandConstants;
-import org.eclipse.ui.IWorkbenchPage;
-import org.eclipse.ui.IWorkbenchPart;
-import org.eclipse.ui.commands.ICommandService;
-import org.eclipse.ui.internal.FilteredTableBaseHandler;
-import org.eclipse.ui.internal.PartSite;
-import org.eclipse.ui.internal.WorkbenchPage;
-import org.eclipse.ui.part.PageSwitcher;
-import org.eclipse.ui.part.WorkbenchPart;
+import org.fdesigner.commands.Command;
+import org.fdesigner.commands.ExecutionEvent;
+import org.fdesigner.commands.ExecutionException;
+import org.fdesigner.commands.ParameterizedCommand;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.ui.jface.resource.JFaceResources;
+import org.fdesigner.ui.jface.resource.LocalResourceManager;
+import org.fdesigner.ui.jface.util.Geometry;
+import org.fdesigner.workbench.IWorkbenchCommandConstants;
+import org.fdesigner.workbench.IWorkbenchPage;
+import org.fdesigner.workbench.IWorkbenchPart;
+import org.fdesigner.workbench.commands.ICommandService;
+import org.fdesigner.workbench.internal.FilteredTableBaseHandler;
+import org.fdesigner.workbench.internal.FilteredTableBaseHandler.FilteredTableItem;
+import org.fdesigner.workbench.internal.PartSite;
+import org.fdesigner.workbench.internal.WorkbenchPage;
+import org.fdesigner.workbench.part.PageSwitcher;
+import org.fdesigner.workbench.part.WorkbenchPart;
 
 /**
  * Displays a dialog for cycling through pages of a view. A view may implement

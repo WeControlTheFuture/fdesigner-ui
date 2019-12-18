@@ -12,13 +12,13 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.services;
+package org.fdesigner.workbench.internal.services;
 
-import org.eclipse.core.expressions.EvaluationResult;
-import org.eclipse.core.expressions.Expression;
-import org.eclipse.core.expressions.IEvaluationContext;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.ui.ISources;
+import org.fdesigner.expressions.EvaluationResult;
+import org.fdesigner.expressions.Expression;
+import org.fdesigner.expressions.IEvaluationContext;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.workbench.ISources;
 
 /**
  * <p>

@@ -12,19 +12,19 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.core.runtime.IAdaptable;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.ui.IEditorDescriptor;
-import org.eclipse.ui.IEditorInput;
-import org.eclipse.ui.IEditorRegistry;
-import org.eclipse.ui.IElementFactory;
-import org.eclipse.ui.IMemento;
-import org.eclipse.ui.IPersistableElement;
-import org.eclipse.ui.PlatformUI;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.IAdaptable;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.workbench.IEditorDescriptor;
+import org.fdesigner.workbench.IEditorInput;
+import org.fdesigner.workbench.IEditorRegistry;
+import org.fdesigner.workbench.IElementFactory;
+import org.fdesigner.workbench.IMemento;
+import org.fdesigner.workbench.IPersistableElement;
+import org.fdesigner.workbench.PlatformUI;
 
 /**
  * An item in the editor history.

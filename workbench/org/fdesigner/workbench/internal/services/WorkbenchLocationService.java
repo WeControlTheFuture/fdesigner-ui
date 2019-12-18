@@ -12,14 +12,14 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal.services;
+package org.fdesigner.workbench.internal.services;
 
-import org.eclipse.ui.IEditorSite;
-import org.eclipse.ui.IWorkbench;
-import org.eclipse.ui.IWorkbenchPartSite;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.part.IPageSite;
-import org.eclipse.ui.services.IDisposable;
+import org.fdesigner.workbench.IEditorSite;
+import org.fdesigner.workbench.IWorkbench;
+import org.fdesigner.workbench.IWorkbenchPartSite;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.part.IPageSite;
+import org.fdesigner.workbench.services.IDisposable;
 
 /**
  * @since 3.4

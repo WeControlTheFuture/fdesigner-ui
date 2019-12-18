@@ -12,10 +12,11 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.activities;
+package org.fdesigner.workbench.activities;
 
 import java.util.Set;
-import org.eclipse.core.expressions.Expression;
+
+import org.fdesigner.expressions.Expression;
 
 /**
  * An instance of this interface is an activity as defined by the extension

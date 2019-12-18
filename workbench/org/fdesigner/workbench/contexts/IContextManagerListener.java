@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.contexts;
+package org.fdesigner.workbench.contexts;
 
 /**
  * An instance of this interface can be used by clients to receive notification

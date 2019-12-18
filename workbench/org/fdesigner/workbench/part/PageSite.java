@@ -12,37 +12,38 @@
  *     IBM Corporation - initial API and implementation
  *     Lars Vogel <Lars.Vogel@gmail.com> - Bug 440810
  *******************************************************************************/
-package org.eclipse.ui.part;
+package org.fdesigner.workbench.part;
 
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.e4.core.contexts.ContextFunction;
-import org.eclipse.e4.core.contexts.IEclipseContext;
-import org.eclipse.jface.action.MenuManager;
-import org.eclipse.jface.viewers.ISelectionProvider;
+
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.IActionBars;
-import org.eclipse.ui.IViewSite;
-import org.eclipse.ui.IWorkbenchPage;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.SubActionBars;
-import org.eclipse.ui.contexts.IContextService;
-import org.eclipse.ui.handlers.IHandlerService;
-import org.eclipse.ui.internal.PartSite;
-import org.eclipse.ui.internal.PopupMenuExtender;
-import org.eclipse.ui.internal.contexts.NestableContextService;
-import org.eclipse.ui.internal.expressions.ActivePartExpression;
-import org.eclipse.ui.internal.handlers.LegacyHandlerService;
-import org.eclipse.ui.internal.part.IPageSiteHolder;
-import org.eclipse.ui.internal.services.INestable;
-import org.eclipse.ui.internal.services.IServiceLocatorCreator;
-import org.eclipse.ui.internal.services.IWorkbenchLocationService;
-import org.eclipse.ui.internal.services.ServiceLocator;
-import org.eclipse.ui.internal.services.WorkbenchLocationService;
-import org.eclipse.ui.services.IServiceScopes;
+import org.fdesigner.e4.core.contexts.ContextFunction;
+import org.fdesigner.e4.core.contexts.IEclipseContext;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.ui.jface.action.MenuManager;
+import org.fdesigner.ui.jface.viewers.ISelectionProvider;
+import org.fdesigner.workbench.IActionBars;
+import org.fdesigner.workbench.IViewSite;
+import org.fdesigner.workbench.IWorkbenchPage;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.SubActionBars;
+import org.fdesigner.workbench.contexts.IContextService;
+import org.fdesigner.workbench.handlers.IHandlerService;
+import org.fdesigner.workbench.internal.PartSite;
+import org.fdesigner.workbench.internal.PopupMenuExtender;
+import org.fdesigner.workbench.internal.contexts.NestableContextService;
+import org.fdesigner.workbench.internal.expressions.ActivePartExpression;
+import org.fdesigner.workbench.internal.handlers.LegacyHandlerService;
+import org.fdesigner.workbench.internal.part.IPageSiteHolder;
+import org.fdesigner.workbench.internal.services.INestable;
+import org.fdesigner.workbench.internal.services.IServiceLocatorCreator;
+import org.fdesigner.workbench.internal.services.IWorkbenchLocationService;
+import org.fdesigner.workbench.internal.services.ServiceLocator;
+import org.fdesigner.workbench.internal.services.WorkbenchLocationService;
+import org.fdesigner.workbench.services.IServiceScopes;
 
 /**
  * This implementation of <code>IPageSite</code> provides a site for a page

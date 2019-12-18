@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal.contexts;
+package org.fdesigner.workbench.internal.contexts;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -20,14 +20,15 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
-import org.eclipse.core.commands.contexts.Context;
-import org.eclipse.core.commands.contexts.IContextManagerListener;
-import org.eclipse.core.expressions.Expression;
+
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.ISourceProvider;
-import org.eclipse.ui.contexts.IContextActivation;
-import org.eclipse.ui.contexts.IContextService;
-import org.eclipse.ui.internal.expressions.AndExpression;
+import org.fdesigner.commands.contexts.Context;
+import org.fdesigner.commands.contexts.IContextManagerListener;
+import org.fdesigner.expressions.Expression;
+import org.fdesigner.workbench.ISourceProvider;
+import org.fdesigner.workbench.contexts.IContextActivation;
+import org.fdesigner.workbench.contexts.IContextService;
+import org.fdesigner.workbench.internal.expressions.AndExpression;
 
 /**
  * A context service which delegates almost all responsibility to the parent

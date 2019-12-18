@@ -13,20 +13,20 @@
  *     Friederike Schertel <friederike@schertel.org> - Bug 478336
  *******************************************************************************/
 
-package org.eclipse.ui.internal.handlers;
+package org.fdesigner.workbench.internal.handlers;
 
-import org.eclipse.core.commands.IHandler;
-import org.eclipse.core.expressions.EvaluationResult;
-import org.eclipse.core.expressions.Expression;
-import org.eclipse.core.expressions.IEvaluationContext;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.e4.core.contexts.IEclipseContext;
-import org.eclipse.e4.ui.internal.workbench.Activator;
-import org.eclipse.e4.ui.internal.workbench.Policy;
-import org.eclipse.ui.ISources;
-import org.eclipse.ui.handlers.IHandlerActivation;
-import org.eclipse.ui.handlers.IHandlerService;
-import org.eclipse.ui.internal.services.SourcePriorityNameMapping;
+import org.fdesigner.commands.IHandler;
+import org.fdesigner.e4.core.contexts.IEclipseContext;
+import org.fdesigner.e4.ui.workbench.internal.workbench.Activator;
+import org.fdesigner.e4.ui.workbench.internal.workbench.Policy;
+import org.fdesigner.expressions.EvaluationResult;
+import org.fdesigner.expressions.Expression;
+import org.fdesigner.expressions.IEvaluationContext;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.workbench.ISources;
+import org.fdesigner.workbench.handlers.IHandlerActivation;
+import org.fdesigner.workbench.handlers.IHandlerService;
+import org.fdesigner.workbench.internal.services.SourcePriorityNameMapping;
 
 /**
  * <p>

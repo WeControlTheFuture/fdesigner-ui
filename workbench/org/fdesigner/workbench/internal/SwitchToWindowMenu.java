@@ -11,17 +11,17 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
 import static org.eclipse.swt.events.SelectionListener.widgetSelectedAdapter;
 
-import org.eclipse.jface.action.ContributionItem;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Menu;
 import org.eclipse.swt.widgets.MenuItem;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.IWorkbench;
-import org.eclipse.ui.IWorkbenchWindow;
+import org.fdesigner.ui.jface.action.ContributionItem;
+import org.fdesigner.workbench.IWorkbench;
+import org.fdesigner.workbench.IWorkbenchWindow;
 
 /**
  * A dynamic menu item to switch to other opened workbench windows.

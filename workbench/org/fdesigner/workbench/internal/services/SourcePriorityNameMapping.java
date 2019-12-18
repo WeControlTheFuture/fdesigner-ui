@@ -12,13 +12,14 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.services;
+package org.fdesigner.workbench.internal.services;
 
 import java.util.HashMap;
 import java.util.Map;
-import org.eclipse.core.expressions.Expression;
-import org.eclipse.core.expressions.ExpressionInfo;
-import org.eclipse.ui.ISources;
+
+import org.fdesigner.expressions.Expression;
+import org.fdesigner.expressions.ExpressionInfo;
+import org.fdesigner.workbench.ISources;
 
 /**
  * <p>

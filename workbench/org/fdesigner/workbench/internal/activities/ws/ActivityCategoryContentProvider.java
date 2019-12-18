@@ -11,19 +11,20 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.activities.ws;
+package org.fdesigner.workbench.internal.activities.ws;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
-import org.eclipse.jface.viewers.ITreeContentProvider;
-import org.eclipse.jface.viewers.Viewer;
-import org.eclipse.ui.activities.IActivity;
-import org.eclipse.ui.activities.IActivityManager;
-import org.eclipse.ui.activities.IActivityRequirementBinding;
-import org.eclipse.ui.activities.ICategory;
-import org.eclipse.ui.internal.activities.InternalActivityHelper;
+
+import org.fdesigner.ui.jface.viewers.ITreeContentProvider;
+import org.fdesigner.ui.jface.viewers.Viewer;
+import org.fdesigner.workbench.activities.IActivity;
+import org.fdesigner.workbench.activities.IActivityManager;
+import org.fdesigner.workbench.activities.IActivityRequirementBinding;
+import org.fdesigner.workbench.activities.ICategory;
+import org.fdesigner.workbench.internal.activities.InternalActivityHelper;
 
 /**
  * Tree provider that provides <code>ICategory</code> objects in an

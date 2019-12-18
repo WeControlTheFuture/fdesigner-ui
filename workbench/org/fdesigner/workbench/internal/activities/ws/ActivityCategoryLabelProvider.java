@@ -11,20 +11,21 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.activities.ws;
+package org.fdesigner.workbench.internal.activities.ws;
 
 import java.util.HashMap;
 import java.util.Map;
-import org.eclipse.jface.resource.DeviceResourceException;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.jface.resource.JFaceResources;
-import org.eclipse.jface.resource.LocalResourceManager;
-import org.eclipse.jface.viewers.LabelProvider;
+
 import org.eclipse.swt.graphics.Image;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.activities.IActivity;
-import org.eclipse.ui.activities.ICategory;
-import org.eclipse.ui.activities.NotDefinedException;
+import org.fdesigner.ui.jface.resource.DeviceResourceException;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.ui.jface.resource.JFaceResources;
+import org.fdesigner.ui.jface.resource.LocalResourceManager;
+import org.fdesigner.ui.jface.viewers.LabelProvider;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.activities.IActivity;
+import org.fdesigner.workbench.activities.ICategory;
+import org.fdesigner.workbench.activities.NotDefinedException;
 
 /**
  * Provides labels for elements drawn from <code>IActivityManagers</code>. Ie:

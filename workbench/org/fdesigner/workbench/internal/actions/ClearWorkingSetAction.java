@@ -12,14 +12,14 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.actions;
+package org.fdesigner.workbench.internal.actions;
 
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.jface.action.Action;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.actions.WorkingSetFilterActionGroup;
-import org.eclipse.ui.internal.IWorkbenchHelpContextIds;
-import org.eclipse.ui.internal.WorkbenchMessages;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.ui.jface.action.Action;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.actions.WorkingSetFilterActionGroup;
+import org.fdesigner.workbench.internal.IWorkbenchHelpContextIds;
+import org.fdesigner.workbench.internal.WorkbenchMessages;
 
 /**
  * Clears the selected working set in the working set action group.

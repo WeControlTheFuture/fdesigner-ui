@@ -12,18 +12,14 @@
  *     IBM Corporation - initial API and implementation
  *     Patrik Suzzi <psuzzi@gmail.com> - Bug 489250
  *******************************************************************************/
-package org.eclipse.ui.internal.activities.ws;
+package org.fdesigner.workbench.internal.activities.ws;
 
-import com.ibm.icu.text.MessageFormat;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Properties;
 import java.util.ResourceBundle;
 import java.util.Set;
-import org.eclipse.jface.dialogs.Dialog;
-import org.eclipse.jface.dialogs.IDialogConstants;
-import org.eclipse.jface.viewers.CheckboxTableViewer;
-import org.eclipse.jface.window.Window;
+
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.Font;
 import org.eclipse.swt.layout.GridData;
@@ -34,11 +30,17 @@ import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Text;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.activities.IActivity;
-import org.eclipse.ui.activities.IActivityManager;
-import org.eclipse.ui.activities.NotDefinedException;
-import org.eclipse.ui.activities.WorkbenchTriggerPointAdvisor;
+import org.fdesigner.ui.jface.dialogs.Dialog;
+import org.fdesigner.ui.jface.dialogs.IDialogConstants;
+import org.fdesigner.ui.jface.viewers.CheckboxTableViewer;
+import org.fdesigner.ui.jface.window.Window;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.activities.IActivity;
+import org.fdesigner.workbench.activities.IActivityManager;
+import org.fdesigner.workbench.activities.NotDefinedException;
+import org.fdesigner.workbench.activities.WorkbenchTriggerPointAdvisor;
+
+import com.ibm.icu.text.MessageFormat;
 
 /**
  * Dialog that will prompt the user and confirm that they wish to activate a set

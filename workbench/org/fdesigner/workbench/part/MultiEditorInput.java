@@ -11,13 +11,14 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.part;
+package org.fdesigner.workbench.part;
 
 import java.util.Arrays;
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.ui.IEditorInput;
-import org.eclipse.ui.IPersistableElement;
+
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.workbench.IEditorInput;
+import org.fdesigner.workbench.IPersistableElement;
 
 /**
  * Implements an input for a <code>AbstractMultiEditor</code>.

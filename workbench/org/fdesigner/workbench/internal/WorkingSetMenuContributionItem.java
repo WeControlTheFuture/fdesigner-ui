@@ -12,21 +12,21 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
 import static org.eclipse.swt.events.SelectionListener.widgetSelectedAdapter;
 
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.jface.action.ContributionItem;
-import org.eclipse.jface.resource.ImageDescriptor;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.widgets.Menu;
 import org.eclipse.swt.widgets.MenuItem;
-import org.eclipse.ui.IWorkingSet;
-import org.eclipse.ui.IWorkingSetManager;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.actions.WorkingSetFilterActionGroup;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.ui.jface.action.ContributionItem;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.workbench.IWorkingSet;
+import org.fdesigner.workbench.IWorkingSetManager;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.actions.WorkingSetFilterActionGroup;
 
 /**
  * Menu contribution item which shows a working set.

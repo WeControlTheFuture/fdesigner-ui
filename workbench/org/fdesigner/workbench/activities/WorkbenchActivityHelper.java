@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 472654
  *******************************************************************************/
-package org.eclipse.ui.activities;
+package org.fdesigner.workbench.activities;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -20,9 +20,10 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
-import org.eclipse.ui.IPluginContribution;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.activities.ws.WorkbenchActivitySupport;
+
+import org.fdesigner.workbench.IPluginContribution;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.internal.activities.ws.WorkbenchActivitySupport;
 
 /**
  * A utility class that contains helpful methods for interacting with the
