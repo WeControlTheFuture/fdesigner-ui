@@ -12,23 +12,24 @@
  *     IBM Corporation - initial API and implementation
  *     Alexander Fedorov <alexander.fedorov@arsysop.ru> - Bug 548799
  *******************************************************************************/
-package org.eclipse.ui.internal.preferences;
+package org.fdesigner.workbench.internal.preferences;
 
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.core.runtime.preferences.IPreferenceFilter;
-import org.eclipse.core.runtime.preferences.PreferenceFilterEntry;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.jface.resource.ResourceLocator;
-import org.eclipse.ui.IPluginContribution;
-import org.eclipse.ui.internal.registry.IWorkbenchRegistryConstants;
-import org.eclipse.ui.internal.registry.PreferenceTransferRegistryReader;
-import org.eclipse.ui.internal.registry.RegistryReader;
-import org.eclipse.ui.model.WorkbenchAdapter;
+
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.preferences.runtime.preferences.IPreferenceFilter;
+import org.fdesigner.runtime.preferences.runtime.preferences.PreferenceFilterEntry;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.ui.jface.resource.ResourceLocator;
+import org.fdesigner.workbench.IPluginContribution;
+import org.fdesigner.workbench.internal.registry.IWorkbenchRegistryConstants;
+import org.fdesigner.workbench.internal.registry.PreferenceTransferRegistryReader;
+import org.fdesigner.workbench.internal.registry.RegistryReader;
+import org.fdesigner.workbench.model.WorkbenchAdapter;
 
 /**
  * Instances represent registered preference transfers.

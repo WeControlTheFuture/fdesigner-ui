@@ -14,7 +14,7 @@
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 472654
  *     Patrik Suzzi <psuzzi@gmail.com> - Bug 511198
  *******************************************************************************/
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
@@ -23,37 +23,38 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
-import org.eclipse.core.runtime.Adapters;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.OperationCanceledException;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.core.runtime.SubMonitor;
-import org.eclipse.core.runtime.jobs.IJobChangeEvent;
-import org.eclipse.core.runtime.jobs.Job;
-import org.eclipse.core.runtime.jobs.JobChangeAdapter;
-import org.eclipse.jface.action.LegacyActionTools;
-import org.eclipse.jface.dialogs.MessageDialog;
-import org.eclipse.jface.operation.IRunnableContext;
-import org.eclipse.jface.operation.IRunnableWithProgress;
-import org.eclipse.jface.window.IShellProvider;
-import org.eclipse.osgi.util.NLS;
+
 import org.eclipse.swt.SWT;
-import org.eclipse.ui.ISaveablePart;
-import org.eclipse.ui.ISaveablePart2;
-import org.eclipse.ui.ISaveablesLifecycleListener;
-import org.eclipse.ui.ISaveablesSource;
-import org.eclipse.ui.ISecondarySaveableSource;
-import org.eclipse.ui.IWorkbenchPart;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.Saveable;
-import org.eclipse.ui.internal.dialogs.EventLoopProgressMonitor;
-import org.eclipse.ui.internal.misc.StatusUtil;
-import org.eclipse.ui.progress.IJobRunnable;
-import org.eclipse.ui.progress.IWorkbenchSiteProgressService;
-import org.eclipse.ui.statushandlers.StatusManager;
+import org.fdesigner.runtime.common.runtime.Adapters;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.OperationCanceledException;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.common.runtime.SubMonitor;
+import org.fdesigner.runtime.jobs.runtime.jobs.IJobChangeEvent;
+import org.fdesigner.runtime.jobs.runtime.jobs.Job;
+import org.fdesigner.runtime.jobs.runtime.jobs.JobChangeAdapter;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.ui.jface.action.LegacyActionTools;
+import org.fdesigner.ui.jface.dialogs.MessageDialog;
+import org.fdesigner.ui.jface.operation.IRunnableContext;
+import org.fdesigner.ui.jface.operation.IRunnableWithProgress;
+import org.fdesigner.ui.jface.window.IShellProvider;
+import org.fdesigner.workbench.ISaveablePart;
+import org.fdesigner.workbench.ISaveablePart2;
+import org.fdesigner.workbench.ISaveablesLifecycleListener;
+import org.fdesigner.workbench.ISaveablesSource;
+import org.fdesigner.workbench.ISecondarySaveableSource;
+import org.fdesigner.workbench.IWorkbenchPart;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.Saveable;
+import org.fdesigner.workbench.internal.dialogs.EventLoopProgressMonitor;
+import org.fdesigner.workbench.internal.misc.StatusUtil;
+import org.fdesigner.workbench.progress.IJobRunnable;
+import org.fdesigner.workbench.progress.IWorkbenchSiteProgressService;
+import org.fdesigner.workbench.statushandlers.StatusManager;
 
 /**
  * Helper class for prompting to save dirty views or editors.

@@ -12,11 +12,11 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal.tweaklets;
+package org.fdesigner.workbench.internal.tweaklets;
 
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.internal.RectangleAnimationFeedbackBase;
-import org.eclipse.ui.internal.RectangleAnimationImageFeedback;
+import org.fdesigner.workbench.internal.RectangleAnimationFeedbackBase;
+import org.fdesigner.workbench.internal.RectangleAnimationImageFeedback;
 
 /**
  * Return an animation feedback that uses images.

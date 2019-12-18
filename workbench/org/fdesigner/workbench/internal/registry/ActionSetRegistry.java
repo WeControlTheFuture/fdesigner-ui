@@ -12,24 +12,25 @@
  *     IBM Corporation - initial API and implementation
  *     Lars Vogel <Lars.Vogel@gmail.com> - Bug 440810
  *******************************************************************************/
-package org.eclipse.ui.internal.registry;
+package org.fdesigner.workbench.internal.registry;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
-import org.eclipse.core.commands.contexts.Context;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.core.runtime.IExtension;
-import org.eclipse.core.runtime.IExtensionPoint;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.core.runtime.dynamichelpers.ExtensionTracker;
-import org.eclipse.core.runtime.dynamichelpers.IExtensionChangeHandler;
-import org.eclipse.core.runtime.dynamichelpers.IExtensionTracker;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.contexts.IContextService;
-import org.eclipse.ui.internal.WorkbenchPlugin;
+
+import org.fdesigner.commands.contexts.Context;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.runtime.registry.runtime.IExtension;
+import org.fdesigner.runtime.registry.runtime.IExtensionPoint;
+import org.fdesigner.runtime.registry.runtime.dynamichelpers.ExtensionTracker;
+import org.fdesigner.runtime.registry.runtime.dynamichelpers.IExtensionChangeHandler;
+import org.fdesigner.runtime.registry.runtime.dynamichelpers.IExtensionTracker;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.contexts.IContextService;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
 
 /**
  * The registry of action set extensions.

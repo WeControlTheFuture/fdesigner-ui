@@ -11,14 +11,14 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.dialogs;
+package org.fdesigner.workbench.internal.dialogs;
 
-import org.eclipse.jface.resource.JFaceColors;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Text;
-import org.eclipse.ui.internal.WorkbenchMessages;
+import org.fdesigner.ui.jface.resource.JFaceColors;
+import org.fdesigner.workbench.internal.WorkbenchMessages;
 
 /**
  * A page that is used to indicate an error in loading a page within the

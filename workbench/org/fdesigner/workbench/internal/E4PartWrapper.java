@@ -11,16 +11,16 @@
  * Contributors:
  *     David Berger <david.berger@logicals.com> - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
-import org.eclipse.e4.core.contexts.ContextInjectionFactory;
-import org.eclipse.e4.core.contexts.IEclipseContext;
-import org.eclipse.e4.ui.di.Focus;
-import org.eclipse.e4.ui.internal.workbench.Activator;
-import org.eclipse.e4.ui.internal.workbench.Policy;
-import org.eclipse.e4.ui.model.application.ui.basic.MPart;
 import org.eclipse.swt.widgets.Composite;
-import org.eclipse.ui.part.ViewPart;
+import org.fdesigner.e4.core.contexts.ContextInjectionFactory;
+import org.fdesigner.e4.core.contexts.IEclipseContext;
+import org.fdesigner.e4.core.di.Focus;
+import org.fdesigner.e4.ui.model.application.ui.basic.MPart;
+import org.fdesigner.e4.ui.workbench.internal.workbench.Activator;
+import org.fdesigner.e4.ui.workbench.internal.workbench.Policy;
+import org.fdesigner.workbench.part.ViewPart;
 
 public class E4PartWrapper extends ViewPart {
 

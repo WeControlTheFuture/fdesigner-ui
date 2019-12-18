@@ -12,12 +12,12 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
 import org.eclipse.swt.widgets.Display;
-import org.eclipse.ui.PartInitException;
-import org.eclipse.ui.WorkbenchException;
-import org.eclipse.ui.internal.misc.StatusUtil;
+import org.fdesigner.workbench.PartInitException;
+import org.fdesigner.workbench.WorkbenchException;
+import org.fdesigner.workbench.internal.misc.StatusUtil;
 
 /**
  * @since 3.3

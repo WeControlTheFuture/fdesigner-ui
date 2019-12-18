@@ -13,34 +13,36 @@
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 472654
  ******************************************************************************/
 
-package org.eclipse.ui.internal.e4.compatibility;
+package org.fdesigner.workbench.internal.e4.compatibility;
 
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
+
 import javax.annotation.PreDestroy;
 import javax.inject.Inject;
 import javax.inject.Named;
-import org.eclipse.core.runtime.ListenerList;
-import org.eclipse.e4.core.contexts.IEclipseContext;
-import org.eclipse.e4.core.di.annotations.Optional;
-import org.eclipse.e4.ui.model.application.MApplication;
-import org.eclipse.e4.ui.model.application.ui.basic.MPart;
-import org.eclipse.e4.ui.services.IServiceConstants;
-import org.eclipse.e4.ui.workbench.modeling.ESelectionService;
-import org.eclipse.jface.viewers.ISelection;
-import org.eclipse.jface.viewers.ISelectionChangedListener;
-import org.eclipse.jface.viewers.ISelectionProvider;
-import org.eclipse.jface.viewers.SelectionChangedEvent;
-import org.eclipse.jface.viewers.StructuredSelection;
-import org.eclipse.ui.INullSelectionListener;
-import org.eclipse.ui.ISelectionListener;
-import org.eclipse.ui.ISelectionService;
-import org.eclipse.ui.ISources;
-import org.eclipse.ui.IWorkbenchPart;
-import org.eclipse.ui.internal.E4PartWrapper;
-import org.eclipse.ui.internal.WorkbenchPage;
+
+import org.fdesigner.e4.core.contexts.IEclipseContext;
+import org.fdesigner.e4.core.di.annotations.Optional;
+import org.fdesigner.e4.ui.model.application.MApplication;
+import org.fdesigner.e4.ui.model.application.ui.basic.MPart;
+import org.fdesigner.e4.ui.services.IServiceConstants;
+import org.fdesigner.e4.ui.workbench.modeling.ESelectionService;
+import org.fdesigner.runtime.common.runtime.ListenerList;
+import org.fdesigner.ui.jface.viewers.ISelection;
+import org.fdesigner.ui.jface.viewers.ISelectionChangedListener;
+import org.fdesigner.ui.jface.viewers.ISelectionProvider;
+import org.fdesigner.ui.jface.viewers.SelectionChangedEvent;
+import org.fdesigner.ui.jface.viewers.StructuredSelection;
+import org.fdesigner.workbench.INullSelectionListener;
+import org.fdesigner.workbench.ISelectionListener;
+import org.fdesigner.workbench.ISelectionService;
+import org.fdesigner.workbench.ISources;
+import org.fdesigner.workbench.IWorkbenchPart;
+import org.fdesigner.workbench.internal.E4PartWrapper;
+import org.fdesigner.workbench.internal.WorkbenchPage;
 
 public class SelectionService implements ISelectionChangedListener, ISelectionService {
 
@@ -64,16 +66,16 @@ public class SelectionService implements ISelectionChangedListener, ISelectionSe
 	private Map<String, Set<ISelectionListener>> targetedListeners = new HashMap<>();
 	private Map<String, Set<ISelectionListener>> targetedPostSelectionListeners = new HashMap<>();
 
-	private org.eclipse.e4.ui.workbench.modeling.ISelectionListener listener = (part,
+	private org.fdesigner.e4.ui.workbench.modeling.ISelectionListener listener = (part,
 			selection) -> handleSelectionChanged(part, selection, false);
 
-	private org.eclipse.e4.ui.workbench.modeling.ISelectionListener targetedListener = (part,
+	private org.fdesigner.e4.ui.workbench.modeling.ISelectionListener targetedListener = (part,
 			selection) -> handleSelectionChanged(part, selection, true);
 
-	private org.eclipse.e4.ui.workbench.modeling.ISelectionListener postListener = (part,
+	private org.fdesigner.e4.ui.workbench.modeling.ISelectionListener postListener = (part,
 			selection) -> handlePostSelectionChanged(part, selection, false);
 
-	private org.eclipse.e4.ui.workbench.modeling.ISelectionListener targetedPostListener = (part,
+	private org.fdesigner.e4.ui.workbench.modeling.ISelectionListener targetedPostListener = (part,
 			selection) -> handlePostSelectionChanged(part, selection, true);
 
 	private void handleSelectionChanged(MPart part, Object selection, boolean targeted) {

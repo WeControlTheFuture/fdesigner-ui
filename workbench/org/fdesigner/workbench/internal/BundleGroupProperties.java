@@ -11,13 +11,13 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
 import java.net.URL;
 
-import org.eclipse.core.runtime.IBundleGroup;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.ui.branding.IBundleGroupConstants;
+import org.fdesigner.runtime.common.runtime.IBundleGroup;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.workbench.branding.IBundleGroupConstants;
 
 /**
  * A class that converts the strings returned by

@@ -11,9 +11,9 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
-import org.eclipse.jface.window.Window;
+import org.fdesigner.ui.jface.window.Window;
 
 /**
  * This handler will pass along to the workbench advisor exceptions and errors

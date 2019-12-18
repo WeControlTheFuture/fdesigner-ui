@@ -12,31 +12,31 @@
  *     IBM Corporation - initial API and implementation
  *     Dirk Fauth <dirk.fauth@googlemail.com> - Bug 463043
  *******************************************************************************/
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IExtension;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.core.runtime.dynamichelpers.IExtensionChangeHandler;
-import org.eclipse.core.runtime.dynamichelpers.IExtensionTracker;
-import org.eclipse.e4.ui.model.application.ui.MUIElement;
-import org.eclipse.e4.ui.model.application.ui.advanced.MPlaceholder;
-import org.eclipse.e4.ui.model.application.ui.basic.MPart;
-import org.eclipse.e4.ui.model.application.ui.basic.MPartStack;
-import org.eclipse.e4.ui.workbench.IPresentationEngine;
-import org.eclipse.ui.IViewPart;
-import org.eclipse.ui.IViewReference;
-import org.eclipse.ui.IWorkbenchPage;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.PartInitException;
-import org.eclipse.ui.internal.e4.compatibility.CompatibilityView;
-import org.eclipse.ui.internal.intro.IIntroConstants;
-import org.eclipse.ui.internal.intro.IntroDescriptor;
-import org.eclipse.ui.internal.intro.IntroMessages;
-import org.eclipse.ui.intro.IIntroManager;
-import org.eclipse.ui.intro.IIntroPart;
-import org.eclipse.ui.intro.IntroContentDetector;
+import org.fdesigner.e4.ui.model.application.ui.MUIElement;
+import org.fdesigner.e4.ui.model.application.ui.advanced.MPlaceholder;
+import org.fdesigner.e4.ui.model.application.ui.basic.MPart;
+import org.fdesigner.e4.ui.model.application.ui.basic.MPartStack;
+import org.fdesigner.e4.ui.workbench.IPresentationEngine;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.registry.runtime.IExtension;
+import org.fdesigner.runtime.registry.runtime.dynamichelpers.IExtensionChangeHandler;
+import org.fdesigner.runtime.registry.runtime.dynamichelpers.IExtensionTracker;
+import org.fdesigner.workbench.IViewPart;
+import org.fdesigner.workbench.IViewReference;
+import org.fdesigner.workbench.IWorkbenchPage;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.PartInitException;
+import org.fdesigner.workbench.internal.e4.compatibility.CompatibilityView;
+import org.fdesigner.workbench.internal.intro.IIntroConstants;
+import org.fdesigner.workbench.internal.intro.IntroDescriptor;
+import org.fdesigner.workbench.internal.intro.IntroMessages;
+import org.fdesigner.workbench.intro.IIntroManager;
+import org.fdesigner.workbench.intro.IIntroPart;
+import org.fdesigner.workbench.intro.IntroContentDetector;
 
 /**
  * Workbench implementation of the IIntroManager interface.

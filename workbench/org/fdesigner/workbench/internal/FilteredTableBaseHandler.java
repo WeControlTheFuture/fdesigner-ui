@@ -17,11 +17,9 @@ package org.fdesigner.workbench.internal;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.eclipse.e4.ui.internal.workbench.renderers.swt.AbstractTableInformationControl;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.FocusAdapter;
 import org.eclipse.swt.events.FocusEvent;
-import org.eclipse.swt.events.FocusListener;
 import org.eclipse.swt.events.KeyEvent;
 import org.eclipse.swt.events.KeyListener;
 import org.eclipse.swt.events.MouseEvent;

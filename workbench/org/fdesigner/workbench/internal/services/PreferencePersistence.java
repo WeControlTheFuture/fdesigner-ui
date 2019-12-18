@@ -12,25 +12,26 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.services;
+package org.fdesigner.workbench.internal.services;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import java.util.Objects;
-import org.eclipse.core.commands.Command;
-import org.eclipse.core.commands.IParameter;
-import org.eclipse.core.commands.Parameterization;
-import org.eclipse.core.commands.ParameterizedCommand;
-import org.eclipse.core.commands.common.NotDefinedException;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.jface.preference.IPreferenceStore;
-import org.eclipse.jface.util.IPropertyChangeListener;
-import org.eclipse.jface.util.PropertyChangeEvent;
-import org.eclipse.ui.IMemento;
-import org.eclipse.ui.commands.ICommandService;
-import org.eclipse.ui.internal.WorkbenchPlugin;
+
+import org.fdesigner.commands.Command;
+import org.fdesigner.commands.IParameter;
+import org.fdesigner.commands.Parameterization;
+import org.fdesigner.commands.ParameterizedCommand;
+import org.fdesigner.commands.common.NotDefinedException;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.ui.jface.preference.IPreferenceStore;
+import org.fdesigner.ui.jface.util.IPropertyChangeListener;
+import org.fdesigner.ui.jface.util.PropertyChangeEvent;
+import org.fdesigner.workbench.IMemento;
+import org.fdesigner.workbench.commands.ICommandService;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
 
 /**
  * <p>

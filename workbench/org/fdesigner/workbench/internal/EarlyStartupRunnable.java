@@ -12,17 +12,18 @@
  *     IBM Corporation - initial API and implementation
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 445484, 457132, 473947
  *******************************************************************************/
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
+
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.runtime.registry.runtime.IExtension;
+import org.fdesigner.ui.jface.util.SafeRunnable;
+import org.fdesigner.workbench.IStartup;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.internal.misc.UIStats;
 
 import com.ibm.icu.text.MessageFormat;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.core.runtime.IExtension;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.jface.util.SafeRunnable;
-import org.eclipse.ui.IStartup;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.misc.UIStats;
 
 /**
  * A utility class used to call #earlyStartup on the proper instance for a given

@@ -12,18 +12,19 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal.tweaklets;
+package org.fdesigner.workbench.internal.tweaklets;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.ui.internal.misc.StatusUtil;
-import org.eclipse.ui.statushandlers.StatusManager;
+
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.workbench.internal.misc.StatusUtil;
+import org.fdesigner.workbench.statushandlers.StatusManager;
 
 /**
  * @since 3.3

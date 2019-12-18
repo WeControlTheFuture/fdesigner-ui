@@ -14,7 +14,7 @@
  *******************************************************************************/
 package org.fdesigner.workbench.internal.registry;
 
-import org.eclipse.e4.ui.internal.workbench.ExtensionsSort;
+import org.fdesigner.e4.ui.workbench.internal.workbench.ExtensionsSort;
 import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
 import org.fdesigner.runtime.registry.runtime.IExtension;
 import org.fdesigner.runtime.registry.runtime.IExtensionPoint;

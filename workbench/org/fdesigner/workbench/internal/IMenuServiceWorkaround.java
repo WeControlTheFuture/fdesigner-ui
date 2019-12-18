@@ -11,9 +11,9 @@
  * Contributors:
  *     Andrey Loskutov <loskutov@gmx.de> - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
-import org.eclipse.e4.ui.model.application.ui.basic.MPart;
+import org.fdesigner.e4.ui.model.application.ui.basic.MPart;
 
 /**
  * Workaround for bug 537046

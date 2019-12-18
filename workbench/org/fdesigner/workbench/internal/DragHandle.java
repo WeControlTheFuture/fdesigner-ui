@@ -13,7 +13,7 @@
  *     Lars Vogel <Lars.Vogel@gmail.com> - Bug 422040
  *     Alexander Fedorov <alexander.fedorov@arsysop.ru> - Bug 548799
  *******************************************************************************/
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.PaintEvent;

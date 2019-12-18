@@ -11,16 +11,17 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.decorators;
+package org.fdesigner.workbench.internal.decorators;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.core.runtime.IExtensionRegistry;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.registry.IWorkbenchRegistryConstants;
-import org.eclipse.ui.internal.registry.RegistryReader;
+
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.runtime.registry.runtime.IExtensionRegistry;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.internal.registry.IWorkbenchRegistryConstants;
+import org.fdesigner.workbench.internal.registry.RegistryReader;
 
 /**
  * The DecoratorRegistryReader is the class that reads the decorator

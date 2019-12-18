@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.about;
+package org.fdesigner.workbench.internal.about;
 
 import java.util.ArrayList;
 import java.util.HashMap;

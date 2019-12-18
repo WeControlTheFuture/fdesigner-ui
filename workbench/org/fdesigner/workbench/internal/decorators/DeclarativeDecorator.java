@@ -11,15 +11,16 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.decorators;
+package org.fdesigner.workbench.internal.decorators;
 
 import java.net.URL;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.jface.viewers.IDecoration;
-import org.eclipse.jface.viewers.ILabelProviderListener;
-import org.eclipse.jface.viewers.ILightweightLabelDecorator;
-import org.eclipse.ui.internal.util.BundleUtility;
+
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.ui.jface.viewers.IDecoration;
+import org.fdesigner.ui.jface.viewers.ILabelProviderListener;
+import org.fdesigner.ui.jface.viewers.ILightweightLabelDecorator;
+import org.fdesigner.workbench.internal.util.BundleUtility;
 
 /**
  * The DeclarativeDecorator is a decorator that is made entirely from an XML

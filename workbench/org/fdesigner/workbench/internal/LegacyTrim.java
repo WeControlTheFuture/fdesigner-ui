@@ -12,22 +12,23 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.e4.ui.model.application.ui.MUIElement;
-import org.eclipse.e4.ui.model.application.ui.basic.MTrimBar;
-import org.eclipse.e4.ui.model.application.ui.menu.MToolControl;
-import org.eclipse.jface.menus.AbstractTrimWidget;
+
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.layout.RowLayout;
 import org.eclipse.swt.widgets.Composite;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.internal.registry.IWorkbenchRegistryConstants;
-import org.eclipse.ui.internal.util.Util;
-import org.eclipse.ui.menus.IWorkbenchWidget;
+import org.fdesigner.e4.ui.model.application.ui.MUIElement;
+import org.fdesigner.e4.ui.model.application.ui.basic.MTrimBar;
+import org.fdesigner.e4.ui.model.application.ui.menu.MToolControl;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.ui.jface.menus.AbstractTrimWidget;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.internal.registry.IWorkbenchRegistryConstants;
+import org.fdesigner.workbench.internal.util.Util;
+import org.fdesigner.workbench.menus.IWorkbenchWidget;
 
 /**
  * @since 3.5

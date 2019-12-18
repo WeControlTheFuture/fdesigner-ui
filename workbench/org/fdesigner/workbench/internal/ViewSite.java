@@ -11,17 +11,17 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.e4.ui.model.application.ui.basic.MPart;
-import org.eclipse.ui.IActionBars;
-import org.eclipse.ui.IViewPart;
-import org.eclipse.ui.IViewSite;
-import org.eclipse.ui.IWorkbenchPart;
-import org.eclipse.ui.IWorkbenchPartReference;
-import org.eclipse.ui.SubActionBars;
-import org.eclipse.ui.internal.e4.compatibility.ActionBars;
+import org.fdesigner.e4.ui.model.application.ui.basic.MPart;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.workbench.IActionBars;
+import org.fdesigner.workbench.IViewPart;
+import org.fdesigner.workbench.IViewSite;
+import org.fdesigner.workbench.IWorkbenchPart;
+import org.fdesigner.workbench.IWorkbenchPartReference;
+import org.fdesigner.workbench.SubActionBars;
+import org.fdesigner.workbench.internal.e4.compatibility.ActionBars;
 
 /**
  * A view container manages the services for a view.

@@ -12,17 +12,18 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal.e4.migration;
+package org.fdesigner.workbench.internal.e4.migration;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
 import org.eclipse.swt.graphics.Rectangle;
-import org.eclipse.ui.IMemento;
-import org.eclipse.ui.internal.IWorkbenchConstants;
-import org.eclipse.ui.internal.e4.migration.InfoReader.PageReader;
-import org.eclipse.ui.internal.e4.migration.InfoReader.PartState;
+import org.fdesigner.workbench.IMemento;
+import org.fdesigner.workbench.internal.IWorkbenchConstants;
+import org.fdesigner.workbench.internal.e4.migration.InfoReader.PageReader;
+import org.fdesigner.workbench.internal.e4.migration.InfoReader.PartState;
 
 public class PerspectiveReader extends MementoReader {
 

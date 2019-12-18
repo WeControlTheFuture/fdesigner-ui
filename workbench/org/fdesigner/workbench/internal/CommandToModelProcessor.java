@@ -13,24 +13,25 @@
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 472654
  ******************************************************************************/
 
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
 import java.util.HashMap;
 import java.util.Map;
-import org.eclipse.core.commands.Category;
-import org.eclipse.core.commands.Command;
-import org.eclipse.core.commands.CommandManager;
-import org.eclipse.core.commands.common.NotDefinedException;
-import org.eclipse.e4.core.commands.internal.HandlerServiceImpl;
-import org.eclipse.e4.core.contexts.ContextFunction;
-import org.eclipse.e4.core.contexts.IEclipseContext;
-import org.eclipse.e4.core.di.annotations.Execute;
-import org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon;
-import org.eclipse.e4.ui.model.application.MApplication;
-import org.eclipse.e4.ui.model.application.commands.MCategory;
-import org.eclipse.e4.ui.model.application.commands.MCommand;
-import org.eclipse.e4.ui.workbench.modeling.EModelService;
-import org.eclipse.ui.internal.commands.CommandPersistence;
+
+import org.fdesigner.commands.Category;
+import org.fdesigner.commands.Command;
+import org.fdesigner.commands.CommandManager;
+import org.fdesigner.commands.common.NotDefinedException;
+import org.fdesigner.e4.core.commands.internal.HandlerServiceImpl;
+import org.fdesigner.e4.core.contexts.ContextFunction;
+import org.fdesigner.e4.core.contexts.IEclipseContext;
+import org.fdesigner.e4.core.di.annotations.Execute;
+import org.fdesigner.e4.ui.model.application.MApplication;
+import org.fdesigner.e4.ui.model.application.commands.MCategory;
+import org.fdesigner.e4.ui.model.application.commands.MCommand;
+import org.fdesigner.e4.ui.workbench.internal.workbench.addons.CommandProcessingAddon;
+import org.fdesigner.e4.ui.workbench.modeling.EModelService;
+import org.fdesigner.workbench.internal.commands.CommandPersistence;
 
 /**
  * @since 3.5

@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal.statushandlers;
+package org.fdesigner.workbench.internal.statushandlers;
 
 import java.util.ArrayList;
 import java.util.HashMap;

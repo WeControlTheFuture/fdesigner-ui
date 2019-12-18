@@ -13,39 +13,40 @@
  * Remy Chi Jian Suen (Versant Corporation) - bug 255005
  * Lars Vogel <Lars.Vogel@vogella.com> - Bug 472654
  *******************************************************************************/
-package org.eclipse.ui.internal.progress;
+package org.fdesigner.workbench.internal.progress;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;
 import java.util.Map;
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.core.runtime.jobs.IJobChangeEvent;
-import org.eclipse.core.runtime.jobs.IJobChangeListener;
-import org.eclipse.core.runtime.jobs.ISchedulingRule;
-import org.eclipse.core.runtime.jobs.Job;
-import org.eclipse.core.runtime.jobs.JobChangeAdapter;
+
 import org.eclipse.e4.ui.internal.workbench.swt.CSSConstants;
-import org.eclipse.e4.ui.model.application.ui.basic.MPart;
-import org.eclipse.jface.operation.IRunnableContext;
-import org.eclipse.jface.operation.IRunnableWithProgress;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.jface.util.IPropertyChangeListener;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.Cursor;
 import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.IWorkbenchPart;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.PartSite;
-import org.eclipse.ui.internal.WorkbenchPlugin;
-import org.eclipse.ui.part.WorkbenchPart;
-import org.eclipse.ui.progress.IProgressService;
-import org.eclipse.ui.progress.IWorkbenchSiteProgressService;
-import org.eclipse.ui.progress.WorkbenchJob;
+import org.fdesigner.e4.ui.model.application.ui.basic.MPart;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.jobs.runtime.jobs.IJobChangeEvent;
+import org.fdesigner.runtime.jobs.runtime.jobs.IJobChangeListener;
+import org.fdesigner.runtime.jobs.runtime.jobs.ISchedulingRule;
+import org.fdesigner.runtime.jobs.runtime.jobs.Job;
+import org.fdesigner.runtime.jobs.runtime.jobs.JobChangeAdapter;
+import org.fdesigner.ui.jface.operation.IRunnableContext;
+import org.fdesigner.ui.jface.operation.IRunnableWithProgress;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.ui.jface.util.IPropertyChangeListener;
+import org.fdesigner.workbench.IWorkbenchPart;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.internal.PartSite;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
+import org.fdesigner.workbench.part.WorkbenchPart;
+import org.fdesigner.workbench.progress.IProgressService;
+import org.fdesigner.workbench.progress.IWorkbenchSiteProgressService;
+import org.fdesigner.workbench.progress.WorkbenchJob;
 
 /**
  * The WorkbenchSiteProgressService is the concrete implementation of the

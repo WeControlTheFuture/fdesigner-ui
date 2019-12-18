@@ -15,13 +15,13 @@
  *     Patrik Suzzi <psuzzi@gmail.com> - Bug 504088
  ******************************************************************************/
 
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
-import org.eclipse.core.commands.Command;
-import org.eclipse.core.commands.ParameterizedCommand;
-import org.eclipse.ui.IWorkbenchCommandConstants;
-import org.eclipse.ui.IWorkbenchPart;
-import org.eclipse.ui.commands.ICommandService;
+import org.fdesigner.commands.Command;
+import org.fdesigner.commands.ParameterizedCommand;
+import org.fdesigner.workbench.IWorkbenchCommandConstants;
+import org.fdesigner.workbench.IWorkbenchPart;
+import org.fdesigner.workbench.commands.ICommandService;
 
 /**
  * This is the handler for NextEditor and PrevEditor commands.

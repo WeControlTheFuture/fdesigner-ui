@@ -14,17 +14,17 @@
  *     Dirk Fauth <dirk.fauth@googlemail.com> - Bug 473063
  *     Alexander Fedorov <alexander.fedorov@arsysop.ru> - Bug 548799
  *******************************************************************************/
-package org.eclipse.ui.internal.registry;
+package org.fdesigner.workbench.internal.registry;
 
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.jface.resource.ResourceLocator;
-import org.eclipse.ui.IPerspectiveDescriptor;
-import org.eclipse.ui.IPerspectiveFactory;
-import org.eclipse.ui.IPluginContribution;
-import org.eclipse.ui.ISharedImages;
-import org.eclipse.ui.internal.WorkbenchImages;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.ui.jface.resource.ResourceLocator;
+import org.fdesigner.workbench.IPerspectiveDescriptor;
+import org.fdesigner.workbench.IPerspectiveFactory;
+import org.fdesigner.workbench.IPluginContribution;
+import org.fdesigner.workbench.ISharedImages;
+import org.fdesigner.workbench.internal.WorkbenchImages;
 
 /**
  * PerspectiveDescriptor.

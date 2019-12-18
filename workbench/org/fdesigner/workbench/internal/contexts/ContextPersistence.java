@@ -12,21 +12,22 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.contexts;
+package org.fdesigner.workbench.internal.contexts;
 
 import java.util.ArrayList;
 import java.util.List;
-import org.eclipse.core.commands.contexts.Context;
-import org.eclipse.core.commands.contexts.ContextManager;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.core.runtime.IExtensionDelta;
-import org.eclipse.core.runtime.IExtensionRegistry;
-import org.eclipse.core.runtime.IRegistryChangeEvent;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.registry.IWorkbenchRegistryConstants;
-import org.eclipse.ui.internal.services.RegistryPersistence;
+
+import org.fdesigner.commands.contexts.Context;
+import org.fdesigner.commands.contexts.ContextManager;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.runtime.registry.runtime.IExtensionDelta;
+import org.fdesigner.runtime.registry.runtime.IExtensionRegistry;
+import org.fdesigner.runtime.registry.runtime.IRegistryChangeEvent;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.internal.registry.IWorkbenchRegistryConstants;
+import org.fdesigner.workbench.internal.services.RegistryPersistence;
 
 /**
  * <p>

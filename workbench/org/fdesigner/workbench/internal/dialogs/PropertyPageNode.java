@@ -11,17 +11,17 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.dialogs;
+package org.fdesigner.workbench.internal.dialogs;
 
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.jface.preference.IPreferencePage;
-import org.eclipse.jface.resource.ImageDescriptor;
 import org.eclipse.swt.graphics.Image;
-import org.eclipse.ui.internal.WorkbenchMessages;
-import org.eclipse.ui.internal.misc.StatusUtil;
-import org.eclipse.ui.internal.preferences.WorkbenchPreferenceExtensionNode;
-import org.eclipse.ui.statushandlers.StatusManager;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.ui.jface.preference.IPreferencePage;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.workbench.internal.WorkbenchMessages;
+import org.fdesigner.workbench.internal.misc.StatusUtil;
+import org.fdesigner.workbench.internal.preferences.WorkbenchPreferenceExtensionNode;
+import org.fdesigner.workbench.statushandlers.StatusManager;
 
 /**
  * Property page node allows us to achieve presence in the property page dialog

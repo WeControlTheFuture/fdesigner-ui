@@ -205,7 +205,7 @@ public class WorkbenchPage implements IWorkbenchPage {
 	private static final int WINDOW_SCOPE = EModelService.OUTSIDE_PERSPECTIVE | EModelService.IN_ANY_PERSPECTIVE
 			| EModelService.IN_SHARED_AREA;
 
-	class E4PartListener implements org.eclipse.e4.ui.workbench.modeling.IPartListener {
+	class E4PartListener implements org.fdesigner.e4.ui.workbench.modeling.IPartListener {
 
 		@Override
 		public void partActivated(MPart part) {

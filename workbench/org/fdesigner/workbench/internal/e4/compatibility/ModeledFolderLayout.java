@@ -12,14 +12,14 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal.e4.compatibility;
+package org.fdesigner.workbench.internal.e4.compatibility;
 
-import org.eclipse.e4.ui.model.application.MApplication;
-import org.eclipse.e4.ui.model.application.ui.MUIElement;
-import org.eclipse.e4.ui.model.application.ui.advanced.MPerspective;
-import org.eclipse.e4.ui.model.application.ui.basic.MPartStack;
-import org.eclipse.e4.ui.model.application.ui.basic.MStackElement;
-import org.eclipse.ui.IFolderLayout;
+import org.fdesigner.e4.ui.model.application.MApplication;
+import org.fdesigner.e4.ui.model.application.ui.MUIElement;
+import org.fdesigner.e4.ui.model.application.ui.advanced.MPerspective;
+import org.fdesigner.e4.ui.model.application.ui.basic.MPartStack;
+import org.fdesigner.e4.ui.model.application.ui.basic.MStackElement;
+import org.fdesigner.workbench.IFolderLayout;
 
 public class ModeledFolderLayout extends ModeledPlaceholderFolderLayout implements IFolderLayout {
 	public ModeledFolderLayout(ModeledPageLayout layout, MApplication application, MPartStack stackModel) {

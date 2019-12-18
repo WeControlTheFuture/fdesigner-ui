@@ -11,21 +11,21 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.wizards;
+package org.fdesigner.workbench.internal.wizards;
 
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.core.runtime.IExtension;
-import org.eclipse.core.runtime.IExtensionPoint;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.core.runtime.dynamichelpers.ExtensionTracker;
-import org.eclipse.core.runtime.dynamichelpers.IExtensionChangeHandler;
-import org.eclipse.core.runtime.dynamichelpers.IExtensionTracker;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.dialogs.WizardCollectionElement;
-import org.eclipse.ui.internal.dialogs.WorkbenchWizardElement;
-import org.eclipse.ui.internal.registry.WizardsRegistryReader;
-import org.eclipse.ui.internal.util.Util;
-import org.eclipse.ui.wizards.IWizardDescriptor;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.runtime.registry.runtime.IExtension;
+import org.fdesigner.runtime.registry.runtime.IExtensionPoint;
+import org.fdesigner.runtime.registry.runtime.dynamichelpers.ExtensionTracker;
+import org.fdesigner.runtime.registry.runtime.dynamichelpers.IExtensionChangeHandler;
+import org.fdesigner.runtime.registry.runtime.dynamichelpers.IExtensionTracker;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.internal.dialogs.WizardCollectionElement;
+import org.fdesigner.workbench.internal.dialogs.WorkbenchWizardElement;
+import org.fdesigner.workbench.internal.registry.WizardsRegistryReader;
+import org.fdesigner.workbench.internal.util.Util;
+import org.fdesigner.workbench.wizards.IWizardDescriptor;
 
 /**
  * Abstract baseclass for wizard registries that listen to extension changes.

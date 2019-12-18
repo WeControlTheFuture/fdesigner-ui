@@ -12,27 +12,28 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal.actions;
+package org.fdesigner.workbench.internal.actions;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-import org.eclipse.jface.action.IAction;
-import org.eclipse.jface.viewers.ISelection;
+
 import org.eclipse.swt.events.MenuAdapter;
 import org.eclipse.swt.events.MenuEvent;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Menu;
 import org.eclipse.swt.widgets.MenuItem;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.IWorkbenchWindowActionDelegate;
-import org.eclipse.ui.IWorkbenchWindowPulldownDelegate2;
-import org.eclipse.ui.IWorkingSet;
-import org.eclipse.ui.activities.WorkbenchActivityHelper;
-import org.eclipse.ui.internal.WorkbenchPlugin;
-import org.eclipse.ui.internal.registry.WorkingSetRegistry;
+import org.fdesigner.ui.jface.action.IAction;
+import org.fdesigner.ui.jface.viewers.ISelection;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.IWorkbenchWindowActionDelegate;
+import org.fdesigner.workbench.IWorkbenchWindowPulldownDelegate2;
+import org.fdesigner.workbench.IWorkingSet;
+import org.fdesigner.workbench.activities.WorkbenchActivityHelper;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
+import org.fdesigner.workbench.internal.registry.WorkingSetRegistry;
 
 /**
  * Baseclass for working set pulldown actions.

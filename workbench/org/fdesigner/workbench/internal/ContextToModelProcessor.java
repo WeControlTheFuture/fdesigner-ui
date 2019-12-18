@@ -13,20 +13,21 @@
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 472654
  ******************************************************************************/
 
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import org.eclipse.core.commands.common.NotDefinedException;
-import org.eclipse.core.commands.contexts.Context;
-import org.eclipse.core.commands.contexts.ContextManager;
-import org.eclipse.e4.core.contexts.IEclipseContext;
-import org.eclipse.e4.core.di.annotations.Execute;
-import org.eclipse.e4.ui.model.application.MApplication;
-import org.eclipse.e4.ui.model.application.commands.MBindingContext;
-import org.eclipse.e4.ui.model.application.commands.impl.CommandsFactoryImpl;
-import org.eclipse.ui.internal.contexts.ContextPersistence;
+
+import org.fdesigner.commands.common.NotDefinedException;
+import org.fdesigner.commands.contexts.Context;
+import org.fdesigner.commands.contexts.ContextManager;
+import org.fdesigner.e4.core.contexts.IEclipseContext;
+import org.fdesigner.e4.core.di.annotations.Execute;
+import org.fdesigner.e4.ui.model.application.MApplication;
+import org.fdesigner.e4.ui.model.application.commands.MBindingContext;
+import org.fdesigner.e4.ui.model.application.commands.impl.CommandsFactoryImpl;
+import org.fdesigner.workbench.internal.contexts.ContextPersistence;
 
 /**
  * @since 3.5

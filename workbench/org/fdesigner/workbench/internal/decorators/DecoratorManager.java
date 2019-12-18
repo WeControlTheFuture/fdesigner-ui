@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.decorators;
+package org.fdesigner.workbench.internal.decorators;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -19,48 +19,49 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.StringTokenizer;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.core.runtime.IExtension;
-import org.eclipse.core.runtime.IExtensionPoint;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.ListenerList;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.core.runtime.SafeRunner;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.core.runtime.dynamichelpers.ExtensionTracker;
-import org.eclipse.core.runtime.dynamichelpers.IExtensionChangeHandler;
-import org.eclipse.core.runtime.dynamichelpers.IExtensionTracker;
-import org.eclipse.jface.resource.JFaceResources;
-import org.eclipse.jface.resource.LocalResourceManager;
-import org.eclipse.jface.resource.ResourceManager;
-import org.eclipse.jface.util.SafeRunnable;
-import org.eclipse.jface.viewers.DecorationContext;
-import org.eclipse.jface.viewers.IBaseLabelProvider;
-import org.eclipse.jface.viewers.IColorDecorator;
-import org.eclipse.jface.viewers.IDecorationContext;
-import org.eclipse.jface.viewers.IDelayedLabelDecorator;
-import org.eclipse.jface.viewers.IFontDecorator;
-import org.eclipse.jface.viewers.ILabelDecorator;
-import org.eclipse.jface.viewers.ILabelProviderListener;
-import org.eclipse.jface.viewers.ILightweightLabelDecorator;
-import org.eclipse.jface.viewers.LabelDecorator;
-import org.eclipse.jface.viewers.LabelProviderChangedEvent;
+
 import org.eclipse.swt.graphics.Color;
 import org.eclipse.swt.graphics.Font;
 import org.eclipse.swt.graphics.Image;
-import org.eclipse.ui.IDecoratorManager;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.IPreferenceConstants;
-import org.eclipse.ui.internal.LegacyResourceSupport;
-import org.eclipse.ui.internal.Workbench;
-import org.eclipse.ui.internal.WorkbenchMessages;
-import org.eclipse.ui.internal.WorkbenchPlugin;
-import org.eclipse.ui.internal.registry.IWorkbenchRegistryConstants;
-import org.eclipse.ui.internal.util.PrefUtil;
-import org.eclipse.ui.internal.util.Util;
-import org.eclipse.ui.progress.WorkbenchJob;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.ListenerList;
+import org.fdesigner.runtime.common.runtime.SafeRunner;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.runtime.registry.runtime.IExtension;
+import org.fdesigner.runtime.registry.runtime.IExtensionPoint;
+import org.fdesigner.runtime.registry.runtime.dynamichelpers.ExtensionTracker;
+import org.fdesigner.runtime.registry.runtime.dynamichelpers.IExtensionChangeHandler;
+import org.fdesigner.runtime.registry.runtime.dynamichelpers.IExtensionTracker;
+import org.fdesigner.ui.jface.resource.JFaceResources;
+import org.fdesigner.ui.jface.resource.LocalResourceManager;
+import org.fdesigner.ui.jface.resource.ResourceManager;
+import org.fdesigner.ui.jface.util.SafeRunnable;
+import org.fdesigner.ui.jface.viewers.DecorationContext;
+import org.fdesigner.ui.jface.viewers.IBaseLabelProvider;
+import org.fdesigner.ui.jface.viewers.IColorDecorator;
+import org.fdesigner.ui.jface.viewers.IDecorationContext;
+import org.fdesigner.ui.jface.viewers.IDelayedLabelDecorator;
+import org.fdesigner.ui.jface.viewers.IFontDecorator;
+import org.fdesigner.ui.jface.viewers.ILabelDecorator;
+import org.fdesigner.ui.jface.viewers.ILabelProviderListener;
+import org.fdesigner.ui.jface.viewers.ILightweightLabelDecorator;
+import org.fdesigner.ui.jface.viewers.LabelDecorator;
+import org.fdesigner.ui.jface.viewers.LabelProviderChangedEvent;
+import org.fdesigner.workbench.IDecoratorManager;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.internal.IPreferenceConstants;
+import org.fdesigner.workbench.internal.LegacyResourceSupport;
+import org.fdesigner.workbench.internal.Workbench;
+import org.fdesigner.workbench.internal.WorkbenchMessages;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
+import org.fdesigner.workbench.internal.registry.IWorkbenchRegistryConstants;
+import org.fdesigner.workbench.internal.util.PrefUtil;
+import org.fdesigner.workbench.internal.util.Util;
+import org.fdesigner.workbench.progress.WorkbenchJob;
 
 /**
  * The DecoratorManager is the class that handles all of the decorators defined

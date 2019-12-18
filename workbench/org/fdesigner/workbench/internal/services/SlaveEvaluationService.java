@@ -12,16 +12,17 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal.services;
+package org.fdesigner.workbench.internal.services;
 
 import java.util.ArrayList;
 import java.util.Collection;
-import org.eclipse.core.expressions.Expression;
-import org.eclipse.core.expressions.IEvaluationContext;
-import org.eclipse.jface.util.IPropertyChangeListener;
-import org.eclipse.ui.ISourceProvider;
-import org.eclipse.ui.services.IEvaluationReference;
-import org.eclipse.ui.services.IEvaluationService;
+
+import org.fdesigner.expressions.Expression;
+import org.fdesigner.expressions.IEvaluationContext;
+import org.fdesigner.ui.jface.util.IPropertyChangeListener;
+import org.fdesigner.workbench.ISourceProvider;
+import org.fdesigner.workbench.services.IEvaluationReference;
+import org.fdesigner.workbench.services.IEvaluationService;
 
 /**
  * @since 3.4

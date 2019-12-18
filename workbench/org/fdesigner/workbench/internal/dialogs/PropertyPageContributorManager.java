@@ -13,7 +13,7 @@
  *     Oakland Software (Francis Upton) <francisu@ieee.org> - bug 219273
  *     James Blackburn (Broadcom Corp.) - Bug 294628 multiple selection
  *******************************************************************************/
-package org.eclipse.ui.internal.dialogs;
+package org.fdesigner.workbench.internal.dialogs;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -24,15 +24,16 @@ import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.core.runtime.IExtension;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.core.runtime.dynamichelpers.IExtensionTracker;
-import org.eclipse.jface.preference.PreferenceNode;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.ui.internal.ObjectContributorManager;
-import org.eclipse.ui.internal.registry.IWorkbenchRegistryConstants;
-import org.eclipse.ui.internal.registry.PropertyPagesRegistryReader;
+
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.runtime.registry.runtime.IExtension;
+import org.fdesigner.runtime.registry.runtime.dynamichelpers.IExtensionTracker;
+import org.fdesigner.ui.jface.preference.PreferenceNode;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.workbench.internal.ObjectContributorManager;
+import org.fdesigner.workbench.internal.registry.IWorkbenchRegistryConstants;
+import org.fdesigner.workbench.internal.registry.PropertyPagesRegistryReader;
 
 /**
  * Extends generic object contributor manager by loading property page

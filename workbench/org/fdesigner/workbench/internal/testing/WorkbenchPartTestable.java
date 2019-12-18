@@ -11,12 +11,12 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.testing;
+package org.fdesigner.workbench.internal.testing;
 
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
-import org.eclipse.ui.internal.PartSite;
 import org.eclipse.ui.testing.IWorkbenchPartTestable;
+import org.fdesigner.workbench.internal.PartSite;
 
 /**
  * Implementation of {@link IWorkbenchPartTestable}.

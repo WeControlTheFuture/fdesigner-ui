@@ -11,12 +11,12 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
-import org.eclipse.jface.action.IContributionItem;
-import org.eclipse.jface.action.IMenuManager;
-import org.eclipse.jface.action.SubContributionItem;
-import org.eclipse.jface.action.SubMenuManager;
+import org.fdesigner.ui.jface.action.IContributionItem;
+import org.fdesigner.ui.jface.action.IMenuManager;
+import org.fdesigner.ui.jface.action.SubContributionItem;
+import org.fdesigner.ui.jface.action.SubMenuManager;
 
 /**
  * An <code>EditorMenuManager</code> is used to sort the contributions made by

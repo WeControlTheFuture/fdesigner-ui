@@ -12,10 +12,11 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal.e4.migration;
+package org.fdesigner.workbench.internal.e4.migration;
 
 import java.util.Arrays;
-import org.eclipse.ui.IMemento;
+
+import org.fdesigner.workbench.IMemento;
 
 public class MementoReader {
 

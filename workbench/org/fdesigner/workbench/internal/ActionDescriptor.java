@@ -12,20 +12,20 @@
  *     IBM Corporation - initial API and implementation
  *     Alexander Fedorov <alexander.fedorov@arsysop.ru> - Bug 548799
  *******************************************************************************/
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.jface.action.Action;
-import org.eclipse.jface.action.ActionContributionItem;
-import org.eclipse.jface.action.IAction;
-import org.eclipse.jface.resource.ResourceLocator;
-import org.eclipse.ui.IEditorPart;
-import org.eclipse.ui.IPluginContribution;
-import org.eclipse.ui.IViewPart;
-import org.eclipse.ui.IWorkbenchActionConstants;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.registry.IWorkbenchRegistryConstants;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.ui.jface.action.Action;
+import org.fdesigner.ui.jface.action.ActionContributionItem;
+import org.fdesigner.ui.jface.action.IAction;
+import org.fdesigner.ui.jface.resource.ResourceLocator;
+import org.fdesigner.workbench.IEditorPart;
+import org.fdesigner.workbench.IPluginContribution;
+import org.fdesigner.workbench.IViewPart;
+import org.fdesigner.workbench.IWorkbenchActionConstants;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.internal.registry.IWorkbenchRegistryConstants;
 
 /**
  * When 'action' tag is found in the registry, an object of this class is

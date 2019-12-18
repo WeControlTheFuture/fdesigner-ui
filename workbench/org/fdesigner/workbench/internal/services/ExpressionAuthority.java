@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.services;
+package org.fdesigner.workbench.internal.services;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -20,15 +20,14 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.Map;
 
-import org.eclipse.core.expressions.EvaluationContext;
-import org.eclipse.core.expressions.Expression;
-import org.eclipse.core.expressions.IEvaluationContext;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.jface.viewers.ISelection;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.ui.ISourceProvider;
-import org.eclipse.ui.ISourceProviderListener;
-import org.eclipse.ui.ISources;
+import org.fdesigner.expressions.EvaluationContext;
+import org.fdesigner.expressions.IEvaluationContext;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.ui.jface.viewers.ISelection;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.workbench.ISourceProvider;
+import org.fdesigner.workbench.ISourceProviderListener;
+import org.fdesigner.workbench.ISources;
 
 /**
  * <p>

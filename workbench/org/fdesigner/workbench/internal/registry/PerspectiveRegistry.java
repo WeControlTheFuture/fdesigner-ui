@@ -16,7 +16,7 @@
  *     Patrik Suzzi <psuzzi@gmail.com> - Bug 500420
  *     Sopot Cela <scela@redhat.com> - Bug 502004
  *******************************************************************************/
-package org.eclipse.ui.internal.registry;
+package org.fdesigner.workbench.internal.registry;
 
 import java.net.MalformedURLException;
 import java.net.URI;
@@ -27,31 +27,33 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
 import javax.annotation.PostConstruct;
 import javax.inject.Inject;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.core.runtime.IExtension;
-import org.eclipse.core.runtime.IExtensionPoint;
-import org.eclipse.core.runtime.IExtensionRegistry;
-import org.eclipse.core.runtime.dynamichelpers.IExtensionChangeHandler;
-import org.eclipse.core.runtime.dynamichelpers.IExtensionTracker;
-import org.eclipse.e4.core.contexts.ContextInjectionFactory;
-import org.eclipse.e4.core.contexts.IEclipseContext;
-import org.eclipse.e4.core.services.log.Logger;
-import org.eclipse.e4.ui.model.application.MApplication;
-import org.eclipse.e4.ui.model.application.ui.MSnippetContainer;
-import org.eclipse.e4.ui.model.application.ui.MUIElement;
-import org.eclipse.e4.ui.model.application.ui.advanced.MPerspective;
-import org.eclipse.e4.ui.workbench.modeling.EModelService;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.ui.IPerspectiveDescriptor;
-import org.eclipse.ui.IPerspectiveRegistry;
-import org.eclipse.ui.IWorkbenchPreferenceConstants;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.activities.WorkbenchActivityHelper;
-import org.eclipse.ui.internal.Workbench;
-import org.eclipse.ui.internal.e4.compatibility.E4Util;
-import org.eclipse.ui.internal.util.PrefUtil;
+
+import org.fdesigner.e4.core.contexts.ContextInjectionFactory;
+import org.fdesigner.e4.core.contexts.IEclipseContext;
+import org.fdesigner.e4.core.services.log.Logger;
+import org.fdesigner.e4.ui.model.application.MApplication;
+import org.fdesigner.e4.ui.model.application.ui.MSnippetContainer;
+import org.fdesigner.e4.ui.model.application.ui.MUIElement;
+import org.fdesigner.e4.ui.model.application.ui.advanced.MPerspective;
+import org.fdesigner.e4.ui.workbench.modeling.EModelService;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.runtime.registry.runtime.IExtension;
+import org.fdesigner.runtime.registry.runtime.IExtensionPoint;
+import org.fdesigner.runtime.registry.runtime.IExtensionRegistry;
+import org.fdesigner.runtime.registry.runtime.dynamichelpers.IExtensionChangeHandler;
+import org.fdesigner.runtime.registry.runtime.dynamichelpers.IExtensionTracker;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.workbench.IPerspectiveDescriptor;
+import org.fdesigner.workbench.IPerspectiveRegistry;
+import org.fdesigner.workbench.IWorkbenchPreferenceConstants;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.activities.WorkbenchActivityHelper;
+import org.fdesigner.workbench.internal.Workbench;
+import org.fdesigner.workbench.internal.e4.compatibility.E4Util;
+import org.fdesigner.workbench.internal.util.PrefUtil;
 
 /**
  * Perspective registry.

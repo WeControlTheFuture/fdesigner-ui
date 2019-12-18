@@ -12,22 +12,22 @@
  *     IBM Corporation - initial API and implementation
  *     Lucas Bullen (Red Hat Inc.) - Bug 525343: importPreferencesremoves preferenceChangedListeners
  *******************************************************************************/
-package org.eclipse.ui.internal.wizards.preferences;
+package org.fdesigner.workbench.internal.wizards.preferences;
 
-import org.eclipse.e4.core.services.events.IEventBroker;
-import org.eclipse.jface.dialogs.IDialogConstants;
-import org.eclipse.jface.dialogs.IDialogSettings;
-import org.eclipse.jface.dialogs.MessageDialog;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.jface.wizard.Wizard;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Display;
-import org.eclipse.ui.IImportWizard;
-import org.eclipse.ui.IWorkbench;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.IWorkbenchGraphicConstants;
-import org.eclipse.ui.internal.WorkbenchImages;
-import org.eclipse.ui.internal.WorkbenchPlugin;
+import org.fdesigner.e4.core.services.events.IEventBroker;
+import org.fdesigner.ui.jface.dialogs.IDialogConstants;
+import org.fdesigner.ui.jface.dialogs.IDialogSettings;
+import org.fdesigner.ui.jface.dialogs.MessageDialog;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.ui.jface.wizard.Wizard;
+import org.fdesigner.workbench.IImportWizard;
+import org.fdesigner.workbench.IWorkbench;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.internal.IWorkbenchGraphicConstants;
+import org.fdesigner.workbench.internal.WorkbenchImages;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
 
 /**
  * Standard workbench wizard for importing resources from the local file system

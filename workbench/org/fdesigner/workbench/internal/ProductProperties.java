@@ -11,9 +11,8 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
-import com.ibm.icu.text.MessageFormat;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
@@ -21,12 +20,15 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.MissingResourceException;
 import java.util.PropertyResourceBundle;
-import org.eclipse.core.runtime.FileLocator;
-import org.eclipse.core.runtime.IProduct;
-import org.eclipse.core.runtime.Path;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.ui.branding.IProductConstants;
-import org.osgi.framework.Bundle;
+
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.runtime.common.runtime.FileLocator;
+import org.fdesigner.runtime.common.runtime.Path;
+import org.fdesigner.runtime.core.IProduct;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.workbench.branding.IProductConstants;
+
+import com.ibm.icu.text.MessageFormat;
 
 /**
  * A class that converts the strings returned by

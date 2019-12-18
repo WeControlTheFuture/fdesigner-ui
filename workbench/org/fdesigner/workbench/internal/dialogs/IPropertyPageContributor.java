@@ -12,10 +12,10 @@
  *     IBM Corporation - initial API and implementation
  *     Oakland Software (Francis Upton) <francisu@ieee.org> - bug 223808
  *******************************************************************************/
-package org.eclipse.ui.internal.dialogs;
+package org.fdesigner.workbench.internal.dialogs;
 
-import org.eclipse.jface.preference.PreferenceNode;
-import org.eclipse.ui.internal.IObjectContributor;
+import org.fdesigner.ui.jface.preference.PreferenceNode;
+import org.fdesigner.workbench.internal.IObjectContributor;
 
 /**
  * Implement this interface in order to register property pages for a given

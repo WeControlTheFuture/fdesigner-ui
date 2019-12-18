@@ -12,11 +12,11 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal.tweaklets;
+package org.fdesigner.workbench.internal.tweaklets;
 
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.internal.RectangleAnimationFeedbackBase;
-import org.eclipse.ui.internal.tweaklets.Tweaklets.TweakKey;
+import org.fdesigner.workbench.internal.RectangleAnimationFeedbackBase;
+import org.fdesigner.workbench.internal.tweaklets.Tweaklets.TweakKey;
 
 /**
  * Animation tweaklet base class. Create (and register) a tweaklet extension

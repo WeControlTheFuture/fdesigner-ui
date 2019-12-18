@@ -12,9 +12,9 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
-import org.eclipse.core.expressions.PropertyTester;
+import org.fdesigner.expressions.PropertyTester;
 
 /**
  * Tests various workbench window properties.

@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.commands;
+package org.fdesigner.workbench.internal.commands;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -20,33 +20,34 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-import org.eclipse.core.commands.Category;
-import org.eclipse.core.commands.Command;
-import org.eclipse.core.commands.CommandManager;
-import org.eclipse.core.commands.IExecutionListener;
-import org.eclipse.core.commands.IHandler;
-import org.eclipse.core.commands.ParameterType;
-import org.eclipse.core.commands.ParameterizedCommand;
-import org.eclipse.core.commands.SerializationException;
-import org.eclipse.core.commands.State;
-import org.eclipse.core.commands.common.NotDefinedException;
-import org.eclipse.core.runtime.ISafeRunnable;
-import org.eclipse.core.runtime.SafeRunner;
-import org.eclipse.e4.core.commands.internal.ICommandHelpService;
-import org.eclipse.e4.core.contexts.IEclipseContext;
+
 import org.eclipse.e4.ui.internal.workbench.renderers.swt.IUpdateService;
-import org.eclipse.e4.ui.model.application.ui.menu.MItem;
-import org.eclipse.e4.ui.workbench.IPresentationEngine;
-import org.eclipse.jface.commands.PersistentState;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.ui.IWorkbench;
-import org.eclipse.ui.commands.ICommandService;
-import org.eclipse.ui.commands.IElementReference;
-import org.eclipse.ui.commands.IElementUpdater;
-import org.eclipse.ui.internal.WorkbenchPlugin;
-import org.eclipse.ui.internal.menus.MenuHelper;
-import org.eclipse.ui.internal.util.PrefUtil;
-import org.eclipse.ui.menus.UIElement;
+import org.fdesigner.commands.Category;
+import org.fdesigner.commands.Command;
+import org.fdesigner.commands.CommandManager;
+import org.fdesigner.commands.IExecutionListener;
+import org.fdesigner.commands.IHandler;
+import org.fdesigner.commands.ParameterType;
+import org.fdesigner.commands.ParameterizedCommand;
+import org.fdesigner.commands.SerializationException;
+import org.fdesigner.commands.State;
+import org.fdesigner.commands.common.NotDefinedException;
+import org.fdesigner.e4.core.commands.internal.ICommandHelpService;
+import org.fdesigner.e4.core.contexts.IEclipseContext;
+import org.fdesigner.e4.ui.model.application.ui.menu.MItem;
+import org.fdesigner.e4.ui.workbench.IPresentationEngine;
+import org.fdesigner.runtime.common.runtime.ISafeRunnable;
+import org.fdesigner.runtime.common.runtime.SafeRunner;
+import org.fdesigner.ui.jface.commands.PersistentState;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.workbench.IWorkbench;
+import org.fdesigner.workbench.commands.ICommandService;
+import org.fdesigner.workbench.commands.IElementReference;
+import org.fdesigner.workbench.commands.IElementUpdater;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
+import org.fdesigner.workbench.internal.menus.MenuHelper;
+import org.fdesigner.workbench.internal.util.PrefUtil;
+import org.fdesigner.workbench.menus.UIElement;
 
 /**
  * <p>

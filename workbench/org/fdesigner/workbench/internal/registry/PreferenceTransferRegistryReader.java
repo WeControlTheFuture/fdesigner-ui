@@ -13,20 +13,22 @@
  *     Semion Chichelnitsky (semion@il.ibm.com) - bug 208564
  *******************************************************************************/
 
-package org.eclipse.ui.internal.registry;
+package org.fdesigner.workbench.internal.registry;
 
-import com.ibm.icu.text.Collator;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.core.runtime.IExtensionRegistry;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.core.runtime.preferences.PreferenceFilterEntry;
-import org.eclipse.ui.internal.WorkbenchPlugin;
-import org.eclipse.ui.internal.preferences.PreferenceTransferElement;
+
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.runtime.preferences.runtime.preferences.PreferenceFilterEntry;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.runtime.registry.runtime.IExtensionRegistry;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
+import org.fdesigner.workbench.internal.preferences.PreferenceTransferElement;
+
+import com.ibm.icu.text.Collator;
 
 /**
  * Preference Transfer registry reader to read extenders of the

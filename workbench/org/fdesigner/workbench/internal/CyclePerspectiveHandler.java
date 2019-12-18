@@ -14,18 +14,19 @@
  *     Patrik Suzzi <psuzzi@gmail.com> - Bug 504090
  ******************************************************************************/
 
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-import org.eclipse.core.commands.Command;
-import org.eclipse.core.commands.ParameterizedCommand;
-import org.eclipse.ui.IPerspectiveDescriptor;
-import org.eclipse.ui.IWorkbenchCommandConstants;
-import org.eclipse.ui.IWorkbenchPart;
-import org.eclipse.ui.commands.ICommandService;
-import org.eclipse.ui.model.PerspectiveLabelProvider;
+
+import org.fdesigner.commands.Command;
+import org.fdesigner.commands.ParameterizedCommand;
+import org.fdesigner.workbench.IPerspectiveDescriptor;
+import org.fdesigner.workbench.IWorkbenchCommandConstants;
+import org.fdesigner.workbench.IWorkbenchPart;
+import org.fdesigner.workbench.commands.ICommandService;
+import org.fdesigner.workbench.model.PerspectiveLabelProvider;
 
 /**
  * This handler is used to switch between perspectives using the keyboard.

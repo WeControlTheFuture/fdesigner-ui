@@ -12,9 +12,9 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal.menus;
+package org.fdesigner.workbench.internal.menus;
 
-import org.eclipse.ui.internal.ActionSetsEvent;
+import org.fdesigner.workbench.internal.ActionSetsEvent;
 
 /**
  * <p>

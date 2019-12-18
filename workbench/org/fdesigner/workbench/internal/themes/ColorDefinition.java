@@ -11,16 +11,16 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.themes;
+package org.fdesigner.workbench.internal.themes;
 
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.e4.ui.internal.css.swt.definition.IColorDefinitionOverridable;
-import org.eclipse.jface.resource.DataFormatException;
 import org.eclipse.swt.graphics.RGB;
-import org.eclipse.ui.IPluginContribution;
-import org.eclipse.ui.internal.misc.StatusUtil;
-import org.eclipse.ui.statushandlers.StatusManager;
-import org.eclipse.ui.themes.ColorUtil;
+import org.fdesigner.e4.ui.css.swt.internal.css.swt.definition.IColorDefinitionOverridable;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.ui.jface.resource.DataFormatException;
+import org.fdesigner.workbench.IPluginContribution;
+import org.fdesigner.workbench.internal.misc.StatusUtil;
+import org.fdesigner.workbench.statushandlers.StatusManager;
+import org.fdesigner.workbench.themes.ColorUtil;
 
 /**
  * A <code>ColorDefiniton </code> is the representation of the extensions

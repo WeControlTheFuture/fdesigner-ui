@@ -12,16 +12,17 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
-import org.eclipse.core.runtime.ListenerList;
-import org.eclipse.jface.viewers.ISelection;
-import org.eclipse.ui.ISelectionListener;
-import org.eclipse.ui.ISelectionService;
-import org.eclipse.ui.services.IDisposable;
+
+import org.fdesigner.runtime.common.runtime.ListenerList;
+import org.fdesigner.ui.jface.viewers.ISelection;
+import org.fdesigner.workbench.ISelectionListener;
+import org.fdesigner.workbench.ISelectionService;
+import org.fdesigner.workbench.services.IDisposable;
 
 /**
  * @since 3.4

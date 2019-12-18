@@ -12,9 +12,9 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
-import org.eclipse.core.runtime.jobs.Job;
+import org.fdesigner.runtime.jobs.runtime.jobs.Job;
 
 /**
  * @since 3.3

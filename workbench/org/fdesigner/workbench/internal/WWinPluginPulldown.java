@@ -11,19 +11,19 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.core.runtime.ISafeRunnable;
-import org.eclipse.core.runtime.SafeRunner;
-import org.eclipse.jface.action.IMenuCreator;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Menu;
-import org.eclipse.ui.IActionDelegate;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.IWorkbenchWindowPulldownDelegate;
-import org.eclipse.ui.IWorkbenchWindowPulldownDelegate2;
-import org.eclipse.ui.WorkbenchException;
+import org.fdesigner.runtime.common.runtime.ISafeRunnable;
+import org.fdesigner.runtime.common.runtime.SafeRunner;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.ui.jface.action.IMenuCreator;
+import org.fdesigner.workbench.IActionDelegate;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.IWorkbenchWindowPulldownDelegate;
+import org.fdesigner.workbench.IWorkbenchWindowPulldownDelegate2;
+import org.fdesigner.workbench.WorkbenchException;
 
 /**
  * A workbench window pulldown action.

@@ -12,18 +12,18 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.registry;
+package org.fdesigner.workbench.internal.registry;
 
-import org.eclipse.core.commands.AbstractHandler;
-import org.eclipse.core.commands.ExecutionEvent;
-import org.eclipse.core.commands.ExecutionException;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.ui.IWorkbenchPage;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.PartInitException;
-import org.eclipse.ui.handlers.HandlerUtil;
-import org.eclipse.ui.internal.misc.StatusUtil;
-import org.eclipse.ui.statushandlers.StatusManager;
+import org.fdesigner.commands.AbstractHandler;
+import org.fdesigner.commands.ExecutionEvent;
+import org.fdesigner.commands.ExecutionException;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.workbench.IWorkbenchPage;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.PartInitException;
+import org.fdesigner.workbench.handlers.HandlerUtil;
+import org.fdesigner.workbench.internal.misc.StatusUtil;
+import org.fdesigner.workbench.statushandlers.StatusManager;
 
 /**
  * Command handler to show a particular view.

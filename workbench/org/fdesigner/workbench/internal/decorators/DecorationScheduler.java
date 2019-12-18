@@ -14,7 +14,7 @@
  *     		Fix for Bug 216667 [Decorators] DecorationScheduler hangs onto objects forever sometimes
  *     Stefan Winkler <stefan@winklerweb.net> - bug 417255 - Race Condition in DecorationScheduler
  *******************************************************************************/
-package org.eclipse.ui.internal.decorators;
+package org.fdesigner.workbench.internal.decorators;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -25,24 +25,25 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.core.runtime.SubMonitor;
-import org.eclipse.core.runtime.jobs.Job;
-import org.eclipse.jface.resource.ResourceManager;
-import org.eclipse.jface.viewers.DecorationContext;
-import org.eclipse.jface.viewers.IDecorationContext;
-import org.eclipse.jface.viewers.ILabelProviderListener;
-import org.eclipse.jface.viewers.LabelProviderChangedEvent;
+
 import org.eclipse.swt.graphics.Color;
 import org.eclipse.swt.graphics.Font;
 import org.eclipse.swt.graphics.Image;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.WorkbenchMessages;
-import org.eclipse.ui.progress.UIJob;
-import org.eclipse.ui.progress.WorkbenchJob;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.common.runtime.SubMonitor;
+import org.fdesigner.runtime.jobs.runtime.jobs.Job;
+import org.fdesigner.ui.jface.resource.ResourceManager;
+import org.fdesigner.ui.jface.viewers.DecorationContext;
+import org.fdesigner.ui.jface.viewers.IDecorationContext;
+import org.fdesigner.ui.jface.viewers.ILabelProviderListener;
+import org.fdesigner.ui.jface.viewers.LabelProviderChangedEvent;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.internal.WorkbenchMessages;
+import org.fdesigner.workbench.progress.UIJob;
+import org.fdesigner.workbench.progress.WorkbenchJob;
 
 /**
  * The DecorationScheduler is the class that handles the decoration of elements

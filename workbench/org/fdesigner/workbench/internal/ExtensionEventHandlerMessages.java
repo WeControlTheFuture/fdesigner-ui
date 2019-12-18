@@ -11,9 +11,9 @@
  * Contributors:
  * IBM - Initial API and implementation
  **********************************************************************/
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
-import org.eclipse.osgi.util.NLS;
+import org.fdesigner.supplement.util.NLS;
 
 public class ExtensionEventHandlerMessages extends NLS {
 	private static final String BUNDLE_NAME = "org.eclipse.ui.internal.ExtensionEventHandler";//$NON-NLS-1$

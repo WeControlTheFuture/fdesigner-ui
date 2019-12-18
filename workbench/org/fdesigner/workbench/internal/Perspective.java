@@ -16,18 +16,19 @@
  *     Andrey Loskutov <loskutov@gmx.de> - Bug 404348, 421178, 456727
  *******************************************************************************/
 
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
 import java.util.ArrayList;
 import java.util.List;
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.e4.ui.model.application.ui.advanced.MPerspective;
-import org.eclipse.ui.IPerspectiveDescriptor;
-import org.eclipse.ui.contexts.IContextService;
-import org.eclipse.ui.internal.e4.compatibility.ModeledPageLayout;
-import org.eclipse.ui.internal.registry.ActionSetRegistry;
-import org.eclipse.ui.internal.registry.IActionSetDescriptor;
-import org.eclipse.ui.internal.registry.PerspectiveDescriptor;
+
+import org.fdesigner.e4.ui.model.application.ui.advanced.MPerspective;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.workbench.IPerspectiveDescriptor;
+import org.fdesigner.workbench.contexts.IContextService;
+import org.fdesigner.workbench.internal.e4.compatibility.ModeledPageLayout;
+import org.fdesigner.workbench.internal.registry.ActionSetRegistry;
+import org.fdesigner.workbench.internal.registry.IActionSetDescriptor;
+import org.fdesigner.workbench.internal.registry.PerspectiveDescriptor;
 
 /**
  *

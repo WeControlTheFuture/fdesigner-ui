@@ -12,18 +12,19 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.services;
+package org.fdesigner.workbench.internal.services;
 
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
-import org.eclipse.ui.AbstractSourceProvider;
-import org.eclipse.ui.ISourceProvider;
-import org.eclipse.ui.services.IDisposable;
-import org.eclipse.ui.services.IServiceLocator;
-import org.eclipse.ui.services.ISourceProviderService;
+
+import org.fdesigner.workbench.AbstractSourceProvider;
+import org.fdesigner.workbench.ISourceProvider;
+import org.fdesigner.workbench.services.IDisposable;
+import org.fdesigner.workbench.services.IServiceLocator;
+import org.fdesigner.workbench.services.ISourceProviderService;
 
 /**
  * <p>

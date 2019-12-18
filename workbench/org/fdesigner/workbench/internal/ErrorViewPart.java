@@ -11,14 +11,12 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
 import org.eclipse.swt.widgets.Composite;
-
-import org.eclipse.core.runtime.IStatus;
-
-import org.eclipse.ui.internal.part.StatusPart;
-import org.eclipse.ui.part.ViewPart;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.workbench.internal.part.StatusPart;
+import org.fdesigner.workbench.part.ViewPart;
 
 /**
  * This part is shown instead the views with errors.

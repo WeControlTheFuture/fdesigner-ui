@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *     Alexander Fedorov <alexander.fedorov@arsysop.ru> - Bug 548516
  *******************************************************************************/
-package org.eclipse.ui.internal.about;
+package org.fdesigner.workbench.internal.about;
 
 import static org.eclipse.e4.core.services.about.AboutSections.SECTION_INSTALLED_BUNDLES;
 import static org.eclipse.e4.core.services.about.AboutSections.SECTION_INSTALLED_FEATURES;
@@ -21,15 +21,16 @@ import static org.eclipse.e4.core.services.about.AboutSections.SECTION_SYSTEM_PR
 import static org.eclipse.e4.core.services.about.AboutSections.SECTION_USER_PREFERENCES;
 
 import java.io.PrintWriter;
-import org.eclipse.e4.core.services.about.AboutSections;
-import org.eclipse.e4.core.services.about.ISystemInformation;
-import org.eclipse.osgi.util.NLS;
-import org.eclipse.ui.about.ISystemSummarySection;
-import org.eclipse.ui.internal.WorkbenchMessages;
-import org.eclipse.ui.internal.WorkbenchPlugin;
-import org.osgi.framework.BundleContext;
-import org.osgi.framework.FrameworkUtil;
-import org.osgi.framework.ServiceReference;
+
+import org.fdesigner.e4.core.services.about.AboutSections;
+import org.fdesigner.e4.core.services.about.ISystemInformation;
+import org.fdesigner.framework.framework.BundleContext;
+import org.fdesigner.framework.framework.FrameworkUtil;
+import org.fdesigner.framework.framework.ServiceReference;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.workbench.about.ISystemSummarySection;
+import org.fdesigner.workbench.internal.WorkbenchMessages;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
 
 /**
  * This class puts basic platform information into the system summary log. This

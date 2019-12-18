@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.registry;
+package org.fdesigner.workbench.internal.registry;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -22,35 +22,37 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 import javax.inject.Inject;
-import org.eclipse.core.runtime.preferences.IEclipsePreferences;
-import org.eclipse.core.runtime.preferences.IEclipsePreferences.IPreferenceChangeListener;
-import org.eclipse.core.runtime.preferences.IEclipsePreferences.PreferenceChangeEvent;
-import org.eclipse.e4.core.contexts.ContextInjectionFactory;
-import org.eclipse.e4.core.contexts.IEclipseContext;
-import org.eclipse.e4.core.di.extensions.Preference;
-import org.eclipse.e4.core.services.events.IEventBroker;
-import org.eclipse.e4.core.services.log.Logger;
-import org.eclipse.e4.ui.internal.workbench.E4XMIResource;
-import org.eclipse.e4.ui.internal.workbench.E4XMIResourceFactory;
-import org.eclipse.e4.ui.model.application.MAddon;
-import org.eclipse.e4.ui.model.application.MApplication;
-import org.eclipse.e4.ui.model.application.ui.MUIElement;
-import org.eclipse.e4.ui.model.application.ui.advanced.MPerspective;
-import org.eclipse.e4.ui.workbench.modeling.EModelService;
+
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.resource.Resource;
-import org.eclipse.ui.IPerspectiveDescriptor;
-import org.eclipse.ui.WorkbenchException;
-import org.eclipse.ui.XMLMemento;
-import org.eclipse.ui.internal.e4.compatibility.ModeledPageLayout;
-import org.eclipse.ui.internal.e4.migration.PerspectiveBuilder;
-import org.eclipse.ui.internal.e4.migration.PerspectiveReader;
-import org.eclipse.ui.internal.wizards.preferences.PreferencesExportWizard;
-import org.eclipse.ui.internal.wizards.preferences.PreferencesImportWizard;
-import org.osgi.service.event.EventHandler;
+import org.fdesigner.e4.core.contexts.ContextInjectionFactory;
+import org.fdesigner.e4.core.contexts.IEclipseContext;
+import org.fdesigner.e4.core.di.extensions.Preference;
+import org.fdesigner.e4.core.services.events.IEventBroker;
+import org.fdesigner.e4.core.services.log.Logger;
+import org.fdesigner.e4.ui.model.application.MAddon;
+import org.fdesigner.e4.ui.model.application.MApplication;
+import org.fdesigner.e4.ui.model.application.ui.MUIElement;
+import org.fdesigner.e4.ui.model.application.ui.advanced.MPerspective;
+import org.fdesigner.e4.ui.workbench.internal.workbench.E4XMIResource;
+import org.fdesigner.e4.ui.workbench.internal.workbench.E4XMIResourceFactory;
+import org.fdesigner.e4.ui.workbench.modeling.EModelService;
+import org.fdesigner.runtime.preferences.runtime.preferences.IEclipsePreferences;
+import org.fdesigner.runtime.preferences.runtime.preferences.IEclipsePreferences.IPreferenceChangeListener;
+import org.fdesigner.runtime.preferences.runtime.preferences.IEclipsePreferences.PreferenceChangeEvent;
+import org.fdesigner.services.event.EventHandler;
+import org.fdesigner.workbench.IPerspectiveDescriptor;
+import org.fdesigner.workbench.WorkbenchException;
+import org.fdesigner.workbench.XMLMemento;
+import org.fdesigner.workbench.internal.e4.compatibility.ModeledPageLayout;
+import org.fdesigner.workbench.internal.e4.migration.PerspectiveBuilder;
+import org.fdesigner.workbench.internal.e4.migration.PerspectiveReader;
+import org.fdesigner.workbench.internal.wizards.preferences.PreferencesExportWizard;
+import org.fdesigner.workbench.internal.wizards.preferences.PreferencesImportWizard;
 
 @SuppressWarnings("restriction")
 public class ImportExportPespectiveHandler {

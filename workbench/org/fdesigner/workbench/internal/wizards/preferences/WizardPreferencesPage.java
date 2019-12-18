@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *     Patrik Suzzi <psuzzi@gmail.com> - Bug 490700
  *******************************************************************************/
-package org.eclipse.ui.internal.wizards.preferences;
+package org.fdesigner.workbench.internal.wizards.preferences;
 
 import static org.eclipse.swt.events.SelectionListener.widgetSelectedAdapter;
 
@@ -20,21 +20,7 @@ import java.io.File;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.Path;
-import org.eclipse.core.runtime.preferences.ConfigurationScope;
-import org.eclipse.core.runtime.preferences.IPreferenceFilter;
-import org.eclipse.core.runtime.preferences.InstanceScope;
-import org.eclipse.jface.dialogs.Dialog;
-import org.eclipse.jface.dialogs.IDialogConstants;
-import org.eclipse.jface.dialogs.IDialogSettings;
-import org.eclipse.jface.dialogs.MessageDialog;
-import org.eclipse.jface.layout.LayoutConstants;
-import org.eclipse.jface.viewers.CheckboxTreeViewer;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.jface.viewers.TreeViewer;
-import org.eclipse.jface.wizard.WizardPage;
-import org.eclipse.osgi.util.NLS;
+
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionListener;
 import org.eclipse.swt.graphics.Font;
@@ -52,13 +38,28 @@ import org.eclipse.swt.widgets.Listener;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Text;
 import org.eclipse.swt.widgets.Widget;
-import org.eclipse.ui.dialogs.FilteredTree;
-import org.eclipse.ui.dialogs.IOverwriteQuery;
-import org.eclipse.ui.dialogs.PatternFilter;
-import org.eclipse.ui.internal.WorkbenchPlugin;
-import org.eclipse.ui.internal.preferences.PreferenceTransferElement;
-import org.eclipse.ui.internal.preferences.PreferenceTransferManager;
-import org.eclipse.ui.model.WorkbenchLabelProvider;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.Path;
+import org.fdesigner.runtime.preferences.runtime.preferences.ConfigurationScope;
+import org.fdesigner.runtime.preferences.runtime.preferences.IPreferenceFilter;
+import org.fdesigner.runtime.preferences.runtime.preferences.InstanceScope;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.ui.jface.dialogs.Dialog;
+import org.fdesigner.ui.jface.dialogs.IDialogConstants;
+import org.fdesigner.ui.jface.dialogs.IDialogSettings;
+import org.fdesigner.ui.jface.dialogs.MessageDialog;
+import org.fdesigner.ui.jface.layout.LayoutConstants;
+import org.fdesigner.ui.jface.viewers.CheckboxTreeViewer;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.ui.jface.viewers.TreeViewer;
+import org.fdesigner.ui.jface.wizard.WizardPage;
+import org.fdesigner.workbench.dialogs.FilteredTree;
+import org.fdesigner.workbench.dialogs.IOverwriteQuery;
+import org.fdesigner.workbench.dialogs.PatternFilter;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
+import org.fdesigner.workbench.internal.preferences.PreferenceTransferElement;
+import org.fdesigner.workbench.internal.preferences.PreferenceTransferManager;
+import org.fdesigner.workbench.model.WorkbenchLabelProvider;
 
 /**
  * Base class for preference export/import pages.

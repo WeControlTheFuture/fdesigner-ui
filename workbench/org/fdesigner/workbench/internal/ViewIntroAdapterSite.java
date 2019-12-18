@@ -11,18 +11,18 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
-import org.eclipse.core.runtime.Adapters;
-import org.eclipse.jface.viewers.ISelectionProvider;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.IActionBars;
-import org.eclipse.ui.IKeyBindingService;
-import org.eclipse.ui.IViewSite;
-import org.eclipse.ui.IWorkbenchPage;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.internal.intro.IntroDescriptor;
-import org.eclipse.ui.intro.IIntroSite;
+import org.fdesigner.runtime.common.runtime.Adapters;
+import org.fdesigner.ui.jface.viewers.ISelectionProvider;
+import org.fdesigner.workbench.IActionBars;
+import org.fdesigner.workbench.IKeyBindingService;
+import org.fdesigner.workbench.IViewSite;
+import org.fdesigner.workbench.IWorkbenchPage;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.internal.intro.IntroDescriptor;
+import org.fdesigner.workbench.intro.IIntroSite;
 
 /**
  * Simple <code>IIntroSite</code> that wraps a <code>IViewSite</code>. For use

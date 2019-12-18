@@ -12,20 +12,20 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
-import org.eclipse.jface.action.ActionContributionItem;
-import org.eclipse.jface.action.IContributionManager;
-import org.eclipse.jface.viewers.ISelection;
-import org.eclipse.ui.IPluginContribution;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.activities.ActivityManagerEvent;
-import org.eclipse.ui.activities.IActivityManagerListener;
-import org.eclipse.ui.activities.IIdentifier;
-import org.eclipse.ui.activities.IIdentifierListener;
-import org.eclipse.ui.activities.IWorkbenchActivitySupport;
-import org.eclipse.ui.activities.IdentifierEvent;
-import org.eclipse.ui.activities.WorkbenchActivityHelper;
+import org.fdesigner.ui.jface.action.ActionContributionItem;
+import org.fdesigner.ui.jface.action.IContributionManager;
+import org.fdesigner.ui.jface.viewers.ISelection;
+import org.fdesigner.workbench.IPluginContribution;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.activities.ActivityManagerEvent;
+import org.fdesigner.workbench.activities.IActivityManagerListener;
+import org.fdesigner.workbench.activities.IIdentifier;
+import org.fdesigner.workbench.activities.IIdentifierListener;
+import org.fdesigner.workbench.activities.IWorkbenchActivitySupport;
+import org.fdesigner.workbench.activities.IdentifierEvent;
+import org.fdesigner.workbench.activities.WorkbenchActivityHelper;
 
 /**
  * Contribution item for actions provided by plugins via workbench action

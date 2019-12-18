@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -22,13 +22,14 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.dynamichelpers.IExtensionTracker;
-import org.eclipse.osgi.util.NLS;
-import org.eclipse.ui.SubActionBars;
-import org.eclipse.ui.internal.provisional.application.IActionBarConfigurer2;
-import org.eclipse.ui.internal.registry.IActionSet;
-import org.eclipse.ui.internal.registry.IActionSetDescriptor;
+
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.registry.runtime.dynamichelpers.IExtensionTracker;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.workbench.SubActionBars;
+import org.fdesigner.workbench.internal.provisional.application.IActionBarConfigurer2;
+import org.fdesigner.workbench.internal.registry.IActionSet;
+import org.fdesigner.workbench.internal.registry.IActionSetDescriptor;
 
 /**
  * Manage the configurable actions for one window.

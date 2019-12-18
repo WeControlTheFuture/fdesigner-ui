@@ -12,11 +12,11 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal.services;
+package org.fdesigner.workbench.internal.services;
 
-import org.eclipse.ui.services.AbstractServiceFactory;
-import org.eclipse.ui.services.IEvaluationService;
-import org.eclipse.ui.services.IServiceLocator;
+import org.fdesigner.workbench.services.AbstractServiceFactory;
+import org.fdesigner.workbench.services.IEvaluationService;
+import org.fdesigner.workbench.services.IServiceLocator;
 
 /**
  * @since 3.4

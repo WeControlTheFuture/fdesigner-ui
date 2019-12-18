@@ -12,32 +12,32 @@
  *     IBM Corporation - initial API and implementation
  *     Dirk Fauth <dirk.fauth@googlemail.com> - Bug 463043
  *******************************************************************************/
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
-import org.eclipse.core.runtime.Adapters;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.e4.core.services.events.IEventBroker;
-import org.eclipse.e4.ui.model.application.ui.MUIElement;
-import org.eclipse.e4.ui.model.application.ui.basic.MPart;
-import org.eclipse.e4.ui.model.application.ui.basic.MPartStack;
-import org.eclipse.e4.ui.workbench.IPresentationEngine;
-import org.eclipse.e4.ui.workbench.UIEvents;
-import org.eclipse.e4.ui.workbench.UIEvents.EventTags;
 import org.eclipse.swt.custom.BusyIndicator;
 import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
-import org.eclipse.ui.IMemento;
-import org.eclipse.ui.IViewSite;
-import org.eclipse.ui.PartInitException;
-import org.eclipse.ui.internal.intro.IntroMessages;
-import org.eclipse.ui.internal.util.PrefUtil;
-import org.eclipse.ui.intro.IIntroPart;
-import org.eclipse.ui.intro.IIntroSite;
-import org.eclipse.ui.part.ViewPart;
-import org.osgi.service.event.EventHandler;
+import org.fdesigner.e4.core.services.events.IEventBroker;
+import org.fdesigner.e4.ui.model.application.ui.MUIElement;
+import org.fdesigner.e4.ui.model.application.ui.basic.MPart;
+import org.fdesigner.e4.ui.model.application.ui.basic.MPartStack;
+import org.fdesigner.e4.ui.workbench.IPresentationEngine;
+import org.fdesigner.e4.ui.workbench.UIEvents;
+import org.fdesigner.e4.ui.workbench.UIEvents.EventTags;
+import org.fdesigner.runtime.common.runtime.Adapters;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.services.event.EventHandler;
+import org.fdesigner.workbench.IMemento;
+import org.fdesigner.workbench.IViewSite;
+import org.fdesigner.workbench.PartInitException;
+import org.fdesigner.workbench.internal.intro.IntroMessages;
+import org.fdesigner.workbench.internal.util.PrefUtil;
+import org.fdesigner.workbench.intro.IIntroPart;
+import org.fdesigner.workbench.intro.IIntroSite;
+import org.fdesigner.workbench.part.ViewPart;
 
 /**
  * Simple view that will wrap an <code>IIntroPart</code>.

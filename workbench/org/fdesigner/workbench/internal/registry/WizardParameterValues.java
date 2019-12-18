@@ -11,15 +11,16 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
-package org.eclipse.ui.internal.registry;
+package org.fdesigner.workbench.internal.registry;
 
 import java.util.HashMap;
 import java.util.Map;
-import org.eclipse.core.commands.IParameterValues;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.wizards.IWizardCategory;
-import org.eclipse.ui.wizards.IWizardDescriptor;
-import org.eclipse.ui.wizards.IWizardRegistry;
+
+import org.fdesigner.commands.IParameterValues;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.wizards.IWizardCategory;
+import org.fdesigner.workbench.wizards.IWizardDescriptor;
+import org.fdesigner.workbench.wizards.IWizardRegistry;
 
 /**
  * Provides the parameter values for a show wizard command.

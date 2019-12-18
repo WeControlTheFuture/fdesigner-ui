@@ -11,19 +11,20 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import org.eclipse.core.runtime.IAdaptable;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.jface.viewers.StructuredSelection;
-import org.eclipse.ui.internal.util.BundleUtility;
-import org.osgi.framework.Bundle;
+
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.runtime.common.runtime.IAdaptable;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.ui.jface.viewers.StructuredSelection;
+import org.fdesigner.workbench.internal.util.BundleUtility;
 
 /**
  * Provides access to resource-specific classes, needed to provide backwards

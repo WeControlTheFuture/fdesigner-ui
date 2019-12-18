@@ -12,16 +12,17 @@
  *     IBM Corporation - initial API and implementation
  *     Oakland Software (Francis Upton) <francisu@ieee.org> - bug 219273
  *******************************************************************************/
-package org.eclipse.ui.internal.registry;
+package org.fdesigner.workbench.internal.registry;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 import java.util.StringTokenizer;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.ui.internal.WorkbenchPlugin;
-import org.eclipse.ui.internal.misc.StatusUtil;
+
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
+import org.fdesigner.workbench.internal.misc.StatusUtil;
 
 /**
  * The CategorizedPageRegistryReader is the abstract super class of registry

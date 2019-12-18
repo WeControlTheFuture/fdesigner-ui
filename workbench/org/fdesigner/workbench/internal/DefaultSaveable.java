@@ -13,19 +13,19 @@
  *     Andrey Loskutov <loskutov@gmx.de> - Bug 372799
  ******************************************************************************/
 
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.jface.resource.ImageDescriptor;
 import org.eclipse.swt.graphics.Image;
-import org.eclipse.ui.ISaveablePart;
-import org.eclipse.ui.IViewPart;
-import org.eclipse.ui.IWorkbenchPage;
-import org.eclipse.ui.IWorkbenchPart;
-import org.eclipse.ui.IWorkbenchPart2;
-import org.eclipse.ui.IWorkbenchPartReference;
-import org.eclipse.ui.PartInitException;
-import org.eclipse.ui.Saveable;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.workbench.ISaveablePart;
+import org.fdesigner.workbench.IViewPart;
+import org.fdesigner.workbench.IWorkbenchPage;
+import org.fdesigner.workbench.IWorkbenchPart;
+import org.fdesigner.workbench.IWorkbenchPart2;
+import org.fdesigner.workbench.IWorkbenchPartReference;
+import org.fdesigner.workbench.PartInitException;
+import org.fdesigner.workbench.Saveable;
 
 /**
  * A default {@link Saveable} implementation that wrappers a regular workbench

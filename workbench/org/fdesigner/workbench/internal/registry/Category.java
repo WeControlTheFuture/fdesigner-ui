@@ -11,19 +11,20 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.registry;
+package org.fdesigner.workbench.internal.registry;
 
 import java.util.ArrayList;
 import java.util.StringTokenizer;
-import org.eclipse.core.runtime.IAdaptable;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.ui.IPluginContribution;
-import org.eclipse.ui.ISharedImages;
-import org.eclipse.ui.WorkbenchException;
-import org.eclipse.ui.internal.WorkbenchImages;
-import org.eclipse.ui.internal.WorkbenchMessages;
-import org.eclipse.ui.model.IWorkbenchAdapter;
+
+import org.fdesigner.runtime.common.runtime.IAdaptable;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.workbench.IPluginContribution;
+import org.fdesigner.workbench.ISharedImages;
+import org.fdesigner.workbench.WorkbenchException;
+import org.fdesigner.workbench.internal.WorkbenchImages;
+import org.fdesigner.workbench.internal.WorkbenchMessages;
+import org.fdesigner.workbench.model.IWorkbenchAdapter;
 
 /**
  * Category provides for hierarchical grouping of elements registered in the

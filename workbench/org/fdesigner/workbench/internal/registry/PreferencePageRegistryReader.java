@@ -12,19 +12,20 @@
  *     IBM Corporation - initial API and implementation
  *     Jan-Hendrik Diederich, Bredex GmbH - bug 201052
  *******************************************************************************/
-package org.eclipse.ui.internal.registry;
+package org.fdesigner.workbench.internal.registry;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.core.runtime.IExtensionRegistry;
-import org.eclipse.jface.preference.IPreferenceNode;
-import org.eclipse.ui.IWorkbench;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.activities.WorkbenchActivityHelper;
-import org.eclipse.ui.internal.Workbench;
-import org.eclipse.ui.internal.dialogs.WorkbenchPreferenceNode;
+
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.runtime.registry.runtime.IExtensionRegistry;
+import org.fdesigner.ui.jface.preference.IPreferenceNode;
+import org.fdesigner.workbench.IWorkbench;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.activities.WorkbenchActivityHelper;
+import org.fdesigner.workbench.internal.Workbench;
+import org.fdesigner.workbench.internal.dialogs.WorkbenchPreferenceNode;
 
 /**
  * Instances access the registry that is provided at creation time in order to

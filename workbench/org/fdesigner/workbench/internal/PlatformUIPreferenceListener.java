@@ -13,27 +13,28 @@
  *      Wojciech Galanciak <wojciech.galanciak@pl.ibm.com> - Bug 236104 [EditorMgmt] File association default needs to be set twice to take effect
  *      Lars Vogel <Lars.Vogel@vogella.com> - Bug 472654
  *******************************************************************************/
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
 import java.io.IOException;
 import java.io.Reader;
 import java.io.StringReader;
 import java.util.HashMap;
-import org.eclipse.core.runtime.preferences.IEclipsePreferences;
-import org.eclipse.core.runtime.preferences.IEclipsePreferences.PreferenceChangeEvent;
-import org.eclipse.jface.preference.IPreferenceStore;
-import org.eclipse.jface.util.OpenStrategy;
-import org.eclipse.ui.IEditorDescriptor;
-import org.eclipse.ui.IEditorRegistry;
-import org.eclipse.ui.IFileEditorMapping;
-import org.eclipse.ui.IWorkbench;
-import org.eclipse.ui.IWorkbenchPreferenceConstants;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.WorkbenchException;
-import org.eclipse.ui.internal.decorators.DecoratorManager;
-import org.eclipse.ui.internal.progress.ProgressManager;
-import org.eclipse.ui.internal.registry.EditorRegistry;
-import org.eclipse.ui.internal.util.PrefUtil;
+
+import org.fdesigner.runtime.preferences.runtime.preferences.IEclipsePreferences;
+import org.fdesigner.runtime.preferences.runtime.preferences.IEclipsePreferences.PreferenceChangeEvent;
+import org.fdesigner.ui.jface.preference.IPreferenceStore;
+import org.fdesigner.ui.jface.util.OpenStrategy;
+import org.fdesigner.workbench.IEditorDescriptor;
+import org.fdesigner.workbench.IEditorRegistry;
+import org.fdesigner.workbench.IFileEditorMapping;
+import org.fdesigner.workbench.IWorkbench;
+import org.fdesigner.workbench.IWorkbenchPreferenceConstants;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.WorkbenchException;
+import org.fdesigner.workbench.internal.decorators.DecoratorManager;
+import org.fdesigner.workbench.internal.progress.ProgressManager;
+import org.fdesigner.workbench.internal.registry.EditorRegistry;
+import org.fdesigner.workbench.internal.util.PrefUtil;
 
 /**
  * The PlatformUIPreferenceListener is a class that listens to changes in the

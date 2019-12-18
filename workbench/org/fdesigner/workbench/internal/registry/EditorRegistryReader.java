@@ -11,17 +11,18 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.registry;
+package org.fdesigner.workbench.internal.registry;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.core.runtime.IExtensionRegistry;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.core.runtime.content.IContentType;
-import org.eclipse.ui.IEditorDescriptor;
-import org.eclipse.ui.PlatformUI;
+
+import org.fdesigner.runtime.contenttype.runtime.content.IContentType;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.runtime.registry.runtime.IExtensionRegistry;
+import org.fdesigner.workbench.IEditorDescriptor;
+import org.fdesigner.workbench.PlatformUI;
 
 /**
  * This class is used to read resource editor registry descriptors from the

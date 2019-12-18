@@ -12,11 +12,11 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal.wizards.preferences;
+package org.fdesigner.workbench.internal.wizards.preferences;
 
-import org.eclipse.jface.viewers.ITreeContentProvider;
-import org.eclipse.jface.viewers.Viewer;
-import org.eclipse.ui.internal.preferences.PreferenceTransferElement;
+import org.fdesigner.ui.jface.viewers.ITreeContentProvider;
+import org.fdesigner.ui.jface.viewers.Viewer;
+import org.fdesigner.workbench.internal.preferences.PreferenceTransferElement;
 
 /**
  *

@@ -12,15 +12,15 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
-import org.eclipse.core.runtime.ListenerList;
-import org.eclipse.ui.IPartListener;
-import org.eclipse.ui.IPartListener2;
-import org.eclipse.ui.IPartService;
-import org.eclipse.ui.IWorkbenchPart;
-import org.eclipse.ui.IWorkbenchPartReference;
-import org.eclipse.ui.services.IDisposable;
+import org.fdesigner.runtime.common.runtime.ListenerList;
+import org.fdesigner.workbench.IPartListener;
+import org.fdesigner.workbench.IPartListener2;
+import org.fdesigner.workbench.IPartService;
+import org.fdesigner.workbench.IWorkbenchPart;
+import org.fdesigner.workbench.IWorkbenchPartReference;
+import org.fdesigner.workbench.services.IDisposable;
 
 /**
  * A part service which delegates all responsibility to the parent service. The

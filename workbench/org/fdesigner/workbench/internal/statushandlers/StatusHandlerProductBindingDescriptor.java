@@ -12,11 +12,11 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal.statushandlers;
+package org.fdesigner.workbench.internal.statushandlers;
 
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.ui.IPluginContribution;
-import org.eclipse.ui.internal.registry.IWorkbenchRegistryConstants;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.workbench.IPluginContribution;
+import org.fdesigner.workbench.internal.registry.IWorkbenchRegistryConstants;
 
 /**
  * The status handler product binding descriptor.

@@ -11,15 +11,13 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.Cursor;
 import org.eclipse.swt.widgets.Display;
-
-import org.eclipse.jface.resource.ImageDescriptor;
-
-import org.eclipse.ui.ISharedImages;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.workbench.ISharedImages;
 
 /**
  * Provides the set of cursors used for drag-and-drop.

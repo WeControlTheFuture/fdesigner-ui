@@ -11,13 +11,13 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.ui.IActionDelegate;
-import org.eclipse.ui.IEditorActionDelegate;
-import org.eclipse.ui.IEditorPart;
-import org.eclipse.ui.WorkbenchException;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.workbench.IActionDelegate;
+import org.fdesigner.workbench.IEditorActionDelegate;
+import org.fdesigner.workbench.IEditorPart;
+import org.fdesigner.workbench.WorkbenchException;
 
 /**
  * Extends PartPluginAction for usage in editor parts. Objects of this class are

@@ -15,7 +15,7 @@
  *     James Blackburn (Broadcom Corp.) - Bug 294628 multiple selection
  *     Alexander Fedorov <alexander.fedorov@arsysop.ru> - Bug 548799
  *******************************************************************************/
-package org.eclipse.ui.internal.dialogs;
+package org.fdesigner.workbench.internal.dialogs;
 
 import java.lang.ref.SoftReference;
 import java.util.ArrayList;
@@ -24,33 +24,34 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
-import org.eclipse.core.expressions.EvaluationContext;
-import org.eclipse.core.expressions.EvaluationResult;
-import org.eclipse.core.expressions.Expression;
-import org.eclipse.core.expressions.ExpressionConverter;
-import org.eclipse.core.runtime.Adapters;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IAdaptable;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.jface.preference.IPreferencePage;
-import org.eclipse.jface.preference.PreferenceNode;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.jface.resource.ResourceLocator;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.ui.IActionFilter;
-import org.eclipse.ui.IPluginContribution;
-import org.eclipse.ui.IWorkbenchPropertyPage;
-import org.eclipse.ui.IWorkbenchPropertyPageMulti;
-import org.eclipse.ui.SelectionEnabler;
-import org.eclipse.ui.internal.IWorkbenchConstants;
-import org.eclipse.ui.internal.LegacyResourceSupport;
-import org.eclipse.ui.internal.WorkbenchPlugin;
-import org.eclipse.ui.internal.registry.CategorizedPageRegistryReader;
-import org.eclipse.ui.internal.registry.IWorkbenchRegistryConstants;
-import org.eclipse.ui.internal.registry.PropertyPagesRegistryReader;
-import org.eclipse.ui.model.IWorkbenchAdapter;
+
+import org.fdesigner.expressions.EvaluationContext;
+import org.fdesigner.expressions.EvaluationResult;
+import org.fdesigner.expressions.Expression;
+import org.fdesigner.expressions.ExpressionConverter;
+import org.fdesigner.runtime.common.runtime.Adapters;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IAdaptable;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.ui.jface.preference.IPreferencePage;
+import org.fdesigner.ui.jface.preference.PreferenceNode;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.ui.jface.resource.ResourceLocator;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.workbench.IActionFilter;
+import org.fdesigner.workbench.IPluginContribution;
+import org.fdesigner.workbench.IWorkbenchPropertyPage;
+import org.fdesigner.workbench.IWorkbenchPropertyPageMulti;
+import org.fdesigner.workbench.SelectionEnabler;
+import org.fdesigner.workbench.internal.IWorkbenchConstants;
+import org.fdesigner.workbench.internal.LegacyResourceSupport;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
+import org.fdesigner.workbench.internal.registry.CategorizedPageRegistryReader;
+import org.fdesigner.workbench.internal.registry.IWorkbenchRegistryConstants;
+import org.fdesigner.workbench.internal.registry.PropertyPagesRegistryReader;
+import org.fdesigner.workbench.model.IWorkbenchAdapter;
 
 /**
  * This property page contributor is created from page entry in the registry.

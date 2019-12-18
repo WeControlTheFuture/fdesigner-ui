@@ -12,29 +12,30 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.commands;
+package org.fdesigner.workbench.internal.commands;
 
 import java.util.ArrayList;
 import java.util.List;
-import org.eclipse.core.commands.AbstractParameterValueConverter;
-import org.eclipse.core.commands.Category;
-import org.eclipse.core.commands.Command;
-import org.eclipse.core.commands.CommandManager;
-import org.eclipse.core.commands.ParameterType;
-import org.eclipse.core.commands.State;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.core.runtime.IExtensionDelta;
-import org.eclipse.core.runtime.IExtensionRegistry;
-import org.eclipse.core.runtime.IRegistryChangeEvent;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.e4.core.commands.internal.HandlerServiceImpl;
-import org.eclipse.e4.ui.internal.workbench.Parameter;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.WorkbenchMessages;
-import org.eclipse.ui.internal.registry.IWorkbenchRegistryConstants;
-import org.eclipse.ui.internal.services.RegistryPersistence;
-import org.eclipse.ui.internal.util.PrefUtil;
+
+import org.fdesigner.commands.AbstractParameterValueConverter;
+import org.fdesigner.commands.Category;
+import org.fdesigner.commands.Command;
+import org.fdesigner.commands.CommandManager;
+import org.fdesigner.commands.ParameterType;
+import org.fdesigner.commands.State;
+import org.fdesigner.e4.core.commands.internal.HandlerServiceImpl;
+import org.fdesigner.e4.ui.workbench.internal.workbench.Parameter;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.runtime.registry.runtime.IExtensionDelta;
+import org.fdesigner.runtime.registry.runtime.IExtensionRegistry;
+import org.fdesigner.runtime.registry.runtime.IRegistryChangeEvent;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.internal.WorkbenchMessages;
+import org.fdesigner.workbench.internal.registry.IWorkbenchRegistryConstants;
+import org.fdesigner.workbench.internal.services.RegistryPersistence;
+import org.fdesigner.workbench.internal.util.PrefUtil;
 
 /**
  * <p>

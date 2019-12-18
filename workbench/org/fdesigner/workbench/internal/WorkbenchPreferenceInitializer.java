@@ -20,20 +20,20 @@
  *     Patrik Suzzi <psuzzi@itemis.com> - Bug 529885
  *     Christian Georgi (SAP SE) - Bug 540440
  *******************************************************************************/
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.core.runtime.preferences.AbstractPreferenceInitializer;
-import org.eclipse.core.runtime.preferences.DefaultScope;
-import org.eclipse.core.runtime.preferences.IEclipsePreferences;
-import org.eclipse.core.runtime.preferences.IScopeContext;
-import org.eclipse.core.runtime.preferences.InstanceScope;
-import org.eclipse.jface.util.OpenStrategy;
 import org.eclipse.swt.SWT;
-import org.eclipse.ui.IWorkbenchPreferenceConstants;
-import org.osgi.service.prefs.BackingStoreException;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.runtime.preferences.runtime.preferences.AbstractPreferenceInitializer;
+import org.fdesigner.runtime.preferences.runtime.preferences.DefaultScope;
+import org.fdesigner.runtime.preferences.runtime.preferences.IEclipsePreferences;
+import org.fdesigner.runtime.preferences.runtime.preferences.IScopeContext;
+import org.fdesigner.runtime.preferences.runtime.preferences.InstanceScope;
+import org.fdesigner.runtime.preferences.service.prefs.BackingStoreException;
+import org.fdesigner.ui.jface.util.OpenStrategy;
+import org.fdesigner.workbench.IWorkbenchPreferenceConstants;
 
 /**
  * Implementation of the workbench plugin's preferences extension's

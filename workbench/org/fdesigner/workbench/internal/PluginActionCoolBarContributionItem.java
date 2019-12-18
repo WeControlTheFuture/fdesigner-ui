@@ -13,11 +13,12 @@
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 472654
  *******************************************************************************/
 
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
 import java.util.HashSet;
-import org.eclipse.jface.action.IContributionManager;
-import org.eclipse.ui.PlatformUI;
+
+import org.fdesigner.ui.jface.action.IContributionManager;
+import org.fdesigner.workbench.PlatformUI;
 
 /**
  * Contribution item for actions provided by plugins via workbench action

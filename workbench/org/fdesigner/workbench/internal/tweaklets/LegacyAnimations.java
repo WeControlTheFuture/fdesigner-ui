@@ -12,11 +12,11 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal.tweaklets;
+package org.fdesigner.workbench.internal.tweaklets;
 
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.internal.LegacyAnimationFeedback;
-import org.eclipse.ui.internal.RectangleAnimationFeedbackBase;
+import org.fdesigner.workbench.internal.LegacyAnimationFeedback;
+import org.fdesigner.workbench.internal.RectangleAnimationFeedbackBase;
 
 /**
  * Return the default (legacy) animation.

@@ -12,34 +12,35 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal.e4.compatibility;
+package org.fdesigner.workbench.internal.e4.compatibility;
 
 import javax.inject.Inject;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.e4.ui.model.application.ui.basic.MPart;
-import org.eclipse.e4.ui.model.application.ui.basic.MWindow;
-import org.eclipse.e4.ui.workbench.modeling.EModelService;
-import org.eclipse.osgi.util.NLS;
+
 import org.eclipse.swt.widgets.Composite;
-import org.eclipse.ui.IEditorInput;
-import org.eclipse.ui.IEditorPart;
-import org.eclipse.ui.IEditorRegistry;
-import org.eclipse.ui.IWorkbenchPage;
-import org.eclipse.ui.IWorkbenchPart;
-import org.eclipse.ui.PartInitException;
-import org.eclipse.ui.internal.EditorActionBars;
-import org.eclipse.ui.internal.EditorReference;
-import org.eclipse.ui.internal.PartSite;
-import org.eclipse.ui.internal.WorkbenchMessages;
-import org.eclipse.ui.internal.WorkbenchPartReference;
-import org.eclipse.ui.internal.menus.MenuHelper;
-import org.eclipse.ui.internal.registry.EditorDescriptor;
-import org.eclipse.ui.internal.registry.IWorkbenchRegistryConstants;
-import org.eclipse.ui.internal.testing.ContributionInfoMessages;
-import org.eclipse.ui.part.AbstractMultiEditor;
-import org.eclipse.ui.part.MultiEditor;
-import org.eclipse.ui.part.MultiEditorInput;
 import org.eclipse.ui.testing.ContributionInfo;
+import org.fdesigner.e4.ui.model.application.ui.basic.MPart;
+import org.fdesigner.e4.ui.model.application.ui.basic.MWindow;
+import org.fdesigner.e4.ui.workbench.modeling.EModelService;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.workbench.IEditorInput;
+import org.fdesigner.workbench.IEditorPart;
+import org.fdesigner.workbench.IEditorRegistry;
+import org.fdesigner.workbench.IWorkbenchPage;
+import org.fdesigner.workbench.IWorkbenchPart;
+import org.fdesigner.workbench.PartInitException;
+import org.fdesigner.workbench.internal.EditorActionBars;
+import org.fdesigner.workbench.internal.EditorReference;
+import org.fdesigner.workbench.internal.PartSite;
+import org.fdesigner.workbench.internal.WorkbenchMessages;
+import org.fdesigner.workbench.internal.WorkbenchPartReference;
+import org.fdesigner.workbench.internal.menus.MenuHelper;
+import org.fdesigner.workbench.internal.registry.EditorDescriptor;
+import org.fdesigner.workbench.internal.registry.IWorkbenchRegistryConstants;
+import org.fdesigner.workbench.internal.testing.ContributionInfoMessages;
+import org.fdesigner.workbench.part.AbstractMultiEditor;
+import org.fdesigner.workbench.part.MultiEditor;
+import org.fdesigner.workbench.part.MultiEditorInput;
 
 public class CompatibilityEditor extends CompatibilityPart {
 

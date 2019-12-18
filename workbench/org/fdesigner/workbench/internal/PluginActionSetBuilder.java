@@ -11,29 +11,30 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.core.runtime.dynamichelpers.IExtensionTracker;
-import org.eclipse.jface.action.AbstractGroupMarker;
-import org.eclipse.jface.action.ActionContributionItem;
-import org.eclipse.jface.action.GroupMarker;
-import org.eclipse.jface.action.IContributionItem;
-import org.eclipse.jface.action.IContributionManager;
-import org.eclipse.jface.action.ICoolBarManager;
-import org.eclipse.jface.action.IMenuManager;
-import org.eclipse.jface.action.IToolBarManager;
-import org.eclipse.jface.action.Separator;
-import org.eclipse.jface.internal.provisional.action.IToolBarContributionItem;
-import org.eclipse.ui.IActionBars;
-import org.eclipse.ui.IWorkbenchActionConstants;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.internal.registry.ActionSetRegistry;
-import org.eclipse.ui.internal.registry.IWorkbenchRegistryConstants;
-import org.eclipse.ui.services.IDisposable;
+
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.runtime.registry.runtime.dynamichelpers.IExtensionTracker;
+import org.fdesigner.ui.jface.action.AbstractGroupMarker;
+import org.fdesigner.ui.jface.action.ActionContributionItem;
+import org.fdesigner.ui.jface.action.GroupMarker;
+import org.fdesigner.ui.jface.action.IContributionItem;
+import org.fdesigner.ui.jface.action.IContributionManager;
+import org.fdesigner.ui.jface.action.ICoolBarManager;
+import org.fdesigner.ui.jface.action.IMenuManager;
+import org.fdesigner.ui.jface.action.IToolBarManager;
+import org.fdesigner.ui.jface.action.Separator;
+import org.fdesigner.ui.jface.internal.provisional.action.IToolBarContributionItem;
+import org.fdesigner.workbench.IActionBars;
+import org.fdesigner.workbench.IWorkbenchActionConstants;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.internal.registry.ActionSetRegistry;
+import org.fdesigner.workbench.internal.registry.IWorkbenchRegistryConstants;
+import org.fdesigner.workbench.services.IDisposable;
 
 /**
  * This builder reads the actions for an action set from the registry.

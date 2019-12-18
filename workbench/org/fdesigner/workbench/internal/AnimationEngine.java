@@ -11,20 +11,20 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.core.runtime.jobs.Job;
-import org.eclipse.jface.preference.IPreferenceStore;
 import org.eclipse.swt.graphics.Rectangle;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.IWorkbenchPreferenceConstants;
-import org.eclipse.ui.internal.tweaklets.Animations;
-import org.eclipse.ui.internal.tweaklets.Tweaklets;
-import org.eclipse.ui.internal.util.PrefUtil;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.jobs.runtime.jobs.Job;
+import org.fdesigner.ui.jface.preference.IPreferenceStore;
+import org.fdesigner.workbench.IWorkbenchPreferenceConstants;
+import org.fdesigner.workbench.internal.tweaklets.Animations;
+import org.fdesigner.workbench.internal.tweaklets.Tweaklets;
+import org.fdesigner.workbench.internal.util.PrefUtil;
 
 /**
  * This job creates an Animation Engine that uses an Animation Feedback to

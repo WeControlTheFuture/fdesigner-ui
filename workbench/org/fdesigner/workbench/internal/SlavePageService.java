@@ -12,14 +12,14 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
-import org.eclipse.core.runtime.ListenerList;
-import org.eclipse.ui.IPageListener;
-import org.eclipse.ui.IPageService;
-import org.eclipse.ui.IPerspectiveListener;
-import org.eclipse.ui.IWorkbenchPage;
-import org.eclipse.ui.services.IDisposable;
+import org.fdesigner.runtime.common.runtime.ListenerList;
+import org.fdesigner.workbench.IPageListener;
+import org.fdesigner.workbench.IPageService;
+import org.fdesigner.workbench.IPerspectiveListener;
+import org.fdesigner.workbench.IWorkbenchPage;
+import org.fdesigner.workbench.services.IDisposable;
 
 /**
  * @since 3.4

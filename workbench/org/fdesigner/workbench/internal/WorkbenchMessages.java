@@ -21,9 +21,9 @@
  * Kaloyan Raev <kaloyan.r@zend.com> - Bug 322002
  * Lucas Bullen (Red Hat Inc.) - Bug 500051, 530654
  *******************************************************************************/
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
-import org.eclipse.osgi.util.NLS;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * Message class for workbench messages. These messages are used throughout the

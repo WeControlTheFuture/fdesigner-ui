@@ -11,16 +11,17 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
 import java.util.ArrayList;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.ui.IActionBars;
-import org.eclipse.ui.IEditorActionBarContributor;
-import org.eclipse.ui.IEditorDescriptor;
-import org.eclipse.ui.IEditorPart;
-import org.eclipse.ui.IWorkbenchPage;
-import org.eclipse.ui.internal.registry.IWorkbenchRegistryConstants;
+
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.workbench.IActionBars;
+import org.fdesigner.workbench.IEditorActionBarContributor;
+import org.fdesigner.workbench.IEditorDescriptor;
+import org.fdesigner.workbench.IEditorPart;
+import org.fdesigner.workbench.IWorkbenchPage;
+import org.fdesigner.workbench.internal.registry.IWorkbenchRegistryConstants;
 
 /**
  * This class reads the registry for extensions that plug into 'editorActions'

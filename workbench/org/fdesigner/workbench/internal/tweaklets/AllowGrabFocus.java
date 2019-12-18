@@ -12,10 +12,10 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal.tweaklets;
+package org.fdesigner.workbench.internal.tweaklets;
 
 import org.eclipse.swt.widgets.Display;
-import org.eclipse.ui.IWorkbenchPart;
+import org.fdesigner.workbench.IWorkbenchPart;
 
 /**
  * @since 3.3

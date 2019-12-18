@@ -13,15 +13,16 @@
  *     Jeremiah Lott (jeremiah.lott@timesys.com) - fix for deadlock bug 76378
  *
  *******************************************************************************/
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
 import java.lang.management.ManagementFactory;
 import java.lang.management.ThreadInfo;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.MultiStatus;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.core.runtime.jobs.LockListener;
+
 import org.eclipse.swt.widgets.Display;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.MultiStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.jobs.runtime.jobs.LockListener;
 
 /**
  * The UI lock listener is used to prevent the UI thread from deadlocking on a

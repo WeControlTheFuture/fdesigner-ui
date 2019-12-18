@@ -15,19 +15,20 @@
  *     Alexander Fedorov <alexander.fedorov@arsysop.ru> - Bug 548799
  *******************************************************************************/
 
-package org.eclipse.ui.internal.preferences;
+package org.fdesigner.workbench.internal.preferences;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashSet;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.jface.resource.ResourceLocator;
+
 import org.eclipse.swt.graphics.Image;
-import org.eclipse.ui.internal.registry.IWorkbenchRegistryConstants;
-import org.eclipse.ui.internal.registry.KeywordRegistry;
-import org.eclipse.ui.model.IComparableContribution;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.ui.jface.resource.ResourceLocator;
+import org.fdesigner.workbench.internal.registry.IWorkbenchRegistryConstants;
+import org.fdesigner.workbench.internal.registry.KeywordRegistry;
+import org.fdesigner.workbench.model.IComparableContribution;
 
 /**
  * The WorkbenchPreferenceExtensionNode is the abstract class for all property

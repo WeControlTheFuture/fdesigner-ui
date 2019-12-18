@@ -14,48 +14,49 @@
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 472654
  ******************************************************************************/
 
-package org.eclipse.ui.internal.e4.compatibility;
+package org.fdesigner.workbench.internal.e4.compatibility;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.e4.ui.model.application.MApplication;
-import org.eclipse.e4.ui.model.application.descriptor.basic.MPartDescriptor;
-import org.eclipse.e4.ui.model.application.ui.MElementContainer;
-import org.eclipse.e4.ui.model.application.ui.MUIElement;
-import org.eclipse.e4.ui.model.application.ui.advanced.MArea;
-import org.eclipse.e4.ui.model.application.ui.advanced.MPerspective;
-import org.eclipse.e4.ui.model.application.ui.advanced.MPlaceholder;
-import org.eclipse.e4.ui.model.application.ui.basic.MPart;
-import org.eclipse.e4.ui.model.application.ui.basic.MPartSashContainerElement;
-import org.eclipse.e4.ui.model.application.ui.basic.MPartStack;
-import org.eclipse.e4.ui.model.application.ui.basic.MStackElement;
-import org.eclipse.e4.ui.model.application.ui.basic.MWindow;
-import org.eclipse.e4.ui.workbench.IPresentationEngine;
-import org.eclipse.e4.ui.workbench.modeling.EModelService;
-import org.eclipse.e4.ui.workbench.modeling.EPartService;
-import org.eclipse.osgi.util.NLS;
-import org.eclipse.ui.IFolderLayout;
-import org.eclipse.ui.IPageLayout;
-import org.eclipse.ui.IPerspectiveDescriptor;
-import org.eclipse.ui.IPlaceholderFolderLayout;
-import org.eclipse.ui.IPluginContribution;
-import org.eclipse.ui.IViewLayout;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.activities.IIdentifier;
-import org.eclipse.ui.activities.IIdentifierListener;
-import org.eclipse.ui.activities.IWorkbenchActivitySupport;
-import org.eclipse.ui.activities.IdentifierEvent;
-import org.eclipse.ui.activities.WorkbenchActivityHelper;
-import org.eclipse.ui.internal.WorkbenchMessages;
-import org.eclipse.ui.internal.WorkbenchPage;
-import org.eclipse.ui.internal.WorkbenchPlugin;
-import org.eclipse.ui.internal.misc.StatusUtil;
-import org.eclipse.ui.internal.registry.ActionSetRegistry;
-import org.eclipse.ui.internal.registry.IActionSetDescriptor;
-import org.eclipse.ui.views.IViewDescriptor;
-import org.eclipse.ui.views.IViewRegistry;
+
+import org.fdesigner.e4.ui.model.application.MApplication;
+import org.fdesigner.e4.ui.model.application.descriptor.basic.MPartDescriptor;
+import org.fdesigner.e4.ui.model.application.ui.MElementContainer;
+import org.fdesigner.e4.ui.model.application.ui.MUIElement;
+import org.fdesigner.e4.ui.model.application.ui.advanced.MArea;
+import org.fdesigner.e4.ui.model.application.ui.advanced.MPerspective;
+import org.fdesigner.e4.ui.model.application.ui.advanced.MPlaceholder;
+import org.fdesigner.e4.ui.model.application.ui.basic.MPart;
+import org.fdesigner.e4.ui.model.application.ui.basic.MPartSashContainerElement;
+import org.fdesigner.e4.ui.model.application.ui.basic.MPartStack;
+import org.fdesigner.e4.ui.model.application.ui.basic.MStackElement;
+import org.fdesigner.e4.ui.model.application.ui.basic.MWindow;
+import org.fdesigner.e4.ui.workbench.IPresentationEngine;
+import org.fdesigner.e4.ui.workbench.modeling.EModelService;
+import org.fdesigner.e4.ui.workbench.modeling.EPartService;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.workbench.IFolderLayout;
+import org.fdesigner.workbench.IPageLayout;
+import org.fdesigner.workbench.IPerspectiveDescriptor;
+import org.fdesigner.workbench.IPlaceholderFolderLayout;
+import org.fdesigner.workbench.IPluginContribution;
+import org.fdesigner.workbench.IViewLayout;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.activities.IIdentifier;
+import org.fdesigner.workbench.activities.IIdentifierListener;
+import org.fdesigner.workbench.activities.IWorkbenchActivitySupport;
+import org.fdesigner.workbench.activities.IdentifierEvent;
+import org.fdesigner.workbench.activities.WorkbenchActivityHelper;
+import org.fdesigner.workbench.internal.WorkbenchMessages;
+import org.fdesigner.workbench.internal.WorkbenchPage;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
+import org.fdesigner.workbench.internal.misc.StatusUtil;
+import org.fdesigner.workbench.internal.registry.ActionSetRegistry;
+import org.fdesigner.workbench.internal.registry.IActionSetDescriptor;
+import org.fdesigner.workbench.views.IViewDescriptor;
+import org.fdesigner.workbench.views.IViewRegistry;
 
 public class ModeledPageLayout implements IPageLayout {
 

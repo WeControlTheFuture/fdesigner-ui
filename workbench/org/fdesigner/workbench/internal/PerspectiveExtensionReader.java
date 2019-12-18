@@ -11,20 +11,21 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.core.runtime.dynamichelpers.IExtensionTracker;
-import org.eclipse.ui.IPageLayout;
-import org.eclipse.ui.IViewLayout;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.e4.compatibility.ModeledPageLayout;
-import org.eclipse.ui.internal.registry.IWorkbenchRegistryConstants;
-import org.eclipse.ui.internal.registry.RegistryReader;
+
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.runtime.registry.runtime.dynamichelpers.IExtensionTracker;
+import org.fdesigner.workbench.IPageLayout;
+import org.fdesigner.workbench.IViewLayout;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.internal.e4.compatibility.ModeledPageLayout;
+import org.fdesigner.workbench.internal.registry.IWorkbenchRegistryConstants;
+import org.fdesigner.workbench.internal.registry.RegistryReader;
 
 /**
  * A strategy to read perspective extension from the registry. A pespective

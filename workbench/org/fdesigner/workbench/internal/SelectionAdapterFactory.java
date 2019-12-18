@@ -11,16 +11,17 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-import org.eclipse.core.expressions.ICountable;
-import org.eclipse.core.expressions.IIterable;
-import org.eclipse.core.runtime.IAdapterFactory;
-import org.eclipse.jface.viewers.ISelection;
-import org.eclipse.jface.viewers.IStructuredSelection;
+
+import org.fdesigner.expressions.ICountable;
+import org.fdesigner.expressions.IIterable;
+import org.fdesigner.runtime.common.runtime.IAdapterFactory;
+import org.fdesigner.ui.jface.viewers.ISelection;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
 
 /**
  * Adapts ISelection instances to either IIterable or ICountable. For use with

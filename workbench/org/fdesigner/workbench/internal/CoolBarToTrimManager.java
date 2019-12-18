@@ -17,48 +17,49 @@
  *     Kaloyan Raev <kaloyan.r@zend.com> - Bug 322002
  ******************************************************************************/
 
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
-import org.eclipse.e4.core.contexts.ContextInjectionFactory;
-import org.eclipse.e4.ui.internal.workbench.OpaqueElementUtil;
-import org.eclipse.e4.ui.model.application.MApplication;
-import org.eclipse.e4.ui.model.application.ui.MUIElement;
-import org.eclipse.e4.ui.model.application.ui.SideValue;
-import org.eclipse.e4.ui.model.application.ui.basic.MTrimBar;
-import org.eclipse.e4.ui.model.application.ui.basic.MTrimElement;
-import org.eclipse.e4.ui.model.application.ui.basic.MTrimmedWindow;
-import org.eclipse.e4.ui.model.application.ui.menu.MHandledToolItem;
-import org.eclipse.e4.ui.model.application.ui.menu.MToolBar;
-import org.eclipse.e4.ui.model.application.ui.menu.MToolBarElement;
-import org.eclipse.e4.ui.model.application.ui.menu.MToolBarSeparator;
-import org.eclipse.e4.ui.model.application.ui.menu.MToolItem;
-import org.eclipse.e4.ui.model.application.ui.menu.MTrimContribution;
-import org.eclipse.e4.ui.workbench.modeling.EModelService;
+
 import org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem;
 import org.eclipse.e4.ui.workbench.renderers.swt.ToolBarManagerRenderer;
 import org.eclipse.e4.ui.workbench.swt.factories.IRendererFactory;
-import org.eclipse.jface.action.AbstractGroupMarker;
-import org.eclipse.jface.action.ContributionManager;
-import org.eclipse.jface.action.GroupMarker;
-import org.eclipse.jface.action.IAction;
-import org.eclipse.jface.action.IContributionItem;
-import org.eclipse.jface.action.IContributionManager;
-import org.eclipse.jface.action.IContributionManagerOverrides;
-import org.eclipse.jface.action.IMenuManager;
-import org.eclipse.jface.action.IToolBarManager;
-import org.eclipse.jface.action.ToolBarContributionItem;
-import org.eclipse.jface.action.ToolBarManager;
-import org.eclipse.jface.internal.provisional.action.ICoolBarManager2;
-import org.eclipse.jface.internal.provisional.action.IToolBarContributionItem;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.ToolBar;
-import org.eclipse.ui.IWorkbenchActionConstants;
-import org.eclipse.ui.internal.menus.MenuHelper;
-import org.eclipse.ui.menus.CommandContributionItem;
+import org.fdesigner.e4.core.contexts.ContextInjectionFactory;
+import org.fdesigner.e4.ui.model.application.MApplication;
+import org.fdesigner.e4.ui.model.application.ui.MUIElement;
+import org.fdesigner.e4.ui.model.application.ui.SideValue;
+import org.fdesigner.e4.ui.model.application.ui.basic.MTrimBar;
+import org.fdesigner.e4.ui.model.application.ui.basic.MTrimElement;
+import org.fdesigner.e4.ui.model.application.ui.basic.MTrimmedWindow;
+import org.fdesigner.e4.ui.model.application.ui.menu.MHandledToolItem;
+import org.fdesigner.e4.ui.model.application.ui.menu.MToolBar;
+import org.fdesigner.e4.ui.model.application.ui.menu.MToolBarElement;
+import org.fdesigner.e4.ui.model.application.ui.menu.MToolBarSeparator;
+import org.fdesigner.e4.ui.model.application.ui.menu.MToolItem;
+import org.fdesigner.e4.ui.model.application.ui.menu.MTrimContribution;
+import org.fdesigner.e4.ui.workbench.internal.workbench.OpaqueElementUtil;
+import org.fdesigner.e4.ui.workbench.modeling.EModelService;
+import org.fdesigner.ui.jface.action.AbstractGroupMarker;
+import org.fdesigner.ui.jface.action.ContributionManager;
+import org.fdesigner.ui.jface.action.GroupMarker;
+import org.fdesigner.ui.jface.action.IAction;
+import org.fdesigner.ui.jface.action.IContributionItem;
+import org.fdesigner.ui.jface.action.IContributionManager;
+import org.fdesigner.ui.jface.action.IContributionManagerOverrides;
+import org.fdesigner.ui.jface.action.IMenuManager;
+import org.fdesigner.ui.jface.action.IToolBarManager;
+import org.fdesigner.ui.jface.action.ToolBarContributionItem;
+import org.fdesigner.ui.jface.action.ToolBarManager;
+import org.fdesigner.ui.jface.internal.provisional.action.ICoolBarManager2;
+import org.fdesigner.ui.jface.internal.provisional.action.IToolBarContributionItem;
+import org.fdesigner.workbench.IWorkbenchActionConstants;
+import org.fdesigner.workbench.internal.menus.MenuHelper;
+import org.fdesigner.workbench.menus.CommandContributionItem;
 
 /**
  * @since 3.5

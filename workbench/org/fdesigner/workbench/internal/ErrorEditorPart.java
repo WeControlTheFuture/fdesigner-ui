@@ -11,15 +11,15 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.IStatus;
 import org.eclipse.swt.widgets.Composite;
-import org.eclipse.ui.IEditorInput;
-import org.eclipse.ui.IEditorSite;
-import org.eclipse.ui.internal.part.StatusPart;
-import org.eclipse.ui.part.EditorPart;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.workbench.IEditorInput;
+import org.fdesigner.workbench.IEditorSite;
+import org.fdesigner.workbench.internal.part.StatusPart;
+import org.fdesigner.workbench.part.EditorPart;
 
 /**
  * This part is shown instead the editors with errors.

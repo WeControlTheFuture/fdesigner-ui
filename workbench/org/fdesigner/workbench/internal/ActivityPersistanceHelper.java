@@ -11,23 +11,24 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
-import org.eclipse.jface.preference.IPreferenceStore;
-import org.eclipse.jface.util.IPropertyChangeListener;
-import org.eclipse.jface.util.PropertyChangeEvent;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.activities.ActivityManagerEvent;
-import org.eclipse.ui.activities.IActivity;
-import org.eclipse.ui.activities.IActivityManager;
-import org.eclipse.ui.activities.IActivityManagerListener;
-import org.eclipse.ui.activities.IActivityRequirementBinding;
-import org.eclipse.ui.activities.IWorkbenchActivitySupport;
-import org.eclipse.ui.activities.NotDefinedException;
+
+import org.fdesigner.ui.jface.preference.IPreferenceStore;
+import org.fdesigner.ui.jface.util.IPropertyChangeListener;
+import org.fdesigner.ui.jface.util.PropertyChangeEvent;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.activities.ActivityManagerEvent;
+import org.fdesigner.workbench.activities.IActivity;
+import org.fdesigner.workbench.activities.IActivityManager;
+import org.fdesigner.workbench.activities.IActivityManagerListener;
+import org.fdesigner.workbench.activities.IActivityRequirementBinding;
+import org.fdesigner.workbench.activities.IWorkbenchActivitySupport;
+import org.fdesigner.workbench.activities.NotDefinedException;
 
 /**
  * Utility class that manages the persistance of enabled activities.

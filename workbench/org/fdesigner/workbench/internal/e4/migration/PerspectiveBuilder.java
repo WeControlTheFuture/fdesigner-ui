@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal.e4.migration;
+package org.fdesigner.workbench.internal.e4.migration;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -20,39 +20,41 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+
 import javax.annotation.PostConstruct;
 import javax.inject.Inject;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.core.runtime.IExtension;
-import org.eclipse.core.runtime.IExtensionPoint;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.e4.ui.model.application.ui.MElementContainer;
-import org.eclipse.e4.ui.model.application.ui.MUIElement;
-import org.eclipse.e4.ui.model.application.ui.SideValue;
-import org.eclipse.e4.ui.model.application.ui.advanced.MPerspective;
-import org.eclipse.e4.ui.model.application.ui.advanced.MPlaceholder;
-import org.eclipse.e4.ui.model.application.ui.basic.MPartSashContainer;
-import org.eclipse.e4.ui.model.application.ui.basic.MPartSashContainerElement;
-import org.eclipse.e4.ui.model.application.ui.basic.MPartStack;
-import org.eclipse.e4.ui.model.application.ui.basic.MStackElement;
-import org.eclipse.e4.ui.model.application.ui.basic.MTrimmedWindow;
-import org.eclipse.e4.ui.workbench.IPresentationEngine;
-import org.eclipse.e4.ui.workbench.modeling.EModelService;
+
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.Rectangle;
-import org.eclipse.ui.IPageLayout;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.IWorkbenchConstants;
-import org.eclipse.ui.internal.PerspectiveTagger;
-import org.eclipse.ui.internal.e4.compatibility.ModeledPageLayout;
-import org.eclipse.ui.internal.e4.compatibility.ModeledPageLayoutUtils;
-import org.eclipse.ui.internal.e4.migration.InfoReader.PageReader;
-import org.eclipse.ui.internal.e4.migration.InfoReader.PartState;
-import org.eclipse.ui.internal.e4.migration.PerspectiveReader.DetachedWindowReader;
-import org.eclipse.ui.internal.e4.migration.PerspectiveReader.ViewLayoutReader;
-import org.eclipse.ui.internal.registry.IWorkbenchRegistryConstants;
-import org.eclipse.ui.internal.registry.RegistryReader;
-import org.eclipse.ui.internal.registry.StickyViewDescriptor;
+import org.fdesigner.e4.ui.model.application.ui.MElementContainer;
+import org.fdesigner.e4.ui.model.application.ui.MUIElement;
+import org.fdesigner.e4.ui.model.application.ui.SideValue;
+import org.fdesigner.e4.ui.model.application.ui.advanced.MPerspective;
+import org.fdesigner.e4.ui.model.application.ui.advanced.MPlaceholder;
+import org.fdesigner.e4.ui.model.application.ui.basic.MPartSashContainer;
+import org.fdesigner.e4.ui.model.application.ui.basic.MPartSashContainerElement;
+import org.fdesigner.e4.ui.model.application.ui.basic.MPartStack;
+import org.fdesigner.e4.ui.model.application.ui.basic.MStackElement;
+import org.fdesigner.e4.ui.model.application.ui.basic.MTrimmedWindow;
+import org.fdesigner.e4.ui.workbench.IPresentationEngine;
+import org.fdesigner.e4.ui.workbench.modeling.EModelService;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.runtime.registry.runtime.IExtension;
+import org.fdesigner.runtime.registry.runtime.IExtensionPoint;
+import org.fdesigner.workbench.IPageLayout;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.internal.IWorkbenchConstants;
+import org.fdesigner.workbench.internal.PerspectiveTagger;
+import org.fdesigner.workbench.internal.e4.compatibility.ModeledPageLayout;
+import org.fdesigner.workbench.internal.e4.compatibility.ModeledPageLayoutUtils;
+import org.fdesigner.workbench.internal.e4.migration.InfoReader.PageReader;
+import org.fdesigner.workbench.internal.e4.migration.InfoReader.PartState;
+import org.fdesigner.workbench.internal.e4.migration.PerspectiveReader.DetachedWindowReader;
+import org.fdesigner.workbench.internal.e4.migration.PerspectiveReader.ViewLayoutReader;
+import org.fdesigner.workbench.internal.registry.IWorkbenchRegistryConstants;
+import org.fdesigner.workbench.internal.registry.RegistryReader;
+import org.fdesigner.workbench.internal.registry.StickyViewDescriptor;
 
 public class PerspectiveBuilder {
 
@@ -438,7 +440,7 @@ public class PerspectiveBuilder {
 				MPartSashContainer container = list.get(size - 1);
 				container.getChildren().add(psc);
 			}
-			setPartState(stack, org.eclipse.ui.internal.e4.migration.InfoReader.PartState.MINIMIZED);
+			setPartState(stack, org.fdesigner.workbench.internal.e4.migration.InfoReader.PartState.MINIMIZED);
 
 			for (String view : views) {
 				addPlaceholderToDefaultFastViewStack(stack, view, null);

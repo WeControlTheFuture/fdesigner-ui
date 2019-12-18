@@ -13,16 +13,17 @@
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 472654
  ******************************************************************************/
 
-package org.eclipse.ui.internal.registry;
+package org.fdesigner.workbench.internal.registry;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
-import org.eclipse.core.runtime.IPath;
-import org.eclipse.core.runtime.Path;
-import org.eclipse.ui.activities.WorkbenchActivityHelper;
-import org.eclipse.ui.views.IViewCategory;
-import org.eclipse.ui.views.IViewDescriptor;
+
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.Path;
+import org.fdesigner.workbench.activities.WorkbenchActivityHelper;
+import org.fdesigner.workbench.views.IViewCategory;
+import org.fdesigner.workbench.views.IViewDescriptor;
 
 public class ViewCategory implements IViewCategory {
 

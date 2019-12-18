@@ -11,14 +11,14 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
-import org.eclipse.core.commands.common.EventManager;
-import org.eclipse.core.runtime.SafeRunner;
-import org.eclipse.jface.util.SafeRunnable;
-import org.eclipse.ui.IPageListener;
-import org.eclipse.ui.IWorkbenchPage;
-import org.eclipse.ui.internal.misc.UIStats;
+import org.fdesigner.commands.common.EventManager;
+import org.fdesigner.runtime.common.runtime.SafeRunner;
+import org.fdesigner.ui.jface.util.SafeRunnable;
+import org.fdesigner.workbench.IPageListener;
+import org.fdesigner.workbench.IWorkbenchPage;
+import org.fdesigner.workbench.internal.misc.UIStats;
 
 /**
  * Part listener list.

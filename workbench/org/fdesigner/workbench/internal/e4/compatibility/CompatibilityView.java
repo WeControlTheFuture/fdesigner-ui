@@ -14,50 +14,52 @@
  *     Vladimir Piskarev <pisv@1c.ru> - Bug 543609
  ******************************************************************************/
 
-package org.eclipse.ui.internal.e4.compatibility;
+package org.fdesigner.workbench.internal.e4.compatibility;
 
 import java.util.Iterator;
 import java.util.concurrent.atomic.AtomicBoolean;
+
 import javax.inject.Inject;
-import org.eclipse.e4.core.contexts.ContextFunction;
-import org.eclipse.e4.core.contexts.IContextFunction;
-import org.eclipse.e4.core.contexts.IEclipseContext;
-import org.eclipse.e4.ui.di.PersistState;
-import org.eclipse.e4.ui.internal.workbench.ContributionsAnalyzer;
-import org.eclipse.e4.ui.internal.workbench.OpaqueElementUtil;
+
 import org.eclipse.e4.ui.internal.workbench.swt.AbstractPartRenderer;
-import org.eclipse.e4.ui.model.application.ui.basic.MPart;
-import org.eclipse.e4.ui.model.application.ui.menu.MMenu;
-import org.eclipse.e4.ui.model.application.ui.menu.MMenuElement;
-import org.eclipse.e4.ui.model.application.ui.menu.MToolBar;
-import org.eclipse.e4.ui.model.application.ui.menu.MToolBarElement;
-import org.eclipse.e4.ui.workbench.modeling.EModelService;
 import org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer;
 import org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer;
 import org.eclipse.e4.ui.workbench.renderers.swt.ToolBarManagerRenderer;
 import org.eclipse.e4.ui.workbench.swt.factories.IRendererFactory;
-import org.eclipse.jface.action.IAction;
-import org.eclipse.jface.action.IContributionItem;
-import org.eclipse.jface.action.MenuManager;
-import org.eclipse.jface.action.ToolBarManager;
-import org.eclipse.jface.commands.ActionHandler;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Composite;
-import org.eclipse.ui.IActionBars;
-import org.eclipse.ui.IViewPart;
-import org.eclipse.ui.IWorkbenchPart;
-import org.eclipse.ui.handlers.IHandlerService;
-import org.eclipse.ui.internal.ActionDescriptor;
-import org.eclipse.ui.internal.IMenuServiceWorkaround;
-import org.eclipse.ui.internal.PartSite;
-import org.eclipse.ui.internal.ViewActionBuilder;
-import org.eclipse.ui.internal.ViewReference;
-import org.eclipse.ui.internal.Workbench;
-import org.eclipse.ui.internal.WorkbenchPartReference;
-import org.eclipse.ui.internal.registry.ViewDescriptor;
-import org.eclipse.ui.internal.testing.ContributionInfoMessages;
-import org.eclipse.ui.menus.IMenuService;
 import org.eclipse.ui.testing.ContributionInfo;
+import org.fdesigner.e4.core.contexts.ContextFunction;
+import org.fdesigner.e4.core.contexts.IContextFunction;
+import org.fdesigner.e4.core.contexts.IEclipseContext;
+import org.fdesigner.e4.core.di.PersistState;
+import org.fdesigner.e4.ui.model.application.ui.basic.MPart;
+import org.fdesigner.e4.ui.model.application.ui.menu.MMenu;
+import org.fdesigner.e4.ui.model.application.ui.menu.MMenuElement;
+import org.fdesigner.e4.ui.model.application.ui.menu.MToolBar;
+import org.fdesigner.e4.ui.model.application.ui.menu.MToolBarElement;
+import org.fdesigner.e4.ui.workbench.internal.workbench.ContributionsAnalyzer;
+import org.fdesigner.e4.ui.workbench.internal.workbench.OpaqueElementUtil;
+import org.fdesigner.e4.ui.workbench.modeling.EModelService;
+import org.fdesigner.ui.jface.action.IAction;
+import org.fdesigner.ui.jface.action.IContributionItem;
+import org.fdesigner.ui.jface.action.MenuManager;
+import org.fdesigner.ui.jface.action.ToolBarManager;
+import org.fdesigner.ui.jface.commands.ActionHandler;
+import org.fdesigner.workbench.IActionBars;
+import org.fdesigner.workbench.IViewPart;
+import org.fdesigner.workbench.IWorkbenchPart;
+import org.fdesigner.workbench.handlers.IHandlerService;
+import org.fdesigner.workbench.internal.ActionDescriptor;
+import org.fdesigner.workbench.internal.IMenuServiceWorkaround;
+import org.fdesigner.workbench.internal.PartSite;
+import org.fdesigner.workbench.internal.ViewActionBuilder;
+import org.fdesigner.workbench.internal.ViewReference;
+import org.fdesigner.workbench.internal.Workbench;
+import org.fdesigner.workbench.internal.WorkbenchPartReference;
+import org.fdesigner.workbench.internal.registry.ViewDescriptor;
+import org.fdesigner.workbench.internal.testing.ContributionInfoMessages;
+import org.fdesigner.workbench.menus.IMenuService;
 
 public class CompatibilityView extends CompatibilityPart {
 

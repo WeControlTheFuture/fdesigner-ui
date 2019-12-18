@@ -13,9 +13,9 @@
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 440136
  *******************************************************************************/
 
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
-import org.eclipse.ui.PlatformUI;
+import org.fdesigner.workbench.PlatformUI;
 
 /**
  * General constants used by the workbench.

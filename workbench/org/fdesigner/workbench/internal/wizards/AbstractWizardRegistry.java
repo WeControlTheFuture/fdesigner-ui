@@ -11,13 +11,13 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.wizards;
+package org.fdesigner.workbench.internal.wizards;
 
-import org.eclipse.ui.internal.dialogs.WizardCollectionElement;
-import org.eclipse.ui.internal.dialogs.WorkbenchWizardElement;
-import org.eclipse.ui.wizards.IWizardCategory;
-import org.eclipse.ui.wizards.IWizardDescriptor;
-import org.eclipse.ui.wizards.IWizardRegistry;
+import org.fdesigner.workbench.internal.dialogs.WizardCollectionElement;
+import org.fdesigner.workbench.internal.dialogs.WorkbenchWizardElement;
+import org.fdesigner.workbench.wizards.IWizardCategory;
+import org.fdesigner.workbench.wizards.IWizardDescriptor;
+import org.fdesigner.workbench.wizards.IWizardRegistry;
 
 /**
  * Abstract base class for various workbench wizards.

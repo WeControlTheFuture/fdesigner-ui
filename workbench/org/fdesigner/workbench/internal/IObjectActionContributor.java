@@ -11,13 +11,13 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
 import java.util.List;
 
-import org.eclipse.jface.action.IMenuManager;
-import org.eclipse.jface.viewers.ISelectionProvider;
-import org.eclipse.ui.IWorkbenchPart;
+import org.fdesigner.ui.jface.action.IMenuManager;
+import org.fdesigner.ui.jface.viewers.ISelectionProvider;
+import org.fdesigner.workbench.IWorkbenchPart;
 
 /**
  * This interface must be implemented in order to contribute to context (pop-up)

@@ -11,10 +11,10 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
-import org.eclipse.jface.action.IContributionItem;
-import org.eclipse.jface.action.SubContributionItem;
+import org.fdesigner.ui.jface.action.IContributionItem;
+import org.fdesigner.ui.jface.action.SubContributionItem;
 
 /**
  * This class marks a sub contribution item as belonging to an action set.

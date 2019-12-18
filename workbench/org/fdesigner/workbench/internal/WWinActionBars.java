@@ -11,17 +11,16 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.jface.action.IAction;
-import org.eclipse.jface.action.ICoolBarManager;
-import org.eclipse.jface.action.IMenuManager;
-import org.eclipse.jface.action.IStatusLineManager;
-import org.eclipse.jface.action.IToolBarManager;
-import org.eclipse.ui.IActionBars2;
-import org.eclipse.ui.IWorkbenchActionConstants;
-import org.eclipse.ui.services.IServiceLocator;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.ui.jface.action.IAction;
+import org.fdesigner.ui.jface.action.ICoolBarManager;
+import org.fdesigner.ui.jface.action.IMenuManager;
+import org.fdesigner.ui.jface.action.IStatusLineManager;
+import org.fdesigner.ui.jface.action.IToolBarManager;
+import org.fdesigner.workbench.IActionBars2;
+import org.fdesigner.workbench.services.IServiceLocator;
 
 public class WWinActionBars implements IActionBars2 {
 	private WorkbenchWindow window;

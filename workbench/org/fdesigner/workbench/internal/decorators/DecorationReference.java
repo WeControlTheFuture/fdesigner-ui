@@ -12,15 +12,16 @@
  *     IBM Corporation - initial API and implementation
  *     Stefan Winkler <stefan@winklerweb.net> - bug 417255 - Race Condition in DecorationScheduler
  *******************************************************************************/
-package org.eclipse.ui.internal.decorators;
+package org.fdesigner.workbench.internal.decorators;
 
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.jface.viewers.IDecorationContext;
-import org.eclipse.osgi.util.NLS;
-import org.eclipse.ui.internal.WorkbenchMessages;
+
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.ui.jface.viewers.IDecorationContext;
+import org.fdesigner.workbench.internal.WorkbenchMessages;
 
 /**
  * A DecorationReference is a class that holds onto the starting text and image

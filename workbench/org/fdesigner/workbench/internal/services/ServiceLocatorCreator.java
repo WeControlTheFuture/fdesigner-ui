@@ -13,12 +13,12 @@
  *     Lars Vogel <Lars.Vogel@gmail.com> - Bug 440810
  *******************************************************************************/
 
-package org.eclipse.ui.internal.services;
+package org.fdesigner.workbench.internal.services;
 
-import org.eclipse.e4.core.contexts.IEclipseContext;
-import org.eclipse.ui.services.AbstractServiceFactory;
-import org.eclipse.ui.services.IDisposable;
-import org.eclipse.ui.services.IServiceLocator;
+import org.fdesigner.e4.core.contexts.IEclipseContext;
+import org.fdesigner.workbench.services.AbstractServiceFactory;
+import org.fdesigner.workbench.services.IDisposable;
+import org.fdesigner.workbench.services.IServiceLocator;
 
 /**
  * A simple service locator creator.

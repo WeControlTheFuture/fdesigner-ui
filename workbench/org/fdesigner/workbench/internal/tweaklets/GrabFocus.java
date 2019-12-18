@@ -12,11 +12,11 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal.tweaklets;
+package org.fdesigner.workbench.internal.tweaklets;
 
 import org.eclipse.swt.widgets.Display;
-import org.eclipse.ui.IWorkbenchPart;
-import org.eclipse.ui.internal.tweaklets.Tweaklets.TweakKey;
+import org.fdesigner.workbench.IWorkbenchPart;
+import org.fdesigner.workbench.internal.tweaklets.Tweaklets.TweakKey;
 
 /**
  * The tweaklet provider can prevent the workbench page from grabbing focus.

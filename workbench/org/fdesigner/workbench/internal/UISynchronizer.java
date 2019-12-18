@@ -16,9 +16,10 @@ package org.fdesigner.workbench.internal;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Synchronizer;
-import org.eclipse.ui.internal.StartupThreading.StartupRunnable;
+import org.fdesigner.workbench.internal.StartupThreading.StartupRunnable;
 
 public class UISynchronizer extends Synchronizer {
 	protected UILockListener lockListener;

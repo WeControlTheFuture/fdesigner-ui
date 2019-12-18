@@ -13,14 +13,14 @@
  *  	Sebastian Davids <sdavids@gmx.de> - Fix for bug 19346 - Dialog
  * 		font should be activated and used by other components.
  *******************************************************************************/
-package org.eclipse.ui.internal.dialogs;
+package org.fdesigner.workbench.internal.dialogs;
 
-import org.eclipse.osgi.util.NLS;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.internal.WorkbenchMessages;
-import org.eclipse.ui.internal.about.AboutPluginsPage;
-import org.osgi.framework.Bundle;
-import org.eclipse.ui.internal.about.ProductInfoDialog;
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.workbench.internal.WorkbenchMessages;
+import org.fdesigner.workbench.internal.about.AboutPluginsPage;
+import org.fdesigner.workbench.internal.about.ProductInfoDialog;
 
 /**
  * Displays information about the product plugins.

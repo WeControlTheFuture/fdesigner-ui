@@ -11,10 +11,10 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
-import org.eclipse.core.runtime.IProduct;
-import org.eclipse.jface.resource.ImageDescriptor;
+import org.fdesigner.runtime.core.IProduct;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
 
 /**
  * Stores information about the product. This class replaces the old AboutInfo.

@@ -11,13 +11,13 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.dialogs;
+package org.fdesigner.workbench.internal.dialogs;
 
-import org.eclipse.jface.wizard.Wizard;
-import org.eclipse.ui.IWorkingSet;
-import org.eclipse.ui.dialogs.IWorkingSetEditWizard;
-import org.eclipse.ui.dialogs.IWorkingSetPage;
-import org.eclipse.ui.internal.WorkbenchMessages;
+import org.fdesigner.ui.jface.wizard.Wizard;
+import org.fdesigner.workbench.IWorkingSet;
+import org.fdesigner.workbench.dialogs.IWorkingSetEditWizard;
+import org.fdesigner.workbench.dialogs.IWorkingSetPage;
+import org.fdesigner.workbench.internal.WorkbenchMessages;
 
 /**
  * A working set edit wizard allows the user to edit a working set using a

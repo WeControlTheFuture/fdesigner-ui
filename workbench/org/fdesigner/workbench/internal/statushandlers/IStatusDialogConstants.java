@@ -12,17 +12,9 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal.statushandlers;
+package org.fdesigner.workbench.internal.statushandlers;
 
-import java.util.Collection;
-import java.util.Map;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.jface.viewers.ILabelDecorator;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.statushandlers.AbstractStatusAreaProvider;
-import org.eclipse.ui.statushandlers.StatusAdapter;
-import org.eclipse.ui.statushandlers.WorkbenchStatusDialogManager;
 
 /**
  * This class contains constant necessary to read/write the

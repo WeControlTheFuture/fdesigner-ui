@@ -14,38 +14,39 @@
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 430616, 441267, 441282, 445609, 441280, 472654
  *     Simon Scholz <scholzsimon@vogella.com> - Bug 473845
  *******************************************************************************/
-package org.eclipse.ui.internal.registry;
+package org.fdesigner.workbench.internal.registry;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
 import javax.annotation.PostConstruct;
 import javax.inject.Inject;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.core.runtime.IExtension;
-import org.eclipse.core.runtime.IExtensionPoint;
-import org.eclipse.core.runtime.IExtensionRegistry;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.e4.core.services.log.Logger;
-import org.eclipse.e4.ui.model.application.MApplication;
-import org.eclipse.e4.ui.model.application.descriptor.basic.MPartDescriptor;
-import org.eclipse.e4.ui.workbench.IPresentationEngine;
-import org.eclipse.e4.ui.workbench.modeling.EModelService;
-import org.eclipse.ui.ISharedImages;
-import org.eclipse.ui.IWorkbench;
-import org.eclipse.ui.activities.WorkbenchActivityHelper;
-import org.eclipse.ui.internal.IWorkbenchConstants;
-import org.eclipse.ui.internal.e4.compatibility.CompatibilityPart;
-import org.eclipse.ui.internal.menus.MenuHelper;
-import org.eclipse.ui.part.ViewPart;
-import org.eclipse.ui.views.IStickyViewDescriptor;
-import org.eclipse.ui.views.IViewCategory;
-import org.eclipse.ui.views.IViewDescriptor;
-import org.eclipse.ui.views.IViewRegistry;
-import org.osgi.framework.Bundle;
+
+import org.fdesigner.e4.core.services.log.Logger;
+import org.fdesigner.e4.ui.model.application.MApplication;
+import org.fdesigner.e4.ui.model.application.descriptor.basic.MPartDescriptor;
+import org.fdesigner.e4.ui.workbench.IPresentationEngine;
+import org.fdesigner.e4.ui.workbench.modeling.EModelService;
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.runtime.registry.runtime.IExtension;
+import org.fdesigner.runtime.registry.runtime.IExtensionPoint;
+import org.fdesigner.runtime.registry.runtime.IExtensionRegistry;
+import org.fdesigner.workbench.ISharedImages;
+import org.fdesigner.workbench.IWorkbench;
+import org.fdesigner.workbench.activities.WorkbenchActivityHelper;
+import org.fdesigner.workbench.internal.IWorkbenchConstants;
+import org.fdesigner.workbench.internal.e4.compatibility.CompatibilityPart;
+import org.fdesigner.workbench.internal.menus.MenuHelper;
+import org.fdesigner.workbench.views.IStickyViewDescriptor;
+import org.fdesigner.workbench.views.IViewCategory;
+import org.fdesigner.workbench.views.IViewDescriptor;
+import org.fdesigner.workbench.views.IViewRegistry;
 
 public class ViewRegistry implements IViewRegistry {
 

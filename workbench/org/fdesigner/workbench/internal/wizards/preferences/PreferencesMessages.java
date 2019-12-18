@@ -12,9 +12,9 @@
  * IBM - Initial API and implementation
  * Lucas Bullen (Red Hat Inc.) - Bug 525343: importPreferencesremoves preferenceChangedListeners
  **********************************************************************/
-package org.eclipse.ui.internal.wizards.preferences;
+package org.fdesigner.workbench.internal.wizards.preferences;
 
-import org.eclipse.osgi.util.NLS;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * NLS messages class for preferences messages.

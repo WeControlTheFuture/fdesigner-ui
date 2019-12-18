@@ -13,32 +13,33 @@
  *     Lars Vogel <Lars.Vogel@gmail.com> - Bug 440810
  ******************************************************************************/
 
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
 import java.util.Map;
-import org.eclipse.core.commands.AbstractHandler;
-import org.eclipse.core.commands.ExecutionEvent;
-import org.eclipse.core.commands.ExecutionException;
-import org.eclipse.core.runtime.Adapters;
-import org.eclipse.jface.viewers.ISelection;
-import org.eclipse.ui.ISourceProvider;
-import org.eclipse.ui.ISources;
-import org.eclipse.ui.IViewPart;
-import org.eclipse.ui.IWorkbenchCommandConstants;
-import org.eclipse.ui.IWorkbenchPage;
-import org.eclipse.ui.IWorkbenchPart;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.PartInitException;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.commands.IElementUpdater;
-import org.eclipse.ui.handlers.HandlerUtil;
-import org.eclipse.ui.internal.services.WorkbenchSourceProvider;
-import org.eclipse.ui.menus.UIElement;
-import org.eclipse.ui.part.IShowInTarget;
-import org.eclipse.ui.part.ShowInContext;
-import org.eclipse.ui.services.ISourceProviderService;
-import org.eclipse.ui.views.IViewDescriptor;
-import org.eclipse.ui.views.IViewRegistry;
+
+import org.fdesigner.commands.AbstractHandler;
+import org.fdesigner.commands.ExecutionEvent;
+import org.fdesigner.commands.ExecutionException;
+import org.fdesigner.runtime.common.runtime.Adapters;
+import org.fdesigner.ui.jface.viewers.ISelection;
+import org.fdesigner.workbench.ISourceProvider;
+import org.fdesigner.workbench.ISources;
+import org.fdesigner.workbench.IViewPart;
+import org.fdesigner.workbench.IWorkbenchCommandConstants;
+import org.fdesigner.workbench.IWorkbenchPage;
+import org.fdesigner.workbench.IWorkbenchPart;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.PartInitException;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.commands.IElementUpdater;
+import org.fdesigner.workbench.handlers.HandlerUtil;
+import org.fdesigner.workbench.internal.services.WorkbenchSourceProvider;
+import org.fdesigner.workbench.menus.UIElement;
+import org.fdesigner.workbench.part.IShowInTarget;
+import org.fdesigner.workbench.part.ShowInContext;
+import org.fdesigner.workbench.services.ISourceProviderService;
+import org.fdesigner.workbench.views.IViewDescriptor;
+import org.fdesigner.workbench.views.IViewRegistry;
 
 /**
  * The show in command, which only needs a target id.

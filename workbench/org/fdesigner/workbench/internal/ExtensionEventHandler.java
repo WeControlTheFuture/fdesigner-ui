@@ -12,34 +12,35 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.core.runtime.IExtension;
-import org.eclipse.core.runtime.IExtensionDelta;
-import org.eclipse.core.runtime.IExtensionPoint;
-import org.eclipse.core.runtime.IRegistryChangeEvent;
-import org.eclipse.core.runtime.IRegistryChangeListener;
-import org.eclipse.jface.dialogs.MessageDialog;
+
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.IWorkbenchPage;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.registry.IWorkbenchRegistryConstants;
-import org.eclipse.ui.internal.themes.ColorDefinition;
-import org.eclipse.ui.internal.themes.FontDefinition;
-import org.eclipse.ui.internal.themes.ThemeElementHelper;
-import org.eclipse.ui.internal.themes.ThemeRegistry;
-import org.eclipse.ui.internal.themes.ThemeRegistryReader;
-import org.eclipse.ui.internal.util.PrefUtil;
-import org.eclipse.ui.themes.ITheme;
-import org.eclipse.ui.themes.IThemeManager;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.runtime.registry.runtime.IExtension;
+import org.fdesigner.runtime.registry.runtime.IExtensionDelta;
+import org.fdesigner.runtime.registry.runtime.IExtensionPoint;
+import org.fdesigner.runtime.registry.runtime.IRegistryChangeEvent;
+import org.fdesigner.runtime.registry.runtime.IRegistryChangeListener;
+import org.fdesigner.ui.jface.dialogs.MessageDialog;
+import org.fdesigner.workbench.IWorkbenchPage;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.internal.registry.IWorkbenchRegistryConstants;
+import org.fdesigner.workbench.internal.themes.ColorDefinition;
+import org.fdesigner.workbench.internal.themes.FontDefinition;
+import org.fdesigner.workbench.internal.themes.ThemeElementHelper;
+import org.fdesigner.workbench.internal.themes.ThemeRegistry;
+import org.fdesigner.workbench.internal.themes.ThemeRegistryReader;
+import org.fdesigner.workbench.internal.util.PrefUtil;
+import org.fdesigner.workbench.themes.ITheme;
+import org.fdesigner.workbench.themes.IThemeManager;
 
 class ExtensionEventHandler implements IRegistryChangeListener {
 

@@ -12,14 +12,14 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal.registry;
+package org.fdesigner.workbench.internal.registry;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import org.eclipse.core.commands.IParameterValues;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.views.IViewDescriptor;
+import org.fdesigner.commands.IParameterValues;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.views.IViewDescriptor;
 
 /**
  * Provides the parameter values for the show view command.

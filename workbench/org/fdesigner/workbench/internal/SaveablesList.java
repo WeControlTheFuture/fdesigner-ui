@@ -14,7 +14,7 @@
  *     Patrik Suzzi <psuzzi@gmail.com> - Bug 490700, 511198
  *******************************************************************************/
 
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
 import static org.eclipse.swt.events.SelectionListener.widgetSelectedAdapter;
 
@@ -30,24 +30,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.core.runtime.AssertionFailedException;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.ListenerList;
-import org.eclipse.core.runtime.SubMonitor;
-import org.eclipse.e4.ui.workbench.modeling.ISaveHandler.Save;
-import org.eclipse.jface.dialogs.IDialogConstants;
-import org.eclipse.jface.dialogs.MessageDialog;
-import org.eclipse.jface.dialogs.MessageDialogWithToggle;
-import org.eclipse.jface.operation.IRunnableContext;
-import org.eclipse.jface.operation.IRunnableWithProgress;
-import org.eclipse.jface.preference.IPreferenceStore;
-import org.eclipse.jface.viewers.ArrayContentProvider;
-import org.eclipse.jface.viewers.ILabelProvider;
-import org.eclipse.jface.viewers.IStructuredContentProvider;
-import org.eclipse.jface.window.IShellProvider;
-import org.eclipse.osgi.util.NLS;
+
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.layout.GridLayout;
@@ -56,21 +39,39 @@ import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.ISaveablePart;
-import org.eclipse.ui.ISaveablePart2;
-import org.eclipse.ui.ISaveablesLifecycleListener;
-import org.eclipse.ui.ISaveablesSource;
-import org.eclipse.ui.IWorkbenchPart;
-import org.eclipse.ui.IWorkbenchPreferenceConstants;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.Saveable;
-import org.eclipse.ui.SaveablesLifecycleEvent;
-import org.eclipse.ui.dialogs.ListSelectionDialog;
-import org.eclipse.ui.internal.dialogs.EventLoopProgressMonitor;
-import org.eclipse.ui.internal.misc.StatusUtil;
-import org.eclipse.ui.internal.util.PrefUtil;
-import org.eclipse.ui.model.WorkbenchPartLabelProvider;
+import org.fdesigner.e4.ui.workbench.modeling.ISaveHandler.Save;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.AssertionFailedException;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.ListenerList;
+import org.fdesigner.runtime.common.runtime.SubMonitor;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.ui.jface.dialogs.IDialogConstants;
+import org.fdesigner.ui.jface.dialogs.MessageDialog;
+import org.fdesigner.ui.jface.dialogs.MessageDialogWithToggle;
+import org.fdesigner.ui.jface.operation.IRunnableContext;
+import org.fdesigner.ui.jface.operation.IRunnableWithProgress;
+import org.fdesigner.ui.jface.preference.IPreferenceStore;
+import org.fdesigner.ui.jface.viewers.ArrayContentProvider;
+import org.fdesigner.ui.jface.viewers.ILabelProvider;
+import org.fdesigner.ui.jface.viewers.IStructuredContentProvider;
+import org.fdesigner.ui.jface.window.IShellProvider;
+import org.fdesigner.workbench.ISaveablePart;
+import org.fdesigner.workbench.ISaveablePart2;
+import org.fdesigner.workbench.ISaveablesLifecycleListener;
+import org.fdesigner.workbench.ISaveablesSource;
+import org.fdesigner.workbench.IWorkbenchPart;
+import org.fdesigner.workbench.IWorkbenchPreferenceConstants;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.Saveable;
+import org.fdesigner.workbench.SaveablesLifecycleEvent;
+import org.fdesigner.workbench.dialogs.ListSelectionDialog;
+import org.fdesigner.workbench.internal.dialogs.EventLoopProgressMonitor;
+import org.fdesigner.workbench.internal.misc.StatusUtil;
+import org.fdesigner.workbench.internal.util.PrefUtil;
+import org.fdesigner.workbench.model.WorkbenchPartLabelProvider;
 
 /**
  * The model manager maintains a list of open saveable models.

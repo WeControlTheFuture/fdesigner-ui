@@ -11,18 +11,19 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
-package org.eclipse.ui.internal.e4.compatibility;
+package org.fdesigner.workbench.internal.e4.compatibility;
 
 import java.util.List;
-import org.eclipse.e4.ui.model.application.ui.MElementContainer;
-import org.eclipse.e4.ui.model.application.ui.MUIElement;
-import org.eclipse.e4.ui.model.application.ui.advanced.MPerspective;
-import org.eclipse.e4.ui.model.application.ui.basic.MPartSashContainer;
-import org.eclipse.e4.ui.model.application.ui.basic.MPartSashContainerElement;
-import org.eclipse.e4.ui.model.application.ui.basic.MPartStack;
-import org.eclipse.e4.ui.workbench.modeling.EModelService;
+
 import org.eclipse.swt.SWT;
-import org.eclipse.ui.IPageLayout;
+import org.fdesigner.e4.ui.model.application.ui.MElementContainer;
+import org.fdesigner.e4.ui.model.application.ui.MUIElement;
+import org.fdesigner.e4.ui.model.application.ui.advanced.MPerspective;
+import org.fdesigner.e4.ui.model.application.ui.basic.MPartSashContainer;
+import org.fdesigner.e4.ui.model.application.ui.basic.MPartSashContainerElement;
+import org.fdesigner.e4.ui.model.application.ui.basic.MPartStack;
+import org.fdesigner.e4.ui.workbench.modeling.EModelService;
+import org.fdesigner.workbench.IPageLayout;
 
 public class ModeledPageLayoutUtils {
 

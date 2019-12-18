@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *     Tasktop Technologies - fix for bug 327396
  *******************************************************************************/
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -20,19 +20,20 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
-import org.eclipse.core.runtime.IPath;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.ui.IMemento;
-import org.eclipse.ui.IWorkingSet;
-import org.eclipse.ui.IWorkingSetManager;
-import org.eclipse.ui.WorkbenchException;
-import org.eclipse.ui.XMLMemento;
-import org.eclipse.ui.statushandlers.IStatusAdapterConstants;
-import org.eclipse.ui.statushandlers.StatusAdapter;
-import org.eclipse.ui.statushandlers.StatusManager;
-import org.osgi.framework.BundleContext;
-import org.osgi.framework.BundleListener;
+
+import org.fdesigner.framework.framework.BundleContext;
+import org.fdesigner.framework.framework.BundleListener;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.workbench.IMemento;
+import org.fdesigner.workbench.IWorkingSet;
+import org.fdesigner.workbench.IWorkingSetManager;
+import org.fdesigner.workbench.WorkbenchException;
+import org.fdesigner.workbench.XMLMemento;
+import org.fdesigner.workbench.statushandlers.IStatusAdapterConstants;
+import org.fdesigner.workbench.statushandlers.StatusAdapter;
+import org.fdesigner.workbench.statushandlers.StatusManager;
 
 /**
  * A working set manager stores working sets and provides property change

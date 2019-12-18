@@ -12,14 +12,15 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
 import java.util.Map;
-import org.eclipse.e4.core.commands.internal.HandlerServiceHandler;
-import org.eclipse.e4.core.commands.internal.HandlerServiceImpl;
-import org.eclipse.e4.core.contexts.IEclipseContext;
-import org.eclipse.ui.commands.IElementUpdater;
-import org.eclipse.ui.menus.UIElement;
+
+import org.fdesigner.e4.core.commands.internal.HandlerServiceHandler;
+import org.fdesigner.e4.core.commands.internal.HandlerServiceImpl;
+import org.fdesigner.e4.core.contexts.IEclipseContext;
+import org.fdesigner.workbench.commands.IElementUpdater;
+import org.fdesigner.workbench.menus.UIElement;
 
 /**
  * @since 3.5

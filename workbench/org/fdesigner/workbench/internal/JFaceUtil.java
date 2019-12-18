@@ -12,21 +12,21 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.core.runtime.SafeRunner;
-import org.eclipse.core.runtime.preferences.IEclipsePreferences;
-import org.eclipse.core.runtime.preferences.IEclipsePreferences.NodeChangeEvent;
-import org.eclipse.core.runtime.preferences.InstanceScope;
-import org.eclipse.jface.internal.InternalPolicy;
-import org.eclipse.jface.preference.JFacePreferences;
-import org.eclipse.jface.util.Policy;
-import org.eclipse.jface.util.SafeRunnable;
-import org.eclipse.jface.util.StatusHandler;
-import org.eclipse.ui.statushandlers.StatusAdapter;
-import org.eclipse.ui.statushandlers.StatusManager;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.SafeRunner;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.runtime.preferences.runtime.preferences.IEclipsePreferences;
+import org.fdesigner.runtime.preferences.runtime.preferences.IEclipsePreferences.NodeChangeEvent;
+import org.fdesigner.runtime.preferences.runtime.preferences.InstanceScope;
+import org.fdesigner.ui.jface.internal.InternalPolicy;
+import org.fdesigner.ui.jface.preference.JFacePreferences;
+import org.fdesigner.ui.jface.util.Policy;
+import org.fdesigner.ui.jface.util.SafeRunnable;
+import org.fdesigner.ui.jface.util.StatusHandler;
+import org.fdesigner.workbench.statushandlers.StatusAdapter;
+import org.fdesigner.workbench.statushandlers.StatusManager;
 
 /**
  * Utility class for setting up JFace for use by Eclipse.

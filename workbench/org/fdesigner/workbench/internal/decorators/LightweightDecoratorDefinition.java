@@ -11,19 +11,19 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.decorators;
+package org.fdesigner.workbench.internal.decorators;
 
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.core.runtime.ISafeRunnable;
-import org.eclipse.core.runtime.SafeRunner;
-import org.eclipse.jface.viewers.IBaseLabelProvider;
-import org.eclipse.jface.viewers.IDecoration;
-import org.eclipse.jface.viewers.ILightweightLabelDecorator;
-import org.eclipse.ui.internal.ActionExpression;
-import org.eclipse.ui.internal.IObjectContributor;
-import org.eclipse.ui.internal.LegacyResourceSupport;
-import org.eclipse.ui.internal.WorkbenchPlugin;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.ISafeRunnable;
+import org.fdesigner.runtime.common.runtime.SafeRunner;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.ui.jface.viewers.IBaseLabelProvider;
+import org.fdesigner.ui.jface.viewers.IDecoration;
+import org.fdesigner.ui.jface.viewers.ILightweightLabelDecorator;
+import org.fdesigner.workbench.internal.ActionExpression;
+import org.fdesigner.workbench.internal.IObjectContributor;
+import org.fdesigner.workbench.internal.LegacyResourceSupport;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
 
 /**
  * The DeclarativeDecoratorDefinition is a decorator definition that is defined

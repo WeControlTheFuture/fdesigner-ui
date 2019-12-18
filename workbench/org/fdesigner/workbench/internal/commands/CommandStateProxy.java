@@ -12,17 +12,17 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.commands;
+package org.fdesigner.workbench.internal.commands;
 
-import org.eclipse.core.commands.IStateListener;
-import org.eclipse.core.commands.State;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.jface.commands.PersistentState;
-import org.eclipse.jface.preference.IPreferenceStore;
-import org.eclipse.ui.internal.WorkbenchPlugin;
+import org.fdesigner.commands.IStateListener;
+import org.fdesigner.commands.State;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.ui.jface.commands.PersistentState;
+import org.fdesigner.ui.jface.preference.IPreferenceStore;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
 
 /**
  * <p>

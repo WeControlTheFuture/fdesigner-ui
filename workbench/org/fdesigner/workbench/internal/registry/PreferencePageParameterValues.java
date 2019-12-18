@@ -12,16 +12,17 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.registry;
+package org.fdesigner.workbench.internal.registry;
 
 import java.util.Map;
 import java.util.TreeMap;
-import org.eclipse.core.commands.IParameterValues;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.jface.preference.IPreferenceNode;
-import org.eclipse.jface.preference.PreferenceManager;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.WorkbenchMessages;
+
+import org.fdesigner.commands.IParameterValues;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.ui.jface.preference.IPreferenceNode;
+import org.fdesigner.ui.jface.preference.PreferenceManager;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.internal.WorkbenchMessages;
 
 /**
  * <p>

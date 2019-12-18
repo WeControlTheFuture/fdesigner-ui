@@ -12,17 +12,18 @@
  *     IBM Corporation - initial API and implementation
  *     James Blackburn (Broadcom Corp.) - Bug 294628 multiple selection
  *******************************************************************************/
-package org.eclipse.ui.internal.registry;
+package org.fdesigner.workbench.internal.registry;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.core.runtime.IExtensionRegistry;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.dialogs.PropertyPageContributorManager;
-import org.eclipse.ui.internal.dialogs.RegistryPageContributor;
+
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.runtime.registry.runtime.IExtensionRegistry;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.internal.dialogs.PropertyPageContributorManager;
+import org.fdesigner.workbench.internal.dialogs.RegistryPageContributor;
 
 /**
  * This class loads property pages from the registry.

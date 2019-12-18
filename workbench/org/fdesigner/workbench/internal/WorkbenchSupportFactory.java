@@ -13,19 +13,19 @@
  *     Lars Vogel <Lars.Vogel@gmail.com> - Bug 440810
  *******************************************************************************/
 
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
-import org.eclipse.ui.IPageService;
-import org.eclipse.ui.IPartService;
-import org.eclipse.ui.ISelectionService;
-import org.eclipse.ui.IWorkbench;
-import org.eclipse.ui.IWorkbenchPartSite;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.internal.services.IWorkbenchLocationService;
-import org.eclipse.ui.progress.IProgressService;
-import org.eclipse.ui.progress.IWorkbenchSiteProgressService;
-import org.eclipse.ui.services.AbstractServiceFactory;
-import org.eclipse.ui.services.IServiceLocator;
+import org.fdesigner.workbench.IPageService;
+import org.fdesigner.workbench.IPartService;
+import org.fdesigner.workbench.ISelectionService;
+import org.fdesigner.workbench.IWorkbench;
+import org.fdesigner.workbench.IWorkbenchPartSite;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.internal.services.IWorkbenchLocationService;
+import org.fdesigner.workbench.progress.IProgressService;
+import org.fdesigner.workbench.progress.IWorkbenchSiteProgressService;
+import org.fdesigner.workbench.services.AbstractServiceFactory;
+import org.fdesigner.workbench.services.IServiceLocator;
 
 /**
  * Create singleton services to make the Workbench singletons available. This is

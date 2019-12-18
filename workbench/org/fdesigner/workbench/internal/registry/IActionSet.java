@@ -11,10 +11,10 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.registry;
+package org.fdesigner.workbench.internal.registry;
 
-import org.eclipse.ui.IActionBars;
-import org.eclipse.ui.IWorkbenchWindow;
+import org.fdesigner.workbench.IActionBars;
+import org.fdesigner.workbench.IWorkbenchWindow;
 
 /**
  * An action set is responsible for the creation of actions. The end user may

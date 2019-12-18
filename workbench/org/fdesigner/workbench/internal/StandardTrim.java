@@ -13,24 +13,25 @@
  *     Daniel Kruegler <daniel.kruegler@gmail.com> - Bug 471310
  ******************************************************************************/
 
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 import javax.inject.Inject;
-import org.eclipse.e4.core.contexts.ContextInjectionFactory;
-import org.eclipse.e4.core.contexts.IEclipseContext;
-import org.eclipse.e4.ui.model.application.ui.menu.MToolControl;
-import org.eclipse.e4.ui.workbench.modeling.EModelService;
-import org.eclipse.jface.action.StatusLineManager;
+
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.TaskBar;
 import org.eclipse.swt.widgets.TaskItem;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.progress.ProgressRegion;
-import org.eclipse.ui.internal.progress.TaskBarProgressManager;
-import org.eclipse.ui.internal.util.PrefUtil;
+import org.fdesigner.e4.core.contexts.ContextInjectionFactory;
+import org.fdesigner.e4.core.contexts.IEclipseContext;
+import org.fdesigner.e4.ui.model.application.ui.menu.MToolControl;
+import org.fdesigner.e4.ui.workbench.modeling.EModelService;
+import org.fdesigner.ui.jface.action.StatusLineManager;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.internal.progress.ProgressRegion;
+import org.fdesigner.workbench.internal.progress.TaskBarProgressManager;
+import org.fdesigner.workbench.internal.util.PrefUtil;
 
 /**
  * @since 3.5

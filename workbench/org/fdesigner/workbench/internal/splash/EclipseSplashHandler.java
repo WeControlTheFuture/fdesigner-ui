@@ -12,20 +12,20 @@
  *     IBM Corporation - initial API and implementation
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 430848
  *******************************************************************************/
-package org.eclipse.ui.internal.splash;
+package org.fdesigner.workbench.internal.splash;
 
-import org.eclipse.core.runtime.IProduct;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.e4.ui.css.swt.CSSSWTConstants;
-import org.eclipse.jface.resource.StringConverter;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.RGB;
 import org.eclipse.swt.graphics.Rectangle;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.branding.IProductConstants;
-import org.eclipse.ui.internal.util.PrefUtil;
-import org.eclipse.ui.splash.BasicSplashHandler;
+import org.fdesigner.e4.ui.css.swt.CSSSWTConstants;
+import org.fdesigner.runtime.core.IProduct;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.ui.jface.resource.StringConverter;
+import org.fdesigner.workbench.branding.IProductConstants;
+import org.fdesigner.workbench.internal.util.PrefUtil;
+import org.fdesigner.workbench.splash.BasicSplashHandler;
 
 /**
  * Parses the well known product constants and constructs a splash handler

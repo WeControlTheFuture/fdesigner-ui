@@ -12,9 +12,9 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
-import org.eclipse.ui.internal.registry.IActionSetDescriptor;
+import org.fdesigner.workbench.internal.registry.IActionSetDescriptor;
 
 /**
  * <p>

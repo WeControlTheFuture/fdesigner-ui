@@ -11,25 +11,25 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.actions;
+package org.fdesigner.workbench.internal.actions;
 
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-import org.eclipse.jface.action.Action;
-import org.eclipse.jface.action.ActionContributionItem;
-import org.eclipse.jface.action.IAction;
-import org.eclipse.jface.action.Separator;
-import org.eclipse.jface.bindings.keys.IKeyLookup;
-import org.eclipse.jface.bindings.keys.KeyLookupFactory;
-import org.eclipse.jface.window.Window;
 import org.eclipse.swt.widgets.Event;
 import org.eclipse.swt.widgets.Menu;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.IWorkingSet;
-import org.eclipse.ui.internal.WorkbenchMessages;
-import org.eclipse.ui.internal.dialogs.SimpleWorkingSetSelectionDialog;
+import org.fdesigner.ui.jface.action.Action;
+import org.fdesigner.ui.jface.action.ActionContributionItem;
+import org.fdesigner.ui.jface.action.IAction;
+import org.fdesigner.ui.jface.action.Separator;
+import org.fdesigner.ui.jface.bindings.keys.IKeyLookup;
+import org.fdesigner.ui.jface.bindings.keys.KeyLookupFactory;
+import org.fdesigner.ui.jface.window.Window;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.IWorkingSet;
+import org.fdesigner.workbench.internal.WorkbenchMessages;
+import org.fdesigner.workbench.internal.dialogs.SimpleWorkingSetSelectionDialog;
 
 /**
  * Action to select the visible working sets for a given workbench page.

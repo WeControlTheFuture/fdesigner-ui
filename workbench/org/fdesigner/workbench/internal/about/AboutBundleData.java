@@ -11,20 +11,20 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.about;
+package org.fdesigner.workbench.internal.about;
 
 import java.io.IOException;
 import java.security.GeneralSecurityException;
 
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.osgi.signedcontent.SignedContent;
-import org.eclipse.osgi.signedcontent.SignedContentFactory;
-import org.eclipse.ui.internal.WorkbenchMessages;
-import org.eclipse.ui.internal.WorkbenchPlugin;
-import org.osgi.framework.Bundle;
-import org.osgi.framework.BundleContext;
-import org.osgi.framework.Constants;
-import org.osgi.framework.ServiceReference;
+import org.fdesigner.container.signedcontent.SignedContent;
+import org.fdesigner.container.signedcontent.SignedContentFactory;
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.framework.framework.BundleContext;
+import org.fdesigner.framework.framework.Constants;
+import org.fdesigner.framework.framework.ServiceReference;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.workbench.internal.WorkbenchMessages;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
 
 /**
  * A small class to manage the about dialog information for a single bundle.

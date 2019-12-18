@@ -14,9 +14,9 @@
  *     		Help > Welcome missing F1 context
  *******************************************************************************/
 
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
-import org.eclipse.ui.PlatformUI;
+import org.fdesigner.workbench.PlatformUI;
 
 /**
  * Help context ids for the workbench.

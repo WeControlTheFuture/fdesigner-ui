@@ -13,17 +13,18 @@
  *     Sascha Zelzer <zelzer@mathi.uni-heidelberg.de> -
  *     	Fix for Bug 152927 [Decorators] ArrayOutOfBoundsException in DecorationBuilder.java
  *******************************************************************************/
-package org.eclipse.ui.internal.decorators;
+package org.fdesigner.workbench.internal.decorators;
 
 import java.util.ArrayList;
 import java.util.List;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.jface.viewers.DecorationContext;
-import org.eclipse.jface.viewers.IDecoration;
-import org.eclipse.jface.viewers.IDecorationContext;
+
 import org.eclipse.swt.graphics.Color;
 import org.eclipse.swt.graphics.Font;
-import org.eclipse.ui.internal.WorkbenchPlugin;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.ui.jface.viewers.DecorationContext;
+import org.fdesigner.ui.jface.viewers.IDecoration;
+import org.fdesigner.ui.jface.viewers.IDecorationContext;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
 
 /**
  * The Decoration builder is the object that builds a decoration.

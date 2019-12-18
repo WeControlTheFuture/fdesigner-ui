@@ -11,13 +11,14 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
 import java.util.HashMap;
 import java.util.Map.Entry;
-import org.eclipse.core.runtime.Adapters;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.ui.IActionFilter;
+
+import org.fdesigner.runtime.common.runtime.Adapters;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.workbench.IActionFilter;
 
 /**
  * An ObjectFilterTest is used to read an object filter from XML, and evaluate

@@ -17,9 +17,9 @@
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 441184, 441280
  *     Denis Zygann <d.zygann@web.de> - Bug 457390
  *******************************************************************************/
-package org.eclipse.ui.internal.registry;
+package org.fdesigner.workbench.internal.registry;
 
-import org.eclipse.ui.PlatformUI;
+import org.fdesigner.workbench.PlatformUI;
 
 /**
  * Interface containing various registry constants (tag and attribute names).

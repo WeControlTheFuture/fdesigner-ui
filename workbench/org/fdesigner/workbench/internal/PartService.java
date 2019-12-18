@@ -12,18 +12,18 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
-import org.eclipse.core.runtime.ListenerList;
-import org.eclipse.core.runtime.SafeRunner;
-import org.eclipse.jface.dialogs.IPageChangedListener;
-import org.eclipse.jface.dialogs.PageChangedEvent;
-import org.eclipse.jface.util.SafeRunnable;
-import org.eclipse.ui.IPartListener;
-import org.eclipse.ui.IPartListener2;
-import org.eclipse.ui.IPartService;
-import org.eclipse.ui.IWorkbenchPart;
-import org.eclipse.ui.IWorkbenchPartReference;
+import org.fdesigner.runtime.common.runtime.ListenerList;
+import org.fdesigner.runtime.common.runtime.SafeRunner;
+import org.fdesigner.ui.jface.dialogs.IPageChangedListener;
+import org.fdesigner.ui.jface.dialogs.PageChangedEvent;
+import org.fdesigner.ui.jface.util.SafeRunnable;
+import org.fdesigner.workbench.IPartListener;
+import org.fdesigner.workbench.IPartListener2;
+import org.fdesigner.workbench.IPartService;
+import org.fdesigner.workbench.IWorkbenchPart;
+import org.fdesigner.workbench.IWorkbenchPartReference;
 
 public class PartService implements IPageChangedListener, IPartListener, IPartListener2, IPartService {
 

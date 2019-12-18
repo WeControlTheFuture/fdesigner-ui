@@ -13,13 +13,13 @@
  *     Lars Vogel <Lars.Vogel@gmail.com> - Bug 440810
  ******************************************************************************/
 
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
-import org.eclipse.core.expressions.Expression;
-import org.eclipse.jface.util.IPropertyChangeListener;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.services.IEvaluationReference;
-import org.eclipse.ui.services.IEvaluationService;
+import org.fdesigner.expressions.Expression;
+import org.fdesigner.ui.jface.util.IPropertyChangeListener;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.services.IEvaluationReference;
+import org.fdesigner.workbench.services.IEvaluationService;
 
 /**
  * This internal class serves as a foundation for any handler that would like

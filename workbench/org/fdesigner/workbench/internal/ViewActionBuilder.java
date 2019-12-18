@@ -11,13 +11,13 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
 import java.util.ArrayList;
 
-import org.eclipse.ui.IActionBars;
-import org.eclipse.ui.IViewPart;
-import org.eclipse.ui.internal.registry.IWorkbenchRegistryConstants;
+import org.fdesigner.workbench.IActionBars;
+import org.fdesigner.workbench.IViewPart;
+import org.fdesigner.workbench.internal.registry.IWorkbenchRegistryConstants;
 
 /**
  * This class reads the registry for extensions that plug into 'viewActions'
@@ -43,7 +43,7 @@ public class ViewActionBuilder extends PluginActionBuilder {
 	}
 
 	@Override
-	protected ActionDescriptor createActionDescriptor(org.eclipse.core.runtime.IConfigurationElement element) {
+	protected ActionDescriptor createActionDescriptor(org.fdesigner.runtime.registry.runtime.IConfigurationElement element) {
 		return new ActionDescriptor(element, ActionDescriptor.T_VIEW, targetPart);
 	}
 

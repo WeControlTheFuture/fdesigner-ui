@@ -12,18 +12,19 @@
  *     IBM Corporation - initial API and implementation
  *     Lars Vogel <Lars.Vogel@gmail.com> - Bug 440810
  *******************************************************************************/
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
-import org.eclipse.core.runtime.ListenerList;
-import org.eclipse.ui.IPropertyListener;
-import org.eclipse.ui.contexts.IContextActivation;
-import org.eclipse.ui.contexts.IContextService;
-import org.eclipse.ui.internal.registry.IActionSetDescriptor;
-import org.eclipse.ui.services.IServiceLocator;
+
+import org.fdesigner.runtime.common.runtime.ListenerList;
+import org.fdesigner.workbench.IPropertyListener;
+import org.fdesigner.workbench.contexts.IContextActivation;
+import org.fdesigner.workbench.contexts.IContextService;
+import org.fdesigner.workbench.internal.registry.IActionSetDescriptor;
+import org.fdesigner.workbench.services.IServiceLocator;
 
 /**
  * Maintains a reference counted set of action sets, with a visibility mask.

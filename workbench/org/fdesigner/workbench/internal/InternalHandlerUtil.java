@@ -12,18 +12,18 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
 import java.util.Collection;
 
-import org.eclipse.core.expressions.IEvaluationContext;
-import org.eclipse.jface.viewers.ISelection;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.IEditorPart;
-import org.eclipse.ui.ISources;
-import org.eclipse.ui.IWorkbenchPart;
-import org.eclipse.ui.IWorkbenchSite;
-import org.eclipse.ui.IWorkbenchWindow;
+import org.fdesigner.expressions.IEvaluationContext;
+import org.fdesigner.ui.jface.viewers.ISelection;
+import org.fdesigner.workbench.IEditorPart;
+import org.fdesigner.workbench.ISources;
+import org.fdesigner.workbench.IWorkbenchPart;
+import org.fdesigner.workbench.IWorkbenchSite;
+import org.fdesigner.workbench.IWorkbenchWindow;
 
 /**
  * Some common utilities for working with handlers and IEvaluationContexts in

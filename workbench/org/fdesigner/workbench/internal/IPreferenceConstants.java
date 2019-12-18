@@ -19,7 +19,7 @@
  *     Christian Georgi (SAP SE) - Bug 540440
  *******************************************************************************/
 
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
 /**
  * The IPreferenceConstants are the internal constants used by the Workbench.

@@ -11,13 +11,13 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.ui.ILocalWorkingSetManager;
-import org.eclipse.ui.IMemento;
-import org.eclipse.ui.IWorkingSet;
-import org.osgi.framework.BundleContext;
+import org.fdesigner.framework.framework.BundleContext;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.workbench.ILocalWorkingSetManager;
+import org.fdesigner.workbench.IMemento;
+import org.fdesigner.workbench.IWorkingSet;
 
 public class LocalWorkingSetManager extends AbstractWorkingSetManager implements ILocalWorkingSetManager {
 

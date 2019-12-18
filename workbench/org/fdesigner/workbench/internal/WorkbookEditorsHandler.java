@@ -14,33 +14,34 @@
  *     Patrik Suzzi <psuzzi@itemis.com> - Bug 497618, 368977, 504088, 506019, 486859
  ******************************************************************************/
 
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
 import java.util.ArrayList;
 import java.util.List;
-import org.eclipse.core.commands.Command;
-import org.eclipse.core.commands.ParameterizedCommand;
-import org.eclipse.core.runtime.preferences.IEclipsePreferences;
-import org.eclipse.core.runtime.preferences.InstanceScope;
-import org.eclipse.e4.ui.model.application.ui.basic.MPart;
+
 import org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer;
-import org.eclipse.e4.ui.workbench.swt.internal.copy.SearchPattern;
-import org.eclipse.jface.viewers.BoldStylerProvider;
-import org.eclipse.jface.viewers.ColumnViewerToolTipSupport;
-import org.eclipse.jface.viewers.StyledCellLabelProvider;
-import org.eclipse.jface.viewers.StyledString;
-import org.eclipse.jface.viewers.TableViewer;
-import org.eclipse.jface.viewers.TableViewerColumn;
-import org.eclipse.jface.viewers.Viewer;
-import org.eclipse.jface.viewers.ViewerCell;
-import org.eclipse.jface.viewers.ViewerFilter;
 import org.eclipse.swt.custom.CTabItem;
 import org.eclipse.swt.graphics.Font;
-import org.eclipse.ui.IEditorReference;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.commands.ICommandService;
-import org.eclipse.ui.dialogs.StyledStringHighlighter;
-import org.eclipse.ui.themes.ITheme;
+import org.fdesigner.commands.Command;
+import org.fdesigner.commands.ParameterizedCommand;
+import org.fdesigner.e4.ui.model.application.ui.basic.MPart;
+import org.fdesigner.runtime.preferences.runtime.preferences.IEclipsePreferences;
+import org.fdesigner.runtime.preferences.runtime.preferences.InstanceScope;
+import org.fdesigner.ui.jface.viewers.BoldStylerProvider;
+import org.fdesigner.ui.jface.viewers.ColumnViewerToolTipSupport;
+import org.fdesigner.ui.jface.viewers.StyledCellLabelProvider;
+import org.fdesigner.ui.jface.viewers.StyledString;
+import org.fdesigner.ui.jface.viewers.TableViewer;
+import org.fdesigner.ui.jface.viewers.TableViewerColumn;
+import org.fdesigner.ui.jface.viewers.Viewer;
+import org.fdesigner.ui.jface.viewers.ViewerCell;
+import org.fdesigner.ui.jface.viewers.ViewerFilter;
+import org.fdesigner.workbench.IEditorReference;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.commands.ICommandService;
+import org.fdesigner.workbench.dialogs.SearchPattern;
+import org.fdesigner.workbench.dialogs.StyledStringHighlighter;
+import org.fdesigner.workbench.themes.ITheme;
 
 /**
  * Shows a list of open editor and parts in the current or last active workbook.

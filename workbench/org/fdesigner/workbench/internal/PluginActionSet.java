@@ -11,18 +11,18 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.jface.action.IAction;
-import org.eclipse.ui.IActionBars;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.internal.registry.ActionSetDescriptor;
-import org.eclipse.ui.internal.registry.IActionSet;
-import org.eclipse.ui.services.IDisposable;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.ui.jface.action.IAction;
+import org.fdesigner.workbench.IActionBars;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.internal.registry.ActionSetDescriptor;
+import org.fdesigner.workbench.internal.registry.IActionSet;
+import org.fdesigner.workbench.services.IDisposable;
 
 /**
  * A PluginActionSet is a proxy for an action set defined in XML. It creates a

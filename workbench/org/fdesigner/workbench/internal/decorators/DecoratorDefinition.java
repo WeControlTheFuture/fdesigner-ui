@@ -11,16 +11,16 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.decorators;
+package org.fdesigner.workbench.internal.decorators;
 
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.jface.viewers.IBaseLabelProvider;
-import org.eclipse.jface.viewers.ILabelProviderListener;
-import org.eclipse.ui.IPluginContribution;
-import org.eclipse.ui.internal.ActionExpression;
-import org.eclipse.ui.internal.WorkbenchPlugin;
-import org.eclipse.ui.internal.registry.RegistryReader;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.ui.jface.viewers.IBaseLabelProvider;
+import org.fdesigner.ui.jface.viewers.ILabelProviderListener;
+import org.fdesigner.workbench.IPluginContribution;
+import org.fdesigner.workbench.internal.ActionExpression;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
+import org.fdesigner.workbench.internal.registry.RegistryReader;
 
 /**
  * The DecoratorDefinition is the class that holds onto the label decorator, the

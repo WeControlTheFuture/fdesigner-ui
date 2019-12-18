@@ -12,11 +12,12 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal.services;
+package org.fdesigner.workbench.internal.services;
 
 import java.util.Comparator;
 import java.util.Objects;
-import org.eclipse.ui.internal.util.Util;
+
+import org.fdesigner.workbench.internal.util.Util;
 
 /**
  * <p>

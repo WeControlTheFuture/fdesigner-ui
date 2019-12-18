@@ -12,11 +12,12 @@
  *     IBM Corporation - initial API and implementation
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 472654
  ******************************************************************************/
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
 import java.util.HashMap;
 import java.util.Map;
-import org.eclipse.core.commands.IParameterValues;
+
+import org.fdesigner.commands.IParameterValues;
 
 /**
  * Display the values that can be used in the keybindings page and quick access.

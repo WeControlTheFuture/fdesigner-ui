@@ -11,27 +11,27 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
-package org.eclipse.ui.internal.testing;
+package org.fdesigner.workbench.internal.testing;
 
-import org.eclipse.core.runtime.IAdapterFactory;
-import org.eclipse.core.runtime.jobs.Job;
-import org.eclipse.ui.IPluginContribution;
-import org.eclipse.ui.internal.decorators.DecoratorDefinition;
-import org.eclipse.ui.internal.dialogs.WizardCollectionElement;
-import org.eclipse.ui.internal.dialogs.WorkbenchWizardElement;
-import org.eclipse.ui.internal.preferences.WorkbenchPreferenceExpressionNode;
-import org.eclipse.ui.internal.progress.JobInfo;
-import org.eclipse.ui.internal.registry.ActionSetDescriptor;
-import org.eclipse.ui.internal.registry.Category;
-import org.eclipse.ui.internal.registry.EditorDescriptor;
-import org.eclipse.ui.internal.registry.PerspectiveDescriptor;
-import org.eclipse.ui.internal.registry.ViewDescriptor;
-import org.eclipse.ui.internal.themes.ColorDefinition;
-import org.eclipse.ui.internal.themes.ThemeElementCategory;
 import org.eclipse.ui.testing.ContributionInfo;
-import org.eclipse.ui.views.IViewCategory;
-import org.osgi.framework.Bundle;
-import org.osgi.framework.FrameworkUtil;
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.framework.framework.FrameworkUtil;
+import org.fdesigner.runtime.common.runtime.IAdapterFactory;
+import org.fdesigner.runtime.jobs.runtime.jobs.Job;
+import org.fdesigner.workbench.IPluginContribution;
+import org.fdesigner.workbench.internal.decorators.DecoratorDefinition;
+import org.fdesigner.workbench.internal.dialogs.WizardCollectionElement;
+import org.fdesigner.workbench.internal.dialogs.WorkbenchWizardElement;
+import org.fdesigner.workbench.internal.preferences.WorkbenchPreferenceExpressionNode;
+import org.fdesigner.workbench.internal.progress.JobInfo;
+import org.fdesigner.workbench.internal.registry.ActionSetDescriptor;
+import org.fdesigner.workbench.internal.registry.Category;
+import org.fdesigner.workbench.internal.registry.EditorDescriptor;
+import org.fdesigner.workbench.internal.registry.PerspectiveDescriptor;
+import org.fdesigner.workbench.internal.registry.ViewDescriptor;
+import org.fdesigner.workbench.internal.themes.ColorDefinition;
+import org.fdesigner.workbench.internal.themes.ThemeElementCategory;
+import org.fdesigner.workbench.views.IViewCategory;
 
 /**
  * @since 3.6

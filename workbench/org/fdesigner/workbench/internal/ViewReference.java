@@ -12,26 +12,27 @@
  *     IBM Corporation - initial API and implementation
  *     Friederike Schertel <friederike@schertel.org> - Bug 478336
  *******************************************************************************/
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
 import java.io.IOException;
 import java.io.StringReader;
 import java.io.StringWriter;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.e4.core.contexts.IEclipseContext;
-import org.eclipse.e4.ui.model.application.ui.basic.MPart;
-import org.eclipse.osgi.util.NLS;
-import org.eclipse.ui.IMemento;
-import org.eclipse.ui.IViewPart;
-import org.eclipse.ui.IViewReference;
-import org.eclipse.ui.IWorkbenchPage;
-import org.eclipse.ui.IWorkbenchPart;
-import org.eclipse.ui.PartInitException;
-import org.eclipse.ui.WorkbenchException;
-import org.eclipse.ui.XMLMemento;
-import org.eclipse.ui.internal.registry.ViewDescriptor;
+
+import org.fdesigner.e4.core.contexts.IEclipseContext;
+import org.fdesigner.e4.ui.model.application.ui.basic.MPart;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.workbench.IMemento;
+import org.fdesigner.workbench.IViewPart;
+import org.fdesigner.workbench.IViewReference;
+import org.fdesigner.workbench.IWorkbenchPage;
+import org.fdesigner.workbench.IWorkbenchPart;
+import org.fdesigner.workbench.PartInitException;
+import org.fdesigner.workbench.WorkbenchException;
+import org.fdesigner.workbench.XMLMemento;
+import org.fdesigner.workbench.internal.registry.ViewDescriptor;
 
 public class ViewReference extends WorkbenchPartReference implements IViewReference {
 

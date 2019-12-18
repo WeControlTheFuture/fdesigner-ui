@@ -16,53 +16,54 @@
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 503379
  ******************************************************************************/
 
-package org.eclipse.ui.internal.e4.compatibility;
+package org.fdesigner.workbench.internal.e4.compatibility;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 import javax.inject.Inject;
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.e4.core.contexts.ContextInjectionFactory;
-import org.eclipse.e4.core.services.events.IEventBroker;
-import org.eclipse.e4.core.services.log.Logger;
-import org.eclipse.e4.ui.di.Focus;
-import org.eclipse.e4.ui.di.Persist;
-import org.eclipse.e4.ui.di.PersistState;
-import org.eclipse.e4.ui.internal.workbench.Activator;
-import org.eclipse.e4.ui.internal.workbench.Policy;
-import org.eclipse.e4.ui.model.application.ui.basic.MPart;
-import org.eclipse.e4.ui.model.application.ui.menu.MMenu;
-import org.eclipse.e4.ui.workbench.IPresentationEngine;
-import org.eclipse.e4.ui.workbench.UIEvents;
-import org.eclipse.e4.ui.workbench.modeling.ESelectionService;
-import org.eclipse.jface.viewers.IPostSelectionProvider;
-import org.eclipse.jface.viewers.ISelectionChangedListener;
-import org.eclipse.jface.viewers.ISelectionProvider;
-import org.eclipse.jface.viewers.SelectionChangedEvent;
+
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.layout.FillLayout;
 import org.eclipse.swt.widgets.Composite;
-import org.eclipse.ui.IEditorPart;
-import org.eclipse.ui.ISaveablePart;
-import org.eclipse.ui.IWorkbenchPart;
-import org.eclipse.ui.IWorkbenchPart2;
-import org.eclipse.ui.IWorkbenchPartConstants;
-import org.eclipse.ui.IWorkbenchPartSite;
-import org.eclipse.ui.PartInitException;
-import org.eclipse.ui.internal.ErrorEditorPart;
-import org.eclipse.ui.internal.ErrorViewPart;
-import org.eclipse.ui.internal.IWorkbenchConstants;
-import org.eclipse.ui.internal.PartSite;
-import org.eclipse.ui.internal.SaveableHelper;
-import org.eclipse.ui.internal.WorkbenchPage;
-import org.eclipse.ui.internal.WorkbenchPartReference;
-import org.eclipse.ui.internal.WorkbenchPlugin;
-import org.eclipse.ui.internal.util.Util;
-import org.eclipse.ui.part.IWorkbenchPartOrientation;
-import org.osgi.service.event.EventHandler;
+import org.fdesigner.e4.core.contexts.ContextInjectionFactory;
+import org.fdesigner.e4.core.di.Focus;
+import org.fdesigner.e4.core.di.Persist;
+import org.fdesigner.e4.core.di.PersistState;
+import org.fdesigner.e4.core.services.events.IEventBroker;
+import org.fdesigner.e4.core.services.log.Logger;
+import org.fdesigner.e4.ui.model.application.ui.basic.MPart;
+import org.fdesigner.e4.ui.model.application.ui.menu.MMenu;
+import org.fdesigner.e4.ui.workbench.IPresentationEngine;
+import org.fdesigner.e4.ui.workbench.UIEvents;
+import org.fdesigner.e4.ui.workbench.internal.workbench.Activator;
+import org.fdesigner.e4.ui.workbench.internal.workbench.Policy;
+import org.fdesigner.e4.ui.workbench.modeling.ESelectionService;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.services.event.EventHandler;
+import org.fdesigner.ui.jface.viewers.IPostSelectionProvider;
+import org.fdesigner.ui.jface.viewers.ISelectionChangedListener;
+import org.fdesigner.ui.jface.viewers.ISelectionProvider;
+import org.fdesigner.ui.jface.viewers.SelectionChangedEvent;
+import org.fdesigner.workbench.IEditorPart;
+import org.fdesigner.workbench.ISaveablePart;
+import org.fdesigner.workbench.IWorkbenchPart;
+import org.fdesigner.workbench.IWorkbenchPart2;
+import org.fdesigner.workbench.IWorkbenchPartConstants;
+import org.fdesigner.workbench.IWorkbenchPartSite;
+import org.fdesigner.workbench.PartInitException;
+import org.fdesigner.workbench.internal.ErrorEditorPart;
+import org.fdesigner.workbench.internal.ErrorViewPart;
+import org.fdesigner.workbench.internal.IWorkbenchConstants;
+import org.fdesigner.workbench.internal.PartSite;
+import org.fdesigner.workbench.internal.SaveableHelper;
+import org.fdesigner.workbench.internal.WorkbenchPage;
+import org.fdesigner.workbench.internal.WorkbenchPartReference;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
+import org.fdesigner.workbench.internal.util.Util;
+import org.fdesigner.workbench.part.IWorkbenchPartOrientation;
 
 public abstract class CompatibilityPart implements ISelectionChangedListener {
 

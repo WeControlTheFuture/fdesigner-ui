@@ -16,24 +16,25 @@
  *     Patrik Suzzi <psuzzi@gmail.com> - Bug 504089, 509224, 509232
  ******************************************************************************/
 
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.stream.Collectors;
-import org.eclipse.core.commands.Command;
-import org.eclipse.core.commands.ParameterizedCommand;
-import org.eclipse.e4.ui.internal.workbench.PartServiceImpl;
-import org.eclipse.e4.ui.model.application.ui.advanced.MPerspective;
-import org.eclipse.e4.ui.model.application.ui.basic.MPart;
+
 import org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitHost;
-import org.eclipse.e4.ui.workbench.modeling.EModelService;
-import org.eclipse.e4.ui.workbench.modeling.EPartService;
-import org.eclipse.ui.IWorkbenchCommandConstants;
-import org.eclipse.ui.IWorkbenchPart;
-import org.eclipse.ui.IWorkbenchPartReference;
-import org.eclipse.ui.commands.ICommandService;
+import org.fdesigner.commands.Command;
+import org.fdesigner.commands.ParameterizedCommand;
+import org.fdesigner.e4.ui.model.application.ui.advanced.MPerspective;
+import org.fdesigner.e4.ui.model.application.ui.basic.MPart;
+import org.fdesigner.e4.ui.workbench.internal.workbench.PartServiceImpl;
+import org.fdesigner.e4.ui.workbench.modeling.EModelService;
+import org.fdesigner.e4.ui.workbench.modeling.EPartService;
+import org.fdesigner.workbench.IWorkbenchCommandConstants;
+import org.fdesigner.workbench.IWorkbenchPart;
+import org.fdesigner.workbench.IWorkbenchPartReference;
+import org.fdesigner.workbench.commands.ICommandService;
 
 /**
  * This handler is used to switch between parts using the keyboard.

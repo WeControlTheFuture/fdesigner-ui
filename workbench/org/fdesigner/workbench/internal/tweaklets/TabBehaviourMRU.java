@@ -14,18 +14,19 @@
  *     Patrik Suzzi <psuzzi@gmail.com> - Bug 490700
  ******************************************************************************/
 
-package org.eclipse.ui.internal.tweaklets;
+package org.fdesigner.workbench.internal.tweaklets;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import org.eclipse.ui.IEditorInput;
-import org.eclipse.ui.IEditorReference;
-import org.eclipse.ui.internal.IPreferenceConstants;
-import org.eclipse.ui.internal.WorkbenchPage;
-import org.eclipse.ui.internal.WorkbenchPlugin;
-import org.eclipse.ui.internal.e4.compatibility.E4Util;
-import org.eclipse.ui.internal.registry.EditorDescriptor;
+
+import org.fdesigner.workbench.IEditorInput;
+import org.fdesigner.workbench.IEditorReference;
+import org.fdesigner.workbench.internal.IPreferenceConstants;
+import org.fdesigner.workbench.internal.WorkbenchPage;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
+import org.fdesigner.workbench.internal.e4.compatibility.E4Util;
+import org.fdesigner.workbench.internal.registry.EditorDescriptor;
 
 /**
  * @since 3.3

@@ -11,13 +11,13 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.ui.IActionDelegate;
-import org.eclipse.ui.IViewActionDelegate;
-import org.eclipse.ui.IViewPart;
-import org.eclipse.ui.WorkbenchException;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.workbench.IActionDelegate;
+import org.fdesigner.workbench.IViewActionDelegate;
+import org.fdesigner.workbench.IViewPart;
+import org.fdesigner.workbench.WorkbenchException;
 
 /**
  * This class extends regular plugin action with the additional requirement that

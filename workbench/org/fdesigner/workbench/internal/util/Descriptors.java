@@ -11,20 +11,14 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.util;
+package org.fdesigner.workbench.internal.util;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import org.eclipse.jface.resource.ColorDescriptor;
-import org.eclipse.jface.resource.DeviceResourceDescriptor;
-import org.eclipse.jface.resource.DeviceResourceException;
-import org.eclipse.jface.resource.FontDescriptor;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.jface.resource.JFaceResources;
-import org.eclipse.jface.resource.ResourceManager;
+
 import org.eclipse.swt.events.DisposeListener;
 import org.eclipse.swt.graphics.Color;
 import org.eclipse.swt.graphics.Font;
@@ -36,7 +30,14 @@ import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.TableItem;
 import org.eclipse.swt.widgets.ToolItem;
 import org.eclipse.swt.widgets.Widget;
-import org.eclipse.ui.internal.WorkbenchPlugin;
+import org.fdesigner.ui.jface.resource.ColorDescriptor;
+import org.fdesigner.ui.jface.resource.DeviceResourceDescriptor;
+import org.fdesigner.ui.jface.resource.DeviceResourceException;
+import org.fdesigner.ui.jface.resource.FontDescriptor;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.ui.jface.resource.JFaceResources;
+import org.fdesigner.ui.jface.resource.ResourceManager;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
 
 /**
  * Contains a bunch of helper methods that allow JFace resource descriptors to

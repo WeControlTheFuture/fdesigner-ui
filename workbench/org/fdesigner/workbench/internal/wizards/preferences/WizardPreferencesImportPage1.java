@@ -11,23 +11,24 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.wizards.preferences;
+package org.fdesigner.workbench.internal.wizards.preferences;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.core.runtime.preferences.IExportedPreferences;
-import org.eclipse.core.runtime.preferences.IPreferenceFilter;
-import org.eclipse.core.runtime.preferences.IPreferencesService;
-import org.eclipse.jface.dialogs.MessageDialog;
+
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Event;
-import org.eclipse.ui.internal.WorkbenchPlugin;
-import org.eclipse.ui.internal.preferences.PreferenceTransferElement;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.runtime.preferences.runtime.preferences.IExportedPreferences;
+import org.fdesigner.runtime.preferences.runtime.preferences.IPreferenceFilter;
+import org.fdesigner.runtime.preferences.runtime.preferences.IPreferencesService;
+import org.fdesigner.ui.jface.dialogs.MessageDialog;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
+import org.fdesigner.workbench.internal.preferences.PreferenceTransferElement;
 
 /**
  * Page 1 of the base preference import Wizard

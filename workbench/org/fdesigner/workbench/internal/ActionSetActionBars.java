@@ -11,24 +11,25 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
 import java.util.ArrayList;
 import java.util.Iterator;
-import org.eclipse.jface.action.ContributionItem;
-import org.eclipse.jface.action.IContributionItem;
-import org.eclipse.jface.action.IContributionManager;
-import org.eclipse.jface.action.ICoolBarManager;
-import org.eclipse.jface.action.IMenuManager;
-import org.eclipse.jface.action.IToolBarManager;
-import org.eclipse.jface.action.SubMenuManager;
-import org.eclipse.jface.action.SubToolBarManager;
-import org.eclipse.jface.internal.provisional.action.IToolBarContributionItem;
-import org.eclipse.ui.IActionBars2;
-import org.eclipse.ui.IWorkbenchActionConstants;
-import org.eclipse.ui.SubActionBars2;
-import org.eclipse.ui.internal.provisional.application.IActionBarConfigurer2;
-import org.eclipse.ui.services.IServiceLocator;
+
+import org.fdesigner.ui.jface.action.ContributionItem;
+import org.fdesigner.ui.jface.action.IContributionItem;
+import org.fdesigner.ui.jface.action.IContributionManager;
+import org.fdesigner.ui.jface.action.ICoolBarManager;
+import org.fdesigner.ui.jface.action.IMenuManager;
+import org.fdesigner.ui.jface.action.IToolBarManager;
+import org.fdesigner.ui.jface.action.SubMenuManager;
+import org.fdesigner.ui.jface.action.SubToolBarManager;
+import org.fdesigner.ui.jface.internal.provisional.action.IToolBarContributionItem;
+import org.fdesigner.workbench.IActionBars2;
+import org.fdesigner.workbench.IWorkbenchActionConstants;
+import org.fdesigner.workbench.SubActionBars2;
+import org.fdesigner.workbench.internal.provisional.application.IActionBarConfigurer2;
+import org.fdesigner.workbench.services.IServiceLocator;
 
 /**
  * This class represents the action bars for an action set.

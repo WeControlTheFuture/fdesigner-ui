@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 440136
  *******************************************************************************/
-package org.eclipse.ui.internal.themes;
+package org.fdesigner.workbench.internal.themes;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -22,7 +22,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
-import org.eclipse.ui.themes.IThemeManager;
+
+import org.fdesigner.workbench.themes.IThemeManager;
 
 /**
  * The central manager for Theme descriptors.
