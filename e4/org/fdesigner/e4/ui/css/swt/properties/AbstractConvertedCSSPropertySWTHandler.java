@@ -11,10 +11,10 @@
  * Contributors:
  *     Angelo Zerr <angelo.zerr@gmail.com> - initial API and implementation
  *******************************************************************************/
-package org.eclipse.e4.ui.css.swt.properties;
+package org.fdesigner.e4.ui.css.swt.properties;
 
-import org.eclipse.e4.ui.css.core.engine.CSSEngine;
 import org.eclipse.swt.widgets.Control;
+import org.fdesigner.e4.ui.css.core.engine.CSSEngine;
 import org.w3c.dom.css.CSSValue;
 
 public abstract class AbstractConvertedCSSPropertySWTHandler extends

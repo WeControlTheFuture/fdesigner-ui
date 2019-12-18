@@ -13,17 +13,18 @@
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 472654
  ******************************************************************************/
 
-package org.eclipse.e4.ui.internal.workbench;
+package org.fdesigner.e4.ui.workbench.internal.workbench;
 
 import java.util.Map;
-import org.eclipse.e4.core.contexts.ContextInjectionFactory;
-import org.eclipse.e4.core.contexts.IEclipseContext;
-import org.eclipse.e4.core.di.InjectionException;
-import org.eclipse.e4.core.services.contributions.IContributionFactory;
-import org.eclipse.e4.core.services.contributions.IContributionFactorySpi;
+
 import org.eclipse.emf.common.util.URI;
-import org.osgi.framework.Bundle;
-import org.osgi.service.log.LogService;
+import org.fdesigner.e4.core.contexts.ContextInjectionFactory;
+import org.fdesigner.e4.core.contexts.IEclipseContext;
+import org.fdesigner.e4.core.di.InjectionException;
+import org.fdesigner.e4.core.services.contributions.IContributionFactory;
+import org.fdesigner.e4.core.services.contributions.IContributionFactorySpi;
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.services.log.LogService;
 
 /**
  * Create the contribution factory.

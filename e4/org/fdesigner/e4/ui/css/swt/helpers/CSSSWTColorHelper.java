@@ -15,21 +15,16 @@
  *     Robin Stocker - Bug 420035 - [CSS] Support SWT color constants in gradients
  *     Stefan Winkler <stefan@winklerweb.net> - Bug 459961
  *******************************************************************************/
-package org.eclipse.e4.ui.css.swt.helpers;
+package org.fdesigner.e4.ui.css.swt.helpers;
 
-import static org.eclipse.e4.ui.css.swt.helpers.ThemeElementDefinitionHelper.normalizeId;
+import static org.fdesigner.e4.ui.css.swt.helpers.ThemeElementDefinitionHelper.normalizeId;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Pattern;
-import org.eclipse.e4.ui.css.core.css2.CSS2ColorHelper;
-import org.eclipse.e4.ui.css.core.css2.CSS2RGBColorImpl;
-import org.eclipse.e4.ui.css.core.dom.properties.Gradient;
-import org.eclipse.e4.ui.css.core.engine.CSSEngine;
-import org.eclipse.e4.ui.internal.css.swt.CSSActivator;
-import org.eclipse.e4.ui.internal.css.swt.definition.IColorAndFontProvider;
+
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.custom.CTabFolder;
 import org.eclipse.swt.graphics.Color;
@@ -37,6 +32,12 @@ import org.eclipse.swt.graphics.RGB;
 import org.eclipse.swt.graphics.RGBA;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Display;
+import org.fdesigner.e4.ui.css.core.css2.CSS2ColorHelper;
+import org.fdesigner.e4.ui.css.core.css2.CSS2RGBColorImpl;
+import org.fdesigner.e4.ui.css.core.dom.properties.Gradient;
+import org.fdesigner.e4.ui.css.core.engine.CSSEngine;
+import org.fdesigner.e4.ui.css.swt.internal.css.swt.CSSActivator;
+import org.fdesigner.e4.ui.css.swt.internal.css.swt.definition.IColorAndFontProvider;
 import org.w3c.dom.css.CSSPrimitiveValue;
 import org.w3c.dom.css.CSSValue;
 import org.w3c.dom.css.CSSValueList;

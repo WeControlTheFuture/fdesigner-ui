@@ -13,7 +13,7 @@
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 472654
  ******************************************************************************/
 
-package org.eclipse.e4.ui.internal.workbench;
+package org.fdesigner.e4.ui.workbench.internal.workbench;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -21,20 +21,21 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.core.runtime.IExtension;
-import org.eclipse.core.runtime.IExtensionPoint;
-import org.eclipse.core.runtime.IExtensionRegistry;
-import org.eclipse.core.runtime.IRegistryEventListener;
-import org.eclipse.e4.ui.model.application.MApplicationElement;
-import org.eclipse.e4.ui.model.application.impl.ApplicationPackageImpl;
-import org.eclipse.e4.ui.workbench.modeling.EModelService;
+
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.util.EcoreUtil;
-import org.osgi.service.log.LogService;
+import org.fdesigner.e4.ui.model.application.MApplicationElement;
+import org.fdesigner.e4.ui.model.application.impl.ApplicationPackageImpl;
+import org.fdesigner.e4.ui.workbench.modeling.EModelService;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.runtime.registry.runtime.IExtension;
+import org.fdesigner.runtime.registry.runtime.IExtensionPoint;
+import org.fdesigner.runtime.registry.runtime.IExtensionRegistry;
+import org.fdesigner.runtime.registry.runtime.IRegistryEventListener;
+import org.fdesigner.services.log.LogService;
 
 /**
  * A factory which is able to build the EMF based EObjects for the given {@link MApplicationElement}

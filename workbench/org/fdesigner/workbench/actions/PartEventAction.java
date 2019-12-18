@@ -11,11 +11,11 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.actions;
+package org.fdesigner.workbench.actions;
 
-import org.eclipse.jface.action.Action;
-import org.eclipse.ui.IPartListener;
-import org.eclipse.ui.IWorkbenchPart;
+import org.fdesigner.ui.jface.action.Action;
+import org.fdesigner.workbench.IPartListener;
+import org.fdesigner.workbench.IWorkbenchPart;
 
 /**
  * The abstract superclass for actions that listen to part activation and

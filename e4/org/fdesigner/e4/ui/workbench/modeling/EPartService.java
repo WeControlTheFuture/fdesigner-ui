@@ -17,11 +17,11 @@ package org.fdesigner.e4.ui.workbench.modeling;
 
 import java.util.Collection;
 import java.util.Optional;
-import org.eclipse.core.runtime.AssertionFailedException;
-import org.eclipse.e4.ui.model.application.ui.advanced.MPerspective;
-import org.eclipse.e4.ui.model.application.ui.advanced.MPlaceholder;
-import org.eclipse.e4.ui.model.application.ui.basic.MInputPart;
-import org.eclipse.e4.ui.model.application.ui.basic.MPart;
+
+import org.fdesigner.e4.ui.model.application.ui.advanced.MPerspective;
+import org.fdesigner.e4.ui.model.application.ui.advanced.MPlaceholder;
+import org.fdesigner.e4.ui.model.application.ui.basic.MInputPart;
+import org.fdesigner.e4.ui.model.application.ui.basic.MPart;
 
 /**
  * The part service provides clients with the functionalities of showing and hiding parts. Part

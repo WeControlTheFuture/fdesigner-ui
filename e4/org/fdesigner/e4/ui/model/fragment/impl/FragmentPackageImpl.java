@@ -12,13 +12,8 @@
  *      Tom Schindl <tom.schindl@bestsolution.at> - initial API and implementation
  *      IBM Corporation - initial API and implementation
  */
-package org.eclipse.e4.ui.model.fragment.impl;
+package org.fdesigner.e4.ui.model.fragment.impl;
 
-import org.eclipse.e4.ui.model.application.impl.ApplicationPackageImpl;
-import org.eclipse.e4.ui.model.fragment.MFragmentFactory;
-import org.eclipse.e4.ui.model.fragment.MModelFragment;
-import org.eclipse.e4.ui.model.fragment.MModelFragments;
-import org.eclipse.e4.ui.model.fragment.MStringModelFragment;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EFactory;
@@ -26,6 +21,11 @@ import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 import org.eclipse.emf.ecore.impl.EPackageImpl;
+import org.fdesigner.e4.ui.model.application.impl.ApplicationPackageImpl;
+import org.fdesigner.e4.ui.model.fragment.MFragmentFactory;
+import org.fdesigner.e4.ui.model.fragment.MModelFragment;
+import org.fdesigner.e4.ui.model.fragment.MModelFragments;
+import org.fdesigner.e4.ui.model.fragment.MStringModelFragment;
 
 /**
  * <!-- begin-user-doc -->
@@ -73,7 +73,7 @@ public class FragmentPackageImpl extends EPackageImpl {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final FragmentPackageImpl eINSTANCE = org.eclipse.e4.ui.model.fragment.impl.FragmentPackageImpl
+	public static final FragmentPackageImpl eINSTANCE = org.fdesigner.e4.ui.model.fragment.impl.FragmentPackageImpl
 			.init();
 
 	/**

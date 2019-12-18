@@ -11,12 +11,12 @@
  * Contributors:
  *      IBM Corporation - initial API and implementation
  */
-package org.eclipse.e4.ui.model.application.ui.basic.impl;
+package org.fdesigner.e4.ui.model.application.ui.basic.impl;
 
-import org.eclipse.e4.ui.model.application.ui.basic.MPartSashContainer;
-import org.eclipse.e4.ui.model.application.ui.basic.MPartSashContainerElement;
-import org.eclipse.e4.ui.model.application.ui.impl.GenericTileImpl;
 import org.eclipse.emf.ecore.EClass;
+import org.fdesigner.e4.ui.model.application.ui.basic.MPartSashContainer;
+import org.fdesigner.e4.ui.model.application.ui.basic.MPartSashContainerElement;
+import org.fdesigner.e4.ui.model.application.ui.impl.GenericTileImpl;
 
 /**
  * <!-- begin-user-doc -->

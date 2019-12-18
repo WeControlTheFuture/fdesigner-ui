@@ -11,18 +11,18 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.e4.ui.css.swt.properties.css2;
+package org.fdesigner.e4.ui.css.swt.properties.css2;
 
-import org.eclipse.e4.ui.css.core.dom.properties.css2.AbstractCSSPropertyMarginHandler;
-import org.eclipse.e4.ui.css.core.dom.properties.css2.ICSSPropertyMarginHandler;
-import org.eclipse.e4.ui.css.core.engine.CSSEngine;
-import org.eclipse.e4.ui.css.swt.CSSSWTConstants;
-import org.eclipse.e4.ui.css.swt.helpers.SWTElementHelpers;
 import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Layout;
 import org.eclipse.swt.widgets.Widget;
+import org.fdesigner.e4.ui.css.core.dom.properties.css2.AbstractCSSPropertyMarginHandler;
+import org.fdesigner.e4.ui.css.core.dom.properties.css2.ICSSPropertyMarginHandler;
+import org.fdesigner.e4.ui.css.core.engine.CSSEngine;
+import org.fdesigner.e4.ui.css.swt.CSSSWTConstants;
+import org.fdesigner.e4.ui.css.swt.helpers.SWTElementHelpers;
 import org.w3c.css.sac.CSSException;
 import org.w3c.dom.css.CSSPrimitiveValue;
 import org.w3c.dom.css.CSSValue;

@@ -13,7 +13,7 @@
  *                                      through a fragment or other means
  ******************************************************************************/
 
-package org.eclipse.e4.ui.model.internal;
+package org.fdesigner.e4.ui.model.internal;
 
 /**
  * A holder class for the full information to position an element in a list.

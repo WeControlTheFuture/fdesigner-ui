@@ -13,21 +13,21 @@
  *     Lars Vogel <Lars.Vogel@gmail.com> - Bug 440810
  *******************************************************************************/
 
-package org.eclipse.ui.internal.actions;
+package org.fdesigner.workbench.internal.actions;
 
 import java.util.Map;
 
-import org.eclipse.core.commands.Command;
-import org.eclipse.core.commands.ICommandListener;
-import org.eclipse.core.commands.ParameterizedCommand;
-import org.eclipse.core.commands.common.NotDefinedException;
-import org.eclipse.jface.action.Action;
 import org.eclipse.swt.widgets.Event;
-import org.eclipse.ui.commands.ICommandImageService;
-import org.eclipse.ui.commands.ICommandService;
-import org.eclipse.ui.handlers.IHandlerService;
-import org.eclipse.ui.internal.WorkbenchPlugin;
-import org.eclipse.ui.services.IServiceLocator;
+import org.fdesigner.commands.Command;
+import org.fdesigner.commands.ICommandListener;
+import org.fdesigner.commands.ParameterizedCommand;
+import org.fdesigner.commands.common.NotDefinedException;
+import org.fdesigner.ui.jface.action.Action;
+import org.fdesigner.workbench.commands.ICommandImageService;
+import org.fdesigner.workbench.commands.ICommandService;
+import org.fdesigner.workbench.handlers.IHandlerService;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
+import org.fdesigner.workbench.services.IServiceLocator;
 
 /**
  * Instantiate an action that will execute the command.

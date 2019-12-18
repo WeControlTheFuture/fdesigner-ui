@@ -11,15 +11,15 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.e4.ui.css.swt.dom;
+package org.fdesigner.e4.ui.css.swt.dom;
 
-import org.eclipse.e4.ui.css.core.dom.CSSStylableElement;
-import org.eclipse.e4.ui.css.core.engine.CSSEngine;
-import org.eclipse.e4.ui.css.swt.helpers.CSSSWTImageHelper;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.TableItem;
 import org.eclipse.swt.widgets.ToolBar;
 import org.eclipse.swt.widgets.ToolItem;
+import org.fdesigner.e4.ui.css.core.dom.CSSStylableElement;
+import org.fdesigner.e4.ui.css.core.engine.CSSEngine;
+import org.fdesigner.e4.ui.css.swt.helpers.CSSSWTImageHelper;
 import org.w3c.dom.Node;
 
 /**

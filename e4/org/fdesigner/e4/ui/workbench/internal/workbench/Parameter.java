@@ -11,19 +11,20 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.e4.ui.internal.workbench;
+package org.fdesigner.e4.ui.workbench.internal.workbench;
 
 import java.util.Collections;
 import java.util.Map;
 import java.util.Objects;
-import org.eclipse.core.commands.IParameter;
-import org.eclipse.core.commands.IParameterValues;
-import org.eclipse.core.commands.ITypedParameter;
-import org.eclipse.core.commands.ParameterType;
-import org.eclipse.core.commands.ParameterValuesException;
-import org.eclipse.core.commands.common.HandleObject;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IConfigurationElement;
+
+import org.fdesigner.commands.IParameter;
+import org.fdesigner.commands.IParameterValues;
+import org.fdesigner.commands.ITypedParameter;
+import org.fdesigner.commands.ParameterType;
+import org.fdesigner.commands.ParameterValuesException;
+import org.fdesigner.commands.common.HandleObject;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
 
 /**
  * <p>

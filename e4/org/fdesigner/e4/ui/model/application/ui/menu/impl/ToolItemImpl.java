@@ -11,15 +11,15 @@
  * Contributors:
  *      IBM Corporation - initial API and implementation
  */
-package org.eclipse.e4.ui.model.application.ui.menu.impl;
+package org.fdesigner.e4.ui.model.application.ui.menu.impl;
 
-import org.eclipse.e4.ui.model.application.ui.menu.MMenu;
-import org.eclipse.e4.ui.model.application.ui.menu.MToolItem;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.fdesigner.e4.ui.model.application.ui.menu.MMenu;
+import org.fdesigner.e4.ui.model.application.ui.menu.MToolItem;
 
 /**
  * <!-- begin-user-doc -->

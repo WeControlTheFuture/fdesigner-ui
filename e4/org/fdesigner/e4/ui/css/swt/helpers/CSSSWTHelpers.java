@@ -11,11 +11,8 @@
  * Contributors:
  *     Angelo Zerr <angelo.zerr@gmail.com> - initial API and implementation
  *******************************************************************************/
-package org.eclipse.e4.ui.css.swt.helpers;
+package org.fdesigner.e4.ui.css.swt.helpers;
 
-import org.eclipse.e4.ui.css.core.dom.properties.CSSBorderProperties;
-import org.eclipse.e4.ui.css.core.engine.CSSEngine;
-import org.eclipse.e4.ui.css.swt.CSSSWTConstants;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.PaintEvent;
 import org.eclipse.swt.events.PaintListener;
@@ -23,6 +20,9 @@ import org.eclipse.swt.graphics.Color;
 import org.eclipse.swt.graphics.GC;
 import org.eclipse.swt.graphics.Rectangle;
 import org.eclipse.swt.widgets.Control;
+import org.fdesigner.e4.ui.css.core.dom.properties.CSSBorderProperties;
+import org.fdesigner.e4.ui.css.core.engine.CSSEngine;
+import org.fdesigner.e4.ui.css.swt.CSSSWTConstants;
 import org.w3c.dom.css.CSSPrimitiveValue;
 import org.w3c.dom.css.CSSValue;
 

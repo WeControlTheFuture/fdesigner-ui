@@ -11,17 +11,18 @@
  * Contributors:
  *     Fabio Zadrozny <fabiofz@gmail.com> - initial API and implementation
  *******************************************************************************/
-package org.eclipse.e4.ui.css.swt.dom;
+package org.fdesigner.e4.ui.css.swt.dom;
 
 import java.util.function.Supplier;
-import org.eclipse.e4.ui.css.core.engine.CSSEngine;
-import org.eclipse.e4.ui.internal.css.swt.dom.AbstractControlSelectionEraseListener;
-import org.eclipse.e4.ui.internal.css.swt.dom.ControlSelectedColorCustomization;
+
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.Color;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Event;
 import org.eclipse.swt.widgets.Table;
+import org.fdesigner.e4.ui.css.core.engine.CSSEngine;
+import org.fdesigner.e4.ui.css.swt.internal.css.swt.dom.AbstractControlSelectionEraseListener;
+import org.fdesigner.e4.ui.css.swt.internal.css.swt.dom.ControlSelectedColorCustomization;
 
 public class TableElement extends ControlElement
 implements ISelectionBackgroundCustomizationElement, IHeaderCustomizationElement {

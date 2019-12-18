@@ -13,10 +13,8 @@
  *     Lars Vogel <Lars.Vogel@gmail.com> - Bug 430639
  *     Fabio Zadrozny <fabiofz@gmail.com> - Bug 434201, 434309, 430278
  *******************************************************************************/
-package org.eclipse.e4.ui.css.swt.dom;
+package org.fdesigner.e4.ui.css.swt.dom;
 
-import org.eclipse.e4.ui.css.core.dom.IElementProvider;
-import org.eclipse.e4.ui.css.core.engine.CSSEngine;
 import org.eclipse.swt.custom.CTabFolder;
 import org.eclipse.swt.custom.CTabItem;
 import org.eclipse.swt.custom.StyledText;
@@ -34,6 +32,8 @@ import org.eclipse.swt.widgets.ToolBar;
 import org.eclipse.swt.widgets.ToolItem;
 import org.eclipse.swt.widgets.Tree;
 import org.eclipse.swt.widgets.Widget;
+import org.fdesigner.e4.ui.css.core.dom.IElementProvider;
+import org.fdesigner.e4.ui.css.core.engine.CSSEngine;
 import org.w3c.dom.Element;
 
 /**

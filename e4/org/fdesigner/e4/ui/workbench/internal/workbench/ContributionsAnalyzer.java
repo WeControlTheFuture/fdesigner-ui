@@ -15,7 +15,7 @@
  *      Simon Scholz <simon.scholz@vogella.com> - Bug 484398, 546815
  ******************************************************************************/
 
-package org.eclipse.e4.ui.internal.workbench;
+package org.fdesigner.e4.ui.workbench.internal.workbench;
 
 import java.lang.annotation.Annotation;
 import java.util.ArrayList;
@@ -24,44 +24,45 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Objects;
-import org.eclipse.core.expressions.EvaluationResult;
-import org.eclipse.core.expressions.Expression;
-import org.eclipse.core.expressions.ExpressionInfo;
-import org.eclipse.core.internal.expressions.ReferenceExpression;
-import org.eclipse.e4.core.commands.ExpressionContext;
-import org.eclipse.e4.core.contexts.ContextInjectionFactory;
-import org.eclipse.e4.core.contexts.EclipseContextFactory;
-import org.eclipse.e4.core.contexts.IEclipseContext;
-import org.eclipse.e4.core.di.InjectionException;
-import org.eclipse.e4.core.di.InjectorFactory;
-import org.eclipse.e4.core.di.annotations.Evaluate;
-import org.eclipse.e4.core.di.suppliers.PrimaryObjectSupplier;
-import org.eclipse.e4.core.internal.contexts.ContextObjectSupplier;
-import org.eclipse.e4.core.internal.di.InjectorImpl;
-import org.eclipse.e4.core.services.contributions.IContributionFactory;
-import org.eclipse.e4.ui.model.application.MApplication;
-import org.eclipse.e4.ui.model.application.commands.MCommand;
-import org.eclipse.e4.ui.model.application.ui.MCoreExpression;
-import org.eclipse.e4.ui.model.application.ui.MElementContainer;
-import org.eclipse.e4.ui.model.application.ui.MExpression;
-import org.eclipse.e4.ui.model.application.ui.MImperativeExpression;
-import org.eclipse.e4.ui.model.application.ui.MUIElement;
-import org.eclipse.e4.ui.model.application.ui.basic.MTrimBar;
-import org.eclipse.e4.ui.model.application.ui.basic.MTrimElement;
-import org.eclipse.e4.ui.model.application.ui.basic.MWindow;
-import org.eclipse.e4.ui.model.application.ui.menu.MMenu;
-import org.eclipse.e4.ui.model.application.ui.menu.MMenuContribution;
-import org.eclipse.e4.ui.model.application.ui.menu.MMenuElement;
-import org.eclipse.e4.ui.model.application.ui.menu.MMenuSeparator;
-import org.eclipse.e4.ui.model.application.ui.menu.MPopupMenu;
-import org.eclipse.e4.ui.model.application.ui.menu.MToolBar;
-import org.eclipse.e4.ui.model.application.ui.menu.MToolBarContribution;
-import org.eclipse.e4.ui.model.application.ui.menu.MToolBarElement;
-import org.eclipse.e4.ui.model.application.ui.menu.MToolBarSeparator;
-import org.eclipse.e4.ui.model.application.ui.menu.MTrimContribution;
-import org.eclipse.e4.ui.workbench.IWorkbench;
+
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.util.EcoreUtil;
+import org.fdesigner.e4.core.commands.ExpressionContext;
+import org.fdesigner.e4.core.contexts.ContextInjectionFactory;
+import org.fdesigner.e4.core.contexts.EclipseContextFactory;
+import org.fdesigner.e4.core.contexts.IEclipseContext;
+import org.fdesigner.e4.core.contexts.internal.contexts.ContextObjectSupplier;
+import org.fdesigner.e4.core.di.InjectionException;
+import org.fdesigner.e4.core.di.InjectorFactory;
+import org.fdesigner.e4.core.di.annotations.Evaluate;
+import org.fdesigner.e4.core.di.internal.di.InjectorImpl;
+import org.fdesigner.e4.core.di.suppliers.PrimaryObjectSupplier;
+import org.fdesigner.e4.core.services.contributions.IContributionFactory;
+import org.fdesigner.e4.ui.model.application.MApplication;
+import org.fdesigner.e4.ui.model.application.commands.MCommand;
+import org.fdesigner.e4.ui.model.application.ui.MCoreExpression;
+import org.fdesigner.e4.ui.model.application.ui.MElementContainer;
+import org.fdesigner.e4.ui.model.application.ui.MExpression;
+import org.fdesigner.e4.ui.model.application.ui.MImperativeExpression;
+import org.fdesigner.e4.ui.model.application.ui.MUIElement;
+import org.fdesigner.e4.ui.model.application.ui.basic.MTrimBar;
+import org.fdesigner.e4.ui.model.application.ui.basic.MTrimElement;
+import org.fdesigner.e4.ui.model.application.ui.basic.MWindow;
+import org.fdesigner.e4.ui.model.application.ui.menu.MMenu;
+import org.fdesigner.e4.ui.model.application.ui.menu.MMenuContribution;
+import org.fdesigner.e4.ui.model.application.ui.menu.MMenuElement;
+import org.fdesigner.e4.ui.model.application.ui.menu.MMenuSeparator;
+import org.fdesigner.e4.ui.model.application.ui.menu.MPopupMenu;
+import org.fdesigner.e4.ui.model.application.ui.menu.MToolBar;
+import org.fdesigner.e4.ui.model.application.ui.menu.MToolBarContribution;
+import org.fdesigner.e4.ui.model.application.ui.menu.MToolBarElement;
+import org.fdesigner.e4.ui.model.application.ui.menu.MToolBarSeparator;
+import org.fdesigner.e4.ui.model.application.ui.menu.MTrimContribution;
+import org.fdesigner.e4.ui.workbench.IWorkbench;
+import org.fdesigner.expressions.EvaluationResult;
+import org.fdesigner.expressions.Expression;
+import org.fdesigner.expressions.ExpressionInfo;
+import org.fdesigner.expressions.internal.expressions.ReferenceExpression;
 
 public final class ContributionsAnalyzer {
 

@@ -11,14 +11,10 @@
  * Contributors:
  *     Fabio Zadrozny <fabiofz@gmail.com> - initial API and implementation
  *******************************************************************************/
-package org.eclipse.e4.ui.css.swt.dom;
+package org.fdesigner.e4.ui.css.swt.dom;
 
 import java.util.function.Supplier;
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.e4.ui.css.core.engine.CSSEngine;
-import org.eclipse.e4.ui.internal.css.swt.dom.AbstractControlSelectionEraseListener;
-import org.eclipse.e4.ui.internal.css.swt.dom.ControlSelectedColorCustomization;
+
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.Color;
 import org.eclipse.swt.graphics.GC;
@@ -28,6 +24,11 @@ import org.eclipse.swt.widgets.Listener;
 import org.eclipse.swt.widgets.Tree;
 import org.eclipse.swt.widgets.TreeItem;
 import org.eclipse.swt.widgets.Widget;
+import org.fdesigner.e4.ui.css.core.engine.CSSEngine;
+import org.fdesigner.e4.ui.css.swt.internal.css.swt.dom.AbstractControlSelectionEraseListener;
+import org.fdesigner.e4.ui.css.swt.internal.css.swt.dom.ControlSelectedColorCustomization;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.core.Platform;
 
 public class TreeElement extends ControlElement
 implements ISelectionBackgroundCustomizationElement, IHeaderCustomizationElement {

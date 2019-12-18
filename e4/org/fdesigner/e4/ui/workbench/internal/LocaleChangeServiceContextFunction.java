@@ -11,15 +11,15 @@
  * Contributors:
  *    Dirk Fauth <dirk.fauth@googlemail.com> - initial API and implementation
  *******************************************************************************/
-package org.eclipse.e4.ui.internal;
+package org.fdesigner.e4.ui.workbench.internal;
 
-import org.eclipse.e4.core.contexts.ContextFunction;
-import org.eclipse.e4.core.contexts.ContextInjectionFactory;
-import org.eclipse.e4.core.contexts.IContextFunction;
-import org.eclipse.e4.core.contexts.IEclipseContext;
-import org.eclipse.e4.core.services.nls.ILocaleChangeService;
-import org.eclipse.e4.ui.model.application.MApplication;
-import org.osgi.service.component.annotations.Component;
+import org.fdesigner.e4.core.contexts.ContextFunction;
+import org.fdesigner.e4.core.contexts.ContextInjectionFactory;
+import org.fdesigner.e4.core.contexts.IContextFunction;
+import org.fdesigner.e4.core.contexts.IEclipseContext;
+import org.fdesigner.e4.core.services.nls.ILocaleChangeService;
+import org.fdesigner.e4.ui.model.application.MApplication;
+import org.fdesigner.services.component.annotations.Component;
 
 /**
  * Context function to provide the LocaleChangeServiceImpl to the application context.

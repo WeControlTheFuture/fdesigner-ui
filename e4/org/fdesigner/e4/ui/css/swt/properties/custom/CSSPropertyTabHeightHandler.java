@@ -10,12 +10,12 @@
  *
  * Contributors: IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.e4.ui.css.swt.properties.custom;
+package org.fdesigner.e4.ui.css.swt.properties.custom;
 
-import org.eclipse.e4.ui.css.core.engine.CSSEngine;
-import org.eclipse.e4.ui.css.swt.properties.AbstractCSSPropertySWTHandler;
 import org.eclipse.swt.custom.CTabFolder;
 import org.eclipse.swt.widgets.Control;
+import org.fdesigner.e4.ui.css.core.engine.CSSEngine;
+import org.fdesigner.e4.ui.css.swt.properties.AbstractCSSPropertySWTHandler;
 import org.w3c.dom.css.CSSPrimitiveValue;
 import org.w3c.dom.css.CSSValue;
 

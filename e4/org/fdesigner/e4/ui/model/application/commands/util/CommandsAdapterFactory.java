@@ -11,28 +11,28 @@
  * Contributors:
  *      IBM Corporation - initial API and implementation
  */
-package org.eclipse.e4.ui.model.application.commands.util;
+package org.fdesigner.e4.ui.model.application.commands.util;
 
-import org.eclipse.e4.ui.model.application.MApplicationElement;
-import org.eclipse.e4.ui.model.application.MContribution;
-import org.eclipse.e4.ui.model.application.commands.MBindingContext;
-import org.eclipse.e4.ui.model.application.commands.MBindingTable;
-import org.eclipse.e4.ui.model.application.commands.MBindingTableContainer;
-import org.eclipse.e4.ui.model.application.commands.MBindings;
-import org.eclipse.e4.ui.model.application.commands.MCategory;
-import org.eclipse.e4.ui.model.application.commands.MCommand;
-import org.eclipse.e4.ui.model.application.commands.MCommandParameter;
-import org.eclipse.e4.ui.model.application.commands.MHandler;
-import org.eclipse.e4.ui.model.application.commands.MHandlerContainer;
-import org.eclipse.e4.ui.model.application.commands.MKeyBinding;
-import org.eclipse.e4.ui.model.application.commands.MKeySequence;
-import org.eclipse.e4.ui.model.application.commands.MParameter;
-import org.eclipse.e4.ui.model.application.commands.impl.CommandsPackageImpl;
-import org.eclipse.e4.ui.model.application.ui.MLocalizable;
 import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.notify.Notifier;
 import org.eclipse.emf.common.notify.impl.AdapterFactoryImpl;
 import org.eclipse.emf.ecore.EObject;
+import org.fdesigner.e4.ui.model.application.MApplicationElement;
+import org.fdesigner.e4.ui.model.application.MContribution;
+import org.fdesigner.e4.ui.model.application.commands.MBindingContext;
+import org.fdesigner.e4.ui.model.application.commands.MBindingTable;
+import org.fdesigner.e4.ui.model.application.commands.MBindingTableContainer;
+import org.fdesigner.e4.ui.model.application.commands.MBindings;
+import org.fdesigner.e4.ui.model.application.commands.MCategory;
+import org.fdesigner.e4.ui.model.application.commands.MCommand;
+import org.fdesigner.e4.ui.model.application.commands.MCommandParameter;
+import org.fdesigner.e4.ui.model.application.commands.MHandler;
+import org.fdesigner.e4.ui.model.application.commands.MHandlerContainer;
+import org.fdesigner.e4.ui.model.application.commands.MKeyBinding;
+import org.fdesigner.e4.ui.model.application.commands.MKeySequence;
+import org.fdesigner.e4.ui.model.application.commands.MParameter;
+import org.fdesigner.e4.ui.model.application.commands.impl.CommandsPackageImpl;
+import org.fdesigner.e4.ui.model.application.ui.MLocalizable;
 
 /**
  * <!-- begin-user-doc -->

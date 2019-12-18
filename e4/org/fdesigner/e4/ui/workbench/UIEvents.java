@@ -19,8 +19,8 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.eclipse.e4.core.services.events.IEventBroker;
 import org.fdesigner.e4.core.contexts.IEclipseContext;
+import org.fdesigner.e4.core.services.events.IEventBroker;
 import org.fdesigner.e4.ui.model.application.MApplication;
 import org.fdesigner.e4.ui.model.application.MApplicationElement;
 import org.fdesigner.e4.ui.model.application.ui.MUIElement;

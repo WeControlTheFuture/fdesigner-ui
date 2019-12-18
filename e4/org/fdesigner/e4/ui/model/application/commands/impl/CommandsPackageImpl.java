@@ -11,27 +11,8 @@
  * Contributors:
  *      IBM Corporation - initial API and implementation
  */
-package org.eclipse.e4.ui.model.application.commands.impl;
+package org.fdesigner.e4.ui.model.application.commands.impl;
 
-import org.eclipse.core.commands.ParameterizedCommand;
-import org.eclipse.e4.ui.model.application.commands.MBindingContext;
-import org.eclipse.e4.ui.model.application.commands.MBindingTable;
-import org.eclipse.e4.ui.model.application.commands.MBindingTableContainer;
-import org.eclipse.e4.ui.model.application.commands.MBindings;
-import org.eclipse.e4.ui.model.application.commands.MCategory;
-import org.eclipse.e4.ui.model.application.commands.MCommand;
-import org.eclipse.e4.ui.model.application.commands.MCommandParameter;
-import org.eclipse.e4.ui.model.application.commands.MCommandsFactory;
-import org.eclipse.e4.ui.model.application.commands.MHandler;
-import org.eclipse.e4.ui.model.application.commands.MHandlerContainer;
-import org.eclipse.e4.ui.model.application.commands.MKeyBinding;
-import org.eclipse.e4.ui.model.application.commands.MKeySequence;
-import org.eclipse.e4.ui.model.application.commands.MParameter;
-import org.eclipse.e4.ui.model.application.impl.ApplicationPackageImpl;
-import org.eclipse.e4.ui.model.application.ui.advanced.impl.AdvancedPackageImpl;
-import org.eclipse.e4.ui.model.application.ui.basic.impl.BasicPackageImpl;
-import org.eclipse.e4.ui.model.application.ui.impl.UiPackageImpl;
-import org.eclipse.e4.ui.model.application.ui.menu.impl.MenuPackageImpl;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EDataType;
@@ -40,6 +21,25 @@ import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 import org.eclipse.emf.ecore.impl.EPackageImpl;
+import org.fdesigner.commands.ParameterizedCommand;
+import org.fdesigner.e4.ui.model.application.commands.MBindingContext;
+import org.fdesigner.e4.ui.model.application.commands.MBindingTable;
+import org.fdesigner.e4.ui.model.application.commands.MBindingTableContainer;
+import org.fdesigner.e4.ui.model.application.commands.MBindings;
+import org.fdesigner.e4.ui.model.application.commands.MCategory;
+import org.fdesigner.e4.ui.model.application.commands.MCommand;
+import org.fdesigner.e4.ui.model.application.commands.MCommandParameter;
+import org.fdesigner.e4.ui.model.application.commands.MCommandsFactory;
+import org.fdesigner.e4.ui.model.application.commands.MHandler;
+import org.fdesigner.e4.ui.model.application.commands.MHandlerContainer;
+import org.fdesigner.e4.ui.model.application.commands.MKeyBinding;
+import org.fdesigner.e4.ui.model.application.commands.MKeySequence;
+import org.fdesigner.e4.ui.model.application.commands.MParameter;
+import org.fdesigner.e4.ui.model.application.impl.ApplicationPackageImpl;
+import org.fdesigner.e4.ui.model.application.ui.advanced.impl.AdvancedPackageImpl;
+import org.fdesigner.e4.ui.model.application.ui.basic.impl.BasicPackageImpl;
+import org.fdesigner.e4.ui.model.application.ui.impl.UiPackageImpl;
+import org.fdesigner.e4.ui.model.application.ui.menu.impl.MenuPackageImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -88,7 +88,7 @@ public class CommandsPackageImpl extends EPackageImpl {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final CommandsPackageImpl eINSTANCE = org.eclipse.e4.ui.model.application.commands.impl.CommandsPackageImpl
+	public static final CommandsPackageImpl eINSTANCE = org.fdesigner.e4.ui.model.application.commands.impl.CommandsPackageImpl
 			.init();
 
 	/**
@@ -1389,10 +1389,10 @@ public class CommandsPackageImpl extends EPackageImpl {
 				? registeredPackage
 				: AdvancedPackageImpl.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE
-				.getEPackage(org.eclipse.e4.ui.model.application.descriptor.basic.impl.BasicPackageImpl.eNS_URI);
-		org.eclipse.e4.ui.model.application.descriptor.basic.impl.BasicPackageImpl theBasicPackage_1 = (org.eclipse.e4.ui.model.application.descriptor.basic.impl.BasicPackageImpl) (registeredPackage instanceof org.eclipse.e4.ui.model.application.descriptor.basic.impl.BasicPackageImpl
+				.getEPackage(org.fdesigner.e4.ui.model.application.descriptor.basic.impl.BasicPackageImpl.eNS_URI);
+		org.fdesigner.e4.ui.model.application.descriptor.basic.impl.BasicPackageImpl theBasicPackage_1 = (org.fdesigner.e4.ui.model.application.descriptor.basic.impl.BasicPackageImpl) (registeredPackage instanceof org.fdesigner.e4.ui.model.application.descriptor.basic.impl.BasicPackageImpl
 				? registeredPackage
-				: org.eclipse.e4.ui.model.application.descriptor.basic.impl.BasicPackageImpl.eINSTANCE);
+				: org.fdesigner.e4.ui.model.application.descriptor.basic.impl.BasicPackageImpl.eINSTANCE);
 
 		// Create package meta-data objects
 		theCommandsPackage.createPackageContents();

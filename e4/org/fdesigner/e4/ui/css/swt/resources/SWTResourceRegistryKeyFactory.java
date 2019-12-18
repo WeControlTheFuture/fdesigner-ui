@@ -11,11 +11,11 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
-package org.eclipse.e4.ui.css.swt.resources;
+package org.fdesigner.e4.ui.css.swt.resources;
 
-import org.eclipse.e4.ui.css.core.resources.ResourceRegistryKeyFactory;
-import org.eclipse.e4.ui.css.swt.helpers.CSSSWTColorHelper;
-import org.eclipse.e4.ui.css.swt.helpers.CSSSWTFontHelper;
+import org.fdesigner.e4.ui.css.core.resources.ResourceRegistryKeyFactory;
+import org.fdesigner.e4.ui.css.swt.helpers.CSSSWTColorHelper;
+import org.fdesigner.e4.ui.css.swt.helpers.CSSSWTFontHelper;
 import org.w3c.dom.css.CSSValue;
 
 public class SWTResourceRegistryKeyFactory extends ResourceRegistryKeyFactory {

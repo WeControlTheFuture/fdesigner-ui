@@ -12,16 +12,16 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.e4.ui.internal.workbench;
+package org.fdesigner.e4.ui.workbench.internal.workbench;
 
-import org.eclipse.e4.ui.model.application.ui.MUIElement;
-import org.eclipse.e4.ui.model.application.ui.menu.MDirectMenuItem;
-import org.eclipse.e4.ui.model.application.ui.menu.MDirectToolItem;
-import org.eclipse.e4.ui.model.application.ui.menu.MMenu;
-import org.eclipse.e4.ui.model.application.ui.menu.MMenuFactory;
-import org.eclipse.e4.ui.model.application.ui.menu.MMenuItem;
-import org.eclipse.e4.ui.model.application.ui.menu.MMenuSeparator;
-import org.eclipse.e4.ui.model.application.ui.menu.MToolItem;
+import org.fdesigner.e4.ui.model.application.ui.MUIElement;
+import org.fdesigner.e4.ui.model.application.ui.menu.MDirectMenuItem;
+import org.fdesigner.e4.ui.model.application.ui.menu.MDirectToolItem;
+import org.fdesigner.e4.ui.model.application.ui.menu.MMenu;
+import org.fdesigner.e4.ui.model.application.ui.menu.MMenuFactory;
+import org.fdesigner.e4.ui.model.application.ui.menu.MMenuItem;
+import org.fdesigner.e4.ui.model.application.ui.menu.MMenuSeparator;
+import org.fdesigner.e4.ui.model.application.ui.menu.MToolItem;
 
 /**
  * Utility class that encapsulates the representation of 'opaque' menu and tool bar elements in the

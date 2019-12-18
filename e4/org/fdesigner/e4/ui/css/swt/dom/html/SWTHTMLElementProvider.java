@@ -11,13 +11,13 @@
  * Contributors:
  *     Angelo Zerr <angelo.zerr@gmail.com> - initial API and implementation
  *******************************************************************************/
-package org.eclipse.e4.ui.css.swt.dom.html;
+package org.fdesigner.e4.ui.css.swt.dom.html;
 
-import org.eclipse.e4.ui.css.core.dom.IElementProvider;
-import org.eclipse.e4.ui.css.core.engine.CSSEngine;
-import org.eclipse.e4.ui.css.swt.dom.SWTElementProvider;
-import org.eclipse.e4.ui.css.swt.helpers.SWTElementHelpers;
 import org.eclipse.swt.widgets.Widget;
+import org.fdesigner.e4.ui.css.core.dom.IElementProvider;
+import org.fdesigner.e4.ui.css.core.engine.CSSEngine;
+import org.fdesigner.e4.ui.css.swt.dom.SWTElementProvider;
+import org.fdesigner.e4.ui.css.swt.helpers.SWTElementHelpers;
 import org.w3c.dom.Element;
 
 /**

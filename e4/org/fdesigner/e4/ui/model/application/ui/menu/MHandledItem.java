@@ -11,12 +11,13 @@
  * Contributors:
  *      IBM Corporation - initial API and implementation
  */
-package org.eclipse.e4.ui.model.application.ui.menu;
+package org.fdesigner.e4.ui.model.application.ui.menu;
 
 import java.util.List;
-import org.eclipse.core.commands.ParameterizedCommand;
-import org.eclipse.e4.ui.model.application.commands.MCommand;
-import org.eclipse.e4.ui.model.application.commands.MParameter;
+
+import org.fdesigner.commands.ParameterizedCommand;
+import org.fdesigner.e4.ui.model.application.commands.MCommand;
+import org.fdesigner.e4.ui.model.application.commands.MParameter;
 
 /**
  * <!-- begin-user-doc -->

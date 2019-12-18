@@ -12,7 +12,7 @@
  *      IBM Corporation - initial API and implementation
  *      vogella GmbH - ongoing maintenance
  */
-package org.eclipse.e4.ui.model.application;
+package org.fdesigner.e4.ui.model.application;
 
 import java.util.List;
 import java.util.Map;

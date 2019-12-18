@@ -11,13 +11,13 @@
  *  Contributors:
  *      IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.e4.ui.internal.css.swt;
+package org.fdesigner.e4.ui.css.swt.internal.css.swt;
 
-import org.eclipse.e4.ui.internal.css.swt.definition.IColorAndFontProvider;
-import org.osgi.framework.BundleActivator;
-import org.osgi.framework.BundleContext;
-import org.osgi.service.log.LogService;
-import org.osgi.util.tracker.ServiceTracker;
+import org.fdesigner.e4.ui.css.swt.internal.css.swt.definition.IColorAndFontProvider;
+import org.fdesigner.framework.framework.BundleActivator;
+import org.fdesigner.framework.framework.BundleContext;
+import org.fdesigner.framework.util.tracker.ServiceTracker;
+import org.fdesigner.services.log.LogService;
 
 public class CSSActivator implements BundleActivator {
 

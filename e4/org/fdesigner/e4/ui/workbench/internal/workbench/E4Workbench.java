@@ -14,27 +14,28 @@
  *     Christian Georgi (SAP) - Bug 432480
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 472654, 393171, 508450
  ******************************************************************************/
-package org.eclipse.e4.ui.internal.workbench;
+package org.fdesigner.e4.ui.workbench.internal.workbench;
 
 import java.net.URI;
 import java.util.Hashtable;
 import java.util.List;
 import java.util.UUID;
-import org.eclipse.e4.core.commands.ExpressionContext;
-import org.eclipse.e4.core.contexts.ContextInjectionFactory;
-import org.eclipse.e4.core.contexts.EclipseContextFactory;
-import org.eclipse.e4.core.contexts.IEclipseContext;
-import org.eclipse.e4.core.services.contributions.IContributionFactory;
-import org.eclipse.e4.core.services.log.Logger;
-import org.eclipse.e4.ui.model.application.MApplication;
-import org.eclipse.e4.ui.model.application.MApplicationElement;
-import org.eclipse.e4.ui.model.application.ui.MContext;
-import org.eclipse.e4.ui.workbench.IPresentationEngine;
-import org.eclipse.e4.ui.workbench.IWorkbench;
-import org.eclipse.e4.ui.workbench.UIEvents;
+
 import org.eclipse.emf.common.notify.Notifier;
-import org.eclipse.osgi.service.datalocation.Location;
-import org.osgi.framework.ServiceRegistration;
+import org.fdesigner.e4.core.commands.ExpressionContext;
+import org.fdesigner.e4.core.contexts.ContextInjectionFactory;
+import org.fdesigner.e4.core.contexts.EclipseContextFactory;
+import org.fdesigner.e4.core.contexts.IEclipseContext;
+import org.fdesigner.e4.core.services.contributions.IContributionFactory;
+import org.fdesigner.e4.core.services.log.Logger;
+import org.fdesigner.e4.ui.model.application.MApplication;
+import org.fdesigner.e4.ui.model.application.MApplicationElement;
+import org.fdesigner.e4.ui.model.application.ui.MContext;
+import org.fdesigner.e4.ui.workbench.IPresentationEngine;
+import org.fdesigner.e4.ui.workbench.IWorkbench;
+import org.fdesigner.e4.ui.workbench.UIEvents;
+import org.fdesigner.framework.framework.ServiceRegistration;
+import org.fdesigner.supplement.service.datalocation.Location;
 
 /**
  * Default implementation of {@link IWorkbench}

@@ -16,7 +16,7 @@
  *     Robert Roth <robert.roth.off@gmail.com> - Bug 283255
  *     Simon Scholz <simon.scholz@vogella.com> - Bug 466646, 461690
  *******************************************************************************/
-package org.eclipse.e4.ui.css.swt.properties;
+package org.fdesigner.e4.ui.css.swt.properties;
 
 import java.awt.Graphics2D;
 import java.awt.MultipleGradientPaint.CycleMethod;
@@ -28,8 +28,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import org.eclipse.e4.ui.css.core.dom.properties.Gradient;
-import org.eclipse.e4.ui.css.swt.helpers.CSSSWTColorHelper;
+
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.DisposeEvent;
 import org.eclipse.swt.events.DisposeListener;
@@ -45,6 +44,8 @@ import org.eclipse.swt.graphics.Rectangle;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Event;
 import org.eclipse.swt.widgets.Listener;
+import org.fdesigner.e4.ui.css.core.dom.properties.Gradient;
+import org.fdesigner.e4.ui.css.swt.helpers.CSSSWTColorHelper;
 
 public class GradientBackgroundListener implements Listener {
 	private static Map<Control, GradientBackgroundListener> handlers = new HashMap<>();

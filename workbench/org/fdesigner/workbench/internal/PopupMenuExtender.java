@@ -13,7 +13,7 @@
  *     Dan Rubel (dan_rubel@instantiations.com) - accessor to get menu id
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 472654
  *******************************************************************************/
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
 import java.util.ArrayList;
 import java.util.Collections;

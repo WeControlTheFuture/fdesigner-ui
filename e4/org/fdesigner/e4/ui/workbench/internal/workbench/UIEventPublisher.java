@@ -12,24 +12,25 @@
  *     IBM Corporation - initial API and implementation
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 472654
  *******************************************************************************/
-package org.eclipse.e4.ui.internal.workbench;
+package org.fdesigner.e4.ui.workbench.internal.workbench;
 
 import java.util.HashMap;
 import java.util.Map;
-import org.eclipse.e4.core.contexts.IEclipseContext;
-import org.eclipse.e4.core.services.events.IEventBroker;
-import org.eclipse.e4.ui.model.application.MApplicationElement;
-import org.eclipse.e4.ui.model.application.impl.StringToObjectMapImpl;
-import org.eclipse.e4.ui.model.application.impl.StringToStringMapImpl;
-import org.eclipse.e4.ui.model.application.ui.MUIElement;
-import org.eclipse.e4.ui.workbench.UIEvents;
-import org.eclipse.e4.ui.workbench.UIEvents.EventTags;
-import org.eclipse.e4.ui.workbench.UIEvents.EventTypes;
+
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.ecore.util.EContentAdapter;
-import org.osgi.service.log.LogService;
+import org.fdesigner.e4.core.contexts.IEclipseContext;
+import org.fdesigner.e4.core.services.events.IEventBroker;
+import org.fdesigner.e4.ui.model.application.MApplicationElement;
+import org.fdesigner.e4.ui.model.application.impl.StringToObjectMapImpl;
+import org.fdesigner.e4.ui.model.application.impl.StringToStringMapImpl;
+import org.fdesigner.e4.ui.model.application.ui.MUIElement;
+import org.fdesigner.e4.ui.workbench.UIEvents;
+import org.fdesigner.e4.ui.workbench.UIEvents.EventTags;
+import org.fdesigner.e4.ui.workbench.UIEvents.EventTypes;
+import org.fdesigner.services.log.LogService;
 
 /**
  * Transforms E4 MPart events into 3.x legacy events.

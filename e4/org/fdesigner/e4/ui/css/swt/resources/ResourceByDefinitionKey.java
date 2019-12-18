@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
-package org.eclipse.e4.ui.css.swt.resources;
+package org.fdesigner.e4.ui.css.swt.resources;
 
 public class ResourceByDefinitionKey {
 	private Object key;

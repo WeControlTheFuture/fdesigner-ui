@@ -11,29 +11,8 @@
  * Contributors:
  *      IBM Corporation - initial API and implementation
  */
-package org.eclipse.e4.ui.model.application.ui.impl;
+package org.fdesigner.e4.ui.model.application.ui.impl;
 
-import org.eclipse.e4.ui.model.application.commands.impl.CommandsPackageImpl;
-import org.eclipse.e4.ui.model.application.impl.ApplicationPackageImpl;
-import org.eclipse.e4.ui.model.application.ui.MContext;
-import org.eclipse.e4.ui.model.application.ui.MCoreExpression;
-import org.eclipse.e4.ui.model.application.ui.MDirtyable;
-import org.eclipse.e4.ui.model.application.ui.MElementContainer;
-import org.eclipse.e4.ui.model.application.ui.MExpression;
-import org.eclipse.e4.ui.model.application.ui.MGenericStack;
-import org.eclipse.e4.ui.model.application.ui.MGenericTile;
-import org.eclipse.e4.ui.model.application.ui.MGenericTrimContainer;
-import org.eclipse.e4.ui.model.application.ui.MImperativeExpression;
-import org.eclipse.e4.ui.model.application.ui.MInput;
-import org.eclipse.e4.ui.model.application.ui.MLocalizable;
-import org.eclipse.e4.ui.model.application.ui.MSnippetContainer;
-import org.eclipse.e4.ui.model.application.ui.MUIElement;
-import org.eclipse.e4.ui.model.application.ui.MUILabel;
-import org.eclipse.e4.ui.model.application.ui.MUiFactory;
-import org.eclipse.e4.ui.model.application.ui.SideValue;
-import org.eclipse.e4.ui.model.application.ui.advanced.impl.AdvancedPackageImpl;
-import org.eclipse.e4.ui.model.application.ui.basic.impl.BasicPackageImpl;
-import org.eclipse.e4.ui.model.application.ui.menu.impl.MenuPackageImpl;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EEnum;
@@ -44,6 +23,27 @@ import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 import org.eclipse.emf.ecore.ETypeParameter;
 import org.eclipse.emf.ecore.impl.EPackageImpl;
+import org.fdesigner.e4.ui.model.application.commands.impl.CommandsPackageImpl;
+import org.fdesigner.e4.ui.model.application.impl.ApplicationPackageImpl;
+import org.fdesigner.e4.ui.model.application.ui.MContext;
+import org.fdesigner.e4.ui.model.application.ui.MCoreExpression;
+import org.fdesigner.e4.ui.model.application.ui.MDirtyable;
+import org.fdesigner.e4.ui.model.application.ui.MElementContainer;
+import org.fdesigner.e4.ui.model.application.ui.MExpression;
+import org.fdesigner.e4.ui.model.application.ui.MGenericStack;
+import org.fdesigner.e4.ui.model.application.ui.MGenericTile;
+import org.fdesigner.e4.ui.model.application.ui.MGenericTrimContainer;
+import org.fdesigner.e4.ui.model.application.ui.MImperativeExpression;
+import org.fdesigner.e4.ui.model.application.ui.MInput;
+import org.fdesigner.e4.ui.model.application.ui.MLocalizable;
+import org.fdesigner.e4.ui.model.application.ui.MSnippetContainer;
+import org.fdesigner.e4.ui.model.application.ui.MUIElement;
+import org.fdesigner.e4.ui.model.application.ui.MUILabel;
+import org.fdesigner.e4.ui.model.application.ui.MUiFactory;
+import org.fdesigner.e4.ui.model.application.ui.SideValue;
+import org.fdesigner.e4.ui.model.application.ui.advanced.impl.AdvancedPackageImpl;
+import org.fdesigner.e4.ui.model.application.ui.basic.impl.BasicPackageImpl;
+import org.fdesigner.e4.ui.model.application.ui.menu.impl.MenuPackageImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -93,7 +93,7 @@ public class UiPackageImpl extends EPackageImpl {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final UiPackageImpl eINSTANCE = org.eclipse.e4.ui.model.application.ui.impl.UiPackageImpl.init();
+	public static final UiPackageImpl eINSTANCE = org.fdesigner.e4.ui.model.application.ui.impl.UiPackageImpl.init();
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.e4.ui.model.application.ui.MContext <em>Context</em>}' class.
@@ -2023,10 +2023,10 @@ public class UiPackageImpl extends EPackageImpl {
 				? registeredPackage
 				: AdvancedPackageImpl.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE
-				.getEPackage(org.eclipse.e4.ui.model.application.descriptor.basic.impl.BasicPackageImpl.eNS_URI);
-		org.eclipse.e4.ui.model.application.descriptor.basic.impl.BasicPackageImpl theBasicPackage_1 = (org.eclipse.e4.ui.model.application.descriptor.basic.impl.BasicPackageImpl) (registeredPackage instanceof org.eclipse.e4.ui.model.application.descriptor.basic.impl.BasicPackageImpl
+				.getEPackage(org.fdesigner.e4.ui.model.application.descriptor.basic.impl.BasicPackageImpl.eNS_URI);
+		org.fdesigner.e4.ui.model.application.descriptor.basic.impl.BasicPackageImpl theBasicPackage_1 = (org.fdesigner.e4.ui.model.application.descriptor.basic.impl.BasicPackageImpl) (registeredPackage instanceof org.fdesigner.e4.ui.model.application.descriptor.basic.impl.BasicPackageImpl
 				? registeredPackage
-				: org.eclipse.e4.ui.model.application.descriptor.basic.impl.BasicPackageImpl.eINSTANCE);
+				: org.fdesigner.e4.ui.model.application.descriptor.basic.impl.BasicPackageImpl.eINSTANCE);
 
 		// Create package meta-data objects
 		theUiPackage.createPackageContents();

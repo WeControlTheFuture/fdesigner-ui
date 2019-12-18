@@ -13,7 +13,7 @@
  *                                      through a fragment or other means
  ******************************************************************************/
 
-package org.eclipse.e4.ui.model.internal;
+package org.fdesigner.e4.ui.model.internal;
 
 /**
  * All the possible positioning values which can be used to contribute

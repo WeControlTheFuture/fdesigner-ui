@@ -11,16 +11,17 @@
  * Contributors:
  *      IBM Corporation - initial API and implementation
  */
-package org.eclipse.e4.ui.model.application.ui.menu.impl;
+package org.fdesigner.e4.ui.model.application.ui.menu.impl;
 
 import java.util.List;
-import org.eclipse.e4.ui.model.application.ui.MUIElement;
-import org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl;
-import org.eclipse.e4.ui.model.application.ui.impl.UiPackageImpl;
-import org.eclipse.e4.ui.model.application.ui.menu.MToolBar;
-import org.eclipse.e4.ui.model.application.ui.menu.MToolBarElement;
+
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.util.EObjectContainmentWithInverseEList;
+import org.fdesigner.e4.ui.model.application.ui.MUIElement;
+import org.fdesigner.e4.ui.model.application.ui.impl.ElementContainerImpl;
+import org.fdesigner.e4.ui.model.application.ui.impl.UiPackageImpl;
+import org.fdesigner.e4.ui.model.application.ui.menu.MToolBar;
+import org.fdesigner.e4.ui.model.application.ui.menu.MToolBarElement;
 
 /**
  * <!-- begin-user-doc -->

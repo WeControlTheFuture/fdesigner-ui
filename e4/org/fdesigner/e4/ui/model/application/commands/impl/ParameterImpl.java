@@ -11,13 +11,13 @@
  * Contributors:
  *      IBM Corporation - initial API and implementation
  */
-package org.eclipse.e4.ui.model.application.commands.impl;
+package org.fdesigner.e4.ui.model.application.commands.impl;
 
-import org.eclipse.e4.ui.model.application.commands.MParameter;
-import org.eclipse.e4.ui.model.application.impl.ApplicationElementImpl;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.fdesigner.e4.ui.model.application.commands.MParameter;
+import org.fdesigner.e4.ui.model.application.impl.ApplicationElementImpl;
 
 /**
  * <!-- begin-user-doc -->

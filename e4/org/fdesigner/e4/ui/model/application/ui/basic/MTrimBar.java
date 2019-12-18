@@ -11,11 +11,12 @@
  * Contributors:
  *      IBM Corporation - initial API and implementation
  */
-package org.eclipse.e4.ui.model.application.ui.basic;
+package org.fdesigner.e4.ui.model.application.ui.basic;
 
 import java.util.List;
-import org.eclipse.e4.ui.model.application.ui.MGenericTrimContainer;
-import org.eclipse.e4.ui.model.application.ui.MUIElement;
+
+import org.fdesigner.e4.ui.model.application.ui.MGenericTrimContainer;
+import org.fdesigner.e4.ui.model.application.ui.MUIElement;
 
 /**
  * <!-- begin-user-doc -->

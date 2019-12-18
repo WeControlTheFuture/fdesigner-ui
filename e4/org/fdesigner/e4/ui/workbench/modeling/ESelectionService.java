@@ -14,7 +14,7 @@
 
 package org.fdesigner.e4.ui.workbench.modeling;
 
-import org.eclipse.e4.ui.services.IServiceConstants;
+import org.fdesigner.e4.ui.services.IServiceConstants;
 
 /**
  * This interface describes the workbench selection service

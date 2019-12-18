@@ -11,14 +11,14 @@
  * Contributors:
  *     Fabio Zadrozny <fabiofz@gmail.com> - initial API and implementation
  *******************************************************************************/
-package org.eclipse.e4.ui.css.swt.properties.custom;
+package org.fdesigner.e4.ui.css.swt.properties.custom;
 
-import org.eclipse.e4.ui.css.core.dom.ElementAdapter;
-import org.eclipse.e4.ui.css.core.dom.properties.ICSSPropertyHandler;
-import org.eclipse.e4.ui.css.core.engine.CSSEngine;
-import org.eclipse.e4.ui.css.swt.dom.ISelectionBackgroundCustomizationElement;
 import org.eclipse.swt.graphics.Color;
 import org.eclipse.swt.widgets.Widget;
+import org.fdesigner.e4.ui.css.core.dom.ElementAdapter;
+import org.fdesigner.e4.ui.css.core.dom.properties.ICSSPropertyHandler;
+import org.fdesigner.e4.ui.css.core.engine.CSSEngine;
+import org.fdesigner.e4.ui.css.swt.dom.ISelectionBackgroundCustomizationElement;
 import org.w3c.dom.css.CSSValue;
 
 /**

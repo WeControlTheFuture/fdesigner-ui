@@ -11,12 +11,12 @@
  * Contributors:
  *      IBM Corporation - initial API and implementation
  */
-package org.eclipse.e4.ui.model.application.ui.basic.impl;
+package org.fdesigner.e4.ui.model.application.ui.basic.impl;
 
-import org.eclipse.e4.ui.model.application.ui.basic.MPartStack;
-import org.eclipse.e4.ui.model.application.ui.basic.MStackElement;
-import org.eclipse.e4.ui.model.application.ui.impl.GenericStackImpl;
 import org.eclipse.emf.ecore.EClass;
+import org.fdesigner.e4.ui.model.application.ui.basic.MPartStack;
+import org.fdesigner.e4.ui.model.application.ui.basic.MStackElement;
+import org.fdesigner.e4.ui.model.application.ui.impl.GenericStackImpl;
 
 /**
  * <!-- begin-user-doc -->

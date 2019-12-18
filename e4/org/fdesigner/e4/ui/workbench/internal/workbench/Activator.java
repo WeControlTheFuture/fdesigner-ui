@@ -12,39 +12,40 @@
  *     IBM Corporation - initial API and implementation
  *     René Brandstetter - Bug 419749 - [Workbench] [e4 Workbench] - Remove the deprecated PackageAdmin
  ******************************************************************************/
-package org.eclipse.e4.ui.internal.workbench;
+package org.fdesigner.e4.ui.workbench.internal.workbench;
 
-import static org.eclipse.e4.ui.internal.workbench.Policy.DEBUG;
-import static org.eclipse.e4.ui.internal.workbench.Policy.DEBUG_CMDS;
-import static org.eclipse.e4.ui.internal.workbench.Policy.DEBUG_CMDS_FLAG;
-import static org.eclipse.e4.ui.internal.workbench.Policy.DEBUG_CONTEXTS;
-import static org.eclipse.e4.ui.internal.workbench.Policy.DEBUG_CONTEXTS_FLAG;
-import static org.eclipse.e4.ui.internal.workbench.Policy.DEBUG_CONTEXTS_VERBOSE;
-import static org.eclipse.e4.ui.internal.workbench.Policy.DEBUG_CONTEXTS_VERBOSE_FLAG;
-import static org.eclipse.e4.ui.internal.workbench.Policy.DEBUG_FLAG;
-import static org.eclipse.e4.ui.internal.workbench.Policy.DEBUG_FOCUS;
-import static org.eclipse.e4.ui.internal.workbench.Policy.DEBUG_FOCUS_FLAG;
-import static org.eclipse.e4.ui.internal.workbench.Policy.DEBUG_MENUS;
-import static org.eclipse.e4.ui.internal.workbench.Policy.DEBUG_MENUS_FLAG;
-import static org.eclipse.e4.ui.internal.workbench.Policy.DEBUG_RENDERER;
-import static org.eclipse.e4.ui.internal.workbench.Policy.DEBUG_RENDERER_FLAG;
-import static org.eclipse.e4.ui.internal.workbench.Policy.DEBUG_WORKBENCH;
-import static org.eclipse.e4.ui.internal.workbench.Policy.DEBUG_WORKBENCH_FLAG;
-import static org.eclipse.e4.ui.internal.workbench.Policy.TRACE;
-import static org.eclipse.e4.ui.internal.workbench.Policy.TRACE_FLAG;
+import static org.fdesigner.e4.ui.workbench.internal.workbench.Policy.DEBUG;
+import static org.fdesigner.e4.ui.workbench.internal.workbench.Policy.DEBUG_CMDS;
+import static org.fdesigner.e4.ui.workbench.internal.workbench.Policy.DEBUG_CMDS_FLAG;
+import static org.fdesigner.e4.ui.workbench.internal.workbench.Policy.DEBUG_CONTEXTS;
+import static org.fdesigner.e4.ui.workbench.internal.workbench.Policy.DEBUG_CONTEXTS_FLAG;
+import static org.fdesigner.e4.ui.workbench.internal.workbench.Policy.DEBUG_CONTEXTS_VERBOSE;
+import static org.fdesigner.e4.ui.workbench.internal.workbench.Policy.DEBUG_CONTEXTS_VERBOSE_FLAG;
+import static org.fdesigner.e4.ui.workbench.internal.workbench.Policy.DEBUG_FLAG;
+import static org.fdesigner.e4.ui.workbench.internal.workbench.Policy.DEBUG_FOCUS;
+import static org.fdesigner.e4.ui.workbench.internal.workbench.Policy.DEBUG_FOCUS_FLAG;
+import static org.fdesigner.e4.ui.workbench.internal.workbench.Policy.DEBUG_MENUS;
+import static org.fdesigner.e4.ui.workbench.internal.workbench.Policy.DEBUG_MENUS_FLAG;
+import static org.fdesigner.e4.ui.workbench.internal.workbench.Policy.DEBUG_RENDERER;
+import static org.fdesigner.e4.ui.workbench.internal.workbench.Policy.DEBUG_RENDERER_FLAG;
+import static org.fdesigner.e4.ui.workbench.internal.workbench.Policy.DEBUG_WORKBENCH;
+import static org.fdesigner.e4.ui.workbench.internal.workbench.Policy.DEBUG_WORKBENCH_FLAG;
+import static org.fdesigner.e4.ui.workbench.internal.workbench.Policy.TRACE;
+import static org.fdesigner.e4.ui.workbench.internal.workbench.Policy.TRACE_FLAG;
 
 import java.util.Hashtable;
 import java.util.List;
-import org.eclipse.osgi.service.datalocation.Location;
-import org.eclipse.osgi.service.debug.DebugOptions;
-import org.eclipse.osgi.service.debug.DebugOptionsListener;
-import org.eclipse.osgi.service.debug.DebugTrace;
-import org.osgi.framework.Bundle;
-import org.osgi.framework.BundleActivator;
-import org.osgi.framework.BundleContext;
-import org.osgi.service.log.LogService;
-import org.osgi.util.tracker.BundleTracker;
-import org.osgi.util.tracker.ServiceTracker;
+
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.framework.framework.BundleActivator;
+import org.fdesigner.framework.framework.BundleContext;
+import org.fdesigner.framework.util.tracker.BundleTracker;
+import org.fdesigner.framework.util.tracker.ServiceTracker;
+import org.fdesigner.services.log.LogService;
+import org.fdesigner.supplement.service.datalocation.Location;
+import org.fdesigner.supplement.service.debug.DebugOptions;
+import org.fdesigner.supplement.service.debug.DebugOptionsListener;
+import org.fdesigner.supplement.service.debug.DebugTrace;
 
 /**
  * BundleActivator to access the required OSGi services.

@@ -14,18 +14,8 @@
  *     Lars Vogel <Lars.Vogel@gmail.com> - Bug 422702
  *     IBM Corporation
  *******************************************************************************/
-package org.eclipse.e4.ui.css.swt.properties.css2;
+package org.fdesigner.e4.ui.css.swt.properties.css2;
 
-import org.eclipse.e4.ui.css.core.dom.properties.ICSSPropertyHandler2;
-import org.eclipse.e4.ui.css.core.dom.properties.css2.AbstractCSSPropertyFontHandler;
-import org.eclipse.e4.ui.css.core.dom.properties.css2.CSS2FontProperties;
-import org.eclipse.e4.ui.css.core.dom.properties.css2.ICSSPropertyFontHandler;
-import org.eclipse.e4.ui.css.core.engine.CSSEngine;
-import org.eclipse.e4.ui.css.core.exceptions.UnsupportedPropertyException;
-import org.eclipse.e4.ui.css.swt.dom.ItemElement;
-import org.eclipse.e4.ui.css.swt.helpers.CSSSWTFontHelper;
-import org.eclipse.e4.ui.css.swt.helpers.SWTElementHelpers;
-import org.eclipse.e4.ui.css.swt.properties.custom.CTabETabHelper;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.custom.CTabFolder;
 import org.eclipse.swt.custom.CTabItem;
@@ -36,6 +26,16 @@ import org.eclipse.swt.widgets.Event;
 import org.eclipse.swt.widgets.Item;
 import org.eclipse.swt.widgets.Listener;
 import org.eclipse.swt.widgets.Widget;
+import org.fdesigner.e4.ui.css.core.dom.properties.ICSSPropertyHandler2;
+import org.fdesigner.e4.ui.css.core.dom.properties.css2.AbstractCSSPropertyFontHandler;
+import org.fdesigner.e4.ui.css.core.dom.properties.css2.CSS2FontProperties;
+import org.fdesigner.e4.ui.css.core.dom.properties.css2.ICSSPropertyFontHandler;
+import org.fdesigner.e4.ui.css.core.engine.CSSEngine;
+import org.fdesigner.e4.ui.css.core.exceptions.UnsupportedPropertyException;
+import org.fdesigner.e4.ui.css.swt.dom.ItemElement;
+import org.fdesigner.e4.ui.css.swt.helpers.CSSSWTFontHelper;
+import org.fdesigner.e4.ui.css.swt.helpers.SWTElementHelpers;
+import org.fdesigner.e4.ui.css.swt.properties.custom.CTabETabHelper;
 import org.w3c.dom.css.CSSStyleDeclaration;
 import org.w3c.dom.css.CSSValue;
 

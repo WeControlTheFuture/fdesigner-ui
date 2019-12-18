@@ -11,7 +11,7 @@
  * Contributors:
  *      IBM Corporation - initial API and implementation
  */
-package org.eclipse.e4.ui.model.application.descriptor.basic;
+package org.fdesigner.e4.ui.model.application.descriptor.basic;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +27,7 @@ public interface MBasicFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	MBasicFactory INSTANCE = org.eclipse.e4.ui.model.application.descriptor.basic.impl.BasicFactoryImpl.eINSTANCE;
+	MBasicFactory INSTANCE = org.fdesigner.e4.ui.model.application.descriptor.basic.impl.BasicFactoryImpl.eINSTANCE;
 
 	/**
 	 * Returns a new object of class '<em>Part Descriptor</em>'.

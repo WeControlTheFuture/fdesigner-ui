@@ -11,11 +11,11 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.e4.ui.css.swt.dom.preference;
+package org.fdesigner.e4.ui.css.swt.dom.preference;
 
-import org.eclipse.core.runtime.preferences.IEclipsePreferences;
-import org.eclipse.e4.ui.css.core.dom.IElementProvider;
-import org.eclipse.e4.ui.css.core.engine.CSSEngine;
+import org.fdesigner.e4.ui.css.core.dom.IElementProvider;
+import org.fdesigner.e4.ui.css.core.engine.CSSEngine;
+import org.fdesigner.runtime.preferences.runtime.preferences.IEclipsePreferences;
 import org.w3c.dom.Element;
 
 public class EclipsePreferencesProvider implements IElementProvider {

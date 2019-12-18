@@ -20,7 +20,7 @@
  *     Paul Pazderski <paul-eclipse@ppazderski.de> - Bug 549361
  *******************************************************************************/
 
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
 import java.io.File;
 import java.io.IOException;

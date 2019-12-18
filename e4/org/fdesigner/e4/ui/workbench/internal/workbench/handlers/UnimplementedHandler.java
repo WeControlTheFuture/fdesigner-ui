@@ -11,10 +11,10 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.e4.ui.internal.workbench.handlers;
+package org.fdesigner.e4.ui.workbench.internal.workbench.handlers;
 
-import org.eclipse.e4.core.di.annotations.Execute;
-import org.eclipse.e4.ui.workbench.IWorkbench;
+import org.fdesigner.e4.core.di.annotations.Execute;
+import org.fdesigner.e4.ui.workbench.IWorkbench;
 
 public class UnimplementedHandler {
 	@Execute

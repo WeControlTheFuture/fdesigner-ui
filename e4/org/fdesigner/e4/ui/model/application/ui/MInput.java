@@ -12,7 +12,7 @@
  *      IBM Corporation - initial API and implementation
  *    Olivier Prouvost <olivier.prouvost@opcoach.com> - Bug 509868
  */
-package org.eclipse.e4.ui.model.application.ui;
+package org.fdesigner.e4.ui.model.application.ui;
 
 /**
  * <!-- begin-user-doc -->

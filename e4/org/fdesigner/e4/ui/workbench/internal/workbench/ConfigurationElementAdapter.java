@@ -12,12 +12,12 @@
  *     IBM Corporation - initial API and implementation
  *     Simon Scholz <simon.scholz@vogella.com> - Bug 460405
  *******************************************************************************/
-package org.eclipse.e4.ui.internal.workbench;
+package org.fdesigner.e4.ui.workbench.internal.workbench;
 
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IAdapterFactory;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.e4.ui.workbench.modeling.ModelHandlerBase;
+import org.fdesigner.e4.ui.workbench.modeling.ModelHandlerBase;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IAdapterFactory;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
 
 public class ConfigurationElementAdapter extends ModelHandlerBase implements IAdapterFactory {
 

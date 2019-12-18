@@ -11,11 +11,11 @@
  * Contributors:
  *     Fabio Zadrozny <fabiofz at gmail dot com> - initial API and implementation
  *******************************************************************************/
-package org.eclipse.e4.ui.css.swt.dom;
+package org.fdesigner.e4.ui.css.swt.dom;
 
-import org.eclipse.e4.ui.css.core.engine.CSSEngine;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Link;
+import org.fdesigner.e4.ui.css.core.engine.CSSEngine;
 
 public class LinkElement extends ControlElement {
 

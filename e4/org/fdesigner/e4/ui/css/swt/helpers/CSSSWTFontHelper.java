@@ -13,18 +13,10 @@
  *     IBM Corporation
  *     Remy Chi Jian Suen <remy.suen@gmail.com>
  *******************************************************************************/
-package org.eclipse.e4.ui.css.swt.helpers;
+package org.fdesigner.e4.ui.css.swt.helpers;
 
-import static org.eclipse.e4.ui.css.swt.helpers.ThemeElementDefinitionHelper.normalizeId;
+import static org.fdesigner.e4.ui.css.swt.helpers.ThemeElementDefinitionHelper.normalizeId;
 
-import org.eclipse.e4.ui.css.core.css2.CSS2FontHelper;
-import org.eclipse.e4.ui.css.core.css2.CSS2FontPropertiesHelpers;
-import org.eclipse.e4.ui.css.core.css2.CSS2PrimitiveValueImpl;
-import org.eclipse.e4.ui.css.core.dom.properties.css2.CSS2FontProperties;
-import org.eclipse.e4.ui.css.core.dom.properties.css2.CSS2FontPropertiesImpl;
-import org.eclipse.e4.ui.css.core.engine.CSSElementContext;
-import org.eclipse.e4.ui.internal.css.swt.CSSActivator;
-import org.eclipse.e4.ui.internal.css.swt.definition.IColorAndFontProvider;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.custom.CTabItem;
 import org.eclipse.swt.graphics.Font;
@@ -32,6 +24,14 @@ import org.eclipse.swt.graphics.FontData;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Widget;
+import org.fdesigner.e4.ui.css.core.css2.CSS2FontHelper;
+import org.fdesigner.e4.ui.css.core.css2.CSS2FontPropertiesHelpers;
+import org.fdesigner.e4.ui.css.core.css2.CSS2PrimitiveValueImpl;
+import org.fdesigner.e4.ui.css.core.dom.properties.css2.CSS2FontProperties;
+import org.fdesigner.e4.ui.css.core.dom.properties.css2.CSS2FontPropertiesImpl;
+import org.fdesigner.e4.ui.css.core.engine.CSSElementContext;
+import org.fdesigner.e4.ui.css.swt.internal.css.swt.CSSActivator;
+import org.fdesigner.e4.ui.css.swt.internal.css.swt.definition.IColorAndFontProvider;
 import org.w3c.dom.css.CSSPrimitiveValue;
 import org.w3c.dom.css.CSSValue;
 

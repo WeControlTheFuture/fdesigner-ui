@@ -11,22 +11,23 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
 import java.util.ArrayList;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.e4.ui.model.application.ui.basic.MPart;
-import org.eclipse.jface.action.MenuManager;
-import org.eclipse.jface.viewers.ISelectionProvider;
-import org.eclipse.ui.IActionBars2;
-import org.eclipse.ui.IEditorActionBarContributor;
-import org.eclipse.ui.IEditorPart;
-import org.eclipse.ui.IEditorSite;
-import org.eclipse.ui.IWorkbenchPart;
-import org.eclipse.ui.IWorkbenchPartReference;
-import org.eclipse.ui.SubActionBars;
-import org.eclipse.ui.SubActionBars2;
-import org.eclipse.ui.dnd.IDragAndDropService;
+
+import org.fdesigner.e4.ui.model.application.ui.basic.MPart;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.ui.jface.action.MenuManager;
+import org.fdesigner.ui.jface.viewers.ISelectionProvider;
+import org.fdesigner.workbench.IActionBars2;
+import org.fdesigner.workbench.IEditorActionBarContributor;
+import org.fdesigner.workbench.IEditorPart;
+import org.fdesigner.workbench.IEditorSite;
+import org.fdesigner.workbench.IWorkbenchPart;
+import org.fdesigner.workbench.IWorkbenchPartReference;
+import org.fdesigner.workbench.SubActionBars;
+import org.fdesigner.workbench.SubActionBars2;
+import org.fdesigner.workbench.dnd.IDragAndDropService;
 
 /**
  * An editor container manages the services for an editor.

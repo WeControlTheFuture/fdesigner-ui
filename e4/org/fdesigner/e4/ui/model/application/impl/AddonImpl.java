@@ -11,10 +11,10 @@
  * Contributors:
  *      IBM Corporation - initial API and implementation
  */
-package org.eclipse.e4.ui.model.application.impl;
+package org.fdesigner.e4.ui.model.application.impl;
 
-import org.eclipse.e4.ui.model.application.MAddon;
 import org.eclipse.emf.ecore.EClass;
+import org.fdesigner.e4.ui.model.application.MAddon;
 
 /**
  * <!-- begin-user-doc -->

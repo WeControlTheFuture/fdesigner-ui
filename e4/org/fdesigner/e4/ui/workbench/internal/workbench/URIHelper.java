@@ -14,15 +14,16 @@
  *     Lars Vogel <Lars.Vogel@vogela.com> - Bug 449859
  ******************************************************************************/
 
-package org.eclipse.e4.ui.internal.workbench;
+package org.fdesigner.e4.ui.workbench.internal.workbench;
 
 import java.net.URI;
 import java.net.URISyntaxException;
-import org.eclipse.core.runtime.IContributor;
-import org.eclipse.core.runtime.spi.RegistryContributor;
-import org.osgi.framework.Bundle;
-import org.osgi.framework.wiring.BundleRevision;
-import org.osgi.service.log.LogService;
+
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.framework.framework.wiring.BundleRevision;
+import org.fdesigner.runtime.registry.runtime.IContributor;
+import org.fdesigner.runtime.registry.runtime.spi.RegistryContributor;
+import org.fdesigner.services.log.LogService;
 
 /**
  * Collection of URI-related utilities

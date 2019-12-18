@@ -11,11 +11,10 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.e4.ui.css.swt.dom.definition;
+package org.fdesigner.e4.ui.css.swt.dom.definition;
 
-import org.eclipse.e4.ui.css.core.engine.CSSEngine;
-
-import org.eclipse.e4.ui.internal.css.swt.definition.IFontDefinitionOverridable;
+import org.fdesigner.e4.ui.css.core.engine.CSSEngine;
+import org.fdesigner.e4.ui.css.swt.internal.css.swt.definition.IFontDefinitionOverridable;
 
 public class FontDefinitionElement extends ThemeDefinitionElement<IFontDefinitionOverridable> {
 	public FontDefinitionElement(IFontDefinitionOverridable definition,

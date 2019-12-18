@@ -11,9 +11,8 @@
  * Contributors:
  *     Fabio Zadrozny <fabiofz@gmail.com> - initial API and implementation
  *******************************************************************************/
-package org.eclipse.e4.ui.internal.css.swt.dom.scrollbar;
+package org.fdesigner.e4.ui.css.swt.internal.css.swt.dom.scrollbar;
 
-import org.eclipse.core.runtime.Platform;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.ControlEvent;
 import org.eclipse.swt.events.ControlListener;
@@ -35,6 +34,7 @@ import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Event;
 import org.eclipse.swt.widgets.Listener;
 import org.eclipse.swt.widgets.Scrollable;
+import org.fdesigner.runtime.core.Platform;
 
 public abstract class AbstractThemedScrollBarAdapter
 implements ControlListener, Listener, DisposeListener, KeyListener, MouseWheelListener, SelectionListener {

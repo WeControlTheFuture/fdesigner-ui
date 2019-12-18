@@ -12,14 +12,14 @@
  *     IBM Corporation - initial API and implementation
  *     Timo Kinnunen <timo.kinnunen@gmail.com> - bug 450727
  *******************************************************************************/
-package org.eclipse.e4.ui.css.swt.dom.definition;
+package org.fdesigner.e4.ui.css.swt.dom.definition;
 
-import static org.eclipse.e4.ui.css.swt.helpers.ThemeElementDefinitionHelper.escapeId;
+import static org.fdesigner.e4.ui.css.swt.helpers.ThemeElementDefinitionHelper.escapeId;
 
-import org.eclipse.e4.ui.css.core.dom.ElementAdapter;
-import org.eclipse.e4.ui.css.core.engine.CSSEngine;
-import org.eclipse.e4.ui.css.core.utils.ClassUtils;
-import org.eclipse.e4.ui.internal.css.swt.definition.IThemeElementDefinitionOverridable;
+import org.fdesigner.e4.ui.css.core.dom.ElementAdapter;
+import org.fdesigner.e4.ui.css.core.engine.CSSEngine;
+import org.fdesigner.e4.ui.css.core.utils.ClassUtils;
+import org.fdesigner.e4.ui.css.swt.internal.css.swt.definition.IThemeElementDefinitionOverridable;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 

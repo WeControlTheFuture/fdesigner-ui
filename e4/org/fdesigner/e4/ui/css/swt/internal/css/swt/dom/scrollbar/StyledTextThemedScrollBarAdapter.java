@@ -11,10 +11,8 @@
  * Contributors:
  *     Fabio Zadrozny <fabiofz@gmail.com> - initial API and implementation
  *******************************************************************************/
-package org.eclipse.e4.ui.internal.css.swt.dom.scrollbar;
+package org.fdesigner.e4.ui.css.swt.internal.css.swt.dom.scrollbar;
 
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.e4.ui.internal.css.swt.CSSActivator;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.custom.StyledText;
 import org.eclipse.swt.custom.StyledTextContent;
@@ -31,7 +29,11 @@ import org.eclipse.swt.graphics.Rectangle;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.ScrollBar;
 import org.eclipse.swt.widgets.Scrollable;
-import org.osgi.service.log.LogService;
+import org.fdesigner.e4.ui.css.swt.internal.css.swt.CSSActivator;
+import org.fdesigner.e4.ui.css.swt.internal.css.swt.dom.scrollbar.AbstractThemedScrollBarAdapter.IScrollBarPainter;
+import org.fdesigner.e4.ui.css.swt.internal.css.swt.dom.scrollbar.AbstractThemedScrollBarAdapter.ScrollBarSettings;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.services.log.LogService;
 
 /**
  * An implementation which covers showing themed scrollbars for a StyledText.

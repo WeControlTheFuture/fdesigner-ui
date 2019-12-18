@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.e4.ui.css.swt.helpers;
+package org.fdesigner.e4.ui.css.swt.helpers;
 
 public class ThemeElementDefinitionHelper {
 	public static String escapeId(String id) {

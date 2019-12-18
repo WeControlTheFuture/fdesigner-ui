@@ -11,11 +11,11 @@
  * Contributors:
  *     Angelo Zerr <angelo.zerr@gmail.com> - initial API and implementation
  *******************************************************************************/
-package org.eclipse.e4.ui.css.swt.engine;
+package org.fdesigner.e4.ui.css.swt.engine;
 
-import org.eclipse.e4.ui.css.core.engine.CSSEngine;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Display;
+import org.fdesigner.e4.ui.css.core.engine.CSSEngine;
 
 
 /**

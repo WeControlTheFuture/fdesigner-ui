@@ -12,10 +12,11 @@
  *      Tom Schindl <tom.schindl@bestsolution.at> - initial API and implementation
  *      IBM Corporation - initial API and implementation
  */
-package org.eclipse.e4.ui.model.fragment;
+package org.fdesigner.e4.ui.model.fragment;
 
 import java.util.List;
-import org.eclipse.e4.ui.model.application.MApplicationElement;
+
+import org.fdesigner.e4.ui.model.application.MApplicationElement;
 
 /**
  * <!-- begin-user-doc -->

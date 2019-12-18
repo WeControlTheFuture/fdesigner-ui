@@ -11,15 +11,15 @@
  * Contributors:
  *     Angelo Zerr <angelo.zerr@gmail.com> - initial API and implementation
  *******************************************************************************/
-package org.eclipse.e4.ui.css.swt.properties.converters;
+package org.fdesigner.e4.ui.css.swt.properties.converters;
 
-import org.eclipse.e4.ui.css.core.dom.properties.converters.ICSSValueConverter;
-import org.eclipse.e4.ui.css.core.dom.properties.converters.ICSSValueConverterConfig;
-import org.eclipse.e4.ui.css.core.engine.CSSEngine;
-import org.eclipse.e4.ui.css.swt.helpers.CSSSWTFontHelper;
 import org.eclipse.swt.graphics.Font;
 import org.eclipse.swt.graphics.FontData;
 import org.eclipse.swt.widgets.Display;
+import org.fdesigner.e4.ui.css.core.dom.properties.converters.ICSSValueConverter;
+import org.fdesigner.e4.ui.css.core.dom.properties.converters.ICSSValueConverterConfig;
+import org.fdesigner.e4.ui.css.core.engine.CSSEngine;
+import org.fdesigner.e4.ui.css.swt.helpers.CSSSWTFontHelper;
 import org.w3c.dom.css.CSSValue;
 
 public class CSSValueSWTFontConverterImpl extends

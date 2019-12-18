@@ -12,7 +12,7 @@
  *      IBM Corporation - initial API and implementation
  *      Fabio Zadrozny - Bug 465711
  *******************************************************************************/
-package org.eclipse.e4.ui.internal.css.swt;
+package org.fdesigner.e4.ui.css.swt.internal.css.swt;
 
 import org.eclipse.swt.graphics.Color;
 

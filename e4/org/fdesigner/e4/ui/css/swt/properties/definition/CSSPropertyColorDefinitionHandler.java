@@ -12,13 +12,13 @@
  *     IBM Corporation - initial API and implementation
  *     Stefan Winkler <stefan@winklerweb.net> - Bug 459961
  *******************************************************************************/
-package org.eclipse.e4.ui.css.swt.properties.definition;
+package org.fdesigner.e4.ui.css.swt.properties.definition;
 
-import org.eclipse.e4.ui.css.core.dom.properties.ICSSPropertyHandler;
-import org.eclipse.e4.ui.css.core.engine.CSSEngine;
-import org.eclipse.e4.ui.css.swt.dom.definition.ColorDefinitionElement;
-import org.eclipse.e4.ui.css.swt.helpers.CSSSWTColorHelper;
-import org.eclipse.e4.ui.internal.css.swt.definition.IColorDefinitionOverridable;
+import org.fdesigner.e4.ui.css.core.dom.properties.ICSSPropertyHandler;
+import org.fdesigner.e4.ui.css.core.engine.CSSEngine;
+import org.fdesigner.e4.ui.css.swt.dom.definition.ColorDefinitionElement;
+import org.fdesigner.e4.ui.css.swt.helpers.CSSSWTColorHelper;
+import org.fdesigner.e4.ui.css.swt.internal.css.swt.definition.IColorDefinitionOverridable;
 import org.w3c.dom.css.CSSValue;
 
 public class CSSPropertyColorDefinitionHandler implements ICSSPropertyHandler {

@@ -13,23 +13,24 @@
  *     Lars Vogel <lars.vogel@gmail.com> - Bug 395161
  ******************************************************************************/
 
-package org.eclipse.e4.ui.internal.workbench.addons;
+package org.fdesigner.e4.ui.workbench.internal.workbench.addons;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 import javax.inject.Inject;
-import org.eclipse.core.commands.contexts.Context;
-import org.eclipse.core.commands.contexts.ContextManager;
-import org.eclipse.e4.core.services.events.IEventBroker;
-import org.eclipse.e4.core.services.log.Logger;
-import org.eclipse.e4.ui.internal.workbench.Activator;
-import org.eclipse.e4.ui.internal.workbench.Policy;
-import org.eclipse.e4.ui.model.LocalizationHelper;
-import org.eclipse.e4.ui.model.application.MApplication;
-import org.eclipse.e4.ui.model.application.commands.MBindingContext;
-import org.eclipse.e4.ui.workbench.UIEvents;
-import org.osgi.service.event.Event;
-import org.osgi.service.event.EventHandler;
+
+import org.fdesigner.commands.contexts.Context;
+import org.fdesigner.commands.contexts.ContextManager;
+import org.fdesigner.e4.core.services.events.IEventBroker;
+import org.fdesigner.e4.core.services.log.Logger;
+import org.fdesigner.e4.ui.model.LocalizationHelper;
+import org.fdesigner.e4.ui.model.application.MApplication;
+import org.fdesigner.e4.ui.model.application.commands.MBindingContext;
+import org.fdesigner.e4.ui.workbench.UIEvents;
+import org.fdesigner.e4.ui.workbench.internal.workbench.Activator;
+import org.fdesigner.e4.ui.workbench.internal.workbench.Policy;
+import org.fdesigner.services.event.Event;
+import org.fdesigner.services.event.EventHandler;
 
 /**
  * Process contexts in the model, feeding them into the command service.

@@ -11,11 +11,11 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.intro;
+package org.fdesigner.workbench.internal.intro;
 
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.ui.intro.IIntroPart;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.workbench.intro.IIntroPart;
 
 /**
  * Describes an introduction extension.

@@ -151,13 +151,13 @@ public final class KeySequence implements Comparable {
 	 *                       sequence; must not be <code>null</code>.
 	 * @return a key sequence; never <code>null</code>.
 	 */
-	public static KeySequence getInstance(final org.eclipse.jface.bindings.keys.KeySequence newKeySequence) {
-		final org.eclipse.jface.bindings.keys.KeyStroke[] newKeyStrokes = newKeySequence.getKeyStrokes();
+	public static KeySequence getInstance(final org.fdesigner.ui.jface.bindings.keys.KeySequence newKeySequence) {
+		final org.fdesigner.ui.jface.bindings.keys.KeyStroke[] newKeyStrokes = newKeySequence.getKeyStrokes();
 		final int newKeyStrokesCount = newKeyStrokes.length;
 		final List legacyKeyStrokes = new ArrayList(newKeyStrokesCount);
 
 		for (int i = 0; i < newKeyStrokesCount; i++) {
-			final org.eclipse.jface.bindings.keys.KeyStroke newKeyStroke = newKeyStrokes[i];
+			final org.fdesigner.ui.jface.bindings.keys.KeyStroke newKeyStroke = newKeyStrokes[i];
 			legacyKeyStrokes.add(SWTKeySupport
 					.convertAcceleratorToKeyStroke(newKeyStroke.getModifierKeys() | newKeyStroke.getNaturalKey()));
 		}

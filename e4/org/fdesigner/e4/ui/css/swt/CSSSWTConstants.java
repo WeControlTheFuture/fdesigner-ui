@@ -12,9 +12,9 @@
  *     Angelo Zerr <angelo.zerr@gmail.com> - initial API and implementation
  *     IBM Corporation
  *******************************************************************************/
-package org.eclipse.e4.ui.css.swt;
+package org.fdesigner.e4.ui.css.swt;
 
-import org.eclipse.e4.ui.css.core.dom.properties.CSSBorderProperties;
+import org.fdesigner.e4.ui.css.core.dom.properties.CSSBorderProperties;
 
 public class CSSSWTConstants {
 

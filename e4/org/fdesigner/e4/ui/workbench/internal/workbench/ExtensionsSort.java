@@ -14,19 +14,20 @@
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 472654
  ******************************************************************************/
 
-package org.eclipse.e4.ui.internal.workbench;
+package org.fdesigner.e4.ui.workbench.internal.workbench;
 
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-import org.eclipse.core.runtime.IContributor;
-import org.eclipse.core.runtime.IExtension;
-import org.osgi.framework.Bundle;
-import org.osgi.framework.namespace.BundleNamespace;
-import org.osgi.framework.wiring.BundleWire;
-import org.osgi.framework.wiring.BundleWiring;
+
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.framework.framework.namespace.BundleNamespace;
+import org.fdesigner.framework.framework.wiring.BundleWire;
+import org.fdesigner.framework.framework.wiring.BundleWiring;
+import org.fdesigner.runtime.registry.runtime.IContributor;
+import org.fdesigner.runtime.registry.runtime.IExtension;
 
 /**
  * Sort {@link IExtension}s by their plug-in dependencies such that any extension from bundle A

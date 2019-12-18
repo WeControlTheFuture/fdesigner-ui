@@ -14,7 +14,7 @@
  *     Andrey Loskutov <loskutov@gmx.de> - Bug 459964
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 472654
  *******************************************************************************/
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
 import java.io.IOException;
 import java.io.StringReader;
@@ -23,38 +23,39 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IAdaptable;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.e4.core.contexts.IEclipseContext;
-import org.eclipse.e4.ui.model.application.ui.basic.MPart;
-import org.eclipse.e4.ui.workbench.IPresentationEngine;
-import org.eclipse.jface.internal.provisional.action.ICoolBarManager2;
-import org.eclipse.jface.preference.IPreferenceStore;
-import org.eclipse.osgi.util.NLS;
-import org.eclipse.ui.IEditorActionBarContributor;
-import org.eclipse.ui.IEditorInput;
-import org.eclipse.ui.IEditorPart;
-import org.eclipse.ui.IEditorReference;
-import org.eclipse.ui.IEditorRegistry;
-import org.eclipse.ui.IElementFactory;
-import org.eclipse.ui.IMemento;
-import org.eclipse.ui.IPersistableEditor;
-import org.eclipse.ui.IPersistableElement;
-import org.eclipse.ui.IWorkbenchPage;
-import org.eclipse.ui.IWorkbenchPart;
-import org.eclipse.ui.IWorkbenchPart3;
-import org.eclipse.ui.PartInitException;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.WorkbenchException;
-import org.eclipse.ui.XMLMemento;
+
 import org.eclipse.ui.internal.editorsupport.ComponentSupport;
-import org.eclipse.ui.internal.part.NullEditorInput;
-import org.eclipse.ui.internal.registry.EditorDescriptor;
-import org.eclipse.ui.internal.registry.EditorRegistry;
-import org.eclipse.ui.internal.util.Util;
+import org.fdesigner.e4.core.contexts.IEclipseContext;
+import org.fdesigner.e4.ui.model.application.ui.basic.MPart;
+import org.fdesigner.e4.ui.workbench.IPresentationEngine;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IAdaptable;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.ui.jface.internal.provisional.action.ICoolBarManager2;
+import org.fdesigner.ui.jface.preference.IPreferenceStore;
+import org.fdesigner.workbench.IEditorActionBarContributor;
+import org.fdesigner.workbench.IEditorInput;
+import org.fdesigner.workbench.IEditorPart;
+import org.fdesigner.workbench.IEditorReference;
+import org.fdesigner.workbench.IEditorRegistry;
+import org.fdesigner.workbench.IElementFactory;
+import org.fdesigner.workbench.IMemento;
+import org.fdesigner.workbench.IPersistableEditor;
+import org.fdesigner.workbench.IPersistableElement;
+import org.fdesigner.workbench.IWorkbenchPage;
+import org.fdesigner.workbench.IWorkbenchPart;
+import org.fdesigner.workbench.IWorkbenchPart3;
+import org.fdesigner.workbench.PartInitException;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.WorkbenchException;
+import org.fdesigner.workbench.XMLMemento;
+import org.fdesigner.workbench.internal.part.NullEditorInput;
+import org.fdesigner.workbench.internal.registry.EditorDescriptor;
+import org.fdesigner.workbench.internal.registry.EditorRegistry;
+import org.fdesigner.workbench.internal.util.Util;
 
 public class EditorReference extends WorkbenchPartReference implements IEditorReference {
 

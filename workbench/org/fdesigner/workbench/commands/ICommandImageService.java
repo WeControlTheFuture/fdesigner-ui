@@ -11,11 +11,11 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.commands;
+package org.fdesigner.workbench.commands;
 
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.ui.internal.commands.CommandImageManager;
-import org.eclipse.ui.services.IDisposable;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.workbench.internal.commands.CommandImageManager;
+import org.fdesigner.workbench.services.IDisposable;
 
 /**
  * <p>

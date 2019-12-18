@@ -13,7 +13,7 @@
  *      IBM Corporation - initial API and implementation
  *      Steven Spungin <steven@spungin.tv> - Bug 437958
  */
-package org.eclipse.e4.ui.model.fragment;
+package org.fdesigner.e4.ui.model.fragment;
 
 /**
  * <!-- begin-user-doc -->

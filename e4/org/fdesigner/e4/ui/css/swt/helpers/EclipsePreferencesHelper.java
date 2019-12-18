@@ -11,15 +11,16 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.e4.ui.css.swt.helpers;
+package org.fdesigner.e4.ui.css.swt.helpers;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import org.eclipse.core.runtime.preferences.IEclipsePreferences;
-import org.eclipse.core.runtime.preferences.IEclipsePreferences.IPreferenceChangeListener;
-import org.eclipse.core.runtime.preferences.IEclipsePreferences.PreferenceChangeEvent;
-import org.osgi.service.prefs.Preferences;
+
+import org.fdesigner.runtime.preferences.runtime.preferences.IEclipsePreferences;
+import org.fdesigner.runtime.preferences.runtime.preferences.IEclipsePreferences.IPreferenceChangeListener;
+import org.fdesigner.runtime.preferences.runtime.preferences.IEclipsePreferences.PreferenceChangeEvent;
+import org.fdesigner.runtime.preferences.service.prefs.Preferences;
 
 public class EclipsePreferencesHelper {
 	public static final String PROPS_OVERRIDDEN_BY_CSS_PROP = "overriddenByCSS";

@@ -12,7 +12,7 @@
  *      Tom Schindl <tom.schindl@bestsolution.at> - initial API and implementation
  *      IBM Corporation - initial API and implementation
  */
-package org.eclipse.e4.ui.model.fragment;
+package org.fdesigner.e4.ui.model.fragment;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +28,7 @@ public interface MFragmentFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	MFragmentFactory INSTANCE = org.eclipse.e4.ui.model.fragment.impl.FragmentFactoryImpl.eINSTANCE;
+	MFragmentFactory INSTANCE = org.fdesigner.e4.ui.model.fragment.impl.FragmentFactoryImpl.eINSTANCE;
 
 	/**
 	 * Returns a new object of class '<em>Model Fragments</em>'.

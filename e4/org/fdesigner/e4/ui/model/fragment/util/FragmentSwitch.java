@@ -12,15 +12,15 @@
  *      Tom Schindl <tom.schindl@bestsolution.at> - initial API and implementation
  *      IBM Corporation - initial API and implementation
  */
-package org.eclipse.e4.ui.model.fragment.util;
+package org.fdesigner.e4.ui.model.fragment.util;
 
-import org.eclipse.e4.ui.model.fragment.MModelFragment;
-import org.eclipse.e4.ui.model.fragment.MModelFragments;
-import org.eclipse.e4.ui.model.fragment.MStringModelFragment;
-import org.eclipse.e4.ui.model.fragment.impl.FragmentPackageImpl;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.util.Switch;
+import org.fdesigner.e4.ui.model.fragment.MModelFragment;
+import org.fdesigner.e4.ui.model.fragment.MModelFragments;
+import org.fdesigner.e4.ui.model.fragment.MStringModelFragment;
+import org.fdesigner.e4.ui.model.fragment.impl.FragmentPackageImpl;
 
 /**
  * <!-- begin-user-doc -->

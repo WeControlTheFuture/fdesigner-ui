@@ -11,9 +11,9 @@
  * Contributors:
  *      IBM Corporation - initial API and implementation
  */
-package org.eclipse.e4.ui.model.application.ui.basic;
+package org.fdesigner.e4.ui.model.application.ui.basic;
 
-import org.eclipse.e4.ui.model.application.ui.MGenericStack;
+import org.fdesigner.e4.ui.model.application.ui.MGenericStack;
 
 /**
  * <!-- begin-user-doc -->

@@ -12,17 +12,18 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.e4.ui.internal.workbench;
+package org.fdesigner.e4.ui.workbench.internal.workbench;
 
 import javax.inject.Inject;
-import org.eclipse.e4.core.di.annotations.Optional;
-import org.eclipse.e4.ui.di.UISynchronize;
-import org.eclipse.e4.ui.model.application.ui.MUIElement;
-import org.eclipse.e4.ui.model.application.ui.basic.MWindow;
-import org.eclipse.e4.ui.workbench.UIEvents.EventTags;
+
 import org.eclipse.emf.ecore.EObject;
-import org.osgi.service.event.Event;
-import org.osgi.service.event.EventHandler;
+import org.fdesigner.e4.core.di.UISynchronize;
+import org.fdesigner.e4.core.di.annotations.Optional;
+import org.fdesigner.e4.ui.model.application.ui.MUIElement;
+import org.fdesigner.e4.ui.model.application.ui.basic.MWindow;
+import org.fdesigner.e4.ui.workbench.UIEvents.EventTags;
+import org.fdesigner.services.event.Event;
+import org.fdesigner.services.event.EventHandler;
 
 /**
  * Event handler for the UIEvents.UIElement.TOPIC_WIDGET topic. Cleans up after

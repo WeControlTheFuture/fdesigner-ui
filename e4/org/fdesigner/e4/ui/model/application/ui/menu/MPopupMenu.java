@@ -11,9 +11,9 @@
  * Contributors:
  *      IBM Corporation - initial API and implementation
  */
-package org.eclipse.e4.ui.model.application.ui.menu;
+package org.fdesigner.e4.ui.model.application.ui.menu;
 
-import org.eclipse.e4.ui.model.application.ui.MContext;
+import org.fdesigner.e4.ui.model.application.ui.MContext;
 
 /**
  * <!-- begin-user-doc -->

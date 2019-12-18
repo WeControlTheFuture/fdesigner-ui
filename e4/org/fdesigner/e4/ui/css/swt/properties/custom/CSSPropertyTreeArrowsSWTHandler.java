@@ -11,13 +11,13 @@
  * Contributors:
  *     Fabio Zadrozny <fabiofz@gmail.com> - initial API and implementation
  *******************************************************************************/
-package org.eclipse.e4.ui.css.swt.properties.custom;
+package org.fdesigner.e4.ui.css.swt.properties.custom;
 
-import org.eclipse.e4.ui.css.core.dom.properties.ICSSPropertyHandler;
-import org.eclipse.e4.ui.css.core.engine.CSSEngine;
-import org.eclipse.e4.ui.css.swt.dom.TreeElement;
 import org.eclipse.swt.graphics.Color;
 import org.eclipse.swt.widgets.Tree;
+import org.fdesigner.e4.ui.css.core.dom.properties.ICSSPropertyHandler;
+import org.fdesigner.e4.ui.css.core.engine.CSSEngine;
+import org.fdesigner.e4.ui.css.swt.dom.TreeElement;
 import org.w3c.dom.css.CSSValue;
 
 /**

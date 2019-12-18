@@ -11,9 +11,9 @@
  * Contributors:
  *     Angelo Zerr <angelo.zerr@gmail.com> - initial API and implementation
  *******************************************************************************/
-package org.eclipse.e4.ui.css.swt.serializers;
+package org.fdesigner.e4.ui.css.swt.serializers;
 
-import org.eclipse.e4.ui.css.core.serializers.CSSSerializerConfiguration;
+import org.fdesigner.e4.ui.css.core.serializers.CSSSerializerConfiguration;
 
 /**
  * {@link CSSSerializerConfiguration} configuration used to get style of SWT control.

@@ -12,27 +12,28 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Map;
-import org.eclipse.core.runtime.Assert;
+
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Display;
-import org.eclipse.ui.IEditorInput;
-import org.eclipse.ui.IEditorPart;
-import org.eclipse.ui.IMemento;
-import org.eclipse.ui.INavigationHistory;
-import org.eclipse.ui.INavigationLocation;
-import org.eclipse.ui.INavigationLocationProvider;
-import org.eclipse.ui.IPartListener2;
-import org.eclipse.ui.IWorkbenchPage;
-import org.eclipse.ui.IWorkbenchPartReference;
-import org.eclipse.ui.IWorkbenchPartSite;
-import org.eclipse.ui.internal.StartupThreading.StartupRunnable;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.workbench.IEditorInput;
+import org.fdesigner.workbench.IEditorPart;
+import org.fdesigner.workbench.IMemento;
+import org.fdesigner.workbench.INavigationHistory;
+import org.fdesigner.workbench.INavigationLocation;
+import org.fdesigner.workbench.INavigationLocationProvider;
+import org.fdesigner.workbench.IPartListener2;
+import org.fdesigner.workbench.IWorkbenchPage;
+import org.fdesigner.workbench.IWorkbenchPartReference;
+import org.fdesigner.workbench.IWorkbenchPartSite;
+import org.fdesigner.workbench.internal.StartupThreading.StartupRunnable;
 
 /**
  * Implementation of the back and forward actions.

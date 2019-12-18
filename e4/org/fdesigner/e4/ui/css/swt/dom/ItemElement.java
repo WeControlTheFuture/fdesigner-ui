@@ -11,11 +11,11 @@
  * Contributors:
  *     Angelo Zerr <angelo.zerr@gmail.com> - initial API and implementation
  *******************************************************************************/
-package org.eclipse.e4.ui.css.swt.dom;
+package org.fdesigner.e4.ui.css.swt.dom;
 
-import org.eclipse.e4.ui.css.core.dom.CSSStylableElement;
-import org.eclipse.e4.ui.css.core.engine.CSSEngine;
 import org.eclipse.swt.widgets.Item;
+import org.fdesigner.e4.ui.css.core.dom.CSSStylableElement;
+import org.fdesigner.e4.ui.css.core.engine.CSSEngine;
 
 /**
  * {@link CSSStylableElement} implementation which wrap SWT {@link Item}.

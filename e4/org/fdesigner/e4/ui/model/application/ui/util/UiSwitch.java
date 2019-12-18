@@ -11,28 +11,28 @@
  * Contributors:
  *      IBM Corporation - initial API and implementation
  */
-package org.eclipse.e4.ui.model.application.ui.util;
+package org.fdesigner.e4.ui.model.application.ui.util;
 
-import org.eclipse.e4.ui.model.application.MApplicationElement;
-import org.eclipse.e4.ui.model.application.MContribution;
-import org.eclipse.e4.ui.model.application.ui.MContext;
-import org.eclipse.e4.ui.model.application.ui.MCoreExpression;
-import org.eclipse.e4.ui.model.application.ui.MDirtyable;
-import org.eclipse.e4.ui.model.application.ui.MElementContainer;
-import org.eclipse.e4.ui.model.application.ui.MExpression;
-import org.eclipse.e4.ui.model.application.ui.MGenericStack;
-import org.eclipse.e4.ui.model.application.ui.MGenericTile;
-import org.eclipse.e4.ui.model.application.ui.MGenericTrimContainer;
-import org.eclipse.e4.ui.model.application.ui.MImperativeExpression;
-import org.eclipse.e4.ui.model.application.ui.MInput;
-import org.eclipse.e4.ui.model.application.ui.MLocalizable;
-import org.eclipse.e4.ui.model.application.ui.MSnippetContainer;
-import org.eclipse.e4.ui.model.application.ui.MUIElement;
-import org.eclipse.e4.ui.model.application.ui.MUILabel;
-import org.eclipse.e4.ui.model.application.ui.impl.UiPackageImpl;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.util.Switch;
+import org.fdesigner.e4.ui.model.application.MApplicationElement;
+import org.fdesigner.e4.ui.model.application.MContribution;
+import org.fdesigner.e4.ui.model.application.ui.MContext;
+import org.fdesigner.e4.ui.model.application.ui.MCoreExpression;
+import org.fdesigner.e4.ui.model.application.ui.MDirtyable;
+import org.fdesigner.e4.ui.model.application.ui.MElementContainer;
+import org.fdesigner.e4.ui.model.application.ui.MExpression;
+import org.fdesigner.e4.ui.model.application.ui.MGenericStack;
+import org.fdesigner.e4.ui.model.application.ui.MGenericTile;
+import org.fdesigner.e4.ui.model.application.ui.MGenericTrimContainer;
+import org.fdesigner.e4.ui.model.application.ui.MImperativeExpression;
+import org.fdesigner.e4.ui.model.application.ui.MInput;
+import org.fdesigner.e4.ui.model.application.ui.MLocalizable;
+import org.fdesigner.e4.ui.model.application.ui.MSnippetContainer;
+import org.fdesigner.e4.ui.model.application.ui.MUIElement;
+import org.fdesigner.e4.ui.model.application.ui.MUILabel;
+import org.fdesigner.e4.ui.model.application.ui.impl.UiPackageImpl;
 
 /**
  * <!-- begin-user-doc -->

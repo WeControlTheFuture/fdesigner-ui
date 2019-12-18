@@ -11,18 +11,19 @@
  * Contributors:
  *      IBM Corporation - initial API and implementation
  */
-package org.eclipse.e4.ui.model.application.ui.basic;
+package org.fdesigner.e4.ui.model.application.ui.basic;
 
 import java.util.List;
-import org.eclipse.e4.ui.model.application.MContribution;
-import org.eclipse.e4.ui.model.application.commands.MBindings;
-import org.eclipse.e4.ui.model.application.commands.MHandlerContainer;
-import org.eclipse.e4.ui.model.application.ui.MContext;
-import org.eclipse.e4.ui.model.application.ui.MDirtyable;
-import org.eclipse.e4.ui.model.application.ui.MUIElement;
-import org.eclipse.e4.ui.model.application.ui.MUILabel;
-import org.eclipse.e4.ui.model.application.ui.menu.MMenu;
-import org.eclipse.e4.ui.model.application.ui.menu.MToolBar;
+
+import org.fdesigner.e4.ui.model.application.MContribution;
+import org.fdesigner.e4.ui.model.application.commands.MBindings;
+import org.fdesigner.e4.ui.model.application.commands.MHandlerContainer;
+import org.fdesigner.e4.ui.model.application.ui.MContext;
+import org.fdesigner.e4.ui.model.application.ui.MDirtyable;
+import org.fdesigner.e4.ui.model.application.ui.MUIElement;
+import org.fdesigner.e4.ui.model.application.ui.MUILabel;
+import org.fdesigner.e4.ui.model.application.ui.menu.MMenu;
+import org.fdesigner.e4.ui.model.application.ui.menu.MToolBar;
 
 /**
  * <!-- begin-user-doc -->

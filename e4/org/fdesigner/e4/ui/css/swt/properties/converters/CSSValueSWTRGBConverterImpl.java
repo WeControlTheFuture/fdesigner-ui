@@ -12,15 +12,15 @@
  *     Angelo Zerr <angelo.zerr@gmail.com> - initial API and implementation
  *     Stefan Winkler <stefan@winklerweb.net> - Bug 459961
  *******************************************************************************/
-package org.eclipse.e4.ui.css.swt.properties.converters;
+package org.fdesigner.e4.ui.css.swt.properties.converters;
 
-import org.eclipse.e4.ui.css.core.css2.CSS2ColorHelper;
-import org.eclipse.e4.ui.css.core.dom.properties.converters.AbstractCSSValueConverter;
-import org.eclipse.e4.ui.css.core.dom.properties.converters.ICSSValueConverter;
-import org.eclipse.e4.ui.css.core.dom.properties.converters.ICSSValueConverterConfig;
-import org.eclipse.e4.ui.css.core.engine.CSSEngine;
-import org.eclipse.e4.ui.css.swt.helpers.CSSSWTColorHelper;
 import org.eclipse.swt.graphics.RGB;
+import org.fdesigner.e4.ui.css.core.css2.CSS2ColorHelper;
+import org.fdesigner.e4.ui.css.core.dom.properties.converters.AbstractCSSValueConverter;
+import org.fdesigner.e4.ui.css.core.dom.properties.converters.ICSSValueConverter;
+import org.fdesigner.e4.ui.css.core.dom.properties.converters.ICSSValueConverterConfig;
+import org.fdesigner.e4.ui.css.core.engine.CSSEngine;
+import org.fdesigner.e4.ui.css.swt.helpers.CSSSWTColorHelper;
 import org.w3c.dom.css.CSSValue;
 import org.w3c.dom.css.RGBColor;
 

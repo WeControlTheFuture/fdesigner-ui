@@ -11,16 +11,17 @@
  * Contributors:
  *      IBM Corporation - initial API and implementation
  */
-package org.eclipse.e4.ui.model.application.ui.basic.impl;
+package org.fdesigner.e4.ui.model.application.ui.basic.impl;
 
 import java.util.Collection;
 import java.util.List;
-import org.eclipse.e4.ui.model.application.ui.basic.MTrimBar;
-import org.eclipse.e4.ui.model.application.ui.basic.MTrimElement;
-import org.eclipse.e4.ui.model.application.ui.impl.GenericTrimContainerImpl;
+
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.util.EObjectResolvingEList;
+import org.fdesigner.e4.ui.model.application.ui.basic.MTrimBar;
+import org.fdesigner.e4.ui.model.application.ui.basic.MTrimElement;
+import org.fdesigner.e4.ui.model.application.ui.impl.GenericTrimContainerImpl;
 
 /**
  * <!-- begin-user-doc -->

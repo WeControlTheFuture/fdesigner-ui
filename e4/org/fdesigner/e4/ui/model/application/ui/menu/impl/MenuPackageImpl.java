@@ -11,38 +11,8 @@
  * Contributors:
  *      IBM Corporation - initial API and implementation
  */
-package org.eclipse.e4.ui.model.application.ui.menu.impl;
+package org.fdesigner.e4.ui.model.application.ui.menu.impl;
 
-import org.eclipse.e4.ui.model.application.commands.impl.CommandsPackageImpl;
-import org.eclipse.e4.ui.model.application.impl.ApplicationPackageImpl;
-import org.eclipse.e4.ui.model.application.ui.advanced.impl.AdvancedPackageImpl;
-import org.eclipse.e4.ui.model.application.ui.basic.impl.BasicPackageImpl;
-import org.eclipse.e4.ui.model.application.ui.impl.UiPackageImpl;
-import org.eclipse.e4.ui.model.application.ui.menu.ItemType;
-import org.eclipse.e4.ui.model.application.ui.menu.MDirectMenuItem;
-import org.eclipse.e4.ui.model.application.ui.menu.MDirectToolItem;
-import org.eclipse.e4.ui.model.application.ui.menu.MDynamicMenuContribution;
-import org.eclipse.e4.ui.model.application.ui.menu.MHandledItem;
-import org.eclipse.e4.ui.model.application.ui.menu.MHandledMenuItem;
-import org.eclipse.e4.ui.model.application.ui.menu.MHandledToolItem;
-import org.eclipse.e4.ui.model.application.ui.menu.MItem;
-import org.eclipse.e4.ui.model.application.ui.menu.MMenu;
-import org.eclipse.e4.ui.model.application.ui.menu.MMenuContribution;
-import org.eclipse.e4.ui.model.application.ui.menu.MMenuContributions;
-import org.eclipse.e4.ui.model.application.ui.menu.MMenuElement;
-import org.eclipse.e4.ui.model.application.ui.menu.MMenuFactory;
-import org.eclipse.e4.ui.model.application.ui.menu.MMenuItem;
-import org.eclipse.e4.ui.model.application.ui.menu.MMenuSeparator;
-import org.eclipse.e4.ui.model.application.ui.menu.MPopupMenu;
-import org.eclipse.e4.ui.model.application.ui.menu.MToolBar;
-import org.eclipse.e4.ui.model.application.ui.menu.MToolBarContribution;
-import org.eclipse.e4.ui.model.application.ui.menu.MToolBarContributions;
-import org.eclipse.e4.ui.model.application.ui.menu.MToolBarElement;
-import org.eclipse.e4.ui.model.application.ui.menu.MToolBarSeparator;
-import org.eclipse.e4.ui.model.application.ui.menu.MToolControl;
-import org.eclipse.e4.ui.model.application.ui.menu.MToolItem;
-import org.eclipse.e4.ui.model.application.ui.menu.MTrimContribution;
-import org.eclipse.e4.ui.model.application.ui.menu.MTrimContributions;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EEnum;
@@ -52,6 +22,36 @@ import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 import org.eclipse.emf.ecore.impl.EPackageImpl;
+import org.fdesigner.e4.ui.model.application.commands.impl.CommandsPackageImpl;
+import org.fdesigner.e4.ui.model.application.impl.ApplicationPackageImpl;
+import org.fdesigner.e4.ui.model.application.ui.advanced.impl.AdvancedPackageImpl;
+import org.fdesigner.e4.ui.model.application.ui.basic.impl.BasicPackageImpl;
+import org.fdesigner.e4.ui.model.application.ui.impl.UiPackageImpl;
+import org.fdesigner.e4.ui.model.application.ui.menu.ItemType;
+import org.fdesigner.e4.ui.model.application.ui.menu.MDirectMenuItem;
+import org.fdesigner.e4.ui.model.application.ui.menu.MDirectToolItem;
+import org.fdesigner.e4.ui.model.application.ui.menu.MDynamicMenuContribution;
+import org.fdesigner.e4.ui.model.application.ui.menu.MHandledItem;
+import org.fdesigner.e4.ui.model.application.ui.menu.MHandledMenuItem;
+import org.fdesigner.e4.ui.model.application.ui.menu.MHandledToolItem;
+import org.fdesigner.e4.ui.model.application.ui.menu.MItem;
+import org.fdesigner.e4.ui.model.application.ui.menu.MMenu;
+import org.fdesigner.e4.ui.model.application.ui.menu.MMenuContribution;
+import org.fdesigner.e4.ui.model.application.ui.menu.MMenuContributions;
+import org.fdesigner.e4.ui.model.application.ui.menu.MMenuElement;
+import org.fdesigner.e4.ui.model.application.ui.menu.MMenuFactory;
+import org.fdesigner.e4.ui.model.application.ui.menu.MMenuItem;
+import org.fdesigner.e4.ui.model.application.ui.menu.MMenuSeparator;
+import org.fdesigner.e4.ui.model.application.ui.menu.MPopupMenu;
+import org.fdesigner.e4.ui.model.application.ui.menu.MToolBar;
+import org.fdesigner.e4.ui.model.application.ui.menu.MToolBarContribution;
+import org.fdesigner.e4.ui.model.application.ui.menu.MToolBarContributions;
+import org.fdesigner.e4.ui.model.application.ui.menu.MToolBarElement;
+import org.fdesigner.e4.ui.model.application.ui.menu.MToolBarSeparator;
+import org.fdesigner.e4.ui.model.application.ui.menu.MToolControl;
+import org.fdesigner.e4.ui.model.application.ui.menu.MToolItem;
+import org.fdesigner.e4.ui.model.application.ui.menu.MTrimContribution;
+import org.fdesigner.e4.ui.model.application.ui.menu.MTrimContributions;
 
 /**
  * <!-- begin-user-doc -->
@@ -100,7 +100,7 @@ public class MenuPackageImpl extends EPackageImpl {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final MenuPackageImpl eINSTANCE = org.eclipse.e4.ui.model.application.ui.menu.impl.MenuPackageImpl
+	public static final MenuPackageImpl eINSTANCE = org.fdesigner.e4.ui.model.application.ui.menu.impl.MenuPackageImpl
 			.init();
 
 	/**
@@ -6052,10 +6052,10 @@ public class MenuPackageImpl extends EPackageImpl {
 				? registeredPackage
 				: AdvancedPackageImpl.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE
-				.getEPackage(org.eclipse.e4.ui.model.application.descriptor.basic.impl.BasicPackageImpl.eNS_URI);
-		org.eclipse.e4.ui.model.application.descriptor.basic.impl.BasicPackageImpl theBasicPackage_1 = (org.eclipse.e4.ui.model.application.descriptor.basic.impl.BasicPackageImpl) (registeredPackage instanceof org.eclipse.e4.ui.model.application.descriptor.basic.impl.BasicPackageImpl
+				.getEPackage(org.fdesigner.e4.ui.model.application.descriptor.basic.impl.BasicPackageImpl.eNS_URI);
+		org.fdesigner.e4.ui.model.application.descriptor.basic.impl.BasicPackageImpl theBasicPackage_1 = (org.fdesigner.e4.ui.model.application.descriptor.basic.impl.BasicPackageImpl) (registeredPackage instanceof org.fdesigner.e4.ui.model.application.descriptor.basic.impl.BasicPackageImpl
 				? registeredPackage
-				: org.eclipse.e4.ui.model.application.descriptor.basic.impl.BasicPackageImpl.eINSTANCE);
+				: org.fdesigner.e4.ui.model.application.descriptor.basic.impl.BasicPackageImpl.eINSTANCE);
 
 		// Create package meta-data objects
 		theMenuPackage.createPackageContents();

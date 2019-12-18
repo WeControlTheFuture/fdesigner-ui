@@ -11,14 +11,14 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.e4.ui.css.swt.properties.definition;
+package org.fdesigner.e4.ui.css.swt.properties.definition;
 
-import static org.eclipse.e4.ui.css.swt.helpers.ThemeElementDefinitionHelper.normalizeId;
+import static org.fdesigner.e4.ui.css.swt.helpers.ThemeElementDefinitionHelper.normalizeId;
 
-import org.eclipse.e4.ui.css.core.dom.properties.ICSSPropertyHandler;
-import org.eclipse.e4.ui.css.core.engine.CSSEngine;
-import org.eclipse.e4.ui.css.swt.dom.definition.ThemesExtensionElement;
-import org.eclipse.e4.ui.internal.css.swt.definition.IThemesExtension;
+import org.fdesigner.e4.ui.css.core.dom.properties.ICSSPropertyHandler;
+import org.fdesigner.e4.ui.css.core.engine.CSSEngine;
+import org.fdesigner.e4.ui.css.swt.dom.definition.ThemesExtensionElement;
+import org.fdesigner.e4.ui.css.swt.internal.css.swt.definition.IThemesExtension;
 import org.w3c.dom.css.CSSValue;
 
 public class CSSPropertyThemesExtensionHandler implements ICSSPropertyHandler {

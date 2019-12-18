@@ -11,13 +11,13 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.e4.ui.internal.workbench;
+package org.fdesigner.e4.ui.workbench.internal.workbench;
 
-import org.eclipse.core.runtime.NullProgressMonitor;
-import org.eclipse.e4.core.contexts.ContextFunction;
-import org.eclipse.e4.core.contexts.IContextFunction;
-import org.eclipse.e4.core.contexts.IEclipseContext;
-import org.osgi.service.component.annotations.Component;
+import org.fdesigner.e4.core.contexts.ContextFunction;
+import org.fdesigner.e4.core.contexts.IContextFunction;
+import org.fdesigner.e4.core.contexts.IEclipseContext;
+import org.fdesigner.runtime.common.runtime.NullProgressMonitor;
+import org.fdesigner.services.component.annotations.Component;
 
 /**
  * This class provides a context function that returns a default progress monitor. This is generally

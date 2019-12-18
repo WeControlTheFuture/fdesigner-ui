@@ -11,30 +11,30 @@
  * Contributors:
  *      IBM Corporation - initial API and implementation
  */
-package org.eclipse.e4.ui.model.application.ui.menu.impl;
+package org.fdesigner.e4.ui.model.application.ui.menu.impl;
 
-import org.eclipse.e4.ui.model.application.ui.menu.ItemType;
-import org.eclipse.e4.ui.model.application.ui.menu.MDirectMenuItem;
-import org.eclipse.e4.ui.model.application.ui.menu.MDirectToolItem;
-import org.eclipse.e4.ui.model.application.ui.menu.MDynamicMenuContribution;
-import org.eclipse.e4.ui.model.application.ui.menu.MHandledMenuItem;
-import org.eclipse.e4.ui.model.application.ui.menu.MHandledToolItem;
-import org.eclipse.e4.ui.model.application.ui.menu.MMenu;
-import org.eclipse.e4.ui.model.application.ui.menu.MMenuContribution;
-import org.eclipse.e4.ui.model.application.ui.menu.MMenuFactory;
-import org.eclipse.e4.ui.model.application.ui.menu.MMenuSeparator;
-import org.eclipse.e4.ui.model.application.ui.menu.MPopupMenu;
-import org.eclipse.e4.ui.model.application.ui.menu.MToolBar;
-import org.eclipse.e4.ui.model.application.ui.menu.MToolBarContribution;
-import org.eclipse.e4.ui.model.application.ui.menu.MToolBarSeparator;
-import org.eclipse.e4.ui.model.application.ui.menu.MToolControl;
-import org.eclipse.e4.ui.model.application.ui.menu.MTrimContribution;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.impl.EFactoryImpl;
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
+import org.fdesigner.e4.ui.model.application.ui.menu.ItemType;
+import org.fdesigner.e4.ui.model.application.ui.menu.MDirectMenuItem;
+import org.fdesigner.e4.ui.model.application.ui.menu.MDirectToolItem;
+import org.fdesigner.e4.ui.model.application.ui.menu.MDynamicMenuContribution;
+import org.fdesigner.e4.ui.model.application.ui.menu.MHandledMenuItem;
+import org.fdesigner.e4.ui.model.application.ui.menu.MHandledToolItem;
+import org.fdesigner.e4.ui.model.application.ui.menu.MMenu;
+import org.fdesigner.e4.ui.model.application.ui.menu.MMenuContribution;
+import org.fdesigner.e4.ui.model.application.ui.menu.MMenuFactory;
+import org.fdesigner.e4.ui.model.application.ui.menu.MMenuSeparator;
+import org.fdesigner.e4.ui.model.application.ui.menu.MPopupMenu;
+import org.fdesigner.e4.ui.model.application.ui.menu.MToolBar;
+import org.fdesigner.e4.ui.model.application.ui.menu.MToolBarContribution;
+import org.fdesigner.e4.ui.model.application.ui.menu.MToolBarSeparator;
+import org.fdesigner.e4.ui.model.application.ui.menu.MToolControl;
+import org.fdesigner.e4.ui.model.application.ui.menu.MTrimContribution;
 
 /**
  * <!-- begin-user-doc -->

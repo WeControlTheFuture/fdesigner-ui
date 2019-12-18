@@ -11,19 +11,20 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.e4.ui.css.swt.properties.custom;
+package org.fdesigner.e4.ui.css.swt.properties.custom;
 
 import java.lang.reflect.Constructor;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.e4.ui.css.core.engine.CSSEngine;
-import org.eclipse.e4.ui.css.swt.helpers.URI;
-import org.eclipse.e4.ui.css.swt.properties.AbstractCSSPropertySWTHandler;
-import org.eclipse.e4.ui.internal.css.swt.CSSActivator;
+
 import org.eclipse.swt.custom.CTabFolder;
 import org.eclipse.swt.custom.CTabFolderRenderer;
 import org.eclipse.swt.widgets.Control;
-import org.osgi.framework.Bundle;
-import org.osgi.service.log.LogService;
+import org.fdesigner.e4.ui.css.core.engine.CSSEngine;
+import org.fdesigner.e4.ui.css.swt.helpers.URI;
+import org.fdesigner.e4.ui.css.swt.internal.css.swt.CSSActivator;
+import org.fdesigner.e4.ui.css.swt.properties.AbstractCSSPropertySWTHandler;
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.services.log.LogService;
 import org.w3c.dom.css.CSSPrimitiveValue;
 import org.w3c.dom.css.CSSValue;
 

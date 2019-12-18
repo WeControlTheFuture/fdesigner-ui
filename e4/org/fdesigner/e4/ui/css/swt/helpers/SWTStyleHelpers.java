@@ -11,7 +11,7 @@
  * Contributors:
  *     Angelo Zerr <angelo.zerr@gmail.com> - initial API and implementation
  *******************************************************************************/
-package org.eclipse.e4.ui.css.swt.helpers;
+package org.fdesigner.e4.ui.css.swt.helpers;
 
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Widget;

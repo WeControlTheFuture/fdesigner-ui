@@ -12,9 +12,9 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.e4.ui.internal.workbench;
+package org.fdesigner.e4.ui.workbench.internal.workbench;
 
-import org.eclipse.e4.ui.model.application.MApplicationElement;
+import org.fdesigner.e4.ui.model.application.MApplicationElement;
 
 /**
  *

@@ -11,18 +11,18 @@
  * Contributors:
  *      IBM Corporation - initial API and implementation
  */
-package org.eclipse.e4.ui.model.application.ui.impl;
+package org.fdesigner.e4.ui.model.application.ui.impl;
 
-import org.eclipse.e4.ui.model.application.ui.MCoreExpression;
-import org.eclipse.e4.ui.model.application.ui.MImperativeExpression;
-import org.eclipse.e4.ui.model.application.ui.MUiFactory;
-import org.eclipse.e4.ui.model.application.ui.SideValue;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.impl.EFactoryImpl;
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
+import org.fdesigner.e4.ui.model.application.ui.MCoreExpression;
+import org.fdesigner.e4.ui.model.application.ui.MImperativeExpression;
+import org.fdesigner.e4.ui.model.application.ui.MUiFactory;
+import org.fdesigner.e4.ui.model.application.ui.SideValue;
 
 /**
  * <!-- begin-user-doc -->

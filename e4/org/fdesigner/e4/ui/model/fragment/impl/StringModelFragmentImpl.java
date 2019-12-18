@@ -13,26 +13,28 @@
  *      IBM Corporation - initial API and implementation
  *      Steven Spungin <steven@spungin.tv> - Bug 437958
  */
-package org.eclipse.e4.ui.model.fragment.impl;
+package org.fdesigner.e4.ui.model.fragment.impl;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 import java.util.regex.Pattern;
+
 import org.eclipse.e4.emf.xpath.EcoreXPathContextFactory;
 import org.eclipse.e4.emf.xpath.XPathContext;
 import org.eclipse.e4.emf.xpath.XPathContextFactory;
-import org.eclipse.e4.ui.model.application.MApplication;
-import org.eclipse.e4.ui.model.application.MApplicationElement;
-import org.eclipse.e4.ui.model.fragment.MStringModelFragment;
-import org.eclipse.e4.ui.model.internal.ModelUtils;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.util.EcoreUtil;
+import org.fdesigner.e4.ui.model.application.MApplication;
+import org.fdesigner.e4.ui.model.application.MApplicationElement;
+import org.fdesigner.e4.ui.model.fragment.MStringModelFragment;
+import org.fdesigner.e4.ui.model.internal.ModelUtils;
+
 
 /**
  * <!-- begin-user-doc -->

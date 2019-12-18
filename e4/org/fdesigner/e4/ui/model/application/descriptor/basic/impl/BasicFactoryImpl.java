@@ -11,15 +11,15 @@
  * Contributors:
  *      IBM Corporation - initial API and implementation
  */
-package org.eclipse.e4.ui.model.application.descriptor.basic.impl;
+package org.fdesigner.e4.ui.model.application.descriptor.basic.impl;
 
-import org.eclipse.e4.ui.model.application.descriptor.basic.MBasicFactory;
-import org.eclipse.e4.ui.model.application.descriptor.basic.MPartDescriptor;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.impl.EFactoryImpl;
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
+import org.fdesigner.e4.ui.model.application.descriptor.basic.MBasicFactory;
+import org.fdesigner.e4.ui.model.application.descriptor.basic.MPartDescriptor;
 
 /**
  * <!-- begin-user-doc -->

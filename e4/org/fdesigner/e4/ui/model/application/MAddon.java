@@ -11,7 +11,7 @@
  * Contributors:
  *      IBM Corporation - initial API and implementation
  */
-package org.eclipse.e4.ui.model.application;
+package org.fdesigner.e4.ui.model.application;
 
 /**
  * <!-- begin-user-doc -->

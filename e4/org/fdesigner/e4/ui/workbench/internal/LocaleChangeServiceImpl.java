@@ -16,25 +16,27 @@ package org.fdesigner.e4.ui.workbench.internal;
 
 import java.util.List;
 import java.util.Locale;
+
 import javax.inject.Inject;
-import org.eclipse.e4.core.contexts.IEclipseContext;
-import org.eclipse.e4.core.di.annotations.Optional;
-import org.eclipse.e4.core.internal.services.ResourceBundleHelper;
-import org.eclipse.e4.core.services.events.IEventBroker;
-import org.eclipse.e4.core.services.nls.ILocaleChangeService;
-import org.eclipse.e4.core.services.translation.TranslationService;
-import org.eclipse.e4.ui.model.application.MApplication;
-import org.eclipse.e4.ui.model.application.ui.MElementContainer;
-import org.eclipse.e4.ui.model.application.ui.MLocalizable;
-import org.eclipse.e4.ui.model.application.ui.MUIElement;
-import org.eclipse.e4.ui.model.application.ui.advanced.MPerspective;
-import org.eclipse.e4.ui.model.application.ui.basic.MPart;
-import org.eclipse.e4.ui.model.application.ui.basic.MTrimBar;
-import org.eclipse.e4.ui.model.application.ui.basic.MTrimmedWindow;
-import org.eclipse.e4.ui.model.application.ui.basic.MWindow;
-import org.eclipse.e4.ui.model.application.ui.menu.MMenu;
-import org.eclipse.e4.ui.model.application.ui.menu.MToolBar;
-import org.osgi.service.log.LogService;
+
+import org.fdesigner.e4.core.contexts.IEclipseContext;
+import org.fdesigner.e4.core.di.annotations.Optional;
+import org.fdesigner.e4.core.services.events.IEventBroker;
+import org.fdesigner.e4.core.services.internal.services.ResourceBundleHelper;
+import org.fdesigner.e4.core.services.nls.ILocaleChangeService;
+import org.fdesigner.e4.core.services.translation.TranslationService;
+import org.fdesigner.e4.ui.model.application.MApplication;
+import org.fdesigner.e4.ui.model.application.ui.MElementContainer;
+import org.fdesigner.e4.ui.model.application.ui.MLocalizable;
+import org.fdesigner.e4.ui.model.application.ui.MUIElement;
+import org.fdesigner.e4.ui.model.application.ui.advanced.MPerspective;
+import org.fdesigner.e4.ui.model.application.ui.basic.MPart;
+import org.fdesigner.e4.ui.model.application.ui.basic.MTrimBar;
+import org.fdesigner.e4.ui.model.application.ui.basic.MTrimmedWindow;
+import org.fdesigner.e4.ui.model.application.ui.basic.MWindow;
+import org.fdesigner.e4.ui.model.application.ui.menu.MMenu;
+import org.fdesigner.e4.ui.model.application.ui.menu.MToolBar;
+import org.fdesigner.services.log.LogService;
 
 /**
  * Default implementation of {@link ILocaleChangeService} that changes the {@link Locale} in the

@@ -12,19 +12,20 @@
  *     Angelo Zerr <angelo.zerr@gmail.com> - initial API and implementation
  *     IBM Corporation
  *******************************************************************************/
-package org.eclipse.e4.ui.css.swt.resources;
+package org.fdesigner.e4.ui.css.swt.resources;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map.Entry;
-import org.eclipse.e4.ui.css.core.resources.AbstractResourcesRegistry;
+
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.Color;
 import org.eclipse.swt.graphics.Cursor;
 import org.eclipse.swt.graphics.Font;
 import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.widgets.Display;
+import org.fdesigner.e4.ui.css.core.resources.AbstractResourcesRegistry;
 
 /**
  * SWT Resources Registry to cache SWT Resource like Color, Cursor and Font and

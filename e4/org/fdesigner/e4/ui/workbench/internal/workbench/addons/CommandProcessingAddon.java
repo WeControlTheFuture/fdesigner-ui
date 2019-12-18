@@ -13,37 +13,39 @@
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 472654
  ******************************************************************************/
 
-package org.eclipse.e4.ui.internal.workbench.addons;
+package org.fdesigner.e4.ui.workbench.internal.workbench.addons;
 
 import java.util.ArrayList;
 import java.util.List;
+
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 import javax.inject.Inject;
-import org.eclipse.core.commands.Category;
-import org.eclipse.core.commands.Command;
-import org.eclipse.core.commands.CommandManager;
-import org.eclipse.core.commands.CommandManagerEvent;
-import org.eclipse.core.commands.ICommandManagerListener;
-import org.eclipse.core.commands.IParameter;
-import org.eclipse.core.commands.ParameterType;
-import org.eclipse.core.commands.common.NotDefinedException;
-import org.eclipse.e4.core.commands.ECommandService;
-import org.eclipse.e4.core.commands.internal.HandlerServiceImpl;
-import org.eclipse.e4.core.services.events.IEventBroker;
-import org.eclipse.e4.ui.internal.workbench.Activator;
-import org.eclipse.e4.ui.internal.workbench.Parameter;
-import org.eclipse.e4.ui.internal.workbench.Policy;
-import org.eclipse.e4.ui.model.LocalizationHelper;
-import org.eclipse.e4.ui.model.application.MApplication;
-import org.eclipse.e4.ui.model.application.MApplicationElement;
-import org.eclipse.e4.ui.model.application.commands.MCategory;
-import org.eclipse.e4.ui.model.application.commands.MCommand;
-import org.eclipse.e4.ui.model.application.commands.MCommandParameter;
-import org.eclipse.e4.ui.workbench.UIEvents;
-import org.eclipse.e4.ui.workbench.modeling.EModelService;
-import org.osgi.service.event.Event;
-import org.osgi.service.event.EventHandler;
+
+import org.fdesigner.commands.Category;
+import org.fdesigner.commands.Command;
+import org.fdesigner.commands.CommandManager;
+import org.fdesigner.commands.CommandManagerEvent;
+import org.fdesigner.commands.ICommandManagerListener;
+import org.fdesigner.commands.IParameter;
+import org.fdesigner.commands.ParameterType;
+import org.fdesigner.commands.common.NotDefinedException;
+import org.fdesigner.e4.core.commands.ECommandService;
+import org.fdesigner.e4.core.commands.internal.HandlerServiceImpl;
+import org.fdesigner.e4.core.services.events.IEventBroker;
+import org.fdesigner.e4.ui.model.LocalizationHelper;
+import org.fdesigner.e4.ui.model.application.MApplication;
+import org.fdesigner.e4.ui.model.application.MApplicationElement;
+import org.fdesigner.e4.ui.model.application.commands.MCategory;
+import org.fdesigner.e4.ui.model.application.commands.MCommand;
+import org.fdesigner.e4.ui.model.application.commands.MCommandParameter;
+import org.fdesigner.e4.ui.workbench.UIEvents;
+import org.fdesigner.e4.ui.workbench.internal.workbench.Activator;
+import org.fdesigner.e4.ui.workbench.internal.workbench.Parameter;
+import org.fdesigner.e4.ui.workbench.internal.workbench.Policy;
+import org.fdesigner.e4.ui.workbench.modeling.EModelService;
+import org.fdesigner.services.event.Event;
+import org.fdesigner.services.event.EventHandler;
 
 /**
  * Process commands in the model, feeding them into the command service.

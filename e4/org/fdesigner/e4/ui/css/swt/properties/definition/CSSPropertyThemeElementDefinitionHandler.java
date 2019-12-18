@@ -11,25 +11,26 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.e4.ui.css.swt.properties.definition;
+package org.fdesigner.e4.ui.css.swt.properties.definition;
 
-import static org.eclipse.e4.ui.css.swt.helpers.ThemeElementDefinitionHelper.normalizeId;
+import static org.fdesigner.e4.ui.css.swt.helpers.ThemeElementDefinitionHelper.normalizeId;
 
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Map;
 import java.util.ResourceBundle;
 import java.util.WeakHashMap;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.e4.ui.css.core.dom.properties.ICSSPropertyHandler;
-import org.eclipse.e4.ui.css.core.engine.CSSEngine;
-import org.eclipse.e4.ui.css.swt.dom.definition.ThemeDefinitionElement;
-import org.eclipse.e4.ui.css.swt.helpers.URI;
-import org.eclipse.e4.ui.internal.css.swt.definition.IThemeElementDefinitionOverridable;
-import org.eclipse.osgi.service.localization.BundleLocalization;
-import org.osgi.framework.Bundle;
-import org.osgi.framework.BundleException;
-import org.osgi.framework.ServiceReference;
+
+import org.fdesigner.e4.ui.css.core.dom.properties.ICSSPropertyHandler;
+import org.fdesigner.e4.ui.css.core.engine.CSSEngine;
+import org.fdesigner.e4.ui.css.swt.dom.definition.ThemeDefinitionElement;
+import org.fdesigner.e4.ui.css.swt.helpers.URI;
+import org.fdesigner.e4.ui.css.swt.internal.css.swt.definition.IThemeElementDefinitionOverridable;
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.framework.framework.BundleException;
+import org.fdesigner.framework.framework.ServiceReference;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.supplement.service.localization.BundleLocalization;
 import org.w3c.dom.css.CSSPrimitiveValue;
 import org.w3c.dom.css.CSSValue;
 

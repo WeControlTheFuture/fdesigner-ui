@@ -12,18 +12,18 @@
  *     Angelo Zerr <angelo.zerr@gmail.com> - initial API and implementation
  *     IBM Corporation
  *******************************************************************************/
-package org.eclipse.e4.ui.css.swt.engine;
+package org.fdesigner.e4.ui.css.swt.engine;
 
-import org.eclipse.core.runtime.RegistryFactory;
-import org.eclipse.e4.ui.css.core.impl.engine.RegistryCSSElementProvider;
-import org.eclipse.e4.ui.css.core.impl.engine.RegistryCSSPropertyHandlerProvider;
-import org.eclipse.e4.ui.internal.css.swt.CSSActivator;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.DisposeListener;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Widget;
-import org.osgi.service.log.LogService;
+import org.fdesigner.e4.ui.css.core.impl.engine.RegistryCSSElementProvider;
+import org.fdesigner.e4.ui.css.core.impl.engine.RegistryCSSPropertyHandlerProvider;
+import org.fdesigner.e4.ui.css.swt.internal.css.swt.CSSActivator;
+import org.fdesigner.runtime.registry.runtime.RegistryFactory;
+import org.fdesigner.services.log.LogService;
 
 /**
  * CSS SWT Engine implementation which configure CSSEngineImpl to apply styles

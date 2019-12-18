@@ -12,12 +12,10 @@
  *     Angelo Zerr <angelo.zerr@gmail.com> - initial API and implementation
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.e4.ui.css.swt.helpers;
+package org.fdesigner.e4.ui.css.swt.helpers;
 
 import java.net.URL;
-import org.eclipse.e4.ui.css.core.util.resources.IResourcesLocatorManager;
-import org.eclipse.e4.ui.css.core.utils.StringUtils;
-import org.eclipse.jface.resource.ImageDescriptor;
+
 import org.eclipse.swt.graphics.Device;
 import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.widgets.Button;
@@ -27,6 +25,9 @@ import org.eclipse.swt.widgets.Item;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.ToolItem;
 import org.eclipse.swt.widgets.Widget;
+import org.fdesigner.e4.ui.css.core.util.resources.IResourcesLocatorManager;
+import org.fdesigner.e4.ui.css.core.utils.StringUtils;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
 import org.w3c.dom.css.CSSPrimitiveValue;
 import org.w3c.dom.css.CSSValue;
 

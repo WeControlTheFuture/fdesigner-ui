@@ -11,11 +11,12 @@
  * Contributors:
  *      IBM Corporation - initial API and implementation
  */
-package org.eclipse.e4.ui.model.application.ui;
+package org.fdesigner.e4.ui.model.application.ui;
 
 import java.util.List;
 import java.util.Map;
-import org.eclipse.e4.core.contexts.IEclipseContext;
+
+import org.fdesigner.e4.core.contexts.IEclipseContext;
 
 /**
  * <!-- begin-user-doc -->

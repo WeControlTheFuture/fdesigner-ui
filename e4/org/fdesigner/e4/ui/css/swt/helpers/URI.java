@@ -17,7 +17,7 @@
  *
  * $Id: URI.java,v 1.34 2008/10/02 16:06:51 emerks Exp $
  */
-package org.eclipse.e4.ui.css.swt.helpers;
+package org.fdesigner.e4.ui.css.swt.helpers;
 
 import java.io.File;
 import java.lang.ref.WeakReference;

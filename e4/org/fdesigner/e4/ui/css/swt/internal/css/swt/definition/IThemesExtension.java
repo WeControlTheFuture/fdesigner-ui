@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.e4.ui.internal.css.swt.definition;
+package org.fdesigner.e4.ui.css.swt.internal.css.swt.definition;
 
 public interface IThemesExtension {
 	void addFontDefinition(String symbolicName);

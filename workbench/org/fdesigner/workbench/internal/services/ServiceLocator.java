@@ -15,21 +15,22 @@
  *     Fabio Zadrozny <fabiofz at gmail dot com> - Bug 459833
  *******************************************************************************/
 
-package org.eclipse.ui.internal.services;
+package org.fdesigner.workbench.internal.services;
 
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.concurrent.ConcurrentHashMap;
-import org.eclipse.core.runtime.ISafeRunnable;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.SafeRunner;
-import org.eclipse.e4.core.contexts.IEclipseContext;
-import org.eclipse.ui.internal.WorkbenchPlugin;
-import org.eclipse.ui.internal.misc.StatusUtil;
-import org.eclipse.ui.services.AbstractServiceFactory;
-import org.eclipse.ui.services.IDisposable;
-import org.eclipse.ui.services.IServiceLocator;
+
+import org.fdesigner.e4.core.contexts.IEclipseContext;
+import org.fdesigner.runtime.common.runtime.ISafeRunnable;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.SafeRunner;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
+import org.fdesigner.workbench.internal.misc.StatusUtil;
+import org.fdesigner.workbench.services.AbstractServiceFactory;
+import org.fdesigner.workbench.services.IDisposable;
+import org.fdesigner.workbench.services.IServiceLocator;
 
 /**
  * @since 3.2

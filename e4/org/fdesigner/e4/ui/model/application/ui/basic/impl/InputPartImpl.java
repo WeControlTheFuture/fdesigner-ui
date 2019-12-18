@@ -1,11 +1,11 @@
-package org.eclipse.e4.ui.model.application.ui.basic.impl;
+package org.fdesigner.e4.ui.model.application.ui.basic.impl;
 
-import org.eclipse.e4.ui.model.application.ui.MInput;
-import org.eclipse.e4.ui.model.application.ui.basic.MInputPart;
-import org.eclipse.e4.ui.model.application.ui.impl.UiPackageImpl;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.fdesigner.e4.ui.model.application.ui.MInput;
+import org.fdesigner.e4.ui.model.application.ui.basic.MInputPart;
+import org.fdesigner.e4.ui.model.application.ui.impl.UiPackageImpl;
 
 /**
  * <!-- begin-user-doc -->

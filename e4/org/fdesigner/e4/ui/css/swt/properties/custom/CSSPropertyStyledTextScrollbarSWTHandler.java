@@ -11,14 +11,14 @@
  * Contributors:
  *     Fabio Zadrozny <fabiofz@gmail.com> - initial API and implementation
  *******************************************************************************/
-package org.eclipse.e4.ui.css.swt.properties.custom;
+package org.fdesigner.e4.ui.css.swt.properties.custom;
 
-import org.eclipse.e4.ui.css.core.dom.properties.ICSSPropertyHandler;
-import org.eclipse.e4.ui.css.core.engine.CSSEngine;
-import org.eclipse.e4.ui.css.core.impl.dom.Measure;
-import org.eclipse.e4.ui.css.swt.dom.StyledTextElement;
 import org.eclipse.swt.custom.StyledText;
 import org.eclipse.swt.graphics.Color;
+import org.fdesigner.e4.ui.css.core.dom.properties.ICSSPropertyHandler;
+import org.fdesigner.e4.ui.css.core.engine.CSSEngine;
+import org.fdesigner.e4.ui.css.core.impl.dom.Measure;
+import org.fdesigner.e4.ui.css.swt.dom.StyledTextElement;
 import org.w3c.css.sac.LexicalUnit;
 import org.w3c.dom.css.CSSValue;
 

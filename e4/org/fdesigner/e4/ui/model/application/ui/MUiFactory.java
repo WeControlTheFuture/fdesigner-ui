@@ -11,7 +11,7 @@
  * Contributors:
  *      IBM Corporation - initial API and implementation
  */
-package org.eclipse.e4.ui.model.application.ui;
+package org.fdesigner.e4.ui.model.application.ui;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +27,7 @@ public interface MUiFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	MUiFactory INSTANCE = org.eclipse.e4.ui.model.application.ui.impl.UiFactoryImpl.eINSTANCE;
+	MUiFactory INSTANCE = org.fdesigner.e4.ui.model.application.ui.impl.UiFactoryImpl.eINSTANCE;
 
 	/**
 	 * Returns a new object of class '<em>Core Expression</em>'.

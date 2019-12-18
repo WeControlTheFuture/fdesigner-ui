@@ -11,14 +11,14 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
-import org.eclipse.jface.action.Action;
-import org.eclipse.jface.preference.PreferenceDialog;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.actions.ActionFactory;
-import org.eclipse.ui.dialogs.PreferencesUtil;
+import org.fdesigner.ui.jface.action.Action;
+import org.fdesigner.ui.jface.preference.PreferenceDialog;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.actions.ActionFactory;
+import org.fdesigner.workbench.dialogs.PreferencesUtil;
 
 /**
  * Open the preferences dialog

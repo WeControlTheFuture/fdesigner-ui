@@ -15,44 +15,45 @@
  *     Andrey Loskutov <loskutov@gmx.de> - Bug 372799
  *     Daniel Kruegler <daniel.kruegler@gmail.com> - Bug 495940
  *******************************************************************************/
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
-import org.eclipse.core.runtime.Adapters;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.ListenerList;
-import org.eclipse.e4.core.contexts.IEclipseContext;
-import org.eclipse.e4.core.services.events.IEventBroker;
-import org.eclipse.e4.ui.model.application.ui.basic.MPart;
-import org.eclipse.e4.ui.workbench.IPresentationEngine;
-import org.eclipse.e4.ui.workbench.UIEvents;
-import org.eclipse.e4.ui.workbench.modeling.EPartService;
-import org.eclipse.e4.ui.workbench.modeling.EPartService.PartState;
+
 import org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer;
-import org.eclipse.jface.util.IPropertyChangeListener;
-import org.eclipse.jface.util.PropertyChangeEvent;
 import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.widgets.Control;
-import org.eclipse.ui.IPropertyListener;
-import org.eclipse.ui.ISaveablePart;
-import org.eclipse.ui.ISaveablesLifecycleListener;
-import org.eclipse.ui.ISharedImages;
-import org.eclipse.ui.ISizeProvider;
-import org.eclipse.ui.IWorkbenchPage;
-import org.eclipse.ui.IWorkbenchPart;
-import org.eclipse.ui.IWorkbenchPart2;
-import org.eclipse.ui.IWorkbenchPart3;
-import org.eclipse.ui.IWorkbenchPartConstants;
-import org.eclipse.ui.IWorkbenchPartReference;
-import org.eclipse.ui.PartInitException;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.e4.compatibility.CompatibilityPart;
-import org.eclipse.ui.internal.misc.UIListenerLogging;
-import org.eclipse.ui.internal.util.Util;
-import org.osgi.service.event.Event;
-import org.osgi.service.event.EventHandler;
+import org.fdesigner.e4.core.contexts.IEclipseContext;
+import org.fdesigner.e4.core.services.events.IEventBroker;
+import org.fdesigner.e4.ui.model.application.ui.basic.MPart;
+import org.fdesigner.e4.ui.workbench.IPresentationEngine;
+import org.fdesigner.e4.ui.workbench.UIEvents;
+import org.fdesigner.e4.ui.workbench.modeling.EPartService;
+import org.fdesigner.e4.ui.workbench.modeling.EPartService.PartState;
+import org.fdesigner.runtime.common.runtime.Adapters;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.ListenerList;
+import org.fdesigner.services.event.Event;
+import org.fdesigner.services.event.EventHandler;
+import org.fdesigner.ui.jface.util.IPropertyChangeListener;
+import org.fdesigner.ui.jface.util.PropertyChangeEvent;
+import org.fdesigner.workbench.IPropertyListener;
+import org.fdesigner.workbench.ISaveablePart;
+import org.fdesigner.workbench.ISaveablesLifecycleListener;
+import org.fdesigner.workbench.ISharedImages;
+import org.fdesigner.workbench.ISizeProvider;
+import org.fdesigner.workbench.IWorkbenchPage;
+import org.fdesigner.workbench.IWorkbenchPart;
+import org.fdesigner.workbench.IWorkbenchPart2;
+import org.fdesigner.workbench.IWorkbenchPart3;
+import org.fdesigner.workbench.IWorkbenchPartConstants;
+import org.fdesigner.workbench.IWorkbenchPartReference;
+import org.fdesigner.workbench.PartInitException;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.internal.e4.compatibility.CompatibilityPart;
+import org.fdesigner.workbench.internal.misc.UIListenerLogging;
+import org.fdesigner.workbench.internal.util.Util;
 
 /**
  *

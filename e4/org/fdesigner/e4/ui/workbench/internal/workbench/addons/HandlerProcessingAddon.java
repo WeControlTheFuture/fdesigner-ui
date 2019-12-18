@@ -13,24 +13,26 @@
  *     Sopot Cela - initial API, implementation and fixes
  ******************************************************************************/
 
-package org.eclipse.e4.ui.internal.workbench.addons;
+package org.fdesigner.e4.ui.workbench.internal.workbench.addons;
 
 import java.util.List;
+
 import javax.annotation.PostConstruct;
 import javax.inject.Inject;
-import org.eclipse.e4.core.commands.EHandlerService;
-import org.eclipse.e4.core.contexts.IEclipseContext;
-import org.eclipse.e4.core.di.annotations.Optional;
-import org.eclipse.e4.core.di.extensions.EventTopic;
-import org.eclipse.e4.core.services.contributions.IContributionFactory;
-import org.eclipse.e4.ui.model.application.MApplication;
-import org.eclipse.e4.ui.model.application.commands.MCommand;
-import org.eclipse.e4.ui.model.application.commands.MHandler;
-import org.eclipse.e4.ui.model.application.commands.MHandlerContainer;
-import org.eclipse.e4.ui.model.application.ui.MContext;
-import org.eclipse.e4.ui.workbench.UIEvents;
-import org.eclipse.e4.ui.workbench.modeling.EModelService;
-import org.osgi.service.event.Event;
+
+import org.fdesigner.e4.core.commands.EHandlerService;
+import org.fdesigner.e4.core.contexts.IEclipseContext;
+import org.fdesigner.e4.core.di.annotations.Optional;
+import org.fdesigner.e4.core.di.extensions.EventTopic;
+import org.fdesigner.e4.core.services.contributions.IContributionFactory;
+import org.fdesigner.e4.ui.model.application.MApplication;
+import org.fdesigner.e4.ui.model.application.commands.MCommand;
+import org.fdesigner.e4.ui.model.application.commands.MHandler;
+import org.fdesigner.e4.ui.model.application.commands.MHandlerContainer;
+import org.fdesigner.e4.ui.model.application.ui.MContext;
+import org.fdesigner.e4.ui.workbench.UIEvents;
+import org.fdesigner.e4.ui.workbench.modeling.EModelService;
+import org.fdesigner.services.event.Event;
 
 /**
  * Process the additions and removals of handlers on the model

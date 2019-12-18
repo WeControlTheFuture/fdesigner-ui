@@ -11,7 +11,7 @@
  * Contributors:
  *     Fabio Zadrozny <fabiofz@gmail.com> - initial API and implementation
  *******************************************************************************/
-package org.eclipse.e4.ui.internal.css.swt.dom.scrollbar;
+package org.fdesigner.e4.ui.css.swt.internal.css.swt.dom.scrollbar;
 
 import org.eclipse.swt.graphics.Rectangle;
 

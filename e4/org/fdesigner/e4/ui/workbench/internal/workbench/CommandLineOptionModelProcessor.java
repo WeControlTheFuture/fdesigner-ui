@@ -13,15 +13,17 @@
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 486583
  ******************************************************************************/
 
-package org.eclipse.e4.ui.internal.workbench;
+package org.fdesigner.e4.ui.workbench.internal.workbench;
 
 import java.util.List;
+
 import javax.inject.Inject;
-import org.eclipse.e4.core.contexts.IEclipseContext;
-import org.eclipse.e4.ui.model.application.MApplication;
-import org.eclipse.e4.ui.model.application.ui.advanced.MPerspective;
-import org.eclipse.e4.ui.model.application.ui.advanced.MPerspectiveStack;
-import org.eclipse.e4.ui.workbench.modeling.EModelService;
+
+import org.fdesigner.e4.core.contexts.IEclipseContext;
+import org.fdesigner.e4.ui.model.application.MApplication;
+import org.fdesigner.e4.ui.model.application.ui.advanced.MPerspective;
+import org.fdesigner.e4.ui.model.application.ui.advanced.MPerspectiveStack;
+import org.fdesigner.e4.ui.workbench.modeling.EModelService;
 
 /**
  * Activates the perspectives specified via the content key

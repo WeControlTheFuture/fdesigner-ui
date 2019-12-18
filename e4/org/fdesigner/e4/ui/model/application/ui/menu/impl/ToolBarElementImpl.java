@@ -11,11 +11,11 @@
  * Contributors:
  *      IBM Corporation - initial API and implementation
  */
-package org.eclipse.e4.ui.model.application.ui.menu.impl;
+package org.fdesigner.e4.ui.model.application.ui.menu.impl;
 
-import org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl;
-import org.eclipse.e4.ui.model.application.ui.menu.MToolBarElement;
 import org.eclipse.emf.ecore.EClass;
+import org.fdesigner.e4.ui.model.application.ui.impl.UIElementImpl;
+import org.fdesigner.e4.ui.model.application.ui.menu.MToolBarElement;
 
 /**
  * <!-- begin-user-doc -->

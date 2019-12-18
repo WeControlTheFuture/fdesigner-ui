@@ -12,15 +12,15 @@
  *     Angelo Zerr <angelo.zerr@gmail.com> - initial API and implementation
  *     IBM Corporation
  *******************************************************************************/
-package org.eclipse.e4.ui.css.swt.properties.css2;
+package org.fdesigner.e4.ui.css.swt.properties.css2;
 
-import org.eclipse.e4.ui.css.core.dom.properties.css2.AbstractCSSPropertyClassificationHandler;
-import org.eclipse.e4.ui.css.core.dom.properties.css2.ICSSPropertyClassificationHandler;
-import org.eclipse.e4.ui.css.core.engine.CSSEngine;
-import org.eclipse.e4.ui.css.swt.helpers.CSSSWTCursorHelper;
-import org.eclipse.e4.ui.css.swt.helpers.SWTElementHelpers;
 import org.eclipse.swt.graphics.Cursor;
 import org.eclipse.swt.widgets.Control;
+import org.fdesigner.e4.ui.css.core.dom.properties.css2.AbstractCSSPropertyClassificationHandler;
+import org.fdesigner.e4.ui.css.core.dom.properties.css2.ICSSPropertyClassificationHandler;
+import org.fdesigner.e4.ui.css.core.engine.CSSEngine;
+import org.fdesigner.e4.ui.css.swt.helpers.CSSSWTCursorHelper;
+import org.fdesigner.e4.ui.css.swt.helpers.SWTElementHelpers;
 import org.w3c.dom.css.CSSPrimitiveValue;
 import org.w3c.dom.css.CSSValue;
 

@@ -12,16 +12,17 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal;
+package org.fdesigner.workbench.internal;
 
 import java.util.ArrayList;
-import org.eclipse.ui.IEditorPart;
-import org.eclipse.ui.IMemento;
-import org.eclipse.ui.INavigationLocation;
-import org.eclipse.ui.INavigationLocationProvider;
-import org.eclipse.ui.IWorkbenchPage;
-import org.eclipse.ui.PartInitException;
-import org.eclipse.ui.XMLMemento;
+
+import org.fdesigner.workbench.IEditorPart;
+import org.fdesigner.workbench.IMemento;
+import org.fdesigner.workbench.INavigationLocation;
+import org.fdesigner.workbench.INavigationLocationProvider;
+import org.fdesigner.workbench.IWorkbenchPage;
+import org.fdesigner.workbench.PartInitException;
+import org.fdesigner.workbench.XMLMemento;
 
 /*
  * Wraps the INavigationLocation and keeps editor info.

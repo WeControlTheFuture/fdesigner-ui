@@ -11,16 +11,16 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.e4.ui.css.swt.properties.definition;
+package org.fdesigner.e4.ui.css.swt.properties.definition;
 
-import org.eclipse.e4.ui.css.core.dom.properties.css2.AbstractCSSPropertyFontHandler;
-import org.eclipse.e4.ui.css.core.dom.properties.css2.CSS2FontProperties;
-import org.eclipse.e4.ui.css.core.dom.properties.css2.CSS2FontPropertiesImpl;
-import org.eclipse.e4.ui.css.core.engine.CSSEngine;
-import org.eclipse.e4.ui.css.swt.dom.definition.FontDefinitionElement;
-import org.eclipse.e4.ui.css.swt.helpers.CSSSWTFontHelper;
-import org.eclipse.e4.ui.internal.css.swt.definition.IFontDefinitionOverridable;
 import org.eclipse.swt.graphics.FontData;
+import org.fdesigner.e4.ui.css.core.dom.properties.css2.AbstractCSSPropertyFontHandler;
+import org.fdesigner.e4.ui.css.core.dom.properties.css2.CSS2FontProperties;
+import org.fdesigner.e4.ui.css.core.dom.properties.css2.CSS2FontPropertiesImpl;
+import org.fdesigner.e4.ui.css.core.engine.CSSEngine;
+import org.fdesigner.e4.ui.css.swt.dom.definition.FontDefinitionElement;
+import org.fdesigner.e4.ui.css.swt.helpers.CSSSWTFontHelper;
+import org.fdesigner.e4.ui.css.swt.internal.css.swt.definition.IFontDefinitionOverridable;
 import org.w3c.dom.css.CSSValue;
 
 public class CSSPropertyFontDefinitionHandler extends AbstractCSSPropertyFontHandler {

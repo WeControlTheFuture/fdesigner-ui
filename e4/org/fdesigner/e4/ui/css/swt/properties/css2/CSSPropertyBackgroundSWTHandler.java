@@ -12,18 +12,8 @@
  *     Angelo Zerr <angelo.zerr@gmail.com> - initial API and implementation
  *     IBM Corporation
  *******************************************************************************/
-package org.eclipse.e4.ui.css.swt.properties.css2;
+package org.fdesigner.e4.ui.css.swt.properties.css2;
 
-import org.eclipse.e4.ui.css.core.dom.properties.Gradient;
-import org.eclipse.e4.ui.css.core.dom.properties.css2.AbstractCSSPropertyBackgroundHandler;
-import org.eclipse.e4.ui.css.core.dom.properties.css2.ICSSPropertyBackgroundHandler;
-import org.eclipse.e4.ui.css.core.engine.CSSEngine;
-import org.eclipse.e4.ui.css.swt.dom.CompositeElement;
-import org.eclipse.e4.ui.css.swt.dom.WidgetElement;
-import org.eclipse.e4.ui.css.swt.helpers.CSSSWTColorHelper;
-import org.eclipse.e4.ui.css.swt.helpers.CSSSWTImageHelper;
-import org.eclipse.e4.ui.css.swt.helpers.SWTElementHelpers;
-import org.eclipse.e4.ui.css.swt.properties.GradientBackgroundListener;
 import org.eclipse.swt.custom.CTabFolder;
 import org.eclipse.swt.custom.CTabItem;
 import org.eclipse.swt.graphics.Color;
@@ -31,6 +21,16 @@ import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Widget;
+import org.fdesigner.e4.ui.css.core.dom.properties.Gradient;
+import org.fdesigner.e4.ui.css.core.dom.properties.css2.AbstractCSSPropertyBackgroundHandler;
+import org.fdesigner.e4.ui.css.core.dom.properties.css2.ICSSPropertyBackgroundHandler;
+import org.fdesigner.e4.ui.css.core.engine.CSSEngine;
+import org.fdesigner.e4.ui.css.swt.dom.CompositeElement;
+import org.fdesigner.e4.ui.css.swt.dom.WidgetElement;
+import org.fdesigner.e4.ui.css.swt.helpers.CSSSWTColorHelper;
+import org.fdesigner.e4.ui.css.swt.helpers.CSSSWTImageHelper;
+import org.fdesigner.e4.ui.css.swt.helpers.SWTElementHelpers;
+import org.fdesigner.e4.ui.css.swt.properties.GradientBackgroundListener;
 import org.w3c.dom.css.CSSValue;
 
 public class CSSPropertyBackgroundSWTHandler extends

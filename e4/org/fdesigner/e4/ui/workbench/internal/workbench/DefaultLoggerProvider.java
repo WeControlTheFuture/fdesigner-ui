@@ -12,14 +12,15 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.e4.ui.internal.workbench;
+package org.fdesigner.e4.ui.workbench.internal.workbench;
 
 import javax.inject.Inject;
-import org.eclipse.e4.core.contexts.ContextInjectionFactory;
-import org.eclipse.e4.core.contexts.IEclipseContext;
-import org.eclipse.e4.core.services.log.ILoggerProvider;
-import org.eclipse.e4.core.services.log.Logger;
-import org.osgi.framework.FrameworkUtil;
+
+import org.fdesigner.e4.core.contexts.ContextInjectionFactory;
+import org.fdesigner.e4.core.contexts.IEclipseContext;
+import org.fdesigner.e4.core.services.log.ILoggerProvider;
+import org.fdesigner.e4.core.services.log.Logger;
+import org.fdesigner.framework.framework.FrameworkUtil;
 
 /**
  *

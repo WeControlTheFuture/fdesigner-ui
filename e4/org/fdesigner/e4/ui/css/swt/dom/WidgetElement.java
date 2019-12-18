@@ -11,19 +11,20 @@
  * Contributors:
  *     Angelo Zerr <angelo.zerr@gmail.com> - initial API and implementation
  *******************************************************************************/
-package org.eclipse.e4.ui.css.swt.dom;
+package org.fdesigner.e4.ui.css.swt.dom;
 
 import java.util.Objects;
 import java.util.function.Supplier;
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.e4.ui.css.core.dom.CSSStylableElement;
-import org.eclipse.e4.ui.css.core.dom.ElementAdapter;
-import org.eclipse.e4.ui.css.core.engine.CSSEngine;
-import org.eclipse.e4.ui.css.core.utils.ClassUtils;
-import org.eclipse.e4.ui.css.swt.CSSSWTConstants;
-import org.eclipse.e4.ui.css.swt.helpers.SWTStyleHelpers;
+
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Widget;
+import org.fdesigner.e4.ui.css.core.dom.CSSStylableElement;
+import org.fdesigner.e4.ui.css.core.dom.ElementAdapter;
+import org.fdesigner.e4.ui.css.core.engine.CSSEngine;
+import org.fdesigner.e4.ui.css.core.utils.ClassUtils;
+import org.fdesigner.e4.ui.css.swt.CSSSWTConstants;
+import org.fdesigner.e4.ui.css.swt.helpers.SWTStyleHelpers;
+import org.fdesigner.runtime.common.runtime.Assert;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 

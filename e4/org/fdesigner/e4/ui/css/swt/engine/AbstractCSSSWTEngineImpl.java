@@ -12,24 +12,24 @@
  *     Angelo Zerr <angelo.zerr@gmail.com> - initial API and implementation
  *     IBM Corporation
  *******************************************************************************/
-package org.eclipse.e4.ui.css.swt.engine;
+package org.fdesigner.e4.ui.css.swt.engine;
 
-import org.eclipse.e4.ui.css.core.dom.CSSStylableElement;
-import org.eclipse.e4.ui.css.core.engine.CSSElementContext;
-import org.eclipse.e4.ui.css.core.impl.engine.CSSEngineImpl;
-import org.eclipse.e4.ui.css.core.resources.IResourcesRegistry;
-import org.eclipse.e4.ui.css.swt.dom.WidgetElement;
-import org.eclipse.e4.ui.css.swt.properties.converters.CSSValueSWTColorConverterImpl;
-import org.eclipse.e4.ui.css.swt.properties.converters.CSSValueSWTCursorConverterImpl;
-import org.eclipse.e4.ui.css.swt.properties.converters.CSSValueSWTFontConverterImpl;
-import org.eclipse.e4.ui.css.swt.properties.converters.CSSValueSWTFontDataConverterImpl;
-import org.eclipse.e4.ui.css.swt.properties.converters.CSSValueSWTGradientConverterImpl;
-import org.eclipse.e4.ui.css.swt.properties.converters.CSSValueSWTImageConverterImpl;
-import org.eclipse.e4.ui.css.swt.properties.converters.CSSValueSWTRGBConverterImpl;
-import org.eclipse.e4.ui.css.swt.resources.SWTResourceRegistryKeyFactory;
-import org.eclipse.e4.ui.css.swt.resources.SWTResourcesRegistry;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Widget;
+import org.fdesigner.e4.ui.css.core.dom.CSSStylableElement;
+import org.fdesigner.e4.ui.css.core.engine.CSSElementContext;
+import org.fdesigner.e4.ui.css.core.impl.engine.CSSEngineImpl;
+import org.fdesigner.e4.ui.css.core.resources.IResourcesRegistry;
+import org.fdesigner.e4.ui.css.swt.dom.WidgetElement;
+import org.fdesigner.e4.ui.css.swt.properties.converters.CSSValueSWTColorConverterImpl;
+import org.fdesigner.e4.ui.css.swt.properties.converters.CSSValueSWTCursorConverterImpl;
+import org.fdesigner.e4.ui.css.swt.properties.converters.CSSValueSWTFontConverterImpl;
+import org.fdesigner.e4.ui.css.swt.properties.converters.CSSValueSWTFontDataConverterImpl;
+import org.fdesigner.e4.ui.css.swt.properties.converters.CSSValueSWTGradientConverterImpl;
+import org.fdesigner.e4.ui.css.swt.properties.converters.CSSValueSWTImageConverterImpl;
+import org.fdesigner.e4.ui.css.swt.properties.converters.CSSValueSWTRGBConverterImpl;
+import org.fdesigner.e4.ui.css.swt.resources.SWTResourceRegistryKeyFactory;
+import org.fdesigner.e4.ui.css.swt.resources.SWTResourcesRegistry;
 import org.w3c.dom.Element;
 
 /**

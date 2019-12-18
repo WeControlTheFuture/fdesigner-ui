@@ -11,7 +11,7 @@
  * Contributors:
  *      IBM Corporation - initial API and implementation
  */
-package org.eclipse.e4.ui.model.application.ui.menu;
+package org.fdesigner.e4.ui.model.application.ui.menu;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +27,7 @@ public interface MMenuFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	MMenuFactory INSTANCE = org.eclipse.e4.ui.model.application.ui.menu.impl.MenuFactoryImpl.eINSTANCE;
+	MMenuFactory INSTANCE = org.fdesigner.e4.ui.model.application.ui.menu.impl.MenuFactoryImpl.eINSTANCE;
 
 	/**
 	 * Returns a new object of class '<em>Separator</em>'.

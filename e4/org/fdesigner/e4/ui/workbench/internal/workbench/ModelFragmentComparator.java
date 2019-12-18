@@ -13,14 +13,15 @@
  * Eugen Neufeld - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.e4.ui.internal.workbench;
+package org.fdesigner.e4.ui.workbench.internal.workbench;
 
 import java.util.Comparator;
-import org.eclipse.e4.ui.model.application.MApplication;
-import org.eclipse.e4.ui.model.application.MApplicationElement;
-import org.eclipse.e4.ui.model.fragment.MStringModelFragment;
-import org.eclipse.e4.ui.model.internal.ModelUtils;
-import org.eclipse.e4.ui.model.internal.PositionInfo;
+
+import org.fdesigner.e4.ui.model.application.MApplication;
+import org.fdesigner.e4.ui.model.application.MApplicationElement;
+import org.fdesigner.e4.ui.model.fragment.MStringModelFragment;
+import org.fdesigner.e4.ui.model.internal.ModelUtils;
+import org.fdesigner.e4.ui.model.internal.PositionInfo;
 
 /**
  * Custom {@link Comparator} that operates on {@link MStringModelFragment} model

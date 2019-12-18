@@ -14,14 +14,14 @@
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 466075
  *     Dawid Pakuła <zulus@w3des.net> - Bug 466075
  *******************************************************************************/
-package org.eclipse.e4.ui.css.swt.dom.preference;
+package org.fdesigner.e4.ui.css.swt.dom.preference;
 
-import static org.eclipse.e4.ui.css.swt.helpers.ThemeElementDefinitionHelper.escapeId;
+import static org.fdesigner.e4.ui.css.swt.helpers.ThemeElementDefinitionHelper.escapeId;
 
-import org.eclipse.core.runtime.preferences.IEclipsePreferences;
-import org.eclipse.e4.ui.css.core.dom.ElementAdapter;
-import org.eclipse.e4.ui.css.core.engine.CSSEngine;
-import org.eclipse.e4.ui.css.core.utils.ClassUtils;
+import org.fdesigner.e4.ui.css.core.dom.ElementAdapter;
+import org.fdesigner.e4.ui.css.core.engine.CSSEngine;
+import org.fdesigner.e4.ui.css.core.utils.ClassUtils;
+import org.fdesigner.runtime.preferences.runtime.preferences.IEclipsePreferences;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 

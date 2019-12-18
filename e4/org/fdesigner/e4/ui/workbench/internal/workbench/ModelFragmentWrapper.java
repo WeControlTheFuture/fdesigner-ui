@@ -13,10 +13,10 @@
  * Eugen Neufeld - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.e4.ui.internal.workbench;
+package org.fdesigner.e4.ui.workbench.internal.workbench;
 
-import org.eclipse.e4.ui.model.fragment.MModelFragment;
-import org.eclipse.e4.ui.model.fragment.MModelFragments;
+import org.fdesigner.e4.ui.model.fragment.MModelFragment;
+import org.fdesigner.e4.ui.model.fragment.MModelFragments;
 
 /**
  * Wrapper for {@link MModelFragments} that contains additional information

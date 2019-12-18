@@ -12,18 +12,19 @@
  *     IBM Corporation - initial API and implementation
  *     Lars Vogel <Lars.Vogel@gmail.com> - Bug 422702
  *******************************************************************************/
-package org.eclipse.e4.ui.css.swt.properties.css2;
+package org.fdesigner.e4.ui.css.swt.properties.css2;
 
 import java.lang.reflect.Method;
-import org.eclipse.e4.ui.css.core.dom.properties.css2.AbstractCSSPropertyPaddingHandler;
-import org.eclipse.e4.ui.css.core.dom.properties.css2.CSS2PaddingPropertiesImpl;
-import org.eclipse.e4.ui.css.core.dom.properties.css2.ICSSPropertyPaddingHandler;
-import org.eclipse.e4.ui.css.core.engine.CSSEngine;
-import org.eclipse.e4.ui.css.swt.helpers.SWTElementHelpers;
+
 import org.eclipse.swt.custom.CTabFolder;
 import org.eclipse.swt.custom.CTabFolderRenderer;
 import org.eclipse.swt.graphics.Rectangle;
 import org.eclipse.swt.widgets.Widget;
+import org.fdesigner.e4.ui.css.core.dom.properties.css2.AbstractCSSPropertyPaddingHandler;
+import org.fdesigner.e4.ui.css.core.dom.properties.css2.CSS2PaddingPropertiesImpl;
+import org.fdesigner.e4.ui.css.core.dom.properties.css2.ICSSPropertyPaddingHandler;
+import org.fdesigner.e4.ui.css.core.engine.CSSEngine;
+import org.fdesigner.e4.ui.css.swt.helpers.SWTElementHelpers;
 import org.w3c.css.sac.CSSException;
 import org.w3c.dom.css.CSSPrimitiveValue;
 import org.w3c.dom.css.CSSValue;

@@ -11,7 +11,7 @@
  * Contributors:
  *      IBM Corporation - initial API and implementation
  */
-package org.eclipse.e4.ui.model.application.commands;
+package org.fdesigner.e4.ui.model.application.commands;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +27,7 @@ public interface MCommandsFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	MCommandsFactory INSTANCE = org.eclipse.e4.ui.model.application.commands.impl.CommandsFactoryImpl.eINSTANCE;
+	MCommandsFactory INSTANCE = org.fdesigner.e4.ui.model.application.commands.impl.CommandsFactoryImpl.eINSTANCE;
 
 	/**
 	 * Returns a new object of class '<em>Binding Context</em>'.

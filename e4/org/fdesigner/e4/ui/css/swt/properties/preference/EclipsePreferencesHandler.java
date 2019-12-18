@@ -11,15 +11,16 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.e4.ui.css.swt.properties.preference;
+package org.fdesigner.e4.ui.css.swt.properties.preference;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import org.eclipse.core.runtime.preferences.IEclipsePreferences;
-import org.eclipse.e4.ui.css.core.dom.properties.ICSSPropertyHandler;
-import org.eclipse.e4.ui.css.core.engine.CSSEngine;
-import org.eclipse.e4.ui.css.swt.dom.preference.EclipsePreferencesElement;
-import org.eclipse.e4.ui.css.swt.helpers.EclipsePreferencesHelper;
+
+import org.fdesigner.e4.ui.css.core.dom.properties.ICSSPropertyHandler;
+import org.fdesigner.e4.ui.css.core.engine.CSSEngine;
+import org.fdesigner.e4.ui.css.swt.dom.preference.EclipsePreferencesElement;
+import org.fdesigner.e4.ui.css.swt.helpers.EclipsePreferencesHelper;
+import org.fdesigner.runtime.preferences.runtime.preferences.IEclipsePreferences;
 import org.w3c.dom.css.CSSValue;
 import org.w3c.dom.css.CSSValueList;
 

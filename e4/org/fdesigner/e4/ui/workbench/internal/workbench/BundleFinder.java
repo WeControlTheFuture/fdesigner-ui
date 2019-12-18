@@ -14,7 +14,7 @@
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 472654
  ******************************************************************************/
 
-package org.eclipse.e4.ui.internal.workbench;
+package org.fdesigner.e4.ui.workbench.internal.workbench;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -23,9 +23,10 @@ import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.CopyOnWriteArrayList;
-import org.osgi.framework.Bundle;
-import org.osgi.framework.BundleEvent;
-import org.osgi.util.tracker.BundleTrackerCustomizer;
+
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.framework.framework.BundleEvent;
+import org.fdesigner.framework.util.tracker.BundleTrackerCustomizer;
 
 /**
  * A simple {@link BundleTrackerCustomizer} which is able to resolve a bundle by its symbolic name.

@@ -11,10 +11,10 @@
  * Contributors:
  *      IBM Corporation - initial API and implementation
  */
-package org.eclipse.e4.ui.model.application.ui.advanced;
+package org.fdesigner.e4.ui.model.application.ui.advanced;
 
-import org.eclipse.e4.ui.model.application.ui.MUILabel;
-import org.eclipse.e4.ui.model.application.ui.basic.MPartSashContainer;
+import org.fdesigner.e4.ui.model.application.ui.MUILabel;
+import org.fdesigner.e4.ui.model.application.ui.basic.MPartSashContainer;
 
 /**
  * <!-- begin-user-doc -->

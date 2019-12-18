@@ -14,7 +14,7 @@ t SPDX-License-Identifier: EPL-2.0
  * This class is intended as internal and temporary
  */
 
-package org.eclipse.e4.ui.css.swt.properties.custom;
+package org.fdesigner.e4.ui.css.swt.properties.custom;
 
 import org.eclipse.swt.custom.CTabFolder;
 import org.eclipse.swt.custom.CTabItem;

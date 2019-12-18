@@ -11,7 +11,7 @@
  * Contributors:
  *      IBM Corporation - initial API and implementation
  */
-package org.eclipse.e4.ui.model.application.ui.advanced;
+package org.fdesigner.e4.ui.model.application.ui.advanced;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +27,7 @@ public interface MAdvancedFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	MAdvancedFactory INSTANCE = org.eclipse.e4.ui.model.application.ui.advanced.impl.AdvancedFactoryImpl.eINSTANCE;
+	MAdvancedFactory INSTANCE = org.fdesigner.e4.ui.model.application.ui.advanced.impl.AdvancedFactoryImpl.eINSTANCE;
 
 	/**
 	 * Returns a new object of class '<em>Placeholder</em>'.

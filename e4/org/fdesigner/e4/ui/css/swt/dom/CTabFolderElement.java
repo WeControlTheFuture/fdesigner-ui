@@ -12,16 +12,11 @@
  *     Angelo Zerr <angelo.zerr@gmail.com> - initial API and implementation
  *     Brian de Alwis (MTI) - Performance tweaks (Bug 430829)
  *******************************************************************************/
-package org.eclipse.e4.ui.css.swt.dom;
+package org.fdesigner.e4.ui.css.swt.dom;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import org.eclipse.e4.ui.css.core.dom.ArrayNodeList;
-import org.eclipse.e4.ui.css.core.dom.CSSStylableElement;
-import org.eclipse.e4.ui.css.core.dom.ChildVisibilityAwareElement;
-import org.eclipse.e4.ui.css.core.engine.CSSEngine;
-import org.eclipse.e4.ui.css.swt.helpers.CSSSWTColorHelper;
-import org.eclipse.e4.ui.internal.css.swt.ICTabRendering;
+
 import org.eclipse.swt.custom.CTabFolder;
 import org.eclipse.swt.custom.CTabItem;
 import org.eclipse.swt.events.SelectionAdapter;
@@ -32,6 +27,12 @@ import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Widget;
+import org.fdesigner.e4.ui.css.core.dom.ArrayNodeList;
+import org.fdesigner.e4.ui.css.core.dom.CSSStylableElement;
+import org.fdesigner.e4.ui.css.core.dom.ChildVisibilityAwareElement;
+import org.fdesigner.e4.ui.css.core.engine.CSSEngine;
+import org.fdesigner.e4.ui.css.swt.helpers.CSSSWTColorHelper;
+import org.fdesigner.e4.ui.css.swt.internal.css.swt.ICTabRendering;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
