@@ -12,12 +12,23 @@
  *     IBM - Initial API and implementation
  *     James Blackburn (Broadcom Corp.) - ongoing development
  *******************************************************************************/
-package org.eclipse.core.internal.utils;
+package org.fdesigner.resources.internal.utils;
 
-import java.util.*;
-import org.eclipse.core.runtime.*;
-import org.eclipse.core.runtime.jobs.*;
-import org.osgi.framework.Bundle;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
+
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.ISafeRunnable;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.SafeRunner;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.runtime.jobs.runtime.jobs.IJobManager;
+import org.fdesigner.runtime.jobs.runtime.jobs.ISchedulingRule;
+import org.fdesigner.runtime.jobs.runtime.jobs.Job;
+import org.fdesigner.runtime.jobs.runtime.jobs.MultiRule;
 
 /**
  * Performs string sharing passes on all string pool participants registered

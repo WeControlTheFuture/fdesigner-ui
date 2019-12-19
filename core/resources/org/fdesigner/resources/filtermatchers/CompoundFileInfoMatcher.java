@@ -12,11 +12,13 @@
  *     Serge Beauchamp (Freescale Semiconductor) - [252996] initial API and implementation
  *     IBM Corporation - ongoing implementation
  *******************************************************************************/
-package org.eclipse.core.resources.filtermatchers;
+package org.fdesigner.resources.filtermatchers;
 
-import org.eclipse.core.internal.resources.FilterDescriptor;
-import org.eclipse.core.resources.*;
-import org.eclipse.core.runtime.CoreException;
+import org.fdesigner.resources.FileInfoMatcherDescription;
+import org.fdesigner.resources.IFilterMatcherDescriptor;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.internal.resources.FilterDescriptor;
+import org.fdesigner.runtime.common.runtime.CoreException;
 
 /**
  * Resource Filter Type allowing serializing sub filters as the arguments

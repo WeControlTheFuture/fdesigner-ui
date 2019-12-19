@@ -16,9 +16,9 @@
  * Martin Oberhuber (Wind River) - [306575] Save snapshot location with project
  * Mikael Barbero (Eclipse Foundation) - [286681] handle WAIT_ABANDONED_0 return value
  *******************************************************************************/
-package org.eclipse.core.internal.utils;
+package org.fdesigner.resources.internal.utils;
 
-import org.eclipse.osgi.util.NLS;
+import org.fdesigner.supplement.util.NLS;
 
 public class Messages extends NLS {
 	private static final String BUNDLE_NAME = "org.eclipse.core.internal.utils.messages"; //$NON-NLS-1$

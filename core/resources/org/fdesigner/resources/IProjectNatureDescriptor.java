@@ -11,7 +11,7 @@
  *  Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.resources;
+package org.fdesigner.resources;
 
 /**
  * A project nature descriptor contains information about a project nature

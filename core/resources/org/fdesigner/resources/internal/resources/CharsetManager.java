@@ -14,20 +14,40 @@
  *     Tom Hochstein (Freescale) - Bug 409996 - 'Restore Defaults' does not work properly on Project Properties > Resource tab
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 473427
  *******************************************************************************/
-package org.eclipse.core.internal.resources;
+package org.fdesigner.resources.internal.resources;
 
-import java.util.*;
-import org.eclipse.core.internal.utils.Messages;
-import org.eclipse.core.internal.utils.Policy;
-import org.eclipse.core.resources.*;
-import org.eclipse.core.runtime.*;
-import org.eclipse.core.runtime.jobs.ISchedulingRule;
-import org.eclipse.core.runtime.jobs.Job;
-import org.eclipse.core.runtime.preferences.IEclipsePreferences;
-import org.eclipse.core.runtime.preferences.InstanceScope;
-import org.osgi.framework.Bundle;
-import org.osgi.service.prefs.BackingStoreException;
-import org.osgi.service.prefs.Preferences;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IResourceChangeEvent;
+import org.fdesigner.resources.IResourceChangeListener;
+import org.fdesigner.resources.IResourceDelta;
+import org.fdesigner.resources.IResourceStatus;
+import org.fdesigner.resources.ProjectScope;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.resources.internal.utils.Messages;
+import org.fdesigner.resources.internal.utils.Policy;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.MultiStatus;
+import org.fdesigner.runtime.common.runtime.OperationCanceledException;
+import org.fdesigner.runtime.common.runtime.Path;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.runtime.core.Preferences;
+import org.fdesigner.runtime.jobs.runtime.jobs.ISchedulingRule;
+import org.fdesigner.runtime.jobs.runtime.jobs.Job;
+import org.fdesigner.runtime.preferences.runtime.preferences.IEclipsePreferences;
+import org.fdesigner.runtime.preferences.runtime.preferences.InstanceScope;
+import org.fdesigner.runtime.preferences.service.prefs.BackingStoreException;
 
 /**
  * Manages user-defined encodings as preferences in the project content area.

@@ -12,16 +12,23 @@
  *     IBM Corporation - initial API and implementation
  *     James Blackburn (Broadcom Corp.) - ongoing development
  *******************************************************************************/
-package org.eclipse.core.internal.localstore;
+package org.fdesigner.resources.internal.localstore;
 
-import java.io.*;
-import org.eclipse.core.internal.localstore.Bucket.Visitor;
-import org.eclipse.core.internal.resources.ResourceException;
-import org.eclipse.core.internal.resources.Workspace;
-import org.eclipse.core.internal.utils.Messages;
-import org.eclipse.core.resources.*;
-import org.eclipse.core.runtime.*;
-import org.eclipse.osgi.util.NLS;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+import org.fdesigner.resources.IContainer;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IResourceStatus;
+import org.fdesigner.resources.internal.localstore.Bucket.Visitor;
+import org.fdesigner.resources.internal.resources.ResourceException;
+import org.fdesigner.resources.internal.resources.Workspace;
+import org.fdesigner.resources.internal.utils.Messages;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.Path;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * @since 3,1

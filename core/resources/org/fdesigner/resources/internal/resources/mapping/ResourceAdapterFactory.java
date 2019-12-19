@@ -11,11 +11,11 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.internal.resources.mapping;
+package org.fdesigner.resources.internal.resources.mapping;
 
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.mapping.ResourceMapping;
-import org.eclipse.core.runtime.IAdapterFactory;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.mapping.ResourceMapping;
+import org.fdesigner.runtime.common.runtime.IAdapterFactory;
 
 /**
  * Adapter factory converting IResource to ResourceMapping

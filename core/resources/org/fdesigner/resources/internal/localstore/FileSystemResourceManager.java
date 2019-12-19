@@ -18,21 +18,66 @@
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 473427
  *     Karsten Thoms <karsten.thoms@itemis.de> - Bug 521500
  *******************************************************************************/
-package org.eclipse.core.internal.localstore;
+package org.fdesigner.resources.internal.localstore;
 
-import java.io.*;
+import java.io.BufferedInputStream;
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.net.URI;
-import java.util.*;
-import org.eclipse.core.filesystem.*;
-import org.eclipse.core.filesystem.URIUtil;
-import org.eclipse.core.internal.refresh.RefreshManager;
-import org.eclipse.core.internal.resources.*;
-import org.eclipse.core.internal.resources.File;
-import org.eclipse.core.internal.utils.*;
-import org.eclipse.core.resources.*;
-import org.eclipse.core.runtime.*;
-import org.eclipse.core.runtime.Preferences.PropertyChangeEvent;
-import org.eclipse.osgi.util.NLS;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+
+import org.fdesigner.filesystem.EFS;
+import org.fdesigner.filesystem.IFileInfo;
+import org.fdesigner.filesystem.IFileStore;
+import org.fdesigner.filesystem.IFileTree;
+import org.fdesigner.filesystem.URIUtil;
+import org.fdesigner.resources.IContainer;
+import org.fdesigner.resources.IFile;
+import org.fdesigner.resources.IFolder;
+import org.fdesigner.resources.IPathVariableManager;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IProjectDescription;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IResourceStatus;
+import org.fdesigner.resources.IWorkspaceRoot;
+import org.fdesigner.resources.ResourceAttributes;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.resources.internal.refresh.RefreshManager;
+import org.fdesigner.resources.internal.resources.Folder;
+import org.fdesigner.resources.internal.resources.ICoreConstants;
+import org.fdesigner.resources.internal.resources.IManager;
+import org.fdesigner.resources.internal.resources.LinkDescription;
+import org.fdesigner.resources.internal.resources.ModelObjectWriter;
+import org.fdesigner.resources.internal.resources.Project;
+import org.fdesigner.resources.internal.resources.ProjectDescription;
+import org.fdesigner.resources.internal.resources.ProjectDescriptionReader;
+import org.fdesigner.resources.internal.resources.Resource;
+import org.fdesigner.resources.internal.resources.ResourceException;
+import org.fdesigner.resources.internal.resources.ResourceInfo;
+import org.fdesigner.resources.internal.resources.Workspace;
+import org.fdesigner.resources.internal.utils.BitMask;
+import org.fdesigner.resources.internal.utils.FileUtil;
+import org.fdesigner.resources.internal.utils.Messages;
+import org.fdesigner.resources.internal.utils.Policy;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.MultiStatus;
+import org.fdesigner.runtime.common.runtime.OperationCanceledException;
+import org.fdesigner.runtime.common.runtime.Path;
+import org.fdesigner.runtime.common.runtime.SubMonitor;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.runtime.core.Preferences;
+import org.fdesigner.runtime.core.Preferences.PropertyChangeEvent;
+import org.fdesigner.supplement.util.NLS;
 import org.xml.sax.InputSource;
 
 /**

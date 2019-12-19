@@ -11,16 +11,19 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.internal.localstore;
+package org.fdesigner.resources.internal.localstore;
 
 import java.io.InputStream;
 import java.util.Set;
-import org.eclipse.core.filesystem.IFileInfo;
-import org.eclipse.core.filesystem.IFileStore;
-import org.eclipse.core.internal.resources.IManager;
-import org.eclipse.core.resources.IFileState;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.runtime.*;
+
+import org.fdesigner.filesystem.IFileInfo;
+import org.fdesigner.filesystem.IFileStore;
+import org.fdesigner.resources.IFileState;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.internal.resources.IManager;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
 
 /**
  * The history store is an association of paths to file states.

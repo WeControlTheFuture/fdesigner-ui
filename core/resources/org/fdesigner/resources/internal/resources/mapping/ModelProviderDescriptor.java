@@ -13,17 +13,33 @@
  *     James Blackburn (Broadcom Corp.) - ongoing development
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 473427
  *******************************************************************************/
-package org.eclipse.core.internal.resources.mapping;
+package org.fdesigner.resources.internal.resources.mapping;
 
-import java.util.*;
-import org.eclipse.core.expressions.*;
-import org.eclipse.core.internal.resources.ResourceException;
-import org.eclipse.core.internal.utils.Messages;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.resources.mapping.*;
-import org.eclipse.core.runtime.*;
-import org.eclipse.osgi.util.NLS;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+import org.fdesigner.expressions.EvaluationContext;
+import org.fdesigner.expressions.EvaluationResult;
+import org.fdesigner.expressions.Expression;
+import org.fdesigner.expressions.ExpressionConverter;
+import org.fdesigner.expressions.ExpressionTagNames;
+import org.fdesigner.expressions.IEvaluationContext;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.resources.internal.resources.ResourceException;
+import org.fdesigner.resources.internal.utils.Messages;
+import org.fdesigner.resources.mapping.IModelProviderDescriptor;
+import org.fdesigner.resources.mapping.ModelProvider;
+import org.fdesigner.resources.mapping.ResourceTraversal;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.runtime.registry.runtime.IExtension;
+import org.fdesigner.supplement.util.NLS;
 
 public class ModelProviderDescriptor implements IModelProviderDescriptor {
 

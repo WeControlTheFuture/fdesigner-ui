@@ -12,17 +12,40 @@
  *     IBM Corporation - initial API and implementation
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 473427
  *******************************************************************************/
-package org.eclipse.core.internal.localstore;
+package org.fdesigner.resources.internal.localstore;
 
 import java.io.InputStream;
-import java.util.*;
-import org.eclipse.core.filesystem.*;
-import org.eclipse.core.internal.localstore.Bucket.Entry;
-import org.eclipse.core.internal.localstore.HistoryBucket.HistoryEntry;
-import org.eclipse.core.internal.resources.*;
-import org.eclipse.core.internal.utils.*;
-import org.eclipse.core.resources.*;
-import org.eclipse.core.runtime.*;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Set;
+
+import org.fdesigner.filesystem.EFS;
+import org.fdesigner.filesystem.IFileInfo;
+import org.fdesigner.filesystem.IFileStore;
+import org.fdesigner.resources.IFileState;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IResourceStatus;
+import org.fdesigner.resources.IWorkspaceDescription;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.resources.internal.localstore.Bucket.Entry;
+import org.fdesigner.resources.internal.localstore.HistoryBucket.HistoryEntry;
+import org.fdesigner.resources.internal.resources.FileState;
+import org.fdesigner.resources.internal.resources.ResourceException;
+import org.fdesigner.resources.internal.resources.ResourceStatus;
+import org.fdesigner.resources.internal.resources.Workspace;
+import org.fdesigner.resources.internal.resources.WorkspaceDescription;
+import org.fdesigner.resources.internal.utils.Messages;
+import org.fdesigner.resources.internal.utils.Policy;
+import org.fdesigner.resources.internal.utils.UniversalUniqueIdentifier;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Path;
+import org.fdesigner.runtime.common.runtime.Status;
 
 public class HistoryStore2 implements IHistoryStore {
 

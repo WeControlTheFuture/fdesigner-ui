@@ -12,12 +12,15 @@
  *     IBM Corporation - initial API and implementation
  *     Martin Oberhuber (Wind River) - [292267] OutOfMemoryError due to leak in UnifiedTree
  *******************************************************************************/
-package org.eclipse.core.internal.localstore;
+package org.fdesigner.resources.internal.localstore;
 
 import java.util.Iterator;
-import org.eclipse.core.filesystem.*;
-import org.eclipse.core.internal.resources.Resource;
-import org.eclipse.core.resources.IResource;
+
+import org.fdesigner.filesystem.EFS;
+import org.fdesigner.filesystem.IFileInfo;
+import org.fdesigner.filesystem.IFileStore;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.internal.resources.Resource;
 
 /**
  * A node in a {@link UnifiedTree}. A node usually represents a file/folder

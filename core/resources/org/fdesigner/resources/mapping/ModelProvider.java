@@ -13,12 +13,25 @@
  *     James Blackburn (Broadcom Corp.) - ongoing development
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 473427
  *******************************************************************************/
-package org.eclipse.core.resources.mapping;
+package org.fdesigner.resources.mapping;
 
-import java.util.*;
-import org.eclipse.core.internal.resources.mapping.ModelProviderManager;
-import org.eclipse.core.resources.*;
-import org.eclipse.core.runtime.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IResourceDelta;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.resources.internal.resources.mapping.ModelProviderManager;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.PlatformObject;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.common.runtime.SubMonitor;
 
 /**
  * Represents the provider of a logical model. The main purpose of this

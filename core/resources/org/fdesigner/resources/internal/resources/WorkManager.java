@@ -13,15 +13,18 @@
  *     James Blackburn (Broadcom Corp.) - ongoing development
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 473427
  *******************************************************************************/
-package org.eclipse.core.internal.resources;
+package org.fdesigner.resources.internal.resources;
 
-import org.eclipse.core.internal.utils.Messages;
-import org.eclipse.core.internal.utils.Policy;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.IResourceStatus;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.jobs.*;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IResourceStatus;
+import org.fdesigner.resources.internal.utils.Messages;
+import org.fdesigner.resources.internal.utils.Policy;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.jobs.runtime.jobs.IJobManager;
+import org.fdesigner.runtime.jobs.runtime.jobs.ILock;
+import org.fdesigner.runtime.jobs.runtime.jobs.ISchedulingRule;
+import org.fdesigner.runtime.jobs.runtime.jobs.Job;
 
 /**
  * The work manager governs concurrent access to the workspace tree.  The {@link #lock}

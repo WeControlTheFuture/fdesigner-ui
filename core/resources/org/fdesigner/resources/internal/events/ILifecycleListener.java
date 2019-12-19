@@ -11,9 +11,9 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.internal.events;
+package org.fdesigner.resources.internal.events;
 
-import org.eclipse.core.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.CoreException;
 
 /**
  * Interface for clients interested in receiving notification of workspace

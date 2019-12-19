@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *     Mickael Istria (Red Hat Inc.) - Bug 488938, 488937
  *******************************************************************************/
-package org.eclipse.core.internal.utils;
+package org.fdesigner.resources.internal.utils;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;

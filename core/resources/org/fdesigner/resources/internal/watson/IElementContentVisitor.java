@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.internal.watson;
+package org.fdesigner.resources.internal.watson;
 
 /**
  * An interface for objects which can visit an element of

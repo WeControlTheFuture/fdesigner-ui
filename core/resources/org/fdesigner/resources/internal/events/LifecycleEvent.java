@@ -12,9 +12,9 @@
  *     IBM Corporation - initial API and implementation
  *     Serge Beauchamp (Freescale Semiconductor) - [229633] Group Support
  *******************************************************************************/
-package org.eclipse.core.internal.events;
+package org.fdesigner.resources.internal.events;
 
-import org.eclipse.core.resources.IResource;
+import org.fdesigner.resources.IResource;
 
 /**
  * Class used for broadcasting internal workspace lifecycle events.  There is a

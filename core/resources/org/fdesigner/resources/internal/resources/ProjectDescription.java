@@ -16,16 +16,38 @@
  *     Broadcom Corporation - build configurations and references
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 473427
  *******************************************************************************/
-package org.eclipse.core.internal.resources;
+package org.fdesigner.resources.internal.resources;
 
 import java.net.URI;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.LinkedHashSet;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
 import java.util.Map.Entry;
-import org.eclipse.core.filesystem.URIUtil;
-import org.eclipse.core.internal.events.BuildCommand;
-import org.eclipse.core.internal.utils.FileUtil;
-import org.eclipse.core.resources.*;
-import org.eclipse.core.runtime.*;
+import java.util.Set;
+
+import org.fdesigner.filesystem.URIUtil;
+import org.fdesigner.resources.IBuildConfiguration;
+import org.fdesigner.resources.ICommand;
+import org.fdesigner.resources.IDynamicReferenceProvider;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IProjectDescription;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.resources.internal.events.BuildCommand;
+import org.fdesigner.resources.internal.utils.FileUtil;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.runtime.registry.runtime.IExtension;
 
 public class ProjectDescription extends ModelObject implements IProjectDescription {
 	// constants

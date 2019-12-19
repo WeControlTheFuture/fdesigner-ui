@@ -13,14 +13,26 @@
  *     James Blackburn (Broadcom Corp.) - ongoing development
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 473427, 483862
  *******************************************************************************/
-package org.eclipse.core.internal.refresh;
+package org.fdesigner.resources.internal.refresh;
 
-import java.util.*;
-import org.eclipse.core.internal.localstore.PrefixPool;
-import org.eclipse.core.internal.utils.Messages;
-import org.eclipse.core.internal.utils.Policy;
-import org.eclipse.core.resources.*;
-import org.eclipse.core.runtime.*;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+import org.fdesigner.resources.IContainer;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.resources.WorkspaceJob;
+import org.fdesigner.resources.internal.localstore.PrefixPool;
+import org.fdesigner.resources.internal.utils.Messages;
+import org.fdesigner.resources.internal.utils.Policy;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.MultiStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.common.runtime.SubMonitor;
 
 /**
  * The <code>RefreshJob</code> class maintains a list of resources that

@@ -11,9 +11,9 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.internal.watson;
+package org.fdesigner.resources.internal.watson;
 
-import org.eclipse.core.internal.dtree.IComparator;
+import org.fdesigner.resources.internal.dtree.IComparator;
 
 /**
  * This interface allows clients of the element tree to specify

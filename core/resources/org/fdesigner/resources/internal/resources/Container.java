@@ -13,17 +13,36 @@
  *     James Blackburn (Broadcom Corp.) - ongoing development
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 473427
  *******************************************************************************/
-package org.eclipse.core.internal.resources;
+package org.fdesigner.resources.internal.resources;
 
-import java.util.*;
-import org.eclipse.core.internal.events.LifecycleEvent;
-import org.eclipse.core.internal.localstore.IHistoryStore;
-import org.eclipse.core.internal.utils.*;
-import org.eclipse.core.internal.watson.*;
-import org.eclipse.core.resources.*;
-import org.eclipse.core.runtime.*;
-import org.eclipse.core.runtime.jobs.ISchedulingRule;
-import org.eclipse.osgi.util.NLS;
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.Set;
+
+import org.fdesigner.resources.FileInfoMatcherDescription;
+import org.fdesigner.resources.IContainer;
+import org.fdesigner.resources.IFile;
+import org.fdesigner.resources.IFolder;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IResourceFilterDescription;
+import org.fdesigner.resources.IWorkspaceRoot;
+import org.fdesigner.resources.internal.events.LifecycleEvent;
+import org.fdesigner.resources.internal.localstore.IHistoryStore;
+import org.fdesigner.resources.internal.utils.Messages;
+import org.fdesigner.resources.internal.utils.Policy;
+import org.fdesigner.resources.internal.utils.WrappedRuntimeException;
+import org.fdesigner.resources.internal.watson.ElementTree;
+import org.fdesigner.resources.internal.watson.ElementTreeIterator;
+import org.fdesigner.resources.internal.watson.IElementContentVisitor;
+import org.fdesigner.resources.internal.watson.IPathRequestor;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.OperationCanceledException;
+import org.fdesigner.runtime.jobs.runtime.jobs.ISchedulingRule;
+import org.fdesigner.supplement.util.NLS;
 
 public abstract class Container extends Resource implements IContainer {
 	protected Container(IPath path, Workspace container) {

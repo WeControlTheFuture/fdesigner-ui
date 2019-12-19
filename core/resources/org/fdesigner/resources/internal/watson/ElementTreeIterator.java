@@ -11,12 +11,12 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.internal.watson;
+package org.fdesigner.resources.internal.watson;
 
-import org.eclipse.core.internal.dtree.AbstractDataTreeNode;
-import org.eclipse.core.internal.dtree.DataTreeNode;
-import org.eclipse.core.runtime.IPath;
-import org.eclipse.core.runtime.Path;
+import org.fdesigner.resources.internal.dtree.AbstractDataTreeNode;
+import org.fdesigner.resources.internal.dtree.DataTreeNode;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.Path;
 
 /**
  * A class for performing operations on each element in an element tree.

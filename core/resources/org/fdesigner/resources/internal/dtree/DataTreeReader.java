@@ -12,12 +12,15 @@
  *     IBM Corporation - initial API and implementation
  * Francis Lynch (Wind River) - [305718] Allow reading snapshot into renamed project
  *******************************************************************************/
-package org.eclipse.core.internal.dtree;
+package org.fdesigner.resources.internal.dtree;
 
 import java.io.DataInput;
 import java.io.IOException;
-import org.eclipse.core.internal.utils.Messages;
-import org.eclipse.core.runtime.*;
+
+import org.fdesigner.resources.internal.utils.Messages;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.Path;
 
 /**
  * Class used for reading a single data tree (no parents) from an input stream

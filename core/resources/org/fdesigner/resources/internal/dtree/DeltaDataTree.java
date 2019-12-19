@@ -11,11 +11,13 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.internal.dtree;
+package org.fdesigner.resources.internal.dtree;
 
-import org.eclipse.core.internal.utils.Messages;
-import org.eclipse.core.internal.utils.StringPool;
-import org.eclipse.core.runtime.*;
+import org.fdesigner.resources.internal.utils.Messages;
+import org.fdesigner.resources.internal.utils.StringPool;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.Path;
 
 /**
  * Externally, a <code>DeltaDataTree</code> appears to have the same content as

@@ -12,10 +12,10 @@
  *     IBM Corporation - initial API and implementation
  *     James Blackburn (Broadcom Corp.) - ongoing development
  *******************************************************************************/
-package org.eclipse.core.internal.resources;
+package org.fdesigner.resources.internal.resources;
 
-import org.eclipse.core.internal.utils.IStringPoolParticipant;
-import org.eclipse.core.internal.utils.StringPool;
+import org.fdesigner.resources.internal.utils.IStringPoolParticipant;
+import org.fdesigner.resources.internal.utils.StringPool;
 
 public class MarkerSet implements Cloneable, IStringPoolParticipant {
 	protected static final int MINIMUM_SIZE = 5;

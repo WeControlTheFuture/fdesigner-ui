@@ -14,12 +14,15 @@
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 473427
  *     Mickael Istria (Red Hat Inc.) - Bug 488937
  *******************************************************************************/
-package org.eclipse.core.internal.resources;
+package org.fdesigner.resources.internal.resources;
 
 import java.io.DataOutputStream;
 import java.io.IOException;
-import java.util.*;
-import org.eclipse.core.internal.watson.IPathRequestor;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+import org.fdesigner.resources.internal.watson.IPathRequestor;
 
 //
 public class MarkerWriter {

@@ -11,9 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.resources.team;
-
-import org.eclipse.core.resources.IWorkspace;
+package org.fdesigner.resources.team;
 
 /**
  * A context that is used in conjunction with the {@link FileModificationValidator}

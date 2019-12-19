@@ -16,22 +16,60 @@
  *     Broadcom Corporation - ongoing development
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 473427
  *******************************************************************************/
-package org.eclipse.core.internal.events;
+package org.fdesigner.resources.internal.events;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
-import org.eclipse.core.internal.dtree.DeltaDataTree;
-import org.eclipse.core.internal.resources.*;
-import org.eclipse.core.internal.resources.ComputeProjectOrder.Digraph;
-import org.eclipse.core.internal.utils.Messages;
-import org.eclipse.core.internal.utils.Policy;
-import org.eclipse.core.internal.watson.ElementTree;
-import org.eclipse.core.resources.*;
-import org.eclipse.core.runtime.*;
-import org.eclipse.core.runtime.jobs.*;
-import org.eclipse.osgi.util.NLS;
-import org.osgi.framework.Bundle;
+
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.resources.IBuildConfiguration;
+import org.fdesigner.resources.IBuildContext;
+import org.fdesigner.resources.ICommand;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IProjectDescription;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IResourceDelta;
+import org.fdesigner.resources.IResourceStatus;
+import org.fdesigner.resources.IncrementalProjectBuilder;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.resources.internal.dtree.DeltaDataTree;
+import org.fdesigner.resources.internal.resources.ComputeProjectOrder.Digraph;
+import org.fdesigner.resources.internal.resources.ICoreConstants;
+import org.fdesigner.resources.internal.resources.IManager;
+import org.fdesigner.resources.internal.resources.Project;
+import org.fdesigner.resources.internal.resources.ProjectDescription;
+import org.fdesigner.resources.internal.resources.ResourceStatus;
+import org.fdesigner.resources.internal.resources.WorkManager;
+import org.fdesigner.resources.internal.resources.Workspace;
+import org.fdesigner.resources.internal.utils.Messages;
+import org.fdesigner.resources.internal.utils.Policy;
+import org.fdesigner.resources.internal.watson.ElementTree;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.ISafeRunnable;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.MultiStatus;
+import org.fdesigner.runtime.common.runtime.OperationCanceledException;
+import org.fdesigner.runtime.common.runtime.QualifiedName;
+import org.fdesigner.runtime.common.runtime.SafeRunner;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.runtime.jobs.runtime.jobs.ILock;
+import org.fdesigner.runtime.jobs.runtime.jobs.ISchedulingRule;
+import org.fdesigner.runtime.jobs.runtime.jobs.Job;
+import org.fdesigner.runtime.jobs.runtime.jobs.JobGroup;
+import org.fdesigner.runtime.jobs.runtime.jobs.MultiRule;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.runtime.registry.runtime.IExtension;
+import org.fdesigner.supplement.util.NLS;
 
 public class BuildManager implements ICoreConstants, IManager, ILifecycleListener {
 

@@ -11,13 +11,13 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.internal.resources;
+package org.fdesigner.resources.internal.resources;
 
-import org.eclipse.core.internal.utils.Policy;
-import org.eclipse.core.resources.IFilterMatcherDescriptor;
-import org.eclipse.core.resources.filtermatchers.AbstractFileInfoMatcher;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IConfigurationElement;
+import org.fdesigner.resources.IFilterMatcherDescriptor;
+import org.fdesigner.resources.filtermatchers.AbstractFileInfoMatcher;
+import org.fdesigner.resources.internal.utils.Policy;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
 
 public class FilterDescriptor implements IFilterMatcherDescriptor {
 	private String id;

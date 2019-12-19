@@ -11,12 +11,13 @@
  * Contributors:
  * Broadcom Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.internal.events;
+package org.fdesigner.resources.internal.events;
 
 import java.util.Arrays;
-import org.eclipse.core.resources.IBuildConfiguration;
-import org.eclipse.core.resources.IBuildContext;
-import org.eclipse.core.runtime.Assert;
+
+import org.fdesigner.resources.IBuildConfiguration;
+import org.fdesigner.resources.IBuildContext;
+import org.fdesigner.runtime.common.runtime.Assert;
 
 /**
  * Concrete implementation of a build context

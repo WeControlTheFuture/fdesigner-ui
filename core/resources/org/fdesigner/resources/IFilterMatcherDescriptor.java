@@ -12,9 +12,7 @@
  *     Serge Beauchamp(Freescale Semiconductor) - initial API and implementation
  *     IBM Corporation - ongoing development
  *******************************************************************************/
-package org.eclipse.core.resources;
-
-import org.eclipse.core.resources.filtermatchers.AbstractFileInfoMatcher;
+package org.fdesigner.resources;
 
 /**
  * A filter descriptor contains information about a filter type

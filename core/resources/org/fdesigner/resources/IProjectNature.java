@@ -11,9 +11,9 @@
  *  Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.resources;
+package org.fdesigner.resources;
 
-import org.eclipse.core.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.CoreException;
 
 /**
  * Interface for project nature runtime classes.

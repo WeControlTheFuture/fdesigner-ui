@@ -11,10 +11,10 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.internal.resources.projectvariables;
+package org.fdesigner.resources.internal.resources.projectvariables;
 
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.variableresolvers.PathVariableResolver;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.variableresolvers.PathVariableResolver;
 
 /**
  *

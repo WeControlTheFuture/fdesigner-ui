@@ -11,10 +11,11 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.resources;
+package org.fdesigner.resources;
 
 import java.util.List;
-import org.eclipse.core.runtime.CoreException;
+
+import org.fdesigner.runtime.common.runtime.CoreException;
 
 /**
  * Implementations of this interface are capable of determining a set

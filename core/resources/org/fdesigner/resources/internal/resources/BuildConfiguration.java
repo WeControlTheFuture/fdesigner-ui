@@ -11,13 +11,14 @@
  * Contributors:
  * Broadcom Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.internal.resources;
+package org.fdesigner.resources.internal.resources;
 
 import java.util.Objects;
-import org.eclipse.core.resources.IBuildConfiguration;
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.PlatformObject;
+
+import org.fdesigner.resources.IBuildConfiguration;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.PlatformObject;
 
 /**
  * Concrete implementation of a build configuration.

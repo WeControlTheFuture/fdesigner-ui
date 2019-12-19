@@ -11,15 +11,20 @@
  * Contributors:
  *     IBM - Initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.internal.refresh;
+package org.fdesigner.resources.internal.refresh;
 
-import org.eclipse.core.internal.resources.IManager;
-import org.eclipse.core.internal.utils.Messages;
-import org.eclipse.core.resources.*;
-import org.eclipse.core.resources.refresh.IRefreshMonitor;
-import org.eclipse.core.resources.refresh.IRefreshResult;
-import org.eclipse.core.runtime.*;
-import org.eclipse.core.runtime.Preferences.PropertyChangeEvent;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IWorkspace;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.resources.internal.resources.IManager;
+import org.fdesigner.resources.internal.utils.Messages;
+import org.fdesigner.resources.refresh.IRefreshMonitor;
+import org.fdesigner.resources.refresh.IRefreshResult;
+import org.fdesigner.runtime.common.runtime.ICoreRunnable;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.SubMonitor;
+import org.fdesigner.runtime.core.Preferences;
+import org.fdesigner.runtime.core.Preferences.PropertyChangeEvent;
 
 /**
  * Manages auto-refresh functionality, including maintaining the active

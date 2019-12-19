@@ -11,12 +11,12 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.internal.dtree;
+package org.fdesigner.resources.internal.dtree;
 
-import org.eclipse.core.internal.utils.Messages;
-import org.eclipse.core.runtime.IPath;
-import org.eclipse.core.runtime.Path;
-import org.eclipse.osgi.util.NLS;
+import org.fdesigner.resources.internal.utils.Messages;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.Path;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * Data trees can be viewed as generic multi-leaf trees.  The tree points to a single

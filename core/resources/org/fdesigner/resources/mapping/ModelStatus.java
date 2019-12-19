@@ -11,10 +11,10 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.resources.mapping;
+package org.fdesigner.resources.mapping;
 
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.core.runtime.Status;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.Status;
 
 /**
  * A status returned by a model from the resource operation validator.

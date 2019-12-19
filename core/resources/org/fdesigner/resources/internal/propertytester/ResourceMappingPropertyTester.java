@@ -11,12 +11,12 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.internal.propertytester;
+package org.fdesigner.resources.internal.propertytester;
 
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.resources.mapping.ResourceMapping;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.QualifiedName;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.mapping.ResourceMapping;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.QualifiedName;
 
 /**
  * A property tester for various properties of resource mappings

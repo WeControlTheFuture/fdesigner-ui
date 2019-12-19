@@ -11,11 +11,13 @@
  * Contributors:
  *     IBM - Initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.internal.resources.refresh.win32;
+package org.fdesigner.resources.internal.resources.refresh.win32;
 
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.refresh.*;
-import org.eclipse.core.runtime.IProgressMonitor;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.refresh.IRefreshMonitor;
+import org.fdesigner.resources.refresh.IRefreshResult;
+import org.fdesigner.resources.refresh.RefreshProvider;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
 
 /**
  * The <code>Win32RefreshProvider</code> creates monitors that

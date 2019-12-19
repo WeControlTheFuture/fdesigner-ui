@@ -12,17 +12,28 @@
  *     IBM - Initial API and implementation
  *     Warren Paul (Nokia) - Fix for build scheduling bug 209236
  *******************************************************************************/
-package org.eclipse.core.internal.events;
+package org.fdesigner.resources.internal.events;
 
-import org.eclipse.core.internal.resources.*;
-import org.eclipse.core.internal.utils.Messages;
-import org.eclipse.core.internal.utils.Policy;
-import org.eclipse.core.resources.*;
-import org.eclipse.core.runtime.*;
-import org.eclipse.core.runtime.Preferences.PropertyChangeEvent;
-import org.eclipse.core.runtime.jobs.ISchedulingRule;
-import org.eclipse.core.runtime.jobs.Job;
-import org.osgi.framework.Bundle;
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.resources.IResourceChangeEvent;
+import org.fdesigner.resources.IncrementalProjectBuilder;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.resources.internal.resources.ICoreConstants;
+import org.fdesigner.resources.internal.resources.ResourceException;
+import org.fdesigner.resources.internal.resources.Workspace;
+import org.fdesigner.resources.internal.utils.Messages;
+import org.fdesigner.resources.internal.utils.Policy;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.OperationCanceledException;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.common.runtime.SubMonitor;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.runtime.core.Preferences;
+import org.fdesigner.runtime.core.Preferences.PropertyChangeEvent;
+import org.fdesigner.runtime.jobs.runtime.jobs.ISchedulingRule;
+import org.fdesigner.runtime.jobs.runtime.jobs.Job;
 
 /**
  * The job for performing workspace auto-builds, and pre- and post- autobuild

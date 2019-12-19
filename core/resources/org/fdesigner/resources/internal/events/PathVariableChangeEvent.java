@@ -11,12 +11,13 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.internal.events;
+package org.fdesigner.resources.internal.events;
 
 import java.util.EventObject;
-import org.eclipse.core.resources.IPathVariableChangeEvent;
-import org.eclipse.core.resources.IPathVariableManager;
-import org.eclipse.core.runtime.IPath;
+
+import org.fdesigner.resources.IPathVariableChangeEvent;
+import org.fdesigner.resources.IPathVariableManager;
+import org.fdesigner.runtime.common.runtime.IPath;
 
 /**
  * Describes a change in path variable. Core's default implementation for the

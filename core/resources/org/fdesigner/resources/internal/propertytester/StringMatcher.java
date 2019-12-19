@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 473427
  *******************************************************************************/
-package org.eclipse.core.internal.propertytester;
+package org.fdesigner.resources.internal.propertytester;
 
 import java.util.ArrayList;
 

@@ -11,11 +11,10 @@
  * Contributors:
  *     IBM - Initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.internal.resources;
+package org.fdesigner.resources.internal.resources;
 
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.resources.IResourceRuleFactory;
-import org.eclipse.core.resources.team.TeamHook;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IResourceRuleFactory;
 
 /**
  * The internal abstract superclass of all {@link TeamHook} implementations.  This superclass

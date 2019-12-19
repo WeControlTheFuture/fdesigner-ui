@@ -12,14 +12,29 @@
  *     IBM Corporation - initial API and implementation
  *     Sergey Prigogin (Google) - [482064] Incorrect SubMonitor usage in RefreshLocalVisitor.visit
  *******************************************************************************/
-package org.eclipse.core.internal.localstore;
+package org.fdesigner.resources.internal.localstore;
 
-import org.eclipse.core.internal.resources.*;
-import org.eclipse.core.internal.utils.Messages;
-import org.eclipse.core.internal.utils.Policy;
-import org.eclipse.core.resources.*;
-import org.eclipse.core.runtime.*;
-import org.eclipse.osgi.util.NLS;
+import org.fdesigner.resources.IContainer;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IResourceStatus;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.resources.internal.resources.Container;
+import org.fdesigner.resources.internal.resources.File;
+import org.fdesigner.resources.internal.resources.Folder;
+import org.fdesigner.resources.internal.resources.ICoreConstants;
+import org.fdesigner.resources.internal.resources.Resource;
+import org.fdesigner.resources.internal.resources.ResourceInfo;
+import org.fdesigner.resources.internal.resources.ResourceStatus;
+import org.fdesigner.resources.internal.resources.Workspace;
+import org.fdesigner.resources.internal.utils.Messages;
+import org.fdesigner.resources.internal.utils.Policy;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.MultiStatus;
+import org.fdesigner.runtime.common.runtime.Path;
+import org.fdesigner.runtime.common.runtime.SubMonitor;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * Visits a unified tree, and synchronizes the file system with the

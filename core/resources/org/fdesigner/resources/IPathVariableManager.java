@@ -13,10 +13,13 @@
  *     Serge Beauchamp (Freescale Semiconductor) - [229633] Project Path Variable Support
  *******************************************************************************/
 
-package org.eclipse.core.resources;
+package org.fdesigner.resources;
 
 import java.net.URI;
-import org.eclipse.core.runtime.*;
+
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.IStatus;
 
 /**
  * Manages a collection of path variables and resolves paths containing a

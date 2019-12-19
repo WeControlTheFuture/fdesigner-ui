@@ -11,15 +11,16 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.internal.localstore;
+package org.fdesigner.resources.internal.localstore;
 
 import java.io.InputStream;
 import java.util.Set;
-import org.eclipse.core.filesystem.EFS;
-import org.eclipse.core.filesystem.IFileStore;
-import org.eclipse.core.internal.utils.UniversalUniqueIdentifier;
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.core.runtime.CoreException;
+
+import org.fdesigner.filesystem.EFS;
+import org.fdesigner.filesystem.IFileStore;
+import org.fdesigner.resources.internal.utils.UniversalUniqueIdentifier;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.CoreException;
 
 /**
  * Blob store which maps UUIDs to blobs on disk. The UUID is mapped

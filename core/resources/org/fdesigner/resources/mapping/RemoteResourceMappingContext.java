@@ -8,11 +8,15 @@ t SPDX-License-Identifier: EPL-2.0
  *
  * Contributors: IBM Corporation - initial API and implementation
  ******************************************************************************/
-package org.eclipse.core.resources.mapping;
+package org.fdesigner.resources.mapping;
 
-import org.eclipse.core.resources.*;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IProgressMonitor;
+import org.fdesigner.resources.IContainer;
+import org.fdesigner.resources.IFile;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IStorage;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
 
 /**
  * A remote mapping context provides a model element with a view of the remote

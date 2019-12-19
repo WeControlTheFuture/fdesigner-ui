@@ -13,11 +13,20 @@
  *     James Blackburn (Broadcom Corp.) - ongoing development
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 473427
  *******************************************************************************/
-package org.eclipse.core.internal.resources.mapping;
+package org.fdesigner.resources.internal.resources.mapping;
 
-import java.util.*;
-import org.eclipse.core.resources.*;
-import org.eclipse.core.runtime.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
+import org.fdesigner.resources.IContainer;
+import org.fdesigner.resources.IMarkerDelta;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IResourceDelta;
+import org.fdesigner.resources.IResourceDeltaVisitor;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.PlatformObject;
 
 /**
  * Concrete implementation of IResourceDelta used for operation validation

@@ -11,11 +11,12 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.resources;
+package org.fdesigner.resources;
 
-import org.eclipse.core.internal.watson.IElementComparator;
-import org.eclipse.core.resources.mapping.IResourceChangeDescriptionFactory;
-import org.eclipse.core.runtime.*;
+import org.fdesigner.resources.internal.watson.IElementComparator;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IAdaptable;
+import org.fdesigner.runtime.common.runtime.IPath;
 
 /**
  * A resource delta represents changes in the state of a resource tree

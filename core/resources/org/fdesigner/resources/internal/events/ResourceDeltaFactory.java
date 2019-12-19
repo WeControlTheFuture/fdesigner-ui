@@ -12,17 +12,22 @@
  *     IBM Corporation - initial API and implementation
  *     James Blackburn (Broadcom Corp.) - ongoing development
  *******************************************************************************/
-package org.eclipse.core.internal.events;
+package org.fdesigner.resources.internal.events;
 
 import java.util.Map;
-import org.eclipse.core.internal.dtree.DeltaDataTree;
-import org.eclipse.core.internal.dtree.NodeComparison;
-import org.eclipse.core.internal.resources.*;
-import org.eclipse.core.internal.watson.ElementTree;
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.resources.IResourceDelta;
-import org.eclipse.core.runtime.IPath;
-import org.eclipse.core.runtime.Path;
+
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IResourceDelta;
+import org.fdesigner.resources.internal.dtree.DeltaDataTree;
+import org.fdesigner.resources.internal.dtree.NodeComparison;
+import org.fdesigner.resources.internal.resources.ICoreConstants;
+import org.fdesigner.resources.internal.resources.MarkerSet;
+import org.fdesigner.resources.internal.resources.Project;
+import org.fdesigner.resources.internal.resources.ResourceInfo;
+import org.fdesigner.resources.internal.resources.Workspace;
+import org.fdesigner.resources.internal.watson.ElementTree;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.Path;
 
 /**
  * This class is used for calculating and building resource delta trees for notification

@@ -11,13 +11,13 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.internal.events;
+package org.fdesigner.resources.internal.events;
 
-import org.eclipse.core.internal.resources.ICoreConstants;
-import org.eclipse.core.internal.resources.ResourceInfo;
-import org.eclipse.core.internal.watson.IElementComparator;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.IResourceDelta;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IResourceDelta;
+import org.fdesigner.resources.internal.resources.ICoreConstants;
+import org.fdesigner.resources.internal.resources.ResourceInfo;
+import org.fdesigner.resources.internal.watson.IElementComparator;
 
 /**
  * Compares two Resources and returns flags describing how

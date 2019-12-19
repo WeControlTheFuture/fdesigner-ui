@@ -11,11 +11,13 @@
  *  Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.resources.team;
+package org.fdesigner.resources.team;
 
-import org.eclipse.core.resources.*;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.OperationCanceledException;
+import org.fdesigner.resources.IFile;
+import org.fdesigner.resources.IFolder;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IProjectDescription;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
 
 /**
  * Primary interface for hooking the implementation of

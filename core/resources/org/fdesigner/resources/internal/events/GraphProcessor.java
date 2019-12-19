@@ -11,17 +11,24 @@
  * Contributors:
  *   Mickael Istria (Red Hat Inc.)
  *******************************************************************************/
-package org.eclipse.core.internal.events;
+package org.fdesigner.resources.internal.events;
 
-import java.util.*;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Set;
 import java.util.function.BiConsumer;
 import java.util.function.Function;
-import org.eclipse.core.internal.resources.ComputeProjectOrder;
-import org.eclipse.core.internal.resources.ComputeProjectOrder.Digraph;
-import org.eclipse.core.internal.resources.ComputeProjectOrder.Digraph.Edge;
-import org.eclipse.core.internal.resources.ComputeProjectOrder.VertexOrder;
-import org.eclipse.core.runtime.*;
-import org.eclipse.core.runtime.jobs.*;
+
+import org.fdesigner.resources.internal.resources.ComputeProjectOrder;
+import org.fdesigner.resources.internal.resources.ComputeProjectOrder.Digraph;
+import org.fdesigner.resources.internal.resources.ComputeProjectOrder.Digraph.Edge;
+import org.fdesigner.resources.internal.resources.ComputeProjectOrder.VertexOrder;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.jobs.runtime.jobs.ISchedulingRule;
+import org.fdesigner.runtime.jobs.runtime.jobs.Job;
+import org.fdesigner.runtime.jobs.runtime.jobs.JobGroup;
 
 /**
  *

@@ -11,10 +11,9 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.resources;
+package org.fdesigner.resources;
 
-import org.eclipse.core.resources.team.FileModificationValidator;
-import org.eclipse.core.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.IStatus;
 
 /**
  * The file modification validator is a Team-related hook for pre-checking operations

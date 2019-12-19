@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.internal.watson;
+package org.fdesigner.resources.internal.watson;
 
 /**
  * This is what you would expect for an element tree comparator.

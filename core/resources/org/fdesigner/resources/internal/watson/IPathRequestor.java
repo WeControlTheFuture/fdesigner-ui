@@ -11,9 +11,9 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.internal.watson;
+package org.fdesigner.resources.internal.watson;
 
-import org.eclipse.core.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.IPath;
 
 /**
  * Callback interface so visitors can request the path of the object they

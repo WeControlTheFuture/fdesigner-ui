@@ -12,12 +12,15 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.core.internal.propertytester;
+package org.fdesigner.resources.internal.propertytester;
 
-import org.eclipse.core.internal.utils.Policy;
-import org.eclipse.core.resources.IFile;
-import org.eclipse.core.runtime.*;
-import org.eclipse.core.runtime.content.*;
+import org.fdesigner.resources.IFile;
+import org.fdesigner.resources.internal.utils.Policy;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.contenttype.runtime.content.IContentDescription;
+import org.fdesigner.runtime.contenttype.runtime.content.IContentType;
+import org.fdesigner.runtime.core.Platform;
 
 /**
  * A property tester for various properties of files.

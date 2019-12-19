@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.internal.utils;
+package org.fdesigner.resources.internal.utils;
 
 /** Adapted from a homonym class in org.eclipse.osgi. A hash table of
  * <code>KeyedElement</code>s.

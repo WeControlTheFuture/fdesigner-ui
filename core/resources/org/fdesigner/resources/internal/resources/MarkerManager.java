@@ -13,18 +13,34 @@
  *     James Blackburn (Broadcom Corp.) - ongoing development
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 473427
  *******************************************************************************/
-package org.eclipse.core.internal.resources;
+package org.fdesigner.resources.internal.resources;
 
-import java.io.*;
-import java.util.*;
-import org.eclipse.core.internal.localstore.SafeChunkyInputStream;
-import org.eclipse.core.internal.localstore.SafeFileInputStream;
-import org.eclipse.core.internal.utils.Messages;
-import org.eclipse.core.internal.utils.Policy;
-import org.eclipse.core.internal.watson.*;
-import org.eclipse.core.resources.*;
-import org.eclipse.core.runtime.*;
-import org.eclipse.osgi.util.NLS;
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.EOFException;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+import org.fdesigner.resources.IContainer;
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IResourceDelta;
+import org.fdesigner.resources.IResourceStatus;
+import org.fdesigner.resources.IResourceVisitor;
+import org.fdesigner.resources.internal.localstore.SafeChunkyInputStream;
+import org.fdesigner.resources.internal.localstore.SafeFileInputStream;
+import org.fdesigner.resources.internal.utils.Messages;
+import org.fdesigner.resources.internal.utils.Policy;
+import org.fdesigner.resources.internal.watson.ElementTree;
+import org.fdesigner.resources.internal.watson.ElementTreeIterator;
+import org.fdesigner.resources.internal.watson.IElementContentVisitor;
+import org.fdesigner.resources.internal.watson.IPathRequestor;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * A marker manager stores and retrieves markers on resources in the workspace.

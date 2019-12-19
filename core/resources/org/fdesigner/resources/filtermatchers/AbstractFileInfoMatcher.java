@@ -12,13 +12,12 @@
  *     Serge Beauchamp(Freescale Semiconductor) - initial API and implementation
  *     IBM Corporation - ongoing development
  *******************************************************************************/
-package org.eclipse.core.resources.filtermatchers;
+package org.fdesigner.resources.filtermatchers;
 
-import org.eclipse.core.filesystem.IFileInfo;
-import org.eclipse.core.filesystem.provider.FileInfo;
-import org.eclipse.core.resources.IContainer;
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.runtime.CoreException;
+import org.fdesigner.filesystem.IFileInfo;
+import org.fdesigner.resources.IContainer;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.runtime.common.runtime.CoreException;
 
 /**
  * The abstract base class for all file info matchers. Instances

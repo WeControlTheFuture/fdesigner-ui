@@ -12,9 +12,9 @@
  *     Freescale Semiconductor - initial API and implementation
  *     IBM Corporation - ongoing development
  *******************************************************************************/
-package org.eclipse.core.resources.variableresolvers;
+package org.fdesigner.resources.variableresolvers;
 
-import org.eclipse.core.resources.IResource;
+import org.fdesigner.resources.IResource;
 
 /**
  * An interface that variable providers should implement in order

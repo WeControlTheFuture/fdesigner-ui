@@ -12,13 +12,20 @@
  *     IBM Corporation - initial API and implementation
  *     Broadcom Corporation - build configurations and references
  *******************************************************************************/
-package org.eclipse.core.internal.events;
+package org.fdesigner.resources.internal.events;
 
 import java.util.Map;
-import org.eclipse.core.internal.resources.ICoreConstants;
-import org.eclipse.core.internal.watson.ElementTree;
-import org.eclipse.core.resources.*;
-import org.eclipse.core.runtime.*;
+
+import org.fdesigner.resources.IBuildConfiguration;
+import org.fdesigner.resources.IBuildContext;
+import org.fdesigner.resources.ICommand;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IResourceDelta;
+import org.fdesigner.resources.internal.resources.ICoreConstants;
+import org.fdesigner.resources.internal.watson.ElementTree;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
 
 /**
  * This class is the internal basis for all builders. Plugin developers should not

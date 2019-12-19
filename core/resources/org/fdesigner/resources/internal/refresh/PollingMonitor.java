@@ -13,18 +13,25 @@
  *     James Blackburn (Broadcom Corp.) - ongoing development
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 473427
  *******************************************************************************/
-package org.eclipse.core.internal.refresh;
+package org.fdesigner.resources.internal.refresh;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import org.eclipse.core.internal.resources.Resource;
-import org.eclipse.core.internal.utils.Messages;
-import org.eclipse.core.internal.utils.Policy;
-import org.eclipse.core.resources.*;
-import org.eclipse.core.resources.refresh.IRefreshMonitor;
-import org.eclipse.core.runtime.*;
-import org.eclipse.core.runtime.jobs.Job;
-import org.osgi.framework.Bundle;
+
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.resources.IContainer;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.resources.internal.resources.Resource;
+import org.fdesigner.resources.internal.utils.Messages;
+import org.fdesigner.resources.internal.utils.Policy;
+import org.fdesigner.resources.refresh.IRefreshMonitor;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.runtime.jobs.runtime.jobs.Job;
 
 /**
  * The <code>PollingMonitor</code> is an <code>IRefreshMonitor</code> that

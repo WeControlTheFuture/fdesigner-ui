@@ -14,15 +14,20 @@
  *     James Blackburn (Broadcom Corp.) - ongoing development
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 473427
  *******************************************************************************/
-package org.eclipse.core.internal.resources;
+package org.fdesigner.resources.internal.resources;
 
-import java.io.*;
+import java.io.DataInput;
+import java.io.DataOutput;
+import java.io.IOException;
 import java.util.Map;
-import org.eclipse.core.internal.localstore.FileStoreRoot;
-import org.eclipse.core.internal.utils.*;
-import org.eclipse.core.internal.watson.IElementTreeData;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.runtime.QualifiedName;
+
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.internal.localstore.FileStoreRoot;
+import org.fdesigner.resources.internal.utils.IStringPoolParticipant;
+import org.fdesigner.resources.internal.utils.ObjectMap;
+import org.fdesigner.resources.internal.utils.StringPool;
+import org.fdesigner.resources.internal.watson.IElementTreeData;
+import org.fdesigner.runtime.common.runtime.QualifiedName;
 
 /**
  * A data structure containing the in-memory state of a resource in the workspace.

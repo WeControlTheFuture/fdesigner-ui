@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM - Initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.internal.resources.refresh.win32;
+package org.fdesigner.resources.internal.resources.refresh.win32;
 
 import java.io.*;
 

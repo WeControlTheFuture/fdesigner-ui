@@ -12,9 +12,9 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.core.internal.propertytester;
+package org.fdesigner.resources.internal.propertytester;
 
-import org.eclipse.core.resources.IProject;
+import org.fdesigner.resources.IProject;
 
 /**
  * A property tester for various properties of projects.

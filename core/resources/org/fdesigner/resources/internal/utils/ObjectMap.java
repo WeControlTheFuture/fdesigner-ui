@@ -13,7 +13,7 @@
  *     James Blackburn (Broadcom Corp.) - ongoing development
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 473427
  *******************************************************************************/
-package org.eclipse.core.internal.utils;
+package org.fdesigner.resources.internal.utils;
 
 import java.util.*;
 

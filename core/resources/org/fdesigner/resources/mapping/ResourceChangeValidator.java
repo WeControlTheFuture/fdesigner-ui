@@ -13,17 +13,24 @@
  *     James Blackburn (Broadcom Corp.) - ongoing development
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 473427
  *******************************************************************************/
-package org.eclipse.core.resources.mapping;
+package org.fdesigner.resources.mapping;
 
 import java.util.ArrayList;
 import java.util.List;
-import org.eclipse.core.internal.resources.mapping.ChangeDescription;
-import org.eclipse.core.internal.resources.mapping.ResourceChangeDescriptionFactory;
-import org.eclipse.core.internal.utils.Messages;
-import org.eclipse.core.internal.utils.Policy;
-import org.eclipse.core.resources.*;
-import org.eclipse.core.runtime.*;
-import org.eclipse.osgi.util.NLS;
+
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IResourceDelta;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.resources.internal.resources.mapping.ChangeDescription;
+import org.fdesigner.resources.internal.resources.mapping.ResourceChangeDescriptionFactory;
+import org.fdesigner.resources.internal.utils.Messages;
+import org.fdesigner.resources.internal.utils.Policy;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.MultiStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * The resource change validator is used to validate that changes made to

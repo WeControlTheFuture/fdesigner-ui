@@ -12,17 +12,33 @@
  *     IBM Corporation - initial API and implementation
  *     Serge Beauchamp (Freescale Semiconductor) - [252996] add resource filtering
 *******************************************************************************/
-package org.eclipse.core.internal.localstore;
+package org.fdesigner.resources.internal.localstore;
 
 import java.net.URI;
 import java.util.LinkedList;
-import org.eclipse.core.filesystem.EFS;
-import org.eclipse.core.filesystem.IFileStore;
-import org.eclipse.core.internal.resources.*;
-import org.eclipse.core.internal.utils.Messages;
-import org.eclipse.core.resources.*;
-import org.eclipse.core.runtime.*;
-import org.eclipse.osgi.util.NLS;
+
+import org.fdesigner.filesystem.EFS;
+import org.fdesigner.filesystem.IFileStore;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IResourceStatus;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.resources.internal.resources.Container;
+import org.fdesigner.resources.internal.resources.File;
+import org.fdesigner.resources.internal.resources.FilterDescription;
+import org.fdesigner.resources.internal.resources.Folder;
+import org.fdesigner.resources.internal.resources.Project;
+import org.fdesigner.resources.internal.resources.Resource;
+import org.fdesigner.resources.internal.resources.ResourceInfo;
+import org.fdesigner.resources.internal.resources.ResourceStatus;
+import org.fdesigner.resources.internal.resources.Workspace;
+import org.fdesigner.resources.internal.utils.Messages;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.MultiStatus;
+import org.fdesigner.runtime.common.runtime.SubMonitor;
+import org.fdesigner.supplement.util.NLS;
 
 //
 public class CopyVisitor implements IUnifiedTreeVisitor {

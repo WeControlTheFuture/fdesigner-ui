@@ -12,7 +12,7 @@
  *     IBM - Initial API and implementation
  *     Mikael Barbero (Eclipse Foundation) - 286681 handle WAIT_ABANDONED_0 return value
  *******************************************************************************/
-package org.eclipse.core.internal.resources.refresh.win32;
+package org.fdesigner.resources.internal.resources.refresh.win32;
 
 /**
  * Hooks for native methods involved with win32 auto-refresh callbacks.

@@ -11,7 +11,7 @@
  * Contributors:
  * Broadcom Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.resources;
+package org.fdesigner.resources;
 
 /**
  * Stores information about the context in which a builder was called.

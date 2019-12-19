@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM - Initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.internal.utils;
+package org.fdesigner.resources.internal.utils;
 
 /**
  * A string pool participant is used for sharing strings between several

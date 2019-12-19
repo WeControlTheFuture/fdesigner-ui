@@ -12,10 +12,16 @@
  *     IBM Corporation - initial API and implementation
  *     James Blackburn (Broadcom Corp.) - ongoing development
  *******************************************************************************/
-package org.eclipse.core.internal.localstore;
+package org.fdesigner.resources.internal.localstore;
 
-import java.io.*;
-import org.eclipse.core.internal.utils.FileUtil;
+import java.io.BufferedOutputStream;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.FilterOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
+
+import org.fdesigner.resources.internal.utils.FileUtil;
 
 /**
  * Appends data, in chunks, to a file. Each chunk is defined by the moment

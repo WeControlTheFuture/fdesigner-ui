@@ -12,16 +12,27 @@
  *     IBM Corporation - initial API and implementation
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 473427
  *******************************************************************************/
-package org.eclipse.core.internal.properties;
+package org.fdesigner.resources.internal.properties;
 
-import java.io.*;
-import java.util.*;
-import org.eclipse.core.internal.localstore.Bucket;
-import org.eclipse.core.internal.resources.ResourceException;
-import org.eclipse.core.internal.utils.Messages;
-import org.eclipse.core.resources.IResourceStatus;
-import org.eclipse.core.runtime.*;
-import org.eclipse.osgi.util.NLS;
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
+
+import org.fdesigner.resources.IResourceStatus;
+import org.fdesigner.resources.internal.localstore.Bucket;
+import org.fdesigner.resources.internal.localstore.Bucket.Entry;
+import org.fdesigner.resources.internal.resources.ResourceException;
+import org.fdesigner.resources.internal.utils.Messages;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.Path;
+import org.fdesigner.runtime.common.runtime.QualifiedName;
+import org.fdesigner.supplement.util.NLS;
 
 public class PropertyBucket extends Bucket {
 	public static class PropertyEntry extends Entry {

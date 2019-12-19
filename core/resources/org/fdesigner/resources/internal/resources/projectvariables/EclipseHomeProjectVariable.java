@@ -12,14 +12,15 @@
  *     Freescale Semiconductor - initial API and implementation
  *     IBM Corporation - ongoing development
  *******************************************************************************/
-package org.eclipse.core.internal.resources.projectvariables;
+package org.fdesigner.resources.internal.resources.projectvariables;
 
 import java.net.URISyntaxException;
 import java.net.URL;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.variableresolvers.PathVariableResolver;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.core.runtime.URIUtil;
+
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.variableresolvers.PathVariableResolver;
+import org.fdesigner.runtime.common.runtime.URIUtil;
+import org.fdesigner.runtime.core.Platform;
 
 /**
  * ECLIPSE_HOME project variable, pointing to the location of the eclipse install directory.

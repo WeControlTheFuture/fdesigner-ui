@@ -12,11 +12,12 @@
  *     IBM Corporation - initial API and implementation
  * Francis Lynch (Wind River) - [305718] Allow reading snapshot into renamed project
  *******************************************************************************/
-package org.eclipse.core.internal.watson;
+package org.fdesigner.resources.internal.watson;
 
 import java.io.DataInput;
 import java.io.IOException;
-import org.eclipse.core.internal.dtree.DeltaDataTree;
+
+import org.fdesigner.resources.internal.dtree.DeltaDataTree;
 
 /** <code>ElementTreeReader_1</code> is an implementation
  * of the <code>ElementTreeReader</code> for format version 1.

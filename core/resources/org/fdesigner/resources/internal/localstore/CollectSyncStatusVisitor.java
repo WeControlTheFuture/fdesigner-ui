@@ -12,16 +12,21 @@
  *     IBM Corporation - initial API and implementation
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 473427
  *******************************************************************************/
-package org.eclipse.core.internal.localstore;
+package org.fdesigner.resources.internal.localstore;
 
 import java.util.ArrayList;
 import java.util.List;
-import org.eclipse.core.internal.resources.*;
-import org.eclipse.core.internal.utils.Messages;
-import org.eclipse.core.resources.IResourceStatus;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.runtime.*;
-import org.eclipse.osgi.util.NLS;
+
+import org.fdesigner.resources.IResourceStatus;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.resources.internal.resources.Container;
+import org.fdesigner.resources.internal.resources.Resource;
+import org.fdesigner.resources.internal.resources.ResourceStatus;
+import org.fdesigner.resources.internal.utils.Messages;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.MultiStatus;
+import org.fdesigner.supplement.util.NLS;
 
 //
 /**

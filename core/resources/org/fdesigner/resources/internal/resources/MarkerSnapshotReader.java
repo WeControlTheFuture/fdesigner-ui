@@ -12,13 +12,14 @@
  *     IBM Corporation - initial API and implementation
  *     Mickael Istria (Red Hat Inc.) - Bug 488937
  *******************************************************************************/
-package org.eclipse.core.internal.resources;
+package org.fdesigner.resources.internal.resources;
 
 import java.io.DataInputStream;
 import java.io.IOException;
-import org.eclipse.core.internal.utils.Messages;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.osgi.util.NLS;
+
+import org.fdesigner.resources.internal.utils.Messages;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.supplement.util.NLS;
 
 public class MarkerSnapshotReader {
 	protected Workspace workspace;

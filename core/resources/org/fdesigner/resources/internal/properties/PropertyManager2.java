@@ -13,20 +13,32 @@
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 473427
  *     Mickael Istria (Red Hat Inc.) - Bug 488937
  *******************************************************************************/
-package org.eclipse.core.internal.properties;
+package org.fdesigner.resources.internal.properties;
 
 import java.io.File;
-import java.util.*;
-import org.eclipse.core.internal.localstore.Bucket;
-import org.eclipse.core.internal.localstore.Bucket.Entry;
-import org.eclipse.core.internal.localstore.BucketTree;
-import org.eclipse.core.internal.properties.PropertyBucket.PropertyEntry;
-import org.eclipse.core.internal.resources.*;
-import org.eclipse.core.internal.utils.Messages;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.IResourceStatus;
-import org.eclipse.core.runtime.*;
-import org.eclipse.osgi.util.NLS;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IResourceStatus;
+import org.fdesigner.resources.internal.localstore.Bucket;
+import org.fdesigner.resources.internal.localstore.Bucket.Entry;
+import org.fdesigner.resources.internal.localstore.BucketTree;
+import org.fdesigner.resources.internal.properties.PropertyBucket.PropertyEntry;
+import org.fdesigner.resources.internal.resources.Resource;
+import org.fdesigner.resources.internal.resources.ResourceException;
+import org.fdesigner.resources.internal.resources.ResourceInfo;
+import org.fdesigner.resources.internal.resources.Workspace;
+import org.fdesigner.resources.internal.utils.Messages;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.QualifiedName;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * @see org.eclipse.core.internal.properties.IPropertyManager

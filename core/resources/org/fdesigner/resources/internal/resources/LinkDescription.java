@@ -13,12 +13,15 @@
  *     Serge Beauchamp (Freescale Semiconductor) - [229633] Group and Project Path Variable Support
  *     James Blackburn (Broadcom Corp.) - ongoing development
  *******************************************************************************/
-package org.eclipse.core.internal.resources;
+package org.fdesigner.resources.internal.resources;
 
 import java.net.URI;
 import java.net.URISyntaxException;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.runtime.*;
+
+import org.fdesigner.resources.IResource;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.Path;
 
 /**
  * Object for describing the characteristics of linked resources that are stored

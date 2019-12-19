@@ -11,9 +11,9 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.internal.dtree;
+package org.fdesigner.resources.internal.dtree;
 
-import org.eclipse.core.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.IPath;
 
 /**
  * A <code>NoDataDeltaNode</code>is a node in a delta tree whose subtree contains

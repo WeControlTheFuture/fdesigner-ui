@@ -11,9 +11,9 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.internal.utils;
+package org.fdesigner.resources.internal.utils;
 
-import org.eclipse.core.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.Assert;
 
 /**
  * A cache that keeps a collection of at most maximumCapacity+threshold entries.

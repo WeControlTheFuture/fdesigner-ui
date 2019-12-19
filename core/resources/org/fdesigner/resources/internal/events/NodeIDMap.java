@@ -11,9 +11,9 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.internal.events;
+package org.fdesigner.resources.internal.events;
 
-import org.eclipse.core.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.IPath;
 
 /**
  * A specialized map that maps Node IDs to their old and new paths.

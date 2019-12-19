@@ -11,9 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.resources;
-
-import org.eclipse.core.runtime.IProgressMonitor;
+package org.fdesigner.resources;
 
 /**
  * Resource change events describe changes to resources.

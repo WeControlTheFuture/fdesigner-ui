@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.resources.mapping;
+package org.fdesigner.resources.mapping;
 
 /**
  * A resource mapping context is provided to a resource mapping when traversing

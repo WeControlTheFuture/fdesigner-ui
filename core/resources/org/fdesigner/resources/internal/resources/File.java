@@ -14,18 +14,39 @@
  *     James Blackburn (Broadcom Corp.) - ongoing development
  *     Sergey Prigogin (Google) - [464072] Refresh on Access ignored during text search
  *******************************************************************************/
-package org.eclipse.core.internal.resources;
+package org.fdesigner.resources.internal.resources;
 
-import java.io.*;
-import org.eclipse.core.filesystem.*;
-import org.eclipse.core.internal.preferences.EclipsePreferences;
-import org.eclipse.core.internal.utils.*;
-import org.eclipse.core.resources.*;
-import org.eclipse.core.runtime.*;
-import org.eclipse.core.runtime.content.IContentDescription;
-import org.eclipse.core.runtime.content.IContentTypeManager;
-import org.eclipse.core.runtime.jobs.ISchedulingRule;
-import org.eclipse.osgi.util.NLS;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.Reader;
+
+import org.fdesigner.filesystem.EFS;
+import org.fdesigner.filesystem.IFileInfo;
+import org.fdesigner.filesystem.IFileStore;
+import org.fdesigner.resources.IFile;
+import org.fdesigner.resources.IFileState;
+import org.fdesigner.resources.IFolder;
+import org.fdesigner.resources.IProjectDescription;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IResourceStatus;
+import org.fdesigner.resources.internal.utils.BitMask;
+import org.fdesigner.resources.internal.utils.FileUtil;
+import org.fdesigner.resources.internal.utils.Messages;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.OperationCanceledException;
+import org.fdesigner.runtime.common.runtime.Path;
+import org.fdesigner.runtime.common.runtime.QualifiedName;
+import org.fdesigner.runtime.common.runtime.SubMonitor;
+import org.fdesigner.runtime.contenttype.runtime.content.IContentDescription;
+import org.fdesigner.runtime.contenttype.runtime.content.IContentTypeManager;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.runtime.jobs.runtime.jobs.ISchedulingRule;
+import org.fdesigner.runtime.preferences.internal.preferences.EclipsePreferences;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * The standard implementation of {@link IFile}.

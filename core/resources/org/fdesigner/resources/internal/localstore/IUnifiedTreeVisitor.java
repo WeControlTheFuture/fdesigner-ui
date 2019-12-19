@@ -11,9 +11,9 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.internal.localstore;
+package org.fdesigner.resources.internal.localstore;
 
-import org.eclipse.core.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.CoreException;
 
 public interface IUnifiedTreeVisitor {
 	/**

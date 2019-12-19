@@ -11,11 +11,14 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.internal.dtree;
+package org.fdesigner.resources.internal.dtree;
 
 import java.io.DataOutput;
 import java.io.IOException;
-import org.eclipse.core.runtime.*;
+
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.Path;
 
 /**
  * Class for writing a single data tree (no parents) to an output stream.

@@ -13,14 +13,26 @@
  *     James Blackburn (Broadcom Corp.) - ongoing development
  *     Mickael Istria (Red Hat Inc.) - Bug 488938
  *******************************************************************************/
-package org.eclipse.core.internal.events;
+package org.fdesigner.resources.internal.events;
 
 import java.util.Map;
 import java.util.Map.Entry;
-import org.eclipse.core.internal.resources.*;
-import org.eclipse.core.internal.watson.ElementTree;
-import org.eclipse.core.resources.*;
-import org.eclipse.core.runtime.*;
+
+import org.fdesigner.resources.IContainer;
+import org.fdesigner.resources.IMarkerDelta;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IResourceDelta;
+import org.fdesigner.resources.IResourceDeltaVisitor;
+import org.fdesigner.resources.internal.resources.ICoreConstants;
+import org.fdesigner.resources.internal.resources.IMarkerSetElement;
+import org.fdesigner.resources.internal.resources.MarkerSet;
+import org.fdesigner.resources.internal.resources.ResourceInfo;
+import org.fdesigner.resources.internal.watson.ElementTree;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.Path;
+import org.fdesigner.runtime.common.runtime.PlatformObject;
 
 /**
  * Concrete implementation of the IResourceDelta interface.  Each ResourceDelta

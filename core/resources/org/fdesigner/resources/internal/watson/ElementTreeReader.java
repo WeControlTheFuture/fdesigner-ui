@@ -12,13 +12,18 @@
  *     IBM Corporation - initial API and implementation
  * Francis Lynch (Wind River) - [305718] Allow reading snapshot into renamed project
  *******************************************************************************/
-package org.eclipse.core.internal.watson;
+package org.fdesigner.resources.internal.watson;
 
-import java.io.*;
-import org.eclipse.core.internal.dtree.DataTreeReader;
-import org.eclipse.core.internal.dtree.IDataFlattener;
-import org.eclipse.core.internal.utils.Messages;
-import org.eclipse.core.runtime.*;
+import java.io.DataInput;
+import java.io.DataOutput;
+import java.io.IOException;
+
+import org.fdesigner.resources.internal.dtree.DataTreeReader;
+import org.fdesigner.resources.internal.dtree.IDataFlattener;
+import org.fdesigner.resources.internal.utils.Messages;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.Path;
 
 /** <code>ElementTreeReader</code> is the standard implementation
  * of an element tree serialization reader.

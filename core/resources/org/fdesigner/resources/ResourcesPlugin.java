@@ -18,18 +18,26 @@
  *******************************************************************************/
 package org.fdesigner.resources;
 
-import java.util.*;
-import org.eclipse.core.internal.preferences.PreferencesService;
-import org.eclipse.core.internal.resources.*;
-import org.eclipse.core.internal.utils.Messages;
-import org.eclipse.core.internal.utils.Policy;
-import org.eclipse.core.runtime.*;
-import org.eclipse.core.runtime.jobs.IJobManager;
-import org.eclipse.core.runtime.jobs.Job;
-import org.eclipse.core.runtime.preferences.InstanceScope;
-import org.eclipse.osgi.service.debug.DebugOptions;
-import org.eclipse.osgi.service.debug.DebugOptionsListener;
-import org.osgi.framework.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Hashtable;
+import java.util.List;
+
+import org.fdesigner.framework.framework.BundleContext;
+import org.fdesigner.framework.framework.ServiceRegistration;
+import org.fdesigner.resources.internal.resources.CheckMissingNaturesListener;
+import org.fdesigner.resources.internal.resources.LocalMetaArea;
+import org.fdesigner.resources.internal.resources.PlatformURLResourceConnection;
+import org.fdesigner.resources.internal.resources.Workspace;
+import org.fdesigner.resources.internal.utils.Messages;
+import org.fdesigner.resources.internal.utils.Policy;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.core.Plugin;
+import org.fdesigner.runtime.preferences.internal.preferences.PreferencesService;
+import org.fdesigner.runtime.preferences.runtime.preferences.InstanceScope;
+import org.fdesigner.supplement.service.debug.DebugOptions;
+import org.fdesigner.supplement.service.debug.DebugOptionsListener;
 
 /**
  * The plug-in runtime class for the Resources plug-in.  This is

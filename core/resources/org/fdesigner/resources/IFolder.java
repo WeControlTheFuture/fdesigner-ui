@@ -12,10 +12,14 @@
  *     IBM Corporation - initial API and implementation
  *     Serge Beauchamp (Freescale Semiconductor) - [229633] Group Support
  *******************************************************************************/
-package org.eclipse.core.resources;
+package org.fdesigner.resources;
 
 import java.net.URI;
-import org.eclipse.core.runtime.*;
+
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IAdaptable;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
 
 /**
  * Folders may be leaf or non-leaf resources and may contain files and/or other folders.

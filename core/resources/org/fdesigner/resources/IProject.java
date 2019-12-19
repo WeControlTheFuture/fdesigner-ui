@@ -13,12 +13,16 @@
  * Francis Lynch (Wind River) - [301563] Save and load tree snapshots
  * Broadcom Corporation - build configurations and references
  *******************************************************************************/
-package org.eclipse.core.resources;
+package org.fdesigner.resources;
 
 import java.net.URI;
 import java.util.Map;
-import org.eclipse.core.runtime.*;
-import org.eclipse.core.runtime.content.IContentTypeMatcher;
+
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IAdaptable;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.contenttype.runtime.content.IContentTypeMatcher;
 
 /**
  * A project is a type of resource which groups resources

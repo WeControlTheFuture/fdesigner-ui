@@ -11,10 +11,13 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.internal.events;
+package org.fdesigner.resources.internal.events;
 
-import org.eclipse.core.resources.*;
-import org.eclipse.core.runtime.PerformanceStats;
+import org.fdesigner.resources.IResourceChangeListener;
+import org.fdesigner.resources.ISaveParticipant;
+import org.fdesigner.resources.IncrementalProjectBuilder;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.runtime.core.PerformanceStats;
 
 /**
  * An ResourceStats collects and aggregates timing data about an event such as

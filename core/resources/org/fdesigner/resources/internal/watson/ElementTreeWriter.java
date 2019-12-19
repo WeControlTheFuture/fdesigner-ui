@@ -14,12 +14,23 @@
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 473427
  *     Mickael Istria (Red Hat Inc.) - Bug 488937
  *******************************************************************************/
-package org.eclipse.core.internal.watson;
+package org.fdesigner.resources.internal.watson;
 
-import java.io.*;
-import java.util.*;
-import org.eclipse.core.internal.dtree.*;
-import org.eclipse.core.runtime.*;
+import java.io.DataInput;
+import java.io.DataOutput;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Enumeration;
+import java.util.HashMap;
+import java.util.List;
+
+import org.fdesigner.resources.internal.dtree.DataTreeWriter;
+import org.fdesigner.resources.internal.dtree.DeltaDataTree;
+import org.fdesigner.resources.internal.dtree.IDataFlattener;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.Path;
 
 /** <code>ElementTreeWriter</code> flattens an ElementTree
  * onto a data output stream.

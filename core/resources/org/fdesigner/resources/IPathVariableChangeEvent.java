@@ -12,9 +12,9 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.core.resources;
+package org.fdesigner.resources;
 
-import org.eclipse.core.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.IPath;
 
 /**
  * Describes a change in a path variable. The change may denote that a

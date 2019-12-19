@@ -11,10 +11,9 @@
  *  Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.resources;
+package org.fdesigner.resources;
 
 import java.util.Map;
-import org.eclipse.core.runtime.IProgressMonitor;
 
 /**
  * A builder command names a builder and supplies a table of

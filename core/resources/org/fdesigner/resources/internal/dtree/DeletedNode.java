@@ -11,11 +11,11 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.internal.dtree;
+package org.fdesigner.resources.internal.dtree;
 
-import org.eclipse.core.internal.utils.Messages;
-import org.eclipse.core.runtime.IPath;
-import org.eclipse.osgi.util.NLS;
+import org.fdesigner.resources.internal.utils.Messages;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * A <code>DeletedNode</code> represents a node that has been deleted in a

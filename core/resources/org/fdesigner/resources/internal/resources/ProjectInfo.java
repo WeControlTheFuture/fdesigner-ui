@@ -13,13 +13,14 @@
  *     James Blackburn (Broadcom Corp.) - ongoing development
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 473427
  *******************************************************************************/
-package org.eclipse.core.internal.resources;
+package org.fdesigner.resources.internal.resources;
 
 import java.util.HashMap;
-import org.eclipse.core.internal.events.BuildCommand;
-import org.eclipse.core.resources.ICommand;
-import org.eclipse.core.resources.IProjectNature;
-import org.eclipse.core.runtime.content.IContentTypeMatcher;
+
+import org.fdesigner.resources.ICommand;
+import org.fdesigner.resources.IProjectNature;
+import org.fdesigner.resources.internal.events.BuildCommand;
+import org.fdesigner.runtime.contenttype.runtime.content.IContentTypeMatcher;
 
 public class ProjectInfo extends ResourceInfo {
 

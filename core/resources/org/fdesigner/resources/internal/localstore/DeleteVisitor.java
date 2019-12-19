@@ -13,19 +13,26 @@
  *     Matt McCutchen - fix for bug 174492
  *     James Blackburn (Broadcom Corp.) - ongoing development
  *******************************************************************************/
-package org.eclipse.core.internal.localstore;
+package org.fdesigner.resources.internal.localstore;
 
 import java.util.Iterator;
 import java.util.List;
-import org.eclipse.core.filesystem.*;
-import org.eclipse.core.filesystem.provider.FileInfo;
-import org.eclipse.core.internal.resources.ICoreConstants;
-import org.eclipse.core.internal.resources.Resource;
-import org.eclipse.core.internal.utils.Messages;
-import org.eclipse.core.internal.utils.Policy;
-import org.eclipse.core.resources.*;
-import org.eclipse.core.runtime.*;
-import org.eclipse.osgi.util.NLS;
+
+import org.fdesigner.filesystem.EFS;
+import org.fdesigner.filesystem.IFileInfo;
+import org.fdesigner.filesystem.IFileStore;
+import org.fdesigner.filesystem.provider.FileInfo;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IResourceStatus;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.resources.internal.resources.ICoreConstants;
+import org.fdesigner.resources.internal.resources.Resource;
+import org.fdesigner.resources.internal.utils.Messages;
+import org.fdesigner.resources.internal.utils.Policy;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.MultiStatus;
+import org.fdesigner.supplement.util.NLS;
 
 public class DeleteVisitor implements IUnifiedTreeVisitor, ICoreConstants {
 	protected boolean force;

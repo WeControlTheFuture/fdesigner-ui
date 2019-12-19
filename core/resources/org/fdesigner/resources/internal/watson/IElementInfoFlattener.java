@@ -11,10 +11,13 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.internal.watson;
+package org.fdesigner.resources.internal.watson;
 
-import java.io.*;
-import org.eclipse.core.runtime.IPath;
+import java.io.DataInput;
+import java.io.DataOutput;
+import java.io.IOException;
+
+import org.fdesigner.runtime.common.runtime.IPath;
 
 /**
  * The <code>IElementInfoFlattener</code> interface supports

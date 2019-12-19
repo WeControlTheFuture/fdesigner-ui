@@ -11,9 +11,9 @@
  * Contributors:
  * Broadcom Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.resources;
+package org.fdesigner.resources;
 
-import org.eclipse.core.runtime.IAdaptable;
+import org.fdesigner.runtime.common.runtime.IAdaptable;
 
 /**
  * Build Configurations provide a mechanism for orthogonal configuration specific

@@ -12,12 +12,12 @@
  *     IBM Corporation - initial API and implementation
  *     Thomas Wolf (Paranor AG) -- optimize assembleWith
  *******************************************************************************/
-package org.eclipse.core.internal.dtree;
+package org.fdesigner.resources.internal.dtree;
 
-import org.eclipse.core.internal.utils.Messages;
-import org.eclipse.core.internal.utils.StringPool;
-import org.eclipse.core.runtime.IPath;
-import org.eclipse.osgi.util.NLS;
+import org.fdesigner.resources.internal.utils.Messages;
+import org.fdesigner.resources.internal.utils.StringPool;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * This class and its subclasses are used to represent nodes of AbstractDataTrees.

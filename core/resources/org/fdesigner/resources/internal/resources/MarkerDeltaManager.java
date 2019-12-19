@@ -13,10 +13,13 @@
  *     James Blackburn (Broadcom Corp.) - ongoing development
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 473427
  *******************************************************************************/
-package org.eclipse.core.internal.resources;
+package org.fdesigner.resources.internal.resources;
 
-import java.util.*;
-import org.eclipse.core.runtime.IPath;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+
+import org.fdesigner.runtime.common.runtime.IPath;
 
 /**
  * The notification mechanism can request marker deltas for several overlapping intervals

@@ -11,14 +11,20 @@
  *  Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.resources.team;
+package org.fdesigner.resources.team;
 
 import java.net.URI;
-import org.eclipse.core.filesystem.EFS;
-import org.eclipse.core.filesystem.URIUtil;
-import org.eclipse.core.internal.resources.InternalTeamHook;
-import org.eclipse.core.resources.*;
-import org.eclipse.core.runtime.*;
+
+import org.fdesigner.filesystem.EFS;
+import org.fdesigner.filesystem.URIUtil;
+import org.fdesigner.resources.IFile;
+import org.fdesigner.resources.IFolder;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IResourceRuleFactory;
+import org.fdesigner.resources.internal.resources.InternalTeamHook;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
 
 /**
  * A general hook class for operations that team providers may be

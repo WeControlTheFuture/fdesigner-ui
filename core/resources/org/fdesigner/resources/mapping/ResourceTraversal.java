@@ -13,13 +13,18 @@
  *     James Blackburn (Broadcom Corp.) - ongoing development
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 473427
  *******************************************************************************/
-package org.eclipse.core.resources.mapping;
+package org.fdesigner.resources.mapping;
 
 import java.util.ArrayList;
-import org.eclipse.core.internal.resources.MarkerManager;
-import org.eclipse.core.internal.resources.Workspace;
-import org.eclipse.core.resources.*;
-import org.eclipse.core.runtime.CoreException;
+
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IResourceStatus;
+import org.fdesigner.resources.IResourceVisitor;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.resources.internal.resources.MarkerManager;
+import org.fdesigner.resources.internal.resources.Workspace;
+import org.fdesigner.runtime.common.runtime.CoreException;
 
 /**
  * A resource traversal is simply a set of resources and the depth to which

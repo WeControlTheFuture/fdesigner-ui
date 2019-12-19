@@ -11,13 +11,13 @@
  * Contributors:
  *     IBM - Initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.internal.refresh;
+package org.fdesigner.resources.internal.refresh;
 
-import org.eclipse.core.internal.resources.Workspace;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.refresh.IRefreshMonitor;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.SubMonitor;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.internal.resources.Workspace;
+import org.fdesigner.resources.refresh.IRefreshMonitor;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.SubMonitor;
 
 /**
  * Internal abstract superclass of all refresh providers.  This class must not be

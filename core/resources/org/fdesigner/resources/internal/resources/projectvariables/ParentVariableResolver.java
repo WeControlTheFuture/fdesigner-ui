@@ -12,12 +12,13 @@
  *     Freescale Semiconductor - initial API and implementation
  *     IBM Corporation - ongoing development
  *******************************************************************************/
-package org.eclipse.core.internal.resources.projectvariables;
+package org.fdesigner.resources.internal.resources.projectvariables;
 
 import java.net.URI;
-import org.eclipse.core.filesystem.URIUtil;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.variableresolvers.PathVariableResolver;
+
+import org.fdesigner.filesystem.URIUtil;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.variableresolvers.PathVariableResolver;
 
 /**
  * Path Variable representing the parent directory of the variable provided

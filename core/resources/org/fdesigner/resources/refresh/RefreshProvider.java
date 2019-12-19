@@ -11,12 +11,12 @@
  *  Contributors:
  *     IBM - Initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.resources.refresh;
+package org.fdesigner.resources.refresh;
 
-import org.eclipse.core.internal.refresh.InternalRefreshProvider;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.NullProgressMonitor;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.internal.refresh.InternalRefreshProvider;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.NullProgressMonitor;
 
 /**
  * The abstract base class for all auto-refresh providers.  This class provides

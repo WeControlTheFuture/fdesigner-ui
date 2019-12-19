@@ -11,9 +11,9 @@
  *  Contributors:
  *     IBM - Initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.resources.refresh;
+package org.fdesigner.resources.refresh;
 
-import org.eclipse.core.resources.IResource;
+import org.fdesigner.resources.IResource;
 
 /**
  * An <code>IRefreshMonitor</code> monitors trees of <code>IResources</code>

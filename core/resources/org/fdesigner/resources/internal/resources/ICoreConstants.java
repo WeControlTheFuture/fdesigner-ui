@@ -13,10 +13,14 @@
  *     Serge Beauchamp (Freescale Semiconductor) - [229633] Group Support
  *     Broadcom Corporation - build configurations
  *******************************************************************************/
-package org.eclipse.core.internal.resources;
+package org.fdesigner.resources.internal.resources;
 
-import org.eclipse.core.resources.*;
-import org.eclipse.core.runtime.QualifiedName;
+import org.fdesigner.resources.IBuildConfiguration;
+import org.fdesigner.resources.IFileState;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.runtime.common.runtime.QualifiedName;
 
 public interface ICoreConstants {
 

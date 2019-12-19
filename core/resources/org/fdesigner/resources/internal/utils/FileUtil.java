@@ -14,22 +14,37 @@
  *     James Blackburn (Broadcom Corp.) - ongoing development
  *     Sergey Prigogin (Google) - ongoing development
  *******************************************************************************/
-package org.eclipse.core.internal.utils;
+package org.fdesigner.resources.internal.utils;
 
-import java.io.*;
+import java.io.Closeable;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.net.URI;
-import org.eclipse.core.filesystem.*;
-import org.eclipse.core.filesystem.URIUtil;
-import org.eclipse.core.internal.resources.ResourceException;
-import org.eclipse.core.internal.resources.Workspace;
-import org.eclipse.core.resources.*;
-import org.eclipse.core.runtime.*;
-import org.eclipse.core.runtime.preferences.DefaultScope;
-import org.eclipse.core.runtime.preferences.InstanceScope;
-import org.eclipse.osgi.service.environment.Constants;
-import org.eclipse.osgi.util.NLS;
-import org.osgi.service.prefs.BackingStoreException;
-import org.osgi.service.prefs.Preferences;
+
+import org.fdesigner.filesystem.EFS;
+import org.fdesigner.filesystem.IFileInfo;
+import org.fdesigner.filesystem.IFileStore;
+import org.fdesigner.filesystem.IFileSystem;
+import org.fdesigner.filesystem.URIUtil;
+import org.fdesigner.resources.IFile;
+import org.fdesigner.resources.IResourceStatus;
+import org.fdesigner.resources.ProjectScope;
+import org.fdesigner.resources.ResourceAttributes;
+import org.fdesigner.resources.internal.resources.ResourceException;
+import org.fdesigner.resources.internal.resources.Workspace;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.Path;
+import org.fdesigner.runtime.common.runtime.SubMonitor;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.runtime.preferences.runtime.preferences.DefaultScope;
+import org.fdesigner.runtime.preferences.runtime.preferences.InstanceScope;
+import org.fdesigner.runtime.preferences.service.prefs.BackingStoreException;
+import org.fdesigner.runtime.preferences.service.prefs.Preferences;
+import org.fdesigner.supplement.service.environment.Constants;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * Static utility methods for manipulating Files and URIs.

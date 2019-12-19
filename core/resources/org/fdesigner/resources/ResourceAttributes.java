@@ -14,10 +14,9 @@
 
 package org.fdesigner.resources;
 
-import org.eclipse.core.filesystem.EFS;
-import org.eclipse.core.filesystem.IFileSystem;
-import org.eclipse.core.internal.utils.FileUtil;
-import org.eclipse.core.runtime.CoreException;
+import org.fdesigner.filesystem.EFS;
+import org.fdesigner.resources.internal.utils.FileUtil;
+import org.fdesigner.runtime.common.runtime.CoreException;
 
 /**
  * This class represents platform specific attributes of files.

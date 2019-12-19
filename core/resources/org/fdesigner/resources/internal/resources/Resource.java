@@ -21,25 +21,62 @@
  *     Sergey Prigogin (Google) - [338010] Resource.createLink() does not preserve symbolic links
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 473427
  *******************************************************************************/
-package org.eclipse.core.internal.resources;
+package org.fdesigner.resources.internal.resources;
 
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.util.*;
-import org.eclipse.core.filesystem.*;
-import org.eclipse.core.filesystem.URIUtil;
-import org.eclipse.core.filesystem.provider.FileInfo;
-import org.eclipse.core.internal.events.LifecycleEvent;
-import org.eclipse.core.internal.localstore.FileSystemResourceManager;
-import org.eclipse.core.internal.properties.IPropertyManager;
-import org.eclipse.core.internal.utils.*;
-import org.eclipse.core.internal.watson.*;
-import org.eclipse.core.resources.*;
-import org.eclipse.core.resources.team.IMoveDeleteHook;
-import org.eclipse.core.runtime.*;
-import org.eclipse.core.runtime.jobs.ISchedulingRule;
-import org.eclipse.core.runtime.jobs.MultiRule;
-import org.eclipse.osgi.util.NLS;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+
+import org.fdesigner.filesystem.EFS;
+import org.fdesigner.filesystem.IFileInfo;
+import org.fdesigner.filesystem.IFileStore;
+import org.fdesigner.filesystem.URIUtil;
+import org.fdesigner.filesystem.provider.FileInfo;
+import org.fdesigner.resources.IContainer;
+import org.fdesigner.resources.IFile;
+import org.fdesigner.resources.IFolder;
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.resources.IPathVariableManager;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IProjectDescription;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IResourceProxy;
+import org.fdesigner.resources.IResourceProxyVisitor;
+import org.fdesigner.resources.IResourceStatus;
+import org.fdesigner.resources.IResourceVisitor;
+import org.fdesigner.resources.IWorkspace;
+import org.fdesigner.resources.IWorkspaceRoot;
+import org.fdesigner.resources.ResourceAttributes;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.resources.internal.events.LifecycleEvent;
+import org.fdesigner.resources.internal.localstore.FileSystemResourceManager;
+import org.fdesigner.resources.internal.properties.IPropertyManager;
+import org.fdesigner.resources.internal.utils.FileUtil;
+import org.fdesigner.resources.internal.utils.Messages;
+import org.fdesigner.resources.internal.utils.WrappedRuntimeException;
+import org.fdesigner.resources.internal.watson.ElementTreeIterator;
+import org.fdesigner.resources.internal.watson.IElementContentVisitor;
+import org.fdesigner.resources.internal.watson.IPathRequestor;
+import org.fdesigner.resources.team.IMoveDeleteHook;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.MultiStatus;
+import org.fdesigner.runtime.common.runtime.OperationCanceledException;
+import org.fdesigner.runtime.common.runtime.Path;
+import org.fdesigner.runtime.common.runtime.PlatformObject;
+import org.fdesigner.runtime.common.runtime.QualifiedName;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.common.runtime.SubMonitor;
+import org.fdesigner.runtime.jobs.runtime.jobs.ISchedulingRule;
+import org.fdesigner.runtime.jobs.runtime.jobs.MultiRule;
+import org.fdesigner.supplement.util.NLS;
 
 public abstract class Resource extends PlatformObject implements IResource, ICoreConstants, Cloneable, IPathRequestor {
 	/* package */IPath path;

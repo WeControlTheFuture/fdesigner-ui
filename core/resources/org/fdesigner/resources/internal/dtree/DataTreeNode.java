@@ -11,11 +11,13 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.internal.dtree;
+package org.fdesigner.resources.internal.dtree;
 
-import org.eclipse.core.internal.utils.*;
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.core.runtime.IPath;
+import org.fdesigner.resources.internal.utils.IStringPoolParticipant;
+import org.fdesigner.resources.internal.utils.Messages;
+import org.fdesigner.resources.internal.utils.StringPool;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.IPath;
 
 /**
  * <code>DataTreeNode</code>s are the nodes of a <code>DataTree</code>.  Their

@@ -13,16 +13,25 @@
  *     James Blackburn (Broadcom Corp.) - ongoing development
  *     Mickael Istria (Red Hat Inc.) - Bug 488937
  *******************************************************************************/
-package org.eclipse.core.internal.resources;
+package org.fdesigner.resources.internal.resources;
 
 import java.text.DateFormat;
-import java.util.*;
+import java.util.Date;
+import java.util.Map;
 import java.util.Map.Entry;
-import org.eclipse.core.internal.utils.Messages;
-import org.eclipse.core.resources.*;
-import org.eclipse.core.runtime.*;
-import org.eclipse.core.runtime.jobs.ISchedulingRule;
-import org.eclipse.osgi.util.NLS;
+import java.util.Set;
+import java.util.TreeMap;
+
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IResourceDelta;
+import org.fdesigner.resources.IResourceStatus;
+import org.fdesigner.resources.internal.utils.Messages;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.PlatformObject;
+import org.fdesigner.runtime.jobs.runtime.jobs.ISchedulingRule;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * An abstract marker implementation.

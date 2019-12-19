@@ -11,13 +11,14 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.internal.properties;
+package org.fdesigner.resources.internal.properties;
 
 import java.util.Map;
-import org.eclipse.core.internal.resources.IManager;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.QualifiedName;
+
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.internal.resources.IManager;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.QualifiedName;
 
 public interface IPropertyManager extends IManager {
 	/**

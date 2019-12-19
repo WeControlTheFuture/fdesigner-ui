@@ -13,16 +13,23 @@
  *     Serge Beauchamp (Freescale Semiconductor) - [229633] Project Path Variable Support
  *     Sergey Prigogin (Google) - [338010] Resource.createLink() does not preserve symbolic links
  *******************************************************************************/
-package org.eclipse.core.internal.localstore;
+package org.fdesigner.resources.internal.localstore;
 
 import java.io.File;
 import java.net.URI;
-import org.eclipse.core.filesystem.EFS;
-import org.eclipse.core.filesystem.IFileStore;
-import org.eclipse.core.internal.resources.ICoreConstants;
-import org.eclipse.core.internal.utils.FileUtil;
-import org.eclipse.core.resources.*;
-import org.eclipse.core.runtime.*;
+
+import org.fdesigner.filesystem.EFS;
+import org.fdesigner.filesystem.IFileStore;
+import org.fdesigner.resources.IPathVariableManager;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IWorkspaceRoot;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.resources.internal.resources.ICoreConstants;
+import org.fdesigner.resources.internal.utils.FileUtil;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.Path;
 
 /**
  * Represents the root of a file system that is connected to the workspace.

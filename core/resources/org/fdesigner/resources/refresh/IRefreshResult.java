@@ -11,9 +11,9 @@
  *  Contributors:
  *     IBM - Initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.resources.refresh;
+package org.fdesigner.resources.refresh;
 
-import org.eclipse.core.resources.IResource;
+import org.fdesigner.resources.IResource;
 
 /**
  * An <code>IRefreshResult</code> is provided to an auto-refresh

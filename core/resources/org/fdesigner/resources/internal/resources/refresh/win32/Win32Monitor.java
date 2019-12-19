@@ -15,21 +15,32 @@
  *     Mickael Istria (Red Hat Inc.) - Bug 488937
  *     Mikael Barbero (Eclipse Foundation) - 286681 handle WAIT_ABANDONED_0 return value
  *******************************************************************************/
-package org.eclipse.core.internal.resources.refresh.win32;
+package org.fdesigner.resources.internal.resources.refresh.win32;
 
 import java.io.Closeable;
 import java.io.File;
-import java.util.*;
-import org.eclipse.core.internal.utils.Messages;
-import org.eclipse.core.internal.utils.Policy;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.resources.refresh.IRefreshMonitor;
-import org.eclipse.core.resources.refresh.IRefreshResult;
-import org.eclipse.core.runtime.*;
-import org.eclipse.core.runtime.jobs.Job;
-import org.eclipse.osgi.util.NLS;
-import org.osgi.framework.Bundle;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.resources.internal.utils.Messages;
+import org.fdesigner.resources.internal.utils.Policy;
+import org.fdesigner.resources.refresh.IRefreshMonitor;
+import org.fdesigner.resources.refresh.IRefreshResult;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.MultiStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.runtime.jobs.runtime.jobs.Job;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * A monitor that works on Win32 platforms. Provides simple notification of

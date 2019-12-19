@@ -13,12 +13,22 @@
  *     James Blackburn (Broadcom Corp.) - ongoing development
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 473427
  *******************************************************************************/
-package org.eclipse.core.internal.events;
+package org.fdesigner.resources.internal.events;
 
-import java.util.*;
-import org.eclipse.core.internal.resources.*;
-import org.eclipse.core.resources.*;
-import org.eclipse.core.runtime.IPath;
+import java.util.ArrayList;
+import java.util.EventObject;
+import java.util.Iterator;
+import java.util.Map;
+
+import org.fdesigner.resources.IMarkerDelta;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IResourceChangeEvent;
+import org.fdesigner.resources.IResourceDelta;
+import org.fdesigner.resources.IncrementalProjectBuilder;
+import org.fdesigner.resources.internal.resources.IMarkerSetElement;
+import org.fdesigner.resources.internal.resources.MarkerDelta;
+import org.fdesigner.resources.internal.resources.MarkerSet;
+import org.fdesigner.runtime.common.runtime.IPath;
 
 public class ResourceChangeEvent extends EventObject implements IResourceChangeEvent {
 	private static final IMarkerDelta[] NO_MARKER_DELTAS = new IMarkerDelta[0];

@@ -11,12 +11,15 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.internal.resources;
+package org.fdesigner.resources.internal.resources;
 
 import java.io.PrintStream;
 import java.io.PrintWriter;
-import org.eclipse.core.resources.IResourceStatus;
-import org.eclipse.core.runtime.*;
+
+import org.fdesigner.resources.IResourceStatus;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.IStatus;
 
 /**
  * A checked exception representing a failure.

@@ -11,10 +11,10 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.internal.events;
+package org.fdesigner.resources.internal.events;
 
-import org.eclipse.core.resources.IResourceChangeListener;
-import org.eclipse.core.runtime.Assert;
+import org.fdesigner.resources.IResourceChangeListener;
+import org.fdesigner.runtime.common.runtime.Assert;
 
 /**
  * This class is used to maintain a list of listeners. It is a fairly lightweight object,

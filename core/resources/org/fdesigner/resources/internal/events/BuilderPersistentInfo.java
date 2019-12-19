@@ -12,11 +12,11 @@
  *     IBM Corporation - initial API and implementation
  *     Broadcom Corporation - build configurations
  *******************************************************************************/
-package org.eclipse.core.internal.events;
+package org.fdesigner.resources.internal.events;
 
-import org.eclipse.core.internal.resources.ICoreConstants;
-import org.eclipse.core.internal.watson.ElementTree;
-import org.eclipse.core.resources.IProject;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.internal.resources.ICoreConstants;
+import org.fdesigner.resources.internal.watson.ElementTree;
 
 public class BuilderPersistentInfo {
 	protected String builderName;

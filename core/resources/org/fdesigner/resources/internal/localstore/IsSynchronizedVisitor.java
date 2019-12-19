@@ -12,11 +12,11 @@
  *     IBM Corporation - initial API and implementation
  *     James Blackburn (Broadcom Corp.) - ongoing development
  *******************************************************************************/
-package org.eclipse.core.internal.localstore;
+package org.fdesigner.resources.internal.localstore;
 
-import org.eclipse.core.internal.resources.Resource;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.runtime.IProgressMonitor;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.internal.resources.Resource;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
 
 /**
  * Visits a unified tree, and throws a ResourceChangedException on the first

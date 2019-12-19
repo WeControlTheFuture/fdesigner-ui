@@ -13,12 +13,17 @@
  *     James Blackburn (Broadcom Corp.) - ongoing development
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 473427
  *******************************************************************************/
-package org.eclipse.core.resources.mapping;
+package org.fdesigner.resources.mapping;
 
 import java.util.ArrayList;
-import org.eclipse.core.internal.resources.mapping.ModelProviderManager;
-import org.eclipse.core.resources.*;
-import org.eclipse.core.runtime.*;
+
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IResourceVisitor;
+import org.fdesigner.resources.internal.resources.mapping.ModelProviderManager;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.PlatformObject;
 
 /**
  * A resource mapping supports the transformation of an application model

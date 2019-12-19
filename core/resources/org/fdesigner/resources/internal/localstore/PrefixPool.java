@@ -12,7 +12,7 @@
  * Martin Oberhuber (Wind River) - initial API and implementation for [105554]
  *******************************************************************************/
 
-package org.eclipse.core.internal.localstore;
+package org.fdesigner.resources.internal.localstore;
 
 import java.util.Arrays;
 

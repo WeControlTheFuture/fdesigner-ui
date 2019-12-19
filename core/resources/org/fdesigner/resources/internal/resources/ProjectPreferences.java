@@ -14,22 +14,53 @@
  *     James Blackburn (Broadcom Corp.) - ongoing development
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 473427, 483529
  *******************************************************************************/
-package org.eclipse.core.internal.resources;
+package org.fdesigner.resources.internal.resources;
 
-import java.io.*;
+import java.io.BufferedInputStream;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.text.MessageFormat;
-import java.util.*;
-import org.eclipse.core.internal.preferences.*;
-import org.eclipse.core.internal.utils.*;
-import org.eclipse.core.resources.*;
-import org.eclipse.core.runtime.*;
-import org.eclipse.core.runtime.jobs.ISchedulingRule;
-import org.eclipse.core.runtime.jobs.MultiRule;
-import org.eclipse.core.runtime.preferences.IEclipsePreferences;
-import org.eclipse.core.runtime.preferences.IExportedPreferences;
-import org.eclipse.osgi.util.NLS;
-import org.osgi.service.prefs.BackingStoreException;
-import org.osgi.service.prefs.Preferences;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Properties;
+import java.util.Set;
+
+import org.fdesigner.resources.IFile;
+import org.fdesigner.resources.IFolder;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IResourceRuleFactory;
+import org.fdesigner.resources.IResourceStatus;
+import org.fdesigner.resources.IWorkspace;
+import org.fdesigner.resources.ProjectScope;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.resources.internal.utils.FileUtil;
+import org.fdesigner.resources.internal.utils.Messages;
+import org.fdesigner.resources.internal.utils.Policy;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.ICoreRunnable;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.OperationCanceledException;
+import org.fdesigner.runtime.common.runtime.Path;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.runtime.jobs.runtime.jobs.ISchedulingRule;
+import org.fdesigner.runtime.jobs.runtime.jobs.MultiRule;
+import org.fdesigner.runtime.preferences.internal.preferences.EclipsePreferences;
+import org.fdesigner.runtime.preferences.internal.preferences.ExportedPreferences;
+import org.fdesigner.runtime.preferences.internal.preferences.SortedProperties;
+import org.fdesigner.runtime.preferences.runtime.preferences.IEclipsePreferences;
+import org.fdesigner.runtime.preferences.runtime.preferences.IExportedPreferences;
+import org.fdesigner.runtime.preferences.service.prefs.BackingStoreException;
+import org.fdesigner.runtime.preferences.service.prefs.Preferences;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * Represents a node in the Eclipse preference hierarchy which stores preference

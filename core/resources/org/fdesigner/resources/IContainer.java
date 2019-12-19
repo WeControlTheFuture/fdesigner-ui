@@ -14,13 +14,10 @@
  *******************************************************************************/
 package org.fdesigner.resources;
 
-import org.eclipse.core.filesystem.IFileInfo;
 import org.fdesigner.runtime.common.runtime.CoreException;
 import org.fdesigner.runtime.common.runtime.IAdaptable;
 import org.fdesigner.runtime.common.runtime.IPath;
 import org.fdesigner.runtime.common.runtime.IProgressMonitor;
-import org.fdesigner.runtime.common.runtime.OperationCanceledException;
-import org.fdesigner.runtime.core.Platform;
 
 /**
  * Interface for resources which may contain

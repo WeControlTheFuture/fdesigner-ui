@@ -11,14 +11,14 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.internal.localstore;
+package org.fdesigner.resources.internal.localstore;
 
-import org.eclipse.core.filesystem.IFileStore;
-import org.eclipse.core.internal.resources.Container;
-import org.eclipse.core.internal.resources.Resource;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IProgressMonitor;
+import org.fdesigner.filesystem.IFileStore;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.internal.resources.Container;
+import org.fdesigner.resources.internal.resources.Resource;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
 
 /**
  * Performs a local refresh, and additionally updates all aliases of the

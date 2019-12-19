@@ -13,18 +13,45 @@
  *     James Blackburn (Broadcom Corp.) - ongoing development
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 473427
  *******************************************************************************/
-package org.eclipse.core.internal.refresh;
+package org.fdesigner.resources.internal.refresh;
 
-import java.util.*;
-import org.eclipse.core.internal.events.ILifecycleListener;
-import org.eclipse.core.internal.events.LifecycleEvent;
-import org.eclipse.core.internal.resources.Workspace;
-import org.eclipse.core.internal.utils.Messages;
-import org.eclipse.core.internal.utils.Policy;
-import org.eclipse.core.resources.*;
-import org.eclipse.core.resources.refresh.IRefreshMonitor;
-import org.eclipse.core.resources.refresh.RefreshProvider;
-import org.eclipse.core.runtime.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+import org.fdesigner.resources.IContainer;
+import org.fdesigner.resources.IPathVariableChangeEvent;
+import org.fdesigner.resources.IPathVariableChangeListener;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IResourceChangeEvent;
+import org.fdesigner.resources.IResourceChangeListener;
+import org.fdesigner.resources.IResourceDelta;
+import org.fdesigner.resources.IResourceDeltaVisitor;
+import org.fdesigner.resources.IWorkspace;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.resources.internal.events.ILifecycleListener;
+import org.fdesigner.resources.internal.events.LifecycleEvent;
+import org.fdesigner.resources.internal.resources.Workspace;
+import org.fdesigner.resources.internal.utils.Messages;
+import org.fdesigner.resources.internal.utils.Policy;
+import org.fdesigner.resources.refresh.IRefreshMonitor;
+import org.fdesigner.resources.refresh.RefreshProvider;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.ICoreRunnable;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.NullProgressMonitor;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.common.runtime.SubMonitor;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.runtime.registry.runtime.IExtensionPoint;
 
 /**
  * Manages monitors by creating new monitors when projects are added and

@@ -12,11 +12,11 @@
  *     IBM Corporation - initial API and implementation
  *     Broadcom Corporation - build configurations and references
  *******************************************************************************/
-package org.eclipse.core.resources;
+package org.fdesigner.resources;
 
 import java.net.URI;
-import org.eclipse.core.runtime.IPath;
-import org.eclipse.core.runtime.IProgressMonitor;
+
+import org.fdesigner.runtime.common.runtime.IPath;
 
 /**
  * A project description contains the meta-data required to define

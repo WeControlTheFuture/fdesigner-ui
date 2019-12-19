@@ -13,14 +13,21 @@
  *     James Blackburn (Broadcom Corp.) - ongoing development
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 473427
  *******************************************************************************/
-package org.eclipse.core.internal.watson;
+package org.fdesigner.resources.internal.watson;
 
 import java.util.HashMap;
-import org.eclipse.core.internal.dtree.*;
-import org.eclipse.core.internal.utils.Messages;
-import org.eclipse.core.internal.utils.StringPool;
-import org.eclipse.core.runtime.*;
-import org.eclipse.osgi.util.NLS;
+
+import org.fdesigner.resources.internal.dtree.AbstractDataTreeNode;
+import org.fdesigner.resources.internal.dtree.DataTreeLookup;
+import org.fdesigner.resources.internal.dtree.DataTreeNode;
+import org.fdesigner.resources.internal.dtree.DeltaDataTree;
+import org.fdesigner.resources.internal.dtree.ObjectNotFoundException;
+import org.fdesigner.resources.internal.utils.Messages;
+import org.fdesigner.resources.internal.utils.StringPool;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.Path;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * An ElementTree can be viewed as a generic rooted tree that stores

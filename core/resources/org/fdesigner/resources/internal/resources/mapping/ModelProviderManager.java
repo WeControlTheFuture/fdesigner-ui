@@ -13,15 +13,19 @@
  *     James Blackburn (Broadcom Corp.) - ongoing development
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 473427
  *******************************************************************************/
-package org.eclipse.core.internal.resources.mapping;
+package org.fdesigner.resources.internal.resources.mapping;
 
 import java.util.HashMap;
 import java.util.Map;
-import org.eclipse.core.internal.utils.Policy;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.resources.mapping.IModelProviderDescriptor;
-import org.eclipse.core.resources.mapping.ModelProvider;
-import org.eclipse.core.runtime.*;
+
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.resources.internal.utils.Policy;
+import org.fdesigner.resources.mapping.IModelProviderDescriptor;
+import org.fdesigner.resources.mapping.ModelProvider;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.runtime.registry.runtime.IExtension;
+import org.fdesigner.runtime.registry.runtime.IExtensionPoint;
 
 public class ModelProviderManager {
 

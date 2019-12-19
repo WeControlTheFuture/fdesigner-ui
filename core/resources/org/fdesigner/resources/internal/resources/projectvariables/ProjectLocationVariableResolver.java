@@ -12,10 +12,10 @@
  *     Freescale Semiconductor - initial API and implementation
  *     IBM Corporation - ongoing development
  *******************************************************************************/
-package org.eclipse.core.internal.resources.projectvariables;
+package org.fdesigner.resources.internal.resources.projectvariables;
 
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.variableresolvers.PathVariableResolver;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.variableresolvers.PathVariableResolver;
 
 /**
  *

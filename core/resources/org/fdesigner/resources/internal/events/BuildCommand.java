@@ -14,12 +14,19 @@
  *     Broadcom Corporation - ongoing development
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 473427
  *******************************************************************************/
-package org.eclipse.core.internal.events;
+package org.fdesigner.resources.internal.events;
 
-import java.util.*;
-import org.eclipse.core.internal.resources.ModelObject;
-import org.eclipse.core.resources.*;
-import org.eclipse.core.runtime.*;
+import java.util.HashMap;
+import java.util.Map;
+
+import org.fdesigner.resources.IBuildConfiguration;
+import org.fdesigner.resources.ICommand;
+import org.fdesigner.resources.IncrementalProjectBuilder;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.resources.internal.resources.ModelObject;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.runtime.registry.runtime.IExtension;
 
 /**
  * The concrete implementation of <tt>ICommand</tt>.  This object

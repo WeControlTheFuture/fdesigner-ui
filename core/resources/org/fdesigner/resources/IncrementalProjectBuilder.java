@@ -15,12 +15,16 @@
  * James Blackburn (Broadcom) - [306822] Provide Context for Builder getRule()
  * Broadcom Corporation - build configurations and references
  *******************************************************************************/
-package org.eclipse.core.resources;
+package org.fdesigner.resources;
 
 import java.util.Map;
-import org.eclipse.core.internal.events.InternalBuilder;
-import org.eclipse.core.runtime.*;
-import org.eclipse.core.runtime.jobs.ISchedulingRule;
+
+import org.fdesigner.resources.internal.events.InternalBuilder;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.jobs.runtime.jobs.ISchedulingRule;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.runtime.registry.runtime.IExecutableExtension;
 
 /**
  * The abstract base class for all incremental project builders. This class

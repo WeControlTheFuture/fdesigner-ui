@@ -12,13 +12,16 @@
  *     IBM Corporation - initial API and implementation
  *     James Blackburn (Broadcom Corp.) - ongoing development
  *******************************************************************************/
-package org.eclipse.core.internal.localstore;
+package org.fdesigner.resources.internal.localstore;
 
-import java.io.*;
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.Comparator;
-import org.eclipse.core.internal.utils.UniversalUniqueIdentifier;
-import org.eclipse.core.runtime.IPath;
+
+import org.fdesigner.resources.internal.utils.UniversalUniqueIdentifier;
+import org.fdesigner.runtime.common.runtime.IPath;
 
 public class HistoryBucket extends Bucket {
 
