@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.commands;
+package org.fdesigner.workbench.internal.commands;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -20,30 +20,31 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import org.eclipse.core.commands.Command;
-import org.eclipse.core.commands.CommandManager;
-import org.eclipse.core.commands.IHandler;
-import org.eclipse.core.commands.contexts.ContextManager;
-import org.eclipse.core.commands.contexts.ContextManagerEvent;
-import org.eclipse.core.commands.contexts.IContextManagerListener;
-import org.eclipse.e4.core.commands.internal.HandlerServiceImpl;
-import org.eclipse.jface.bindings.Binding;
-import org.eclipse.jface.bindings.BindingManager;
-import org.eclipse.jface.bindings.BindingManagerEvent;
-import org.eclipse.jface.bindings.IBindingManagerListener;
-import org.eclipse.jface.bindings.Scheme;
-import org.eclipse.jface.bindings.TriggerSequence;
-import org.eclipse.jface.bindings.keys.ParseException;
-import org.eclipse.ui.commands.CommandManagerEvent;
-import org.eclipse.ui.commands.ICategory;
-import org.eclipse.ui.commands.ICommand;
-import org.eclipse.ui.commands.ICommandManager;
-import org.eclipse.ui.commands.ICommandManagerListener;
-import org.eclipse.ui.commands.IKeyConfiguration;
-import org.eclipse.ui.internal.handlers.LegacyHandlerWrapper;
-import org.eclipse.ui.internal.keys.SchemeLegacyWrapper;
-import org.eclipse.ui.internal.util.Util;
-import org.eclipse.ui.keys.KeySequence;
+
+import org.fdesigner.commands.Command;
+import org.fdesigner.commands.CommandManager;
+import org.fdesigner.commands.IHandler;
+import org.fdesigner.commands.contexts.ContextManager;
+import org.fdesigner.commands.contexts.ContextManagerEvent;
+import org.fdesigner.commands.contexts.IContextManagerListener;
+import org.fdesigner.e4.core.commands.internal.HandlerServiceImpl;
+import org.fdesigner.ui.jface.bindings.Binding;
+import org.fdesigner.ui.jface.bindings.BindingManager;
+import org.fdesigner.ui.jface.bindings.BindingManagerEvent;
+import org.fdesigner.ui.jface.bindings.IBindingManagerListener;
+import org.fdesigner.ui.jface.bindings.Scheme;
+import org.fdesigner.ui.jface.bindings.TriggerSequence;
+import org.fdesigner.ui.jface.bindings.keys.ParseException;
+import org.fdesigner.workbench.commands.CommandManagerEvent;
+import org.fdesigner.workbench.commands.ICategory;
+import org.fdesigner.workbench.commands.ICommand;
+import org.fdesigner.workbench.commands.ICommandManager;
+import org.fdesigner.workbench.commands.ICommandManagerListener;
+import org.fdesigner.workbench.commands.IKeyConfiguration;
+import org.fdesigner.workbench.internal.handlers.LegacyHandlerWrapper;
+import org.fdesigner.workbench.internal.keys.SchemeLegacyWrapper;
+import org.fdesigner.workbench.internal.util.Util;
+import org.fdesigner.workbench.keys.KeySequence;
 
 /**
  * Provides support for the old <code>ICommandManager</code> interface.
@@ -394,10 +395,10 @@ public final class CommandManagerLegacyWrapper implements ICommandManager,
 		while (entryItr.hasNext()) {
 			final Map.Entry<String, IHandler> entry = entryItr.next();
 			final Object handler = entry.getValue();
-			if (handler instanceof org.eclipse.ui.commands.IHandler) {
+			if (handler instanceof org.fdesigner.workbench.commands.IHandler) {
 				final String commandId = entry.getKey();
 				handlersByCommandId.put(commandId,
-						new LegacyHandlerWrapper((org.eclipse.ui.commands.IHandler) handler));
+						new LegacyHandlerWrapper((org.fdesigner.workbench.commands.IHandler) handler));
 			}
 		}
 

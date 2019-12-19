@@ -13,11 +13,12 @@
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 472654
  ******************************************************************************/
 
-package org.eclipse.ui.internal.menus;
+package org.fdesigner.workbench.internal.menus;
 
 import java.util.HashMap;
 import java.util.Map;
-import org.eclipse.core.runtime.IConfigurationElement;
+
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
 
 /**
  * A registry between a given string id and a configuration element that

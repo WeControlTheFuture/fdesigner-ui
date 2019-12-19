@@ -13,7 +13,7 @@
  *     Bredex GmbH - Creator of this class.
  ******************************************************************************/
 
-package org.eclipse.ui.internal.activities;
+package org.fdesigner.workbench.internal.activities;
 
 /**
  * Utility helper class for regular expression string patterns.

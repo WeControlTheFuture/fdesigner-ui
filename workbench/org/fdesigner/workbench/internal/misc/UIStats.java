@@ -11,12 +11,13 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.misc;
+package org.fdesigner.workbench.internal.misc;
 
 import java.util.HashMap;
-import org.eclipse.core.runtime.PerformanceStats;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.ui.PlatformUI;
+
+import org.fdesigner.runtime.core.PerformanceStats;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.workbench.PlatformUI;
 
 /**
  * This class is used for monitoring performance events. Each performance event

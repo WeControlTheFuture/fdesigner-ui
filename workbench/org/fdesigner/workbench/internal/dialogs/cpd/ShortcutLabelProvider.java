@@ -11,12 +11,12 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.dialogs.cpd;
+package org.fdesigner.workbench.internal.dialogs.cpd;
 
-import org.eclipse.jface.viewers.ILabelProviderListener;
-import org.eclipse.jface.viewers.ITableLabelProvider;
 import org.eclipse.swt.graphics.Image;
-import org.eclipse.ui.internal.dialogs.cpd.CustomizePerspectiveDialog.ShortcutItem;
+import org.fdesigner.ui.jface.viewers.ILabelProviderListener;
+import org.fdesigner.ui.jface.viewers.ITableLabelProvider;
+import org.fdesigner.workbench.internal.dialogs.cpd.CustomizePerspectiveDialog.ShortcutItem;
 
 /**
  * A label provider to include the description field of ShortcutItems in the

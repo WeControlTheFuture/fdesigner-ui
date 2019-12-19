@@ -11,13 +11,13 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.quickaccess.providers;
+package org.fdesigner.workbench.internal.quickaccess.providers;
 
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.ui.internal.quickaccess.QuickAccessMessages;
-import org.eclipse.ui.internal.quickaccess.QuickAccessProvider;
-import org.eclipse.ui.quickaccess.QuickAccessElement;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.workbench.internal.quickaccess.QuickAccessMessages;
+import org.fdesigner.workbench.internal.quickaccess.QuickAccessProvider;
+import org.fdesigner.workbench.quickaccess.QuickAccessElement;
 
 /**
  * Provider for the "Search X in help" element. Only used to have a category

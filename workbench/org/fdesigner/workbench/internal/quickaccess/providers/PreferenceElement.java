@@ -12,17 +12,18 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.quickaccess.providers;
+package org.fdesigner.workbench.internal.quickaccess.providers;
 
 import java.util.Objects;
-import org.eclipse.jface.preference.IPreferenceNode;
-import org.eclipse.jface.resource.ImageDescriptor;
+
 import org.eclipse.swt.graphics.Image;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.dialogs.WorkbenchPreferenceDialog;
-import org.eclipse.ui.internal.preferences.WorkbenchPreferenceExtensionNode;
-import org.eclipse.ui.quickaccess.QuickAccessElement;
+import org.fdesigner.ui.jface.preference.IPreferenceNode;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.internal.dialogs.WorkbenchPreferenceDialog;
+import org.fdesigner.workbench.internal.preferences.WorkbenchPreferenceExtensionNode;
+import org.fdesigner.workbench.quickaccess.QuickAccessElement;
 
 /**
  * @since 3.3

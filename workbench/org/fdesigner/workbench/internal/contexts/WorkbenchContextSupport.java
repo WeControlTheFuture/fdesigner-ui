@@ -11,22 +11,23 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.contexts;
+package org.fdesigner.workbench.internal.contexts;
 
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
-import org.eclipse.core.commands.contexts.ContextManager;
+
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.LegacyHandlerSubmissionExpression;
-import org.eclipse.ui.contexts.EnabledSubmission;
-import org.eclipse.ui.contexts.IContextActivation;
-import org.eclipse.ui.contexts.IContextManager;
-import org.eclipse.ui.contexts.IContextService;
-import org.eclipse.ui.contexts.IWorkbenchContextSupport;
-import org.eclipse.ui.internal.Workbench;
-import org.eclipse.ui.keys.IBindingService;
+import org.fdesigner.commands.contexts.ContextManager;
+import org.fdesigner.workbench.LegacyHandlerSubmissionExpression;
+import org.fdesigner.workbench.contexts.EnabledSubmission;
+import org.fdesigner.workbench.contexts.IContextActivation;
+import org.fdesigner.workbench.contexts.IContextManager;
+import org.fdesigner.workbench.contexts.IContextService;
+import org.fdesigner.workbench.contexts.IWorkbenchContextSupport;
+import org.fdesigner.workbench.internal.Workbench;
+import org.fdesigner.workbench.keys.IBindingService;
 
 /**
  * Provides support for contexts within the workbench -- including key bindings,

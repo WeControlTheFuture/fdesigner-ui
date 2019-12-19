@@ -11,10 +11,11 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.keys;
+package org.fdesigner.workbench.internal.keys;
 
 import java.util.Comparator;
-import org.eclipse.ui.keys.ModifierKey;
+
+import org.fdesigner.workbench.keys.ModifierKey;
 
 abstract class AbstractModifierKeyComparator implements Comparator {
 

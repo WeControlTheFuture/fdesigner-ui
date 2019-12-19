@@ -11,12 +11,12 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.commands;
+package org.fdesigner.workbench.internal.commands;
 
-import org.eclipse.core.commands.CommandEvent;
-import org.eclipse.core.commands.ICommandListener;
-import org.eclipse.jface.bindings.BindingManager;
-import org.eclipse.ui.commands.ICommand;
+import org.fdesigner.commands.CommandEvent;
+import org.fdesigner.commands.ICommandListener;
+import org.fdesigner.ui.jface.bindings.BindingManager;
+import org.fdesigner.workbench.commands.ICommand;
 
 /**
  * Wraps a legacy listener in a new listener interface. This simply forwards
@@ -35,7 +35,7 @@ final class LegacyCommandListenerWrapper implements ICommandListener {
 	 * The listener which is being wrapped. This value should never be
 	 * <code>null</code>.
 	 */
-	private final org.eclipse.ui.commands.ICommandListener listener;
+	private final org.fdesigner.workbench.commands.ICommandListener listener;
 
 	/**
 	 * Constructs a new instance of <code>CommandListenerWrapper</code> around a
@@ -43,7 +43,7 @@ final class LegacyCommandListenerWrapper implements ICommandListener {
 	 *
 	 * @param listener The listener to be wrapped; must not be <code>null</code>.
 	 */
-	LegacyCommandListenerWrapper(final org.eclipse.ui.commands.ICommandListener listener,
+	LegacyCommandListenerWrapper(final org.fdesigner.workbench.commands.ICommandListener listener,
 			final BindingManager bindingManager) {
 		if (listener == null) {
 			throw new NullPointerException("Cannot wrap a null listener."); //$NON-NLS-1$
@@ -65,7 +65,7 @@ final class LegacyCommandListenerWrapper implements ICommandListener {
 		final boolean handledChanged = commandEvent.isHandledChanged();
 		final boolean nameChanged = commandEvent.isNameChanged();
 
-		listener.commandChanged(new org.eclipse.ui.commands.CommandEvent(command, false, false, definedChanged,
+		listener.commandChanged(new org.fdesigner.workbench.commands.CommandEvent(command, false, false, definedChanged,
 				descriptionChanged, handledChanged, false, nameChanged, null));
 
 	}
@@ -77,8 +77,8 @@ final class LegacyCommandListenerWrapper implements ICommandListener {
 			return listener.equals(wrapper.listener);
 		}
 
-		if (object instanceof org.eclipse.ui.commands.ICommandListener) {
-			final org.eclipse.ui.commands.ICommandListener other = (org.eclipse.ui.commands.ICommandListener) object;
+		if (object instanceof org.fdesigner.workbench.commands.ICommandListener) {
+			final org.fdesigner.workbench.commands.ICommandListener other = (org.fdesigner.workbench.commands.ICommandListener) object;
 			return listener.equals(other);
 		}
 

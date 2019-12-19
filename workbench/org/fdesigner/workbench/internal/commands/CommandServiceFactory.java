@@ -13,17 +13,17 @@
  *     Lars Vogel <Lars.Vogel@gmail.com> - Bug 440810
  ******************************************************************************/
 
-package org.eclipse.ui.internal.commands;
+package org.fdesigner.workbench.internal.commands;
 
-import org.eclipse.e4.ui.model.application.ui.MContext;
-import org.eclipse.ui.IWorkbench;
-import org.eclipse.ui.IWorkbenchPartSite;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.commands.ICommandService;
-import org.eclipse.ui.internal.services.IWorkbenchLocationService;
-import org.eclipse.ui.services.AbstractServiceFactory;
-import org.eclipse.ui.services.IServiceLocator;
-import org.eclipse.ui.services.IServiceScopes;
+import org.fdesigner.e4.ui.model.application.ui.MContext;
+import org.fdesigner.workbench.IWorkbench;
+import org.fdesigner.workbench.IWorkbenchPartSite;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.commands.ICommandService;
+import org.fdesigner.workbench.internal.services.IWorkbenchLocationService;
+import org.fdesigner.workbench.services.AbstractServiceFactory;
+import org.fdesigner.workbench.services.IServiceLocator;
+import org.fdesigner.workbench.services.IServiceScopes;
 
 /**
  * @since 3.4

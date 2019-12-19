@@ -12,17 +12,17 @@
  *     IBM Corporation - initial API and implementation
  *     Alain Bernard <alain.bernard1224@gmail.com> - Bug 281490
  *******************************************************************************/
-package org.eclipse.ui.internal.dialogs;
+package org.fdesigner.workbench.internal.dialogs;
 
-import org.eclipse.jface.viewers.IStructuredSelection;
 import org.eclipse.swt.widgets.Composite;
-import org.eclipse.ui.IWorkbench;
-import org.eclipse.ui.activities.ITriggerPoint;
-import org.eclipse.ui.internal.IWorkbenchHelpContextIds;
-import org.eclipse.ui.internal.WorkbenchMessages;
-import org.eclipse.ui.internal.WorkbenchPlugin;
-import org.eclipse.ui.internal.activities.ws.WorkbenchTriggerPoints;
-import org.eclipse.ui.wizards.IWizardCategory;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.workbench.IWorkbench;
+import org.fdesigner.workbench.activities.ITriggerPoint;
+import org.fdesigner.workbench.internal.IWorkbenchHelpContextIds;
+import org.fdesigner.workbench.internal.WorkbenchMessages;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
+import org.fdesigner.workbench.internal.activities.ws.WorkbenchTriggerPoints;
+import org.fdesigner.workbench.wizards.IWizardCategory;
 
 /**
  * Wizard page class from which an import wizard is selected.

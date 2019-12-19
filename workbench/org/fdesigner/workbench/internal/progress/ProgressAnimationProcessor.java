@@ -11,14 +11,15 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.progress;
+package org.fdesigner.workbench.internal.progress;
 
 import java.util.ArrayList;
 import java.util.List;
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.jobs.Job;
-import org.eclipse.ui.PlatformUI;
+
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.jobs.runtime.jobs.Job;
+import org.fdesigner.workbench.PlatformUI;
 
 /**
  * The ProgressAnimationProcessor is the processor for the animation using the

@@ -12,15 +12,15 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.keys;
+package org.fdesigner.workbench.internal.keys;
 
-import org.eclipse.jface.action.IContributionItem;
-import org.eclipse.jface.action.IStatusLineManager;
-import org.eclipse.jface.action.StatusLineContributionItem;
-import org.eclipse.jface.bindings.keys.KeySequence;
-import org.eclipse.ui.IWorkbench;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.internal.WorkbenchWindow;
+import org.fdesigner.ui.jface.action.IContributionItem;
+import org.fdesigner.ui.jface.action.IStatusLineManager;
+import org.fdesigner.ui.jface.action.StatusLineContributionItem;
+import org.fdesigner.ui.jface.bindings.keys.KeySequence;
+import org.fdesigner.workbench.IWorkbench;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.internal.WorkbenchWindow;
 
 /**
  * <p>

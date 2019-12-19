@@ -11,15 +11,15 @@
  * Contributors:
  *     Christian Georgi (SAP SE) - Bug 540440
  *******************************************************************************/
-package org.eclipse.ui.internal.keys.show;
+package org.fdesigner.workbench.internal.keys.show;
 
-import org.eclipse.core.commands.AbstractHandler;
-import org.eclipse.core.commands.ExecutionEvent;
-import org.eclipse.jface.preference.IPreferenceStore;
 import org.eclipse.swt.widgets.Display;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.IPreferenceConstants;
-import org.eclipse.ui.internal.WorkbenchPlugin;
+import org.fdesigner.commands.AbstractHandler;
+import org.fdesigner.commands.ExecutionEvent;
+import org.fdesigner.ui.jface.preference.IPreferenceStore;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.internal.IPreferenceConstants;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
 
 /**
  * Toggles whether to show keyboard shortcuts

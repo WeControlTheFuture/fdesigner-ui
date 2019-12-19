@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal.quickaccess;
+package org.fdesigner.workbench.internal.quickaccess;
 
 import java.util.ArrayList;
 import java.util.List;

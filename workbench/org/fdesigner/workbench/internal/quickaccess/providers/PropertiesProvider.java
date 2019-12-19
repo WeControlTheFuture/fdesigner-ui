@@ -12,24 +12,25 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.quickaccess.providers;
+package org.fdesigner.workbench.internal.quickaccess.providers;
 
 import java.util.HashMap;
 import java.util.Map;
-import org.eclipse.jface.preference.IPreferenceNode;
-import org.eclipse.jface.preference.PreferenceManager;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.jface.viewers.ISelection;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.ui.IWorkbenchPage;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.IWorkbenchGraphicConstants;
-import org.eclipse.ui.internal.WorkbenchImages;
-import org.eclipse.ui.internal.dialogs.PropertyPageContributorManager;
-import org.eclipse.ui.internal.dialogs.PropertyPageManager;
-import org.eclipse.ui.internal.quickaccess.QuickAccessMessages;
-import org.eclipse.ui.internal.quickaccess.QuickAccessProvider;
-import org.eclipse.ui.quickaccess.QuickAccessElement;
+
+import org.fdesigner.ui.jface.preference.IPreferenceNode;
+import org.fdesigner.ui.jface.preference.PreferenceManager;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.ui.jface.viewers.ISelection;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.workbench.IWorkbenchPage;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.internal.IWorkbenchGraphicConstants;
+import org.fdesigner.workbench.internal.WorkbenchImages;
+import org.fdesigner.workbench.internal.dialogs.PropertyPageContributorManager;
+import org.fdesigner.workbench.internal.dialogs.PropertyPageManager;
+import org.fdesigner.workbench.internal.quickaccess.QuickAccessMessages;
+import org.fdesigner.workbench.internal.quickaccess.QuickAccessProvider;
+import org.fdesigner.workbench.quickaccess.QuickAccessElement;
 
 /**
  * @since 3.3

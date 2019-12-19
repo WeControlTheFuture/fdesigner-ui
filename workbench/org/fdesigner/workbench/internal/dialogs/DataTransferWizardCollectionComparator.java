@@ -12,11 +12,11 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.dialogs;
+package org.fdesigner.workbench.internal.dialogs;
 
-import org.eclipse.jface.viewers.IBasicPropertyConstants;
-import org.eclipse.jface.viewers.ViewerComparator;
-import org.eclipse.ui.internal.registry.WizardsRegistryReader;
+import org.fdesigner.ui.jface.viewers.IBasicPropertyConstants;
+import org.fdesigner.ui.jface.viewers.ViewerComparator;
+import org.fdesigner.workbench.internal.registry.WizardsRegistryReader;
 
 /**
  * A Viewer element sorter that sorts Elements by their name attribute. Note

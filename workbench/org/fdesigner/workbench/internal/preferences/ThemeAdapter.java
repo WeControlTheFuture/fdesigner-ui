@@ -11,15 +11,16 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.preferences;
+package org.fdesigner.workbench.internal.preferences;
 
 import java.util.HashSet;
 import java.util.Set;
-import org.eclipse.jface.resource.FontRegistry;
-import org.eclipse.jface.util.IPropertyChangeListener;
+
 import org.eclipse.swt.graphics.Color;
 import org.eclipse.swt.graphics.Font;
-import org.eclipse.ui.themes.ITheme;
+import org.fdesigner.ui.jface.resource.FontRegistry;
+import org.fdesigner.ui.jface.util.IPropertyChangeListener;
+import org.fdesigner.workbench.themes.ITheme;
 
 /**
  * @since 3.1

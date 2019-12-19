@@ -12,21 +12,23 @@
  *     IBM Corporation - initial API and implementation
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 472654
  ******************************************************************************/
-package org.eclipse.ui.internal.help;
+package org.fdesigner.workbench.internal.help;
 
 import java.util.Map;
 import java.util.WeakHashMap;
+
 import javax.inject.Inject;
-import org.eclipse.core.commands.Command;
-import org.eclipse.core.commands.IHandler;
-import org.eclipse.core.internal.commands.util.Util;
-import org.eclipse.e4.core.commands.ECommandService;
-import org.eclipse.e4.core.commands.internal.HandlerServiceImpl;
-import org.eclipse.e4.core.commands.internal.ICommandHelpService;
-import org.eclipse.e4.core.contexts.IEclipseContext;
-import org.eclipse.e4.core.di.annotations.Optional;
-import org.eclipse.e4.core.services.log.Logger;
-import org.eclipse.ui.internal.handlers.E4HandlerProxy;
+
+import org.fdesigner.commands.Command;
+import org.fdesigner.commands.IHandler;
+import org.fdesigner.commands.internal.commands.util.Util;
+import org.fdesigner.e4.core.commands.ECommandService;
+import org.fdesigner.e4.core.commands.internal.HandlerServiceImpl;
+import org.fdesigner.e4.core.commands.internal.ICommandHelpService;
+import org.fdesigner.e4.core.contexts.IEclipseContext;
+import org.fdesigner.e4.core.di.annotations.Optional;
+import org.fdesigner.e4.core.services.log.Logger;
+import org.fdesigner.workbench.internal.handlers.E4HandlerProxy;
 
 /**
  * @since 3.5

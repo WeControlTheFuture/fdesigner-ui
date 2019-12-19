@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.intro;
+package org.fdesigner.workbench.internal.intro;
 
 /**
  * Contains constants used by the intro implementation

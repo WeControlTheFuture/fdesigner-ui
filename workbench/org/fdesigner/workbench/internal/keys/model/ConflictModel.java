@@ -12,16 +12,17 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.keys.model;
+package org.fdesigner.workbench.internal.keys.model;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
-import org.eclipse.jface.bindings.Binding;
-import org.eclipse.jface.bindings.BindingManager;
-import org.eclipse.jface.bindings.TriggerSequence;
+
+import org.fdesigner.ui.jface.bindings.Binding;
+import org.fdesigner.ui.jface.bindings.BindingManager;
+import org.fdesigner.ui.jface.bindings.TriggerSequence;
 
 /**
  * @since 3.4

@@ -11,14 +11,14 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.contexts;
+package org.fdesigner.workbench.internal.contexts;
 
-import org.eclipse.core.commands.contexts.Context;
-import org.eclipse.core.commands.contexts.ContextManager;
-import org.eclipse.ui.contexts.IContext;
-import org.eclipse.ui.contexts.IContextListener;
-import org.eclipse.ui.contexts.NotDefinedException;
-import org.eclipse.ui.internal.util.Util;
+import org.fdesigner.commands.contexts.Context;
+import org.fdesigner.commands.contexts.ContextManager;
+import org.fdesigner.workbench.contexts.IContext;
+import org.fdesigner.workbench.contexts.IContextListener;
+import org.fdesigner.workbench.contexts.NotDefinedException;
+import org.fdesigner.workbench.internal.util.Util;
 
 /**
  * This implements the old <code>IContext</code> interface based on the new
@@ -87,7 +87,7 @@ public class ContextLegacyWrapper implements IContext {
 	public String getName() throws NotDefinedException {
 		try {
 			return wrappedContext.getName();
-		} catch (final org.eclipse.core.commands.common.NotDefinedException e) {
+		} catch (final org.fdesigner.commands.common.NotDefinedException e) {
 			throw new NotDefinedException(e);
 		}
 	}
@@ -96,7 +96,7 @@ public class ContextLegacyWrapper implements IContext {
 	public String getParentId() throws NotDefinedException {
 		try {
 			return wrappedContext.getParentId();
-		} catch (final org.eclipse.core.commands.common.NotDefinedException e) {
+		} catch (final org.fdesigner.commands.common.NotDefinedException e) {
 			throw new NotDefinedException(e);
 		}
 	}

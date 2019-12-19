@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.dialogs.cpd;
+package org.fdesigner.workbench.internal.dialogs.cpd;
 
 import org.eclipse.swt.graphics.Point;
 import org.eclipse.swt.widgets.Event;

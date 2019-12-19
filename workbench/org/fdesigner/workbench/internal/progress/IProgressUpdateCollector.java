@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.progress;
+package org.fdesigner.workbench.internal.progress;
 
 /**
  * The IProgressUpdateCollector is the interface that content providers conform

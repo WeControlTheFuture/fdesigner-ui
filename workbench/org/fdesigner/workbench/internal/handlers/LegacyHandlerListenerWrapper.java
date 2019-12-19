@@ -11,12 +11,12 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.handlers;
+package org.fdesigner.workbench.internal.handlers;
 
-import org.eclipse.core.commands.IHandler;
-import org.eclipse.ui.commands.HandlerEvent;
-import org.eclipse.ui.commands.IHandlerListener;
-import org.eclipse.ui.internal.commands.ILegacyAttributeNames;
+import org.fdesigner.commands.IHandler;
+import org.fdesigner.workbench.commands.HandlerEvent;
+import org.fdesigner.workbench.commands.IHandlerListener;
+import org.fdesigner.workbench.internal.commands.ILegacyAttributeNames;
 
 /**
  * A wrapper so that the new handler listener can work with legacy handlers.
@@ -34,7 +34,7 @@ public final class LegacyHandlerListenerWrapper implements IHandlerListener {
 	/**
 	 * The wrapped listener; never <code>null</code>.
 	 */
-	private final org.eclipse.core.commands.IHandlerListener listener;
+	private final org.fdesigner.commands.IHandlerListener listener;
 
 	/**
 	 * Constructs a new instance of <code>LegacyHandlerListenerWrapper</code>.
@@ -42,7 +42,7 @@ public final class LegacyHandlerListenerWrapper implements IHandlerListener {
 	 * @param listener The listener to wrap; must not be <code>null</code>.
 	 */
 	public LegacyHandlerListenerWrapper(final IHandler handler,
-			final org.eclipse.core.commands.IHandlerListener listener) {
+			final org.fdesigner.commands.IHandlerListener listener) {
 		if (handler == null) {
 			throw new NullPointerException("A listener wrapper cannot be created on a null handler"); //$NON-NLS-1$
 		}
@@ -61,6 +61,6 @@ public final class LegacyHandlerListenerWrapper implements IHandlerListener {
 				.get(ILegacyAttributeNames.ENABLED)).booleanValue() != handler.isEnabled();
 		final boolean handledChanged = ((Boolean) event.getPreviousAttributeValuesByName()
 				.get(ILegacyAttributeNames.HANDLED)).booleanValue() != handler.isHandled();
-		listener.handlerChanged(new org.eclipse.core.commands.HandlerEvent(handler, enabledChanged, handledChanged));
+		listener.handlerChanged(new org.fdesigner.commands.HandlerEvent(handler, enabledChanged, handledChanged));
 	}
 }

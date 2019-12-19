@@ -14,7 +14,7 @@
  *     René Brandstetter - Bug 433778
  *     Patrik Suzzi <psuzzi@gmail.com> - Bug 491410
  *******************************************************************************/
-package org.eclipse.ui.internal.quickaccess;
+package org.fdesigner.workbench.internal.quickaccess;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -27,22 +27,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.function.Function;
 import java.util.stream.Collectors;
-import org.eclipse.core.commands.Command;
-import org.eclipse.core.runtime.Adapters;
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.e4.ui.model.application.MApplication;
-import org.eclipse.e4.ui.model.application.ui.basic.MWindow;
-import org.eclipse.jface.bindings.TriggerSequence;
-import org.eclipse.jface.bindings.keys.KeySequence;
-import org.eclipse.jface.bindings.keys.SWTKeySupport;
-import org.eclipse.jface.dialogs.Dialog;
-import org.eclipse.jface.dialogs.IDialogConstants;
-import org.eclipse.jface.dialogs.IDialogSettings;
-import org.eclipse.jface.dialogs.PopupDialog;
-import org.eclipse.jface.layout.GridDataFactory;
-import org.eclipse.jface.layout.GridLayoutFactory;
-import org.eclipse.jface.util.Util;
-import org.eclipse.osgi.util.NLS;
+
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.custom.BusyIndicator;
 import org.eclipse.swt.events.KeyAdapter;
@@ -60,21 +45,37 @@ import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Table;
 import org.eclipse.swt.widgets.Text;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.internal.WorkbenchPlugin;
-import org.eclipse.ui.internal.WorkbenchWindow;
-import org.eclipse.ui.internal.progress.ProgressManagerUtil;
-import org.eclipse.ui.internal.quickaccess.providers.ActionProvider;
-import org.eclipse.ui.internal.quickaccess.providers.CommandProvider;
-import org.eclipse.ui.internal.quickaccess.providers.EditorProvider;
-import org.eclipse.ui.internal.quickaccess.providers.HelpSearchProvider;
-import org.eclipse.ui.internal.quickaccess.providers.PerspectiveProvider;
-import org.eclipse.ui.internal.quickaccess.providers.PreferenceProvider;
-import org.eclipse.ui.internal.quickaccess.providers.PropertiesProvider;
-import org.eclipse.ui.internal.quickaccess.providers.ViewProvider;
-import org.eclipse.ui.internal.quickaccess.providers.WizardProvider;
-import org.eclipse.ui.keys.IBindingService;
-import org.eclipse.ui.quickaccess.QuickAccessElement;
+import org.fdesigner.commands.Command;
+import org.fdesigner.e4.ui.model.application.MApplication;
+import org.fdesigner.e4.ui.model.application.ui.basic.MWindow;
+import org.fdesigner.runtime.common.runtime.Adapters;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.ui.jface.bindings.TriggerSequence;
+import org.fdesigner.ui.jface.bindings.keys.KeySequence;
+import org.fdesigner.ui.jface.bindings.keys.SWTKeySupport;
+import org.fdesigner.ui.jface.dialogs.Dialog;
+import org.fdesigner.ui.jface.dialogs.IDialogConstants;
+import org.fdesigner.ui.jface.dialogs.IDialogSettings;
+import org.fdesigner.ui.jface.dialogs.PopupDialog;
+import org.fdesigner.ui.jface.layout.GridDataFactory;
+import org.fdesigner.ui.jface.layout.GridLayoutFactory;
+import org.fdesigner.ui.jface.util.Util;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
+import org.fdesigner.workbench.internal.WorkbenchWindow;
+import org.fdesigner.workbench.internal.progress.ProgressManagerUtil;
+import org.fdesigner.workbench.internal.quickaccess.providers.ActionProvider;
+import org.fdesigner.workbench.internal.quickaccess.providers.CommandProvider;
+import org.fdesigner.workbench.internal.quickaccess.providers.EditorProvider;
+import org.fdesigner.workbench.internal.quickaccess.providers.HelpSearchProvider;
+import org.fdesigner.workbench.internal.quickaccess.providers.PerspectiveProvider;
+import org.fdesigner.workbench.internal.quickaccess.providers.PreferenceProvider;
+import org.fdesigner.workbench.internal.quickaccess.providers.PropertiesProvider;
+import org.fdesigner.workbench.internal.quickaccess.providers.ViewProvider;
+import org.fdesigner.workbench.internal.quickaccess.providers.WizardProvider;
+import org.fdesigner.workbench.keys.IBindingService;
+import org.fdesigner.workbench.quickaccess.QuickAccessElement;
 
 /**
  * This is the quick access popup dialog used in 3.x. The new quick access is

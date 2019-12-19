@@ -11,12 +11,13 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.browser;
+package org.fdesigner.workbench.internal.browser;
 
 import java.util.Hashtable;
-import org.eclipse.ui.PartInitException;
-import org.eclipse.ui.browser.AbstractWorkbenchBrowserSupport;
-import org.eclipse.ui.browser.IWebBrowser;
+
+import org.fdesigner.workbench.PartInitException;
+import org.fdesigner.workbench.browser.AbstractWorkbenchBrowserSupport;
+import org.fdesigner.workbench.browser.IWebBrowser;
 
 /**
  * Extends the abstract browser support class by providing minimal support for

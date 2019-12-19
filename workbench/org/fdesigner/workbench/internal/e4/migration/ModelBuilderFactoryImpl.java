@@ -12,11 +12,12 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal.e4.migration;
+package org.fdesigner.workbench.internal.e4.migration;
 
 import javax.inject.Inject;
-import org.eclipse.e4.core.contexts.ContextInjectionFactory;
-import org.eclipse.e4.core.contexts.IEclipseContext;
+
+import org.fdesigner.e4.core.contexts.ContextInjectionFactory;
+import org.fdesigner.e4.core.contexts.IEclipseContext;
 
 public class ModelBuilderFactoryImpl implements IModelBuilderFactory {
 

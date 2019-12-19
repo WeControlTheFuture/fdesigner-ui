@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.keys;
+package org.fdesigner.workbench.internal.keys;
 
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Event;

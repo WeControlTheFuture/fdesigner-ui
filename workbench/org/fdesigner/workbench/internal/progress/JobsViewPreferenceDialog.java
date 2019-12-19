@@ -12,19 +12,19 @@
  *     IBM Corporation - initial API and implementation
  *     Sebastian Davids  <sdavids@gmx.de> - Fix for Bug 132156 [Dialogs] Progress Preferences dialog problems
  *******************************************************************************/
-package org.eclipse.ui.internal.progress;
+package org.fdesigner.workbench.internal.progress;
 
-import org.eclipse.jface.dialogs.Dialog;
-import org.eclipse.jface.preference.BooleanFieldEditor;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.IWorkbenchPreferenceConstants;
-import org.eclipse.ui.internal.util.PrefUtil;
-import org.eclipse.ui.preferences.ViewSettingsDialog;
+import org.fdesigner.ui.jface.dialogs.Dialog;
+import org.fdesigner.ui.jface.preference.BooleanFieldEditor;
+import org.fdesigner.workbench.IWorkbenchPreferenceConstants;
+import org.fdesigner.workbench.internal.util.PrefUtil;
+import org.fdesigner.workbench.preferences.ViewSettingsDialog;
 
 /**
  * The JobsViewPreferenceDialog is the dialog that allows the user to set the

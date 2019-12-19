@@ -12,28 +12,29 @@
  *     IBM Corporation - initial API and implementation
  *     Lars Vogel <Lars.Vogel@gmail.com> - Bug 440810
  *******************************************************************************/
-package org.eclipse.ui.internal.commands;
+package org.fdesigner.workbench.internal.commands;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import org.eclipse.core.commands.Command;
-import org.eclipse.core.commands.ExecutionEvent;
-import org.eclipse.core.commands.ParameterizedCommand;
-import org.eclipse.jface.bindings.BindingManager;
-import org.eclipse.jface.bindings.TriggerSequence;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.commands.ExecutionException;
-import org.eclipse.ui.commands.ICommand;
-import org.eclipse.ui.commands.ICommandListener;
-import org.eclipse.ui.commands.NotDefinedException;
-import org.eclipse.ui.commands.NotHandledException;
-import org.eclipse.ui.handlers.IHandlerService;
-import org.eclipse.ui.internal.keys.KeySequenceBinding;
-import org.eclipse.ui.keys.IBindingService;
-import org.eclipse.ui.keys.KeySequence;
+
+import org.fdesigner.commands.Command;
+import org.fdesigner.commands.ExecutionEvent;
+import org.fdesigner.commands.ParameterizedCommand;
+import org.fdesigner.ui.jface.bindings.BindingManager;
+import org.fdesigner.ui.jface.bindings.TriggerSequence;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.commands.ExecutionException;
+import org.fdesigner.workbench.commands.ICommand;
+import org.fdesigner.workbench.commands.ICommandListener;
+import org.fdesigner.workbench.commands.NotDefinedException;
+import org.fdesigner.workbench.commands.NotHandledException;
+import org.fdesigner.workbench.handlers.IHandlerService;
+import org.fdesigner.workbench.internal.keys.KeySequenceBinding;
+import org.fdesigner.workbench.keys.IBindingService;
+import org.fdesigner.workbench.keys.KeySequence;
 
 /**
  * A wrapper around a core command so that it satisfies the deprecated
@@ -93,9 +94,9 @@ final class CommandLegacyWrapper implements ICommand {
 			return command.execute(new ExecutionEvent(command,
 					(parameterValuesByName == null) ? Collections.EMPTY_MAP : parameterValuesByName, null,
 					service.getCurrentState()));
-		} catch (final org.eclipse.core.commands.ExecutionException e) {
+		} catch (final org.fdesigner.commands.ExecutionException e) {
 			throw new ExecutionException(e);
-		} catch (final org.eclipse.core.commands.NotHandledException e) {
+		} catch (final org.fdesigner.commands.NotHandledException e) {
 			throw new NotHandledException(e);
 		}
 	}
@@ -114,7 +115,7 @@ final class CommandLegacyWrapper implements ICommand {
 	public String getCategoryId() throws NotDefinedException {
 		try {
 			return command.getCategory().getId();
-		} catch (final org.eclipse.core.commands.common.NotDefinedException e) {
+		} catch (final org.fdesigner.commands.common.NotDefinedException e) {
 			throw new NotDefinedException(e);
 		}
 	}
@@ -123,7 +124,7 @@ final class CommandLegacyWrapper implements ICommand {
 	public String getDescription() throws NotDefinedException {
 		try {
 			return command.getDescription();
-		} catch (final org.eclipse.core.commands.common.NotDefinedException e) {
+		} catch (final org.fdesigner.commands.common.NotDefinedException e) {
 			throw new NotDefinedException(e);
 		}
 	}
@@ -144,9 +145,9 @@ final class CommandLegacyWrapper implements ICommand {
 		final int activeBindingsCount = activeBindings.length;
 		for (int i = 0; i < activeBindingsCount; i++) {
 			final TriggerSequence triggerSequence = activeBindings[i];
-			if (triggerSequence instanceof org.eclipse.jface.bindings.keys.KeySequence) {
+			if (triggerSequence instanceof org.fdesigner.ui.jface.bindings.keys.KeySequence) {
 				legacyBindings.add(new KeySequenceBinding(
-						KeySequence.getInstance((org.eclipse.jface.bindings.keys.KeySequence) triggerSequence), 0));
+						KeySequence.getInstance((org.fdesigner.ui.jface.bindings.keys.KeySequence) triggerSequence), 0));
 			}
 		}
 
@@ -157,7 +158,7 @@ final class CommandLegacyWrapper implements ICommand {
 	public String getName() throws NotDefinedException {
 		try {
 			return command.getName();
-		} catch (final org.eclipse.core.commands.common.NotDefinedException e) {
+		} catch (final org.fdesigner.commands.common.NotDefinedException e) {
 			throw new NotDefinedException(e);
 		}
 	}

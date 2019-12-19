@@ -13,13 +13,13 @@
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 445723, 445600
  ******************************************************************************/
 
-package org.eclipse.ui.internal.help;
+package org.fdesigner.workbench.internal.help;
 
-import org.eclipse.e4.ui.services.help.EHelpService;
-import org.eclipse.jface.action.IAction;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Menu;
 import org.eclipse.swt.widgets.MenuItem;
+import org.fdesigner.e4.ui.services.help.EHelpService;
+import org.fdesigner.ui.jface.action.IAction;
 
 public class HelpServiceImpl implements EHelpService {
 

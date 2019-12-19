@@ -11,9 +11,9 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.progress;
+package org.fdesigner.workbench.internal.progress;
 
-import org.eclipse.core.runtime.jobs.Job;
+import org.fdesigner.runtime.jobs.runtime.jobs.Job;
 
 /**
  * The IAnimationProcessor is the class that handles the animation of the

@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.contexts;
+package org.fdesigner.workbench.internal.contexts;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -21,13 +21,14 @@ import java.util.List;
 import java.util.Set;
 import java.util.SortedSet;
 import java.util.TreeSet;
-import org.eclipse.core.commands.common.NotDefinedException;
-import org.eclipse.core.commands.contexts.Context;
-import org.eclipse.core.commands.contexts.ContextManager;
-import org.eclipse.ui.contexts.ContextManagerEvent;
-import org.eclipse.ui.contexts.IContext;
-import org.eclipse.ui.contexts.IContextManager;
-import org.eclipse.ui.contexts.IContextManagerListener;
+
+import org.fdesigner.commands.common.NotDefinedException;
+import org.fdesigner.commands.contexts.Context;
+import org.fdesigner.commands.contexts.ContextManager;
+import org.fdesigner.workbench.contexts.ContextManagerEvent;
+import org.fdesigner.workbench.contexts.IContext;
+import org.fdesigner.workbench.contexts.IContextManager;
+import org.fdesigner.workbench.contexts.IContextManagerListener;
 
 /**
  * A wrapper around the new API that supports the old API. This manager also
@@ -36,7 +37,7 @@ import org.eclipse.ui.contexts.IContextManagerListener;
  * @since 3.1
  */
 public final class ContextManagerLegacyWrapper
-		implements org.eclipse.core.commands.contexts.IContextManagerListener, IContextManager {
+		implements org.fdesigner.commands.contexts.IContextManagerListener, IContextManager {
 
 	/**
 	 * A comparator between context identifiers, that sorts them based on depth
@@ -163,7 +164,7 @@ public final class ContextManagerLegacyWrapper
 	}
 
 	@Override
-	public void contextManagerChanged(org.eclipse.core.commands.contexts.ContextManagerEvent contextManagerEvent) {
+	public void contextManagerChanged(org.fdesigner.commands.contexts.ContextManagerEvent contextManagerEvent) {
 		final String contextId = contextManagerEvent.getContextId();
 		final boolean definedContextsChanged;
 		final Set<String> previouslyDefinedContextIds;

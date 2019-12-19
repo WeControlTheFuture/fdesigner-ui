@@ -11,12 +11,12 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.dialogs.cpd;
+package org.fdesigner.workbench.internal.dialogs.cpd;
 
-import org.eclipse.jface.viewers.ISelectionChangedListener;
-import org.eclipse.jface.viewers.SelectionChangedEvent;
-import org.eclipse.jface.viewers.TreeViewer;
-import org.eclipse.ui.internal.dialogs.cpd.CustomizePerspectiveDialog.ActionSet;
+import org.fdesigner.ui.jface.viewers.ISelectionChangedListener;
+import org.fdesigner.ui.jface.viewers.SelectionChangedEvent;
+import org.fdesigner.ui.jface.viewers.TreeViewer;
+import org.fdesigner.workbench.internal.dialogs.cpd.CustomizePerspectiveDialog.ActionSet;
 
 /**
  * A Listener for a list of command groups, that updates the viewer and filter

@@ -12,19 +12,20 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.activities;
+package org.fdesigner.workbench.internal.activities;
 
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Objects;
 import java.util.Set;
-import org.eclipse.ui.activities.CategoryEvent;
-import org.eclipse.ui.activities.ICategory;
-import org.eclipse.ui.activities.ICategoryActivityBinding;
-import org.eclipse.ui.activities.ICategoryListener;
-import org.eclipse.ui.activities.NotDefinedException;
-import org.eclipse.ui.internal.util.Util;
+
+import org.fdesigner.workbench.activities.CategoryEvent;
+import org.fdesigner.workbench.activities.ICategory;
+import org.fdesigner.workbench.activities.ICategoryActivityBinding;
+import org.fdesigner.workbench.activities.ICategoryListener;
+import org.fdesigner.workbench.activities.NotDefinedException;
+import org.fdesigner.workbench.internal.util.Util;
 
 final class Category implements ICategory {
 	private static final int HASH_FACTOR = 89;

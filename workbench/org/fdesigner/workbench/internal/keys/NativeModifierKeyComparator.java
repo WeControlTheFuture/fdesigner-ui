@@ -16,7 +16,7 @@ package org.fdesigner.workbench.internal.keys;
 
 import java.util.Comparator;
 
-import org.fdesigner.workbench.internal.util.Util;
+import org.fdesigner.ui.jface.util.Util;
 import org.fdesigner.workbench.keys.ModifierKey;
 
 /**

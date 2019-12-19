@@ -11,13 +11,13 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
-package org.eclipse.ui.internal.activities;
+package org.fdesigner.workbench.internal.activities;
 
-import org.eclipse.core.expressions.PropertyTester;
-import org.eclipse.ui.IWorkbench;
-import org.eclipse.ui.activities.IActivityManager;
-import org.eclipse.ui.activities.IWorkbenchActivitySupport;
-import org.eclipse.ui.activities.WorkbenchActivityHelper;
+import org.fdesigner.expressions.PropertyTester;
+import org.fdesigner.workbench.IWorkbench;
+import org.fdesigner.workbench.activities.IActivityManager;
+import org.fdesigner.workbench.activities.IWorkbenchActivitySupport;
+import org.fdesigner.workbench.activities.WorkbenchActivityHelper;
 
 /**
  * An expressions property tester that tests whether or not an activity or

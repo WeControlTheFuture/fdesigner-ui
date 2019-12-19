@@ -11,15 +11,15 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.handlers;
+package org.fdesigner.workbench.internal.handlers;
 
-import org.eclipse.core.commands.ExecutionEvent;
-import org.eclipse.core.commands.ExecutionException;
-import org.eclipse.core.commands.IHandler;
-import org.eclipse.core.commands.IHandlerListener;
-import org.eclipse.core.commands.util.Tracing;
-import org.eclipse.ui.internal.commands.ILegacyAttributeNames;
-import org.eclipse.ui.internal.misc.Policy;
+import org.fdesigner.commands.ExecutionEvent;
+import org.fdesigner.commands.ExecutionException;
+import org.fdesigner.commands.IHandler;
+import org.fdesigner.commands.IHandlerListener;
+import org.fdesigner.commands.util.Tracing;
+import org.fdesigner.workbench.internal.commands.ILegacyAttributeNames;
+import org.fdesigner.workbench.internal.misc.Policy;
 
 /**
  * A handler that wraps a legacy handler. This provide backward compatibility
@@ -38,7 +38,7 @@ public final class LegacyHandlerWrapper implements IHandler {
 	/**
 	 * The wrapped handler; never <code>null</code>.
 	 */
-	private final org.eclipse.ui.commands.IHandler handler;
+	private final org.fdesigner.workbench.commands.IHandler handler;
 
 	/**
 	 * Constructs a new instance of <code>HandlerWrapper</code>.
@@ -46,7 +46,7 @@ public final class LegacyHandlerWrapper implements IHandler {
 	 * @param handler The handler that should be wrapped; must not be
 	 *                <code>null</code>.
 	 */
-	public LegacyHandlerWrapper(final org.eclipse.ui.commands.IHandler handler) {
+	public LegacyHandlerWrapper(final org.fdesigner.workbench.commands.IHandler handler) {
 		if (handler == null) {
 			throw new NullPointerException("A handler wrapper cannot be constructed on a null handler"); //$NON-NLS-1$
 		}
@@ -66,7 +66,7 @@ public final class LegacyHandlerWrapper implements IHandler {
 
 	@Override
 	public boolean equals(final Object object) {
-		if (object instanceof org.eclipse.ui.commands.IHandler) {
+		if (object instanceof org.fdesigner.workbench.commands.IHandler) {
 			return this.handler == object;
 		}
 
@@ -94,7 +94,7 @@ public final class LegacyHandlerWrapper implements IHandler {
 
 		try {
 			return handler.execute(event.getParameters());
-		} catch (final org.eclipse.ui.commands.ExecutionException e) {
+		} catch (final org.fdesigner.workbench.commands.ExecutionException e) {
 			throw new ExecutionException(e.getMessage(), e.getCause());
 		}
 	}

@@ -13,18 +13,18 @@
  *     Lars Vogel <Lars.Vogel@gmail.com> - Bug 440810
  *******************************************************************************/
 
-package org.eclipse.ui.internal.contexts;
+package org.fdesigner.workbench.internal.contexts;
 
 import java.util.Collection;
 import java.util.Map;
 import java.util.TreeMap;
 
-import org.eclipse.core.commands.contexts.ContextManagerEvent;
-import org.eclipse.core.commands.contexts.IContextManagerListener;
-import org.eclipse.ui.AbstractSourceProvider;
-import org.eclipse.ui.ISources;
-import org.eclipse.ui.contexts.IContextService;
-import org.eclipse.ui.services.IServiceLocator;
+import org.fdesigner.commands.contexts.ContextManagerEvent;
+import org.fdesigner.commands.contexts.IContextManagerListener;
+import org.fdesigner.workbench.AbstractSourceProvider;
+import org.fdesigner.workbench.ISources;
+import org.fdesigner.workbench.contexts.IContextService;
+import org.fdesigner.workbench.services.IServiceLocator;
 
 /**
  * <p>

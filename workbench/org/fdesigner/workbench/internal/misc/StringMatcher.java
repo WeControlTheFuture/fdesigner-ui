@@ -13,7 +13,7 @@
  *     Lucas Bullen (Red Hat Inc.) - [Bug 203792] filter should support multiple keywords
  *     Mickael Istria (Red Hat Inc.) - [534277] erroneous filtering with multiple words
  *******************************************************************************/
-package org.eclipse.ui.internal.misc;
+package org.fdesigner.workbench.internal.misc;
 
 import com.ibm.icu.text.BreakIterator;
 import java.util.ArrayList;

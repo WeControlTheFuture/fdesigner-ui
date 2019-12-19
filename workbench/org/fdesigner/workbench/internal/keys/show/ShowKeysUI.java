@@ -11,20 +11,11 @@
  * Contributors:
  *     Christian Georgi (SAP SE) - Bug 540440
  *******************************************************************************/
-package org.eclipse.ui.internal.keys.show;
+package org.fdesigner.workbench.internal.keys.show;
 
 import java.util.ArrayList;
 import java.util.List;
-import org.eclipse.core.commands.Command;
-import org.eclipse.core.commands.common.NotDefinedException;
-import org.eclipse.jface.bindings.keys.KeyStroke;
-import org.eclipse.jface.bindings.keys.SWTKeySupport;
-import org.eclipse.jface.layout.GridDataFactory;
-import org.eclipse.jface.layout.GridLayoutFactory;
-import org.eclipse.jface.preference.IPreferenceStore;
-import org.eclipse.jface.resource.JFaceResources;
-import org.eclipse.jface.util.Geometry;
-import org.eclipse.jface.window.Window;
+
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.Color;
 import org.eclipse.swt.graphics.Font;
@@ -39,13 +30,23 @@ import org.eclipse.swt.widgets.Event;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Monitor;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.commands.ICommandService;
-import org.eclipse.ui.dialogs.PreferencesUtil;
-import org.eclipse.ui.internal.IPreferenceConstants;
-import org.eclipse.ui.keys.IBindingService;
-import org.eclipse.ui.services.IDisposable;
-import org.eclipse.ui.services.IServiceLocator;
+import org.fdesigner.commands.Command;
+import org.fdesigner.commands.common.NotDefinedException;
+import org.fdesigner.ui.jface.bindings.keys.KeyStroke;
+import org.fdesigner.ui.jface.bindings.keys.SWTKeySupport;
+import org.fdesigner.ui.jface.layout.GridDataFactory;
+import org.fdesigner.ui.jface.layout.GridLayoutFactory;
+import org.fdesigner.ui.jface.preference.IPreferenceStore;
+import org.fdesigner.ui.jface.resource.JFaceResources;
+import org.fdesigner.ui.jface.util.Geometry;
+import org.fdesigner.ui.jface.window.Window;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.commands.ICommandService;
+import org.fdesigner.workbench.dialogs.PreferencesUtil;
+import org.fdesigner.workbench.internal.IPreferenceConstants;
+import org.fdesigner.workbench.keys.IBindingService;
+import org.fdesigner.workbench.services.IDisposable;
+import org.fdesigner.workbench.services.IServiceLocator;
 
 /**
  * Manages opening and closing of the popup for a given command. Keeps track of

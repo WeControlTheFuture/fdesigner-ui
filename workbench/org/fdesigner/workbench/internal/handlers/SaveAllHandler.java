@@ -11,21 +11,21 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.handlers;
+package org.fdesigner.workbench.internal.handlers;
 
-import org.eclipse.core.commands.ExecutionEvent;
-import org.eclipse.core.commands.ExecutionException;
-import org.eclipse.core.expressions.EvaluationResult;
-import org.eclipse.core.expressions.IEvaluationContext;
-import org.eclipse.ui.ISaveablesLifecycleListener;
-import org.eclipse.ui.ISaveablesSource;
-import org.eclipse.ui.IWorkbenchPage;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.Saveable;
-import org.eclipse.ui.handlers.HandlerUtil;
-import org.eclipse.ui.internal.InternalHandlerUtil;
-import org.eclipse.ui.internal.SaveablesList;
-import org.eclipse.ui.internal.WorkbenchPage;
+import org.fdesigner.commands.ExecutionEvent;
+import org.fdesigner.commands.ExecutionException;
+import org.fdesigner.expressions.EvaluationResult;
+import org.fdesigner.expressions.IEvaluationContext;
+import org.fdesigner.workbench.ISaveablesLifecycleListener;
+import org.fdesigner.workbench.ISaveablesSource;
+import org.fdesigner.workbench.IWorkbenchPage;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.Saveable;
+import org.fdesigner.workbench.handlers.HandlerUtil;
+import org.fdesigner.workbench.internal.InternalHandlerUtil;
+import org.fdesigner.workbench.internal.SaveablesList;
+import org.fdesigner.workbench.internal.WorkbenchPage;
 
 /**
  * Saves all active editors

@@ -13,7 +13,7 @@
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 440810, 472654
  *******************************************************************************/
 
-package org.eclipse.ui.internal.keys.model;
+package org.fdesigner.workbench.internal.keys.model;
 
 import java.io.BufferedWriter;
 import java.io.FileOutputStream;
@@ -27,35 +27,36 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.ResourceBundle;
 import java.util.Set;
-import org.eclipse.core.commands.CommandManager;
-import org.eclipse.core.commands.ParameterizedCommand;
-import org.eclipse.core.commands.common.NotDefinedException;
-import org.eclipse.core.commands.contexts.ContextManager;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.ListenerList;
-import org.eclipse.core.runtime.SafeRunner;
-import org.eclipse.core.runtime.Status;
+
 import org.eclipse.e4.ui.bindings.EBindingService;
-import org.eclipse.jface.bindings.Binding;
-import org.eclipse.jface.bindings.BindingManager;
-import org.eclipse.jface.bindings.Scheme;
-import org.eclipse.jface.bindings.keys.KeyBinding;
-import org.eclipse.jface.bindings.keys.KeySequence;
-import org.eclipse.jface.util.IPropertyChangeListener;
-import org.eclipse.jface.util.PropertyChangeEvent;
-import org.eclipse.jface.util.SafeRunnable;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.FileDialog;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.contexts.IContextService;
-import org.eclipse.ui.internal.WorkbenchPlugin;
-import org.eclipse.ui.internal.keys.KeysPreferencePage;
-import org.eclipse.ui.internal.keys.NewKeysPreferenceMessages;
-import org.eclipse.ui.internal.misc.StatusUtil;
-import org.eclipse.ui.internal.util.Util;
-import org.eclipse.ui.keys.IBindingService;
-import org.eclipse.ui.services.IServiceLocator;
-import org.eclipse.ui.statushandlers.StatusManager;
+import org.fdesigner.commands.CommandManager;
+import org.fdesigner.commands.ParameterizedCommand;
+import org.fdesigner.commands.common.NotDefinedException;
+import org.fdesigner.commands.contexts.ContextManager;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.ListenerList;
+import org.fdesigner.runtime.common.runtime.SafeRunner;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.ui.jface.bindings.Binding;
+import org.fdesigner.ui.jface.bindings.BindingManager;
+import org.fdesigner.ui.jface.bindings.Scheme;
+import org.fdesigner.ui.jface.bindings.keys.KeyBinding;
+import org.fdesigner.ui.jface.bindings.keys.KeySequence;
+import org.fdesigner.ui.jface.util.IPropertyChangeListener;
+import org.fdesigner.ui.jface.util.PropertyChangeEvent;
+import org.fdesigner.ui.jface.util.SafeRunnable;
+import org.fdesigner.workbench.contexts.IContextService;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
+import org.fdesigner.workbench.internal.keys.KeysPreferencePage;
+import org.fdesigner.workbench.internal.keys.NewKeysPreferenceMessages;
+import org.fdesigner.workbench.internal.misc.StatusUtil;
+import org.fdesigner.workbench.internal.util.Util;
+import org.fdesigner.workbench.keys.IBindingService;
+import org.fdesigner.workbench.services.IServiceLocator;
+import org.fdesigner.workbench.statushandlers.StatusManager;
 
 /**
  * @since 3.4

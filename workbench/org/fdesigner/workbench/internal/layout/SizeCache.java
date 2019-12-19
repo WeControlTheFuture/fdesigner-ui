@@ -11,10 +11,10 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.layout;
+package org.fdesigner.workbench.internal.layout;
 
 import java.util.List;
-import org.eclipse.jface.util.Geometry;
+
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.Point;
 import org.eclipse.swt.graphics.Rectangle;
@@ -30,6 +30,7 @@ import org.eclipse.swt.widgets.Slider;
 import org.eclipse.swt.widgets.Text;
 import org.eclipse.swt.widgets.ToolBar;
 import org.eclipse.swt.widgets.Tree;
+import org.fdesigner.ui.jface.util.Geometry;
 
 /**
  * Caches the preferred size of an SWT control

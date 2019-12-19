@@ -15,10 +15,10 @@
 package org.fdesigner.workbench;
 
 import org.eclipse.swt.widgets.Display;
-import org.eclipse.ui.testing.TestableObject;
 import org.fdesigner.framework.framework.FrameworkUtil;
 import org.fdesigner.runtime.preferences.runtime.preferences.InstanceScope;
 import org.fdesigner.ui.jface.preference.IPreferenceStore;
+import org.fdesigner.ui.testing.TestableObject;
 import org.fdesigner.workbench.application.WorkbenchAdvisor;
 import org.fdesigner.workbench.internal.Workbench;
 import org.fdesigner.workbench.internal.WorkbenchMessages;

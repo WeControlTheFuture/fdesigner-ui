@@ -12,11 +12,11 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal.model;
+package org.fdesigner.workbench.internal.model;
 
-import org.eclipse.ui.application.WorkbenchAdvisor;
-import org.eclipse.ui.model.ContributionComparator;
-import org.eclipse.ui.model.IContributionService;
+import org.fdesigner.workbench.application.WorkbenchAdvisor;
+import org.fdesigner.workbench.model.ContributionComparator;
+import org.fdesigner.workbench.model.IContributionService;
 
 public class ContributionService implements IContributionService {
 

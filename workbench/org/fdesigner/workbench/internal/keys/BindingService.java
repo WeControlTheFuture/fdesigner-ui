@@ -13,7 +13,7 @@
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 472654
  *     Patrik Suzzi <psuzzi@gmail.com> - Bug 479181
  *******************************************************************************/
-package org.eclipse.ui.internal.keys;
+package org.fdesigner.workbench.internal.keys;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -23,38 +23,40 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+
 import javax.annotation.PostConstruct;
 import javax.inject.Inject;
-import org.eclipse.core.commands.CommandManager;
-import org.eclipse.core.commands.ParameterizedCommand;
-import org.eclipse.core.commands.common.NotDefinedException;
-import org.eclipse.e4.core.commands.ECommandService;
-import org.eclipse.e4.core.contexts.IEclipseContext;
-import org.eclipse.e4.core.di.annotations.Optional;
+
 import org.eclipse.e4.ui.bindings.EBindingService;
-import org.eclipse.e4.ui.bindings.internal.BindingTable;
 import org.eclipse.e4.ui.bindings.internal.BindingTableManager;
 import org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher;
-import org.eclipse.e4.ui.model.application.MApplication;
-import org.eclipse.e4.ui.model.application.commands.MBindingContext;
-import org.eclipse.e4.ui.model.application.commands.MBindingTable;
-import org.eclipse.e4.ui.model.application.commands.MCommand;
-import org.eclipse.e4.ui.model.application.commands.MCommandsFactory;
-import org.eclipse.e4.ui.model.application.commands.MKeyBinding;
-import org.eclipse.e4.ui.model.application.commands.MParameter;
-import org.eclipse.e4.ui.model.application.commands.impl.CommandsFactoryImpl;
-import org.eclipse.jface.bindings.Binding;
-import org.eclipse.jface.bindings.BindingManager;
-import org.eclipse.jface.bindings.IBindingManagerListener;
-import org.eclipse.jface.bindings.Scheme;
-import org.eclipse.jface.bindings.TriggerSequence;
-import org.eclipse.jface.bindings.keys.KeySequence;
-import org.eclipse.jface.bindings.keys.ParseException;
-import org.eclipse.jface.util.Util;
 import org.eclipse.swt.widgets.Display;
-import org.eclipse.ui.commands.ICommandService;
-import org.eclipse.ui.internal.WorkbenchPlugin;
-import org.eclipse.ui.keys.IBindingService;
+import org.fdesigner.commands.CommandManager;
+import org.fdesigner.commands.ParameterizedCommand;
+import org.fdesigner.commands.common.NotDefinedException;
+import org.fdesigner.e4.core.commands.ECommandService;
+import org.fdesigner.e4.core.contexts.IEclipseContext;
+import org.fdesigner.e4.core.di.annotations.Optional;
+import org.fdesigner.e4.ui.model.application.MApplication;
+import org.fdesigner.e4.ui.model.application.commands.MBindingContext;
+import org.fdesigner.e4.ui.model.application.commands.MBindingTable;
+import org.fdesigner.e4.ui.model.application.commands.MCommand;
+import org.fdesigner.e4.ui.model.application.commands.MCommandsFactory;
+import org.fdesigner.e4.ui.model.application.commands.MKeyBinding;
+import org.fdesigner.e4.ui.model.application.commands.MParameter;
+import org.fdesigner.e4.ui.model.application.commands.impl.CommandsFactoryImpl;
+import org.fdesigner.e4.ui.workbench.UIEvents.BindingTable;
+import org.fdesigner.ui.jface.bindings.Binding;
+import org.fdesigner.ui.jface.bindings.BindingManager;
+import org.fdesigner.ui.jface.bindings.IBindingManagerListener;
+import org.fdesigner.ui.jface.bindings.Scheme;
+import org.fdesigner.ui.jface.bindings.TriggerSequence;
+import org.fdesigner.ui.jface.bindings.keys.KeySequence;
+import org.fdesigner.ui.jface.bindings.keys.ParseException;
+import org.fdesigner.ui.jface.util.Util;
+import org.fdesigner.workbench.commands.ICommandService;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
+import org.fdesigner.workbench.keys.IBindingService;
 
 /**
  * <p>

@@ -12,12 +12,13 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.keys.model;
+package org.fdesigner.workbench.internal.keys.model;
 
 import java.util.ArrayList;
 import java.util.List;
-import org.eclipse.jface.bindings.BindingManager;
-import org.eclipse.jface.bindings.Scheme;
+
+import org.fdesigner.ui.jface.bindings.BindingManager;
+import org.fdesigner.ui.jface.bindings.Scheme;
 
 /**
  * @since 3.4

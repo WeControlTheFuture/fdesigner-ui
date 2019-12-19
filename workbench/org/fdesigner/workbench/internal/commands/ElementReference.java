@@ -12,12 +12,13 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal.commands;
+package org.fdesigner.workbench.internal.commands;
 
 import java.util.HashMap;
 import java.util.Map;
-import org.eclipse.ui.commands.IElementReference;
-import org.eclipse.ui.menus.UIElement;
+
+import org.fdesigner.workbench.commands.IElementReference;
+import org.fdesigner.workbench.menus.UIElement;
 
 /**
  * Our element reference that is used during element

@@ -13,7 +13,7 @@
  *     Patrik Suzzi <psuzzi@gmail.com> - Bug 489250
  ******************************************************************************/
 
-package org.eclipse.ui.internal.themes;
+package org.fdesigner.workbench.internal.themes;
 
 import com.ibm.icu.text.MessageFormat;
 import java.util.ResourceBundle;

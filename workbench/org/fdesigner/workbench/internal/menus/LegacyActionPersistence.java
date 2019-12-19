@@ -13,44 +13,45 @@
  *     Lars Vogel <Lars.Vogel@gmail.com> - Bug 440810
  *******************************************************************************/
 
-package org.eclipse.ui.internal.menus;
+package org.fdesigner.workbench.internal.menus;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
-import org.eclipse.core.commands.Category;
-import org.eclipse.core.commands.Command;
-import org.eclipse.core.commands.IHandler;
-import org.eclipse.core.commands.ParameterizedCommand;
-import org.eclipse.core.commands.State;
-import org.eclipse.core.expressions.Expression;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.core.runtime.IExtensionRegistry;
-import org.eclipse.core.runtime.IRegistryChangeEvent;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.jface.action.Action;
-import org.eclipse.jface.action.LegacyActionTools;
-import org.eclipse.jface.commands.RadioState;
-import org.eclipse.jface.commands.ToggleState;
-import org.eclipse.jface.menus.IMenuStateIds;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.SelectionEnabler;
-import org.eclipse.ui.commands.ICommandService;
-import org.eclipse.ui.handlers.IHandlerActivation;
-import org.eclipse.ui.handlers.IHandlerService;
-import org.eclipse.ui.internal.WorkbenchMessages;
-import org.eclipse.ui.internal.WorkbenchPlugin;
-import org.eclipse.ui.internal.expressions.LegacyActionSetExpression;
-import org.eclipse.ui.internal.expressions.LegacyEditorContributionExpression;
-import org.eclipse.ui.internal.expressions.LegacySelectionEnablerWrapper;
-import org.eclipse.ui.internal.expressions.LegacyViewContributionExpression;
-import org.eclipse.ui.internal.handlers.ActionDelegateHandlerProxy;
-import org.eclipse.ui.internal.handlers.IActionCommandMappingService;
-import org.eclipse.ui.internal.registry.IWorkbenchRegistryConstants;
-import org.eclipse.ui.internal.services.RegistryPersistence;
+
+import org.fdesigner.commands.Category;
+import org.fdesigner.commands.Command;
+import org.fdesigner.commands.IHandler;
+import org.fdesigner.commands.ParameterizedCommand;
+import org.fdesigner.commands.State;
+import org.fdesigner.expressions.Expression;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.runtime.registry.runtime.IExtensionRegistry;
+import org.fdesigner.runtime.registry.runtime.IRegistryChangeEvent;
+import org.fdesigner.ui.jface.action.Action;
+import org.fdesigner.ui.jface.action.LegacyActionTools;
+import org.fdesigner.ui.jface.commands.RadioState;
+import org.fdesigner.ui.jface.commands.ToggleState;
+import org.fdesigner.ui.jface.menus.IMenuStateIds;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.SelectionEnabler;
+import org.fdesigner.workbench.commands.ICommandService;
+import org.fdesigner.workbench.handlers.IHandlerActivation;
+import org.fdesigner.workbench.handlers.IHandlerService;
+import org.fdesigner.workbench.internal.WorkbenchMessages;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
+import org.fdesigner.workbench.internal.expressions.LegacyActionSetExpression;
+import org.fdesigner.workbench.internal.expressions.LegacyEditorContributionExpression;
+import org.fdesigner.workbench.internal.expressions.LegacySelectionEnablerWrapper;
+import org.fdesigner.workbench.internal.expressions.LegacyViewContributionExpression;
+import org.fdesigner.workbench.internal.handlers.ActionDelegateHandlerProxy;
+import org.fdesigner.workbench.internal.handlers.IActionCommandMappingService;
+import org.fdesigner.workbench.internal.registry.IWorkbenchRegistryConstants;
+import org.fdesigner.workbench.internal.services.RegistryPersistence;
 
 /**
  * <p>

@@ -11,16 +11,15 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.handlers;
+package org.fdesigner.workbench.internal.handlers;
 
 import java.lang.reflect.Method;
-
-import org.eclipse.core.commands.ExecutionEvent;
 
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
+import org.fdesigner.commands.ExecutionEvent;
 
 /**
  * This handler is an adaptation of the widget method handler that implements

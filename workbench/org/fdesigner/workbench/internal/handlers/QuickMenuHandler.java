@@ -13,21 +13,21 @@
  *     Lars Vogel <Lars.Vogel@gmail.com> - Bug 440810
  ******************************************************************************/
 
-package org.eclipse.ui.internal.handlers;
+package org.fdesigner.workbench.internal.handlers;
 
-import org.eclipse.core.commands.AbstractHandler;
-import org.eclipse.core.commands.ExecutionEvent;
-import org.eclipse.core.commands.ExecutionException;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.jface.action.ContributionManager;
-import org.eclipse.jface.action.IMenuListener2;
-import org.eclipse.jface.action.IMenuManager;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.actions.QuickMenuCreator;
-import org.eclipse.ui.menus.IMenuService;
-import org.eclipse.ui.progress.UIJob;
+import org.fdesigner.commands.AbstractHandler;
+import org.fdesigner.commands.ExecutionEvent;
+import org.fdesigner.commands.ExecutionException;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.ui.jface.action.ContributionManager;
+import org.fdesigner.ui.jface.action.IMenuListener2;
+import org.fdesigner.ui.jface.action.IMenuManager;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.actions.QuickMenuCreator;
+import org.fdesigner.workbench.menus.IMenuService;
+import org.fdesigner.workbench.progress.UIJob;
 
 /**
  * Support for a command based QuickMenuAction that can pop up a

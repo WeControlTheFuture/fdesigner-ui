@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.layout;
+package org.fdesigner.workbench.internal.layout;
 
 /**
  * Describes a single row (or column) in a CellLayout

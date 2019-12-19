@@ -13,15 +13,16 @@
  *     Lars Vogel <Lars.Vogel@gmail.com> - Bug 422040
  *******************************************************************************/
 
-package org.eclipse.ui.internal.keys;
+package org.fdesigner.workbench.internal.keys;
 
 import java.util.HashMap;
 import java.util.Map;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.jface.resource.ImageRegistry;
+
 import org.eclipse.swt.graphics.Image;
-import org.eclipse.ui.internal.WorkbenchPlugin;
-import org.eclipse.ui.internal.util.ImageSupport;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.ui.jface.resource.ImageRegistry;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
+import org.fdesigner.workbench.internal.util.ImageSupport;
 
 final class ImageFactory {
 

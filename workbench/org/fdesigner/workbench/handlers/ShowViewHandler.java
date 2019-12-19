@@ -29,6 +29,7 @@ import org.fdesigner.e4.ui.model.application.ui.basic.MPart;
 import org.fdesigner.e4.ui.model.application.ui.basic.MWindow;
 import org.fdesigner.e4.ui.workbench.modeling.EModelService;
 import org.fdesigner.e4.ui.workbench.modeling.EPartService;
+import org.fdesigner.e4.ui.workbench.modeling.EPartService.PartState;
 import org.fdesigner.ui.jface.window.Window;
 import org.fdesigner.workbench.IWorkbenchCommandConstants;
 import org.fdesigner.workbench.IWorkbenchPage;
@@ -36,7 +37,6 @@ import org.fdesigner.workbench.IWorkbenchWindow;
 import org.fdesigner.workbench.PartInitException;
 import org.fdesigner.workbench.internal.dialogs.ShowViewDialog;
 import org.fdesigner.workbench.internal.e4.compatibility.CompatibilityPart;
-import org.fdesigner.workbench.internal.e4.migration.InfoReader.PartState;
 import org.fdesigner.workbench.internal.misc.StatusUtil;
 import org.fdesigner.workbench.statushandlers.StatusManager;
 

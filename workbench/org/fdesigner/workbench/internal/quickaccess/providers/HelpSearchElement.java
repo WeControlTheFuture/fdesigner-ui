@@ -11,15 +11,15 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.quickaccess.providers;
+package org.fdesigner.workbench.internal.quickaccess.providers;
 
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.osgi.util.NLS;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.IWorkbenchGraphicConstants;
-import org.eclipse.ui.internal.WorkbenchImages;
-import org.eclipse.ui.internal.quickaccess.QuickAccessMessages;
-import org.eclipse.ui.quickaccess.QuickAccessElement;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.internal.IWorkbenchGraphicConstants;
+import org.fdesigner.workbench.internal.WorkbenchImages;
+import org.fdesigner.workbench.internal.quickaccess.QuickAccessMessages;
+import org.fdesigner.workbench.quickaccess.QuickAccessElement;
 
 /**
  * "Search X in help" element shown at the end of the list.

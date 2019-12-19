@@ -11,14 +11,8 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.handlers;
+package org.fdesigner.workbench.internal.handlers;
 
-import org.eclipse.core.commands.AbstractHandler;
-import org.eclipse.core.commands.ExecutionEvent;
-import org.eclipse.core.runtime.Adapters;
-import org.eclipse.jface.layout.GridLayoutFactory;
-import org.eclipse.jface.window.ToolTip;
-import org.eclipse.osgi.util.NLS;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.Color;
 import org.eclipse.swt.graphics.Point;
@@ -32,11 +26,17 @@ import org.eclipse.swt.widgets.TableItem;
 import org.eclipse.swt.widgets.Text;
 import org.eclipse.swt.widgets.Tree;
 import org.eclipse.swt.widgets.TreeItem;
-import org.eclipse.ui.handlers.HandlerUtil;
-import org.eclipse.ui.internal.testing.ContributionInfoMessages;
 import org.eclipse.ui.testing.ContributionInfo;
-import org.osgi.framework.Bundle;
-import org.osgi.framework.FrameworkUtil;
+import org.fdesigner.commands.AbstractHandler;
+import org.fdesigner.commands.ExecutionEvent;
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.framework.framework.FrameworkUtil;
+import org.fdesigner.runtime.common.runtime.Adapters;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.ui.jface.layout.GridLayoutFactory;
+import org.fdesigner.ui.jface.window.ToolTip;
+import org.fdesigner.workbench.handlers.HandlerUtil;
+import org.fdesigner.workbench.internal.testing.ContributionInfoMessages;
 
 /**
  * @since 3.6

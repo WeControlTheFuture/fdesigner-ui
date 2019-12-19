@@ -12,13 +12,14 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal.e4.migration;
+package org.fdesigner.workbench.internal.e4.migration;
 
 import java.util.ArrayList;
 import java.util.List;
-import org.eclipse.ui.IMemento;
-import org.eclipse.ui.XMLMemento;
-import org.eclipse.ui.internal.IWorkbenchConstants;
+
+import org.fdesigner.workbench.IMemento;
+import org.fdesigner.workbench.XMLMemento;
+import org.fdesigner.workbench.internal.IWorkbenchConstants;
 
 public class WorkbenchMementoReader extends MementoReader {
 

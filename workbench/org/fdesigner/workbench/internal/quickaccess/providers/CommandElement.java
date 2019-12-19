@@ -15,25 +15,26 @@
  *     Patrik Suzzi <psuzzi@gmail.com> - Bug 476045
  *******************************************************************************/
 
-package org.eclipse.ui.internal.quickaccess.providers;
+package org.fdesigner.workbench.internal.quickaccess.providers;
 
 import java.util.Objects;
-import org.eclipse.core.commands.Command;
-import org.eclipse.core.commands.ParameterizedCommand;
-import org.eclipse.core.commands.common.NotDefinedException;
-import org.eclipse.jface.bindings.TriggerSequence;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.osgi.util.NLS;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.commands.ICommandImageService;
-import org.eclipse.ui.handlers.IHandlerService;
-import org.eclipse.ui.internal.keys.BindingService;
-import org.eclipse.ui.internal.menus.CommandMessages;
-import org.eclipse.ui.internal.misc.StatusUtil;
-import org.eclipse.ui.keys.IBindingService;
-import org.eclipse.ui.quickaccess.QuickAccessElement;
-import org.eclipse.ui.statushandlers.StatusManager;
+
+import org.fdesigner.commands.Command;
+import org.fdesigner.commands.ParameterizedCommand;
+import org.fdesigner.commands.common.NotDefinedException;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.ui.jface.bindings.TriggerSequence;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.commands.ICommandImageService;
+import org.fdesigner.workbench.handlers.IHandlerService;
+import org.fdesigner.workbench.internal.keys.BindingService;
+import org.fdesigner.workbench.internal.menus.CommandMessages;
+import org.fdesigner.workbench.internal.misc.StatusUtil;
+import org.fdesigner.workbench.keys.IBindingService;
+import org.fdesigner.workbench.quickaccess.QuickAccessElement;
+import org.fdesigner.workbench.statushandlers.StatusManager;
 
 /**
  * @since 3.3

@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.layout;
+package org.fdesigner.workbench.internal.layout;
 
 import java.util.ArrayList;
 import java.util.List;

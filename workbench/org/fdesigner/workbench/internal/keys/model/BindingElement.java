@@ -12,16 +12,16 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.keys.model;
+package org.fdesigner.workbench.internal.keys.model;
 
-import org.eclipse.core.commands.ParameterizedCommand;
-import org.eclipse.core.commands.common.NotDefinedException;
-import org.eclipse.jface.bindings.Binding;
-import org.eclipse.jface.bindings.TriggerSequence;
-import org.eclipse.jface.bindings.keys.KeyBinding;
 import org.eclipse.swt.graphics.Image;
-import org.eclipse.ui.internal.keys.NewKeysPreferenceMessages;
-import org.eclipse.ui.internal.util.Util;
+import org.fdesigner.commands.ParameterizedCommand;
+import org.fdesigner.commands.common.NotDefinedException;
+import org.fdesigner.ui.jface.bindings.Binding;
+import org.fdesigner.ui.jface.bindings.TriggerSequence;
+import org.fdesigner.ui.jface.bindings.keys.KeyBinding;
+import org.fdesigner.workbench.internal.keys.NewKeysPreferenceMessages;
+import org.fdesigner.workbench.internal.util.Util;
 
 /**
  * @since 3.4

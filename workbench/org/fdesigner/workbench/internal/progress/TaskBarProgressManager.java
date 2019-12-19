@@ -13,25 +13,26 @@
  *     Daniel Kruegler <daniel.kruegler@gmail.com> - Bug 471310
  ******************************************************************************/
 
-package org.eclipse.ui.internal.progress;
+package org.fdesigner.workbench.internal.progress;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.core.runtime.jobs.Job;
-import org.eclipse.jface.resource.ImageDescriptor;
+
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.widgets.TaskItem;
-import org.eclipse.ui.progress.IProgressConstants;
-import org.eclipse.ui.progress.IProgressConstants2;
-import org.eclipse.ui.progress.WorkbenchJob;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.jobs.runtime.jobs.Job;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.workbench.progress.IProgressConstants;
+import org.fdesigner.workbench.progress.IProgressConstants2;
+import org.fdesigner.workbench.progress.WorkbenchJob;
 
 /**
  * The TaskBarProgressManager is the class that displays progress in the

@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.keys.model;
+package org.fdesigner.workbench.internal.keys.model;
 
 /**
  * @since 3.4

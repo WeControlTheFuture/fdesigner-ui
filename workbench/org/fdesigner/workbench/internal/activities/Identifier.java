@@ -13,17 +13,18 @@
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 472654
  *******************************************************************************/
 
-package org.eclipse.ui.internal.activities;
+package org.fdesigner.workbench.internal.activities;
 
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
-import org.eclipse.core.runtime.ListenerList;
-import org.eclipse.ui.activities.IIdentifier;
-import org.eclipse.ui.activities.IIdentifierListener;
-import org.eclipse.ui.activities.IdentifierEvent;
-import org.eclipse.ui.internal.util.Util;
+
+import org.fdesigner.runtime.common.runtime.ListenerList;
+import org.fdesigner.workbench.activities.IIdentifier;
+import org.fdesigner.workbench.activities.IIdentifierListener;
+import org.fdesigner.workbench.activities.IdentifierEvent;
+import org.fdesigner.workbench.internal.util.Util;
 
 final class Identifier implements IIdentifier {
 	private static final int HASH_FACTOR = 89;

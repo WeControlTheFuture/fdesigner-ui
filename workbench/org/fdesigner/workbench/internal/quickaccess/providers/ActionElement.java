@@ -12,14 +12,15 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.quickaccess.providers;
+package org.fdesigner.workbench.internal.quickaccess.providers;
 
 import java.util.Objects;
-import org.eclipse.jface.action.ActionContributionItem;
-import org.eclipse.jface.action.IAction;
-import org.eclipse.jface.action.LegacyActionTools;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.ui.quickaccess.QuickAccessElement;
+
+import org.fdesigner.ui.jface.action.ActionContributionItem;
+import org.fdesigner.ui.jface.action.IAction;
+import org.fdesigner.ui.jface.action.LegacyActionTools;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.workbench.quickaccess.QuickAccessElement;
 
 /**
  * @since 3.3

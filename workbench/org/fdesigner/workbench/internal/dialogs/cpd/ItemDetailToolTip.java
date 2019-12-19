@@ -14,7 +14,7 @@
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 472654
  *     Patrik Suzzi <psuzzi@gmail.com> - Bug 489250
  *******************************************************************************/
-package org.eclipse.ui.internal.dialogs.cpd;
+package org.fdesigner.workbench.internal.dialogs.cpd;
 
 import java.text.MessageFormat;
 import java.util.ArrayList;
@@ -24,16 +24,8 @@ import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import org.eclipse.core.commands.Command;
-import org.eclipse.core.commands.ParameterizedCommand;
+
 import org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem;
-import org.eclipse.jface.bindings.Binding;
-import org.eclipse.jface.bindings.BindingManager;
-import org.eclipse.jface.preference.PreferenceDialog;
-import org.eclipse.jface.viewers.TreeViewer;
-import org.eclipse.jface.viewers.ViewerCell;
-import org.eclipse.jface.viewers.ViewerFilter;
-import org.eclipse.osgi.util.NLS;
 import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.events.SelectionListener;
 import org.eclipse.swt.graphics.Image;
@@ -43,19 +35,28 @@ import org.eclipse.swt.widgets.Event;
 import org.eclipse.swt.widgets.Link;
 import org.eclipse.swt.widgets.MenuItem;
 import org.eclipse.swt.widgets.Tree;
-import org.eclipse.ui.IWorkbenchCommandConstants;
-import org.eclipse.ui.commands.ICommandService;
-import org.eclipse.ui.dialogs.PreferencesUtil;
-import org.eclipse.ui.internal.WorkbenchMessages;
-import org.eclipse.ui.internal.WorkbenchWindow;
-import org.eclipse.ui.internal.dialogs.cpd.CustomizePerspectiveDialog.ActionSet;
-import org.eclipse.ui.internal.dialogs.cpd.CustomizePerspectiveDialog.DisplayItem;
-import org.eclipse.ui.internal.dialogs.cpd.CustomizePerspectiveDialog.DynamicContributionItem;
-import org.eclipse.ui.internal.dialogs.cpd.CustomizePerspectiveDialog.ShortcutItem;
-import org.eclipse.ui.internal.dialogs.cpd.TreeManager.TreeItem;
-import org.eclipse.ui.internal.keys.BindingService;
-import org.eclipse.ui.internal.util.Util;
-import org.eclipse.ui.keys.IBindingService;
+import org.fdesigner.commands.Command;
+import org.fdesigner.commands.ParameterizedCommand;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.ui.jface.bindings.Binding;
+import org.fdesigner.ui.jface.bindings.BindingManager;
+import org.fdesigner.ui.jface.preference.PreferenceDialog;
+import org.fdesigner.ui.jface.viewers.TreeViewer;
+import org.fdesigner.ui.jface.viewers.ViewerCell;
+import org.fdesigner.ui.jface.viewers.ViewerFilter;
+import org.fdesigner.workbench.IWorkbenchCommandConstants;
+import org.fdesigner.workbench.commands.ICommandService;
+import org.fdesigner.workbench.dialogs.PreferencesUtil;
+import org.fdesigner.workbench.internal.WorkbenchMessages;
+import org.fdesigner.workbench.internal.WorkbenchWindow;
+import org.fdesigner.workbench.internal.dialogs.cpd.CustomizePerspectiveDialog.ActionSet;
+import org.fdesigner.workbench.internal.dialogs.cpd.CustomizePerspectiveDialog.DisplayItem;
+import org.fdesigner.workbench.internal.dialogs.cpd.CustomizePerspectiveDialog.DynamicContributionItem;
+import org.fdesigner.workbench.internal.dialogs.cpd.CustomizePerspectiveDialog.ShortcutItem;
+import org.fdesigner.workbench.internal.dialogs.cpd.TreeManager.TreeItem;
+import org.fdesigner.workbench.internal.keys.BindingService;
+import org.fdesigner.workbench.internal.util.Util;
+import org.fdesigner.workbench.keys.IBindingService;
 
 /**
  * A tooltip with useful information based on the type of ContributionItem the

@@ -12,9 +12,9 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.handlers;
+package org.fdesigner.workbench.internal.handlers;
 
-import org.eclipse.ui.IWorkbenchWindowActionDelegate;
+import org.fdesigner.workbench.IWorkbenchWindowActionDelegate;
 
 /**
  * Allows handlers to be contributed to through action sets.

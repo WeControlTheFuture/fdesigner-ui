@@ -13,18 +13,18 @@
  *     Lars Vogel <Lars.Vogel@gmail.com> - Bug 440810
  ******************************************************************************/
 
-package org.eclipse.ui.internal.contexts;
+package org.fdesigner.workbench.internal.contexts;
 
-import org.eclipse.core.expressions.Expression;
-import org.eclipse.ui.IWorkbench;
-import org.eclipse.ui.IWorkbenchPartSite;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.contexts.IContextService;
-import org.eclipse.ui.internal.expressions.ActivePartExpression;
-import org.eclipse.ui.internal.expressions.WorkbenchWindowExpression;
-import org.eclipse.ui.internal.services.IWorkbenchLocationService;
-import org.eclipse.ui.services.AbstractServiceFactory;
-import org.eclipse.ui.services.IServiceLocator;
+import org.fdesigner.expressions.Expression;
+import org.fdesigner.workbench.IWorkbench;
+import org.fdesigner.workbench.IWorkbenchPartSite;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.contexts.IContextService;
+import org.fdesigner.workbench.internal.expressions.ActivePartExpression;
+import org.fdesigner.workbench.internal.expressions.WorkbenchWindowExpression;
+import org.fdesigner.workbench.internal.services.IWorkbenchLocationService;
+import org.fdesigner.workbench.services.AbstractServiceFactory;
+import org.fdesigner.workbench.services.IServiceLocator;
 
 /**
  * @since 3.4

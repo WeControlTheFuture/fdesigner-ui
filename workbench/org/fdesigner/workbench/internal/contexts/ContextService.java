@@ -12,28 +12,30 @@
  *     IBM Corporation - initial API and implementation
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 472654
  *******************************************************************************/
-package org.eclipse.ui.internal.contexts;
+package org.fdesigner.workbench.internal.contexts;
 
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Iterator;
+
 import javax.inject.Inject;
-import org.eclipse.core.commands.contexts.Context;
-import org.eclipse.core.commands.contexts.ContextManager;
-import org.eclipse.core.commands.contexts.IContextManagerListener;
-import org.eclipse.core.expressions.EvaluationResult;
-import org.eclipse.core.expressions.Expression;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.e4.core.commands.ExpressionContext;
-import org.eclipse.e4.core.contexts.IEclipseContext;
-import org.eclipse.e4.core.contexts.RunAndTrack;
-import org.eclipse.e4.ui.services.EContextService;
+
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.ISourceProvider;
-import org.eclipse.ui.ISources;
-import org.eclipse.ui.contexts.IContextActivation;
-import org.eclipse.ui.contexts.IContextService;
-import org.eclipse.ui.internal.WorkbenchPlugin;
+import org.fdesigner.commands.contexts.Context;
+import org.fdesigner.commands.contexts.ContextManager;
+import org.fdesigner.commands.contexts.IContextManagerListener;
+import org.fdesigner.e4.core.commands.ExpressionContext;
+import org.fdesigner.e4.core.contexts.IEclipseContext;
+import org.fdesigner.e4.core.contexts.RunAndTrack;
+import org.fdesigner.e4.ui.services.EContextService;
+import org.fdesigner.expressions.EvaluationResult;
+import org.fdesigner.expressions.Expression;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.workbench.ISourceProvider;
+import org.fdesigner.workbench.ISources;
+import org.fdesigner.workbench.contexts.IContextActivation;
+import org.fdesigner.workbench.contexts.IContextService;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
 
 /**
  * <p>

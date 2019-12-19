@@ -11,15 +11,16 @@
  * Contributors:
  *     Leo Ufimtsev - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.themes;
+package org.fdesigner.workbench.internal.themes;
 
 import java.util.Hashtable;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.core.runtime.IExecutableExtension;
-import org.eclipse.jface.util.Util;
+
 import org.eclipse.swt.graphics.RGB;
-import org.eclipse.ui.themes.ColorUtil;
-import org.eclipse.ui.themes.IColorFactory;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.runtime.registry.runtime.IExecutableExtension;
+import org.fdesigner.ui.jface.util.Util;
+import org.fdesigner.workbench.themes.ColorUtil;
+import org.fdesigner.workbench.themes.IColorFactory;
 
 /**
  * Used in org.eclipse.ui.themes extension point of the org.eclipse.ui plug-in

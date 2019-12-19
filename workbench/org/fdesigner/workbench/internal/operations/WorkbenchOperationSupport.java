@@ -12,17 +12,17 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.operations;
+package org.fdesigner.workbench.internal.operations;
 
-import org.eclipse.core.commands.operations.DefaultOperationHistory;
-import org.eclipse.core.commands.operations.IOperationApprover;
-import org.eclipse.core.commands.operations.IOperationHistory;
-import org.eclipse.core.commands.operations.IUndoContext;
-import org.eclipse.core.commands.operations.ObjectUndoContext;
-import org.eclipse.core.commands.operations.OperationHistoryFactory;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.misc.Policy;
-import org.eclipse.ui.operations.IWorkbenchOperationSupport;
+import org.fdesigner.commands.operations.DefaultOperationHistory;
+import org.fdesigner.commands.operations.IOperationApprover;
+import org.fdesigner.commands.operations.IOperationHistory;
+import org.fdesigner.commands.operations.IUndoContext;
+import org.fdesigner.commands.operations.ObjectUndoContext;
+import org.fdesigner.commands.operations.OperationHistoryFactory;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.internal.misc.Policy;
+import org.fdesigner.workbench.operations.IWorkbenchOperationSupport;
 
 /**
  * <p>

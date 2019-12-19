@@ -11,21 +11,21 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
-package org.eclipse.ui.internal.keys;
+package org.fdesigner.workbench.internal.keys;
 
-import org.eclipse.core.commands.Command;
-import org.eclipse.core.commands.ParameterizedCommand;
-import org.eclipse.e4.core.commands.ECommandService;
-import org.eclipse.e4.core.contexts.IEclipseContext;
 import org.eclipse.e4.ui.bindings.EBindingService;
 import org.eclipse.e4.ui.bindings.internal.KeyAssistDialog;
 import org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher;
-import org.eclipse.jface.bindings.TriggerSequence;
-import org.eclipse.jface.preference.PreferenceDialog;
-import org.eclipse.osgi.util.NLS;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.IWorkbenchCommandConstants;
-import org.eclipse.ui.dialogs.PreferencesUtil;
+import org.fdesigner.commands.Command;
+import org.fdesigner.commands.ParameterizedCommand;
+import org.fdesigner.e4.core.commands.ECommandService;
+import org.fdesigner.e4.core.contexts.IEclipseContext;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.ui.jface.bindings.TriggerSequence;
+import org.fdesigner.ui.jface.preference.PreferenceDialog;
+import org.fdesigner.workbench.IWorkbenchCommandConstants;
+import org.fdesigner.workbench.dialogs.PreferencesUtil;
 
 /**
  * Extends the key conflict popup dialog to provide a full list of global key

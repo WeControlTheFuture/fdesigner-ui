@@ -12,11 +12,12 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.activities;
+package org.fdesigner.workbench.internal.activities;
 
 import java.util.Objects;
-import org.eclipse.ui.activities.ICategoryActivityBinding;
-import org.eclipse.ui.internal.util.Util;
+
+import org.fdesigner.workbench.activities.ICategoryActivityBinding;
+import org.fdesigner.workbench.internal.util.Util;
 
 public final class CategoryActivityBinding implements ICategoryActivityBinding {
 	private static final int HASH_FACTOR = 89;

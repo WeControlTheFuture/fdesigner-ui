@@ -11,13 +11,13 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.dialogs.cpd;
+package org.fdesigner.workbench.internal.dialogs.cpd;
 
-import org.eclipse.jface.viewers.ICheckStateProvider;
-import org.eclipse.ui.internal.dialogs.cpd.CustomizePerspectiveDialog.Category;
-import org.eclipse.ui.internal.dialogs.cpd.CustomizePerspectiveDialog.DisplayItem;
-import org.eclipse.ui.internal.dialogs.cpd.CustomizePerspectiveDialog.ShortcutItem;
-import org.eclipse.ui.internal.dialogs.cpd.TreeManager.TreeItem;
+import org.fdesigner.ui.jface.viewers.ICheckStateProvider;
+import org.fdesigner.workbench.internal.dialogs.cpd.CustomizePerspectiveDialog.Category;
+import org.fdesigner.workbench.internal.dialogs.cpd.CustomizePerspectiveDialog.DisplayItem;
+import org.fdesigner.workbench.internal.dialogs.cpd.CustomizePerspectiveDialog.ShortcutItem;
+import org.fdesigner.workbench.internal.dialogs.cpd.TreeManager.TreeItem;
 
 /**
  * Provides the check logic for the categories viewer in the shortcuts tab.

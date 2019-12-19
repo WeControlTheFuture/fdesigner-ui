@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.contexts;
+package org.fdesigner.workbench.internal.contexts;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -23,19 +23,20 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.WeakHashMap;
-import org.eclipse.core.commands.contexts.ContextManager;
-import org.eclipse.core.commands.util.Tracing;
-import org.eclipse.core.expressions.Expression;
-import org.eclipse.core.runtime.Assert;
+
 import org.eclipse.swt.events.DisposeEvent;
 import org.eclipse.swt.events.DisposeListener;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.ActiveShellExpression;
-import org.eclipse.ui.ISources;
-import org.eclipse.ui.contexts.IContextActivation;
-import org.eclipse.ui.contexts.IContextService;
-import org.eclipse.ui.internal.misc.Policy;
-import org.eclipse.ui.internal.services.ExpressionAuthority;
+import org.fdesigner.commands.contexts.ContextManager;
+import org.fdesigner.commands.util.Tracing;
+import org.fdesigner.expressions.Expression;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.workbench.ActiveShellExpression;
+import org.fdesigner.workbench.ISources;
+import org.fdesigner.workbench.contexts.IContextActivation;
+import org.fdesigner.workbench.contexts.IContextService;
+import org.fdesigner.workbench.internal.misc.Policy;
+import org.fdesigner.workbench.internal.services.ExpressionAuthority;
 
 /**
  * <p>

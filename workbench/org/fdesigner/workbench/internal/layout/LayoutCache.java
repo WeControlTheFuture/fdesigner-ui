@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.layout;
+package org.fdesigner.workbench.internal.layout;
 
 import org.eclipse.swt.graphics.Point;
 import org.eclipse.swt.widgets.Control;

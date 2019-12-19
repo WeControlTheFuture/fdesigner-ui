@@ -11,9 +11,9 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.commands;
+package org.fdesigner.workbench.internal.commands;
 
-import org.eclipse.jface.action.IAction;
+import org.fdesigner.ui.jface.action.IAction;
 
 /**
  * This defines attribute names that were understood in Eclipse 3.0. This is

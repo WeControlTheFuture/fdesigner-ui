@@ -11,22 +11,23 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.commands;
+package org.fdesigner.workbench.internal.commands;
 
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
-import org.eclipse.core.commands.CommandManager;
-import org.eclipse.core.commands.contexts.ContextManager;
-import org.eclipse.jface.bindings.BindingManager;
-import org.eclipse.ui.LegacyHandlerSubmissionExpression;
-import org.eclipse.ui.commands.HandlerSubmission;
-import org.eclipse.ui.commands.ICommandManager;
-import org.eclipse.ui.commands.IWorkbenchCommandSupport;
-import org.eclipse.ui.handlers.IHandlerActivation;
-import org.eclipse.ui.handlers.IHandlerService;
-import org.eclipse.ui.internal.handlers.LegacyHandlerWrapper;
+
+import org.fdesigner.commands.CommandManager;
+import org.fdesigner.commands.contexts.ContextManager;
+import org.fdesigner.ui.jface.bindings.BindingManager;
+import org.fdesigner.workbench.LegacyHandlerSubmissionExpression;
+import org.fdesigner.workbench.commands.HandlerSubmission;
+import org.fdesigner.workbench.commands.ICommandManager;
+import org.fdesigner.workbench.commands.IWorkbenchCommandSupport;
+import org.fdesigner.workbench.handlers.IHandlerActivation;
+import org.fdesigner.workbench.handlers.IHandlerService;
+import org.fdesigner.workbench.internal.handlers.LegacyHandlerWrapper;
 
 /**
  * Provides command support in terms of the workbench.
@@ -79,8 +80,8 @@ public class WorkbenchCommandSupport implements IWorkbenchCommandSupport {
 				contextManager);
 
 		// Initialize the old key formatter settings.
-		org.eclipse.ui.keys.KeyFormatterFactory
-				.setDefault(org.eclipse.ui.keys.SWTKeySupport.getKeyFormatterForPlatform());
+		org.fdesigner.workbench.keys.KeyFormatterFactory
+				.setDefault(org.fdesigner.workbench.keys.SWTKeySupport.getKeyFormatterForPlatform());
 	}
 
 	@Override

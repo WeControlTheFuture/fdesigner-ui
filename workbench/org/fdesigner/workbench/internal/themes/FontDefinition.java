@@ -11,13 +11,13 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.themes;
+package org.fdesigner.workbench.internal.themes;
 
-import org.eclipse.e4.ui.internal.css.swt.definition.IFontDefinitionOverridable;
-import org.eclipse.jface.resource.JFaceResources;
-import org.eclipse.jface.resource.StringConverter;
 import org.eclipse.swt.graphics.FontData;
-import org.eclipse.ui.PlatformUI;
+import org.fdesigner.e4.ui.css.swt.internal.css.swt.definition.IFontDefinitionOverridable;
+import org.fdesigner.ui.jface.resource.JFaceResources;
+import org.fdesigner.ui.jface.resource.StringConverter;
+import org.fdesigner.workbench.PlatformUI;
 
 /**
  * The FontDefiniton is the representation of the fontDefinition from the

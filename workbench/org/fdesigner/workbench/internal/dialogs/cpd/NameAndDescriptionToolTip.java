@@ -11,14 +11,8 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.dialogs.cpd;
+package org.fdesigner.workbench.internal.dialogs.cpd;
 
-import org.eclipse.jface.action.ActionContributionItem;
-import org.eclipse.jface.action.IAction;
-import org.eclipse.jface.action.IContributionItem;
-import org.eclipse.jface.layout.GridDataFactory;
-import org.eclipse.jface.resource.JFaceResources;
-import org.eclipse.jface.window.ToolTip;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.Color;
 import org.eclipse.swt.graphics.Font;
@@ -30,15 +24,21 @@ import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Event;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Link;
-import org.eclipse.ui.IPerspectiveDescriptor;
-import org.eclipse.ui.internal.ActionSetContributionItem;
-import org.eclipse.ui.internal.WorkbenchMessages;
-import org.eclipse.ui.internal.dialogs.cpd.CustomizePerspectiveDialog.ActionSet;
-import org.eclipse.ui.internal.dialogs.cpd.CustomizePerspectiveDialog.DisplayItem;
-import org.eclipse.ui.internal.dialogs.cpd.CustomizePerspectiveDialog.DynamicContributionItem;
-import org.eclipse.ui.internal.dialogs.cpd.CustomizePerspectiveDialog.ShortcutItem;
-import org.eclipse.ui.views.IViewDescriptor;
-import org.eclipse.ui.wizards.IWizardDescriptor;
+import org.fdesigner.ui.jface.action.ActionContributionItem;
+import org.fdesigner.ui.jface.action.IAction;
+import org.fdesigner.ui.jface.action.IContributionItem;
+import org.fdesigner.ui.jface.layout.GridDataFactory;
+import org.fdesigner.ui.jface.resource.JFaceResources;
+import org.fdesigner.ui.jface.window.ToolTip;
+import org.fdesigner.workbench.IPerspectiveDescriptor;
+import org.fdesigner.workbench.internal.ActionSetContributionItem;
+import org.fdesigner.workbench.internal.WorkbenchMessages;
+import org.fdesigner.workbench.internal.dialogs.cpd.CustomizePerspectiveDialog.ActionSet;
+import org.fdesigner.workbench.internal.dialogs.cpd.CustomizePerspectiveDialog.DisplayItem;
+import org.fdesigner.workbench.internal.dialogs.cpd.CustomizePerspectiveDialog.DynamicContributionItem;
+import org.fdesigner.workbench.internal.dialogs.cpd.CustomizePerspectiveDialog.ShortcutItem;
+import org.fdesigner.workbench.views.IViewDescriptor;
+import org.fdesigner.workbench.wizards.IWizardDescriptor;
 
 /**
  * A tooltip which, given a model element, will display its icon (if there is

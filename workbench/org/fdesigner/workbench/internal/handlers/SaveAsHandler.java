@@ -12,15 +12,15 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal.handlers;
+package org.fdesigner.workbench.internal.handlers;
 
-import org.eclipse.core.commands.ExecutionEvent;
-import org.eclipse.core.expressions.EvaluationResult;
-import org.eclipse.core.expressions.IEvaluationContext;
-import org.eclipse.ui.ISaveablePart;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.internal.InternalHandlerUtil;
-import org.eclipse.ui.internal.WorkbenchPage;
+import org.fdesigner.commands.ExecutionEvent;
+import org.fdesigner.expressions.EvaluationResult;
+import org.fdesigner.expressions.IEvaluationContext;
+import org.fdesigner.workbench.ISaveablePart;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.internal.InternalHandlerUtil;
+import org.fdesigner.workbench.internal.WorkbenchPage;
 
 /**
  * <p>

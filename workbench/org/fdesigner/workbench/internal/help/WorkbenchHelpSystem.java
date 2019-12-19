@@ -12,26 +12,16 @@
  *     IBM Corporation - initial API and implementation
  *     Chris Austin (IBM) - Fix for bug 296042
  *******************************************************************************/
-package org.eclipse.ui.internal.help;
+package org.fdesigner.workbench.internal.help;
 
 import java.net.URL;
 import java.util.Hashtable;
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.core.runtime.IExtension;
-import org.eclipse.core.runtime.IExtensionPoint;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.core.runtime.dynamichelpers.IExtensionChangeHandler;
-import org.eclipse.core.runtime.dynamichelpers.IExtensionTracker;
+
 import org.eclipse.help.HelpSystem;
-import org.eclipse.help.IContext;
 import org.eclipse.help.IContext2;
 import org.eclipse.help.IHelp;
 import org.eclipse.help.IHelpResource;
 import org.eclipse.help.IToc;
-import org.eclipse.jface.action.IAction;
-import org.eclipse.jface.action.LegacyActionTools;
 import org.eclipse.swt.custom.BusyIndicator;
 import org.eclipse.swt.events.HelpEvent;
 import org.eclipse.swt.events.HelpListener;
@@ -40,13 +30,24 @@ import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Menu;
 import org.eclipse.swt.widgets.MenuItem;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.commands.ICommand;
-import org.eclipse.ui.help.AbstractHelpUI;
-import org.eclipse.ui.help.IWorkbenchHelpSystem;
-import org.eclipse.ui.internal.IWorkbenchHelpContextIds;
-import org.eclipse.ui.internal.WorkbenchPlugin;
-import org.eclipse.ui.internal.registry.IWorkbenchRegistryConstants;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.runtime.registry.runtime.IExtension;
+import org.fdesigner.runtime.registry.runtime.IExtensionPoint;
+import org.fdesigner.runtime.registry.runtime.dynamichelpers.IExtensionChangeHandler;
+import org.fdesigner.runtime.registry.runtime.dynamichelpers.IExtensionTracker;
+import org.fdesigner.ui.jface.action.IAction;
+import org.fdesigner.ui.jface.action.LegacyActionTools;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.commands.ICommand;
+import org.fdesigner.workbench.contexts.IContext;
+import org.fdesigner.workbench.help.AbstractHelpUI;
+import org.fdesigner.workbench.help.IWorkbenchHelpSystem;
+import org.fdesigner.workbench.internal.IWorkbenchHelpContextIds;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
+import org.fdesigner.workbench.internal.registry.IWorkbenchRegistryConstants;
 
 /**
  * This class represents a refactoring of the functionality previously contained

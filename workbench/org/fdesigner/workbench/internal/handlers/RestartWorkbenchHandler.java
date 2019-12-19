@@ -12,11 +12,11 @@
  *     Manuel Selva <manuel.selva@st.com> - Bug 197922
  *******************************************************************************/
 
-package org.eclipse.ui.internal.handlers;
+package org.fdesigner.workbench.internal.handlers;
 
-import org.eclipse.core.commands.AbstractHandler;
-import org.eclipse.core.commands.ExecutionEvent;
-import org.eclipse.ui.PlatformUI;
+import org.fdesigner.commands.AbstractHandler;
+import org.fdesigner.commands.ExecutionEvent;
+import org.fdesigner.workbench.PlatformUI;
 
 /**
  * Provide a Handler for the Restart Workbench command.

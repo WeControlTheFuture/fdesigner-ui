@@ -12,17 +12,17 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal.menus;
+package org.fdesigner.workbench.internal.menus;
 
-import org.eclipse.core.expressions.IEvaluationContext;
-import org.eclipse.e4.ui.model.application.MApplicationElement;
-import org.eclipse.e4.ui.model.application.ui.basic.MPart;
-import org.eclipse.jface.action.ContributionManager;
-import org.eclipse.ui.ISourceProvider;
-import org.eclipse.ui.internal.IMenuServiceWorkaround;
-import org.eclipse.ui.internal.PartSite;
-import org.eclipse.ui.menus.AbstractContributionFactory;
-import org.eclipse.ui.menus.IMenuService;
+import org.fdesigner.e4.ui.model.application.MApplicationElement;
+import org.fdesigner.e4.ui.model.application.ui.basic.MPart;
+import org.fdesigner.expressions.IEvaluationContext;
+import org.fdesigner.ui.jface.action.ContributionManager;
+import org.fdesigner.workbench.ISourceProvider;
+import org.fdesigner.workbench.internal.IMenuServiceWorkaround;
+import org.fdesigner.workbench.internal.PartSite;
+import org.fdesigner.workbench.menus.AbstractContributionFactory;
+import org.fdesigner.workbench.menus.IMenuService;
 
 /**
  * @since 3.105

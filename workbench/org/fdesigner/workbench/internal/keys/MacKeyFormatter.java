@@ -12,18 +12,18 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.keys;
+package org.fdesigner.workbench.internal.keys;
 
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.ResourceBundle;
 
-import org.eclipse.ui.internal.util.Util;
-import org.eclipse.ui.keys.CharacterKey;
-import org.eclipse.ui.keys.Key;
-import org.eclipse.ui.keys.KeySequence;
-import org.eclipse.ui.keys.ModifierKey;
-import org.eclipse.ui.keys.SpecialKey;
+import org.fdesigner.workbench.internal.util.Util;
+import org.fdesigner.workbench.keys.CharacterKey;
+import org.fdesigner.workbench.keys.Key;
+import org.fdesigner.workbench.keys.KeySequence;
+import org.fdesigner.workbench.keys.ModifierKey;
+import org.fdesigner.workbench.keys.SpecialKey;
 
 public final class MacKeyFormatter extends AbstractKeyFormatter {
 

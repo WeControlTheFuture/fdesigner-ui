@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.themes;
+package org.fdesigner.workbench.internal.themes;
 
 /**
  * Theme elements which may potentially be editted by the user should implement

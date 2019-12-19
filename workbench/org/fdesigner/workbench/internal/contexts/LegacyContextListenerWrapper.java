@@ -11,16 +11,16 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.contexts;
+package org.fdesigner.workbench.internal.contexts;
 
 import java.util.Set;
 
-import org.eclipse.core.commands.contexts.ContextEvent;
-import org.eclipse.core.commands.contexts.ContextManager;
-import org.eclipse.core.commands.contexts.ContextManagerEvent;
-import org.eclipse.core.commands.contexts.IContextListener;
-import org.eclipse.core.commands.contexts.IContextManagerListener;
-import org.eclipse.ui.contexts.IContext;
+import org.fdesigner.commands.contexts.ContextEvent;
+import org.fdesigner.commands.contexts.ContextManager;
+import org.fdesigner.commands.contexts.ContextManagerEvent;
+import org.fdesigner.commands.contexts.IContextListener;
+import org.fdesigner.commands.contexts.IContextManagerListener;
+import org.fdesigner.workbench.contexts.IContext;
 
 /**
  * <p>
@@ -47,7 +47,7 @@ public class LegacyContextListenerWrapper implements IContextListener, IContextM
 	/**
 	 * The listener to be wrapped. This value is never <code>null</code>.
 	 */
-	private final org.eclipse.ui.contexts.IContextListener wrappedListener;
+	private final org.fdesigner.workbench.contexts.IContextListener wrappedListener;
 
 	/**
 	 * Constructs a new instance of <code>ContextListenerWrapper</code>.
@@ -60,7 +60,7 @@ public class LegacyContextListenerWrapper implements IContextListener, IContextM
 	 * @param context        The legacy context this listener will be listening to;
 	 *                       must not be <code>null</code>.
 	 */
-	public LegacyContextListenerWrapper(final org.eclipse.ui.contexts.IContextListener listener,
+	public LegacyContextListenerWrapper(final org.fdesigner.workbench.contexts.IContextListener listener,
 			final ContextManager contextManager, final IContext context) {
 		if (listener == null) {
 			throw new NullPointerException("Cannot create a listener wrapper on a null listener"); //$NON-NLS-1$
@@ -81,7 +81,7 @@ public class LegacyContextListenerWrapper implements IContextListener, IContextM
 
 	@Override
 	public final void contextChanged(final ContextEvent contextEvent) {
-		wrappedListener.contextChanged(new org.eclipse.ui.contexts.ContextEvent(
+		wrappedListener.contextChanged(new org.fdesigner.workbench.contexts.ContextEvent(
 				new ContextLegacyWrapper(contextEvent.getContext(), contextManager), contextEvent.isDefinedChanged(),
 				false, contextEvent.isNameChanged(), contextEvent.isParentIdChanged()));
 	}
@@ -107,7 +107,7 @@ public class LegacyContextListenerWrapper implements IContextListener, IContextM
 		}
 
 		wrappedListener
-				.contextChanged(new org.eclipse.ui.contexts.ContextEvent(context, false, enabledChanged, false, false));
+				.contextChanged(new org.fdesigner.workbench.contexts.ContextEvent(context, false, enabledChanged, false, false));
 	}
 
 	@Override
@@ -117,8 +117,8 @@ public class LegacyContextListenerWrapper implements IContextListener, IContextM
 			return wrappedListener.equals(other.wrappedListener);
 		}
 
-		if (object instanceof org.eclipse.ui.contexts.IContextListener) {
-			final org.eclipse.ui.contexts.IContextListener other = (org.eclipse.ui.contexts.IContextListener) object;
+		if (object instanceof org.fdesigner.workbench.contexts.IContextListener) {
+			final org.fdesigner.workbench.contexts.IContextListener other = (org.fdesigner.workbench.contexts.IContextListener) object;
 			return wrappedListener.equals(other);
 		}
 

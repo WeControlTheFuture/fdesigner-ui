@@ -11,15 +11,16 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.themes;
+package org.fdesigner.workbench.internal.themes;
 
 import java.util.Hashtable;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.core.runtime.IExecutableExtension;
+
 import org.eclipse.swt.graphics.RGB;
-import org.eclipse.ui.themes.ColorUtil;
-import org.eclipse.ui.themes.IColorFactory;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.runtime.registry.runtime.IExecutableExtension;
+import org.fdesigner.workbench.themes.ColorUtil;
+import org.fdesigner.workbench.themes.IColorFactory;
 
 /**
  * A <code>IColorFactory</code> that may be used to select a color with a higher

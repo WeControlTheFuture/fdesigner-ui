@@ -14,9 +14,9 @@
  *     Christian Georgi (SAP SE) - Bug 540440
  *******************************************************************************/
 
-package org.eclipse.ui.internal.keys;
+package org.fdesigner.workbench.internal.keys;
 
-import org.eclipse.osgi.util.NLS;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * Messages used in the New Keys Preference page.

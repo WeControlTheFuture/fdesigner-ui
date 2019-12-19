@@ -12,17 +12,18 @@
  *     IBM Corporation - initial API and implementation
  *     René Brandstetter - Bug 431707 - [QuickAccess] Quick Access should open a dialog if hidden
  *******************************************************************************/
-package org.eclipse.ui.internal.quickaccess;
+package org.fdesigner.workbench.internal.quickaccess;
 
 import java.util.Arrays;
 import java.util.Optional;
-import org.eclipse.core.commands.AbstractHandler;
-import org.eclipse.core.commands.Command;
-import org.eclipse.core.commands.ExecutionEvent;
-import org.eclipse.jface.dialogs.PopupDialog;
+
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.handlers.HandlerUtil;
+import org.fdesigner.commands.AbstractHandler;
+import org.fdesigner.commands.Command;
+import org.fdesigner.commands.ExecutionEvent;
+import org.fdesigner.ui.jface.dialogs.PopupDialog;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.handlers.HandlerUtil;
 
 /**
  * Handler for quick access pop-up dialog, showing UI elements such as editors,

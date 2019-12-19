@@ -12,20 +12,20 @@
  *     IBM Corporation - initial API and implementation
  *     Andrey Loskutov <loskutov@gmx.de> - Bug 372799
  ******************************************************************************/
-package org.eclipse.ui.internal.handlers;
+package org.fdesigner.workbench.internal.handlers;
 
-import org.eclipse.core.commands.ExecutionEvent;
-import org.eclipse.core.expressions.EvaluationResult;
-import org.eclipse.core.expressions.Expression;
-import org.eclipse.core.expressions.ExpressionInfo;
-import org.eclipse.core.expressions.IEvaluationContext;
-import org.eclipse.ui.ISaveablePart;
-import org.eclipse.ui.ISources;
-import org.eclipse.ui.IWorkbenchPart;
-import org.eclipse.ui.handlers.HandlerUtil;
-import org.eclipse.ui.internal.AbstractEvaluationHandler;
-import org.eclipse.ui.internal.InternalHandlerUtil;
-import org.eclipse.ui.internal.SaveableHelper;
+import org.fdesigner.commands.ExecutionEvent;
+import org.fdesigner.expressions.EvaluationResult;
+import org.fdesigner.expressions.Expression;
+import org.fdesigner.expressions.ExpressionInfo;
+import org.fdesigner.expressions.IEvaluationContext;
+import org.fdesigner.workbench.ISaveablePart;
+import org.fdesigner.workbench.ISources;
+import org.fdesigner.workbench.IWorkbenchPart;
+import org.fdesigner.workbench.handlers.HandlerUtil;
+import org.fdesigner.workbench.internal.AbstractEvaluationHandler;
+import org.fdesigner.workbench.internal.InternalHandlerUtil;
+import org.fdesigner.workbench.internal.SaveableHelper;
 
 /**
  * @since 3.7

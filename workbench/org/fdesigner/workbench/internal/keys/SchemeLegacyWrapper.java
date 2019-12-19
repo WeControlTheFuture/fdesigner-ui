@@ -11,13 +11,13 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.keys;
+package org.fdesigner.workbench.internal.keys;
 
-import org.eclipse.jface.bindings.BindingManager;
-import org.eclipse.jface.bindings.Scheme;
-import org.eclipse.ui.commands.IKeyConfiguration;
-import org.eclipse.ui.commands.IKeyConfigurationListener;
-import org.eclipse.ui.commands.NotDefinedException;
+import org.fdesigner.ui.jface.bindings.BindingManager;
+import org.fdesigner.ui.jface.bindings.Scheme;
+import org.fdesigner.workbench.commands.IKeyConfiguration;
+import org.fdesigner.workbench.commands.IKeyConfigurationListener;
+import org.fdesigner.workbench.commands.NotDefinedException;
 
 /**
  * A wrapper around the new {@link Scheme} class, providing supported for the
@@ -73,7 +73,7 @@ public final class SchemeLegacyWrapper implements IKeyConfiguration {
 	public String getDescription() throws NotDefinedException {
 		try {
 			return scheme.getDescription();
-		} catch (final org.eclipse.core.commands.common.NotDefinedException e) {
+		} catch (final org.fdesigner.commands.common.NotDefinedException e) {
 			throw new NotDefinedException(e);
 		}
 	}
@@ -87,7 +87,7 @@ public final class SchemeLegacyWrapper implements IKeyConfiguration {
 	public String getName() throws NotDefinedException {
 		try {
 			return scheme.getName();
-		} catch (final org.eclipse.core.commands.common.NotDefinedException e) {
+		} catch (final org.fdesigner.commands.common.NotDefinedException e) {
 			throw new NotDefinedException(e);
 		}
 	}
@@ -96,7 +96,7 @@ public final class SchemeLegacyWrapper implements IKeyConfiguration {
 	public String getParentId() throws NotDefinedException {
 		try {
 			return scheme.getParentId();
-		} catch (final org.eclipse.core.commands.common.NotDefinedException e) {
+		} catch (final org.fdesigner.commands.common.NotDefinedException e) {
 			throw new NotDefinedException(e);
 		}
 	}

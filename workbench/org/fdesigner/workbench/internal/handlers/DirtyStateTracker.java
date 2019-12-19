@@ -14,19 +14,19 @@
  *     Andrey Loskutov <loskutov@gmx.de> - Bug 372799
  ******************************************************************************/
 
-package org.eclipse.ui.internal.handlers;
+package org.fdesigner.workbench.internal.handlers;
 
-import org.eclipse.ui.IPartListener;
-import org.eclipse.ui.IPropertyListener;
-import org.eclipse.ui.ISaveablePart;
-import org.eclipse.ui.ISources;
-import org.eclipse.ui.IWindowListener;
-import org.eclipse.ui.IWorkbench;
-import org.eclipse.ui.IWorkbenchPart;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.internal.SaveableHelper;
-import org.eclipse.ui.internal.Workbench;
-import org.eclipse.ui.services.IEvaluationService;
+import org.fdesigner.workbench.IPartListener;
+import org.fdesigner.workbench.IPropertyListener;
+import org.fdesigner.workbench.ISaveablePart;
+import org.fdesigner.workbench.ISources;
+import org.fdesigner.workbench.IWindowListener;
+import org.fdesigner.workbench.IWorkbench;
+import org.fdesigner.workbench.IWorkbenchPart;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.internal.SaveableHelper;
+import org.fdesigner.workbench.internal.Workbench;
+import org.fdesigner.workbench.services.IEvaluationService;
 
 /**
  * @since 3.7

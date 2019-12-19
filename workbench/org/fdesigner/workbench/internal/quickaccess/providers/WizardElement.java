@@ -12,15 +12,16 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.quickaccess.providers;
+package org.fdesigner.workbench.internal.quickaccess.providers;
 
 import java.util.Objects;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.actions.NewWizardShortcutAction;
-import org.eclipse.ui.quickaccess.QuickAccessElement;
-import org.eclipse.ui.wizards.IWizardDescriptor;
+
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.internal.actions.NewWizardShortcutAction;
+import org.fdesigner.workbench.quickaccess.QuickAccessElement;
+import org.fdesigner.workbench.wizards.IWizardDescriptor;
 
 /**
  * @since 3.3

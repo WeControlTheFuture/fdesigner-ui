@@ -11,14 +11,15 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.dialogs;
+package org.fdesigner.workbench.internal.dialogs;
 
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashSet;
-import org.eclipse.jface.preference.IPreferenceNode;
-import org.eclipse.jface.viewers.Viewer;
-import org.eclipse.jface.viewers.ViewerFilter;
+
+import org.fdesigner.ui.jface.preference.IPreferenceNode;
+import org.fdesigner.ui.jface.viewers.Viewer;
+import org.fdesigner.ui.jface.viewers.ViewerFilter;
 
 /**
  * The PreferenceNodeFilter is a filter that only matches a set of ids.

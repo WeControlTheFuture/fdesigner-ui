@@ -11,14 +11,14 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.keys;
+package org.fdesigner.workbench.internal.keys;
 
-import org.eclipse.jface.bindings.BindingManager;
-import org.eclipse.jface.bindings.ISchemeListener;
-import org.eclipse.jface.bindings.SchemeEvent;
-import org.eclipse.ui.commands.IKeyConfiguration;
-import org.eclipse.ui.commands.IKeyConfigurationListener;
-import org.eclipse.ui.commands.KeyConfigurationEvent;
+import org.fdesigner.ui.jface.bindings.BindingManager;
+import org.fdesigner.ui.jface.bindings.ISchemeListener;
+import org.fdesigner.ui.jface.bindings.SchemeEvent;
+import org.fdesigner.workbench.commands.IKeyConfiguration;
+import org.fdesigner.workbench.commands.IKeyConfigurationListener;
+import org.fdesigner.workbench.commands.KeyConfigurationEvent;
 
 /**
  * A wrapper for old-style listeners to be hooked on to new style schemes.

@@ -19,6 +19,8 @@ import org.eclipse.swt.widgets.Shell;
 import org.fdesigner.commands.contexts.Context;
 import org.fdesigner.expressions.Expression;
 import org.fdesigner.workbench.services.IServiceWithSources;
+import org.fdesigner.commands.contexts.IContextManagerListener;
+
 
 /**
  * <p>

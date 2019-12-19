@@ -13,9 +13,9 @@
  *     Patrik Suzzi <psuzzi@gmail.com> - Bug 488926, 459989
  *******************************************************************************/
 
-package org.eclipse.ui.internal.quickaccess;
+package org.fdesigner.workbench.internal.quickaccess;
 
-import org.eclipse.osgi.util.NLS;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * @since 3.2

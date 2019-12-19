@@ -12,10 +12,10 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal.e4.compatibility;
+package org.fdesigner.workbench.internal.e4.compatibility;
 
-import org.eclipse.osgi.service.debug.DebugOptions;
-import org.eclipse.ui.internal.WorkbenchPlugin;
+import org.fdesigner.supplement.service.debug.DebugOptions;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
 
 /**
  *

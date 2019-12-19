@@ -12,9 +12,9 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.contexts;
+package org.fdesigner.workbench.internal.contexts;
 
-import org.eclipse.core.commands.contexts.ContextManager;
+import org.fdesigner.commands.contexts.ContextManager;
 
 /**
  * This class allows clients to broker instances of

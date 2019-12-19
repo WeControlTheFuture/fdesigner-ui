@@ -14,12 +14,12 @@
 package org.fdesigner.workbench.internal.testing;
 
 import org.eclipse.swt.widgets.Display;
-import org.eclipse.ui.testing.TestableObject;
 import org.fdesigner.runtime.common.runtime.Assert;
 import org.fdesigner.runtime.common.runtime.OperationCanceledException;
 import org.fdesigner.runtime.jobs.runtime.jobs.Job;
 import org.fdesigner.ui.jface.dialogs.ErrorDialog;
 import org.fdesigner.ui.jface.util.SafeRunnable;
+import org.fdesigner.ui.testing.TestableObject;
 import org.fdesigner.workbench.IWorkbench;
 import org.fdesigner.workbench.PlatformUI;
 import org.fdesigner.workbench.internal.Workbench;

@@ -12,11 +12,11 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.keys.model;
+package org.fdesigner.workbench.internal.keys.model;
 
-import org.eclipse.core.commands.common.NotDefinedException;
-import org.eclipse.jface.bindings.Scheme;
-import org.eclipse.ui.internal.WorkbenchPlugin;
+import org.fdesigner.commands.common.NotDefinedException;
+import org.fdesigner.ui.jface.bindings.Scheme;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
 
 /**
  * @since 3.4

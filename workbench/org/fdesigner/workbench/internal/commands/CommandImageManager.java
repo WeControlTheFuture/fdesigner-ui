@@ -11,15 +11,16 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.commands;
+package org.fdesigner.workbench.internal.commands;
 
 import java.net.URL;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
-import org.eclipse.core.commands.common.EventManager;
-import org.eclipse.jface.resource.ImageDescriptor;
+
+import org.fdesigner.commands.common.EventManager;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
 
 /**
  * <p>

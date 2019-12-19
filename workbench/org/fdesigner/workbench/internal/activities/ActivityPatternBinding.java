@@ -12,12 +12,13 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.activities;
+package org.fdesigner.workbench.internal.activities;
 
 import java.util.Objects;
 import java.util.regex.Pattern;
-import org.eclipse.ui.activities.IActivityPatternBinding;
-import org.eclipse.ui.internal.util.Util;
+
+import org.fdesigner.workbench.activities.IActivityPatternBinding;
+import org.fdesigner.workbench.internal.util.Util;
 
 public final class ActivityPatternBinding implements IActivityPatternBinding {
 	private static final int HASH_FACTOR = 89;

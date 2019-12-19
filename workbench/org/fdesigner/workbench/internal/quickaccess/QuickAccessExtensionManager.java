@@ -11,26 +11,27 @@
  * Contributors:
  * - Mickael Istria (Red Hat Inc.)
  ******************************************************************************/
-package org.eclipse.ui.internal.quickaccess;
+package org.fdesigner.workbench.internal.quickaccess;
 
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.stream.Collectors;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.NullProgressMonitor;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.osgi.util.NLS;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.WorkbenchPlugin;
-import org.eclipse.ui.internal.registry.IWorkbenchRegistryConstants;
-import org.eclipse.ui.quickaccess.IQuickAccessComputer;
-import org.eclipse.ui.quickaccess.IQuickAccessComputerExtension;
-import org.eclipse.ui.quickaccess.QuickAccessElement;
-import org.osgi.framework.Bundle;
-import org.osgi.framework.BundleException;
+
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.framework.framework.BundleException;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.NullProgressMonitor;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
+import org.fdesigner.workbench.internal.registry.IWorkbenchRegistryConstants;
+import org.fdesigner.workbench.quickaccess.IQuickAccessComputer;
+import org.fdesigner.workbench.quickaccess.IQuickAccessComputerExtension;
+import org.fdesigner.workbench.quickaccess.QuickAccessElement;
 
 /**
  *

@@ -11,16 +11,17 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.themes;
+package org.fdesigner.workbench.internal.themes;
 
 import java.util.HashSet;
 import java.util.Set;
-import org.eclipse.jface.resource.ColorRegistry;
-import org.eclipse.jface.util.IPropertyChangeListener;
+
 import org.eclipse.swt.graphics.Color;
 import org.eclipse.swt.graphics.RGB;
 import org.eclipse.swt.widgets.Display;
-import org.eclipse.ui.PlatformUI;
+import org.fdesigner.ui.jface.resource.ColorRegistry;
+import org.fdesigner.ui.jface.util.IPropertyChangeListener;
+import org.fdesigner.workbench.PlatformUI;
 
 /**
  * @since 3.0

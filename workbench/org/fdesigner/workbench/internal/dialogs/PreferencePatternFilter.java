@@ -12,18 +12,19 @@
  *     IBM Corporation - initial API and implementation
  *     Jan-Hendrik Diederich, Bredex GmbH - bug 201052
  *******************************************************************************/
-package org.eclipse.ui.internal.dialogs;
+package org.fdesigner.workbench.internal.dialogs;
 
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
-import org.eclipse.jface.preference.IPreferenceNode;
-import org.eclipse.jface.viewers.ITreeContentProvider;
-import org.eclipse.jface.viewers.TreeViewer;
-import org.eclipse.jface.viewers.Viewer;
-import org.eclipse.ui.activities.WorkbenchActivityHelper;
-import org.eclipse.ui.dialogs.PatternFilter;
-import org.eclipse.ui.internal.preferences.WorkbenchPreferenceExtensionNode;
+
+import org.fdesigner.ui.jface.preference.IPreferenceNode;
+import org.fdesigner.ui.jface.viewers.ITreeContentProvider;
+import org.fdesigner.ui.jface.viewers.TreeViewer;
+import org.fdesigner.ui.jface.viewers.Viewer;
+import org.fdesigner.workbench.activities.WorkbenchActivityHelper;
+import org.fdesigner.workbench.dialogs.PatternFilter;
+import org.fdesigner.workbench.internal.preferences.WorkbenchPreferenceExtensionNode;
 
 /**
  * A class that handles filtering preference node items based on a supplied

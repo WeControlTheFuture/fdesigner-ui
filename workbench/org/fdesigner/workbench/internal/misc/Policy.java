@@ -11,12 +11,12 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.misc;
+package org.fdesigner.workbench.internal.misc;
 
-import org.eclipse.core.runtime.Platform;
 import org.eclipse.swt.graphics.Device;
-import org.eclipse.ui.ISourceProvider;
-import org.eclipse.ui.PlatformUI;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.workbench.ISourceProvider;
+import org.fdesigner.workbench.PlatformUI;
 
 /**
  * A common facility for parsing the <code>org.eclipse.ui/.options</code> file.

@@ -11,41 +11,42 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.themes;
+package org.fdesigner.workbench.internal.themes;
 
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
-import org.eclipse.core.commands.common.EventManager;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.e4.core.contexts.IEclipseContext;
-import org.eclipse.e4.core.services.events.IEventBroker;
+
 import org.eclipse.e4.ui.css.swt.theme.IThemeEngine;
-import org.eclipse.e4.ui.internal.css.swt.definition.IThemeElementDefinitionOverridable;
-import org.eclipse.e4.ui.model.application.MApplication;
-import org.eclipse.e4.ui.services.IStylingEngine;
-import org.eclipse.e4.ui.workbench.UIEvents;
-import org.eclipse.jface.preference.IPreferenceStore;
-import org.eclipse.jface.preference.PreferenceConverter;
-import org.eclipse.jface.resource.ColorRegistry;
-import org.eclipse.jface.resource.FontRegistry;
-import org.eclipse.jface.resource.JFaceResources;
-import org.eclipse.jface.util.IPropertyChangeListener;
-import org.eclipse.jface.util.PropertyChangeEvent;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.FontData;
 import org.eclipse.swt.graphics.RGB;
 import org.eclipse.swt.widgets.Display;
-import org.eclipse.ui.IWorkbenchPreferenceConstants;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.Workbench;
-import org.eclipse.ui.internal.WorkbenchPlugin;
-import org.eclipse.ui.internal.misc.StatusUtil;
-import org.eclipse.ui.internal.util.PrefUtil;
-import org.eclipse.ui.statushandlers.StatusManager;
-import org.eclipse.ui.themes.ITheme;
-import org.eclipse.ui.themes.IThemeManager;
-import org.osgi.service.event.EventHandler;
+import org.fdesigner.commands.common.EventManager;
+import org.fdesigner.e4.core.contexts.IEclipseContext;
+import org.fdesigner.e4.core.services.events.IEventBroker;
+import org.fdesigner.e4.ui.css.swt.internal.css.swt.definition.IThemeElementDefinitionOverridable;
+import org.fdesigner.e4.ui.model.application.MApplication;
+import org.fdesigner.e4.ui.services.IStylingEngine;
+import org.fdesigner.e4.ui.workbench.UIEvents;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.services.event.EventHandler;
+import org.fdesigner.ui.jface.preference.IPreferenceStore;
+import org.fdesigner.ui.jface.preference.PreferenceConverter;
+import org.fdesigner.ui.jface.resource.ColorRegistry;
+import org.fdesigner.ui.jface.resource.FontRegistry;
+import org.fdesigner.ui.jface.resource.JFaceResources;
+import org.fdesigner.ui.jface.util.IPropertyChangeListener;
+import org.fdesigner.ui.jface.util.PropertyChangeEvent;
+import org.fdesigner.workbench.IWorkbenchPreferenceConstants;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.internal.Workbench;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
+import org.fdesigner.workbench.internal.misc.StatusUtil;
+import org.fdesigner.workbench.internal.util.PrefUtil;
+import org.fdesigner.workbench.statushandlers.StatusManager;
+import org.fdesigner.workbench.themes.ITheme;
+import org.fdesigner.workbench.themes.IThemeManager;
 
 /**
  * Theme manager for the Workbench.
@@ -505,7 +506,7 @@ public class WorkbenchThemeManager extends EventManager implements IThemeManager
 
 	public static class ThemeRegistryModifiedHandler implements EventHandler {
 		@Override
-		public void handleEvent(org.osgi.service.event.Event event) {
+		public void handleEvent(org.fdesigner.services.event.Event event) {
 			populateThemeRegistries(getThemeRegistry(), getFontRegistry(), getColorRegistry(), getTheme(),
 					getColorsAndFontsTheme());
 			sendThemeDefinitionChangedEvent();

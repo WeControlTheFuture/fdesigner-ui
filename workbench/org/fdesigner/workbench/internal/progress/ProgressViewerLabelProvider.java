@@ -11,10 +11,10 @@
  * Contributors:
  * IBM - Initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.progress;
+package org.fdesigner.workbench.internal.progress;
 
-import org.eclipse.jface.viewers.LabelProvider;
 import org.eclipse.swt.widgets.Control;
+import org.fdesigner.ui.jface.viewers.LabelProvider;
 
 /**
  * The ProgressViewerLabelProvider is the label provider for progress viewers.

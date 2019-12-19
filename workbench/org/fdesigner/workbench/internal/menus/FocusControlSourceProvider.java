@@ -12,20 +12,21 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.menus;
+package org.fdesigner.workbench.internal.menus;
 
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
-import org.eclipse.core.expressions.IEvaluationContext;
+
 import org.eclipse.swt.events.DisposeListener;
 import org.eclipse.swt.events.FocusEvent;
 import org.eclipse.swt.events.FocusListener;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Widget;
-import org.eclipse.ui.AbstractSourceProvider;
-import org.eclipse.ui.ISources;
-import org.eclipse.ui.swt.IFocusService;
+import org.fdesigner.expressions.IEvaluationContext;
+import org.fdesigner.workbench.AbstractSourceProvider;
+import org.fdesigner.workbench.ISources;
+import org.fdesigner.workbench.swt.IFocusService;
 
 /**
  * @since 3.3

@@ -11,21 +11,21 @@
  * Contributors:
  *     Christian Georgi (SAP SE) - Bug 540440
  *******************************************************************************/
-package org.eclipse.ui.internal.keys.show;
+package org.fdesigner.workbench.internal.keys.show;
 
-import org.eclipse.core.commands.ExecutionEvent;
-import org.eclipse.core.commands.ExecutionException;
-import org.eclipse.core.commands.IExecutionListener;
-import org.eclipse.core.commands.NotHandledException;
-import org.eclipse.jface.preference.IPreferenceStore;
-import org.eclipse.jface.util.IPropertyChangeListener;
-import org.eclipse.jface.util.PropertyChangeEvent;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Event;
-import org.eclipse.ui.commands.ICommandService;
-import org.eclipse.ui.internal.IPreferenceConstants;
-import org.eclipse.ui.services.IDisposable;
-import org.eclipse.ui.services.IServiceLocator;
+import org.fdesigner.commands.ExecutionEvent;
+import org.fdesigner.commands.ExecutionException;
+import org.fdesigner.commands.IExecutionListener;
+import org.fdesigner.commands.NotHandledException;
+import org.fdesigner.ui.jface.preference.IPreferenceStore;
+import org.fdesigner.ui.jface.util.IPropertyChangeListener;
+import org.fdesigner.ui.jface.util.PropertyChangeEvent;
+import org.fdesigner.workbench.commands.ICommandService;
+import org.fdesigner.workbench.internal.IPreferenceConstants;
+import org.fdesigner.workbench.services.IDisposable;
+import org.fdesigner.workbench.services.IServiceLocator;
 
 /**
  * Listens to command executions and shows the keys UI if enabled

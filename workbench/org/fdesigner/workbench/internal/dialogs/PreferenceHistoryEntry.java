@@ -11,10 +11,11 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.dialogs;
+package org.fdesigner.workbench.internal.dialogs;
 
 import java.util.Objects;
-import org.eclipse.core.runtime.Assert;
+
+import org.fdesigner.runtime.common.runtime.Assert;
 
 /**
  * A preference history entry.

@@ -12,14 +12,14 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal.themes;
+package org.fdesigner.workbench.internal.themes;
 
-import org.eclipse.e4.ui.internal.css.swt.definition.IColorAndFontProvider;
 import org.eclipse.swt.graphics.FontData;
 import org.eclipse.swt.graphics.RGB;
-import org.eclipse.ui.internal.Workbench;
-import org.eclipse.ui.themes.ITheme;
-import org.osgi.service.component.annotations.Component;
+import org.fdesigner.e4.ui.css.swt.internal.css.swt.definition.IColorAndFontProvider;
+import org.fdesigner.services.component.annotations.Component;
+import org.fdesigner.workbench.internal.Workbench;
+import org.fdesigner.workbench.themes.ITheme;
 
 /**
  * @since 3.5

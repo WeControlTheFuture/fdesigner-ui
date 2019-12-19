@@ -16,6 +16,7 @@ package org.fdesigner.workbench.commands;
 import java.util.Collection;
 import java.util.Map;
 
+import org.fdesigner.commands.IHandler;
 import org.fdesigner.commands.Category;
 import org.fdesigner.commands.Command;
 import org.fdesigner.commands.CommandManager;

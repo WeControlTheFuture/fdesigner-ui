@@ -13,28 +13,29 @@
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 472654
  ******************************************************************************/
 
-package org.eclipse.ui.internal.menus;
+package org.fdesigner.workbench.internal.menus;
 
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
-import org.eclipse.core.expressions.Expression;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.e4.core.contexts.ContextFunction;
-import org.eclipse.e4.core.contexts.IEclipseContext;
-import org.eclipse.e4.ui.internal.workbench.OpaqueElementUtil;
-import org.eclipse.e4.ui.model.application.ui.MCoreExpression;
-import org.eclipse.e4.ui.model.application.ui.MUIElement;
-import org.eclipse.e4.ui.model.application.ui.impl.UiFactoryImpl;
-import org.eclipse.e4.ui.model.application.ui.menu.MMenuItem;
-import org.eclipse.e4.ui.model.application.ui.menu.MToolItem;
-import org.eclipse.jface.action.IContributionItem;
-import org.eclipse.ui.internal.WorkbenchPlugin;
-import org.eclipse.ui.internal.services.ServiceLocator;
-import org.eclipse.ui.menus.AbstractContributionFactory;
-import org.eclipse.ui.menus.IMenuService;
+
+import org.fdesigner.e4.core.contexts.ContextFunction;
+import org.fdesigner.e4.core.contexts.IEclipseContext;
+import org.fdesigner.e4.ui.model.application.ui.MCoreExpression;
+import org.fdesigner.e4.ui.model.application.ui.MUIElement;
+import org.fdesigner.e4.ui.model.application.ui.impl.UiFactoryImpl;
+import org.fdesigner.e4.ui.model.application.ui.menu.MMenuItem;
+import org.fdesigner.e4.ui.model.application.ui.menu.MToolItem;
+import org.fdesigner.e4.ui.workbench.internal.workbench.OpaqueElementUtil;
+import org.fdesigner.expressions.Expression;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.ui.jface.action.IContributionItem;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
+import org.fdesigner.workbench.internal.services.ServiceLocator;
+import org.fdesigner.workbench.menus.AbstractContributionFactory;
+import org.fdesigner.workbench.menus.IMenuService;
 
 public class ContributionFactoryGenerator extends ContextFunction {
 	private AbstractContributionFactory factoryImpl;

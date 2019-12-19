@@ -11,12 +11,12 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.dialogs.cpd;
+package org.fdesigner.workbench.internal.dialogs.cpd;
 
-import org.eclipse.jface.viewers.Viewer;
-import org.eclipse.jface.viewers.ViewerFilter;
-import org.eclipse.ui.internal.dialogs.cpd.CustomizePerspectiveDialog.ActionSet;
-import org.eclipse.ui.internal.dialogs.cpd.CustomizePerspectiveDialog.DisplayItem;
+import org.fdesigner.ui.jface.viewers.Viewer;
+import org.fdesigner.ui.jface.viewers.ViewerFilter;
+import org.fdesigner.workbench.internal.dialogs.cpd.CustomizePerspectiveDialog.ActionSet;
+import org.fdesigner.workbench.internal.dialogs.cpd.CustomizePerspectiveDialog.DisplayItem;
 
 /**
  * Filters out contribution items which are not in a given action set.

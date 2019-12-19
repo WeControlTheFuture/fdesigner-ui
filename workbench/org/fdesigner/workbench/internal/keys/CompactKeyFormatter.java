@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.keys;
+package org.fdesigner.workbench.internal.keys;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -21,10 +21,11 @@ import java.util.List;
 import java.util.Set;
 import java.util.SortedSet;
 import java.util.TreeSet;
-import org.eclipse.ui.keys.KeySequence;
-import org.eclipse.ui.keys.KeyStroke;
-import org.eclipse.ui.keys.ModifierKey;
-import org.eclipse.ui.keys.NaturalKey;
+
+import org.fdesigner.workbench.keys.KeySequence;
+import org.fdesigner.workbench.keys.KeyStroke;
+import org.fdesigner.workbench.keys.ModifierKey;
+import org.fdesigner.workbench.keys.NaturalKey;
 
 /**
  * A key formatter providing a special compact format for displaying key

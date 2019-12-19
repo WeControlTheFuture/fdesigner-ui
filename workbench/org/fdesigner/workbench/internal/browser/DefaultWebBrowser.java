@@ -11,17 +11,18 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.browser;
+package org.fdesigner.workbench.internal.browser;
 
 import java.io.IOException;
 import java.net.URL;
-import org.eclipse.jface.dialogs.MessageDialog;
-import org.eclipse.jface.util.Util;
+
 import org.eclipse.swt.program.Program;
 import org.eclipse.swt.widgets.Display;
-import org.eclipse.ui.PartInitException;
-import org.eclipse.ui.browser.AbstractWebBrowser;
-import org.eclipse.ui.internal.WorkbenchMessages;
+import org.fdesigner.ui.jface.dialogs.MessageDialog;
+import org.fdesigner.ui.jface.util.Util;
+import org.fdesigner.workbench.PartInitException;
+import org.fdesigner.workbench.browser.AbstractWebBrowser;
+import org.fdesigner.workbench.internal.WorkbenchMessages;
 
 /**
  * The default implementation of the web browser instance.

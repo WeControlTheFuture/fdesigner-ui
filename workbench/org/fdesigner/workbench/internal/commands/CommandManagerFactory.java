@@ -12,11 +12,11 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.commands;
+package org.fdesigner.workbench.internal.commands;
 
-import org.eclipse.core.commands.CommandManager;
-import org.eclipse.core.commands.contexts.ContextManager;
-import org.eclipse.jface.bindings.BindingManager;
+import org.fdesigner.commands.CommandManager;
+import org.fdesigner.commands.contexts.ContextManager;
+import org.fdesigner.ui.jface.bindings.BindingManager;
 
 /**
  * This class allows clients to broker instances of

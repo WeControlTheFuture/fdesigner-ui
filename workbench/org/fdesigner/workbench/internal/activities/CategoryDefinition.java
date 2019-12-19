@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.activities;
+package org.fdesigner.workbench.internal.activities;
 
 import java.util.Collection;
 import java.util.HashMap;
@@ -20,7 +20,8 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Objects;
-import org.eclipse.ui.internal.util.Util;
+
+import org.fdesigner.workbench.internal.util.Util;
 
 public final class CategoryDefinition implements Comparable<CategoryDefinition> {
 	private static final int HASH_FACTOR = 89;

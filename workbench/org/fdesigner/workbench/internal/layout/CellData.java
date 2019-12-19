@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.layout;
+package org.fdesigner.workbench.internal.layout;
 
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.Point;

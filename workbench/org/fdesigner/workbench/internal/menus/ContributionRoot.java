@@ -13,20 +13,21 @@
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 472654
  *******************************************************************************/
 
-package org.eclipse.ui.internal.menus;
+package org.fdesigner.workbench.internal.menus;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import org.eclipse.core.expressions.Expression;
-import org.eclipse.jface.action.ContributionManager;
-import org.eclipse.jface.action.IContributionItem;
-import org.eclipse.ui.internal.expressions.AlwaysEnabledExpression;
-import org.eclipse.ui.menus.AbstractContributionFactory;
-import org.eclipse.ui.menus.IContributionRoot;
-import org.eclipse.ui.menus.IMenuService;
+
+import org.fdesigner.expressions.Expression;
+import org.fdesigner.ui.jface.action.ContributionManager;
+import org.fdesigner.ui.jface.action.IContributionItem;
+import org.fdesigner.workbench.internal.expressions.AlwaysEnabledExpression;
+import org.fdesigner.workbench.menus.AbstractContributionFactory;
+import org.fdesigner.workbench.menus.IContributionRoot;
+import org.fdesigner.workbench.menus.IMenuService;
 
 /**
  * Default implementation.

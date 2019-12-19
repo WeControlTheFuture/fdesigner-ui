@@ -11,9 +11,9 @@
  * Contributors:
  * IBM - Initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.intro;
+package org.fdesigner.workbench.internal.intro;
 
-import org.eclipse.osgi.util.NLS;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * The IntroMessages are the messages used in the intro support.

@@ -12,12 +12,13 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.keys;
+package org.fdesigner.workbench.internal.keys;
 
 import java.util.Objects;
-import org.eclipse.ui.commands.IKeySequenceBinding;
-import org.eclipse.ui.internal.util.Util;
-import org.eclipse.ui.keys.KeySequence;
+
+import org.fdesigner.workbench.commands.IKeySequenceBinding;
+import org.fdesigner.workbench.internal.util.Util;
+import org.fdesigner.workbench.keys.KeySequence;
 
 public final class KeySequenceBinding implements IKeySequenceBinding {
 

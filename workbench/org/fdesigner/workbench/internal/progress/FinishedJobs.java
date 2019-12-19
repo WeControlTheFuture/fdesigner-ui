@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.progress;
+package org.fdesigner.workbench.internal.progress;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -19,11 +19,12 @@ import java.util.HashMap;
 import java.util.LinkedHashSet;
 import java.util.Map;
 import java.util.Set;
-import org.eclipse.core.commands.common.EventManager;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.jobs.Job;
-import org.eclipse.ui.actions.ActionFactory;
-import org.eclipse.ui.progress.IProgressConstants;
+
+import org.fdesigner.commands.common.EventManager;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.jobs.runtime.jobs.Job;
+import org.fdesigner.workbench.actions.ActionFactory;
+import org.fdesigner.workbench.progress.IProgressConstants;
 
 /**
  * This singleton remembers all JobTreeElements that should be preserved (e.g.

@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.activities;
+package org.fdesigner.workbench.internal.activities;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -20,14 +20,15 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Objects;
 import java.util.Set;
-import org.eclipse.core.expressions.Expression;
-import org.eclipse.ui.activities.ActivityEvent;
-import org.eclipse.ui.activities.IActivity;
-import org.eclipse.ui.activities.IActivityListener;
-import org.eclipse.ui.activities.IActivityPatternBinding;
-import org.eclipse.ui.activities.IActivityRequirementBinding;
-import org.eclipse.ui.activities.NotDefinedException;
-import org.eclipse.ui.internal.util.Util;
+
+import org.fdesigner.expressions.Expression;
+import org.fdesigner.workbench.activities.ActivityEvent;
+import org.fdesigner.workbench.activities.IActivity;
+import org.fdesigner.workbench.activities.IActivityListener;
+import org.fdesigner.workbench.activities.IActivityPatternBinding;
+import org.fdesigner.workbench.activities.IActivityRequirementBinding;
+import org.fdesigner.workbench.activities.NotDefinedException;
+import org.fdesigner.workbench.internal.util.Util;
 
 final class Activity implements IActivity {
 	private static final int HASH_FACTOR = 89;

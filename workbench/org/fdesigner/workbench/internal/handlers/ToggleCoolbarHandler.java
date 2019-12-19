@@ -13,19 +13,20 @@
  *     Lars Vogel <Lars.Vogel@gmail.com> - Bug 440810
  *******************************************************************************/
 
-package org.eclipse.ui.internal.handlers;
+package org.fdesigner.workbench.internal.handlers;
 
 import java.util.Map;
-import org.eclipse.core.commands.AbstractHandler;
-import org.eclipse.core.commands.ExecutionEvent;
-import org.eclipse.core.commands.ExecutionException;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.commands.IElementUpdater;
-import org.eclipse.ui.handlers.HandlerUtil;
-import org.eclipse.ui.internal.WorkbenchMessages;
-import org.eclipse.ui.internal.WorkbenchWindow;
-import org.eclipse.ui.internal.services.IWorkbenchLocationService;
-import org.eclipse.ui.menus.UIElement;
+
+import org.fdesigner.commands.AbstractHandler;
+import org.fdesigner.commands.ExecutionEvent;
+import org.fdesigner.commands.ExecutionException;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.commands.IElementUpdater;
+import org.fdesigner.workbench.handlers.HandlerUtil;
+import org.fdesigner.workbench.internal.WorkbenchMessages;
+import org.fdesigner.workbench.internal.WorkbenchWindow;
+import org.fdesigner.workbench.internal.services.IWorkbenchLocationService;
+import org.fdesigner.workbench.menus.UIElement;
 
 /**
  * Handler that toggles the visibility of the coolbar/perspective bar in a given

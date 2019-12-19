@@ -14,13 +14,11 @@
  *     Patrik Suzzi <psuzzi@gmail.com> - Bug 489250
  *******************************************************************************/
 
-package org.eclipse.ui.internal.keys;
+package org.fdesigner.workbench.internal.keys;
 
 import static org.eclipse.swt.events.SelectionListener.widgetDefaultSelectedAdapter;
 import static org.eclipse.swt.events.SelectionListener.widgetSelectedAdapter;
 
-import com.ibm.icu.text.Collator;
-import com.ibm.icu.text.MessageFormat;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -38,30 +36,7 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.ResourceBundle;
 import java.util.Set;
-import org.eclipse.core.commands.Category;
-import org.eclipse.core.commands.Command;
-import org.eclipse.core.commands.CommandManager;
-import org.eclipse.core.commands.ParameterizedCommand;
-import org.eclipse.core.commands.common.NotDefinedException;
-import org.eclipse.core.commands.contexts.Context;
-import org.eclipse.core.commands.contexts.ContextManager;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.SafeRunner;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.jface.bindings.Binding;
-import org.eclipse.jface.bindings.BindingManager;
-import org.eclipse.jface.bindings.Scheme;
-import org.eclipse.jface.bindings.TriggerSequence;
-import org.eclipse.jface.bindings.keys.KeyBinding;
-import org.eclipse.jface.bindings.keys.KeySequence;
-import org.eclipse.jface.bindings.keys.KeySequenceText;
-import org.eclipse.jface.bindings.keys.KeyStroke;
-import org.eclipse.jface.contexts.IContextIds;
-import org.eclipse.jface.dialogs.IDialogConstants;
-import org.eclipse.jface.dialogs.MessageDialog;
-import org.eclipse.jface.preference.IPreferenceStore;
-import org.eclipse.jface.preference.PreferencePage;
-import org.eclipse.jface.util.SafeRunnable;
+
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.FocusEvent;
 import org.eclipse.swt.events.FocusListener;
@@ -89,20 +64,47 @@ import org.eclipse.swt.widgets.Table;
 import org.eclipse.swt.widgets.TableColumn;
 import org.eclipse.swt.widgets.TableItem;
 import org.eclipse.swt.widgets.Text;
-import org.eclipse.ui.IWorkbench;
-import org.eclipse.ui.IWorkbenchPreferencePage;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.activities.IActivityManager;
-import org.eclipse.ui.commands.ICommandService;
-import org.eclipse.ui.contexts.IContextService;
-import org.eclipse.ui.internal.IPreferenceConstants;
-import org.eclipse.ui.internal.IWorkbenchHelpContextIds;
-import org.eclipse.ui.internal.WorkbenchPlugin;
-import org.eclipse.ui.internal.misc.StatusUtil;
-import org.eclipse.ui.internal.util.PrefUtil;
-import org.eclipse.ui.internal.util.Util;
-import org.eclipse.ui.keys.IBindingService;
-import org.eclipse.ui.statushandlers.StatusManager;
+import org.fdesigner.commands.Category;
+import org.fdesigner.commands.Command;
+import org.fdesigner.commands.CommandManager;
+import org.fdesigner.commands.ParameterizedCommand;
+import org.fdesigner.commands.common.NotDefinedException;
+import org.fdesigner.commands.contexts.Context;
+import org.fdesigner.commands.contexts.ContextManager;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.SafeRunner;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.ui.jface.bindings.Binding;
+import org.fdesigner.ui.jface.bindings.BindingManager;
+import org.fdesigner.ui.jface.bindings.Scheme;
+import org.fdesigner.ui.jface.bindings.TriggerSequence;
+import org.fdesigner.ui.jface.bindings.keys.KeyBinding;
+import org.fdesigner.ui.jface.bindings.keys.KeySequence;
+import org.fdesigner.ui.jface.bindings.keys.KeySequenceText;
+import org.fdesigner.ui.jface.bindings.keys.KeyStroke;
+import org.fdesigner.ui.jface.contexts.IContextIds;
+import org.fdesigner.ui.jface.dialogs.IDialogConstants;
+import org.fdesigner.ui.jface.dialogs.MessageDialog;
+import org.fdesigner.ui.jface.preference.IPreferenceStore;
+import org.fdesigner.ui.jface.preference.PreferencePage;
+import org.fdesigner.ui.jface.util.SafeRunnable;
+import org.fdesigner.workbench.IWorkbench;
+import org.fdesigner.workbench.IWorkbenchPreferencePage;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.activities.IActivityManager;
+import org.fdesigner.workbench.commands.ICommandService;
+import org.fdesigner.workbench.contexts.IContextService;
+import org.fdesigner.workbench.internal.IPreferenceConstants;
+import org.fdesigner.workbench.internal.IWorkbenchHelpContextIds;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
+import org.fdesigner.workbench.internal.misc.StatusUtil;
+import org.fdesigner.workbench.internal.util.PrefUtil;
+import org.fdesigner.workbench.internal.util.Util;
+import org.fdesigner.workbench.keys.IBindingService;
+import org.fdesigner.workbench.statushandlers.StatusManager;
+
+import com.ibm.icu.text.Collator;
+import com.ibm.icu.text.MessageFormat;
 
 /**
  * The preference page for defining keyboard shortcuts. While some of its
@@ -616,7 +618,7 @@ public final class KeysPreferencePage extends PreferencePage implements IWorkben
 		gridData = new GridData(GridData.FILL_BOTH);
 		gridData.heightHint = 60;
 		gridData.horizontalSpan = 2;
-		boolean isMac = org.eclipse.jface.util.Util.isMac();
+		boolean isMac = org.fdesigner.ui.jface.util.Util.isMac();
 		gridData.widthHint = isMac ? 620 : 520;
 		tableBindingsForCommand.setLayoutData(gridData);
 		TableColumn tableColumnDelta = new TableColumn(tableBindingsForCommand, SWT.NULL, 0);
@@ -2096,7 +2098,7 @@ public final class KeysPreferencePage extends PreferencePage implements IWorkben
 					final Context context = contextService.getContext(contextId1);
 					try {
 						contextName1 = context.getName();
-					} catch (final org.eclipse.core.commands.common.NotDefinedException e) {
+					} catch (final org.fdesigner.commands.common.NotDefinedException e) {
 						// Just use the zero-length string.
 					}
 				}
@@ -2111,7 +2113,7 @@ public final class KeysPreferencePage extends PreferencePage implements IWorkben
 				try {
 					commandName2 = command2.getName();
 					categoryName2 = command2.getCategory().getName();
-				} catch (final org.eclipse.core.commands.common.NotDefinedException e) {
+				} catch (final org.fdesigner.commands.common.NotDefinedException e) {
 					// Just use the zero-length string.
 				}
 				final String keySequence2 = binding2.getTriggerSequence().format();
@@ -2121,7 +2123,7 @@ public final class KeysPreferencePage extends PreferencePage implements IWorkben
 					final Context context = contextService.getContext(contextId2);
 					try {
 						contextName2 = context.getName();
-					} catch (final org.eclipse.core.commands.common.NotDefinedException e) {
+					} catch (final org.fdesigner.commands.common.NotDefinedException e) {
 						// Just use the zero-length string.
 					}
 				}
@@ -2184,7 +2186,7 @@ public final class KeysPreferencePage extends PreferencePage implements IWorkben
 			try {
 				commandName = command.getName();
 				categoryName = command.getCommand().getCategory().getName();
-			} catch (final org.eclipse.core.commands.common.NotDefinedException e) {
+			} catch (final org.fdesigner.commands.common.NotDefinedException e) {
 				// Just use the zero-length string.
 			}
 
@@ -2200,7 +2202,7 @@ public final class KeysPreferencePage extends PreferencePage implements IWorkben
 				final Context context = contextService.getContext(contextId);
 				try {
 					contextName = context.getName();
-				} catch (final org.eclipse.core.commands.common.NotDefinedException e) {
+				} catch (final org.fdesigner.commands.common.NotDefinedException e) {
 					// Just use the zero-length string.
 				}
 			}

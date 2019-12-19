@@ -11,11 +11,12 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.preferences;
+package org.fdesigner.workbench.internal.preferences;
 
 import java.util.HashSet;
 import java.util.Set;
-import org.eclipse.core.runtime.Preferences;
+
+import org.fdesigner.runtime.core.Preferences;
 
 /**
  * @since 3.1

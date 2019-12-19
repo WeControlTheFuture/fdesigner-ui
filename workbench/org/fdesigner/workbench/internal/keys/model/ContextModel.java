@@ -13,17 +13,18 @@
  *     Lars Vogel <Lars.Vogel@gmail.com> - Bug 440810
  *******************************************************************************/
 
-package org.eclipse.ui.internal.keys.model;
+package org.fdesigner.workbench.internal.keys.model;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-import org.eclipse.core.commands.common.NotDefinedException;
-import org.eclipse.core.commands.contexts.Context;
-import org.eclipse.ui.contexts.IContextService;
-import org.eclipse.ui.services.IServiceLocator;
+
+import org.fdesigner.commands.common.NotDefinedException;
+import org.fdesigner.commands.contexts.Context;
+import org.fdesigner.workbench.contexts.IContextService;
+import org.fdesigner.workbench.services.IServiceLocator;
 
 /**
  * @since 3.4

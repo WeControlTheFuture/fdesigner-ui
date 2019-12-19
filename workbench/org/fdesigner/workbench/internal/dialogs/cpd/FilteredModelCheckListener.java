@@ -11,11 +11,11 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.dialogs.cpd;
+package org.fdesigner.workbench.internal.dialogs.cpd;
 
-import org.eclipse.jface.viewers.StructuredViewer;
-import org.eclipse.ui.internal.dialogs.cpd.TreeManager.CheckListener;
-import org.eclipse.ui.internal.dialogs.cpd.TreeManager.TreeItem;
+import org.fdesigner.ui.jface.viewers.StructuredViewer;
+import org.fdesigner.workbench.internal.dialogs.cpd.TreeManager.CheckListener;
+import org.fdesigner.workbench.internal.dialogs.cpd.TreeManager.TreeItem;
 
 /**
  * On a model change, update a filtered listener. While the check listener

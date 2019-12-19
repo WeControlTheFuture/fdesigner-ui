@@ -12,15 +12,15 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.keys;
+package org.fdesigner.workbench.internal.keys;
 
 import java.util.Comparator;
 import java.util.ResourceBundle;
 
-import org.eclipse.ui.internal.util.Util;
-import org.eclipse.ui.keys.KeySequence;
-import org.eclipse.ui.keys.KeyStroke;
-import org.eclipse.ui.keys.ModifierKey;
+import org.fdesigner.workbench.internal.util.Util;
+import org.fdesigner.workbench.keys.KeySequence;
+import org.fdesigner.workbench.keys.KeyStroke;
+import org.fdesigner.workbench.keys.ModifierKey;
 
 public final class KdeKeyFormatter extends AbstractKeyFormatter {
 

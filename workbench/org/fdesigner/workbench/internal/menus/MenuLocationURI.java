@@ -12,9 +12,9 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.menus;
+package org.fdesigner.workbench.internal.menus;
 
-import org.eclipse.ui.internal.util.Util;
+import org.fdesigner.workbench.internal.util.Util;
 
 /**
  * Basic implementation of the java.net.URI api. This is needed because the java

@@ -12,15 +12,15 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.keys;
+package org.fdesigner.workbench.internal.keys;
 
-import org.eclipse.core.commands.Category;
-import org.eclipse.core.commands.ParameterizedCommand;
-import org.eclipse.core.commands.common.NotDefinedException;
-import org.eclipse.jface.bindings.Binding;
-import org.eclipse.jface.viewers.Viewer;
-import org.eclipse.ui.dialogs.PatternFilter;
-import org.eclipse.ui.internal.keys.model.BindingElement;
+import org.fdesigner.commands.Category;
+import org.fdesigner.commands.ParameterizedCommand;
+import org.fdesigner.commands.common.NotDefinedException;
+import org.fdesigner.ui.jface.bindings.Binding;
+import org.fdesigner.ui.jface.viewers.Viewer;
+import org.fdesigner.workbench.dialogs.PatternFilter;
+import org.fdesigner.workbench.internal.keys.model.BindingElement;
 
 class CategoryPatternFilter extends PatternFilter {
 	private boolean filterCategories;

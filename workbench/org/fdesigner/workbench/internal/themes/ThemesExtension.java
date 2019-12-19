@@ -13,13 +13,14 @@
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 472654
  ******************************************************************************/
 
-package org.eclipse.ui.internal.themes;
+package org.fdesigner.workbench.internal.themes;
 
 import java.util.ArrayList;
 import java.util.List;
-import org.eclipse.e4.ui.internal.css.swt.definition.IThemeElementDefinitionOverridable;
-import org.eclipse.e4.ui.internal.css.swt.definition.IThemesExtension;
-import org.eclipse.ui.internal.WorkbenchPlugin;
+
+import org.fdesigner.e4.ui.css.swt.internal.css.swt.definition.IThemeElementDefinitionOverridable;
+import org.fdesigner.e4.ui.css.swt.internal.css.swt.definition.IThemesExtension;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
 
 /**
  * @since 3.5

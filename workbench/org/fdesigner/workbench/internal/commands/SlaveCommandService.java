@@ -12,32 +12,33 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.commands;
+package org.fdesigner.workbench.internal.commands;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
-import org.eclipse.core.commands.Category;
-import org.eclipse.core.commands.Command;
-import org.eclipse.core.commands.IExecutionListener;
-import org.eclipse.core.commands.IHandler;
-import org.eclipse.core.commands.ParameterType;
-import org.eclipse.core.commands.ParameterizedCommand;
-import org.eclipse.core.commands.SerializationException;
-import org.eclipse.core.commands.common.NotDefinedException;
-import org.eclipse.e4.core.contexts.IEclipseContext;
+
 import org.eclipse.e4.ui.internal.workbench.renderers.swt.IUpdateService;
-import org.eclipse.e4.ui.model.application.ui.menu.MItem;
-import org.eclipse.e4.ui.workbench.IPresentationEngine;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.ui.commands.ICommandService;
-import org.eclipse.ui.commands.IElementReference;
-import org.eclipse.ui.internal.WorkbenchPlugin;
-import org.eclipse.ui.internal.menus.MenuHelper;
-import org.eclipse.ui.menus.UIElement;
-import org.eclipse.ui.services.IServiceLocator;
+import org.fdesigner.commands.Category;
+import org.fdesigner.commands.Command;
+import org.fdesigner.commands.IExecutionListener;
+import org.fdesigner.commands.IHandler;
+import org.fdesigner.commands.ParameterType;
+import org.fdesigner.commands.ParameterizedCommand;
+import org.fdesigner.commands.SerializationException;
+import org.fdesigner.commands.common.NotDefinedException;
+import org.fdesigner.e4.core.contexts.IEclipseContext;
+import org.fdesigner.e4.ui.model.application.ui.menu.MItem;
+import org.fdesigner.e4.ui.workbench.IPresentationEngine;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.workbench.commands.ICommandService;
+import org.fdesigner.workbench.commands.IElementReference;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
+import org.fdesigner.workbench.internal.menus.MenuHelper;
+import org.fdesigner.workbench.menus.UIElement;
+import org.fdesigner.workbench.services.IServiceLocator;
 
 /**
  * A command service which delegates almost all responsibility to the parent

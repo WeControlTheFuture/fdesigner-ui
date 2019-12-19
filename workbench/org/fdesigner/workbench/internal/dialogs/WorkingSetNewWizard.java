@@ -11,18 +11,18 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.dialogs;
+package org.fdesigner.workbench.internal.dialogs;
 
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.jface.wizard.IWizardPage;
-import org.eclipse.jface.wizard.Wizard;
-import org.eclipse.ui.IWorkingSet;
-import org.eclipse.ui.dialogs.IWorkingSetNewWizard;
-import org.eclipse.ui.dialogs.IWorkingSetPage;
-import org.eclipse.ui.internal.WorkbenchMessages;
-import org.eclipse.ui.internal.WorkbenchPlugin;
-import org.eclipse.ui.internal.registry.WorkingSetDescriptor;
-import org.eclipse.ui.internal.registry.WorkingSetRegistry;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.ui.jface.wizard.IWizardPage;
+import org.fdesigner.ui.jface.wizard.Wizard;
+import org.fdesigner.workbench.IWorkingSet;
+import org.fdesigner.workbench.dialogs.IWorkingSetNewWizard;
+import org.fdesigner.workbench.dialogs.IWorkingSetPage;
+import org.fdesigner.workbench.internal.WorkbenchMessages;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
+import org.fdesigner.workbench.internal.registry.WorkingSetDescriptor;
+import org.fdesigner.workbench.internal.registry.WorkingSetRegistry;
 
 /**
  * A new working set wizard allows the user to create a new working set using a

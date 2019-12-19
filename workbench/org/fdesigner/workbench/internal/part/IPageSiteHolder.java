@@ -12,9 +12,9 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal.part;
+package org.fdesigner.workbench.internal.part;
 
-import org.eclipse.ui.part.IPageSite;
+import org.fdesigner.workbench.part.IPageSite;
 
 /**
  * @since 3.4

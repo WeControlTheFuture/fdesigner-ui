@@ -11,13 +11,13 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.dialogs;
+package org.fdesigner.workbench.internal.dialogs;
 
-import org.eclipse.jface.preference.PreferenceLabelProvider;
-import org.eclipse.jface.viewers.IFontProvider;
 import org.eclipse.swt.graphics.Font;
-import org.eclipse.ui.dialogs.FilteredTree;
-import org.eclipse.ui.dialogs.PatternFilter;
+import org.fdesigner.ui.jface.preference.PreferenceLabelProvider;
+import org.fdesigner.ui.jface.viewers.IFontProvider;
+import org.fdesigner.workbench.dialogs.FilteredTree;
+import org.fdesigner.workbench.dialogs.PatternFilter;
 
 /**
  * This PreferenceBoldLabelProvider will bold those elements which really match
