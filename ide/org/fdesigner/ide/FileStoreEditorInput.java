@@ -12,19 +12,19 @@
  *     IBM Corporation - initial API and implementation
  *     Andrey Loskutov <loskutov@gmx.de> - generified interface, bug 461762
  *******************************************************************************/
-package org.eclipse.ui.ide;
+package org.fdesigner.ide;
 
 import java.net.URI;
 
 import org.eclipse.core.filesystem.IFileStore;
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.ui.IMemento;
-import org.eclipse.ui.IPersistableElement;
-import org.eclipse.ui.IURIEditorInput;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.model.IWorkbenchAdapter;
+import org.fdesigner.ide.extensions.IURIEditorInput;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.workbench.IMemento;
+import org.fdesigner.workbench.IPersistableElement;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.model.IWorkbenchAdapter;
 
 /**
  * Implements an IEditorInput instance appropriate for

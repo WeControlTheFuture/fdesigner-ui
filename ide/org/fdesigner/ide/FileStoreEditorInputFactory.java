@@ -11,18 +11,16 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
-package org.eclipse.ui.ide;
+package org.fdesigner.ide;
 
 import java.net.URI;
 import java.net.URISyntaxException;
 
 import org.eclipse.core.filesystem.EFS;
-
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IAdaptable;
-
-import org.eclipse.ui.IElementFactory;
-import org.eclipse.ui.IMemento;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IAdaptable;
+import org.fdesigner.workbench.IElementFactory;
+import org.fdesigner.workbench.IMemento;
 
 
 /**

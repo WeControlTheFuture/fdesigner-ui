@@ -21,7 +21,6 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.eclipse.core.internal.databinding.validation.NumberToLongValidator;
 import org.fdesigner.databinding.conversion.IConverter;
 import org.fdesigner.databinding.internal.databinding.Pair;
 import org.fdesigner.databinding.internal.databinding.conversion.NumberToBigDecimalConverter;
@@ -40,6 +39,7 @@ import org.fdesigner.databinding.internal.databinding.validation.NumberToByteVal
 import org.fdesigner.databinding.internal.databinding.validation.NumberToDoubleValidator;
 import org.fdesigner.databinding.internal.databinding.validation.NumberToFloatValidator;
 import org.fdesigner.databinding.internal.databinding.validation.NumberToIntegerValidator;
+import org.fdesigner.databinding.internal.databinding.validation.NumberToLongValidator;
 import org.fdesigner.databinding.internal.databinding.validation.NumberToShortValidator;
 import org.fdesigner.databinding.internal.databinding.validation.NumberToUnboundedNumberValidator;
 import org.fdesigner.databinding.internal.databinding.validation.ObjectToPrimitiveValidator;

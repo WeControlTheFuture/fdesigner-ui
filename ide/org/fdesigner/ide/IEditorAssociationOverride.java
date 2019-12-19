@@ -11,11 +11,11 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
-package org.eclipse.ui.ide;
+package org.fdesigner.ide;
 
-import org.eclipse.core.runtime.content.IContentType;
-import org.eclipse.ui.IEditorDescriptor;
-import org.eclipse.ui.IEditorInput;
+import org.fdesigner.runtime.contenttype.runtime.content.IContentType;
+import org.fdesigner.workbench.IEditorDescriptor;
+import org.fdesigner.workbench.IEditorInput;
 
 
 /**

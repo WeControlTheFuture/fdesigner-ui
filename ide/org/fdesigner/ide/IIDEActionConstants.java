@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *     Kaloyan Raev <kaloyan.r@zend.com> - Bug 322002
  *******************************************************************************/
-package org.eclipse.ui.ide;
+package org.fdesigner.ide;
 
 /**
  * Identifiers for IDE menus, toolbars and groups.

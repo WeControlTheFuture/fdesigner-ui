@@ -13,23 +13,23 @@
  *     Andrey Loskutov <loskutov@gmx.de> - generified interface, bug 461762
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 478686
  *******************************************************************************/
-package org.eclipse.ui.ide;
+package org.fdesigner.ide;
 
 import org.eclipse.core.resources.IFile;
 import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.IStorage;
 import org.eclipse.core.resources.mapping.ResourceMapping;
 import org.eclipse.core.resources.mapping.ResourceTraversal;
-import org.eclipse.core.runtime.Adapters;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.ui.IEditorInput;
-import org.eclipse.ui.IEditorPart;
-import org.eclipse.ui.IEditorReference;
-import org.eclipse.ui.IStorageEditorInput;
-import org.eclipse.ui.IWorkbenchPage;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.eclipse.ui.part.FileEditorInput;
-import org.eclipse.ui.statushandlers.StatusManager;
+import org.eclipse.swt.internal.ole.win32.IStorage;
+import org.fdesigner.ide.extensions.IStorageEditorInput;
+import org.fdesigner.ide.extensions.part.FileEditorInput;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.runtime.common.runtime.Adapters;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.workbench.IEditorInput;
+import org.fdesigner.workbench.IEditorPart;
+import org.fdesigner.workbench.IEditorReference;
+import org.fdesigner.workbench.IWorkbenchPage;
+import org.fdesigner.workbench.statushandlers.StatusManager;
 
 /**
  * Utility class for manipulating resources and determining correspondences

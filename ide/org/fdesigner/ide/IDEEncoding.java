@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.ide;
+package org.fdesigner.ide;
 
 import java.nio.charset.Charset;
 import java.nio.charset.IllegalCharsetNameException;
@@ -21,12 +21,12 @@ import java.util.Collections;
 import java.util.List;
 
 import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.runtime.content.IContentDescription;
-import org.eclipse.osgi.util.NLS;
-import org.eclipse.ui.WorkbenchEncoding;
-import org.eclipse.ui.internal.WorkbenchPlugin;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.runtime.contenttype.runtime.content.IContentDescription;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.workbench.WorkbenchEncoding;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
 
 /**
  * IDEEncoding is a utility class for managing encoding information that

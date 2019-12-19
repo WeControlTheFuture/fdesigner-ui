@@ -11,26 +11,26 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.ide;
+package org.fdesigner.ide;
 
 import org.eclipse.core.resources.IProject;
 import org.eclipse.core.resources.IncrementalProjectBuilder;
-import org.eclipse.ui.IWorkbenchCommandConstants;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.actions.ActionFactory;
-import org.eclipse.ui.actions.GlobalBuildAction;
-import org.eclipse.ui.actions.NewWizardDropDownAction;
-import org.eclipse.ui.actions.NewWizardMenu;
-import org.eclipse.ui.actions.RetargetAction;
-import org.eclipse.ui.internal.actions.CommandAction;
-import org.eclipse.ui.internal.ide.IDEInternalWorkbenchImages;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
-import org.eclipse.ui.internal.ide.TipsAndTricksAction;
-import org.eclipse.ui.internal.ide.actions.BuildCleanAction;
-import org.eclipse.ui.internal.ide.actions.OpenWorkspaceAction;
-import org.eclipse.ui.internal.ide.actions.ProjectPropertyDialogAction;
-import org.eclipse.ui.internal.ide.actions.RetargetActionWithDefault;
-import org.eclipse.ui.internal.ide.actions.ToggleAutoBuildAction;
+import org.fdesigner.ide.extensions.actions.GlobalBuildAction;
+import org.fdesigner.ide.extensions.actions.NewWizardMenu;
+import org.fdesigner.ide.internal.ide.IDEInternalWorkbenchImages;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.TipsAndTricksAction;
+import org.fdesigner.ide.internal.ide.actions.BuildCleanAction;
+import org.fdesigner.ide.internal.ide.actions.OpenWorkspaceAction;
+import org.fdesigner.ide.internal.ide.actions.ProjectPropertyDialogAction;
+import org.fdesigner.ide.internal.ide.actions.RetargetActionWithDefault;
+import org.fdesigner.ide.internal.ide.actions.ToggleAutoBuildAction;
+import org.fdesigner.workbench.IWorkbenchCommandConstants;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.actions.ActionFactory;
+import org.fdesigner.workbench.actions.NewWizardDropDownAction;
+import org.fdesigner.workbench.actions.RetargetAction;
+import org.fdesigner.workbench.internal.actions.CommandAction;
 
 /**
  * Access to standard actions provided by the IDE workbench (including those of
