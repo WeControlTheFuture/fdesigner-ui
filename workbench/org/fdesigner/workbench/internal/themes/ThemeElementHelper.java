@@ -35,7 +35,7 @@ import org.fdesigner.workbench.themes.IThemeManager;
  * @since 3.0
  */
 public final class ThemeElementHelper {
-	public static void populateDefinition(org.eclipse.e4.ui.css.swt.theme.ITheme cssTheme, ITheme theme,
+	public static void populateDefinition(org.fdesigner.e4.ui.css.swt.theme.ITheme cssTheme, ITheme theme,
 			FontRegistry registry, FontDefinition definition, IPreferenceStore store) {
 		String key = createPreferenceKey(cssTheme, theme, definition.getId());
 		String value = store.getString(key);
@@ -150,7 +150,7 @@ public final class ThemeElementHelper {
 		}
 	}
 
-	public static void populateDefinition(org.eclipse.e4.ui.css.swt.theme.ITheme cssTheme, ITheme theme,
+	public static void populateDefinition(org.fdesigner.e4.ui.css.swt.theme.ITheme cssTheme, ITheme theme,
 			ColorRegistry registry, ColorDefinition definition, IPreferenceStore store) {
 		String key = createPreferenceKey(cssTheme, theme, definition.getId());
 		String value = store.getString(key);
@@ -336,7 +336,7 @@ public final class ThemeElementHelper {
 		return themeId + '.' + id;
 	}
 
-	public static String createPreferenceKey(org.eclipse.e4.ui.css.swt.theme.ITheme cssTheme, ITheme theme, String id) {
+	public static String createPreferenceKey(org.fdesigner.e4.ui.css.swt.theme.ITheme cssTheme, ITheme theme, String id) {
 		String cssThemePrefix = cssTheme != null ? cssTheme.getId() + '.' : ""; //$NON-NLS-1$
 		return cssThemePrefix + createPreferenceKey(theme, id);
 	}

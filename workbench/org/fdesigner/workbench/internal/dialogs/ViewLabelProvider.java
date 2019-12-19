@@ -19,7 +19,6 @@ package org.fdesigner.workbench.internal.dialogs;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.eclipse.e4.ui.workbench.swt.util.ISWTResourceUtilities;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.swt.graphics.Color;
 import org.eclipse.swt.graphics.Image;
@@ -31,6 +30,7 @@ import org.fdesigner.e4.ui.model.application.ui.basic.MWindow;
 import org.fdesigner.e4.ui.workbench.IResourceUtilities;
 import org.fdesigner.e4.ui.workbench.modeling.EModelService;
 import org.fdesigner.e4.ui.workbench.modeling.EPartService;
+import org.fdesigner.e4.ui.workbench.swt.util.ISWTResourceUtilities;
 import org.fdesigner.ui.jface.resource.ImageDescriptor;
 import org.fdesigner.ui.jface.viewers.ColumnLabelProvider;
 import org.fdesigner.workbench.ISharedImages;

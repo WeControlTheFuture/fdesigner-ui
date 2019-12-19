@@ -21,7 +21,6 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import org.eclipse.e4.ui.internal.workbench.renderers.swt.IUpdateService;
 import org.fdesigner.commands.Category;
 import org.fdesigner.commands.Command;
 import org.fdesigner.commands.CommandManager;
@@ -36,6 +35,7 @@ import org.fdesigner.e4.core.commands.internal.ICommandHelpService;
 import org.fdesigner.e4.core.contexts.IEclipseContext;
 import org.fdesigner.e4.ui.model.application.ui.menu.MItem;
 import org.fdesigner.e4.ui.workbench.IPresentationEngine;
+import org.fdesigner.e4.ui.workbench.renderers.swt.internal.workbench.renderers.swt.IUpdateService;
 import org.fdesigner.runtime.common.runtime.ISafeRunnable;
 import org.fdesigner.runtime.common.runtime.SafeRunner;
 import org.fdesigner.ui.jface.commands.PersistentState;

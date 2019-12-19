@@ -31,7 +31,6 @@ import java.util.Map;
 import java.util.ResourceBundle;
 import java.util.Set;
 
-import org.eclipse.e4.ui.css.swt.theme.IThemeEngine;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.custom.SashForm;
 import org.eclipse.swt.custom.StackLayout;
@@ -56,6 +55,7 @@ import org.eclipse.swt.widgets.FontDialog;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Text;
 import org.fdesigner.e4.core.services.events.IEventBroker;
+import org.fdesigner.e4.ui.css.swt.theme.IThemeEngine;
 import org.fdesigner.runtime.common.runtime.CoreException;
 import org.fdesigner.runtime.common.runtime.IStatus;
 import org.fdesigner.services.event.Event;
@@ -704,7 +704,7 @@ public final class ColorsAndFontsPreferencePage extends PreferencePage implement
 		}
 	};
 
-	private org.eclipse.e4.ui.css.swt.theme.ITheme currentCSSTheme;
+	private org.fdesigner.e4.ui.css.swt.theme.ITheme currentCSSTheme;
 
 	private IThemeEngine themeEngine;
 
@@ -789,7 +789,7 @@ public final class ColorsAndFontsPreferencePage extends PreferencePage implement
 	 * @return the active theme if there is one; <code>null</code> if there isn't or
 	 *         {@link #themeEngine} is <code>null</code>.
 	 */
-	private org.eclipse.e4.ui.css.swt.theme.ITheme getActiveTheme() {
+	private org.fdesigner.e4.ui.css.swt.theme.ITheme getActiveTheme() {
 		if (themeEngine != null) {
 			return themeEngine.getActiveTheme();
 		}

@@ -29,10 +29,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 
-import org.eclipse.e4.ui.css.swt.theme.IThemeEngine;
-import org.eclipse.e4.ui.internal.workbench.swt.E4Application;
-import org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine;
-import org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.SWTException;
 import org.eclipse.swt.graphics.GC;
@@ -45,7 +41,12 @@ import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Text;
 import org.fdesigner.e4.core.contexts.IEclipseContext;
+import org.fdesigner.e4.ui.css.swt.theme.ITheme;
+import org.fdesigner.e4.ui.css.swt.theme.IThemeEngine;
 import org.fdesigner.e4.ui.model.application.MApplication;
+import org.fdesigner.e4.ui.workbench.renderers.swt.StackRenderer;
+import org.fdesigner.e4.ui.workbench.swt.internal.workbench.swt.E4Application;
+import org.fdesigner.e4.ui.workbench.swt.internal.workbench.swt.PartRenderingEngine;
 import org.fdesigner.runtime.preferences.runtime.preferences.IEclipsePreferences;
 import org.fdesigner.runtime.preferences.runtime.preferences.InstanceScope;
 import org.fdesigner.runtime.preferences.service.prefs.BackingStoreException;
@@ -77,7 +78,6 @@ import org.fdesigner.workbench.internal.themes.IThemeDescriptor;
 import org.fdesigner.workbench.internal.tweaklets.PreferencePageEnhancer;
 import org.fdesigner.workbench.internal.tweaklets.Tweaklets;
 import org.fdesigner.workbench.internal.util.PrefUtil;
-import org.fdesigner.workbench.themes.ITheme;
 import org.fdesigner.workbench.themes.IThemeManager;
 
 /**
@@ -311,7 +311,7 @@ public class ViewsPreferencePage extends PreferencePage implements IWorkbenchPre
 	}
 
 	private void setColorsAndFontsTheme(ColorsAndFontsTheme theme) {
-		org.eclipse.ui.themes.ITheme currentTheme = PlatformUI.getWorkbench().getThemeManager().getCurrentTheme();
+		org.fdesigner.workbench.themes.ITheme currentTheme = PlatformUI.getWorkbench().getThemeManager().getCurrentTheme();
 		if (theme != null && !currentTheme.getId().equals(theme.getId())) {
 			PlatformUI.getWorkbench().getThemeManager().setCurrentTheme(theme.getId());
 		}
@@ -485,7 +485,7 @@ public class ViewsPreferencePage extends PreferencePage implements IWorkbenchPre
 
 	private List<ColorsAndFontsTheme> getColorsAndFontsThemes() {
 		List<ColorsAndFontsTheme> result = new ArrayList<>();
-		org.eclipse.ui.themes.ITheme currentTheme = PlatformUI.getWorkbench().getThemeManager().getCurrentTheme();
+		org.fdesigner.workbench.themes.ITheme currentTheme = PlatformUI.getWorkbench().getThemeManager().getCurrentTheme();
 
 		IThemeDescriptor[] descs = WorkbenchPlugin.getDefault().getThemeRegistry().getThemes();
 		String defaultThemeString = PlatformUI.getWorkbench().getThemeManager().getTheme(IThemeManager.DEFAULT_THEME)
@@ -527,7 +527,7 @@ public class ViewsPreferencePage extends PreferencePage implements IWorkbenchPre
 	}
 
 	private ColorsAndFontsTheme getCurrentColorsAndFontsTheme() {
-		org.eclipse.ui.themes.ITheme theme = PlatformUI.getWorkbench().getThemeManager().getCurrentTheme();
+		org.fdesigner.workbench.themes.ITheme theme = PlatformUI.getWorkbench().getThemeManager().getCurrentTheme();
 
 		return new ColorsAndFontsTheme(theme.getId(), theme.getLabel());
 	}

@@ -26,7 +26,6 @@ import org.eclipse.swt.widgets.TableItem;
 import org.eclipse.swt.widgets.Text;
 import org.eclipse.swt.widgets.Tree;
 import org.eclipse.swt.widgets.TreeItem;
-import org.eclipse.ui.testing.ContributionInfo;
 import org.fdesigner.commands.AbstractHandler;
 import org.fdesigner.commands.ExecutionEvent;
 import org.fdesigner.framework.framework.Bundle;
@@ -35,6 +34,7 @@ import org.fdesigner.runtime.common.runtime.Adapters;
 import org.fdesigner.supplement.util.NLS;
 import org.fdesigner.ui.jface.layout.GridLayoutFactory;
 import org.fdesigner.ui.jface.window.ToolTip;
+import org.fdesigner.ui.testing.ContributionInfo;
 import org.fdesigner.workbench.handlers.HandlerUtil;
 import org.fdesigner.workbench.internal.testing.ContributionInfoMessages;
 

@@ -42,7 +42,6 @@ import java.util.StringTokenizer;
 
 import org.eclipse.swt.program.Program;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.internal.editorsupport.ComponentSupport;
 import org.fdesigner.commands.common.EventManager;
 import org.fdesigner.runtime.common.runtime.IPath;
 import org.fdesigner.runtime.common.runtime.SafeRunner;
@@ -76,6 +75,7 @@ import org.fdesigner.workbench.internal.IWorkbenchGraphicConstants;
 import org.fdesigner.workbench.internal.WorkbenchImages;
 import org.fdesigner.workbench.internal.WorkbenchMessages;
 import org.fdesigner.workbench.internal.WorkbenchPlugin;
+import org.fdesigner.workbench.internal.editorsupport.ComponentSupport;
 import org.fdesigner.workbench.internal.misc.ExternalProgramImageDescriptor;
 import org.fdesigner.workbench.internal.misc.ProgramImageDescriptor;
 

@@ -16,11 +16,11 @@ package org.fdesigner.workbench.help;
 
 import java.net.URL;
 
+import org.eclipse.help.IContext;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Menu;
 import org.eclipse.swt.widgets.MenuItem;
 import org.fdesigner.ui.jface.action.IAction;
-import org.fdesigner.workbench.contexts.IContext;
 
 /**
  * <p>

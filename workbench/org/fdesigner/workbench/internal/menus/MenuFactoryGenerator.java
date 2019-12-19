@@ -16,8 +16,6 @@ package org.fdesigner.workbench.internal.menus;
 
 import java.util.ArrayList;
 
-import org.eclipse.e4.ui.workbench.renderers.swt.ContributionRecord;
-import org.eclipse.e4.ui.workbench.renderers.swt.ToolBarContributionRecord;
 import org.fdesigner.e4.core.contexts.ContextFunction;
 import org.fdesigner.e4.core.contexts.IEclipseContext;
 import org.fdesigner.e4.ui.model.application.MApplication;
@@ -25,9 +23,11 @@ import org.fdesigner.e4.ui.model.application.ui.menu.MMenuContribution;
 import org.fdesigner.e4.ui.model.application.ui.menu.MToolBarContribution;
 import org.fdesigner.e4.ui.model.application.ui.menu.MTrimContribution;
 import org.fdesigner.e4.ui.model.application.ui.menu.impl.MenuFactoryImpl;
+import org.fdesigner.e4.ui.workbench.IWorkbench;
 import org.fdesigner.e4.ui.workbench.internal.workbench.ContributionsAnalyzer;
+import org.fdesigner.e4.ui.workbench.renderers.swt.ContributionRecord;
+import org.fdesigner.e4.ui.workbench.renderers.swt.ToolBarContributionRecord;
 import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
-import org.fdesigner.workbench.IWorkbench;
 import org.fdesigner.workbench.internal.WorkbenchPlugin;
 
 /**

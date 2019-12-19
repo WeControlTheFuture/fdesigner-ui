@@ -28,7 +28,6 @@ import java.util.Objects;
 import java.util.ResourceBundle;
 import java.util.Set;
 
-import org.eclipse.e4.ui.bindings.EBindingService;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.FileDialog;
 import org.eclipse.swt.widgets.Shell;
@@ -36,6 +35,7 @@ import org.fdesigner.commands.CommandManager;
 import org.fdesigner.commands.ParameterizedCommand;
 import org.fdesigner.commands.common.NotDefinedException;
 import org.fdesigner.commands.contexts.ContextManager;
+import org.fdesigner.e4.ui.bindings.EBindingService;
 import org.fdesigner.runtime.common.runtime.IStatus;
 import org.fdesigner.runtime.common.runtime.ListenerList;
 import org.fdesigner.runtime.common.runtime.SafeRunner;

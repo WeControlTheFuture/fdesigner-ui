@@ -15,12 +15,12 @@
  *******************************************************************************/
 package org.fdesigner.workbench.internal.registry;
 
-import org.eclipse.e4.ui.workbench.swt.util.ISWTResourceUtilities;
 import org.eclipse.emf.common.util.URI;
 import org.fdesigner.e4.ui.model.LocalizationHelper;
 import org.fdesigner.e4.ui.model.application.MApplication;
 import org.fdesigner.e4.ui.model.application.descriptor.basic.MPartDescriptor;
 import org.fdesigner.e4.ui.workbench.IResourceUtilities;
+import org.fdesigner.e4.ui.workbench.swt.util.ISWTResourceUtilities;
 import org.fdesigner.runtime.common.runtime.CoreException;
 import org.fdesigner.runtime.common.runtime.IStatus;
 import org.fdesigner.runtime.common.runtime.Status;

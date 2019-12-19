@@ -21,10 +21,10 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.Optional;
 
-import org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer;
 import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.widgets.Composite;
 import org.fdesigner.commands.common.EventManager;
+import org.fdesigner.e4.ui.workbench.renderers.swt.ContributedPartRenderer;
 import org.fdesigner.runtime.common.runtime.Assert;
 import org.fdesigner.runtime.common.runtime.ListenerList;
 import org.fdesigner.runtime.core.Platform;

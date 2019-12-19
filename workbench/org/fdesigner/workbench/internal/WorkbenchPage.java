@@ -893,10 +893,10 @@ public class WorkbenchPage implements IWorkbenchPage {
 
 		// Note: The non-API type TrimStack is not imported to avoid
 		// https://bugs.eclipse.org/435521
-		if (!(minimizedStack.getObject() instanceof org.eclipse.e4.ui.workbench.addons.minmax.TrimStack))
+		if (!(minimizedStack.getObject() instanceof org.fdesigner.e4.ui.workbench.addons.minmax.TrimStack))
 			return;
 
-		org.eclipse.e4.ui.workbench.addons.minmax.TrimStack ts = (org.eclipse.e4.ui.workbench.addons.minmax.TrimStack) minimizedStack
+		org.fdesigner.e4.ui.workbench.addons.minmax.TrimStack ts = (org.fdesigner.e4.ui.workbench.addons.minmax.TrimStack) minimizedStack
 				.getObject();
 		if (!(ts.getMinimizedElement() instanceof MPartStack))
 			return;
@@ -918,12 +918,12 @@ public class WorkbenchPage implements IWorkbenchPage {
 
 		if (UIEvents.isADD(event)) {
 			if (UIEvents.contains(event, UIEvents.EventTags.NEW_VALUE,
-					org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.MINIMIZED_AND_SHOWING)) {
+					org.fdesigner.e4.ui.workbench.addons.minmax.TrimStack.MINIMIZED_AND_SHOWING)) {
 				firePartVisible(thePart);
 			}
 		} else if (UIEvents.isREMOVE(event)) {
 			if (UIEvents.contains(event, UIEvents.EventTags.OLD_VALUE,
-					org.eclipse.e4.ui.workbench.addons.minmax.TrimStack.MINIMIZED_AND_SHOWING)) {
+					org.fdesigner.e4.ui.workbench.addons.minmax.TrimStack.MINIMIZED_AND_SHOWING)) {
 				firePartHidden(thePart);
 			}
 		}

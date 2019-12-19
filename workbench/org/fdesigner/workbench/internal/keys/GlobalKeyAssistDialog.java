@@ -13,14 +13,14 @@
  ******************************************************************************/
 package org.fdesigner.workbench.internal.keys;
 
-import org.eclipse.e4.ui.bindings.EBindingService;
-import org.eclipse.e4.ui.bindings.internal.KeyAssistDialog;
-import org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher;
 import org.eclipse.swt.widgets.Shell;
 import org.fdesigner.commands.Command;
 import org.fdesigner.commands.ParameterizedCommand;
 import org.fdesigner.e4.core.commands.ECommandService;
 import org.fdesigner.e4.core.contexts.IEclipseContext;
+import org.fdesigner.e4.ui.bindings.EBindingService;
+import org.fdesigner.e4.ui.bindings.internal.KeyAssistDialog;
+import org.fdesigner.e4.ui.bindings.keys.KeyBindingDispatcher;
 import org.fdesigner.supplement.util.NLS;
 import org.fdesigner.ui.jface.bindings.TriggerSequence;
 import org.fdesigner.ui.jface.preference.PreferenceDialog;

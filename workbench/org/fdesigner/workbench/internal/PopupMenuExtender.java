@@ -24,10 +24,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import org.eclipse.e4.ui.internal.workbench.swt.AbstractPartRenderer;
-import org.eclipse.e4.ui.internal.workbench.swt.MenuService;
-import org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer;
-import org.eclipse.e4.ui.workbench.swt.factories.IRendererFactory;
 import org.eclipse.swt.widgets.Display;
 import org.fdesigner.e4.core.contexts.IEclipseContext;
 import org.fdesigner.e4.ui.model.application.ui.MElementContainer;
@@ -39,6 +35,10 @@ import org.fdesigner.e4.ui.model.application.ui.menu.MPopupMenu;
 import org.fdesigner.e4.ui.model.application.ui.menu.impl.MenuFactoryImpl;
 import org.fdesigner.e4.ui.workbench.internal.workbench.ContributionsAnalyzer;
 import org.fdesigner.e4.ui.workbench.internal.workbench.OpaqueElementUtil;
+import org.fdesigner.e4.ui.workbench.renderers.swt.MenuManagerRenderer;
+import org.fdesigner.e4.ui.workbench.swt.factories.IRendererFactory;
+import org.fdesigner.e4.ui.workbench.swt.internal.workbench.swt.AbstractPartRenderer;
+import org.fdesigner.e4.ui.workbench.swt.internal.workbench.swt.MenuService;
 import org.fdesigner.runtime.core.Platform;
 import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
 import org.fdesigner.runtime.registry.runtime.IExtensionDelta;
@@ -165,7 +165,7 @@ public class PopupMenuExtender implements IMenuListener2, IRegistryChangeListene
 		}
 		if (menuModel == null) {
 			menuModel = MenuFactoryImpl.eINSTANCE.createPopupMenu();
-			menuModel.getPersistedState().put(org.eclipse.e4.ui.workbench.IWorkbench.PERSIST_STATE,
+			menuModel.getPersistedState().put(org.fdesigner.e4.ui.workbench.IWorkbench.PERSIST_STATE,
 					Boolean.FALSE.toString());
 			menuModel.setElementId(id);
 			menuModel.getTags().add(ContributionsAnalyzer.MC_POPUP);

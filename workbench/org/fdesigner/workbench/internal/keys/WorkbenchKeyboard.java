@@ -16,10 +16,10 @@ package org.fdesigner.workbench.internal.keys;
 
 import java.util.List;
 
-import org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher;
 import org.eclipse.swt.widgets.Event;
 import org.eclipse.swt.widgets.Listener;
 import org.fdesigner.e4.core.contexts.IEclipseContext;
+import org.fdesigner.e4.ui.bindings.keys.KeyBindingDispatcher;
 
 /**
  * @since 3.5

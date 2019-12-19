@@ -35,6 +35,7 @@ import org.fdesigner.commands.IHandler;
 import org.fdesigner.commands.NotEnabledException;
 import org.fdesigner.commands.NotHandledException;
 import org.fdesigner.commands.ParameterizedCommand;
+import org.fdesigner.commands.common.NotDefinedException;
 import org.fdesigner.e4.core.commands.ECommandService;
 import org.fdesigner.e4.core.commands.EHandlerService;
 import org.fdesigner.e4.core.commands.ExpressionContext;
@@ -61,7 +62,6 @@ import org.fdesigner.runtime.registry.runtime.IExtensionRegistry;
 import org.fdesigner.workbench.ISourceProvider;
 import org.fdesigner.workbench.ISources;
 import org.fdesigner.workbench.IWorkbenchWindow;
-import org.fdesigner.workbench.activities.NotDefinedException;
 import org.fdesigner.workbench.handlers.IHandlerActivation;
 import org.fdesigner.workbench.handlers.IHandlerService;
 import org.fdesigner.workbench.internal.WorkbenchPlugin;
@@ -637,7 +637,7 @@ public class LegacyHandlerService implements IHandlerService {
 				}
 			}
 			registerLegacyHandler(eclipseContext, commandId, commandId,
-					new org.eclipse.ui.internal.handlers.HandlerProxy(commandId, configElement,
+					new org.fdesigner.workbench.internal.handlers.HandlerProxy(commandId, configElement,
 							IWorkbenchRegistryConstants.ATT_CLASS, enabledWhen,
 							eclipseContext.get(IEvaluationService.class)),
 					activeWhen, configElement.getAttribute(IWorkbenchRegistryConstants.ATT_HELP_CONTEXT_ID),
@@ -659,7 +659,7 @@ public class LegacyHandlerService implements IHandlerService {
 					&& (configElement.getChildren(IWorkbenchRegistryConstants.TAG_DEFAULT_HANDLER).length == 0)) {
 				continue;
 			}
-			registerLegacyHandler(eclipseContext, id, id, new org.eclipse.ui.internal.handlers.HandlerProxy(id,
+			registerLegacyHandler(eclipseContext, id, id, new org.fdesigner.workbench.internal.handlers.HandlerProxy(id,
 					configElement, IWorkbenchRegistryConstants.ATT_DEFAULT_HANDLER), null, null, handlerActivations);
 
 		}

@@ -18,8 +18,6 @@ package org.fdesigner.workbench.internal.dialogs.cpd;
 
 import java.util.ArrayList;
 
-import org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer;
-import org.eclipse.e4.ui.workbench.swt.factories.IRendererFactory;
 import org.eclipse.swt.widgets.Shell;
 import org.fdesigner.e4.core.contexts.IEclipseContext;
 import org.fdesigner.e4.ui.model.application.MApplication;
@@ -28,6 +26,8 @@ import org.fdesigner.e4.ui.model.application.ui.basic.MTrimmedWindow;
 import org.fdesigner.e4.ui.model.application.ui.basic.MWindow;
 import org.fdesigner.e4.ui.model.application.ui.menu.MMenu;
 import org.fdesigner.e4.ui.workbench.modeling.EModelService;
+import org.fdesigner.e4.ui.workbench.renderers.swt.MenuManagerRenderer;
+import org.fdesigner.e4.ui.workbench.swt.factories.IRendererFactory;
 import org.fdesigner.ui.jface.action.IAction;
 import org.fdesigner.ui.jface.action.IMenuManager;
 import org.fdesigner.ui.jface.action.IStatusLineManager;
@@ -87,7 +87,7 @@ public class CustomizeActionBars implements IActionBarConfigurer2, IActionBars2 
 		windowModel.setWidget(shell);
 		windowModel.setToBeRendered(false);
 		app.getChildren().add(windowModel);
-		shell.setData(org.eclipse.e4.ui.internal.workbench.swt.AbstractPartRenderer.OWNING_ME, windowModel);
+		shell.setData(org.fdesigner.e4.ui.workbench.swt.internal.workbench.swt.AbstractPartRenderer.OWNING_ME, windowModel);
 
 		// See WorkbenchWindow.setup()
 		mainMenu = modelService.createModelElement(MMenu.class);

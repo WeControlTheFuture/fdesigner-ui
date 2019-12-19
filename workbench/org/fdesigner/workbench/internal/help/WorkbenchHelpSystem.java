@@ -18,6 +18,7 @@ import java.net.URL;
 import java.util.Hashtable;
 
 import org.eclipse.help.HelpSystem;
+import org.eclipse.help.IContext;
 import org.eclipse.help.IContext2;
 import org.eclipse.help.IHelp;
 import org.eclipse.help.IHelpResource;
@@ -42,7 +43,6 @@ import org.fdesigner.ui.jface.action.IAction;
 import org.fdesigner.ui.jface.action.LegacyActionTools;
 import org.fdesigner.workbench.PlatformUI;
 import org.fdesigner.workbench.commands.ICommand;
-import org.fdesigner.workbench.contexts.IContext;
 import org.fdesigner.workbench.help.AbstractHelpUI;
 import org.fdesigner.workbench.help.IWorkbenchHelpSystem;
 import org.fdesigner.workbench.internal.IWorkbenchHelpContextIds;

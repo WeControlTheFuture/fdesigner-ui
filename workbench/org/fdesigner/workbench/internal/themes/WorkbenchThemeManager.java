@@ -17,7 +17,6 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-import org.eclipse.e4.ui.css.swt.theme.IThemeEngine;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.FontData;
 import org.eclipse.swt.graphics.RGB;
@@ -26,6 +25,7 @@ import org.fdesigner.commands.common.EventManager;
 import org.fdesigner.e4.core.contexts.IEclipseContext;
 import org.fdesigner.e4.core.services.events.IEventBroker;
 import org.fdesigner.e4.ui.css.swt.internal.css.swt.definition.IThemeElementDefinitionOverridable;
+import org.fdesigner.e4.ui.css.swt.theme.IThemeEngine;
 import org.fdesigner.e4.ui.model.application.MApplication;
 import org.fdesigner.e4.ui.services.IStylingEngine;
 import org.fdesigner.e4.ui.workbench.UIEvents;
@@ -356,7 +356,7 @@ public class WorkbenchThemeManager extends EventManager implements IThemeManager
 
 	public static class WorkbenchThemeChangedHandler implements EventHandler {
 		@Override
-		public void handleEvent(org.osgi.service.event.Event event) {
+		public void handleEvent(org.fdesigner.services.event.Event event) {
 			IStylingEngine engine = getStylingEngine();
 			ThemeRegistry themeRegistry = getThemeRegistry();
 			FontRegistry fontRegistry = getFontRegistry();
@@ -398,8 +398,8 @@ public class WorkbenchThemeManager extends EventManager implements IThemeManager
 			return WorkbenchThemeManager.getInstance().context;
 		}
 
-		protected org.eclipse.e4.ui.css.swt.theme.ITheme getTheme(org.osgi.service.event.Event event) {
-			org.eclipse.e4.ui.css.swt.theme.ITheme theme = (org.eclipse.e4.ui.css.swt.theme.ITheme) event
+		protected org.fdesigner.e4.ui.css.swt.theme.ITheme getTheme(org.fdesigner.services.event.Event event) {
+			org.fdesigner.e4.ui.css.swt.theme.ITheme theme = (org.fdesigner.e4.ui.css.swt.theme.ITheme) event
 					.getProperty(IThemeEngine.Events.THEME);
 			if (theme == null) {
 				IThemeEngine themeEngine = getContext().get(IThemeEngine.class);
@@ -427,10 +427,10 @@ public class WorkbenchThemeManager extends EventManager implements IThemeManager
 			}
 		}
 
-		protected void overrideAlreadyExistingDefinitions(org.osgi.service.event.Event event, IStylingEngine engine,
+		protected void overrideAlreadyExistingDefinitions(org.fdesigner.services.event.Event event, IStylingEngine engine,
 				ThemeRegistry themeRegistry, FontRegistry fontRegistry, ColorRegistry colorRegistry) {
 			IPreferenceStore store = PrefUtil.getInternalPreferenceStore();
-			org.eclipse.e4.ui.css.swt.theme.ITheme cssTheme = getTheme(event);
+			org.fdesigner.e4.ui.css.swt.theme.ITheme cssTheme = getTheme(event);
 			ITheme theme = getColorsAndFontsTheme();
 
 			for (FontDefinition fontDefinition : themeRegistry.getFonts()) {
@@ -453,10 +453,10 @@ public class WorkbenchThemeManager extends EventManager implements IThemeManager
 			}
 		}
 
-		private void addNewDefinitions(org.osgi.service.event.Event event, IStylingEngine engine,
+		private void addNewDefinitions(org.fdesigner.services.event.Event event, IStylingEngine engine,
 				ThemeRegistry themeRegistry, FontRegistry fontRegistry, ColorRegistry colorRegistry) {
 			IPreferenceStore store = PrefUtil.getInternalPreferenceStore();
-			org.eclipse.e4.ui.css.swt.theme.ITheme cssTheme = getTheme(event);
+			org.fdesigner.e4.ui.css.swt.theme.ITheme cssTheme = getTheme(event);
 			ITheme theme = getColorsAndFontsTheme();
 			ThemesExtension themesExtension = createThemesExtension();
 			engine.style(themesExtension);
@@ -493,12 +493,12 @@ public class WorkbenchThemeManager extends EventManager implements IThemeManager
 			return new ThemesExtension();
 		}
 
-		protected void populateDefinition(org.eclipse.e4.ui.css.swt.theme.ITheme cssTheme, ITheme theme,
+		protected void populateDefinition(org.fdesigner.e4.ui.css.swt.theme.ITheme cssTheme, ITheme theme,
 				ColorRegistry registry, ColorDefinition definition, IPreferenceStore store) {
 			ThemeElementHelper.populateDefinition(cssTheme, theme, registry, definition, store);
 		}
 
-		protected void populateDefinition(org.eclipse.e4.ui.css.swt.theme.ITheme cssTheme, ITheme theme,
+		protected void populateDefinition(org.fdesigner.e4.ui.css.swt.theme.ITheme cssTheme, ITheme theme,
 				FontRegistry registry, FontDefinition definition, IPreferenceStore store) {
 			ThemeElementHelper.populateDefinition(cssTheme, theme, registry, definition, store);
 		}
@@ -512,7 +512,7 @@ public class WorkbenchThemeManager extends EventManager implements IThemeManager
 			sendThemeDefinitionChangedEvent();
 		}
 
-		protected org.eclipse.e4.ui.css.swt.theme.ITheme getTheme() {
+		protected org.fdesigner.e4.ui.css.swt.theme.ITheme getTheme() {
 			IThemeEngine themeEngine = getContext().get(IThemeEngine.class);
 			return themeEngine != null ? themeEngine.getActiveTheme() : null;
 		}
@@ -543,7 +543,7 @@ public class WorkbenchThemeManager extends EventManager implements IThemeManager
 		}
 
 		protected void populateThemeRegistries(ThemeRegistry themeRegistry, FontRegistry fontRegistry,
-				ColorRegistry colorRegistry, org.eclipse.e4.ui.css.swt.theme.ITheme cssTheme, ITheme theme) {
+				ColorRegistry colorRegistry, org.fdesigner.e4.ui.css.swt.theme.ITheme cssTheme, ITheme theme) {
 			IPreferenceStore store = PrefUtil.getInternalPreferenceStore();
 			for (FontDefinition definition : themeRegistry.getFonts()) {
 				if (definition.isOverridden() || definition.isAddedByCss()) {
@@ -557,12 +557,12 @@ public class WorkbenchThemeManager extends EventManager implements IThemeManager
 			}
 		}
 
-		protected void populateDefinition(org.eclipse.e4.ui.css.swt.theme.ITheme cssTheme, ITheme theme,
+		protected void populateDefinition(org.fdesigner.e4.ui.css.swt.theme.ITheme cssTheme, ITheme theme,
 				ColorRegistry registry, ColorDefinition definition, IPreferenceStore store) {
 			ThemeElementHelper.populateDefinition(cssTheme, theme, registry, definition, store);
 		}
 
-		protected void populateDefinition(org.eclipse.e4.ui.css.swt.theme.ITheme cssTheme, ITheme theme,
+		protected void populateDefinition(org.fdesigner.e4.ui.css.swt.theme.ITheme cssTheme, ITheme theme,
 				FontRegistry registry, FontDefinition definition, IPreferenceStore store) {
 			ThemeElementHelper.populateDefinition(cssTheme, theme, registry, definition, store);
 		}

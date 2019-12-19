@@ -41,15 +41,6 @@ import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 import javax.inject.Inject;
 
-import org.eclipse.e4.ui.internal.workbench.renderers.swt.IUpdateService;
-import org.eclipse.e4.ui.model.internal.Position;
-import org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitHost;
-import org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer;
-import org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter;
-import org.eclipse.e4.ui.workbench.renderers.swt.ToolBarManagerRenderer;
-import org.eclipse.e4.ui.workbench.renderers.swt.TrimBarLayout;
-import org.eclipse.e4.ui.workbench.renderers.swt.TrimmedPartLayout;
-import org.eclipse.e4.ui.workbench.swt.factories.IRendererFactory;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.swt.SWT;
@@ -74,6 +65,7 @@ import org.fdesigner.e4.core.di.InjectionException;
 import org.fdesigner.e4.core.di.UIEventTopic;
 import org.fdesigner.e4.core.di.annotations.Optional;
 import org.fdesigner.e4.core.services.events.IEventBroker;
+import org.fdesigner.e4.core.services.log.Logger;
 import org.fdesigner.e4.ui.model.application.MApplication;
 import org.fdesigner.e4.ui.model.application.ui.MElementContainer;
 import org.fdesigner.e4.ui.model.application.ui.MUIElement;
@@ -92,10 +84,12 @@ import org.fdesigner.e4.ui.model.application.ui.menu.MMenuElement;
 import org.fdesigner.e4.ui.model.application.ui.menu.MMenuItem;
 import org.fdesigner.e4.ui.model.application.ui.menu.MMenuSeparator;
 import org.fdesigner.e4.ui.model.application.ui.menu.MToolControl;
+import org.fdesigner.e4.ui.model.internal.Position;
 import org.fdesigner.e4.ui.model.internal.PositionInfo;
 import org.fdesigner.e4.ui.services.EContextService;
 import org.fdesigner.e4.ui.workbench.IPresentationEngine;
 import org.fdesigner.e4.ui.workbench.UIEvents;
+import org.fdesigner.e4.ui.workbench.addons.splitteraddon.SplitHost;
 import org.fdesigner.e4.ui.workbench.internal.workbench.E4Workbench;
 import org.fdesigner.e4.ui.workbench.internal.workbench.OpaqueElementUtil;
 import org.fdesigner.e4.ui.workbench.internal.workbench.PartServiceSaveHandler;
@@ -103,8 +97,14 @@ import org.fdesigner.e4.ui.workbench.internal.workbench.URIHelper;
 import org.fdesigner.e4.ui.workbench.modeling.EModelService;
 import org.fdesigner.e4.ui.workbench.modeling.EPartService;
 import org.fdesigner.e4.ui.workbench.modeling.ISaveHandler;
-import org.fdesigner.e4.ui.workbench.modeling.ISaveHandler.Save;
 import org.fdesigner.e4.ui.workbench.modeling.IWindowCloseHandler;
+import org.fdesigner.e4.ui.workbench.renderers.swt.MenuManagerRenderer;
+import org.fdesigner.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter;
+import org.fdesigner.e4.ui.workbench.renderers.swt.ToolBarManagerRenderer;
+import org.fdesigner.e4.ui.workbench.renderers.swt.TrimBarLayout;
+import org.fdesigner.e4.ui.workbench.renderers.swt.TrimmedPartLayout;
+import org.fdesigner.e4.ui.workbench.renderers.swt.internal.workbench.renderers.swt.IUpdateService;
+import org.fdesigner.e4.ui.workbench.swt.factories.IRendererFactory;
 import org.fdesigner.expressions.Expression;
 import org.fdesigner.expressions.ExpressionInfo;
 import org.fdesigner.expressions.IEvaluationContext;
@@ -118,7 +118,6 @@ import org.fdesigner.runtime.registry.runtime.IExtensionRegistry;
 import org.fdesigner.runtime.registry.runtime.dynamichelpers.IExtensionTracker;
 import org.fdesigner.services.event.Event;
 import org.fdesigner.services.event.EventHandler;
-import org.fdesigner.services.log.Logger;
 import org.fdesigner.supplement.util.NLS;
 import org.fdesigner.ui.jface.action.AbstractGroupMarker;
 import org.fdesigner.ui.jface.action.CoolBarManager;
@@ -880,7 +879,7 @@ public class WorkbenchWindow implements IWorkbenchWindow {
 			if (model.getMainMenu() == null) {
 				mainMenu = modelService.createModelElement(MMenu.class);
 				mainMenu.setElementId(IWorkbenchConstants.MAIN_MENU_ID);
-				mainMenu.getPersistedState().put(org.eclipse.e4.ui.workbench.IWorkbench.PERSIST_STATE,
+				mainMenu.getPersistedState().put(org.fdesigner.e4.ui.workbench.IWorkbench.PERSIST_STATE,
 						Boolean.FALSE.toString());
 
 				renderer = (MenuManagerRenderer) rendererFactory.getRenderer(mainMenu, null);
@@ -1728,7 +1727,7 @@ public class WorkbenchWindow implements IWorkbenchWindow {
 	 * @see org.eclipse.ui.IPageService
 	 */
 	@Override
-	public void addPerspectiveListener(org.eclipse.ui.IPerspectiveListener l) {
+	public void addPerspectiveListener(org.fdesigner.workbench.IPerspectiveListener l) {
 		perspectiveListeners.addPerspectiveListener(l);
 	}
 
@@ -2345,7 +2344,7 @@ public class WorkbenchWindow implements IWorkbenchWindow {
 	 * @see org.eclipse.ui.IPageService
 	 */
 	@Override
-	public void removePerspectiveListener(org.eclipse.ui.IPerspectiveListener l) {
+	public void removePerspectiveListener(org.fdesigner.workbench.IPerspectiveListener l) {
 		perspectiveListeners.removePerspectiveListener(l);
 	}
 

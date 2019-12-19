@@ -15,7 +15,7 @@ package org.fdesigner.workbench.internal.testing;
 
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
-import org.eclipse.ui.testing.IWorkbenchPartTestable;
+import org.fdesigner.ui.testing.IWorkbenchPartTestable;
 import org.fdesigner.workbench.internal.PartSite;
 
 /**

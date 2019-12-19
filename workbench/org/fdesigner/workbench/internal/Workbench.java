@@ -49,11 +49,8 @@ import java.util.Objects;
 import java.util.Set;
 import java.util.UUID;
 
-import org.eclipse.e4.ui.internal.workbench.renderers.swt.IUpdateService;
-import org.eclipse.e4.ui.internal.workbench.swt.E4Application;
-import org.eclipse.e4.ui.internal.workbench.swt.IEventLoopAdvisor;
-import org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.SWTException;
@@ -101,13 +98,16 @@ import org.fdesigner.e4.ui.workbench.internal.workbench.E4XMIResource;
 import org.fdesigner.e4.ui.workbench.modeling.EModelService;
 import org.fdesigner.e4.ui.workbench.modeling.EPartService;
 import org.fdesigner.e4.ui.workbench.modeling.ISaveHandler;
+import org.fdesigner.e4.ui.workbench.renderers.swt.internal.workbench.renderers.swt.IUpdateService;
+import org.fdesigner.e4.ui.workbench.swt.internal.workbench.swt.E4Application;
+import org.fdesigner.e4.ui.workbench.swt.internal.workbench.swt.IEventLoopAdvisor;
+import org.fdesigner.e4.ui.workbench.swt.internal.workbench.swt.PartRenderingEngine;
 import org.fdesigner.framework.framework.BundleContext;
 import org.fdesigner.framework.framework.BundleEvent;
 import org.fdesigner.framework.framework.Constants;
 import org.fdesigner.framework.framework.FrameworkUtil;
 import org.fdesigner.framework.framework.ServiceRegistration;
 import org.fdesigner.framework.framework.SynchronousBundleListener;
-import org.fdesigner.framework.resource.Resource;
 import org.fdesigner.framework.util.tracker.ServiceTracker;
 import org.fdesigner.runtime.app.IApplication;
 import org.fdesigner.runtime.app.IApplicationContext;
@@ -153,11 +153,11 @@ import org.fdesigner.ui.jface.resource.ImageDescriptor;
 import org.fdesigner.ui.jface.util.BidiUtils;
 import org.fdesigner.ui.jface.util.IPropertyChangeListener;
 import org.fdesigner.ui.jface.util.OpenStrategy;
-import org.fdesigner.ui.jface.util.Policy;
 import org.fdesigner.ui.jface.util.SafeRunnable;
 import org.fdesigner.ui.jface.viewers.ISelection;
 import org.fdesigner.ui.jface.window.IShellProvider;
 import org.fdesigner.ui.jface.window.Window;
+import org.fdesigner.ui.testing.ContributionInfo;
 import org.fdesigner.workbench.IDecoratorManager;
 import org.fdesigner.workbench.IEditorInput;
 import org.fdesigner.workbench.IEditorPart;
@@ -222,6 +222,7 @@ import org.fdesigner.workbench.internal.keys.BindingService;
 import org.fdesigner.workbench.internal.keys.show.ShowKeysListener;
 import org.fdesigner.workbench.internal.menus.FocusControlSourceProvider;
 import org.fdesigner.workbench.internal.menus.WorkbenchMenuService;
+import org.fdesigner.workbench.internal.misc.Policy;
 import org.fdesigner.workbench.internal.misc.StatusUtil;
 import org.fdesigner.workbench.internal.misc.UIStats;
 import org.fdesigner.workbench.internal.model.ContributionService;
@@ -281,7 +282,7 @@ import com.ibm.icu.util.ULocale.Category;
  * should not required access to the display.
  * </p>
  */
-public final class Workbench extends EventManager implements IWorkbench, org.eclipse.e4.ui.workbench.IWorkbench {
+public final class Workbench extends EventManager implements IWorkbench, org.fdesigner.e4.ui.workbench.IWorkbench {
 
 	public static final String WORKBENCH_AUTO_SAVE_JOB = "Workbench Auto-Save Job"; //$NON-NLS-1$
 
@@ -567,7 +568,7 @@ public final class Workbench extends EventManager implements IWorkbench, org.ecl
 						new ULocale(ULocale.getDefault(Category.FORMAT).getBaseName() + nlExtensions));
 			}
 
-			System.setProperty(org.eclipse.e4.ui.workbench.IWorkbench.XMI_URI_ARG,
+			System.setProperty(org.fdesigner.e4.ui.workbench.IWorkbench.XMI_URI_ARG,
 					"org.eclipse.ui.workbench/LegacyIDE.e4xmi"); //$NON-NLS-1$
 			Object obj = getApplication(Platform.getCommandLineArgs());
 
@@ -2830,7 +2831,7 @@ public final class Workbench extends EventManager implements IWorkbench, org.ecl
 						.registerService(IWorkbench.class.getName(), this, properties);
 
 				e4WorkbenchService = WorkbenchPlugin.getDefault().getBundleContext()
-						.registerService(org.eclipse.e4.ui.workbench.IWorkbench.class.getName(), this, properties);
+						.registerService(org.fdesigner.e4.ui.workbench.IWorkbench.class.getName(), this, properties);
 
 				Runnable earlyStartup = () -> {
 					// Let the advisor run its start-up code.

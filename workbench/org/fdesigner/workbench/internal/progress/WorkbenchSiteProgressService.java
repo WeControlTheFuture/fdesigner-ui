@@ -19,13 +19,13 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.eclipse.e4.ui.internal.workbench.swt.CSSConstants;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.Cursor;
 import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Shell;
 import org.fdesigner.e4.ui.model.application.ui.basic.MPart;
+import org.fdesigner.e4.ui.workbench.swt.internal.workbench.swt.CSSConstants;
 import org.fdesigner.runtime.common.runtime.Assert;
 import org.fdesigner.runtime.common.runtime.IProgressMonitor;
 import org.fdesigner.runtime.common.runtime.IStatus;

@@ -20,7 +20,6 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-import org.eclipse.e4.ui.internal.workbench.renderers.swt.IUpdateService;
 import org.fdesigner.commands.Category;
 import org.fdesigner.commands.Command;
 import org.fdesigner.commands.IExecutionListener;
@@ -32,6 +31,7 @@ import org.fdesigner.commands.common.NotDefinedException;
 import org.fdesigner.e4.core.contexts.IEclipseContext;
 import org.fdesigner.e4.ui.model.application.ui.menu.MItem;
 import org.fdesigner.e4.ui.workbench.IPresentationEngine;
+import org.fdesigner.e4.ui.workbench.renderers.swt.internal.workbench.renderers.swt.IUpdateService;
 import org.fdesigner.ui.jface.resource.ImageDescriptor;
 import org.fdesigner.workbench.commands.ICommandService;
 import org.fdesigner.workbench.commands.IElementReference;

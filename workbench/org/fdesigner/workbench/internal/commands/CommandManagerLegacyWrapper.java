@@ -52,7 +52,7 @@ import org.fdesigner.workbench.keys.KeySequence;
  * @since 3.1
  */
 public final class CommandManagerLegacyWrapper implements ICommandManager,
-		org.eclipse.core.commands.ICommandManagerListener, IBindingManagerListener, IContextManagerListener {
+org.fdesigner.commands.ICommandManagerListener, IBindingManagerListener, IContextManagerListener {
 
 	/**
 	 * Whether commands should print out information about which handlers are being
@@ -181,7 +181,7 @@ public final class CommandManagerLegacyWrapper implements ICommandManager,
 	}
 
 	@Override
-	public void commandManagerChanged(final org.eclipse.core.commands.CommandManagerEvent event) {
+	public void commandManagerChanged(final org.fdesigner.commands.CommandManagerEvent event) {
 		// Figure out the set of previous category identifiers.
 		final boolean categoryIdsChanged = event.isCategoryChanged();
 		final Set<String> previousCategoryIds;
@@ -307,7 +307,7 @@ public final class CommandManagerLegacyWrapper implements ICommandManager,
 	@Override
 	public Map<KeySequence, Binding> getPartialMatches(KeySequence keySequence) {
 		try {
-			final org.eclipse.jface.bindings.keys.KeySequence sequence = org.eclipse.jface.bindings.keys.KeySequence
+			final org.fdesigner.ui.jface.bindings.keys.KeySequence sequence = org.fdesigner.ui.jface.bindings.keys.KeySequence
 					.getInstance(keySequence.toString());
 			final Map<TriggerSequence, Binding> partialMatches = bindingManager.getPartialMatches(sequence);
 			final Map<KeySequence, Binding> returnValue = new HashMap<>();
@@ -315,13 +315,13 @@ public final class CommandManagerLegacyWrapper implements ICommandManager,
 			while (matchItr.hasNext()) {
 				final Map.Entry<TriggerSequence, Binding> entry = matchItr.next();
 				final TriggerSequence trigger = entry.getKey();
-				if (trigger instanceof org.eclipse.jface.bindings.keys.KeySequence) {
-					final org.eclipse.jface.bindings.keys.KeySequence triggerKey = (org.eclipse.jface.bindings.keys.KeySequence) trigger;
+				if (trigger instanceof org.fdesigner.ui.jface.bindings.keys.KeySequence) {
+					final org.fdesigner.ui.jface.bindings.keys.KeySequence triggerKey = (org.fdesigner.ui.jface.bindings.keys.KeySequence) trigger;
 					returnValue.put(KeySequence.getInstance(triggerKey.toString()), entry.getValue());
 				}
 			}
 			return returnValue;
-		} catch (final ParseException | org.eclipse.ui.keys.ParseException e) {
+		} catch (final ParseException | org.fdesigner.workbench.keys.ParseException e) {
 			return new HashMap<>();
 		}
 	}
@@ -329,7 +329,7 @@ public final class CommandManagerLegacyWrapper implements ICommandManager,
 	@Override
 	public String getPerfectMatch(KeySequence keySequence) {
 		try {
-			final org.eclipse.jface.bindings.keys.KeySequence sequence = org.eclipse.jface.bindings.keys.KeySequence
+			final org.fdesigner.ui.jface.bindings.keys.KeySequence sequence = org.fdesigner.ui.jface.bindings.keys.KeySequence
 					.getInstance(keySequence.toString());
 			final Binding binding = bindingManager.getPerfectMatch(sequence);
 			if (binding == null) {
@@ -346,7 +346,7 @@ public final class CommandManagerLegacyWrapper implements ICommandManager,
 	@Override
 	public boolean isPartialMatch(KeySequence keySequence) {
 		try {
-			final org.eclipse.jface.bindings.keys.KeySequence sequence = org.eclipse.jface.bindings.keys.KeySequence
+			final org.fdesigner.ui.jface.bindings.keys.KeySequence sequence = org.fdesigner.ui.jface.bindings.keys.KeySequence
 					.getInstance(keySequence.toString());
 			return bindingManager.isPartialMatch(sequence);
 		} catch (final ParseException e) {
@@ -357,7 +357,7 @@ public final class CommandManagerLegacyWrapper implements ICommandManager,
 	@Override
 	public boolean isPerfectMatch(KeySequence keySequence) {
 		try {
-			final org.eclipse.jface.bindings.keys.KeySequence sequence = org.eclipse.jface.bindings.keys.KeySequence
+			final org.fdesigner.ui.jface.bindings.keys.KeySequence sequence = org.fdesigner.ui.jface.bindings.keys.KeySequence
 					.getInstance(keySequence.toString());
 			return bindingManager.isPerfectMatch(sequence);
 		} catch (final ParseException e) {

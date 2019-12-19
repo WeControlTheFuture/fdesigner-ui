@@ -22,12 +22,12 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import org.eclipse.e4.ui.bindings.EBindingService;
 import org.eclipse.emf.ecore.EObject;
 import org.fdesigner.commands.CommandManager;
 import org.fdesigner.commands.contexts.ContextManager;
 import org.fdesigner.e4.core.contexts.IEclipseContext;
 import org.fdesigner.e4.core.di.annotations.Execute;
+import org.fdesigner.e4.ui.bindings.EBindingService;
 import org.fdesigner.e4.ui.model.application.MApplication;
 import org.fdesigner.e4.ui.model.application.commands.MBindingContext;
 import org.fdesigner.e4.ui.model.application.commands.MBindingTable;

@@ -14,8 +14,6 @@
 
 package org.fdesigner.workbench.internal.e4.compatibility;
 
-import org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer;
-import org.eclipse.e4.ui.workbench.renderers.swt.ToolBarManagerRenderer;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.custom.CTabFolder;
 import org.eclipse.swt.widgets.Composite;
@@ -27,6 +25,8 @@ import org.fdesigner.e4.ui.model.application.ui.advanced.MPlaceholder;
 import org.fdesigner.e4.ui.model.application.ui.basic.MPart;
 import org.fdesigner.e4.ui.model.application.ui.basic.MPartStack;
 import org.fdesigner.e4.ui.model.application.ui.menu.MToolBar;
+import org.fdesigner.e4.ui.workbench.renderers.swt.StackRenderer;
+import org.fdesigner.e4.ui.workbench.renderers.swt.ToolBarManagerRenderer;
 import org.fdesigner.ui.jface.action.IMenuManager;
 import org.fdesigner.ui.jface.action.IToolBarManager;
 import org.fdesigner.ui.jface.action.MenuManager;

@@ -24,7 +24,6 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-import org.eclipse.ui.internal.editorsupport.ComponentSupport;
 import org.fdesigner.e4.core.contexts.IEclipseContext;
 import org.fdesigner.e4.ui.model.application.ui.basic.MPart;
 import org.fdesigner.e4.ui.workbench.IPresentationEngine;
@@ -52,6 +51,7 @@ import org.fdesigner.workbench.PartInitException;
 import org.fdesigner.workbench.PlatformUI;
 import org.fdesigner.workbench.WorkbenchException;
 import org.fdesigner.workbench.XMLMemento;
+import org.fdesigner.workbench.internal.editorsupport.ComponentSupport;
 import org.fdesigner.workbench.internal.part.NullEditorInput;
 import org.fdesigner.workbench.internal.registry.EditorDescriptor;
 import org.fdesigner.workbench.internal.registry.EditorRegistry;

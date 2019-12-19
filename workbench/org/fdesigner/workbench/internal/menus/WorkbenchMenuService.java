@@ -20,13 +20,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.eclipse.e4.ui.internal.workbench.swt.AbstractPartRenderer;
-import org.eclipse.e4.ui.workbench.renderers.swt.ContributionRecord;
-import org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer;
-import org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter;
-import org.eclipse.e4.ui.workbench.renderers.swt.ToolBarContributionRecord;
-import org.eclipse.e4.ui.workbench.renderers.swt.ToolBarManagerRenderer;
-import org.eclipse.e4.ui.workbench.swt.factories.IRendererFactory;
 import org.eclipse.emf.common.notify.Notifier;
 import org.eclipse.swt.widgets.Menu;
 import org.eclipse.swt.widgets.ToolBar;
@@ -50,6 +43,13 @@ import org.fdesigner.e4.ui.workbench.IPresentationEngine;
 import org.fdesigner.e4.ui.workbench.internal.workbench.ContributionsAnalyzer;
 import org.fdesigner.e4.ui.workbench.internal.workbench.UIEventPublisher;
 import org.fdesigner.e4.ui.workbench.modeling.EModelService;
+import org.fdesigner.e4.ui.workbench.renderers.swt.ContributionRecord;
+import org.fdesigner.e4.ui.workbench.renderers.swt.MenuManagerRenderer;
+import org.fdesigner.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter;
+import org.fdesigner.e4.ui.workbench.renderers.swt.ToolBarContributionRecord;
+import org.fdesigner.e4.ui.workbench.renderers.swt.ToolBarManagerRenderer;
+import org.fdesigner.e4.ui.workbench.swt.factories.IRendererFactory;
+import org.fdesigner.e4.ui.workbench.swt.internal.workbench.swt.AbstractPartRenderer;
 import org.fdesigner.expressions.IEvaluationContext;
 import org.fdesigner.ui.jface.action.ContributionManager;
 import org.fdesigner.ui.jface.action.MenuManager;
@@ -137,7 +137,7 @@ public class WorkbenchMenuService implements IMenuService, IMenuServiceWorkaroun
 			return;
 		}
 		MMenuContribution menuContribution = MenuFactoryImpl.eINSTANCE.createMenuContribution();
-		menuContribution.getPersistedState().put(org.eclipse.e4.ui.workbench.IWorkbench.PERSIST_STATE,
+		menuContribution.getPersistedState().put(org.fdesigner.e4.ui.workbench.IWorkbench.PERSIST_STATE,
 				Boolean.FALSE.toString());
 		menuContribution.setElementId(factory.getNamespace() + ":" + factory.hashCode()); //$NON-NLS-1$
 
@@ -168,7 +168,7 @@ public class WorkbenchMenuService implements IMenuService, IMenuServiceWorkaroun
 	private void processToolbarChildren(AbstractContributionFactory factory, MenuLocationURI location, String parentId,
 			String position) {
 		MToolBarContribution toolBarContribution = MenuFactoryImpl.eINSTANCE.createToolBarContribution();
-		toolBarContribution.getPersistedState().put(org.eclipse.e4.ui.workbench.IWorkbench.PERSIST_STATE,
+		toolBarContribution.getPersistedState().put(org.fdesigner.e4.ui.workbench.IWorkbench.PERSIST_STATE,
 				Boolean.FALSE.toString());
 		toolBarContribution.setElementId(factory.getNamespace() + ":" + factory.hashCode()); //$NON-NLS-1$
 		toolBarContribution.setParentId(parentId);

@@ -28,8 +28,6 @@ import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 import javax.inject.Inject;
 
-import org.eclipse.e4.ui.bindings.internal.BindingTableManager;
-import org.eclipse.e4.ui.bindings.internal.ContextSet;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionListener;
 import org.eclipse.swt.graphics.Image;
@@ -49,6 +47,8 @@ import org.fdesigner.commands.common.NotDefinedException;
 import org.fdesigner.e4.core.commands.ECommandService;
 import org.fdesigner.e4.core.di.annotations.Optional;
 import org.fdesigner.e4.core.di.extensions.Preference;
+import org.fdesigner.e4.ui.bindings.internal.BindingTableManager;
+import org.fdesigner.e4.ui.bindings.internal.ContextSet;
 import org.fdesigner.supplement.util.NLS;
 import org.fdesigner.ui.jface.bindings.Binding;
 import org.fdesigner.ui.jface.bindings.TriggerSequence;

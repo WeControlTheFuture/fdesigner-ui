@@ -23,11 +23,11 @@ import java.util.List;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.stream.Collectors;
 
-import org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitHost;
 import org.fdesigner.commands.Command;
 import org.fdesigner.commands.ParameterizedCommand;
 import org.fdesigner.e4.ui.model.application.ui.advanced.MPerspective;
 import org.fdesigner.e4.ui.model.application.ui.basic.MPart;
+import org.fdesigner.e4.ui.workbench.addons.splitteraddon.SplitHost;
 import org.fdesigner.e4.ui.workbench.internal.workbench.PartServiceImpl;
 import org.fdesigner.e4.ui.workbench.modeling.EModelService;
 import org.fdesigner.e4.ui.workbench.modeling.EPartService;

@@ -17,12 +17,12 @@ package org.fdesigner.workbench.internal.e4.compatibility;
 import javax.inject.Inject;
 
 import org.eclipse.swt.widgets.Composite;
-import org.eclipse.ui.testing.ContributionInfo;
 import org.fdesigner.e4.ui.model.application.ui.basic.MPart;
 import org.fdesigner.e4.ui.model.application.ui.basic.MWindow;
 import org.fdesigner.e4.ui.workbench.modeling.EModelService;
 import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
 import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.ui.testing.ContributionInfo;
 import org.fdesigner.workbench.IEditorInput;
 import org.fdesigner.workbench.IEditorPart;
 import org.fdesigner.workbench.IEditorRegistry;

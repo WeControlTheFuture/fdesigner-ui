@@ -19,12 +19,12 @@ package org.fdesigner.workbench.internal;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer;
 import org.eclipse.swt.custom.CTabItem;
 import org.eclipse.swt.graphics.Font;
 import org.fdesigner.commands.Command;
 import org.fdesigner.commands.ParameterizedCommand;
 import org.fdesigner.e4.ui.model.application.ui.basic.MPart;
+import org.fdesigner.e4.ui.workbench.renderers.swt.StackRenderer;
 import org.fdesigner.runtime.preferences.runtime.preferences.IEclipsePreferences;
 import org.fdesigner.runtime.preferences.runtime.preferences.InstanceScope;
 import org.fdesigner.ui.jface.viewers.BoldStylerProvider;

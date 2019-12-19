@@ -15,7 +15,6 @@
 
 package org.fdesigner.workbench.internal;
 
-import org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.custom.CTabFolder;
 import org.eclipse.swt.graphics.Point;
@@ -32,6 +31,7 @@ import org.fdesigner.commands.ExecutionException;
 import org.fdesigner.e4.ui.model.application.ui.basic.MPart;
 import org.fdesigner.e4.ui.model.application.ui.menu.MMenu;
 import org.fdesigner.e4.ui.workbench.IPresentationEngine;
+import org.fdesigner.e4.ui.workbench.renderers.swt.StackRenderer;
 import org.fdesigner.expressions.EvaluationResult;
 import org.fdesigner.expressions.Expression;
 import org.fdesigner.expressions.ExpressionInfo;

@@ -25,7 +25,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem;
 import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.events.SelectionListener;
 import org.eclipse.swt.graphics.Image;
@@ -37,6 +36,7 @@ import org.eclipse.swt.widgets.MenuItem;
 import org.eclipse.swt.widgets.Tree;
 import org.fdesigner.commands.Command;
 import org.fdesigner.commands.ParameterizedCommand;
+import org.fdesigner.e4.ui.workbench.renderers.swt.HandledContributionItem;
 import org.fdesigner.supplement.util.NLS;
 import org.fdesigner.ui.jface.bindings.Binding;
 import org.fdesigner.ui.jface.bindings.BindingManager;

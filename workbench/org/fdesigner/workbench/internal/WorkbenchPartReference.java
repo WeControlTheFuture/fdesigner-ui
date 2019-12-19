@@ -21,7 +21,6 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-import org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer;
 import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.widgets.Control;
 import org.fdesigner.e4.core.contexts.IEclipseContext;
@@ -31,6 +30,7 @@ import org.fdesigner.e4.ui.workbench.IPresentationEngine;
 import org.fdesigner.e4.ui.workbench.UIEvents;
 import org.fdesigner.e4.ui.workbench.modeling.EPartService;
 import org.fdesigner.e4.ui.workbench.modeling.EPartService.PartState;
+import org.fdesigner.e4.ui.workbench.renderers.swt.SWTPartRenderer;
 import org.fdesigner.runtime.common.runtime.Adapters;
 import org.fdesigner.runtime.common.runtime.IStatus;
 import org.fdesigner.runtime.common.runtime.ListenerList;

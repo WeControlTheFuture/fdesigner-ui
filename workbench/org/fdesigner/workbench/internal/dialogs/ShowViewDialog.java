@@ -20,7 +20,6 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import org.eclipse.e4.ui.internal.workbench.swt.WorkbenchSWTActivator;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.FocusAdapter;
 import org.eclipse.swt.events.FocusEvent;
@@ -45,6 +44,7 @@ import org.fdesigner.e4.ui.model.application.ui.basic.MWindow;
 import org.fdesigner.e4.ui.services.help.EHelpService;
 import org.fdesigner.e4.ui.workbench.modeling.EModelService;
 import org.fdesigner.e4.ui.workbench.modeling.EPartService;
+import org.fdesigner.e4.ui.workbench.swt.internal.workbench.swt.WorkbenchSWTActivator;
 import org.fdesigner.ui.jface.dialogs.Dialog;
 import org.fdesigner.ui.jface.dialogs.IDialogConstants;
 import org.fdesigner.ui.jface.dialogs.IDialogLabelKeys;

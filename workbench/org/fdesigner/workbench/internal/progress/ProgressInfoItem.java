@@ -25,7 +25,6 @@ import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
 
-import org.eclipse.e4.ui.css.swt.theme.IThemeEngine;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.MouseAdapter;
 import org.eclipse.swt.events.MouseEvent;
@@ -51,6 +50,8 @@ import org.fdesigner.commands.common.NotDefinedException;
 import org.fdesigner.e4.core.commands.EHandlerService;
 import org.fdesigner.e4.core.contexts.IEclipseContext;
 import org.fdesigner.e4.core.contexts.RunAndTrack;
+import org.fdesigner.e4.ui.css.swt.theme.ITheme;
+import org.fdesigner.e4.ui.css.swt.theme.IThemeEngine;
 import org.fdesigner.runtime.common.runtime.IProgressMonitor;
 import org.fdesigner.runtime.common.runtime.IStatus;
 import org.fdesigner.runtime.common.runtime.Status;
@@ -71,7 +72,6 @@ import org.fdesigner.workbench.internal.WorkbenchImages;
 import org.fdesigner.workbench.progress.IProgressConstants;
 import org.fdesigner.workbench.progress.IProgressConstants2;
 import org.fdesigner.workbench.statushandlers.StatusManager;
-import org.fdesigner.workbench.themes.ITheme;
 
 import com.ibm.icu.text.DateFormat;
 

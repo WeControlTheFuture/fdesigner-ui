@@ -14,9 +14,9 @@
  *******************************************************************************/
 package org.fdesigner.workbench.internal.dialogs.cpd;
 
-import org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.MessageBox;
+import org.fdesigner.e4.ui.workbench.renderers.swt.HandledContributionItem;
 import org.fdesigner.supplement.util.NLS;
 import org.fdesigner.ui.jface.viewers.AbstractTreeViewer;
 import org.fdesigner.ui.jface.viewers.CheckStateChangedEvent;

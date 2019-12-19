@@ -13,11 +13,11 @@
  ******************************************************************************/
 package org.fdesigner.workbench.internal.testing;
 
-import org.eclipse.ui.testing.ContributionInfo;
 import org.fdesigner.framework.framework.Bundle;
 import org.fdesigner.framework.framework.FrameworkUtil;
 import org.fdesigner.runtime.common.runtime.IAdapterFactory;
 import org.fdesigner.runtime.jobs.runtime.jobs.Job;
+import org.fdesigner.ui.testing.ContributionInfo;
 import org.fdesigner.workbench.IPluginContribution;
 import org.fdesigner.workbench.internal.decorators.DecoratorDefinition;
 import org.fdesigner.workbench.internal.dialogs.WizardCollectionElement;

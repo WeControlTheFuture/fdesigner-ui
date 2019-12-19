@@ -26,6 +26,8 @@ import org.fdesigner.commands.ParameterizedCommand;
 import org.fdesigner.commands.SerializationException;
 import org.fdesigner.workbench.menus.UIElement;
 import org.fdesigner.workbench.services.IDisposable;
+import org.fdesigner.commands.common.NotDefinedException;
+
 
 /**
  * <p>

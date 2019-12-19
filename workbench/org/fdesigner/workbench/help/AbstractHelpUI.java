@@ -15,7 +15,8 @@ package org.fdesigner.workbench.help;
 
 import java.net.URL;
 
-import org.fdesigner.workbench.contexts.IContext;
+import org.eclipse.help.IContext;
+
 
 /**
  * Abstract base class for the help system UI.

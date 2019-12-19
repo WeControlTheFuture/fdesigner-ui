@@ -18,8 +18,6 @@ package org.fdesigner.workbench.internal.handlers;
 import java.util.Arrays;
 import java.util.Optional;
 
-import org.eclipse.e4.ui.bindings.internal.BindingTableManager;
-import org.eclipse.e4.ui.bindings.internal.ContextSet;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.GC;
 import org.eclipse.swt.graphics.Point;
@@ -35,6 +33,8 @@ import org.fdesigner.commands.AbstractHandler;
 import org.fdesigner.commands.ExecutionEvent;
 import org.fdesigner.commands.ParameterizedCommand;
 import org.fdesigner.e4.core.commands.ECommandService;
+import org.fdesigner.e4.ui.bindings.internal.BindingTableManager;
+import org.fdesigner.e4.ui.bindings.internal.ContextSet;
 import org.fdesigner.runtime.common.runtime.Status;
 import org.fdesigner.supplement.util.NLS;
 import org.fdesigner.ui.jface.bindings.Binding;
