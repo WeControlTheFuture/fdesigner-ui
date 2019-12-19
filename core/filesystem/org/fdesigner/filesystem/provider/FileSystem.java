@@ -11,12 +11,19 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.filesystem.provider;
+package org.fdesigner.filesystem.provider;
 
 import java.net.URI;
 import java.net.URISyntaxException;
-import org.eclipse.core.filesystem.*;
-import org.eclipse.core.runtime.*;
+
+import org.fdesigner.filesystem.EFS;
+import org.fdesigner.filesystem.IFileStore;
+import org.fdesigner.filesystem.IFileSystem;
+import org.fdesigner.filesystem.IFileTree;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.PlatformObject;
 
 /**
  * The common superclass for all file system implementations.  Instances

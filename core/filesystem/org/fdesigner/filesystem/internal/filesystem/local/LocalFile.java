@@ -16,20 +16,42 @@
  *                                [464072] Refresh on Access ignored during text search
  * 	   Andrey Loskutov (loskutov@gmx.de) - [500306] Read-only files, and projects containing them, cannot be deleted
  *******************************************************************************/
-package org.eclipse.core.internal.filesystem.local;
+package org.fdesigner.filesystem.internal.filesystem.local;
 
-import java.io.*;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.net.URI;
-import java.nio.file.*;
-import org.eclipse.core.filesystem.*;
-import org.eclipse.core.filesystem.URIUtil;
-import org.eclipse.core.filesystem.provider.FileInfo;
-import org.eclipse.core.filesystem.provider.FileStore;
-import org.eclipse.core.internal.filesystem.Messages;
-import org.eclipse.core.internal.filesystem.Policy;
-import org.eclipse.core.runtime.*;
-import org.eclipse.core.runtime.Path;
-import org.eclipse.osgi.util.NLS;
+import java.nio.file.AccessDeniedException;
+import java.nio.file.DirectoryNotEmptyException;
+import java.nio.file.FileAlreadyExistsException;
+import java.nio.file.Files;
+import java.nio.file.NoSuchFileException;
+
+import org.fdesigner.filesystem.EFS;
+import org.fdesigner.filesystem.IFileInfo;
+import org.fdesigner.filesystem.IFileStore;
+import org.fdesigner.filesystem.IFileSystem;
+import org.fdesigner.filesystem.URIUtil;
+import org.fdesigner.filesystem.internal.filesystem.Messages;
+import org.fdesigner.filesystem.internal.filesystem.Policy;
+import org.fdesigner.filesystem.provider.FileInfo;
+import org.fdesigner.filesystem.provider.FileStore;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.MultiStatus;
+import org.fdesigner.runtime.common.runtime.NullProgressMonitor;
+import org.fdesigner.runtime.common.runtime.OperationCanceledException;
+import org.fdesigner.runtime.common.runtime.Path;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.common.runtime.SubMonitor;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * File system implementation based on storage of files in the local

@@ -15,14 +15,17 @@
  * Martin Oberhuber (Wind River) - [184433] liblocalfile for Linux x86_64
  * Martin Oberhuber (Wind River) - [184534] get attributes from native lib
  *******************************************************************************/
-package org.eclipse.core.internal.filesystem.local;
+package org.fdesigner.filesystem.internal.filesystem.local;
 
 import java.io.File;
 import java.net.URI;
-import org.eclipse.core.filesystem.*;
-import org.eclipse.core.filesystem.provider.FileSystem;
-import org.eclipse.core.runtime.IPath;
-import org.eclipse.osgi.service.environment.Constants;
+
+import org.fdesigner.filesystem.EFS;
+import org.fdesigner.filesystem.IFileStore;
+import org.fdesigner.filesystem.IFileSystem;
+import org.fdesigner.filesystem.provider.FileSystem;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.supplement.service.environment.Constants;
 
 /**
  * File system provider for the "file" scheme.  This file system provides access to

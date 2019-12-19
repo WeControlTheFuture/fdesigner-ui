@@ -12,11 +12,11 @@
  *     IBM Corporation - initial API and implementation
  * 	Martin Oberhuber (Wind River) - [170317] add symbolic link support to API
  *******************************************************************************/
-package org.eclipse.core.filesystem.provider;
+package org.fdesigner.filesystem.provider;
 
-import org.eclipse.core.filesystem.EFS;
-import org.eclipse.core.filesystem.IFileInfo;
-import org.eclipse.core.internal.filesystem.local.LocalFileNativesManager;
+import org.fdesigner.filesystem.EFS;
+import org.fdesigner.filesystem.IFileInfo;
+import org.fdesigner.filesystem.internal.filesystem.local.LocalFileNativesManager;
 
 /**
  * This class should be used by file system providers in their implementation

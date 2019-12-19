@@ -13,13 +13,16 @@
  * 		Martin Oberhuber (Wind River) - [170317] add symbolic link support to API
  * 		Sergey Prigogin (Google) - [464072] Refresh on Access ignored during text search
 ******************************************************************************/
-package org.eclipse.core.filesystem;
+package org.fdesigner.filesystem;
 
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.URI;
-import org.eclipse.core.filesystem.provider.FileStore;
-import org.eclipse.core.runtime.*;
+
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IAdaptable;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
 
 /**
  * A file store is responsible for storage and retrieval of a single file in some file system.  

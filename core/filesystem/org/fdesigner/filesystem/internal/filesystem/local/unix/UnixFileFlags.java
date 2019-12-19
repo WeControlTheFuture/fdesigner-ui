@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.internal.filesystem.local.unix;
+package org.fdesigner.filesystem.internal.filesystem.local.unix;
 
 public class UnixFileFlags {
 

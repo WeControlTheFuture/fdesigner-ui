@@ -11,15 +11,21 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.internal.filesystem;
+package org.fdesigner.filesystem.internal.filesystem;
 
 import java.io.File;
 import java.net.URL;
 import java.util.Collection;
 import java.util.Enumeration;
-import org.eclipse.core.runtime.*;
-import org.eclipse.osgi.service.datalocation.Location;
-import org.osgi.framework.*;
+
+import org.fdesigner.framework.framework.BundleContext;
+import org.fdesigner.framework.framework.FrameworkUtil;
+import org.fdesigner.framework.framework.InvalidSyntaxException;
+import org.fdesigner.framework.framework.ServiceReference;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Path;
+import org.fdesigner.supplement.service.datalocation.Location;
 
 /**
  * This class abstracts away implementation details of the filesystem

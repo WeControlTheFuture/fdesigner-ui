@@ -12,14 +12,26 @@
  *     IBM Corporation - initial API and implementation
  *     James Blackburn (Broadcom Corp.) - ongoing development
  *******************************************************************************/
-package org.eclipse.core.filesystem.provider;
+package org.fdesigner.filesystem.provider;
 
-import java.io.*;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.net.URI;
-import org.eclipse.core.filesystem.*;
-import org.eclipse.core.internal.filesystem.*;
-import org.eclipse.core.runtime.*;
-import org.eclipse.osgi.util.NLS;
+
+import org.fdesigner.filesystem.EFS;
+import org.fdesigner.filesystem.IFileInfo;
+import org.fdesigner.filesystem.IFileStore;
+import org.fdesigner.filesystem.IFileSystem;
+import org.fdesigner.filesystem.internal.filesystem.FileCache;
+import org.fdesigner.filesystem.internal.filesystem.Messages;
+import org.fdesigner.filesystem.internal.filesystem.Policy;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.PlatformObject;
+import org.fdesigner.runtime.common.runtime.SubMonitor;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * The abstract superclass of all {@link IFileStore} implementations.  All

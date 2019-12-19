@@ -13,17 +13,24 @@
  *     Chris McGee (IBM) - Bug 380325 - Release filesystem fragment providing Java 7 NIO2 support
  *     Sergey Prigogin (Google) - ongoing development
  *******************************************************************************/
-package org.eclipse.core.internal.filesystem.local.nio;
+package org.fdesigner.filesystem.internal.filesystem.local.nio;
 
 import java.io.IOException;
-import java.nio.file.*;
-import java.nio.file.attribute.*;
+import java.nio.file.Files;
+import java.nio.file.LinkOption;
+import java.nio.file.NoSuchFileException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.attribute.PosixFileAttributeView;
+import java.nio.file.attribute.PosixFileAttributes;
+import java.nio.file.attribute.PosixFilePermission;
 import java.util.HashSet;
 import java.util.Set;
-import org.eclipse.core.filesystem.EFS;
-import org.eclipse.core.filesystem.IFileInfo;
-import org.eclipse.core.filesystem.provider.FileInfo;
-import org.eclipse.core.internal.filesystem.local.NativeHandler;
+
+import org.fdesigner.filesystem.EFS;
+import org.fdesigner.filesystem.IFileInfo;
+import org.fdesigner.filesystem.internal.filesystem.local.NativeHandler;
+import org.fdesigner.filesystem.provider.FileInfo;
 
 /**
  * NativeHandler for POSIX using only Java 7 API's. It can be used for any

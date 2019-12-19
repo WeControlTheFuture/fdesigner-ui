@@ -11,9 +11,11 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.filesystem.provider;
+package org.fdesigner.filesystem.provider;
 
-import org.eclipse.core.filesystem.*;
+import org.fdesigner.filesystem.IFileInfo;
+import org.fdesigner.filesystem.IFileStore;
+import org.fdesigner.filesystem.IFileTree;
 
 /**
  * The abstract superclass of all {@link IFileTree} implementations.  

@@ -11,13 +11,16 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.internal.filesystem;
+package org.fdesigner.filesystem.internal.filesystem;
 
-import java.io.*;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.util.Date;
-import org.eclipse.core.internal.runtime.RuntimeLog;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.Status;
+
+import org.fdesigner.runtime.common.internal.runtime.RuntimeLog;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.Status;
 
 /**
  * Grab bag of utility methods for the file system plugin

@@ -11,10 +11,10 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.internal.filesystem.local;
+package org.fdesigner.filesystem.internal.filesystem.local;
 
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.ProgressMonitorWrapper;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.ProgressMonitorWrapper;
 
 /**
  * This class provides a simulation of progress. This is useful

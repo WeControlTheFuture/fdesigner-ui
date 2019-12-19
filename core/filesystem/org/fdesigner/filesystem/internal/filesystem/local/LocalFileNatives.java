@@ -12,16 +12,18 @@
  *     IBM Corporation - initial API and implementation
  * Martin Oberhuber (Wind River) - [184534] get attributes from native lib
  *******************************************************************************/
-package org.eclipse.core.internal.filesystem.local;
+package org.fdesigner.filesystem.internal.filesystem.local;
 
 import java.net.URL;
 import java.util.Enumeration;
-import org.eclipse.core.filesystem.IFileInfo;
-import org.eclipse.core.filesystem.IFileSystem;
-import org.eclipse.core.filesystem.provider.FileInfo;
-import org.eclipse.core.internal.filesystem.*;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.osgi.util.NLS;
+
+import org.fdesigner.filesystem.IFileInfo;
+import org.fdesigner.filesystem.internal.filesystem.FileSystemAccess;
+import org.fdesigner.filesystem.internal.filesystem.Messages;
+import org.fdesigner.filesystem.internal.filesystem.Policy;
+import org.fdesigner.filesystem.provider.FileInfo;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.supplement.util.NLS;
 
 abstract class LocalFileNatives {
 	private static boolean hasNatives = false;

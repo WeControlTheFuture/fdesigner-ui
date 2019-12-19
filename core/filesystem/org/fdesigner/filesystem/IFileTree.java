@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.filesystem;
+package org.fdesigner.filesystem;
 
 /**
  * This interface is used to query a tree of file stores.

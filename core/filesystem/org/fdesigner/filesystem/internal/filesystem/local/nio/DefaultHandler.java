@@ -13,15 +13,18 @@
  *     Chris McGee (IBM) - Bug 380325 - Release filesystem fragment providing Java 7 NIO2 support
  *     Sergey Prigogin (Google) - Bug 458006 - Fix tests that fail on Mac when filesystem.java7 is used
  *******************************************************************************/
-package org.eclipse.core.internal.filesystem.local.nio;
+package org.fdesigner.filesystem.internal.filesystem.local.nio;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.*;
-import org.eclipse.core.filesystem.EFS;
-import org.eclipse.core.filesystem.IFileInfo;
-import org.eclipse.core.filesystem.provider.FileInfo;
-import org.eclipse.core.internal.filesystem.local.NativeHandler;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
+import org.fdesigner.filesystem.EFS;
+import org.fdesigner.filesystem.IFileInfo;
+import org.fdesigner.filesystem.internal.filesystem.local.NativeHandler;
+import org.fdesigner.filesystem.provider.FileInfo;
 
 /**
  * Default implementation of NativeHandler using only Java 7 API's. It can be

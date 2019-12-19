@@ -11,13 +11,15 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.internal.filesystem;
+package org.fdesigner.filesystem.internal.filesystem;
 
 import java.net.URI;
-import org.eclipse.core.filesystem.*;
-import org.eclipse.core.filesystem.provider.FileSystem;
-import org.eclipse.core.runtime.IPath;
-import org.eclipse.core.runtime.Path;
+
+import org.fdesigner.filesystem.IFileStore;
+import org.fdesigner.filesystem.IFileSystem;
+import org.fdesigner.filesystem.provider.FileSystem;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.Path;
 
 /**
  * The null file system.

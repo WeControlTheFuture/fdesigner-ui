@@ -12,19 +12,22 @@
  *     IBM Corporation - initial API and implementation
  *     Sergey Prigogin (Google) - ongoing development
  *******************************************************************************/
-package org.eclipse.core.internal.filesystem.local.unix;
+package org.fdesigner.filesystem.internal.filesystem.local.unix;
 
 import java.io.File;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.util.Enumeration;
-import org.eclipse.core.filesystem.EFS;
-import org.eclipse.core.filesystem.IFileInfo;
-import org.eclipse.core.filesystem.provider.FileInfo;
-import org.eclipse.core.internal.filesystem.*;
-import org.eclipse.core.internal.filesystem.local.Convert;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.osgi.util.NLS;
+
+import org.fdesigner.filesystem.EFS;
+import org.fdesigner.filesystem.IFileInfo;
+import org.fdesigner.filesystem.internal.filesystem.FileSystemAccess;
+import org.fdesigner.filesystem.internal.filesystem.Messages;
+import org.fdesigner.filesystem.internal.filesystem.Policy;
+import org.fdesigner.filesystem.internal.filesystem.local.Convert;
+import org.fdesigner.filesystem.provider.FileInfo;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.supplement.util.NLS;
 
 public abstract class UnixFileNatives {
 	private static final String LIBRARY_NAME = "unixfile_1_0_0"; //$NON-NLS-1$

@@ -11,11 +11,14 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.filesystem;
+package org.fdesigner.filesystem;
 
 import java.net.URI;
-import org.eclipse.core.filesystem.provider.FileSystem;
-import org.eclipse.core.runtime.*;
+
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IAdaptable;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
 
 /**
  * This is the main interface to a single file system.  Each file system instance

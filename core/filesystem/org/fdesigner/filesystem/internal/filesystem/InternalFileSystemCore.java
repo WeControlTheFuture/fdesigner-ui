@@ -11,14 +11,24 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.internal.filesystem;
+package org.fdesigner.filesystem.internal.filesystem;
 
 import java.net.URI;
 import java.util.HashMap;
-import org.eclipse.core.filesystem.*;
-import org.eclipse.core.filesystem.provider.FileSystem;
-import org.eclipse.core.runtime.*;
-import org.eclipse.osgi.util.NLS;
+
+import org.fdesigner.filesystem.EFS;
+import org.fdesigner.filesystem.IFileStore;
+import org.fdesigner.filesystem.IFileSystem;
+import org.fdesigner.filesystem.provider.FileSystem;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.runtime.registry.runtime.IExtension;
+import org.fdesigner.runtime.registry.runtime.IExtensionDelta;
+import org.fdesigner.runtime.registry.runtime.IExtensionPoint;
+import org.fdesigner.runtime.registry.runtime.IRegistryChangeEvent;
+import org.fdesigner.runtime.registry.runtime.IRegistryChangeListener;
+import org.fdesigner.runtime.registry.runtime.RegistryFactory;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * The class manages internal implementation of methods on EFS.

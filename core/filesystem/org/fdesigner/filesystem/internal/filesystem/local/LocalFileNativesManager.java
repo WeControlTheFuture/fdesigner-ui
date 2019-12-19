@@ -12,15 +12,18 @@
  *     IBM Corporation - initial API and implementation
  *     Sergey Prigogin (Google) - ongoing development
  *******************************************************************************/
-package org.eclipse.core.internal.filesystem.local;
+package org.fdesigner.filesystem.internal.filesystem.local;
 
 import java.nio.file.FileSystems;
 import java.util.Set;
-import org.eclipse.core.filesystem.IFileInfo;
-import org.eclipse.core.filesystem.provider.FileInfo;
-import org.eclipse.core.internal.filesystem.local.nio.*;
-import org.eclipse.core.internal.filesystem.local.unix.UnixFileHandler;
-import org.eclipse.core.internal.filesystem.local.unix.UnixFileNatives;
+
+import org.fdesigner.filesystem.IFileInfo;
+import org.fdesigner.filesystem.internal.filesystem.local.nio.DefaultHandler;
+import org.fdesigner.filesystem.internal.filesystem.local.nio.DosHandler;
+import org.fdesigner.filesystem.internal.filesystem.local.nio.PosixHandler;
+import org.fdesigner.filesystem.internal.filesystem.local.unix.UnixFileHandler;
+import org.fdesigner.filesystem.internal.filesystem.local.unix.UnixFileNatives;
+import org.fdesigner.filesystem.provider.FileInfo;
 
 /**
  * Dispatches methods backed by native code to the appropriate platform specific

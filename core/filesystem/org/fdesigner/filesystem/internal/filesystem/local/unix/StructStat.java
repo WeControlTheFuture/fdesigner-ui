@@ -11,10 +11,10 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.internal.filesystem.local.unix;
+package org.fdesigner.filesystem.internal.filesystem.local.unix;
 
-import org.eclipse.core.filesystem.EFS;
-import org.eclipse.core.filesystem.provider.FileInfo;
+import org.fdesigner.filesystem.EFS;
+import org.fdesigner.filesystem.provider.FileInfo;
 
 /**
  * This class mirrors relevant fields of native struct stat

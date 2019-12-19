@@ -11,12 +11,16 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.filesystem;
+package org.fdesigner.filesystem;
 
 import java.io.File;
 import java.net.URI;
 import java.net.URISyntaxException;
-import org.eclipse.core.runtime.*;
+
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.Path;
 
 /**
  * This class provides utility methods for comparing, inspecting, and manipulating

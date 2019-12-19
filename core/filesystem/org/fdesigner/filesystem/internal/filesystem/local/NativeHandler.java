@@ -11,10 +11,10 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.internal.filesystem.local;
+package org.fdesigner.filesystem.internal.filesystem.local;
 
-import org.eclipse.core.filesystem.IFileInfo;
-import org.eclipse.core.filesystem.provider.FileInfo;
+import org.fdesigner.filesystem.IFileInfo;
+import org.fdesigner.filesystem.provider.FileInfo;
 
 /**
  * This delegate provides the interface for native file attribute support.

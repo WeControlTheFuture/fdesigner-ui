@@ -12,10 +12,11 @@
  *     IBM Corporation - initial API and implementation
  * 	Martin Oberhuber (Wind River) - [170317] add symbolic link support to API
  *******************************************************************************/
-package org.eclipse.core.internal.filesystem.local;
+package org.fdesigner.filesystem.internal.filesystem.local;
 
 import java.io.UnsupportedEncodingException;
-import org.eclipse.osgi.service.environment.Constants;
+
+import org.fdesigner.supplement.service.environment.Constants;
 
 public class Convert {
 

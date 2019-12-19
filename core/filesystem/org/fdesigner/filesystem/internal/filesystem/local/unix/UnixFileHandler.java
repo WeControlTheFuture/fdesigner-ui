@@ -11,11 +11,11 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.internal.filesystem.local.unix;
+package org.fdesigner.filesystem.internal.filesystem.local.unix;
 
-import org.eclipse.core.filesystem.IFileInfo;
-import org.eclipse.core.filesystem.provider.FileInfo;
-import org.eclipse.core.internal.filesystem.local.NativeHandler;
+import org.fdesigner.filesystem.IFileInfo;
+import org.fdesigner.filesystem.internal.filesystem.local.NativeHandler;
+import org.fdesigner.filesystem.provider.FileInfo;
 
 /**
  * Native handler that delegates to UnixFileNatives

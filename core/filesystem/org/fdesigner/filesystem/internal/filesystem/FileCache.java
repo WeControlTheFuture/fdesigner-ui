@@ -11,16 +11,21 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.internal.filesystem;
+package org.fdesigner.filesystem.internal.filesystem;
 
 import java.io.File;
 import java.io.IOException;
-import org.eclipse.core.filesystem.*;
-import org.eclipse.core.filesystem.provider.FileStore;
-import org.eclipse.core.internal.filesystem.local.LocalFile;
-import org.eclipse.core.runtime.*;
-import org.eclipse.osgi.service.environment.Constants;
-import org.eclipse.osgi.util.NLS;
+
+import org.fdesigner.filesystem.EFS;
+import org.fdesigner.filesystem.IFileInfo;
+import org.fdesigner.filesystem.IFileStore;
+import org.fdesigner.filesystem.internal.filesystem.local.LocalFile;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.SubMonitor;
+import org.fdesigner.supplement.service.environment.Constants;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * An instance of this class represents a directory on disk where cached

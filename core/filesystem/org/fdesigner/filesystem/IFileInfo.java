@@ -12,9 +12,7 @@
  *     IBM Corporation - initial API and implementation
  * 	Martin Oberhuber (Wind River) - [170317] add symbolic link support to API
  *******************************************************************************/
-package org.eclipse.core.filesystem;
-
-import org.eclipse.core.runtime.IProgressMonitor;
+package org.fdesigner.filesystem;
 
 /**
  * A file info is a simple structure holding information about a file or directory.

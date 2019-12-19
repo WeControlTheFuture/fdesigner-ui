@@ -12,13 +12,13 @@
  *     IBM Corporation - initial API and implementation
  * 	Martin Oberhuber (Wind River) - [170317] add symbolic link support to API
  *******************************************************************************/
-package org.eclipse.core.filesystem;
+package org.fdesigner.filesystem;
 
 import java.net.URI;
-import org.eclipse.core.filesystem.provider.FileInfo;
-import org.eclipse.core.internal.filesystem.InternalFileSystemCore;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IProgressMonitor;
+
+import org.fdesigner.filesystem.internal.filesystem.InternalFileSystemCore;
+import org.fdesigner.filesystem.provider.FileInfo;
+import org.fdesigner.runtime.common.runtime.CoreException;
 
 /**
  * This class is the main entry point for clients of the Eclipse file system API.  This
