@@ -11,15 +11,15 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.ide;
+package org.fdesigner.ide.internal.ide;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.MultiStatus;
-import org.eclipse.core.runtime.Status;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.MultiStatus;
+import org.fdesigner.runtime.common.runtime.Status;
 
 /**
  * Utility class to create status objects.

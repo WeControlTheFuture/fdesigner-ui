@@ -1,22 +1,9 @@
-package org.eclipse.ui.internal.views.markers;
-/*******************************************************************************
- * Copyright (c) 2008, 2015 IBM Corporation and others.
- *
- * This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License 2.0
- * which accompanies this distribution, and is available at
- * https://www.eclipse.org/legal/epl-2.0/
- *
- * SPDX-License-Identifier: EPL-2.0
- *
- * Contributors:
- *     IBM Corporation - initial API and implementation
- *******************************************************************************/
-import org.eclipse.core.commands.operations.IUndoContext;
-import org.eclipse.core.commands.operations.ObjectUndoContext;
-import org.eclipse.ui.ide.undo.WorkspaceUndoUtil;
-import org.eclipse.ui.views.markers.MarkerSupportView;
-import org.eclipse.ui.views.markers.internal.MarkerSupportRegistry;
+package org.fdesigner.ide.internal.views.markers;
+import org.fdesigner.commands.operations.IUndoContext;
+import org.fdesigner.commands.operations.ObjectUndoContext;
+import org.fdesigner.ide.undo.WorkspaceUndoUtil;
+import org.fdesigner.ide.views.markers.MarkerSupportView;
+import org.fdesigner.ide.views.markers.internal.MarkerSupportRegistry;
 
 
 /**

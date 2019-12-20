@@ -13,41 +13,41 @@
  *     Sebastian Davids <sdavids@gmx.de> - Images for menu items (27481)
  *     Lars Vogel <Lars.Vogel@gmail.com> - Bug 430694
  *******************************************************************************/
-package org.eclipse.ui.views.navigator;
+package org.fdesigner.ide.views.navigator;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.Iterator;
 
-import org.eclipse.core.resources.ICommand;
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.resources.IncrementalProjectBuilder;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.resources.WorkspaceJob;
-import org.eclipse.core.runtime.Adapters;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.core.runtime.jobs.ISchedulingRule;
-import org.eclipse.jface.action.IMenuManager;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.jface.viewers.TreeViewer;
-import org.eclipse.jface.window.IShellProvider;
-import org.eclipse.osgi.util.NLS;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.KeyEvent;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.IActionBars;
-import org.eclipse.ui.actions.ActionFactory;
-import org.eclipse.ui.actions.BuildAction;
-import org.eclipse.ui.actions.CloseResourceAction;
-import org.eclipse.ui.actions.CloseUnrelatedProjectsAction;
-import org.eclipse.ui.actions.OpenResourceAction;
-import org.eclipse.ui.actions.RefreshAction;
-import org.eclipse.ui.actions.WorkspaceModifyOperation;
-import org.eclipse.ui.ide.IDEActionFactory;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
-import org.eclipse.ui.internal.ide.StatusUtil;
+import org.fdesigner.ide.IDEActionFactory;
+import org.fdesigner.ide.extensions.actions.BuildAction;
+import org.fdesigner.ide.extensions.actions.CloseResourceAction;
+import org.fdesigner.ide.extensions.actions.CloseUnrelatedProjectsAction;
+import org.fdesigner.ide.extensions.actions.OpenResourceAction;
+import org.fdesigner.ide.extensions.actions.RefreshAction;
+import org.fdesigner.ide.extensions.actions.WorkspaceModifyOperation;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.StatusUtil;
+import org.fdesigner.resources.ICommand;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IncrementalProjectBuilder;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.resources.WorkspaceJob;
+import org.fdesigner.runtime.common.runtime.Adapters;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.jobs.runtime.jobs.ISchedulingRule;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.ui.jface.action.IMenuManager;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.ui.jface.viewers.TreeViewer;
+import org.fdesigner.ui.jface.window.IShellProvider;
+import org.fdesigner.workbench.IActionBars;
+import org.fdesigner.workbench.actions.ActionFactory;
 
 /**
  * This is the action group for workspace actions such as Build, Refresh Local,

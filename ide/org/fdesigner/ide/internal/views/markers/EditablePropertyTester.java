@@ -12,14 +12,14 @@
  *     IBM Corporation - initial API and implementation
  *     Andrew Gvozdev -  Bug 364039 - Add "Delete All Markers"
  *******************************************************************************/
-package org.eclipse.ui.internal.views.markers;
+package org.fdesigner.ide.internal.views.markers;
 
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
-import org.eclipse.core.expressions.PropertyTester;
-import org.eclipse.core.resources.IMarker;
+import org.fdesigner.expressions.PropertyTester;
+import org.fdesigner.resources.IMarker;
 
 /**
  * EditablePropertyTester is a property tester for the editable property of the

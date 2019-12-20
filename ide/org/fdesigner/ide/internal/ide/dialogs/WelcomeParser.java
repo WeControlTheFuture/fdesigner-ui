@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.ide.dialogs;
+package org.fdesigner.ide.internal.ide.dialogs;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -23,10 +23,10 @@ import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
 import org.xml.sax.Attributes;
 import org.xml.sax.ContentHandler;
 import org.xml.sax.InputSource;

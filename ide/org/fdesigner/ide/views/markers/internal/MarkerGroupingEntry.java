@@ -13,10 +13,10 @@
  *     Mickael Istria (Red Hat Inc.) - Bug 486901
  *******************************************************************************/
 
-package org.eclipse.ui.views.markers.internal;
+package org.fdesigner.ide.views.markers.internal;
 
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.ui.internal.views.markers.MarkerSupportInternalUtilities;
+import org.fdesigner.ide.internal.views.markers.MarkerSupportInternalUtilities;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
 
 /**
  * MarkerGroupingEntry is the configuration object for the markerGroupingEntry

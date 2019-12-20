@@ -11,24 +11,24 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.actions;
+package org.fdesigner.ide.extensions.actions;
 
 import java.lang.reflect.InvocationTargetException;
 
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.IWorkspaceRunnable;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.ICoreRunnable;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.OperationCanceledException;
-import org.eclipse.core.runtime.jobs.ISchedulingRule;
-import org.eclipse.core.runtime.jobs.Job;
-import org.eclipse.jface.operation.IRunnableWithProgress;
-import org.eclipse.jface.operation.IThreadListener;
 import org.eclipse.swt.widgets.Display;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.dialogs.EventLoopProgressMonitor;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IWorkspaceRunnable;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.ICoreRunnable;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.OperationCanceledException;
+import org.fdesigner.runtime.jobs.runtime.jobs.ISchedulingRule;
+import org.fdesigner.runtime.jobs.runtime.jobs.Job;
+import org.fdesigner.ui.jface.operation.IRunnableWithProgress;
+import org.fdesigner.ui.jface.operation.IThreadListener;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.internal.dialogs.EventLoopProgressMonitor;
 
 /**
  * An operation which potentially makes changes to the workspace. All resource

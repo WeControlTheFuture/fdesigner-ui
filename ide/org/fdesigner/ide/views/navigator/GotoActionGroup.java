@@ -11,25 +11,25 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.views.navigator;
+package org.fdesigner.ide.views.navigator;
 
-import org.eclipse.core.resources.IFolder;
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.jface.action.IMenuManager;
-import org.eclipse.jface.action.IToolBarManager;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.ui.IActionBars;
-import org.eclipse.ui.IWorkbenchActionConstants;
-import org.eclipse.ui.actions.ActionContext;
-import org.eclipse.ui.actions.ActionFactory;
-import org.eclipse.ui.internal.views.navigator.ResourceNavigatorMessages;
-import org.eclipse.ui.views.framelist.BackAction;
-import org.eclipse.ui.views.framelist.ForwardAction;
-import org.eclipse.ui.views.framelist.FrameList;
-import org.eclipse.ui.views.framelist.GoIntoAction;
-import org.eclipse.ui.views.framelist.UpAction;
+import org.fdesigner.ide.views.framelist.BackAction;
+import org.fdesigner.ide.views.framelist.ForwardAction;
+import org.fdesigner.ide.views.framelist.FrameList;
+import org.fdesigner.ide.views.framelist.GoIntoAction;
+import org.fdesigner.ide.views.framelist.UpAction;
+import org.fdesigner.resources.IFolder;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.ui.jface.action.IMenuManager;
+import org.fdesigner.ui.jface.action.IToolBarManager;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.workbench.IActionBars;
+import org.fdesigner.workbench.IWorkbenchActionConstants;
+import org.fdesigner.workbench.actions.ActionContext;
+import org.fdesigner.workbench.actions.ActionFactory;
 
+import org.fdesigner.ide.internal.views.navigator.ResourceNavigatorMessages;
 /**
  * This is the action group for the goto actions.
  * 

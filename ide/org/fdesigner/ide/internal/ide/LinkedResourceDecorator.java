@@ -13,19 +13,19 @@
  *     Lars Vogel <Lars.Vogel@gmail.com> - Bug 430694
  *     Alexander Fedorov <alexander.fedorov@arsysop.ru> - Bug 548799
  *******************************************************************************/
-package org.eclipse.ui.internal.ide;
+package org.fdesigner.ide.internal.ide;
 
 import java.net.URI;
 import java.util.Optional;
 
-import org.eclipse.core.filesystem.IFileInfo;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.jface.resource.ResourceLocator;
-import org.eclipse.jface.viewers.IDecoration;
-import org.eclipse.jface.viewers.ILabelProviderListener;
-import org.eclipse.jface.viewers.ILightweightLabelDecorator;
-import org.eclipse.ui.internal.ide.dialogs.IDEResourceInfoUtils;
+import org.fdesigner.filesystem.IFileInfo;
+import org.fdesigner.ide.internal.ide.dialogs.IDEResourceInfoUtils;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.ui.jface.resource.ResourceLocator;
+import org.fdesigner.ui.jface.viewers.IDecoration;
+import org.fdesigner.ui.jface.viewers.ILabelProviderListener;
+import org.fdesigner.ui.jface.viewers.ILightweightLabelDecorator;
 
 /**
  * A LinkedResourceDecorator decorates an element's image with a linked

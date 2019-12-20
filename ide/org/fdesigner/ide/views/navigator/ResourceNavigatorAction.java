@@ -11,14 +11,14 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.views.navigator;
+package org.fdesigner.ide.views.navigator;
 
-import org.eclipse.jface.viewers.Viewer;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.IWorkbench;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.actions.SelectionProviderAction;
+import org.fdesigner.ui.jface.viewers.Viewer;
+import org.fdesigner.workbench.IWorkbench;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.actions.SelectionProviderAction;
 
 /**
  * Superclass of all actions provided by the resource navigator.

@@ -11,10 +11,11 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui;
+package org.fdesigner.ide.extensions;
 
-import org.eclipse.core.resources.IStorage;
-import org.eclipse.core.runtime.CoreException;
+import org.fdesigner.resources.IStorage;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.workbench.IEditorInput;
 
 /**
  * Interface for a <code>IStorage</code> input to an editor.

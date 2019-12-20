@@ -11,12 +11,12 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.dialogs;
+package org.fdesigner.ide.internal.ide.dialogs;
 
-import org.eclipse.core.runtime.IAdaptable;
-import org.eclipse.ui.IElementFactory;
-import org.eclipse.ui.IMemento;
-import org.eclipse.ui.internal.ide.AboutInfo;
+import org.fdesigner.ide.internal.ide.AboutInfo;
+import org.fdesigner.runtime.common.runtime.IAdaptable;
+import org.fdesigner.workbench.IElementFactory;
+import org.fdesigner.workbench.IMemento;
 
 /**
  * A simple factory for the welcome editor

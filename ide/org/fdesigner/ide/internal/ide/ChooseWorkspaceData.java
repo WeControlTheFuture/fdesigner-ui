@@ -14,7 +14,7 @@
  *     Jan-Ove Weichel <ovi.weichel@gmail.com> - Bug 463039
  *     Jan-Ove Weichel <janove.weichel@vogella.com> - Bug 411578
  *******************************************************************************/
-package org.eclipse.ui.internal.ide;
+package org.fdesigner.ide.internal.ide;
 
 import java.io.File;
 import java.io.FileReader;
@@ -23,18 +23,18 @@ import java.io.Reader;
 import java.net.URL;
 import java.util.StringTokenizer;
 
-import org.eclipse.core.runtime.Path;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.core.runtime.preferences.ConfigurationScope;
-import org.eclipse.jface.preference.IPreferenceStore;
-import org.eclipse.osgi.service.datalocation.Location;
-import org.eclipse.ui.IMemento;
-import org.eclipse.ui.WorkbenchException;
-import org.eclipse.ui.XMLMemento;
-import org.eclipse.ui.ide.IDE;
-import org.eclipse.ui.preferences.ScopedPreferenceStore;
-import org.osgi.service.prefs.BackingStoreException;
-import org.osgi.service.prefs.Preferences;
+import org.fdesigner.ide.IDE;
+import org.fdesigner.runtime.common.runtime.Path;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.runtime.preferences.runtime.preferences.ConfigurationScope;
+import org.fdesigner.runtime.preferences.service.prefs.BackingStoreException;
+import org.fdesigner.runtime.preferences.service.prefs.Preferences;
+import org.fdesigner.supplement.service.datalocation.Location;
+import org.fdesigner.ui.jface.preference.IPreferenceStore;
+import org.fdesigner.workbench.IMemento;
+import org.fdesigner.workbench.WorkbenchException;
+import org.fdesigner.workbench.XMLMemento;
+import org.fdesigner.workbench.preferences.ScopedPreferenceStore;
 
 /**
  * This class stores the information behind the "Launch Workspace" dialog. The

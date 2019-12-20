@@ -18,7 +18,7 @@
  *     Patrik Suzzi <psuzzi@gmail.com> - Bug 501523
  ******************************************************************************/
 
-package org.eclipse.ui.internal.views.markers;
+package org.fdesigner.ide.internal.views.markers;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -26,19 +26,6 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Objects;
 
-import org.eclipse.jface.dialogs.IDialogConstants;
-import org.eclipse.jface.dialogs.IDialogSettings;
-import org.eclipse.jface.dialogs.IInputValidator;
-import org.eclipse.jface.dialogs.InputDialog;
-import org.eclipse.jface.preference.IPreferenceStore;
-import org.eclipse.jface.viewers.ArrayContentProvider;
-import org.eclipse.jface.viewers.CheckboxTableViewer;
-import org.eclipse.jface.viewers.ISelection;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.jface.viewers.LabelProvider;
-import org.eclipse.jface.viewers.StructuredSelection;
-import org.eclipse.jface.window.Window;
-import org.eclipse.osgi.util.NLS;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
@@ -57,11 +44,24 @@ import org.eclipse.ui.forms.events.ExpansionEvent;
 import org.eclipse.ui.forms.widgets.ExpandableComposite;
 import org.eclipse.ui.forms.widgets.FormToolkit;
 import org.eclipse.ui.forms.widgets.ScrolledForm;
-import org.eclipse.ui.internal.ide.IDEInternalPreferences;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.eclipse.ui.preferences.ViewSettingsDialog;
-import org.eclipse.ui.views.markers.FilterConfigurationArea;
-import org.eclipse.ui.views.markers.internal.MarkerMessages;
+import org.fdesigner.ide.internal.ide.IDEInternalPreferences;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.views.markers.FilterConfigurationArea;
+import org.fdesigner.ide.views.markers.internal.MarkerMessages;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.ui.jface.dialogs.IDialogConstants;
+import org.fdesigner.ui.jface.dialogs.IDialogSettings;
+import org.fdesigner.ui.jface.dialogs.IInputValidator;
+import org.fdesigner.ui.jface.dialogs.InputDialog;
+import org.fdesigner.ui.jface.preference.IPreferenceStore;
+import org.fdesigner.ui.jface.viewers.ArrayContentProvider;
+import org.fdesigner.ui.jface.viewers.CheckboxTableViewer;
+import org.fdesigner.ui.jface.viewers.ISelection;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.ui.jface.viewers.LabelProvider;
+import org.fdesigner.ui.jface.viewers.StructuredSelection;
+import org.fdesigner.ui.jface.window.Window;
+import org.fdesigner.workbench.preferences.ViewSettingsDialog;
 
 /**
  * FiltersConfigurationDialog is the dialog for configuring the filters for the

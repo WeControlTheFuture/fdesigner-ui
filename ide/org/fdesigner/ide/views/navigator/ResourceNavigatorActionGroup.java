@@ -12,13 +12,13 @@
  *        IBM Corporation - initial API and implementation
  *        Sebastian Davids <sdavids@gmx.de> - Images for menu items (27481)
  *******************************************************************************/
-package org.eclipse.ui.views.navigator;
+package org.fdesigner.ide.views.navigator;
 
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.jface.viewers.IStructuredSelection;
 import org.eclipse.swt.events.KeyEvent;
-import org.eclipse.ui.actions.ActionGroup;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.workbench.actions.ActionGroup;
 
 /**
  * This is the action group for all the resource navigator actions. It delegates

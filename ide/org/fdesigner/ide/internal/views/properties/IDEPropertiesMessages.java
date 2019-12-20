@@ -10,9 +10,9 @@ t SPDX-License-Identifier: EPL-2.0
  * Contributors:
  * IBM - Initial API and implementation
  **********************************************************************/
-package org.eclipse.ui.internal.views.properties;
+package org.fdesigner.ide.internal.views.properties;
 
-import org.eclipse.osgi.util.NLS;
+import org.fdesigner.supplement.util.NLS;
 
 public class IDEPropertiesMessages extends NLS {
 	private static final String BUNDLE_NAME = "org.eclipse.ui.internal.views.properties.ideMessages";//$NON-NLS-1$

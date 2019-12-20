@@ -13,43 +13,43 @@
  *     Andrey Loskutov <loskutov@gmx.de> - generified interface, bug 462760
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 472784
  *******************************************************************************/
-package org.eclipse.ui.actions;
+package org.fdesigner.ide.extensions.actions;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import org.eclipse.core.filesystem.IFileInfo;
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.IResourceRuleFactory;
-import org.eclipse.core.resources.IWorkspaceRoot;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.resources.WorkspaceJob;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.MultiStatus;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.core.runtime.SubMonitor;
-import org.eclipse.core.runtime.jobs.ISchedulingRule;
-import org.eclipse.core.runtime.jobs.MultiRule;
-import org.eclipse.jface.dialogs.IDialogConstants;
-import org.eclipse.jface.dialogs.MessageDialog;
-import org.eclipse.jface.operation.IRunnableWithProgress;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.jface.viewers.StructuredSelection;
-import org.eclipse.jface.window.IShellProvider;
-import org.eclipse.osgi.util.NLS;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.KeyEvent;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
-import org.eclipse.ui.internal.ide.IIDEHelpContextIds;
-import org.eclipse.ui.internal.ide.StatusUtil;
-import org.eclipse.ui.internal.ide.dialogs.IDEResourceInfoUtils;
+import org.fdesigner.filesystem.IFileInfo;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.IIDEHelpContextIds;
+import org.fdesigner.ide.internal.ide.StatusUtil;
+import org.fdesigner.ide.internal.ide.dialogs.IDEResourceInfoUtils;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IResourceRuleFactory;
+import org.fdesigner.resources.IWorkspaceRoot;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.resources.WorkspaceJob;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.MultiStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.common.runtime.SubMonitor;
+import org.fdesigner.runtime.jobs.runtime.jobs.ISchedulingRule;
+import org.fdesigner.runtime.jobs.runtime.jobs.MultiRule;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.ui.jface.dialogs.IDialogConstants;
+import org.fdesigner.ui.jface.dialogs.MessageDialog;
+import org.fdesigner.ui.jface.operation.IRunnableWithProgress;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.ui.jface.viewers.StructuredSelection;
+import org.fdesigner.ui.jface.window.IShellProvider;
+import org.fdesigner.workbench.PlatformUI;
 
 /**
  * Standard action for refreshing the workspace from the local file system for

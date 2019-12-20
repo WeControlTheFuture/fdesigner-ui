@@ -12,11 +12,8 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.views.markers;
+package org.fdesigner.ide.views.markers;
 
-import org.eclipse.jface.dialogs.Dialog;
-import org.eclipse.jface.dialogs.IDialogConstants;
-import org.eclipse.jface.resource.JFaceResources;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.FontMetrics;
 import org.eclipse.swt.graphics.GC;
@@ -25,6 +22,9 @@ import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
+import org.fdesigner.ui.jface.dialogs.Dialog;
+import org.fdesigner.ui.jface.dialogs.IDialogConstants;
+import org.fdesigner.ui.jface.resource.JFaceResources;
 
 /**
  * FilterConfigurationArea is the area that the user can configure a filter in.

@@ -18,30 +18,13 @@
  *     David Weiser <David.Weiser@vogella.com> - Bug 500598
  *     Conrad Groth <info@conrad-groth.de> - Bug 514694
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.dialogs;
+package org.fdesigner.ide.internal.ide.dialogs;
 
 import static org.eclipse.swt.events.SelectionListener.widgetSelectedAdapter;
 
 import java.util.Arrays;
 import java.util.List;
 
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.IncrementalProjectBuilder;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.resources.WorkspaceJob;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.core.runtime.SubMonitor;
-import org.eclipse.jface.dialogs.IDialogConstants;
-import org.eclipse.jface.dialogs.IDialogSettings;
-import org.eclipse.jface.dialogs.MessageDialog;
-import org.eclipse.jface.viewers.CheckboxTableViewer;
-import org.eclipse.jface.viewers.Viewer;
-import org.eclipse.jface.viewers.ViewerFilter;
-import org.eclipse.jface.window.IShellProvider;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.FocusEvent;
 import org.eclipse.swt.events.FocusListener;
@@ -55,16 +38,33 @@ import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Text;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.actions.BuildAction;
-import org.eclipse.ui.actions.GlobalBuildAction;
-import org.eclipse.ui.dialogs.SearchPattern;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.eclipse.ui.internal.ide.actions.BuildUtilities;
-import org.eclipse.ui.model.WorkbenchContentProvider;
-import org.eclipse.ui.model.WorkbenchLabelProvider;
-import org.eclipse.ui.progress.IProgressConstants2;
+import org.fdesigner.ide.extensions.actions.BuildAction;
+import org.fdesigner.ide.extensions.actions.GlobalBuildAction;
+import org.fdesigner.ide.extensions.model.WorkbenchContentProvider;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.internal.ide.actions.BuildUtilities;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IncrementalProjectBuilder;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.resources.WorkspaceJob;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.common.runtime.SubMonitor;
+import org.fdesigner.ui.jface.dialogs.IDialogConstants;
+import org.fdesigner.ui.jface.dialogs.IDialogSettings;
+import org.fdesigner.ui.jface.dialogs.MessageDialog;
+import org.fdesigner.ui.jface.viewers.CheckboxTableViewer;
+import org.fdesigner.ui.jface.viewers.Viewer;
+import org.fdesigner.ui.jface.viewers.ViewerFilter;
+import org.fdesigner.ui.jface.window.IShellProvider;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.dialogs.SearchPattern;
+import org.fdesigner.workbench.model.WorkbenchLabelProvider;
+import org.fdesigner.workbench.progress.IProgressConstants2;
 
 /**
  * Dialog that asks the user to confirm a clean operation, and to configure

@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.ide;
+package org.fdesigner.ide.internal.ide;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -20,24 +20,24 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.IResourceChangeListener;
-import org.eclipse.core.resources.IResourceDelta;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IExtension;
-import org.eclipse.core.runtime.IExtensionPoint;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.ui.IPluginContribution;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.activities.ITriggerPoint;
-import org.eclipse.ui.activities.IWorkbenchActivitySupport;
-import org.eclipse.ui.activities.WorkbenchActivityHelper;
-import org.eclipse.ui.progress.WorkbenchJob;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IResourceChangeListener;
+import org.fdesigner.resources.IResourceDelta;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.runtime.registry.runtime.IExtension;
+import org.fdesigner.runtime.registry.runtime.IExtensionPoint;
+import org.fdesigner.workbench.IPluginContribution;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.activities.ITriggerPoint;
+import org.fdesigner.workbench.activities.IWorkbenchActivitySupport;
+import org.fdesigner.workbench.activities.WorkbenchActivityHelper;
+import org.fdesigner.workbench.progress.WorkbenchJob;
 
 /**
  * Utility class that manages promotion of activites in response to workspace changes.

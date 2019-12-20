@@ -11,10 +11,10 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui;
+package org.fdesigner.ide.extensions;
 
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.runtime.IAdaptable;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.runtime.common.runtime.IAdaptable;
 
 /**
  * The IContributorResourceAdapter is an interface that defines

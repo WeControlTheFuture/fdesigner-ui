@@ -12,13 +12,13 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.ide.undo;
+package org.fdesigner.ide.undo;
 
 import java.net.URI;
 
-import org.eclipse.core.resources.IFolder;
-import org.eclipse.ui.ide.dialogs.UIResourceFilterDescription;
-import org.eclipse.ui.internal.ide.undo.ContainerDescription;
+import org.fdesigner.ide.dialogs.UIResourceFilterDescription;
+import org.fdesigner.ide.internal.ide.undo.ContainerDescription;
+import org.fdesigner.resources.IFolder;
 
 /**
  * A CreateFolderOperation represents an undoable operation for creating a

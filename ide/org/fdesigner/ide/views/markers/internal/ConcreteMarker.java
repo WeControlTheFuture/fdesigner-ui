@@ -11,11 +11,11 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.views.markers.internal;
+package org.fdesigner.ide.views.markers.internal;
 
-import org.eclipse.core.resources.IMarker;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.runtime.CoreException;
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.runtime.common.runtime.CoreException;
 
 import com.ibm.icu.text.CollationKey;
 import com.ibm.icu.text.Collator;

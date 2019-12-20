@@ -1,4 +1,4 @@
-package org.eclipse.ui.internal.views.markers;
+package org.fdesigner.ide.internal.views.markers;
 /*******************************************************************************
  * Copyright (c) 2007, 2015 IBM Corporation and others.
  *
@@ -14,13 +14,13 @@ package org.eclipse.ui.internal.views.markers;
  *     Andrey Loskutov <loskutov@gmx.de> - generified interface, bug 461762
  *******************************************************************************/
 
-import org.eclipse.core.resources.IMarker;
-import org.eclipse.core.runtime.IAdapterFactory;
 import org.eclipse.help.HelpSystem;
 import org.eclipse.help.IContext;
 import org.eclipse.help.IContextProvider;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.ide.IDE;
+import org.fdesigner.ide.IDE;
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.runtime.common.runtime.IAdapterFactory;
+import org.fdesigner.workbench.PlatformUI;
 
 /**
  * MarkerHelpAdapterFactory is the adapter factory for the markerHelp.

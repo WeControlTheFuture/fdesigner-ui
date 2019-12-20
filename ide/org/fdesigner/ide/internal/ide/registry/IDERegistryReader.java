@@ -11,18 +11,18 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.registry;
+package org.fdesigner.ide.internal.ide.registry;
 
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Hashtable;
 
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.core.runtime.IExtension;
-import org.eclipse.core.runtime.IExtensionPoint;
-import org.eclipse.core.runtime.IExtensionRegistry;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.runtime.registry.runtime.IExtension;
+import org.fdesigner.runtime.registry.runtime.IExtensionPoint;
+import org.fdesigner.runtime.registry.runtime.IExtensionRegistry;
 
 /**
  * Template implementation of a registry reader that creates objects

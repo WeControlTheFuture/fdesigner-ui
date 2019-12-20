@@ -11,27 +11,12 @@
  * Contributors:
  *     Matthias Becker <ma.becker@sap.com> - Bug 543746
  ******************************************************************************/
-package org.eclipse.ui.internal.views.helpers;
+package org.fdesigner.ide.internal.views.helpers;
 
 import java.util.ArrayList;
 
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.IResourceChangeEvent;
-import org.eclipse.core.resources.IResourceChangeListener;
-import org.eclipse.core.resources.IResourceDelta;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.jface.action.Action;
-import org.eclipse.jface.action.IAction;
-import org.eclipse.jface.layout.GridDataFactory;
-import org.eclipse.jface.layout.GridLayoutFactory;
-import org.eclipse.jface.preference.JFacePreferences;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.jface.resource.JFaceColors;
-import org.eclipse.jface.resource.JFaceResources;
-import org.eclipse.jface.resource.LocalResourceManager;
-import org.eclipse.jface.util.IPropertyChangeListener;
-import org.eclipse.jface.util.PropertyChangeEvent;
+import javax.swing.event.HyperlinkEvent;
+
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.custom.StackLayout;
 import org.eclipse.swt.events.DisposeEvent;
@@ -41,28 +26,45 @@ import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Link;
-import org.eclipse.ui.IPerspectiveDescriptor;
-import org.eclipse.ui.IPerspectiveListener;
-import org.eclipse.ui.ISharedImages;
-import org.eclipse.ui.IWorkbench;
-import org.eclipse.ui.IWorkbenchPage;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.actions.NewProjectAction;
 import org.eclipse.ui.forms.events.HyperlinkAdapter;
-import org.eclipse.ui.forms.events.HyperlinkEvent;
 import org.eclipse.ui.forms.widgets.FormToolkit;
-import org.eclipse.ui.forms.widgets.Hyperlink;
-import org.eclipse.ui.handlers.IHandlerService;
-import org.eclipse.ui.internal.IWorkbenchGraphicConstants;
-import org.eclipse.ui.internal.WorkbenchImages;
-import org.eclipse.ui.internal.WorkbenchPlugin;
-import org.eclipse.ui.internal.dialogs.WorkbenchWizardElement;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
 import org.eclipse.ui.internal.navigator.wizards.WizardShortcutAction;
-import org.eclipse.ui.internal.views.navigator.ResourceNavigatorMessages;
-import org.eclipse.ui.wizards.IWizardDescriptor;
-import org.eclipse.ui.wizards.IWizardRegistry;
+import org.fdesigner.ide.extensions.actions.NewProjectAction;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.internal.views.navigator.ResourceNavigatorMessages;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IResourceChangeEvent;
+import org.fdesigner.resources.IResourceChangeListener;
+import org.fdesigner.resources.IResourceDelta;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.ui.jface.action.Action;
+import org.fdesigner.ui.jface.action.IAction;
+import org.fdesigner.ui.jface.layout.GridDataFactory;
+import org.fdesigner.ui.jface.layout.GridLayoutFactory;
+import org.fdesigner.ui.jface.preference.JFacePreferences;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.ui.jface.resource.JFaceColors;
+import org.fdesigner.ui.jface.resource.JFaceResources;
+import org.fdesigner.ui.jface.resource.LocalResourceManager;
+import org.fdesigner.ui.jface.util.IPropertyChangeListener;
+import org.fdesigner.ui.jface.util.PropertyChangeEvent;
+import org.fdesigner.workbench.IPerspectiveDescriptor;
+import org.fdesigner.workbench.IPerspectiveListener;
+import org.fdesigner.workbench.ISharedImages;
+import org.fdesigner.workbench.IWorkbench;
+import org.fdesigner.workbench.IWorkbenchPage;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.handlers.IHandlerService;
+import org.fdesigner.workbench.internal.IWorkbenchGraphicConstants;
+import org.fdesigner.workbench.internal.WorkbenchImages;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
+import org.fdesigner.workbench.internal.dialogs.WorkbenchWizardElement;
+import org.fdesigner.workbench.wizards.IWizardDescriptor;
+import org.fdesigner.workbench.wizards.IWizardRegistry;
+
+import javafx.scene.control.Hyperlink;
 
 /**
  * This class can be re-used by views that show the workspace's projects (like

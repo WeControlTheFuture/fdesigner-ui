@@ -11,18 +11,18 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.views.navigator;
+package org.fdesigner.ide.views.navigator;
 
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.IWorkspaceRoot;
-import org.eclipse.core.runtime.IPath;
-import org.eclipse.jface.viewers.StructuredSelection;
-import org.eclipse.jface.viewers.TreeViewer;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.KeyEvent;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.actions.RenameResourceAction;
+import org.fdesigner.ide.extensions.actions.RenameResourceAction;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IWorkspaceRoot;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.ui.jface.viewers.StructuredSelection;
+import org.fdesigner.ui.jface.viewers.TreeViewer;
+import org.fdesigner.workbench.PlatformUI;
 
 /**
  * The ResourceNavigatorRenameAction is the rename action used by the

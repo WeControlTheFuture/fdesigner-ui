@@ -13,27 +13,10 @@
  *     Simon Scholz <simon.scholz@vogella.com> - Bug 448060
  *******************************************************************************/
 
-package org.eclipse.ui.internal.ide.dialogs;
+package org.fdesigner.ide.internal.ide.dialogs;
 
 import java.util.TreeSet;
 
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.resources.IWorkspace;
-import org.eclipse.core.resources.IWorkspaceDescription;
-import org.eclipse.core.resources.IncrementalProjectBuilder;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.jface.preference.FieldEditor;
-import org.eclipse.jface.preference.IPreferenceStore;
-import org.eclipse.jface.preference.IntegerFieldEditor;
-import org.eclipse.jface.preference.PreferencePage;
-import org.eclipse.jface.preference.StringFieldEditor;
-import org.eclipse.jface.util.IPropertyChangeListener;
-import org.eclipse.jface.viewers.ArrayContentProvider;
-import org.eclipse.jface.viewers.ILabelProvider;
-import org.eclipse.jface.viewers.LabelProvider;
-import org.eclipse.jface.window.Window;
-import org.eclipse.osgi.util.NLS;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
@@ -47,16 +30,33 @@ import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.List;
 import org.eclipse.swt.widgets.Text;
-import org.eclipse.ui.IWorkbench;
-import org.eclipse.ui.IWorkbenchPreferencePage;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.actions.GlobalBuildAction;
-import org.eclipse.ui.dialogs.ListSelectionDialog;
-import org.eclipse.ui.internal.ide.IDEInternalPreferences;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.eclipse.ui.internal.ide.IIDEHelpContextIds;
-import org.eclipse.ui.internal.util.PrefUtil;
+import org.fdesigner.ide.extensions.actions.GlobalBuildAction;
+import org.fdesigner.ide.internal.ide.IDEInternalPreferences;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.internal.ide.IIDEHelpContextIds;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IWorkspace;
+import org.fdesigner.resources.IWorkspaceDescription;
+import org.fdesigner.resources.IncrementalProjectBuilder;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.ui.jface.preference.FieldEditor;
+import org.fdesigner.ui.jface.preference.IPreferenceStore;
+import org.fdesigner.ui.jface.preference.IntegerFieldEditor;
+import org.fdesigner.ui.jface.preference.PreferencePage;
+import org.fdesigner.ui.jface.preference.StringFieldEditor;
+import org.fdesigner.ui.jface.util.IPropertyChangeListener;
+import org.fdesigner.ui.jface.viewers.ArrayContentProvider;
+import org.fdesigner.ui.jface.viewers.ILabelProvider;
+import org.fdesigner.ui.jface.viewers.LabelProvider;
+import org.fdesigner.ui.jface.window.Window;
+import org.fdesigner.workbench.IWorkbench;
+import org.fdesigner.workbench.IWorkbenchPreferencePage;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.dialogs.ListSelectionDialog;
+import org.fdesigner.workbench.internal.util.PrefUtil;
 
 /**
  * Page used to determine what order projects will be built in

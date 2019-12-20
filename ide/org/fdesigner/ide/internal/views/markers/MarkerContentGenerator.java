@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.views.markers;
+package org.fdesigner.ide.internal.views.markers;
 
 import java.io.IOException;
 import java.io.StringReader;
@@ -27,31 +27,31 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
-import org.eclipse.core.resources.IMarker;
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.mapping.ResourceMapping;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.jface.preference.IPreferenceStore;
-import org.eclipse.jface.util.IPropertyChangeListener;
-import org.eclipse.ui.IMemento;
-import org.eclipse.ui.IPageLayout;
-import org.eclipse.ui.WorkbenchException;
-import org.eclipse.ui.XMLMemento;
-import org.eclipse.ui.internal.ide.IDEInternalPreferences;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.eclipse.ui.statushandlers.StatusManager;
-import org.eclipse.ui.views.markers.FilterConfigurationArea;
-import org.eclipse.ui.views.markers.MarkerField;
-import org.eclipse.ui.views.markers.internal.ContentGeneratorDescriptor;
-import org.eclipse.ui.views.markers.internal.MarkerGroup;
-import org.eclipse.ui.views.markers.internal.MarkerSupportRegistry;
-import org.eclipse.ui.views.markers.internal.MarkerType;
-import org.eclipse.ui.views.markers.internal.MarkerTypesModel;
-import org.eclipse.ui.views.markers.internal.ProblemFilter;
-import org.eclipse.ui.views.markers.internal.Util;
+import org.fdesigner.ide.internal.ide.IDEInternalPreferences;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.views.markers.FilterConfigurationArea;
+import org.fdesigner.ide.views.markers.MarkerField;
+import org.fdesigner.ide.views.markers.internal.ContentGeneratorDescriptor;
+import org.fdesigner.ide.views.markers.internal.MarkerGroup;
+import org.fdesigner.ide.views.markers.internal.MarkerSupportRegistry;
+import org.fdesigner.ide.views.markers.internal.MarkerType;
+import org.fdesigner.ide.views.markers.internal.MarkerTypesModel;
+import org.fdesigner.ide.views.markers.internal.ProblemFilter;
+import org.fdesigner.ide.views.markers.internal.Util;
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.mapping.ResourceMapping;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.ui.jface.preference.IPreferenceStore;
+import org.fdesigner.ui.jface.util.IPropertyChangeListener;
+import org.fdesigner.workbench.IMemento;
+import org.fdesigner.workbench.IPageLayout;
+import org.fdesigner.workbench.WorkbenchException;
+import org.fdesigner.workbench.XMLMemento;
+import org.fdesigner.workbench.statushandlers.StatusManager;
 
 /**
  * MarkerContentGenerator is the representation of the markerContentGenerator

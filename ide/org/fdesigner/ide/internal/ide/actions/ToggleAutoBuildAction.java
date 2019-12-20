@@ -11,17 +11,17 @@
  * Contributors:
  * IBM - Initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.actions;
+package org.fdesigner.ide.internal.ide.actions;
 
-import org.eclipse.core.resources.IWorkspace;
-import org.eclipse.core.resources.IWorkspaceDescription;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.jface.action.Action;
-import org.eclipse.jface.dialogs.ErrorDialog;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.actions.ActionFactory;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.resources.IWorkspace;
+import org.fdesigner.resources.IWorkspaceDescription;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.ui.jface.action.Action;
+import org.fdesigner.ui.jface.dialogs.ErrorDialog;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.actions.ActionFactory;
 
 /**
  * Action for toggling autobuild on or off.

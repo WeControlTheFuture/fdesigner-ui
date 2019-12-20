@@ -14,11 +14,10 @@
  *     Mickael Istria (Red Hat Inc.) - Bug 486901
  *******************************************************************************/
 
-package org.eclipse.ui.views.markers.internal;
+package org.fdesigner.ide.views.markers.internal;
 
 import java.util.Map;
 
-import org.eclipse.core.resources.IMarker;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
@@ -29,6 +28,7 @@ import org.eclipse.swt.widgets.Combo;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Shell;
+import org.fdesigner.resources.IMarker;
 
 /**
  * DialogTaskProperties is the properties dialog

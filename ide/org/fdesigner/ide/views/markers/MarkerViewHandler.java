@@ -12,23 +12,23 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.views.markers;
+package org.fdesigner.ide.views.markers;
 
-import org.eclipse.core.commands.AbstractHandler;
-import org.eclipse.core.commands.ExecutionEvent;
-import org.eclipse.core.commands.ExecutionException;
-import org.eclipse.core.commands.operations.IUndoableOperation;
-import org.eclipse.core.resources.IMarker;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IAdaptable;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.IStatus;
 import org.eclipse.swt.widgets.Display;
-import org.eclipse.ui.IWorkbenchPart;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.handlers.HandlerUtil;
-import org.eclipse.ui.internal.ide.StatusUtil;
-import org.eclipse.ui.statushandlers.StatusManager;
+import org.fdesigner.commands.AbstractHandler;
+import org.fdesigner.commands.ExecutionEvent;
+import org.fdesigner.commands.ExecutionException;
+import org.fdesigner.commands.operations.IUndoableOperation;
+import org.fdesigner.ide.internal.ide.StatusUtil;
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IAdaptable;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.workbench.IWorkbenchPart;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.handlers.HandlerUtil;
+import org.fdesigner.workbench.statushandlers.StatusManager;
 
 /**
  * MarkerViewHandler is the abstract class of the handlers for the

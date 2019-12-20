@@ -13,7 +13,7 @@
  *     Mickael Istria (Red Hat Inc.) - Bug 486901
  ******************************************************************************/
 
-package org.eclipse.ui.internal.views.markers;
+package org.fdesigner.ide.internal.views.markers;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -23,15 +23,6 @@ import java.util.ListIterator;
 import java.util.Objects;
 import java.util.Random;
 
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.jface.resource.JFaceResources;
-import org.eclipse.jface.viewers.ArrayContentProvider;
-import org.eclipse.jface.viewers.ISelection;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.jface.viewers.ITableLabelProvider;
-import org.eclipse.jface.viewers.LabelProvider;
-import org.eclipse.jface.viewers.StructuredSelection;
-import org.eclipse.jface.viewers.TableViewer;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.graphics.Point;
@@ -49,7 +40,16 @@ import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Table;
 import org.eclipse.swt.widgets.TableColumn;
 import org.eclipse.swt.widgets.Text;
-import org.eclipse.ui.views.markers.internal.MarkerMessages;
+import org.fdesigner.ide.views.markers.internal.MarkerMessages;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.ui.jface.resource.JFaceResources;
+import org.fdesigner.ui.jface.viewers.ArrayContentProvider;
+import org.fdesigner.ui.jface.viewers.ISelection;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.ui.jface.viewers.ITableLabelProvider;
+import org.fdesigner.ui.jface.viewers.LabelProvider;
+import org.fdesigner.ui.jface.viewers.StructuredSelection;
+import org.fdesigner.ui.jface.viewers.TableViewer;
 
 /**
  * This was introduced as a fix to Bug 231081 and related, as an effort to

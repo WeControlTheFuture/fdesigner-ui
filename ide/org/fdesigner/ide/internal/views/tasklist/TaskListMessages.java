@@ -11,9 +11,9 @@
  * Contributors:
  * IBM - Initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.views.tasklist;
+package org.fdesigner.ide.internal.views.tasklist;
 
-import org.eclipse.osgi.util.NLS;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * TaskListMessages are the messages used in the TaskList.

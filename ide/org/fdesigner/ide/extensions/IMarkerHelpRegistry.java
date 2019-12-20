@@ -11,9 +11,9 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui;
+package org.fdesigner.ide.extensions;
 
-import org.eclipse.core.resources.IMarker;
+import org.fdesigner.resources.IMarker;
 
 /**
  * Registry of F1 help contexts and resolutions for markers.

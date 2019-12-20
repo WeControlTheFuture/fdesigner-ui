@@ -11,13 +11,8 @@
  * Contributors:
  *     Serge Beauchamp (Freescale Semiconductor) - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.dialogs;
+package org.fdesigner.ide.internal.ide.dialogs;
 
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.runtime.Adapters;
-import org.eclipse.core.runtime.IAdaptable;
-import org.eclipse.jface.preference.PreferencePage;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
@@ -29,13 +24,18 @@ import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.TabFolder;
 import org.eclipse.swt.widgets.TabItem;
-import org.eclipse.ui.IWorkbench;
-import org.eclipse.ui.IWorkbenchPreferencePage;
-import org.eclipse.ui.IWorkbenchPropertyPage;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.dialogs.PropertyPage;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
-import org.eclipse.ui.internal.ide.IIDEHelpContextIds;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.IIDEHelpContextIds;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.runtime.common.runtime.Adapters;
+import org.fdesigner.runtime.common.runtime.IAdaptable;
+import org.fdesigner.ui.jface.preference.PreferencePage;
+import org.fdesigner.workbench.IWorkbench;
+import org.fdesigner.workbench.IWorkbenchPreferencePage;
+import org.fdesigner.workbench.IWorkbenchPropertyPage;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.dialogs.PropertyPage;
 
 /**
  * A property page for viewing and modifying the set

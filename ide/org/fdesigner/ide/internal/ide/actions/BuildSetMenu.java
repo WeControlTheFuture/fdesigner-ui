@@ -14,19 +14,19 @@
  * [WorkingSets]Removed Working Set is still shown under the menu item
  * when it is the recently used working set
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.actions;
+package org.fdesigner.ide.internal.ide.actions;
 
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.jface.action.ActionContributionItem;
-import org.eclipse.jface.action.ContributionItem;
-import org.eclipse.jface.action.IAction;
-import org.eclipse.jface.action.IMenuListener;
-import org.eclipse.jface.action.MenuManager;
-import org.eclipse.jface.action.Separator;
 import org.eclipse.swt.widgets.Menu;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.IWorkingSet;
-import org.eclipse.ui.application.IActionBarConfigurer;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.ui.jface.action.ActionContributionItem;
+import org.fdesigner.ui.jface.action.ContributionItem;
+import org.fdesigner.ui.jface.action.IAction;
+import org.fdesigner.ui.jface.action.IMenuListener;
+import org.fdesigner.ui.jface.action.MenuManager;
+import org.fdesigner.ui.jface.action.Separator;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.IWorkingSet;
+import org.fdesigner.workbench.application.IActionBarConfigurer;
 
 /**
  * Sub-menu off project menu for showing MRU list of working set builds.

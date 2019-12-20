@@ -13,19 +13,8 @@
  *      Alexander Fedorov <Alexander.Fedorov@borland.com>
  *     		- Bug 172000 [Wizards] WizardNewFileCreationPage should support overwriting existing resources
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.misc;
+package org.fdesigner.ide.internal.ide.misc;
 
-import org.eclipse.core.resources.IContainer;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.IWorkspace;
-import org.eclipse.core.resources.IWorkspaceRoot;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.runtime.IPath;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Path;
-import org.eclipse.equinox.bidi.StructuredTextTypeHandlerFactory;
-import org.eclipse.jface.util.BidiUtils;
-import org.eclipse.osgi.util.NLS;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.FocusAdapter;
 import org.eclipse.swt.events.FocusEvent;
@@ -37,7 +26,18 @@ import org.eclipse.swt.widgets.Event;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Listener;
 import org.eclipse.swt.widgets.Text;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.bidi.StructuredTextTypeHandlerFactory;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.resources.IContainer;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IWorkspace;
+import org.fdesigner.resources.IWorkspaceRoot;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Path;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.ui.jface.util.BidiUtils;
 
 /**
  * Workbench-level composite for resource and container specification by the

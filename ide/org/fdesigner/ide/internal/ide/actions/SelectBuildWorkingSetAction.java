@@ -11,16 +11,16 @@
  * Contributors:
  * IBM - Initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.actions;
+package org.fdesigner.ide.internal.ide.actions;
 
-import org.eclipse.jface.action.Action;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.IWorkingSet;
-import org.eclipse.ui.IWorkingSetManager;
-import org.eclipse.ui.actions.ActionFactory;
-import org.eclipse.ui.application.IActionBarConfigurer;
-import org.eclipse.ui.dialogs.IWorkingSetSelectionDialog;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ui.jface.action.Action;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.IWorkingSet;
+import org.fdesigner.workbench.IWorkingSetManager;
+import org.fdesigner.workbench.actions.ActionFactory;
+import org.fdesigner.workbench.application.IActionBarConfigurer;
+import org.fdesigner.workbench.dialogs.IWorkingSetSelectionDialog;
 
 /**
  * This action asks the user to select a working set, and then creates

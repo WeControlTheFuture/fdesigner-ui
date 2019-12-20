@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.views.framelist;
+package org.fdesigner.ide.views.framelist;
 
 /**
  * A frame source is the source of frames which appear in a frame list.

@@ -11,28 +11,29 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.views.navigator;
+package org.fdesigner.ide.views.navigator;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import org.eclipse.core.resources.IMarker;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.runtime.Adapters;
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.jface.dialogs.ErrorDialog;
-import org.eclipse.jface.viewers.ISelection;
-import org.eclipse.jface.viewers.ISelectionProvider;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.jface.viewers.StructuredSelection;
-import org.eclipse.ui.IPageLayout;
-import org.eclipse.ui.IViewPart;
-import org.eclipse.ui.IWorkbenchPage;
-import org.eclipse.ui.PartInitException;
-import org.eclipse.ui.actions.SelectionProviderAction;
-import org.eclipse.ui.internal.views.navigator.ResourceNavigatorMessages;
-import org.eclipse.ui.part.ISetSelectionTarget;
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.runtime.common.runtime.Adapters;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.ui.jface.dialogs.ErrorDialog;
+import org.fdesigner.ui.jface.viewers.ISelection;
+import org.fdesigner.ui.jface.viewers.ISelectionProvider;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.ui.jface.viewers.StructuredSelection;
+import org.fdesigner.workbench.IPageLayout;
+import org.fdesigner.workbench.IViewPart;
+import org.fdesigner.workbench.IWorkbenchPage;
+import org.fdesigner.workbench.PartInitException;
+import org.fdesigner.workbench.actions.SelectionProviderAction;
+import org.fdesigner.workbench.part.ISetSelectionTarget;
+
+import org.fdesigner.ide.internal.views.navigator.ResourceNavigatorMessages;
 
 /**
  * An action which shows the current selection in the Navigator view. For each

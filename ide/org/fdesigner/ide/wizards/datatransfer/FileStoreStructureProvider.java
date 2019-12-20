@@ -11,18 +11,18 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.wizards.datatransfer;
+package org.fdesigner.ide.wizards.datatransfer;
 
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import org.eclipse.core.filesystem.EFS;
-import org.eclipse.core.filesystem.IFileStore;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.NullProgressMonitor;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.filesystem.EFS;
+import org.fdesigner.filesystem.IFileStore;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.NullProgressMonitor;
 
 /**
  * FileStoreStructureProvider is the structure provider for {@link IFileStore}

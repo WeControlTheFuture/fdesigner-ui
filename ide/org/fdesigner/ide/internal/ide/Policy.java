@@ -11,11 +11,11 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.ide;
+package org.fdesigner.ide.internal.ide;
 
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.ui.statushandlers.StatusManager;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.workbench.statushandlers.StatusManager;
 
 /**
  * Policy is the class for the debug arguments in the ide.

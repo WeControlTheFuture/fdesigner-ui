@@ -11,28 +11,12 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.wizards.datatransfer;
+package org.fdesigner.ide.wizards.datatransfer;
 
 import java.io.File;
 import java.io.FileFilter;
 import java.lang.reflect.InvocationTargetException;
 
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.resources.IProjectDescription;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.IResourceStatus;
-import org.eclipse.core.resources.IWorkspace;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IPath;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.Path;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.core.runtime.SubMonitor;
-import org.eclipse.jface.dialogs.ErrorDialog;
-import org.eclipse.jface.dialogs.MessageDialog;
-import org.eclipse.jface.wizard.WizardPage;
-import org.eclipse.osgi.util.NLS;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
@@ -45,11 +29,27 @@ import org.eclipse.swt.widgets.DirectoryDialog;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Listener;
 import org.eclipse.swt.widgets.Text;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.actions.WorkspaceModifyOperation;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.eclipse.ui.internal.ide.IIDEHelpContextIds;
-import org.eclipse.ui.internal.wizards.datatransfer.DataTransferMessages;
+import org.fdesigner.ide.extensions.actions.WorkspaceModifyOperation;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.internal.ide.IIDEHelpContextIds;
+import org.fdesigner.ide.internal.wizards.datatransfer.DataTransferMessages;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IProjectDescription;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IResourceStatus;
+import org.fdesigner.resources.IWorkspace;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.Path;
+import org.fdesigner.runtime.common.runtime.SubMonitor;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.ui.jface.dialogs.ErrorDialog;
+import org.fdesigner.ui.jface.dialogs.MessageDialog;
+import org.fdesigner.ui.jface.wizard.WizardPage;
+import org.fdesigner.workbench.PlatformUI;
 
 /**
  * Standard main page for a wizard that creates a project resource from whose

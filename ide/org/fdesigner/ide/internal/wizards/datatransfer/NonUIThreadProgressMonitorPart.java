@@ -11,12 +11,12 @@
  * Contributors:
  *     Mickael Istria (Red Hat Inc.) - initial API and implementation
  ******************************************************************************/
-package org.eclipse.ui.internal.wizards.datatransfer;
+package org.fdesigner.ide.internal.wizards.datatransfer;
 
-import org.eclipse.jface.wizard.ProgressMonitorPart;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Layout;
+import org.fdesigner.ui.jface.wizard.ProgressMonitorPart;
 
 /**
  * Similar to {@link ProgressMonitorPart} but that can be used by non-UI jobs.

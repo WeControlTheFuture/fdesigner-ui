@@ -12,23 +12,22 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.views.bookmarkexplorer;
+package org.fdesigner.ide.views.bookmarkexplorer;
 
 import java.util.ArrayList;
 import java.util.Map;
 
-import org.eclipse.core.resources.IMarker;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.jface.dialogs.ErrorDialog;
-import org.eclipse.jface.viewers.StructuredSelection;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.ide.undo.CreateMarkersOperation;
-import org.eclipse.ui.ide.undo.WorkspaceUndoUtil;
-import org.eclipse.ui.internal.views.bookmarkexplorer.BookmarkMessages;
-import org.eclipse.ui.part.MarkerTransfer;
-
+import org.fdesigner.ide.extensions.part.MarkerTransfer;
+import org.fdesigner.ide.undo.CreateMarkersOperation;
+import org.fdesigner.ide.undo.WorkspaceUndoUtil;
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.ui.jface.dialogs.ErrorDialog;
+import org.fdesigner.ui.jface.viewers.StructuredSelection;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.ide.internal.views.bookmarkexplorer.BookmarkMessages;
 /**
  * Pastes one or more bookmark(s) from the clipboard into the bookmark navigator.
  *

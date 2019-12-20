@@ -13,24 +13,11 @@
  *     Igor Fedorenko <igorfie@yahoo.com> -
  *     		Fix for Bug 136921 [IDE] New File dialog locks for 20 seconds
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.misc;
+package org.fdesigner.ide.internal.ide.misc;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import org.eclipse.core.resources.IContainer;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.runtime.IPath;
-import org.eclipse.core.runtime.Path;
-import org.eclipse.equinox.bidi.StructuredTextTypeHandlerFactory;
-import org.eclipse.jface.dialogs.Dialog;
-import org.eclipse.jface.util.BidiUtils;
-import org.eclipse.jface.viewers.ISelection;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.jface.viewers.StructuredSelection;
-import org.eclipse.jface.viewers.TreeViewer;
-import org.eclipse.jface.viewers.ViewerComparator;
-import org.eclipse.osgi.util.TextProcessor;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.layout.GridLayout;
@@ -39,9 +26,22 @@ import org.eclipse.swt.widgets.Event;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Listener;
 import org.eclipse.swt.widgets.Text;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
-import org.eclipse.ui.model.WorkbenchLabelProvider;
-import org.eclipse.ui.part.DrillDownComposite;
+import org.fdesigner.bidi.StructuredTextTypeHandlerFactory;
+import org.fdesigner.container.util.TextProcessor;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.resources.IContainer;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.Path;
+import org.fdesigner.ui.jface.dialogs.Dialog;
+import org.fdesigner.ui.jface.util.BidiUtils;
+import org.fdesigner.ui.jface.viewers.ISelection;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.ui.jface.viewers.StructuredSelection;
+import org.fdesigner.ui.jface.viewers.TreeViewer;
+import org.fdesigner.ui.jface.viewers.ViewerComparator;
+import org.fdesigner.workbench.model.WorkbenchLabelProvider;
+import org.fdesigner.workbench.part.DrillDownComposite;
 
 /**
  * Workbench-level composite for choosing a container.

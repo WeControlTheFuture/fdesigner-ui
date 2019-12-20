@@ -12,12 +12,12 @@
  *     Simon Scholz <simon.scholz@vogella.com> - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal.ide.handlers;
+package org.fdesigner.ide.internal.ide.handlers;
 
-import org.eclipse.core.expressions.PropertyTester;
-import org.eclipse.jface.preference.IPreferencePage;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.internal.dialogs.FilteredPreferenceDialog;
+import org.fdesigner.expressions.PropertyTester;
+import org.fdesigner.ui.jface.preference.IPreferencePage;
+import org.fdesigner.workbench.internal.dialogs.FilteredPreferenceDialog;
 
 /**
  * PropertyTester which is able to test whether a FilteredPreferenceDialog on a

@@ -12,18 +12,18 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal.views.markers;
+package org.fdesigner.ide.internal.views.markers;
 
 import java.util.Collection;
 import java.util.LinkedList;
 
-import org.eclipse.core.resources.IMarker;
-import org.eclipse.core.resources.IMarkerDelta;
-import org.eclipse.core.resources.IResourceChangeEvent;
-import org.eclipse.core.resources.IResourceChangeListener;
-import org.eclipse.core.resources.IResourceDelta;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.runtime.jobs.Job;
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.resources.IMarkerDelta;
+import org.fdesigner.resources.IResourceChangeEvent;
+import org.fdesigner.resources.IResourceChangeListener;
+import org.fdesigner.resources.IResourceDelta;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.runtime.jobs.runtime.jobs.Job;
 
 /**
  * The MarkersChangeListener is IResourceChangeListener that waits for any

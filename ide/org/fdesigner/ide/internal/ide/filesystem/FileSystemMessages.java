@@ -13,9 +13,9 @@
  *     Alexander Fedorov <alexander.fedorov@arsysop.ru> - Bug 549409
  *******************************************************************************/
 
-package org.eclipse.ui.internal.ide.filesystem;
+package org.fdesigner.ide.internal.ide.filesystem;
 
-import org.eclipse.osgi.util.NLS;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * FileSystemMessages is the class that handles the messages for the

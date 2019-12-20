@@ -11,7 +11,7 @@
  * Contributors:
  *     Fabian Pfaff <fabian.pfaff@vogella.com> - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.ide;
+package org.fdesigner.ide.internal.ide;
 
 import static java.util.stream.Collectors.toList;
 
@@ -31,26 +31,26 @@ import java.util.concurrent.TimeoutException;
 import java.util.regex.Pattern;
 import java.util.stream.Stream;
 
-import org.eclipse.jface.bindings.keys.KeyStroke;
-import org.eclipse.jface.bindings.keys.ParseException;
-import org.eclipse.jface.fieldassist.ComboContentAdapter;
-import org.eclipse.jface.fieldassist.ContentProposal;
-import org.eclipse.jface.fieldassist.ContentProposalAdapter;
-import org.eclipse.jface.fieldassist.ControlDecoration;
-import org.eclipse.jface.fieldassist.FieldDecoration;
-import org.eclipse.jface.fieldassist.FieldDecorationRegistry;
-import org.eclipse.jface.fieldassist.IContentProposal;
-import org.eclipse.jface.fieldassist.IContentProposalListener2;
-import org.eclipse.jface.fieldassist.IContentProposalProvider;
-import org.eclipse.jface.fieldassist.IControlContentAdapter;
-import org.eclipse.osgi.util.NLS;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.KeyEvent;
 import org.eclipse.swt.events.KeyListener;
 import org.eclipse.swt.events.MouseListener;
 import org.eclipse.swt.widgets.Combo;
 import org.eclipse.swt.widgets.Control;
-import org.eclipse.ui.internal.WorkbenchMessages;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.ui.jface.bindings.keys.KeyStroke;
+import org.fdesigner.ui.jface.bindings.keys.ParseException;
+import org.fdesigner.ui.jface.fieldassist.ComboContentAdapter;
+import org.fdesigner.ui.jface.fieldassist.ContentProposal;
+import org.fdesigner.ui.jface.fieldassist.ContentProposalAdapter;
+import org.fdesigner.ui.jface.fieldassist.ControlDecoration;
+import org.fdesigner.ui.jface.fieldassist.FieldDecoration;
+import org.fdesigner.ui.jface.fieldassist.FieldDecorationRegistry;
+import org.fdesigner.ui.jface.fieldassist.IContentProposal;
+import org.fdesigner.ui.jface.fieldassist.IContentProposalListener2;
+import org.fdesigner.ui.jface.fieldassist.IContentProposalProvider;
+import org.fdesigner.ui.jface.fieldassist.IControlContentAdapter;
+import org.fdesigner.workbench.internal.WorkbenchMessages;
 
 /**
  * Adds content assist to a Combo, that is intended to be used to choose a

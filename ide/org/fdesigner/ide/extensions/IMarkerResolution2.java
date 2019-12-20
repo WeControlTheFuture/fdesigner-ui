@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui;
+package org.fdesigner.ide.extensions;
 
 import org.eclipse.swt.graphics.Image;
 

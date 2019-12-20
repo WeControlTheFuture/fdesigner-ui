@@ -16,9 +16,9 @@
  *     Patrik Suzzi <psuzzi@gmail.com> - Bug 502050
  *******************************************************************************/
 
-package org.eclipse.ui.internal.ide;
+package org.fdesigner.ide.internal.ide;
 
-import org.eclipse.jface.dialogs.MessageDialogWithToggle;
+import org.fdesigner.ui.jface.dialogs.MessageDialogWithToggle;
 
 /**
  * The IDEInternalPreferences are the internal constants used by the Workbench.

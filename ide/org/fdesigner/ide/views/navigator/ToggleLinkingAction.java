@@ -12,9 +12,9 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.views.navigator;
+package org.fdesigner.ide.views.navigator;
 
-import org.eclipse.ui.IWorkbenchCommandConstants;
+import org.fdesigner.workbench.IWorkbenchCommandConstants;
 
 /**
  * This action toggles whether this navigator links its selection to the active

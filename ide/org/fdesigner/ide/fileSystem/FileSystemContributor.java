@@ -12,12 +12,12 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.ide.fileSystem;
+package org.fdesigner.ide.fileSystem;
 
 import java.net.URI;
 
-import org.eclipse.core.filesystem.URIUtil;
 import org.eclipse.swt.widgets.Shell;
+import org.fdesigner.filesystem.URIUtil;
 
 /**
  * The abstract base class for all UI file system contributors. This class

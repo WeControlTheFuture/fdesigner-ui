@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal.views.markers;
+package org.fdesigner.ide.internal.views.markers;
 
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionAdapter;
@@ -21,8 +21,8 @@ import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Composite;
-import org.eclipse.ui.views.markers.MarkerFieldFilter;
-import org.eclipse.ui.views.markers.internal.MarkerMessages;
+import org.fdesigner.ide.views.markers.MarkerFieldFilter;
+import org.fdesigner.ide.views.markers.internal.MarkerMessages;
 
 /**
  * {@link ProblemsSeverityAndDescriptionConfigurationArea} is the configuration

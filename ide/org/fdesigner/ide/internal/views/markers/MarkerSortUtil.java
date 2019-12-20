@@ -26,14 +26,14 @@
  *              IBM - Ported the code to Java
  */
 
-package org.eclipse.ui.internal.views.markers;
+package org.fdesigner.ide.internal.views.markers;
 
 import java.util.Arrays;
 import java.util.Comparator;
 
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.NullProgressMonitor;
-import org.eclipse.ui.views.markers.MarkerItem;
+import org.fdesigner.ide.views.markers.MarkerItem;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.NullProgressMonitor;
 
 /**
  * @since 3.5

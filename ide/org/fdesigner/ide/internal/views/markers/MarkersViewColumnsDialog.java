@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal.views.markers;
+package org.fdesigner.ide.internal.views.markers;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -20,14 +20,17 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Objects;
 
-import org.eclipse.jface.resource.JFaceResources;
-import org.eclipse.jface.viewers.ITableLabelProvider;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.internal.views.markers.MarkersViewColumnsDialog.FieldEntry;
-import org.eclipse.ui.views.markers.MarkerField;
+import org.fdesigner.ide.internal.views.markers.MarkersViewColumnsDialog.FieldEntry;
+import org.fdesigner.ide.internal.views.markers.ViewerColumnsDialog.IColumnInfoProvider;
+import org.fdesigner.ide.internal.views.markers.ViewerColumnsDialog.IColumnUpdater;
+import org.fdesigner.ide.internal.views.markers.ViewerColumnsDialog.TableLabelProvider;
+import org.fdesigner.ide.views.markers.MarkerField;
+import org.fdesigner.ui.jface.resource.JFaceResources;
+import org.fdesigner.ui.jface.viewers.ITableLabelProvider;
 
 /**
  * MarkersViewSettingDialog is the dialog for showing marker preferences.

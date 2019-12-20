@@ -13,19 +13,19 @@
  *     Patrik Suzzi <psuzzi@gmail.com> - Bug 496319
  ******************************************************************************/
 
-package org.eclipse.ui.internal.ide.commands;
+package org.fdesigner.ide.internal.ide.commands;
 
 import java.util.Properties;
 
-import org.eclipse.core.commands.AbstractHandler;
-import org.eclipse.core.commands.ExecutionEvent;
-import org.eclipse.core.commands.ExecutionException;
-import org.eclipse.core.runtime.IProduct;
-import org.eclipse.core.runtime.Platform;
 import org.eclipse.swt.dnd.Clipboard;
 import org.eclipse.swt.dnd.TextTransfer;
 import org.eclipse.swt.dnd.Transfer;
-import org.eclipse.ui.internal.ProductProperties;
+import org.fdesigner.commands.AbstractHandler;
+import org.fdesigner.commands.ExecutionEvent;
+import org.fdesigner.commands.ExecutionException;
+import org.fdesigner.runtime.core.IProduct;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.workbench.internal.ProductProperties;
 
 /**
  * Copies the main build information to the clipboard, including os version and

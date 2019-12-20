@@ -11,13 +11,13 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.wizards.datatransfer;
+package org.fdesigner.ide.internal.wizards.datatransfer;
 
 import java.io.IOException;
 
-import org.eclipse.core.resources.IContainer;
-import org.eclipse.core.resources.IFile;
-import org.eclipse.core.runtime.CoreException;
+import org.fdesigner.resources.IContainer;
+import org.fdesigner.resources.IFile;
+import org.fdesigner.runtime.common.runtime.CoreException;
 
 /**
  * Interface for file exporters of different file formats.  Used by the

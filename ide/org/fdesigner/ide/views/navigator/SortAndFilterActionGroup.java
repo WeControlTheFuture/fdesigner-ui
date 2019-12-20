@@ -13,13 +13,12 @@
  *     Sebastian Davids <sdavids@gmx.de> - Images for menu items (27481)
  *     Lars Vogel <Lars.Vogel@gmail.com> - Bug 430694
  *******************************************************************************/
-package org.eclipse.ui.views.navigator;
+package org.fdesigner.ide.views.navigator;
 
-import org.eclipse.jface.action.IMenuManager;
-import org.eclipse.jface.action.MenuManager;
-import org.eclipse.ui.IActionBars;
-import org.eclipse.ui.internal.views.navigator.ResourceNavigatorMessages;
-
+import org.fdesigner.ui.jface.action.IMenuManager;
+import org.fdesigner.ui.jface.action.MenuManager;
+import org.fdesigner.workbench.IActionBars;
+import org.fdesigner.ide.internal.views.navigator.ResourceNavigatorMessages;
 /**
  * This is the action group for the sort and filter actions.
  * 

@@ -14,31 +14,11 @@
  *     font should be activated and used by other components.
  *******************************************************************************/
 
-package org.eclipse.ui.dialogs;
+package org.fdesigner.ide.extensions.dialogs;
 
 import java.lang.reflect.InvocationTargetException;
 import java.net.URI;
 
-import org.eclipse.core.resources.IContainer;
-import org.eclipse.core.resources.IFolder;
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.resources.IProjectNatureDescriptor;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.IWorkspace;
-import org.eclipse.core.resources.IWorkspaceRoot;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IPath;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Path;
-import org.eclipse.core.runtime.Preferences;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.core.runtime.SubMonitor;
-import org.eclipse.jface.dialogs.ErrorDialog;
-import org.eclipse.jface.dialogs.IDialogConstants;
-import org.eclipse.jface.dialogs.MessageDialog;
-import org.eclipse.osgi.util.NLS;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
@@ -52,12 +32,33 @@ import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Text;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.actions.WorkspaceModifyOperation;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.eclipse.ui.internal.ide.IIDEHelpContextIds;
-import org.eclipse.ui.internal.ide.dialogs.CreateLinkedResourceGroup;
+import org.fdesigner.ide.extensions.actions.WorkspaceModifyOperation;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.internal.ide.IIDEHelpContextIds;
+import org.fdesigner.ide.internal.ide.dialogs.CreateLinkedResourceGroup;
+import org.fdesigner.resources.IContainer;
+import org.fdesigner.resources.IFolder;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IProjectNatureDescriptor;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IWorkspace;
+import org.fdesigner.resources.IWorkspaceRoot;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Path;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.common.runtime.SubMonitor;
+import org.fdesigner.runtime.core.Preferences;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.ui.jface.dialogs.ErrorDialog;
+import org.fdesigner.ui.jface.dialogs.IDialogConstants;
+import org.fdesigner.ui.jface.dialogs.MessageDialog;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.dialogs.SelectionStatusDialog;
 
 /**
  * The NewFolderDialog is used to create a new folder. The folder can optionally

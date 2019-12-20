@@ -12,7 +12,7 @@
  *     Mickael Istria (Red Hat Inc.) - initial API and implementation
  *     Snjezana Peco (Red Hat Inc.)
  ******************************************************************************/
-package org.eclipse.ui.internal.wizards.datatransfer;
+package org.fdesigner.ide.internal.wizards.datatransfer;
 
 import java.io.File;
 import java.io.IOException;
@@ -26,27 +26,27 @@ import java.util.List;
 import java.util.Set;
 import java.util.zip.ZipFile;
 
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.runtime.Adapters;
-import org.eclipse.core.runtime.IAdaptable;
-import org.eclipse.core.runtime.IPath;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.OperationCanceledException;
-import org.eclipse.jface.dialogs.DialogSettings;
-import org.eclipse.jface.dialogs.IDialogSettings;
-import org.eclipse.jface.operation.IRunnableWithProgress;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.jface.wizard.Wizard;
-import org.eclipse.osgi.util.NLS;
-import org.eclipse.ui.IImportWizard;
-import org.eclipse.ui.IWorkbench;
-import org.eclipse.ui.IWorkingSet;
-import org.eclipse.ui.internal.IPreferenceConstants;
-import org.eclipse.ui.internal.WorkbenchPlugin;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.eclipse.ui.progress.IProgressConstants;
-import org.eclipse.ui.wizards.datatransfer.ProjectConfigurator;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.wizards.datatransfer.ProjectConfigurator;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.runtime.common.runtime.Adapters;
+import org.fdesigner.runtime.common.runtime.IAdaptable;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.OperationCanceledException;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.ui.jface.dialogs.DialogSettings;
+import org.fdesigner.ui.jface.dialogs.IDialogSettings;
+import org.fdesigner.ui.jface.operation.IRunnableWithProgress;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.ui.jface.wizard.Wizard;
+import org.fdesigner.workbench.IImportWizard;
+import org.fdesigner.workbench.IWorkbench;
+import org.fdesigner.workbench.IWorkingSet;
+import org.fdesigner.workbench.internal.IPreferenceConstants;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
+import org.fdesigner.workbench.progress.IProgressConstants;
 
 /**
  * This {@link SmartImportWizard} allows user to control an import operation. It

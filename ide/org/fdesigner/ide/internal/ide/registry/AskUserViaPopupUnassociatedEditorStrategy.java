@@ -12,16 +12,16 @@
  *     Mickael Istria (Red Hat Inc.) - initial API and implementation
  *     Patrik Suzzi <psuzzi@gmail.com> - Bug 485201
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.registry;
+package org.fdesigner.ide.internal.ide.registry;
 
-import org.eclipse.core.runtime.OperationCanceledException;
-import org.eclipse.jface.dialogs.IDialogConstants;
-import org.eclipse.ui.IEditorDescriptor;
-import org.eclipse.ui.IEditorRegistry;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.dialogs.EditorSelectionDialog;
-import org.eclipse.ui.ide.IUnassociatedEditorStrategy;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.IUnassociatedEditorStrategy;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.runtime.common.runtime.OperationCanceledException;
+import org.fdesigner.ui.jface.dialogs.IDialogConstants;
+import org.fdesigner.workbench.IEditorDescriptor;
+import org.fdesigner.workbench.IEditorRegistry;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.dialogs.EditorSelectionDialog;
 
 /**
  * @since 3.12

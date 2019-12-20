@@ -13,19 +13,19 @@
  *     Lars Vogel <Lars.Vogel@gmail.com> - Bug 430694
  *******************************************************************************/
 
-package org.eclipse.ui.views.bookmarkexplorer;
+package org.fdesigner.ide.views.bookmarkexplorer;
 
-import org.eclipse.core.resources.IMarker;
-import org.eclipse.core.runtime.IPath;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.jface.resource.JFaceResources;
-import org.eclipse.jface.viewers.ITableLabelProvider;
-import org.eclipse.jface.viewers.LabelProvider;
-import org.eclipse.osgi.util.NLS;
 import org.eclipse.swt.graphics.Image;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.eclipse.ui.internal.views.bookmarkexplorer.BookmarkMessages;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.ui.jface.resource.JFaceResources;
+import org.fdesigner.ui.jface.viewers.ITableLabelProvider;
+import org.fdesigner.ui.jface.viewers.LabelProvider;
 
+import org.fdesigner.ide.internal.views.bookmarkexplorer.BookmarkMessages;
 /**
  * Provides labels for the bookmark navigator table
  *

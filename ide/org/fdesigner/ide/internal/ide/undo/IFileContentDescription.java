@@ -11,11 +11,11 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.undo;
+package org.fdesigner.ide.internal.ide.undo;
 
 import java.io.InputStream;
 
-import org.eclipse.core.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.CoreException;
 
 /**
  * IFileContentDescription is a description of a file's content.

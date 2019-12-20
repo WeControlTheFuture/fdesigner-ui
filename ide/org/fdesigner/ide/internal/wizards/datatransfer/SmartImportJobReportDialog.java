@@ -12,24 +12,11 @@
  *     Mickael Istria (Red Hat Inc.) - initial API and implementation
  *     Aurelien Pupier (Bonitasoft S.A.) - bug fix 470024
  ******************************************************************************/
-package org.eclipse.ui.internal.wizards.datatransfer;
+package org.fdesigner.ide.internal.wizards.datatransfer;
 
 import java.util.List;
 import java.util.Map.Entry;
 
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.runtime.IPath;
-import org.eclipse.core.runtime.Path;
-import org.eclipse.core.runtime.jobs.Job;
-import org.eclipse.jface.dialogs.IDialogConstants;
-import org.eclipse.jface.viewers.ArrayContentProvider;
-import org.eclipse.jface.viewers.ColumnLabelProvider;
-import org.eclipse.jface.viewers.TableViewer;
-import org.eclipse.jface.viewers.TableViewerColumn;
-import org.eclipse.jface.viewers.Viewer;
-import org.eclipse.jface.viewers.ViewerComparator;
-import org.eclipse.jface.viewers.ViewerFilter;
-import org.eclipse.osgi.util.NLS;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.layout.GridData;
@@ -37,8 +24,21 @@ import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.internal.progress.ProgressMonitorFocusJobDialog;
-import org.eclipse.ui.wizards.datatransfer.ProjectConfigurator;
+import org.fdesigner.ide.wizards.datatransfer.ProjectConfigurator;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.Path;
+import org.fdesigner.runtime.jobs.runtime.jobs.Job;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.ui.jface.dialogs.IDialogConstants;
+import org.fdesigner.ui.jface.viewers.ArrayContentProvider;
+import org.fdesigner.ui.jface.viewers.ColumnLabelProvider;
+import org.fdesigner.ui.jface.viewers.TableViewer;
+import org.fdesigner.ui.jface.viewers.TableViewerColumn;
+import org.fdesigner.ui.jface.viewers.Viewer;
+import org.fdesigner.ui.jface.viewers.ViewerComparator;
+import org.fdesigner.ui.jface.viewers.ViewerFilter;
+import org.fdesigner.workbench.internal.progress.ProgressMonitorFocusJobDialog;
 
 /**
  * A dedicated dialog to report progress and results of an {@link SmartImportJob}.

@@ -12,14 +12,15 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.views.navigator;
+package org.fdesigner.ide.views.navigator;
 
-import org.eclipse.jface.viewers.LabelProvider;
-import org.eclipse.jface.viewers.Viewer;
-import org.eclipse.jface.window.Window;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.dialogs.ListSelectionDialog;
-import org.eclipse.ui.internal.views.navigator.ResourceNavigatorMessages;
+import org.fdesigner.ui.jface.viewers.LabelProvider;
+import org.fdesigner.ui.jface.viewers.Viewer;
+import org.fdesigner.ui.jface.window.Window;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.dialogs.ListSelectionDialog;
+
+import org.fdesigner.ide.internal.views.navigator.ResourceNavigatorMessages;
 
 /**
  * The FilterSelectionAction opens the filters dialog.

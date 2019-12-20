@@ -12,10 +12,10 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.ide.dialogs;
+package org.fdesigner.ide.internal.ide.dialogs;
 
-import org.eclipse.jface.action.Action;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ui.jface.action.Action;
 
 /**
  * Global copy action for the welcome editor.

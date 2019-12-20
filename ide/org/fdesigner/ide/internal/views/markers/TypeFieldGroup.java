@@ -12,17 +12,17 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.views.markers;
+package org.fdesigner.ide.internal.views.markers;
 
-import org.eclipse.core.resources.IMarker;
-import org.eclipse.core.runtime.CoreException;
 import org.eclipse.swt.graphics.Image;
-import org.eclipse.ui.internal.ide.Policy;
-import org.eclipse.ui.views.markers.internal.AbstractField;
-import org.eclipse.ui.views.markers.internal.MarkerMessages;
-import org.eclipse.ui.views.markers.internal.MarkerType;
-import org.eclipse.ui.views.markers.internal.MarkerTypesModel;
-import org.eclipse.ui.views.markers.internal.TableComparator;
+import org.fdesigner.ide.internal.ide.Policy;
+import org.fdesigner.ide.views.markers.internal.AbstractField;
+import org.fdesigner.ide.views.markers.internal.MarkerMessages;
+import org.fdesigner.ide.views.markers.internal.MarkerType;
+import org.fdesigner.ide.views.markers.internal.MarkerTypesModel;
+import org.fdesigner.ide.views.markers.internal.TableComparator;
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.runtime.common.runtime.CoreException;
 
 /**
  * TypeFieldGroup is the field used to group by type.

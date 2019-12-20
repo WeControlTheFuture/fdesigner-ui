@@ -11,26 +11,26 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.actions;
+package org.fdesigner.ide.extensions.actions;
 
 import java.util.Iterator;
 import java.util.List;
 
-import org.eclipse.core.resources.IContainer;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.IWorkspace;
-import org.eclipse.core.resources.IWorkspaceRoot;
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.core.runtime.IPath;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.jface.window.IShellProvider;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.dialogs.ContainerSelectionDialog;
-import org.eclipse.ui.dialogs.ISelectionValidator;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.eclipse.ui.internal.ide.IIDEHelpContextIds;
+import org.fdesigner.ide.extensions.dialogs.ContainerSelectionDialog;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.internal.ide.IIDEHelpContextIds;
+import org.fdesigner.resources.IContainer;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IWorkspace;
+import org.fdesigner.resources.IWorkspaceRoot;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.ui.jface.window.IShellProvider;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.dialogs.ISelectionValidator;
 
 /**
  * Standard action for copying the currently selected resources elsewhere

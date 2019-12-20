@@ -11,11 +11,11 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.views.markers;
+package org.fdesigner.ide.internal.views.markers;
 
-import org.eclipse.core.commands.ExecutionEvent;
-import org.eclipse.core.commands.IHandler;
-import org.eclipse.ui.views.markers.MarkerViewHandler;
+import org.fdesigner.commands.ExecutionEvent;
+import org.fdesigner.commands.IHandler;
+import org.fdesigner.ide.views.markers.MarkerViewHandler;
 
 /**
  * The ConfigureContentsDialogHandler is the handler for opening the contents

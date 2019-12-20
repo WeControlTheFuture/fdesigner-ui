@@ -12,24 +12,24 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.ide.undo;
+package org.fdesigner.ide.internal.ide.undo;
 
 import java.net.URI;
 
-import org.eclipse.core.resources.IContainer;
-import org.eclipse.core.resources.IFile;
-import org.eclipse.core.resources.IFolder;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.IWorkspaceRoot;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IPath;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.Path;
-import org.eclipse.core.runtime.SubMonitor;
-import org.eclipse.ui.ide.dialogs.UIResourceFilterDescription;
-import org.eclipse.ui.ide.undo.ResourceDescription;
+import org.fdesigner.ide.dialogs.UIResourceFilterDescription;
+import org.fdesigner.ide.undo.ResourceDescription;
+import org.fdesigner.resources.IContainer;
+import org.fdesigner.resources.IFile;
+import org.fdesigner.resources.IFolder;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IWorkspaceRoot;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.Path;
+import org.fdesigner.runtime.common.runtime.SubMonitor;
 
 /**
  * ContainerDescription is a lightweight description that describes a container

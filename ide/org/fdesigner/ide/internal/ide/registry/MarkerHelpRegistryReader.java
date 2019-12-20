@@ -12,14 +12,14 @@
  *     IBM Corporation - initial API and implementation
  *     Tim Neumann <tim.neumann@advantest.com> - Bug 543570
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.registry;
+package org.fdesigner.ide.internal.ide.registry;
 
 import java.util.ArrayList;
 
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.core.runtime.IExtensionRegistry;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.runtime.registry.runtime.IExtensionRegistry;
 
 /**
  * This class is used to read marker help context ids and

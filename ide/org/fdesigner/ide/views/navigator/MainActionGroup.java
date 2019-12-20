@@ -14,43 +14,43 @@
  *     Sebastian Davids <sdavids@gmx.de> - Images for menu items (27481)
  *     Lars Vogel <Lars.Vogel@gmail.com> - Bug 430694
  *******************************************************************************/
-package org.eclipse.ui.views.navigator;
+package org.fdesigner.ide.views.navigator;
 
 import java.util.List;
 
-import org.eclipse.core.commands.operations.IUndoContext;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.IResourceChangeEvent;
-import org.eclipse.core.resources.IResourceChangeListener;
-import org.eclipse.core.resources.IResourceDelta;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.runtime.Adapters;
-import org.eclipse.jface.action.IMenuManager;
-import org.eclipse.jface.action.IToolBarManager;
-import org.eclipse.jface.action.MenuManager;
-import org.eclipse.jface.action.Separator;
-import org.eclipse.jface.util.IPropertyChangeListener;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.jface.viewers.TreeViewer;
-import org.eclipse.jface.window.IShellProvider;
 import org.eclipse.swt.events.KeyEvent;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.IActionBars;
-import org.eclipse.ui.IWorkbenchActionConstants;
-import org.eclipse.ui.IWorkingSet;
-import org.eclipse.ui.actions.ActionContext;
-import org.eclipse.ui.actions.ActionFactory;
-import org.eclipse.ui.actions.AddBookmarkAction;
-import org.eclipse.ui.actions.AddTaskAction;
-import org.eclipse.ui.actions.ExportResourcesAction;
-import org.eclipse.ui.actions.ImportResourcesAction;
-import org.eclipse.ui.actions.NewWizardMenu;
-import org.eclipse.ui.actions.WorkingSetFilterActionGroup;
-import org.eclipse.ui.dialogs.PropertyDialogAction;
-import org.eclipse.ui.ide.IDEActionFactory;
-import org.eclipse.ui.internal.views.navigator.ResourceNavigatorMessages;
-import org.eclipse.ui.operations.UndoRedoActionGroup;
+import org.fdesigner.commands.operations.IUndoContext;
+import org.fdesigner.ide.IDEActionFactory;
+import org.fdesigner.ide.extensions.actions.AddBookmarkAction;
+import org.fdesigner.ide.extensions.actions.AddTaskAction;
+import org.fdesigner.ide.extensions.actions.NewWizardMenu;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IResourceChangeEvent;
+import org.fdesigner.resources.IResourceChangeListener;
+import org.fdesigner.resources.IResourceDelta;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.runtime.common.runtime.Adapters;
+import org.fdesigner.ui.jface.action.IMenuManager;
+import org.fdesigner.ui.jface.action.IToolBarManager;
+import org.fdesigner.ui.jface.action.MenuManager;
+import org.fdesigner.ui.jface.action.Separator;
+import org.fdesigner.ui.jface.util.IPropertyChangeListener;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.ui.jface.viewers.TreeViewer;
+import org.fdesigner.ui.jface.window.IShellProvider;
+import org.fdesigner.workbench.IActionBars;
+import org.fdesigner.workbench.IWorkbenchActionConstants;
+import org.fdesigner.workbench.IWorkingSet;
+import org.fdesigner.workbench.actions.ActionContext;
+import org.fdesigner.workbench.actions.ActionFactory;
+import org.fdesigner.workbench.actions.ExportResourcesAction;
+import org.fdesigner.workbench.actions.ImportResourcesAction;
+import org.fdesigner.workbench.actions.WorkingSetFilterActionGroup;
+import org.fdesigner.workbench.dialogs.PropertyDialogAction;
+import org.fdesigner.workbench.operations.UndoRedoActionGroup;
 
+import org.fdesigner.ide.internal.views.navigator.ResourceNavigatorMessages;
 /**
  * The main action group for the navigator. This contains a few actions and
  * several subgroups.

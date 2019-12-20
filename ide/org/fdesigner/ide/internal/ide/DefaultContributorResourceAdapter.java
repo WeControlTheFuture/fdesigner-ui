@@ -11,14 +11,14 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.ide;
+package org.fdesigner.ide.internal.ide;
 
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.mapping.ResourceMapping;
-import org.eclipse.core.runtime.Adapters;
-import org.eclipse.core.runtime.IAdaptable;
-import org.eclipse.ui.IContributorResourceAdapter;
-import org.eclipse.ui.ide.IContributorResourceAdapter2;
+import org.fdesigner.ide.IContributorResourceAdapter2;
+import org.fdesigner.ide.extensions.IContributorResourceAdapter;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.mapping.ResourceMapping;
+import org.fdesigner.runtime.common.runtime.Adapters;
+import org.fdesigner.runtime.common.runtime.IAdaptable;
 
 /**
  * The DefaultContributorResourceAdapter is the default

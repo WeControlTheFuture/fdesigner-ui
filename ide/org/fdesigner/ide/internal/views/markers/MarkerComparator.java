@@ -12,15 +12,15 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.views.markers;
+package org.fdesigner.ide.internal.views.markers;
 
 import java.util.Comparator;
 import java.util.HashSet;
 import java.util.Iterator;
 
-import org.eclipse.ui.IMemento;
-import org.eclipse.ui.views.markers.MarkerField;
-import org.eclipse.ui.views.markers.MarkerItem;
+import org.fdesigner.ide.views.markers.MarkerField;
+import org.fdesigner.ide.views.markers.MarkerItem;
+import org.fdesigner.workbench.IMemento;
 
 /**
  * The MarkerComparator is the class that handles the comparison of markers for

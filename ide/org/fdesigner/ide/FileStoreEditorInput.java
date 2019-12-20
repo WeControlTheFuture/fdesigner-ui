@@ -16,7 +16,7 @@ package org.fdesigner.ide;
 
 import java.net.URI;
 
-import org.eclipse.core.filesystem.IFileStore;
+import org.fdesigner.filesystem.IFileStore;
 import org.fdesigner.ide.extensions.IURIEditorInput;
 import org.fdesigner.runtime.common.runtime.Assert;
 import org.fdesigner.runtime.core.Platform;

@@ -11,20 +11,20 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.model;
+package org.fdesigner.ide.internal.ide.model;
 
 import java.util.HashMap;
 
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.jface.resource.ImageDescriptor;
 import org.eclipse.swt.graphics.Point;
-import org.eclipse.ui.IProjectActionFilter;
-import org.eclipse.ui.ide.IDE;
-import org.eclipse.ui.internal.ide.IDEInternalWorkbenchImages;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.eclipse.ui.internal.ide.misc.OverlayIcon;
+import org.fdesigner.ide.IDE;
+import org.fdesigner.ide.extensions.IProjectActionFilter;
+import org.fdesigner.ide.internal.ide.IDEInternalWorkbenchImages;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.internal.ide.misc.OverlayIcon;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
 
 /**
  * An IWorkbenchAdapter that represents IProject.

@@ -13,10 +13,10 @@
  *     Red Hat, Inc - setStrip(int), getStrip()
  *******************************************************************************/
 
-package org.eclipse.ui.internal.wizards.datatransfer;
+package org.fdesigner.ide.internal.wizards.datatransfer;
 
 
-import org.eclipse.ui.wizards.datatransfer.IImportStructureProvider;
+import org.fdesigner.ide.wizards.datatransfer.IImportStructureProvider;
 
 /**
  * Interface which can provide structure and content information for an archive

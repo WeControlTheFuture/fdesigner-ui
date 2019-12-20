@@ -11,9 +11,9 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.wizards.datatransfer;
+package org.fdesigner.ide.internal.wizards.datatransfer;
 
-import org.eclipse.ui.PlatformUI;
+import org.fdesigner.workbench.PlatformUI;
 
 /**
  * Help context ids for the data transfer wizards.

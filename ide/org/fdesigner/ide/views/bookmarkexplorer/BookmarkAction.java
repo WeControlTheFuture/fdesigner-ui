@@ -12,17 +12,17 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.views.bookmarkexplorer;
+package org.fdesigner.ide.views.bookmarkexplorer;
 
-import org.eclipse.core.commands.ExecutionException;
-import org.eclipse.core.commands.operations.IUndoableOperation;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IAdaptable;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.jface.dialogs.ErrorDialog;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.actions.SelectionProviderAction;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.commands.ExecutionException;
+import org.fdesigner.commands.operations.IUndoableOperation;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IAdaptable;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.ui.jface.dialogs.ErrorDialog;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.actions.SelectionProviderAction;
 
 /*
 *

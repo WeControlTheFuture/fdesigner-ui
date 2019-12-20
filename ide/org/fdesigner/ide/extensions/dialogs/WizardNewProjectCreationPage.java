@@ -15,21 +15,10 @@
  *     Oakland Software Incorporated (Francis Upton) <francisu@ieee.org>
  *		    Bug 224997 [Workbench] Impossible to copy project
  *******************************************************************************/
-package org.eclipse.ui.dialogs;
+package org.fdesigner.ide.extensions.dialogs;
 
 import java.net.URI;
 
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.IWorkspace;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.runtime.IPath;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Path;
-import org.eclipse.jface.dialogs.Dialog;
-import org.eclipse.jface.util.BidiUtils;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.jface.wizard.WizardPage;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.layout.GridLayout;
@@ -37,13 +26,25 @@ import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Listener;
 import org.eclipse.swt.widgets.Text;
-import org.eclipse.ui.IWorkingSet;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.eclipse.ui.internal.ide.IIDEHelpContextIds;
-import org.eclipse.ui.internal.ide.dialogs.ProjectContentsLocationArea;
-import org.eclipse.ui.internal.ide.dialogs.ProjectContentsLocationArea.IErrorMessageReporter;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.internal.ide.IIDEHelpContextIds;
+import org.fdesigner.ide.internal.ide.dialogs.ProjectContentsLocationArea;
+import org.fdesigner.ide.internal.ide.dialogs.ProjectContentsLocationArea.IErrorMessageReporter;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IWorkspace;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Path;
+import org.fdesigner.ui.jface.dialogs.Dialog;
+import org.fdesigner.ui.jface.util.BidiUtils;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.ui.jface.wizard.WizardPage;
+import org.fdesigner.workbench.IWorkingSet;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.dialogs.WorkingSetGroup;
 
 /**
  * Standard main page for a wizard that is creates a project resource.

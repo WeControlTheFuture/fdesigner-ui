@@ -12,12 +12,12 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.views.markers;
+package org.fdesigner.ide.internal.views.markers;
 
-import org.eclipse.jface.viewers.TreeViewer;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Item;
 import org.eclipse.swt.widgets.Tree;
+import org.fdesigner.ui.jface.viewers.TreeViewer;
 
 /**
  * The MarkersTreeViewer is a viewer that optimizes the expandToLevel method.

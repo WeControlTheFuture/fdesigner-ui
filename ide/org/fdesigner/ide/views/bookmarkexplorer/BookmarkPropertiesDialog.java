@@ -12,15 +12,15 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.views.bookmarkexplorer;
+package org.fdesigner.ide.views.bookmarkexplorer;
 
 import java.util.Map;
 
-import org.eclipse.core.resources.IMarker;
-import org.eclipse.core.resources.IResource;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.internal.views.bookmarkexplorer.BookmarkMessages;
-import org.eclipse.ui.views.markers.internal.DialogMarkerProperties;
+import org.fdesigner.ide.views.markers.internal.DialogMarkerProperties;
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.ide.internal.views.bookmarkexplorer.BookmarkMessages;
 
 /**
  * Shows the properties of a new or existing bookmark

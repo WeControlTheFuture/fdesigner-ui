@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import org.eclipse.core.resources.IResource;
+import org.fdesigner.resources.IResource;
 import org.fdesigner.runtime.common.runtime.Adapters;
 import org.fdesigner.ui.jface.viewers.IStructuredSelection;
 import org.fdesigner.ui.jface.viewers.StructuredSelection;

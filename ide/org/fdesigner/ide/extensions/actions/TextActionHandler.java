@@ -11,12 +11,8 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.actions;
+package org.fdesigner.ide.extensions.actions;
 
-import org.eclipse.jface.action.Action;
-import org.eclipse.jface.action.IAction;
-import org.eclipse.jface.util.IPropertyChangeListener;
-import org.eclipse.jface.util.PropertyChangeEvent;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.dnd.Clipboard;
 import org.eclipse.swt.dnd.TextTransfer;
@@ -29,10 +25,15 @@ import org.eclipse.swt.graphics.Point;
 import org.eclipse.swt.widgets.Event;
 import org.eclipse.swt.widgets.Listener;
 import org.eclipse.swt.widgets.Text;
-import org.eclipse.ui.IActionBars;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
-import org.eclipse.ui.internal.ide.IIDEHelpContextIds;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.IIDEHelpContextIds;
+import org.fdesigner.ui.jface.action.Action;
+import org.fdesigner.ui.jface.action.IAction;
+import org.fdesigner.ui.jface.util.IPropertyChangeListener;
+import org.fdesigner.ui.jface.util.PropertyChangeEvent;
+import org.fdesigner.workbench.IActionBars;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.actions.ActionFactory;
 
 /**
  * Handles the redirection of the global Cut, Copy, Paste, and Select All

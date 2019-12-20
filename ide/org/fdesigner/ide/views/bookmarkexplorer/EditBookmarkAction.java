@@ -12,15 +12,14 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.views.bookmarkexplorer;
+package org.fdesigner.ide.views.bookmarkexplorer;
 
-import org.eclipse.core.resources.IFile;
-import org.eclipse.core.resources.IMarker;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.views.bookmarkexplorer.BookmarkMessages;
-
+import org.fdesigner.resources.IFile;
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.ide.internal.views.bookmarkexplorer.BookmarkMessages;
 /**
  * Opens a properties dialog allowing the user to edit the bookmark's description.
  *

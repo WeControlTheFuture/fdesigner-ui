@@ -11,22 +11,22 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.ide;
+package org.fdesigner.ide.internal.ide;
 
-import org.eclipse.core.resources.IFile;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.content.IContentDescription;
-import org.eclipse.core.runtime.content.IContentType;
-import org.eclipse.core.runtime.jobs.Job;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.jface.viewers.IDecoration;
-import org.eclipse.jface.viewers.ILabelProviderListener;
-import org.eclipse.jface.viewers.ILightweightLabelDecorator;
-import org.eclipse.ui.IEditorDescriptor;
-import org.eclipse.ui.IWorkbench;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.ide.IDE;
-import org.eclipse.ui.internal.ide.model.WorkbenchFile;
+import org.fdesigner.ide.IDE;
+import org.fdesigner.ide.internal.ide.model.WorkbenchFile;
+import org.fdesigner.resources.IFile;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.contenttype.runtime.content.IContentDescription;
+import org.fdesigner.runtime.contenttype.runtime.content.IContentType;
+import org.fdesigner.runtime.jobs.runtime.jobs.Job;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.ui.jface.viewers.IDecoration;
+import org.fdesigner.ui.jface.viewers.ILabelProviderListener;
+import org.fdesigner.ui.jface.viewers.ILightweightLabelDecorator;
+import org.fdesigner.workbench.IEditorDescriptor;
+import org.fdesigner.workbench.IWorkbench;
+import org.fdesigner.workbench.PlatformUI;
 
 /**
  * Lightweight decorator for more specific file icons.

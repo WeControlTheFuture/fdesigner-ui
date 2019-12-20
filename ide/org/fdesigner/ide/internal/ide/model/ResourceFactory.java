@@ -11,16 +11,16 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.model;
+package org.fdesigner.ide.internal.ide.model;
 
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.IWorkspaceRoot;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.runtime.IAdaptable;
-import org.eclipse.core.runtime.Path;
-import org.eclipse.ui.IElementFactory;
-import org.eclipse.ui.IMemento;
-import org.eclipse.ui.IPersistableElement;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IWorkspaceRoot;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.runtime.common.runtime.IAdaptable;
+import org.fdesigner.runtime.common.runtime.Path;
+import org.fdesigner.workbench.IElementFactory;
+import org.fdesigner.workbench.IMemento;
+import org.fdesigner.workbench.IPersistableElement;
 
 /**
  * The ResourceFactory is used to save and recreate an IResource object.

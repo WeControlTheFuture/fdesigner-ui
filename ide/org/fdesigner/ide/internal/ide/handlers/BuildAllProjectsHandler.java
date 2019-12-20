@@ -11,19 +11,19 @@
  * Contributors:
  *     Wind River Systems - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.handlers;
+package org.fdesigner.ide.internal.ide.handlers;
 
-import org.eclipse.core.commands.AbstractHandler;
-import org.eclipse.core.commands.ExecutionEvent;
-import org.eclipse.core.commands.ExecutionException;
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.resources.IWorkspace;
-import org.eclipse.core.resources.IncrementalProjectBuilder;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.actions.GlobalBuildAction;
-import org.eclipse.ui.handlers.HandlerUtil;
-import org.eclipse.ui.internal.ide.actions.BuildUtilities;
+import org.fdesigner.commands.AbstractHandler;
+import org.fdesigner.commands.ExecutionEvent;
+import org.fdesigner.commands.ExecutionException;
+import org.fdesigner.ide.extensions.actions.GlobalBuildAction;
+import org.fdesigner.ide.internal.ide.actions.BuildUtilities;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IWorkspace;
+import org.fdesigner.resources.IncrementalProjectBuilder;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.handlers.HandlerUtil;
 
 /**
  * Default handler for 'Build All' command.

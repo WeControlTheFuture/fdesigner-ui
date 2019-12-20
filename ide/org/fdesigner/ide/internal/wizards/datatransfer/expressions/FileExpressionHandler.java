@@ -11,15 +11,15 @@
  * Contributors:
  *     Mickael Istria (Red Hat Inc.) - initial API and implementation
  ******************************************************************************/
-package org.eclipse.ui.internal.wizards.datatransfer.expressions;
+package org.fdesigner.ide.internal.wizards.datatransfer.expressions;
 
 import java.io.File;
 
-import org.eclipse.core.expressions.ElementHandler;
-import org.eclipse.core.expressions.Expression;
-import org.eclipse.core.expressions.ExpressionConverter;
-import org.eclipse.core.resources.IContainer;
-import org.eclipse.core.runtime.IConfigurationElement;
+import org.fdesigner.expressions.ElementHandler;
+import org.fdesigner.expressions.Expression;
+import org.fdesigner.expressions.ExpressionConverter;
+import org.fdesigner.resources.IContainer;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
 
 /**
  * Adds support for a set of additional expressions to use in plugin.xml to

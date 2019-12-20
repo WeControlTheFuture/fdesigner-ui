@@ -14,33 +14,33 @@
  *     Simon Scholz <simon.scholz@vogella.com> - Bug 487772, 486777
  ******************************************************************************/
 
-package org.eclipse.ui.internal.ide.handlers;
+package org.fdesigner.ide.internal.ide.handlers;
 import java.io.File;
 import java.io.IOException;
 
-import org.eclipse.core.commands.AbstractHandler;
-import org.eclipse.core.commands.ExecutionEvent;
-import org.eclipse.core.commands.common.NotDefinedException;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.runtime.Adapters;
-import org.eclipse.core.runtime.IPath;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Path;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.core.runtime.jobs.Job;
-import org.eclipse.e4.core.services.statusreporter.StatusReporter;
-import org.eclipse.jface.util.Util;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.ui.IEditorInput;
-import org.eclipse.ui.IEditorPart;
-import org.eclipse.ui.IFileEditorInput;
-import org.eclipse.ui.IWorkbenchPart;
-import org.eclipse.ui.handlers.HandlerUtil;
-import org.eclipse.ui.internal.ide.IDEInternalPreferences;
-import org.eclipse.ui.internal.ide.IDEPreferenceInitializer;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.commands.AbstractHandler;
+import org.fdesigner.commands.ExecutionEvent;
+import org.fdesigner.commands.common.NotDefinedException;
+import org.fdesigner.e4.core.services.statusreporter.StatusReporter;
+import org.fdesigner.ide.extensions.IFileEditorInput;
+import org.fdesigner.ide.internal.ide.IDEInternalPreferences;
+import org.fdesigner.ide.internal.ide.IDEPreferenceInitializer;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.runtime.common.runtime.Adapters;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Path;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.jobs.runtime.jobs.Job;
+import org.fdesigner.ui.jface.util.Util;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.workbench.IEditorInput;
+import org.fdesigner.workbench.IEditorPart;
+import org.fdesigner.workbench.IWorkbenchPart;
+import org.fdesigner.workbench.handlers.HandlerUtil;
 
 
 /**

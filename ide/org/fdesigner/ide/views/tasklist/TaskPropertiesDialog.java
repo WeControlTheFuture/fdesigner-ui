@@ -13,16 +13,16 @@
  *     Sebastian Davids <sdavids@gmx.de> - bug 132427 - [Markers] TaskPropertiesDialog problems
  *******************************************************************************/
 
-package org.eclipse.ui.views.tasklist;
+package org.fdesigner.ide.views.tasklist;
 
 import java.util.Map;
 
-import org.eclipse.core.resources.IMarker;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.jface.dialogs.IDialogSettings;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.eclipse.ui.views.markers.internal.DialogTaskProperties;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.views.markers.internal.DialogTaskProperties;
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.ui.jface.dialogs.IDialogSettings;
 
 /**
  * Shows the properties of a new or existing task, or a problem.

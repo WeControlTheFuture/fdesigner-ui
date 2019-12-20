@@ -11,16 +11,16 @@
  * Contributors:
  *     Mickael Istria (Red Hat Inc.) - initial API and implementation
  ******************************************************************************/
-package org.eclipse.ui.wizards.datatransfer;
+package org.fdesigner.ide.wizards.datatransfer;
 
 import java.util.HashSet;
 import java.util.Set;
 
-import org.eclipse.core.resources.IContainer;
-import org.eclipse.core.resources.IFile;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.IResourceVisitor;
-import org.eclipse.core.runtime.IPath;
+import org.fdesigner.resources.IContainer;
+import org.fdesigner.resources.IFile;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IResourceVisitor;
+import org.fdesigner.runtime.common.runtime.IPath;
 
 /**
  * A simple resource visitor that allows to find one or more files by name in a

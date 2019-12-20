@@ -11,13 +11,13 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.registry;
+package org.fdesigner.ide.internal.ide.registry;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.jface.resource.ImageDescriptor;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
 
 /**
  * Registry to hold mappings from project natures to images

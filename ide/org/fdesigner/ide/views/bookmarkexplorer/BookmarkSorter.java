@@ -12,13 +12,13 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.views.bookmarkexplorer;
+package org.fdesigner.ide.views.bookmarkexplorer;
 
-import org.eclipse.core.resources.IMarker;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.jface.dialogs.IDialogSettings;
-import org.eclipse.jface.viewers.Viewer;
-import org.eclipse.jface.viewers.ViewerComparator;
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.ui.jface.dialogs.IDialogSettings;
+import org.fdesigner.ui.jface.viewers.Viewer;
+import org.fdesigner.ui.jface.viewers.ViewerComparator;
 
 /*
 *

@@ -15,12 +15,10 @@
  *    Oakland Software Incorporated (Francis Upton) <francisu@ieee.org>
  *		  Bug 224997 [Workbench] Impossible to copy project
  *******************************************************************************/
-package org.eclipse.ui.dialogs;
+package org.fdesigner.ide.extensions.dialogs;
 
 import java.util.ArrayList;
 
-import org.eclipse.core.resources.IProject;
-import org.eclipse.jface.resource.JFaceColors;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.layout.GridLayout;
@@ -28,11 +26,14 @@ import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
-import org.eclipse.ui.internal.ide.IIDEHelpContextIds;
-import org.eclipse.ui.internal.ide.dialogs.ProjectContentsLocationArea;
-import org.eclipse.ui.internal.ide.dialogs.ProjectContentsLocationArea.IErrorMessageReporter;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.IIDEHelpContextIds;
+import org.fdesigner.ide.internal.ide.dialogs.ProjectContentsLocationArea;
+import org.fdesigner.ide.internal.ide.dialogs.ProjectContentsLocationArea.IErrorMessageReporter;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.ui.jface.resource.JFaceColors;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.dialogs.SelectionDialog;
 
 /**
  * The ProjectLocationMoveDialog is the dialog used to select the location of a

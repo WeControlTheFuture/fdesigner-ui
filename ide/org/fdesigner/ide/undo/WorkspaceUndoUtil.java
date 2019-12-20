@@ -13,47 +13,47 @@
  *     Andrey Loskutov <loskutov@gmx.de> - generified interface, bug 461762
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 472784
  *******************************************************************************/
-package org.eclipse.ui.ide.undo;
+package org.fdesigner.ide.undo;
 
 import java.net.URI;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import org.eclipse.core.commands.operations.IUndoContext;
-import org.eclipse.core.commands.operations.ObjectUndoContext;
-import org.eclipse.core.filesystem.URIUtil;
-import org.eclipse.core.resources.IContainer;
-import org.eclipse.core.resources.IFile;
-import org.eclipse.core.resources.IFolder;
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.IResourceStatus;
-import org.eclipse.core.resources.IWorkspace;
-import org.eclipse.core.resources.IWorkspaceRoot;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.runtime.Adapters;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IAdaptable;
-import org.eclipse.core.runtime.IPath;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.MultiStatus;
-import org.eclipse.core.runtime.NullProgressMonitor;
-import org.eclipse.core.runtime.OperationCanceledException;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.core.runtime.SubMonitor;
-import org.eclipse.jface.dialogs.IDialogConstants;
-import org.eclipse.jface.dialogs.MessageDialog;
-import org.eclipse.osgi.util.NLS;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.WorkbenchPlugin;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.eclipse.ui.internal.ide.undo.ContainerDescription;
-import org.eclipse.ui.internal.ide.undo.FileDescription;
-import org.eclipse.ui.internal.ide.undo.UndoMessages;
+import org.fdesigner.commands.operations.IUndoContext;
+import org.fdesigner.commands.operations.ObjectUndoContext;
+import org.fdesigner.filesystem.URIUtil;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.internal.ide.undo.ContainerDescription;
+import org.fdesigner.ide.internal.ide.undo.FileDescription;
+import org.fdesigner.ide.internal.ide.undo.UndoMessages;
+import org.fdesigner.resources.IContainer;
+import org.fdesigner.resources.IFile;
+import org.fdesigner.resources.IFolder;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IResourceStatus;
+import org.fdesigner.resources.IWorkspace;
+import org.fdesigner.resources.IWorkspaceRoot;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.runtime.common.runtime.Adapters;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IAdaptable;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.MultiStatus;
+import org.fdesigner.runtime.common.runtime.NullProgressMonitor;
+import org.fdesigner.runtime.common.runtime.OperationCanceledException;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.common.runtime.SubMonitor;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.ui.jface.dialogs.IDialogConstants;
+import org.fdesigner.ui.jface.dialogs.MessageDialog;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
 
 
 /**

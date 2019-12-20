@@ -11,11 +11,11 @@
  * Contributors:
  *     Mickael Istria (Red Hat Inc.) - initial API and implementation
  ******************************************************************************/
-package org.eclipse.ui.internal.wizards.datatransfer;
+package org.fdesigner.ide.internal.wizards.datatransfer;
 
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.runtime.IPath;
-import org.eclipse.ui.wizards.datatransfer.ProjectConfigurator;
+import org.fdesigner.ide.wizards.datatransfer.ProjectConfigurator;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.runtime.common.runtime.IPath;
 
 public interface RecursiveImportListener {
 

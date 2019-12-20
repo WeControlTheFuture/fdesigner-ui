@@ -12,16 +12,16 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.ide.undo;
+package org.fdesigner.ide.undo;
 
 
 
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.runtime.IPath;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.ui.internal.ide.undo.UndoMessages;
+import org.fdesigner.ide.internal.ide.undo.UndoMessages;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
 
 /**
  * An AbstractCopyOrMoveResourcesOperation represents an undoable operation for

@@ -11,9 +11,9 @@
  * Contributors:
  *     Tim Neumann <tim.neumann@advantest.com> - initial API and implementation
  ******************************************************************************/
-package org.eclipse.ui;
+package org.fdesigner.ide.extensions;
 
-import org.eclipse.core.resources.IMarker;
+import org.fdesigner.resources.IMarker;
 
 /**
  * Provides a help context for a given marker.

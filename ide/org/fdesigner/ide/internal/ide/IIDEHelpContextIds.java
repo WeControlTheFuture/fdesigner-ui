@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *     Serge Beauchamp (Freescale Semiconductor) - [252996] Resource filters
  *******************************************************************************/
-package org.eclipse.ui.internal.ide;
+package org.fdesigner.ide.internal.ide;
 
 /**
  * Help context ids for the workbench.

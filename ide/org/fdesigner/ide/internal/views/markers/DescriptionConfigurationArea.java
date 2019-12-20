@@ -1,20 +1,5 @@
-package org.eclipse.ui.internal.views.markers;
+package org.fdesigner.ide.internal.views.markers;
 
-/*******************************************************************************
- * Copyright (c) 2007, 2015 IBM Corporation and others.
- *
- * This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License 2.0
- * which accompanies this distribution, and is available at
- * https://www.eclipse.org/legal/epl-2.0/
- *
- * SPDX-License-Identifier: EPL-2.0
- *
- * Contributors:
- *     IBM Corporation - initial API and implementation
- *******************************************************************************/
-import org.eclipse.jface.dialogs.Dialog;
-import org.eclipse.jface.resource.JFaceResources;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.FontMetrics;
 import org.eclipse.swt.graphics.GC;
@@ -24,10 +9,12 @@ import org.eclipse.swt.widgets.Combo;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Text;
-import org.eclipse.ui.views.markers.FilterConfigurationArea;
-import org.eclipse.ui.views.markers.MarkerFieldFilter;
-import org.eclipse.ui.views.markers.MarkerSupportConstants;
-import org.eclipse.ui.views.markers.internal.MarkerMessages;
+import org.fdesigner.ide.views.markers.FilterConfigurationArea;
+import org.fdesigner.ide.views.markers.MarkerFieldFilter;
+import org.fdesigner.ide.views.markers.MarkerSupportConstants;
+import org.fdesigner.ide.views.markers.internal.MarkerMessages;
+import org.fdesigner.ui.jface.dialogs.Dialog;
+import org.fdesigner.ui.jface.resource.JFaceResources;
 
 /**
  * DescriptionConfigurationArea is the configuration area for description

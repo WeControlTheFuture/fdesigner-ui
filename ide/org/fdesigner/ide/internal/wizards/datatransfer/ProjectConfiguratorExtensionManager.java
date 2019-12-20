@@ -11,7 +11,7 @@
  * Contributors:
  *     Mickael Istria (Red Hat Inc.) - initial API and implementation
  ******************************************************************************/
-package org.eclipse.ui.internal.wizards.datatransfer;
+package org.fdesigner.ide.internal.wizards.datatransfer;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -19,21 +19,21 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.eclipse.core.expressions.ElementHandler;
-import org.eclipse.core.expressions.EvaluationContext;
-import org.eclipse.core.expressions.EvaluationResult;
-import org.eclipse.core.expressions.Expression;
-import org.eclipse.core.expressions.ExpressionConverter;
-import org.eclipse.core.expressions.IEvaluationContext;
-import org.eclipse.core.resources.IContainer;
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.eclipse.ui.internal.wizards.datatransfer.expressions.FileExpressionHandler;
-import org.eclipse.ui.wizards.datatransfer.ProjectConfigurator;
-import org.osgi.framework.Bundle;
+import org.fdesigner.expressions.ElementHandler;
+import org.fdesigner.expressions.EvaluationContext;
+import org.fdesigner.expressions.EvaluationResult;
+import org.fdesigner.expressions.Expression;
+import org.fdesigner.expressions.ExpressionConverter;
+import org.fdesigner.expressions.IEvaluationContext;
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.internal.wizards.datatransfer.expressions.FileExpressionHandler;
+import org.fdesigner.ide.wizards.datatransfer.ProjectConfigurator;
+import org.fdesigner.resources.IContainer;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
 
 /**
  * Manages and requests the active {@link ProjectConfigurator} extensions for an

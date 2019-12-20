@@ -11,20 +11,20 @@
  * Contributors:
  * IBM - Initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.actions;
+package org.fdesigner.ide.internal.ide.actions;
 
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.resources.IncrementalProjectBuilder;
-import org.eclipse.jface.action.Action;
-import org.eclipse.jface.dialogs.MessageDialog;
-import org.eclipse.jface.viewers.StructuredSelection;
 import org.eclipse.swt.widgets.Event;
 import org.eclipse.swt.widgets.MenuItem;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.IWorkingSet;
-import org.eclipse.ui.actions.BuildAction;
-import org.eclipse.ui.application.IActionBarConfigurer;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.extensions.actions.BuildAction;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IncrementalProjectBuilder;
+import org.fdesigner.ui.jface.action.Action;
+import org.fdesigner.ui.jface.dialogs.MessageDialog;
+import org.fdesigner.ui.jface.viewers.StructuredSelection;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.IWorkingSet;
+import org.fdesigner.workbench.application.IActionBarConfigurer;
 
 /**
  * This class will perform an incremental build on a working set.

@@ -12,15 +12,15 @@
  *     IBM Corporation - initial API and implementation
  *     Andrey Loskutov <loskutov@gmx.de> - generified interface, bug 461762
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.dialogs;
+package org.fdesigner.ide.internal.ide.dialogs;
 
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.osgi.util.NLS;
-import org.eclipse.ui.IEditorInput;
-import org.eclipse.ui.IMemento;
-import org.eclipse.ui.IPersistableElement;
-import org.eclipse.ui.internal.ide.AboutInfo;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.AboutInfo;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.workbench.IEditorInput;
+import org.fdesigner.workbench.IMemento;
+import org.fdesigner.workbench.IPersistableElement;
 
 /**
  * A simple editor input for the welcome editor

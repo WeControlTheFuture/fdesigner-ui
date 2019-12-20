@@ -13,23 +13,23 @@
  *       Oliver Schaefer <oliver.schaefer@mbtech-services.com> - Fix for
  *     		 Bug 221649 [Import/Export] ZipFileImportWizard has no option to change the FILE_IMPORT_MASK
  *******************************************************************************/
-package org.eclipse.ui.wizards.datatransfer;
+package org.fdesigner.ide.wizards.datatransfer;
 
 import java.util.List;
 
-import org.eclipse.core.resources.IResource;
-import org.eclipse.jface.dialogs.IDialogSettings;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.jface.viewers.StructuredSelection;
-import org.eclipse.jface.wizard.Wizard;
-import org.eclipse.ui.IImportWizard;
-import org.eclipse.ui.IWorkbench;
-import org.eclipse.ui.ide.IDE;
-import org.eclipse.ui.internal.WorkbenchPlugin;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.eclipse.ui.internal.wizards.datatransfer.DataTransferMessages;
-import org.eclipse.ui.internal.wizards.datatransfer.WizardArchiveFileResourceImportPage1;
-import org.eclipse.ui.plugin.AbstractUIPlugin;
+import org.fdesigner.ide.IDE;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.internal.wizards.datatransfer.DataTransferMessages;
+import org.fdesigner.ide.internal.wizards.datatransfer.WizardArchiveFileResourceImportPage1;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.ui.jface.dialogs.IDialogSettings;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.ui.jface.viewers.StructuredSelection;
+import org.fdesigner.ui.jface.wizard.Wizard;
+import org.fdesigner.workbench.IImportWizard;
+import org.fdesigner.workbench.IWorkbench;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
+import org.fdesigner.workbench.plugin.AbstractUIPlugin;
 
 /**
  * Standard workbench wizard for importing resources from a zip file into the

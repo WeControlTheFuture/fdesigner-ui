@@ -13,7 +13,7 @@
  *     IBM Corporation - ongoing implementation
  *     Mickael Istria (Red Hat Inc.) - Bug 486901
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.misc;
+package org.fdesigner.ide.internal.ide.misc;
 
 import java.io.IOException;
 import java.nio.file.FileSystems;
@@ -27,19 +27,19 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
 
-import org.eclipse.core.filesystem.EFS;
-import org.eclipse.core.filesystem.IFileInfo;
-import org.eclipse.core.filesystem.IFileStore;
-import org.eclipse.core.resources.IContainer;
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.resources.filtermatchers.AbstractFileInfoMatcher;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.eclipse.ui.internal.ide.StringMatcher;
+import org.fdesigner.filesystem.EFS;
+import org.fdesigner.filesystem.IFileInfo;
+import org.fdesigner.filesystem.IFileStore;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.internal.ide.StringMatcher;
+import org.fdesigner.resources.IContainer;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.filtermatchers.AbstractFileInfoMatcher;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.workbench.PlatformUI;
 
 /**
  * A file info filter that matches different file and folder attributes.

@@ -13,39 +13,39 @@
  *     Mohamed Tarief , IBM - Bug 139211
  *     Lucas Bullen (Red Hat Inc.) - Bug 522096 - "Close Projects" on working set
  *******************************************************************************/
-package org.eclipse.ui.actions;
+package org.fdesigner.ide.extensions.actions;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.IResourceChangeEvent;
-import org.eclipse.core.resources.IResourceChangeListener;
-import org.eclipse.core.resources.IResourceDelta;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.resources.WorkspaceJob;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.OperationCanceledException;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.core.runtime.SubMonitor;
-import org.eclipse.core.runtime.jobs.Job;
-import org.eclipse.jface.dialogs.IDialogConstants;
-import org.eclipse.jface.dialogs.MessageDialogWithToggle;
-import org.eclipse.jface.preference.IPreferenceStore;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.jface.window.IShellProvider;
-import org.eclipse.jface.window.Window;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.ide.IDEInternalPreferences;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.eclipse.ui.internal.ide.IIDEHelpContextIds;
+import org.fdesigner.ide.internal.ide.IDEInternalPreferences;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.internal.ide.IIDEHelpContextIds;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IResourceChangeEvent;
+import org.fdesigner.resources.IResourceChangeListener;
+import org.fdesigner.resources.IResourceDelta;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.resources.WorkspaceJob;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.OperationCanceledException;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.common.runtime.SubMonitor;
+import org.fdesigner.runtime.jobs.runtime.jobs.Job;
+import org.fdesigner.ui.jface.dialogs.IDialogConstants;
+import org.fdesigner.ui.jface.dialogs.MessageDialogWithToggle;
+import org.fdesigner.ui.jface.preference.IPreferenceStore;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.ui.jface.window.IShellProvider;
+import org.fdesigner.ui.jface.window.Window;
+import org.fdesigner.workbench.PlatformUI;
 
 /**
  * Standard action for opening the currently selected project(s).

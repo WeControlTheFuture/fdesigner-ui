@@ -11,18 +11,18 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.dialogs;
+package org.fdesigner.ide.internal.ide.dialogs;
 
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
-import org.eclipse.ui.dialogs.PreferenceLinkArea;
-import org.eclipse.ui.internal.dialogs.EditorsPreferencePage;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
-import org.eclipse.ui.internal.tweaklets.TabBehaviour;
-import org.eclipse.ui.internal.tweaklets.Tweaklets;
-import org.eclipse.ui.preferences.IWorkbenchPreferenceContainer;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.workbench.dialogs.PreferenceLinkArea;
+import org.fdesigner.workbench.internal.dialogs.EditorsPreferencePage;
+import org.fdesigner.workbench.internal.tweaklets.TabBehaviour;
+import org.fdesigner.workbench.internal.tweaklets.Tweaklets;
+import org.fdesigner.workbench.preferences.IWorkbenchPreferenceContainer;
 
 /**
  * Extends the Editors preference page with IDE-specific settings.

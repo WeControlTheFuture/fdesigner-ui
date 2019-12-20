@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.views.markers.internal;
+package org.fdesigner.ide.views.markers.internal;
 
 /**
  * The MarkerNode class is the class that handles category nodes and

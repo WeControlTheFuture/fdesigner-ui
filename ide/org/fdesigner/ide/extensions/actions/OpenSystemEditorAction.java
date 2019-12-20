@@ -11,19 +11,19 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.actions;
+package org.fdesigner.ide.extensions.actions;
 
-import org.eclipse.core.resources.IFile;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.ui.IEditorRegistry;
-import org.eclipse.ui.IWorkbenchPage;
-import org.eclipse.ui.PartInitException;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.ide.DialogUtil;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
-import org.eclipse.ui.internal.ide.IIDEHelpContextIds;
-import org.eclipse.ui.part.FileEditorInput;
+import org.fdesigner.ide.extensions.part.FileEditorInput;
+import org.fdesigner.ide.internal.ide.DialogUtil;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.IIDEHelpContextIds;
+import org.fdesigner.resources.IFile;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.workbench.IEditorRegistry;
+import org.fdesigner.workbench.IWorkbenchPage;
+import org.fdesigner.workbench.PartInitException;
+import org.fdesigner.workbench.PlatformUI;
 
 /**
  * Standard action for opening a system editor on the currently selected file

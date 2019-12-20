@@ -12,9 +12,9 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.views.markers;
+package org.fdesigner.ide.internal.views.markers;
 
-import org.eclipse.core.expressions.PropertyTester;
+import org.fdesigner.expressions.PropertyTester;
 
 /**
  * ContentGeneratorPropertyTester is the property tester for what content

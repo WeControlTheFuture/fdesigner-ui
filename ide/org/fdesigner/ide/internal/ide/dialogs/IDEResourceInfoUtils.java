@@ -13,30 +13,30 @@
  *     David Black - bug 198091
  *     Mickael Istria (Red Hat Inc.) - Bug 486901
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.dialogs;
+package org.fdesigner.ide.internal.ide.dialogs;
 
 import java.net.URI;
 import java.util.ArrayList;
 import java.util.Date;
 
-import org.eclipse.core.filesystem.EFS;
-import org.eclipse.core.filesystem.IFileInfo;
-import org.eclipse.core.filesystem.IFileStore;
-import org.eclipse.core.filesystem.URIUtil;
-import org.eclipse.core.resources.IFile;
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IPath;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.Path;
-import org.eclipse.core.runtime.content.IContentDescription;
-import org.eclipse.core.runtime.content.IContentType;
-import org.eclipse.osgi.util.NLS;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.eclipse.ui.statushandlers.StatusManager;
+import org.fdesigner.filesystem.EFS;
+import org.fdesigner.filesystem.IFileInfo;
+import org.fdesigner.filesystem.IFileStore;
+import org.fdesigner.filesystem.URIUtil;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.resources.IFile;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.Path;
+import org.fdesigner.runtime.contenttype.runtime.content.IContentDescription;
+import org.fdesigner.runtime.contenttype.runtime.content.IContentType;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.workbench.statushandlers.StatusManager;
 
 import com.ibm.icu.text.DateFormat;
 import com.ibm.icu.text.MessageFormat;

@@ -14,10 +14,10 @@
  *******************************************************************************/
 package org.fdesigner.ide;
 
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.OperationCanceledException;
-import org.eclipse.ui.IEditorDescriptor;
-import org.eclipse.ui.IEditorRegistry;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.OperationCanceledException;
+import org.fdesigner.workbench.IEditorDescriptor;
+import org.fdesigner.workbench.IEditorRegistry;
 
 /**
  * This interface represents a strategy for choosing an IEditorDescriptor for a

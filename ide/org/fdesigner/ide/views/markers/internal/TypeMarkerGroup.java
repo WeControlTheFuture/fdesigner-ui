@@ -12,16 +12,16 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.views.markers.internal;
+package org.fdesigner.ide.views.markers.internal;
 
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.eclipse.core.resources.IMarker;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.ui.internal.ide.Policy;
-import org.eclipse.ui.views.markers.MarkerItem;
+import org.fdesigner.ide.internal.ide.Policy;
+import org.fdesigner.ide.views.markers.MarkerItem;
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.runtime.common.runtime.CoreException;
 
 /**
  * The TypeMarkerGroup is a MarkerGroup used for the sorting by type which

@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.views.markers.internal;
+package org.fdesigner.ide.views.markers.internal;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -22,18 +22,18 @@ import java.util.List;
 import java.util.Set;
 import java.util.StringTokenizer;
 
-import org.eclipse.core.resources.IContainer;
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.resources.mapping.ResourceMapping;
-import org.eclipse.core.runtime.Adapters;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IAdaptable;
-import org.eclipse.jface.dialogs.IDialogSettings;
-import org.eclipse.ui.IMemento;
-import org.eclipse.ui.IWorkingSet;
-import org.eclipse.ui.PlatformUI;
+import org.fdesigner.resources.IContainer;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.resources.mapping.ResourceMapping;
+import org.fdesigner.runtime.common.runtime.Adapters;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IAdaptable;
+import org.fdesigner.ui.jface.dialogs.IDialogSettings;
+import org.fdesigner.workbench.IMemento;
+import org.fdesigner.workbench.IWorkingSet;
+import org.fdesigner.workbench.PlatformUI;
 
 /**
  * MarkerFilter is the class that defines a filter on markers in a

@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.ide.registry;
+package org.fdesigner.ide.internal.ide.registry;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -28,21 +28,21 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 
-import org.eclipse.core.resources.IMarker;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.ui.IMarkerHelpContextProvider;
-import org.eclipse.ui.IMarkerHelpRegistry;
-import org.eclipse.ui.IMarkerResolution;
-import org.eclipse.ui.IMarkerResolutionGenerator;
-import org.eclipse.ui.IMarkerResolutionGenerator2;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.eclipse.ui.internal.ide.Policy;
-import org.eclipse.ui.statushandlers.StatusManager;
-import org.osgi.framework.Bundle;
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.ide.extensions.IMarkerHelpContextProvider;
+import org.fdesigner.ide.extensions.IMarkerHelpRegistry;
+import org.fdesigner.ide.extensions.IMarkerResolution;
+import org.fdesigner.ide.extensions.IMarkerResolutionGenerator;
+import org.fdesigner.ide.extensions.IMarkerResolutionGenerator2;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.internal.ide.Policy;
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.workbench.statushandlers.StatusManager;
 
 /**
  * This class is a registry for marker help contexts and resolutions.

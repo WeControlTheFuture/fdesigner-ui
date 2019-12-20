@@ -11,10 +11,10 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.ide;
+package org.fdesigner.ide.internal.ide;
 
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.ui.PlatformUI;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.workbench.PlatformUI;
 
 /**
  * This class defines internal constants for images that intended to be

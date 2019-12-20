@@ -11,19 +11,19 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.actions;
+package org.fdesigner.ide.extensions.actions;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import org.eclipse.core.resources.IContainer;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.jface.window.IShellProvider;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
-import org.eclipse.ui.internal.ide.IIDEHelpContextIds;
-import org.eclipse.ui.internal.ide.actions.LTKLauncher;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.IIDEHelpContextIds;
+import org.fdesigner.ide.internal.ide.actions.LTKLauncher;
+import org.fdesigner.resources.IContainer;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.ui.jface.window.IShellProvider;
+import org.fdesigner.workbench.PlatformUI;
 
 /**
  * Standard action for moving the currently selected resources elsewhere

@@ -12,14 +12,14 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.views.markers;
+package org.fdesigner.ide.internal.views.markers;
 
 import java.util.Objects;
 
-import org.eclipse.core.resources.IMarker;
-import org.eclipse.osgi.util.NLS;
-import org.eclipse.ui.views.markers.MarkerItem;
-import org.eclipse.ui.views.markers.internal.MarkerMessages;
+import org.fdesigner.ide.views.markers.MarkerItem;
+import org.fdesigner.ide.views.markers.internal.MarkerMessages;
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.supplement.util.NLS;
 
 class MarkerCategory extends MarkerSupportItem {
 

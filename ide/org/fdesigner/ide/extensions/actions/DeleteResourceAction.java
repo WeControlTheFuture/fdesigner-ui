@@ -15,25 +15,10 @@
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 472784
  *     Mickael Istria (Red Hat Inc.) - Bug 486901
  *******************************************************************************/
-package org.eclipse.ui.actions;
+package org.fdesigner.ide.extensions.actions;
 
 import java.util.List;
 
-import org.eclipse.core.commands.ExecutionException;
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.core.runtime.jobs.Job;
-import org.eclipse.jface.dialogs.IDialogConstants;
-import org.eclipse.jface.dialogs.MessageDialog;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.jface.window.IShellProvider;
-import org.eclipse.jface.window.Window;
-import org.eclipse.osgi.util.NLS;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.MouseAdapter;
 import org.eclipse.swt.events.MouseEvent;
@@ -47,14 +32,29 @@ import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.ide.undo.DeleteResourcesOperation;
-import org.eclipse.ui.ide.undo.WorkspaceUndoUtil;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.eclipse.ui.internal.ide.IIDEHelpContextIds;
-import org.eclipse.ui.internal.ide.actions.LTKLauncher;
-import org.eclipse.ui.progress.WorkbenchJob;
+import org.fdesigner.commands.ExecutionException;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.internal.ide.IIDEHelpContextIds;
+import org.fdesigner.ide.internal.ide.actions.LTKLauncher;
+import org.fdesigner.ide.undo.DeleteResourcesOperation;
+import org.fdesigner.ide.undo.WorkspaceUndoUtil;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.jobs.runtime.jobs.Job;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.ui.jface.dialogs.IDialogConstants;
+import org.fdesigner.ui.jface.dialogs.MessageDialog;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.ui.jface.window.IShellProvider;
+import org.fdesigner.ui.jface.window.Window;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.progress.WorkbenchJob;
 
 /**
  * Standard action for deleting the currently selected resources.

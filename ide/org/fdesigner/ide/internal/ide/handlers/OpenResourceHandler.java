@@ -12,34 +12,34 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.ide.handlers;
+package org.fdesigner.ide.internal.ide.handlers;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import org.eclipse.core.commands.ExecutionEvent;
-import org.eclipse.core.commands.ExecutionException;
-import org.eclipse.core.commands.IHandler;
-import org.eclipse.core.commands.IHandlerListener;
-import org.eclipse.core.resources.IContainer;
-import org.eclipse.core.resources.IFile;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.runtime.ListenerList;
-import org.eclipse.jface.action.Action;
-import org.eclipse.jface.action.IAction;
-import org.eclipse.jface.viewers.ISelection;
-import org.eclipse.jface.window.Window;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.IWorkbenchPage;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.IWorkbenchWindowActionDelegate;
-import org.eclipse.ui.PartInitException;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.ide.IDE;
-import org.eclipse.ui.internal.ide.IIDEHelpContextIds;
-import org.eclipse.ui.internal.ide.dialogs.OpenResourceDialog;
+import org.fdesigner.commands.ExecutionEvent;
+import org.fdesigner.commands.ExecutionException;
+import org.fdesigner.commands.IHandler;
+import org.fdesigner.commands.IHandlerListener;
+import org.fdesigner.ide.IDE;
+import org.fdesigner.ide.internal.ide.IIDEHelpContextIds;
+import org.fdesigner.ide.internal.ide.dialogs.OpenResourceDialog;
+import org.fdesigner.resources.IContainer;
+import org.fdesigner.resources.IFile;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.runtime.common.runtime.ListenerList;
+import org.fdesigner.ui.jface.action.Action;
+import org.fdesigner.ui.jface.action.IAction;
+import org.fdesigner.ui.jface.viewers.ISelection;
+import org.fdesigner.ui.jface.window.Window;
+import org.fdesigner.workbench.IWorkbenchPage;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.IWorkbenchWindowActionDelegate;
+import org.fdesigner.workbench.PartInitException;
+import org.fdesigner.workbench.PlatformUI;
 
 /**
  * Implements the open resource action. Opens a dialog prompting for a file and

@@ -15,7 +15,7 @@
  *     Kit Lo (IBM) - Bug 542713 - Empty entries in Show menu after switching UI language to German
  *******************************************************************************/
 
-package org.eclipse.ui.internal.views.markers;
+package org.fdesigner.ide.internal.views.markers;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
@@ -24,32 +24,32 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.eclipse.core.resources.IMarker;
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.runtime.Adapters;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IAdaptable;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.core.runtime.IPath;
-import org.eclipse.ui.IMemento;
-import org.eclipse.ui.IWorkbenchPage;
-import org.eclipse.ui.IWorkbenchPreferenceConstants;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.IWorkingSet;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.AggregateWorkingSet;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.eclipse.ui.internal.ide.Policy;
-import org.eclipse.ui.internal.ide.StatusUtil;
-import org.eclipse.ui.statushandlers.StatusManager;
-import org.eclipse.ui.views.markers.FiltersContributionParameters;
-import org.eclipse.ui.views.markers.MarkerField;
-import org.eclipse.ui.views.markers.MarkerFieldFilter;
-import org.eclipse.ui.views.markers.internal.MarkerFilter;
-import org.eclipse.ui.views.markers.internal.MarkerSupportRegistry;
-import org.eclipse.ui.views.markers.internal.MarkerType;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.internal.ide.Policy;
+import org.fdesigner.ide.internal.ide.StatusUtil;
+import org.fdesigner.ide.views.markers.FiltersContributionParameters;
+import org.fdesigner.ide.views.markers.MarkerField;
+import org.fdesigner.ide.views.markers.MarkerFieldFilter;
+import org.fdesigner.ide.views.markers.internal.MarkerFilter;
+import org.fdesigner.ide.views.markers.internal.MarkerSupportRegistry;
+import org.fdesigner.ide.views.markers.internal.MarkerType;
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.runtime.common.runtime.Adapters;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IAdaptable;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.workbench.IMemento;
+import org.fdesigner.workbench.IWorkbenchPage;
+import org.fdesigner.workbench.IWorkbenchPreferenceConstants;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.IWorkingSet;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.internal.AggregateWorkingSet;
+import org.fdesigner.workbench.statushandlers.StatusManager;
 
 /**
  * MarkerFieldFilterGroup is the representation of a grouping of marker filters.

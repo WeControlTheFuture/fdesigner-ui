@@ -12,12 +12,12 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.views.markers;
+package org.fdesigner.ide.internal.views.markers;
 
-import org.eclipse.core.resources.IMarker;
 import org.eclipse.swt.widgets.Control;
-import org.eclipse.ui.views.markers.MarkerField;
-import org.eclipse.ui.views.markers.MarkerItem;
+import org.fdesigner.ide.views.markers.MarkerField;
+import org.fdesigner.ide.views.markers.MarkerItem;
+import org.fdesigner.resources.IMarker;
 
 /**
  * MarkerLocationField is the field for the location field.

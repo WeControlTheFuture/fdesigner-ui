@@ -14,7 +14,7 @@
  *     						have Open With-->Other
  *     Andrey Loskutov <loskutov@gmx.de> - Bug 378485
  *******************************************************************************/
-package org.eclipse.ui.actions;
+package org.fdesigner.ide.extensions.actions;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -22,33 +22,33 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-import org.eclipse.core.resources.IFile;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.runtime.Adapters;
-import org.eclipse.core.runtime.IAdaptable;
-import org.eclipse.core.runtime.OperationCanceledException;
-import org.eclipse.core.runtime.content.IContentType;
-import org.eclipse.jface.action.ContributionItem;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.jface.window.Window;
-import org.eclipse.osgi.util.NLS;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.widgets.Listener;
 import org.eclipse.swt.widgets.Menu;
 import org.eclipse.swt.widgets.MenuItem;
-import org.eclipse.ui.IEditorDescriptor;
-import org.eclipse.ui.IEditorRegistry;
-import org.eclipse.ui.IWorkbenchPage;
-import org.eclipse.ui.PartInitException;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.dialogs.EditorSelectionDialog;
-import org.eclipse.ui.ide.IDE;
-import org.eclipse.ui.internal.WorkbenchPage;
-import org.eclipse.ui.internal.ide.DialogUtil;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.eclipse.ui.part.FileEditorInput;
+import org.fdesigner.ide.IDE;
+import org.fdesigner.ide.extensions.part.FileEditorInput;
+import org.fdesigner.ide.internal.ide.DialogUtil;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.resources.IFile;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.runtime.common.runtime.Adapters;
+import org.fdesigner.runtime.common.runtime.IAdaptable;
+import org.fdesigner.runtime.common.runtime.OperationCanceledException;
+import org.fdesigner.runtime.contenttype.runtime.content.IContentType;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.ui.jface.action.ContributionItem;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.ui.jface.window.Window;
+import org.fdesigner.workbench.IEditorDescriptor;
+import org.fdesigner.workbench.IEditorRegistry;
+import org.fdesigner.workbench.IWorkbenchPage;
+import org.fdesigner.workbench.PartInitException;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.dialogs.EditorSelectionDialog;
+import org.fdesigner.workbench.internal.WorkbenchPage;
 
 import com.ibm.icu.text.Collator;
 

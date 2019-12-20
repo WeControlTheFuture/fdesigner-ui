@@ -15,14 +15,14 @@
  *******************************************************************************/
 package org.fdesigner.ide;
 
-import org.eclipse.core.resources.IFile;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.mapping.ResourceMapping;
-import org.eclipse.core.resources.mapping.ResourceTraversal;
-import org.eclipse.swt.internal.ole.win32.IStorage;
 import org.fdesigner.ide.extensions.IStorageEditorInput;
 import org.fdesigner.ide.extensions.part.FileEditorInput;
 import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.resources.IFile;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IStorage;
+import org.fdesigner.resources.mapping.ResourceMapping;
+import org.fdesigner.resources.mapping.ResourceTraversal;
 import org.fdesigner.runtime.common.runtime.Adapters;
 import org.fdesigner.runtime.common.runtime.CoreException;
 import org.fdesigner.workbench.IEditorInput;

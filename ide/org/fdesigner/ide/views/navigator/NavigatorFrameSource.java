@@ -11,15 +11,16 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.views.navigator;
+package org.fdesigner.ide.views.navigator;
 
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.jface.dialogs.MessageDialog;
-import org.eclipse.osgi.util.NLS;
-import org.eclipse.ui.internal.views.navigator.ResourceNavigatorMessages;
-import org.eclipse.ui.views.framelist.TreeFrame;
-import org.eclipse.ui.views.framelist.TreeViewerFrameSource;
+import org.fdesigner.ide.views.framelist.TreeFrame;
+import org.fdesigner.ide.views.framelist.TreeViewerFrameSource;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.ui.jface.dialogs.MessageDialog;
+
+import org.fdesigner.ide.internal.views.navigator.ResourceNavigatorMessages;
 
 /**
  * Frame source for the resource navigator.

@@ -20,9 +20,9 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
-import org.eclipse.core.resources.ResourcesPlugin;
 import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
 import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.resources.ResourcesPlugin;
 import org.fdesigner.runtime.contenttype.runtime.content.IContentDescription;
 import org.fdesigner.supplement.util.NLS;
 import org.fdesigner.workbench.WorkbenchEncoding;

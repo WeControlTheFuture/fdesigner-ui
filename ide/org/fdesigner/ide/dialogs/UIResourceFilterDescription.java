@@ -12,12 +12,12 @@
  *     Serge Beauchamp (Freescale Semiconductor)- initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.ide.dialogs;
+package org.fdesigner.ide.dialogs;
 
-import org.eclipse.core.resources.FileInfoMatcherDescription;
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.resources.IResourceFilterDescription;
-import org.eclipse.core.runtime.IPath;
+import org.fdesigner.resources.FileInfoMatcherDescription;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IResourceFilterDescription;
+import org.fdesigner.runtime.common.runtime.IPath;
 
 /**
  * @since 3.6

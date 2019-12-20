@@ -11,17 +11,15 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.part;
+package org.fdesigner.ide.extensions.part;
 
-import org.eclipse.core.runtime.IPath;
-
-import org.eclipse.core.resources.IFile;
-import org.eclipse.core.resources.IResourceChangeEvent;
-import org.eclipse.core.resources.IResourceChangeListener;
-import org.eclipse.core.resources.IResourceDelta;
-
-import org.eclipse.ui.IInPlaceEditor;
-import org.eclipse.ui.IInPlaceEditorInput;
+import org.fdesigner.resources.IFile;
+import org.fdesigner.resources.IResourceChangeEvent;
+import org.fdesigner.resources.IResourceChangeListener;
+import org.fdesigner.resources.IResourceDelta;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.workbench.IInPlaceEditor;
+import org.fdesigner.workbench.IInPlaceEditorInput;
 
 /**
  * Adapter for making a file resource a suitable input for an in-place editor.

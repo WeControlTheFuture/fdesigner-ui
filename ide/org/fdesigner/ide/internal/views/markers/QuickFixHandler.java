@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *     Jan-Ove Weichel <ovi.weichel@gmail.com> - Bug 441573
  *******************************************************************************/
-package org.eclipse.ui.internal.views.markers;
+package org.fdesigner.ide.internal.views.markers;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
@@ -22,27 +22,27 @@ import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
 import java.util.Map;
 
-import org.eclipse.core.commands.ExecutionEvent;
-import org.eclipse.core.commands.ExecutionException;
-import org.eclipse.core.resources.IMarker;
-import org.eclipse.core.runtime.Adapters;
-import org.eclipse.jface.dialogs.MessageDialog;
-import org.eclipse.jface.dialogs.ProgressMonitorDialog;
-import org.eclipse.jface.operation.IRunnableContext;
-import org.eclipse.jface.operation.IRunnableWithProgress;
-import org.eclipse.jface.wizard.IWizard;
-import org.eclipse.jface.wizard.Wizard;
-import org.eclipse.jface.wizard.WizardDialog;
-import org.eclipse.osgi.util.NLS;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.IMarkerResolution;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.ide.IDE;
-import org.eclipse.ui.progress.IWorkbenchSiteProgressService;
-import org.eclipse.ui.views.markers.MarkerViewHandler;
-import org.eclipse.ui.views.markers.WorkbenchMarkerResolution;
-import org.eclipse.ui.views.markers.internal.MarkerMessages;
+import org.fdesigner.commands.ExecutionEvent;
+import org.fdesigner.commands.ExecutionException;
+import org.fdesigner.ide.IDE;
+import org.fdesigner.ide.extensions.IMarkerResolution;
+import org.fdesigner.ide.views.markers.MarkerViewHandler;
+import org.fdesigner.ide.views.markers.WorkbenchMarkerResolution;
+import org.fdesigner.ide.views.markers.internal.MarkerMessages;
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.runtime.common.runtime.Adapters;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.ui.jface.dialogs.MessageDialog;
+import org.fdesigner.ui.jface.dialogs.ProgressMonitorDialog;
+import org.fdesigner.ui.jface.operation.IRunnableContext;
+import org.fdesigner.ui.jface.operation.IRunnableWithProgress;
+import org.fdesigner.ui.jface.wizard.IWizard;
+import org.fdesigner.ui.jface.wizard.Wizard;
+import org.fdesigner.ui.jface.wizard.WizardDialog;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.progress.IWorkbenchSiteProgressService;
 
 /**
  * QuickFixHandler is the command handler for the quick fix dialog.

@@ -17,19 +17,11 @@
  *     Alena Laskavaia - fix for bug 2035
  *******************************************************************************/
 
-package org.eclipse.ui.internal.ide.dialogs;
+package org.fdesigner.ide.internal.ide.dialogs;
 
 import java.net.URI;
 import java.net.URISyntaxException;
 
-import org.eclipse.core.filesystem.IFileInfo;
-import org.eclipse.core.filesystem.URIUtil;
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.jface.dialogs.IDialogSettings;
-import org.eclipse.osgi.util.TextProcessor;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
@@ -40,10 +32,18 @@ import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.DirectoryDialog;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Text;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.eclipse.ui.internal.ide.filesystem.FileSystemConfiguration;
-import org.eclipse.ui.internal.ide.filesystem.FileSystemSupportRegistry;
+import org.fdesigner.container.util.TextProcessor;
+import org.fdesigner.filesystem.IFileInfo;
+import org.fdesigner.filesystem.URIUtil;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.internal.ide.filesystem.FileSystemConfiguration;
+import org.fdesigner.ide.internal.ide.filesystem.FileSystemSupportRegistry;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.ui.jface.dialogs.IDialogSettings;
 
 /**
  * ProjectContentsLocationArea is a convenience class for area that handle entry

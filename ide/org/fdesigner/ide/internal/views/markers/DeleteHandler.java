@@ -11,23 +11,23 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.views.markers;
+package org.fdesigner.ide.internal.views.markers;
 
-import org.eclipse.core.commands.ExecutionEvent;
-import org.eclipse.core.commands.operations.IUndoableOperation;
-import org.eclipse.core.resources.IMarker;
-import org.eclipse.core.resources.WorkspaceJob;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.jface.dialogs.IDialogConstants;
-import org.eclipse.jface.dialogs.MessageDialog;
-import org.eclipse.ui.ide.undo.DeleteMarkersOperation;
-import org.eclipse.ui.ide.undo.WorkspaceUndoUtil;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
-import org.eclipse.ui.views.markers.MarkerSupportView;
-import org.eclipse.ui.views.markers.MarkerViewHandler;
-import org.eclipse.ui.views.markers.internal.MarkerMessages;
+import org.fdesigner.commands.ExecutionEvent;
+import org.fdesigner.commands.operations.IUndoableOperation;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.undo.DeleteMarkersOperation;
+import org.fdesigner.ide.undo.WorkspaceUndoUtil;
+import org.fdesigner.ide.views.markers.MarkerSupportView;
+import org.fdesigner.ide.views.markers.MarkerViewHandler;
+import org.fdesigner.ide.views.markers.internal.MarkerMessages;
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.resources.WorkspaceJob;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.ui.jface.dialogs.IDialogConstants;
+import org.fdesigner.ui.jface.dialogs.MessageDialog;
 
 /**
  * DeleteHandler is the handler for the deletion of a marker.

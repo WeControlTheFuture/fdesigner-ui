@@ -13,8 +13,6 @@
  *******************************************************************************/
 package org.fdesigner.ide;
 
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.resources.IncrementalProjectBuilder;
 import org.fdesigner.ide.extensions.actions.GlobalBuildAction;
 import org.fdesigner.ide.extensions.actions.NewWizardMenu;
 import org.fdesigner.ide.internal.ide.IDEInternalWorkbenchImages;
@@ -25,6 +23,8 @@ import org.fdesigner.ide.internal.ide.actions.OpenWorkspaceAction;
 import org.fdesigner.ide.internal.ide.actions.ProjectPropertyDialogAction;
 import org.fdesigner.ide.internal.ide.actions.RetargetActionWithDefault;
 import org.fdesigner.ide.internal.ide.actions.ToggleAutoBuildAction;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IncrementalProjectBuilder;
 import org.fdesigner.workbench.IWorkbenchCommandConstants;
 import org.fdesigner.workbench.IWorkbenchWindow;
 import org.fdesigner.workbench.actions.ActionFactory;
@@ -339,7 +339,7 @@ public final class IDEActionFactory {
 			if (window == null) {
 				throw new IllegalArgumentException();
 			}
-			IWorkbenchAction action = new org.eclipse.ui.actions.QuickStartAction(window);
+			IWorkbenchAction action = new org.fdesigner.ide.extensions.actions.QuickStartAction(window);
 			action.setId(getId());
 			return action;
 		}

@@ -12,12 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.views.markers;
-
-import org.eclipse.jface.dialogs.Dialog;
-import org.eclipse.jface.dialogs.IDialogConstants;
-import org.eclipse.jface.window.Window;
-import org.eclipse.osgi.util.NLS;
+package org.fdesigner.ide.internal.views.markers;
 
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionAdapter;
@@ -26,11 +21,15 @@ import org.eclipse.swt.graphics.Point;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Composite;
-import org.eclipse.ui.IWorkingSet;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.dialogs.IWorkingSetSelectionDialog;
-import org.eclipse.ui.views.markers.MarkerFieldFilter;
-import org.eclipse.ui.views.markers.internal.MarkerMessages;
+import org.fdesigner.ide.views.markers.MarkerFieldFilter;
+import org.fdesigner.ide.views.markers.internal.MarkerMessages;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.ui.jface.dialogs.Dialog;
+import org.fdesigner.ui.jface.dialogs.IDialogConstants;
+import org.fdesigner.ui.jface.window.Window;
+import org.fdesigner.workbench.IWorkingSet;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.dialogs.IWorkingSetSelectionDialog;
 
 /**
  * ScopeArea is the filter configuration area that handles the scope of the

@@ -11,16 +11,16 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.views.navigator;
+package org.fdesigner.ide.views.navigator;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.runtime.Adapters;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.jface.viewers.StructuredSelection;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.runtime.common.runtime.Adapters;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.ui.jface.viewers.StructuredSelection;
 
 /**
  * Provides utilities for checking the validity of selections.

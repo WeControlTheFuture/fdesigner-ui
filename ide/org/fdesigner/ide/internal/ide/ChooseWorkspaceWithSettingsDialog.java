@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.ide;
+package org.fdesigner.ide.internal.ide;
 
 import java.nio.file.Files;
 import java.nio.file.LinkOption;
@@ -21,20 +21,6 @@ import java.util.Collection;
 import java.util.HashSet;
 import java.util.Iterator;
 
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.core.runtime.IPath;
-import org.eclipse.core.runtime.ISafeRunnable;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.MultiStatus;
-import org.eclipse.core.runtime.Path;
-import org.eclipse.core.runtime.SafeRunner;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.jface.dialogs.ErrorDialog;
-import org.eclipse.jface.dialogs.IDialogSettings;
-import org.eclipse.jface.fieldassist.ControlDecoration;
-import org.eclipse.jface.fieldassist.FieldDecorationRegistry;
-import org.eclipse.osgi.util.NLS;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
@@ -48,14 +34,28 @@ import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.PlatformUI;
 import org.eclipse.ui.forms.events.ExpansionEvent;
 import org.eclipse.ui.forms.events.IExpansionListener;
 import org.eclipse.ui.forms.widgets.ExpandableComposite;
 import org.eclipse.ui.forms.widgets.FormToolkit;
 import org.eclipse.ui.forms.widgets.ScrolledForm;
-import org.eclipse.ui.internal.WorkbenchPlugin;
-import org.eclipse.ui.preferences.SettingsTransfer;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.ISafeRunnable;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.MultiStatus;
+import org.fdesigner.runtime.common.runtime.Path;
+import org.fdesigner.runtime.common.runtime.SafeRunner;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.ui.jface.dialogs.ErrorDialog;
+import org.fdesigner.ui.jface.dialogs.IDialogSettings;
+import org.fdesigner.ui.jface.fieldassist.ControlDecoration;
+import org.fdesigner.ui.jface.fieldassist.FieldDecorationRegistry;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
+import org.fdesigner.workbench.preferences.SettingsTransfer;
 
 /**
  * The ChooseWorkspaceWithSettingsDialog is the dialog used to switch workspaces

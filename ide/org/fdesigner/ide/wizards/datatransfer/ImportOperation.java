@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *     Red Hat, Inc - changed TarFileStructureProvider to TarLeveledStructureProvider
  *******************************************************************************/
-package org.eclipse.ui.wizards.datatransfer;
+package org.fdesigner.ide.wizards.datatransfer;
 
 import java.io.File;
 import java.io.IOException;
@@ -24,35 +24,35 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.zip.ZipEntry;
 
-import org.eclipse.core.filesystem.URIUtil;
-import org.eclipse.core.resources.IContainer;
-import org.eclipse.core.resources.IFile;
-import org.eclipse.core.resources.IFolder;
-import org.eclipse.core.resources.IPathVariableManager;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.IWorkspace;
-import org.eclipse.core.resources.IWorkspaceRoot;
-import org.eclipse.core.resources.ResourceAttributes;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.runtime.Adapters;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IPath;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.MultiStatus;
-import org.eclipse.core.runtime.OperationCanceledException;
-import org.eclipse.core.runtime.Path;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.core.runtime.SubMonitor;
-import org.eclipse.osgi.util.NLS;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.actions.WorkspaceModifyOperation;
-import org.eclipse.ui.dialogs.ContainerGenerator;
-import org.eclipse.ui.dialogs.IOverwriteQuery;
-import org.eclipse.ui.internal.wizards.datatransfer.DataTransferMessages;
-import org.eclipse.ui.internal.wizards.datatransfer.TarEntry;
-import org.eclipse.ui.internal.wizards.datatransfer.TarLeveledStructureProvider;
+import org.fdesigner.filesystem.URIUtil;
+import org.fdesigner.ide.extensions.actions.WorkspaceModifyOperation;
+import org.fdesigner.ide.extensions.dialogs.ContainerGenerator;
+import org.fdesigner.ide.internal.wizards.datatransfer.DataTransferMessages;
+import org.fdesigner.ide.internal.wizards.datatransfer.TarEntry;
+import org.fdesigner.ide.internal.wizards.datatransfer.TarLeveledStructureProvider;
+import org.fdesigner.resources.IContainer;
+import org.fdesigner.resources.IFile;
+import org.fdesigner.resources.IFolder;
+import org.fdesigner.resources.IPathVariableManager;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IWorkspace;
+import org.fdesigner.resources.IWorkspaceRoot;
+import org.fdesigner.resources.ResourceAttributes;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.runtime.common.runtime.Adapters;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.MultiStatus;
+import org.fdesigner.runtime.common.runtime.OperationCanceledException;
+import org.fdesigner.runtime.common.runtime.Path;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.common.runtime.SubMonitor;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.dialogs.IOverwriteQuery;
 
 /**
  * An operation which does the actual work of copying objects from the local file

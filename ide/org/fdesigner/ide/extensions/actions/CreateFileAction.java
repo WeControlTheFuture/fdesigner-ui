@@ -11,21 +11,21 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.actions;
+package org.fdesigner.ide.extensions.actions;
 
 import java.util.Iterator;
 
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.jface.window.IShellProvider;
-import org.eclipse.jface.wizard.WizardDialog;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.ISharedImages;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
-import org.eclipse.ui.internal.ide.IIDEHelpContextIds;
-import org.eclipse.ui.wizards.newresource.BasicNewFileResourceWizard;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.IIDEHelpContextIds;
+import org.fdesigner.ide.wizards.newresource.BasicNewFileResourceWizard;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.ui.jface.window.IShellProvider;
+import org.fdesigner.ui.jface.wizard.WizardDialog;
+import org.fdesigner.workbench.ISharedImages;
+import org.fdesigner.workbench.PlatformUI;
 
 /**
  * Standard action for creating a file resource within the currently

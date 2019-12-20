@@ -12,10 +12,10 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal.views.markers;
+package org.fdesigner.ide.internal.views.markers;
 
-import org.eclipse.jface.viewers.ITreeContentProvider;
-import org.eclipse.jface.viewers.Viewer;
+import org.fdesigner.ui.jface.viewers.ITreeContentProvider;
+import org.fdesigner.ui.jface.viewers.Viewer;
 
 /**
  * The ContentProvider to the TreeViewer used in Markers View.

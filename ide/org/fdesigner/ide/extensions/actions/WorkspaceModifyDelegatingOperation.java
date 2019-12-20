@@ -11,15 +11,15 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.actions;
+package org.fdesigner.ide.extensions.actions;
 
 import java.lang.reflect.InvocationTargetException;
 
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.jobs.ISchedulingRule;
-import org.eclipse.jface.operation.IRunnableWithProgress;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.jobs.runtime.jobs.ISchedulingRule;
+import org.fdesigner.ui.jface.operation.IRunnableWithProgress;
 
 /**
  * An operation which delegates its work to a runnable that modifies the

@@ -13,21 +13,21 @@
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 472784
  *     Patrik Suzzi <psuzzi@gmail.com> - Bug 489250
  *******************************************************************************/
-package org.eclipse.ui.actions;
+package org.fdesigner.ide.extensions.actions;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import org.eclipse.core.resources.IContainer;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.ResourceAttributes;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.jface.dialogs.ErrorDialog;
-import org.eclipse.jface.dialogs.IDialogConstants;
-import org.eclipse.jface.dialogs.MessageDialog;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.resources.IContainer;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.ResourceAttributes;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.ui.jface.dialogs.ErrorDialog;
+import org.fdesigner.ui.jface.dialogs.IDialogConstants;
+import org.fdesigner.ui.jface.dialogs.MessageDialog;
 
 import com.ibm.icu.text.MessageFormat;
 

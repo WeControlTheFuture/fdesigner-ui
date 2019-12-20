@@ -11,16 +11,16 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.wizards.datatransfer;
+package org.fdesigner.ide.wizards.datatransfer;
 
-import org.eclipse.jface.dialogs.IDialogSettings;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.jface.wizard.Wizard;
-import org.eclipse.ui.IImportWizard;
-import org.eclipse.ui.IWorkbench;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.eclipse.ui.internal.wizards.datatransfer.DataTransferMessages;
-import org.eclipse.ui.internal.wizards.datatransfer.WizardProjectsImportPage;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.internal.wizards.datatransfer.DataTransferMessages;
+import org.fdesigner.ide.internal.wizards.datatransfer.WizardProjectsImportPage;
+import org.fdesigner.ui.jface.dialogs.IDialogSettings;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.ui.jface.wizard.Wizard;
+import org.fdesigner.workbench.IImportWizard;
+import org.fdesigner.workbench.IWorkbench;
 
 /**
  * Standard workbench wizard for importing projects defined outside of the

@@ -12,9 +12,9 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.views.markers.internal;
+package org.fdesigner.ide.views.markers.internal;
 
-import org.eclipse.osgi.util.NLS;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * MarkerMessages is the class that handles the messages for the markers.

@@ -15,7 +15,7 @@
  *     Patrik Suzzi <psuzzi@gmail.com> - Bug 490700
  ******************************************************************************/
 
-package org.eclipse.ui.internal.ide.dialogs;
+package org.fdesigner.ide.internal.ide.dialogs;
 
 import java.lang.reflect.InvocationTargetException;
 import java.net.URI;
@@ -25,36 +25,6 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.TreeMap;
 
-import org.eclipse.core.filesystem.EFS;
-import org.eclipse.core.filesystem.IFileStore;
-import org.eclipse.core.filesystem.URIUtil;
-import org.eclipse.core.resources.IFile;
-import org.eclipse.core.resources.IFolder;
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IPath;
-import org.eclipse.core.runtime.NullProgressMonitor;
-import org.eclipse.core.runtime.Path;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.core.runtime.SubMonitor;
-import org.eclipse.jface.dialogs.Dialog;
-import org.eclipse.jface.dialogs.IDialogConstants;
-import org.eclipse.jface.dialogs.MessageDialog;
-import org.eclipse.jface.dialogs.ProgressMonitorDialog;
-import org.eclipse.jface.layout.TreeColumnLayout;
-import org.eclipse.jface.operation.IRunnableWithProgress;
-import org.eclipse.jface.viewers.ColumnWeightData;
-import org.eclipse.jface.viewers.IContentProvider;
-import org.eclipse.jface.viewers.ILabelProvider;
-import org.eclipse.jface.viewers.ILabelProviderListener;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.jface.viewers.ITableLabelProvider;
-import org.eclipse.jface.viewers.ITreeContentProvider;
-import org.eclipse.jface.viewers.TreeViewer;
-import org.eclipse.jface.viewers.Viewer;
-import org.eclipse.jface.window.Window;
-import org.eclipse.osgi.util.NLS;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.KeyAdapter;
 import org.eclipse.swt.events.KeyEvent;
@@ -74,9 +44,39 @@ import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Text;
 import org.eclipse.swt.widgets.TreeColumn;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.eclipse.ui.model.WorkbenchLabelProvider;
+import org.fdesigner.filesystem.EFS;
+import org.fdesigner.filesystem.IFileStore;
+import org.fdesigner.filesystem.URIUtil;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.resources.IFile;
+import org.fdesigner.resources.IFolder;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.NullProgressMonitor;
+import org.fdesigner.runtime.common.runtime.Path;
+import org.fdesigner.runtime.common.runtime.SubMonitor;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.ui.jface.dialogs.Dialog;
+import org.fdesigner.ui.jface.dialogs.IDialogConstants;
+import org.fdesigner.ui.jface.dialogs.MessageDialog;
+import org.fdesigner.ui.jface.dialogs.ProgressMonitorDialog;
+import org.fdesigner.ui.jface.layout.TreeColumnLayout;
+import org.fdesigner.ui.jface.operation.IRunnableWithProgress;
+import org.fdesigner.ui.jface.viewers.ColumnWeightData;
+import org.fdesigner.ui.jface.viewers.IContentProvider;
+import org.fdesigner.ui.jface.viewers.ILabelProvider;
+import org.fdesigner.ui.jface.viewers.ILabelProviderListener;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.ui.jface.viewers.ITableLabelProvider;
+import org.fdesigner.ui.jface.viewers.ITreeContentProvider;
+import org.fdesigner.ui.jface.viewers.TreeViewer;
+import org.fdesigner.ui.jface.viewers.Viewer;
+import org.fdesigner.ui.jface.window.Window;
+import org.fdesigner.workbench.model.WorkbenchLabelProvider;
 
 /**
  * UI to edit the location of the linked resources contained in a project.

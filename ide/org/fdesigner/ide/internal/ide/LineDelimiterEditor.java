@@ -11,18 +11,12 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.ide;
+package org.fdesigner.ide.internal.ide;
 
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.resources.ProjectScope;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.core.runtime.preferences.DefaultScope;
-import org.eclipse.core.runtime.preferences.InstanceScope;
-import org.eclipse.osgi.util.NLS;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
@@ -34,8 +28,14 @@ import org.eclipse.swt.widgets.Combo;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Group;
-import org.osgi.service.prefs.BackingStoreException;
-import org.osgi.service.prefs.Preferences;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.ProjectScope;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.runtime.preferences.runtime.preferences.DefaultScope;
+import org.fdesigner.runtime.preferences.runtime.preferences.InstanceScope;
+import org.fdesigner.runtime.preferences.service.prefs.BackingStoreException;
+import org.fdesigner.runtime.preferences.service.prefs.Preferences;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * A class to handle editing of the line delimiter preferences in core.

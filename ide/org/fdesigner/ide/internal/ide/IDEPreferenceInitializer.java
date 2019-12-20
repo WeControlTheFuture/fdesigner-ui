@@ -13,18 +13,18 @@
  *     Dina Sayed, dsayed@eg.ibm.com, IBM -  bug 269844
  *     Patrik Suzzi <psuzzi@gmail.com> - Bug 502050
  *******************************************************************************/
-package org.eclipse.ui.internal.ide;
+package org.fdesigner.ide.internal.ide;
 
-import org.eclipse.core.runtime.preferences.AbstractPreferenceInitializer;
-import org.eclipse.core.runtime.preferences.DefaultScope;
-import org.eclipse.core.runtime.preferences.IEclipsePreferences;
-import org.eclipse.jface.util.Util;
-import org.eclipse.ui.IWorkbenchActionConstants;
-import org.eclipse.ui.IWorkbenchPreferenceConstants;
-import org.eclipse.ui.ide.IDE;
-import org.eclipse.ui.internal.ide.handlers.ShowInSystemExplorerHandler;
-import org.eclipse.ui.internal.ide.registry.SystemEditorOrTextEditorStrategy;
-import org.eclipse.ui.internal.views.markers.MarkerSupportInternalUtilities;
+import org.fdesigner.ide.IDE;
+import org.fdesigner.ide.internal.ide.handlers.ShowInSystemExplorerHandler;
+import org.fdesigner.ide.internal.ide.registry.SystemEditorOrTextEditorStrategy;
+import org.fdesigner.ide.internal.views.markers.MarkerSupportInternalUtilities;
+import org.fdesigner.runtime.preferences.runtime.preferences.AbstractPreferenceInitializer;
+import org.fdesigner.runtime.preferences.runtime.preferences.DefaultScope;
+import org.fdesigner.runtime.preferences.runtime.preferences.IEclipsePreferences;
+import org.fdesigner.ui.jface.util.Util;
+import org.fdesigner.workbench.IWorkbenchActionConstants;
+import org.fdesigner.workbench.IWorkbenchPreferenceConstants;
 
 /**
  * The IDEPreferenceInitializer is the preference initializer for the IDE

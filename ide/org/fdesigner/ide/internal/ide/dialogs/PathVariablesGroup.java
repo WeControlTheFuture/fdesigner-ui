@@ -16,7 +16,7 @@
  *     Robert Roth <robert.roth.off@gmail.com> - Bug 57371
  *     Alexander Fedorov <alexander.fedorov@arsysop.ru> - Bug 548799
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.dialogs;
+package org.fdesigner.ide.internal.ide.dialogs;
 
 import java.net.URI;
 import java.util.HashSet;
@@ -25,30 +25,6 @@ import java.util.Set;
 import java.util.SortedMap;
 import java.util.TreeMap;
 
-import org.eclipse.core.filesystem.IFileInfo;
-import org.eclipse.core.filesystem.URIUtil;
-import org.eclipse.core.resources.IPathVariableManager;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IPath;
-import org.eclipse.core.runtime.Path;
-import org.eclipse.jface.dialogs.Dialog;
-import org.eclipse.jface.dialogs.ErrorDialog;
-import org.eclipse.jface.dialogs.IDialogConstants;
-import org.eclipse.jface.layout.TableColumnLayout;
-import org.eclipse.jface.resource.ResourceLocator;
-import org.eclipse.jface.viewers.CellLabelProvider;
-import org.eclipse.jface.viewers.ColumnViewerToolTipSupport;
-import org.eclipse.jface.viewers.ColumnWeightData;
-import org.eclipse.jface.viewers.IStructuredContentProvider;
-import org.eclipse.jface.viewers.TableViewer;
-import org.eclipse.jface.viewers.TableViewerColumn;
-import org.eclipse.jface.viewers.ViewerCell;
-import org.eclipse.jface.window.ToolTip;
-import org.eclipse.jface.window.Window;
-import org.eclipse.osgi.util.NLS;
-import org.eclipse.osgi.util.TextProcessor;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.MouseEvent;
 import org.eclipse.swt.events.MouseListener;
@@ -70,10 +46,34 @@ import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Listener;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.TableItem;
-import org.eclipse.ui.ISharedImages;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.container.util.TextProcessor;
+import org.fdesigner.filesystem.IFileInfo;
+import org.fdesigner.filesystem.URIUtil;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.resources.IPathVariableManager;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.Path;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.ui.jface.dialogs.Dialog;
+import org.fdesigner.ui.jface.dialogs.ErrorDialog;
+import org.fdesigner.ui.jface.dialogs.IDialogConstants;
+import org.fdesigner.ui.jface.layout.TableColumnLayout;
+import org.fdesigner.ui.jface.resource.ResourceLocator;
+import org.fdesigner.ui.jface.viewers.CellLabelProvider;
+import org.fdesigner.ui.jface.viewers.ColumnViewerToolTipSupport;
+import org.fdesigner.ui.jface.viewers.ColumnWeightData;
+import org.fdesigner.ui.jface.viewers.IStructuredContentProvider;
+import org.fdesigner.ui.jface.viewers.TableViewer;
+import org.fdesigner.ui.jface.viewers.TableViewerColumn;
+import org.fdesigner.ui.jface.viewers.ViewerCell;
+import org.fdesigner.ui.jface.window.ToolTip;
+import org.fdesigner.ui.jface.window.Window;
+import org.fdesigner.workbench.ISharedImages;
+import org.fdesigner.workbench.PlatformUI;
 
 import com.ibm.icu.text.Collator;
 

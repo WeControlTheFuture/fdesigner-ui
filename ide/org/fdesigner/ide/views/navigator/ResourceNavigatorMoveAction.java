@@ -11,23 +11,23 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.views.navigator;
+package org.fdesigner.ide.views.navigator;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.IWorkspaceRoot;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.runtime.IPath;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.jface.viewers.StructuredSelection;
-import org.eclipse.jface.viewers.StructuredViewer;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.actions.MoveProjectAction;
-import org.eclipse.ui.actions.MoveResourceAction;
+import org.fdesigner.ide.extensions.actions.MoveProjectAction;
+import org.fdesigner.ide.extensions.actions.MoveResourceAction;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IWorkspaceRoot;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.ui.jface.viewers.StructuredSelection;
+import org.fdesigner.ui.jface.viewers.StructuredViewer;
+import org.fdesigner.workbench.PlatformUI;
 
 /**
  * The ResourceNavigatorMoveAction is a resource move that aso updates the

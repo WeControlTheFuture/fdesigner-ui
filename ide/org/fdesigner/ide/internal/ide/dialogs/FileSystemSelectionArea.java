@@ -12,20 +12,20 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal.ide.dialogs;
+package org.fdesigner.ide.internal.ide.dialogs;
 
-import org.eclipse.jface.viewers.ComboViewer;
-import org.eclipse.jface.viewers.ISelection;
-import org.eclipse.jface.viewers.IStructuredContentProvider;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.jface.viewers.LabelProvider;
-import org.eclipse.jface.viewers.StructuredSelection;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Label;
-import org.eclipse.ui.internal.ide.filesystem.FileSystemConfiguration;
-import org.eclipse.ui.internal.ide.filesystem.FileSystemMessages;
-import org.eclipse.ui.internal.ide.filesystem.FileSystemSupportRegistry;
+import org.fdesigner.ide.internal.ide.filesystem.FileSystemConfiguration;
+import org.fdesigner.ide.internal.ide.filesystem.FileSystemMessages;
+import org.fdesigner.ide.internal.ide.filesystem.FileSystemSupportRegistry;
+import org.fdesigner.ui.jface.viewers.ComboViewer;
+import org.fdesigner.ui.jface.viewers.ISelection;
+import org.fdesigner.ui.jface.viewers.IStructuredContentProvider;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.ui.jface.viewers.LabelProvider;
+import org.fdesigner.ui.jface.viewers.StructuredSelection;
 
 /**
  * FileSystemSelectionArea is the area used to select the file system.
@@ -79,7 +79,7 @@ public class FileSystemSelectionArea {
 			}
 
 			@Override
-			public void inputChanged(org.eclipse.jface.viewers.Viewer viewer,
+			public void inputChanged(org.fdesigner.ui.jface.viewers.Viewer viewer,
 					Object oldInput, Object newInput) {
 				// Nothing to do
 			}

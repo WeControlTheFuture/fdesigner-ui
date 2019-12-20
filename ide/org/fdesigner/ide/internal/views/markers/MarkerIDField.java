@@ -12,10 +12,10 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.views.markers;
+package org.fdesigner.ide.internal.views.markers;
 
-import org.eclipse.ui.views.markers.MarkerField;
-import org.eclipse.ui.views.markers.MarkerItem;
+import org.fdesigner.ide.views.markers.MarkerField;
+import org.fdesigner.ide.views.markers.MarkerItem;
 
 
 /**

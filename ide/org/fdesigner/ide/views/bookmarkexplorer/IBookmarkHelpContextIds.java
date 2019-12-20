@@ -12,9 +12,9 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.views.bookmarkexplorer;
+package org.fdesigner.ide.views.bookmarkexplorer;
 
-import org.eclipse.ui.PlatformUI;
+import org.fdesigner.workbench.PlatformUI;
 
 /**
  * Help context ids for the bookmark view.

@@ -13,15 +13,15 @@
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 446965
  ******************************************************************************/
 
-package org.eclipse.ui.internal.ide.handlers;
+package org.fdesigner.ide.internal.ide.handlers;
 
-import org.eclipse.core.expressions.PropertyTester;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.runtime.Adapters;
-import org.eclipse.ui.IEditorInput;
-import org.eclipse.ui.IEditorPart;
-import org.eclipse.ui.IFileEditorInput;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.expressions.PropertyTester;
+import org.fdesigner.ide.extensions.IFileEditorInput;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.runtime.common.runtime.Adapters;
+import org.fdesigner.workbench.IEditorInput;
+import org.fdesigner.workbench.IEditorPart;
 
 /**
  * Test the active part to see if:

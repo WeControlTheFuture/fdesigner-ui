@@ -14,26 +14,26 @@
  *     Patrik Suzzi <psuzzi@itemis.com> - bug 530702
  *******************************************************************************/
 
-package org.eclipse.ui.internal.views.markers;
+package org.fdesigner.ide.internal.views.markers;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
 
-import org.eclipse.core.resources.IMarker;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IAdaptable;
-import org.eclipse.core.runtime.IAdapterFactory;
-import org.eclipse.core.runtime.IPath;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.osgi.util.NLS;
-import org.eclipse.ui.internal.ide.Policy;
-import org.eclipse.ui.internal.ide.model.WorkbenchMarker;
-import org.eclipse.ui.model.IWorkbenchAdapter;
-import org.eclipse.ui.views.markers.MarkerViewUtil;
-import org.eclipse.ui.views.markers.internal.MarkerMessages;
-import org.eclipse.ui.views.markers.internal.MarkerTypesModel;
+import org.fdesigner.ide.internal.ide.Policy;
+import org.fdesigner.ide.internal.ide.model.WorkbenchMarker;
+import org.fdesigner.ide.views.markers.MarkerViewUtil;
+import org.fdesigner.ide.views.markers.internal.MarkerMessages;
+import org.fdesigner.ide.views.markers.internal.MarkerTypesModel;
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IAdaptable;
+import org.fdesigner.runtime.common.runtime.IAdapterFactory;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.workbench.model.IWorkbenchAdapter;
 
 import com.ibm.icu.text.CollationKey;
 import com.ibm.icu.text.Collator;

@@ -11,16 +11,16 @@
  * Contributors:
  *     Mickael Istria (Red Hat Inc.) - initial API and implementation
  ******************************************************************************/
-package org.eclipse.ui.internal.wizards.datatransfer;
+package org.fdesigner.ide.internal.wizards.datatransfer;
 
-import org.eclipse.core.runtime.IProgressMonitorWithBlocking;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.jface.wizard.ProgressMonitorPart;
 import org.eclipse.swt.graphics.Point;
 import org.eclipse.swt.widgets.Combo;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Display;
-import org.eclipse.ui.PlatformUI;
+import org.fdesigner.runtime.common.runtime.IProgressMonitorWithBlocking;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.ui.jface.wizard.ProgressMonitorPart;
+import org.fdesigner.workbench.PlatformUI;
 
 /**
  * A progress monitor that delegates report to another one wrapping invocations

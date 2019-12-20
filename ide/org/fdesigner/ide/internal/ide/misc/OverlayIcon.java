@@ -11,11 +11,11 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.misc;
+package org.fdesigner.ide.internal.ide.misc;
 
-import org.eclipse.jface.resource.CompositeImageDescriptor;
-import org.eclipse.jface.resource.ImageDescriptor;
 import org.eclipse.swt.graphics.Point;
+import org.fdesigner.ui.jface.resource.CompositeImageDescriptor;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
 
 /**
  * An OverlayIcon consists of a main icon and several adornments.

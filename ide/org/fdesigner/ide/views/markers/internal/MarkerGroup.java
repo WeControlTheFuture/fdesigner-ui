@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.views.markers.internal;
+package org.fdesigner.ide.views.markers.internal;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -26,16 +26,16 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import org.eclipse.core.resources.IMarker;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.osgi.util.NLS;
 import org.eclipse.swt.graphics.Image;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.eclipse.ui.internal.ide.Policy;
-import org.eclipse.ui.internal.views.markers.MarkerSupportInternalUtilities;
-import org.eclipse.ui.views.markers.MarkerField;
-import org.eclipse.ui.views.markers.MarkerItem;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.internal.ide.Policy;
+import org.fdesigner.ide.internal.views.markers.MarkerSupportInternalUtilities;
+import org.fdesigner.ide.views.markers.MarkerField;
+import org.fdesigner.ide.views.markers.MarkerItem;
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * @since 3.2

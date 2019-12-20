@@ -11,22 +11,22 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.registry;
+package org.fdesigner.ide.internal.ide.registry;
 
 import java.net.URL;
 import java.util.ArrayList;
 
-import org.eclipse.core.resources.IMarker;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.FileLocator;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.core.runtime.Path;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.eclipse.ui.internal.ide.IMarkerImageProvider;
-import org.eclipse.ui.internal.ide.Policy;
-import org.osgi.framework.Bundle;
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.internal.ide.IMarkerImageProvider;
+import org.fdesigner.ide.internal.ide.Policy;
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.FileLocator;
+import org.fdesigner.runtime.common.runtime.Path;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
 
 /**
  * Implementation of a marker image registry which maps either

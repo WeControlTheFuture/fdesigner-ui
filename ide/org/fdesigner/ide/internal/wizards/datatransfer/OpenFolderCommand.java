@@ -11,15 +11,15 @@
  * Contributors:
  *     Mickael Istria (Red Hat Inc.) - initial API and implementation
  ******************************************************************************/
-package org.eclipse.ui.internal.wizards.datatransfer;
+package org.fdesigner.ide.internal.wizards.datatransfer;
 
-import org.eclipse.core.commands.AbstractHandler;
-import org.eclipse.core.commands.ExecutionEvent;
-import org.eclipse.jface.viewers.ISelection;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.jface.wizard.WizardDialog;
-import org.eclipse.ui.IWorkbench;
-import org.eclipse.ui.PlatformUI;
+import org.fdesigner.commands.AbstractHandler;
+import org.fdesigner.commands.ExecutionEvent;
+import org.fdesigner.ui.jface.viewers.ISelection;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.ui.jface.wizard.WizardDialog;
+import org.fdesigner.workbench.IWorkbench;
+import org.fdesigner.workbench.PlatformUI;
 
 /**
  * Command to open a {@link SmartImportWizard}

@@ -13,7 +13,7 @@
  *     Andrey Loskutov <loskutov@gmx.de> - Bug 41431, 462760
  *******************************************************************************/
 
-package org.eclipse.ui.actions;
+package org.fdesigner.ide.extensions.actions;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -21,15 +21,16 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.mapping.ResourceMapping;
-import org.eclipse.core.resources.mapping.ResourceMappingContext;
-import org.eclipse.core.resources.mapping.ResourceTraversal;
-import org.eclipse.core.runtime.Adapters;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.NullProgressMonitor;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.mapping.ResourceMapping;
+import org.fdesigner.resources.mapping.ResourceMappingContext;
+import org.fdesigner.resources.mapping.ResourceTraversal;
+import org.fdesigner.runtime.common.runtime.Adapters;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.NullProgressMonitor;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.workbench.actions.BaseSelectionListenerAction;
 
 /**
  * The abstract superclass for resource-based actions that listen to selection

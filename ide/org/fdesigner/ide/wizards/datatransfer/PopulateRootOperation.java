@@ -11,15 +11,15 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.wizards.datatransfer;
+package org.fdesigner.ide.wizards.datatransfer;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import org.eclipse.jface.operation.ModalContext;
-import org.eclipse.ui.dialogs.FileSystemElement;
-import org.eclipse.ui.internal.wizards.datatransfer.MinimizedFileSystemElement;
+import org.fdesigner.ide.internal.wizards.datatransfer.MinimizedFileSystemElement;
+import org.fdesigner.ui.jface.operation.ModalContext;
+import org.fdesigner.workbench.dialogs.FileSystemElement;
 
 /**
  * The PopulateFilesOperation is an operation used to populate a FileSystemElement one

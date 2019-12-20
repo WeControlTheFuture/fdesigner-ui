@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.views.markers;
+package org.fdesigner.ide.views.markers;
 
 /**
  * MarkerSupportConstants is a static class that supplies commonly used constants.

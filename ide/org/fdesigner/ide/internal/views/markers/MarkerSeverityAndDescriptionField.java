@@ -12,12 +12,12 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal.views.markers;
+package org.fdesigner.ide.internal.views.markers;
 
-import org.eclipse.core.resources.IMarker;
-import org.eclipse.jface.viewers.ViewerCell;
 import org.eclipse.swt.graphics.Image;
-import org.eclipse.ui.views.markers.MarkerItem;
+import org.fdesigner.ide.views.markers.MarkerItem;
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.ui.jface.viewers.ViewerCell;
 
 /**
  * MarkerSeverityAndDescriptionField can handle severities for all markers.

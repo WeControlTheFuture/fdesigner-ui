@@ -12,9 +12,9 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.ide.dialogs;
+package org.fdesigner.ide.internal.ide.dialogs;
 
-import org.eclipse.core.filesystem.IFileStore;
+import org.fdesigner.filesystem.IFileStore;
 
 /**
  * IFileStoreFilter is an interface that defines a filter on file

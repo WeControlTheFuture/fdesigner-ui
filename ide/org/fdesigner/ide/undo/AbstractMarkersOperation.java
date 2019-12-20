@@ -12,24 +12,24 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.ide.undo;
+package org.fdesigner.ide.undo;
 
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-import org.eclipse.core.resources.IMarker;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.core.runtime.jobs.ISchedulingRule;
-import org.eclipse.core.runtime.jobs.MultiRule;
-import org.eclipse.ui.internal.ide.undo.MarkerDescription;
-import org.eclipse.ui.internal.ide.undo.UndoMessages;
-import org.eclipse.ui.views.markers.internal.MarkerType;
-import org.eclipse.ui.views.markers.internal.MarkerTypesModel;
+import org.fdesigner.ide.internal.ide.undo.MarkerDescription;
+import org.fdesigner.ide.internal.ide.undo.UndoMessages;
+import org.fdesigner.ide.views.markers.internal.MarkerType;
+import org.fdesigner.ide.views.markers.internal.MarkerTypesModel;
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.jobs.runtime.jobs.ISchedulingRule;
+import org.fdesigner.runtime.jobs.runtime.jobs.MultiRule;
 
 /**
  * An AbstractMarkersOperation represents an undoable operation that affects

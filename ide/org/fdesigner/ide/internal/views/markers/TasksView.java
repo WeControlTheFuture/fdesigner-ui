@@ -11,15 +11,15 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
-package org.eclipse.ui.internal.views.markers;
+package org.fdesigner.ide.internal.views.markers;
 
-import org.eclipse.core.commands.operations.IUndoContext;
-import org.eclipse.core.resources.IMarker;
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.ui.ide.undo.WorkspaceUndoUtil;
-import org.eclipse.ui.views.markers.MarkerSupportView;
-import org.eclipse.ui.views.markers.internal.MarkerMessages;
-import org.eclipse.ui.views.markers.internal.MarkerSupportRegistry;
+import org.fdesigner.commands.operations.IUndoContext;
+import org.fdesigner.ide.undo.WorkspaceUndoUtil;
+import org.fdesigner.ide.views.markers.MarkerSupportView;
+import org.fdesigner.ide.views.markers.internal.MarkerMessages;
+import org.fdesigner.ide.views.markers.internal.MarkerSupportRegistry;
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.runtime.common.runtime.Assert;
 
 
 /**

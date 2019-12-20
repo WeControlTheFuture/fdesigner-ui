@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *     Andrey Loskutov <loskutov@gmx.de> - Bug 205678
  *******************************************************************************/
-package org.eclipse.ui.part;
+package org.fdesigner.ide.extensions.part;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -20,14 +20,14 @@ import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
 
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.IWorkspace;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.runtime.Path;
-import org.eclipse.jface.util.Util;
 import org.eclipse.swt.dnd.ByteArrayTransfer;
 import org.eclipse.swt.dnd.TransferData;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IWorkspace;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.runtime.common.runtime.Path;
+import org.fdesigner.ui.jface.util.Util;
 
 /**
  * The <code>ResourceTransfer</code> class is used to transfer an array of

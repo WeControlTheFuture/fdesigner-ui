@@ -11,9 +11,9 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.views.framelist;
+package org.fdesigner.ide.views.framelist;
 
-import org.eclipse.ui.PlatformUI;
+import org.fdesigner.workbench.PlatformUI;
 
 /**
  * Help context ids for the frame list.

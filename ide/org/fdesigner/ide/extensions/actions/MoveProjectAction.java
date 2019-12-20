@@ -11,28 +11,28 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.actions;
+package org.fdesigner.ide.extensions.actions;
 
 import java.lang.reflect.InvocationTargetException;
 import java.net.URI;
 
-import org.eclipse.core.commands.ExecutionException;
-import org.eclipse.core.filesystem.URIUtil;
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.jface.dialogs.ErrorDialog;
-import org.eclipse.jface.operation.IRunnableWithProgress;
-import org.eclipse.jface.window.IShellProvider;
-import org.eclipse.osgi.util.NLS;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.dialogs.ProjectLocationMoveDialog;
-import org.eclipse.ui.ide.undo.MoveProjectOperation;
-import org.eclipse.ui.ide.undo.WorkspaceUndoUtil;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.eclipse.ui.internal.ide.IIDEHelpContextIds;
-import org.eclipse.ui.internal.progress.ProgressMonitorJobsDialog;
+import org.fdesigner.commands.ExecutionException;
+import org.fdesigner.filesystem.URIUtil;
+import org.fdesigner.ide.extensions.dialogs.ProjectLocationMoveDialog;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.internal.ide.IIDEHelpContextIds;
+import org.fdesigner.ide.undo.MoveProjectOperation;
+import org.fdesigner.ide.undo.WorkspaceUndoUtil;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.ui.jface.dialogs.ErrorDialog;
+import org.fdesigner.ui.jface.operation.IRunnableWithProgress;
+import org.fdesigner.ui.jface.window.IShellProvider;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.internal.progress.ProgressMonitorJobsDialog;
 
 /**
  * The MoveProjectAction is the action designed to move projects specifically as

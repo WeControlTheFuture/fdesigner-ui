@@ -12,10 +12,10 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.ide.undo;
+package org.fdesigner.ide.undo;
 
-import org.eclipse.core.resources.IProjectDescription;
-import org.eclipse.ui.internal.ide.undo.ProjectDescription;
+import org.fdesigner.ide.internal.ide.undo.ProjectDescription;
+import org.fdesigner.resources.IProjectDescription;
 
 /**
  * A CreateProjectOperation represents an undoable operation for creating a

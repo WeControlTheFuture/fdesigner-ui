@@ -1,21 +1,5 @@
-package org.eclipse.ui.internal.views.markers;
+package org.fdesigner.ide.internal.views.markers;
 
-/*******************************************************************************
- * Copyright (c) 2007, 2015 IBM Corporation and others.
- *
- * This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License 2.0
- * which accompanies this distribution, and is available at
- * https://www.eclipse.org/legal/epl-2.0/
- *
- * SPDX-License-Identifier: EPL-2.0
- *
- * Contributors:
- *     IBM Corporation - initial API and implementation
- *******************************************************************************/
-
-import org.eclipse.core.resources.IMarker;
-import org.eclipse.jface.dialogs.IDialogConstants;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
@@ -24,8 +8,10 @@ import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Label;
-import org.eclipse.ui.views.markers.MarkerFieldFilter;
-import org.eclipse.ui.views.markers.internal.MarkerMessages;
+import org.fdesigner.ide.views.markers.MarkerFieldFilter;
+import org.fdesigner.ide.views.markers.internal.MarkerMessages;
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.ui.jface.dialogs.IDialogConstants;
 
 /**
  * SeverityAndDescriptionConfigurationArea is the configuration area for the

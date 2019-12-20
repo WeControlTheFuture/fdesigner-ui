@@ -12,17 +12,17 @@
  *     IBM Corporation - initial API and implementation
  *     Andrey Loskutov <loskutov@gmx.de> - generified interface, bug 461762
  *******************************************************************************/
-package org.eclipse.ui.internal.views.markers;
+package org.fdesigner.ide.internal.views.markers;
 
 import java.util.Collection;
 import java.util.HashSet;
 
-import org.eclipse.core.resources.IMarker;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.runtime.IAdapterFactory;
-import org.eclipse.jface.viewers.StructuredSelection;
-import org.eclipse.ui.part.IShowInSource;
-import org.eclipse.ui.part.ShowInContext;
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.runtime.common.runtime.IAdapterFactory;
+import org.fdesigner.ui.jface.viewers.StructuredSelection;
+import org.fdesigner.workbench.part.IShowInSource;
+import org.fdesigner.workbench.part.ShowInContext;
 
 /**
  * MarkerShowInAdapter is the adapter for ExtendedMarkersViews to get an

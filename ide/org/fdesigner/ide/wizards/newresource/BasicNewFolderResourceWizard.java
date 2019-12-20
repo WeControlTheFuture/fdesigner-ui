@@ -13,15 +13,15 @@
  *     Remy Chi Jian Suen <remy.suen@gmail.com>
  *     		- Bug 44162 [Wizards]  Define constants for wizard ids of new.file, new.folder, and new.project
  *******************************************************************************/
-package org.eclipse.ui.wizards.newresource;
+package org.fdesigner.ide.wizards.newresource;
 
-import org.eclipse.core.resources.IFolder;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.ui.IWorkbench;
-import org.eclipse.ui.dialogs.WizardNewFolderMainPage;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.eclipse.ui.internal.wizards.newresource.ResourceMessages;
+import org.fdesigner.ide.extensions.dialogs.WizardNewFolderMainPage;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.internal.wizards.newresource.ResourceMessages;
+import org.fdesigner.resources.IFolder;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.workbench.IWorkbench;
 
 /**
  * Standard workbench wizard that create a new folder resource in the workspace.

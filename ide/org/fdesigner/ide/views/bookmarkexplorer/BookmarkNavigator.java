@@ -15,31 +15,10 @@
  *     Mickael Istria (Red Hat Inc.) - Bug 486901
  *******************************************************************************/
 
-package org.eclipse.ui.views.bookmarkexplorer;
+package org.fdesigner.ide.views.bookmarkexplorer;
 
 import java.util.ArrayList;
 
-import org.eclipse.core.resources.IMarker;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.IWorkspace;
-import org.eclipse.core.resources.IWorkspaceRoot;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.jface.action.Action;
-import org.eclipse.jface.action.IMenuManager;
-import org.eclipse.jface.action.IToolBarManager;
-import org.eclipse.jface.action.MenuManager;
-import org.eclipse.jface.action.Separator;
-import org.eclipse.jface.dialogs.IDialogSettings;
-import org.eclipse.jface.viewers.ColumnLayoutData;
-import org.eclipse.jface.viewers.ColumnPixelData;
-import org.eclipse.jface.viewers.ColumnWeightData;
-import org.eclipse.jface.viewers.ILabelProvider;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.jface.viewers.StructuredSelection;
-import org.eclipse.jface.viewers.StructuredViewer;
-import org.eclipse.jface.viewers.TableLayout;
-import org.eclipse.jface.viewers.TableViewer;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.dnd.Clipboard;
 import org.eclipse.swt.dnd.DND;
@@ -60,27 +39,48 @@ import org.eclipse.swt.widgets.Scrollable;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Table;
 import org.eclipse.swt.widgets.TableColumn;
-import org.eclipse.ui.IActionBars;
-import org.eclipse.ui.IMemento;
-import org.eclipse.ui.IPageLayout;
-import org.eclipse.ui.ISharedImages;
-import org.eclipse.ui.IViewSite;
-import org.eclipse.ui.IWorkbenchActionConstants;
-import org.eclipse.ui.PartInitException;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.actions.ActionFactory;
-import org.eclipse.ui.internal.WorkbenchPlugin;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.eclipse.ui.internal.views.bookmarkexplorer.BookmarkMessages;
-import org.eclipse.ui.internal.views.markers.ExtendedMarkersView;
-import org.eclipse.ui.part.IShowInSource;
-import org.eclipse.ui.part.IShowInTargetList;
-import org.eclipse.ui.part.MarkerTransfer;
-import org.eclipse.ui.part.ShowInContext;
-import org.eclipse.ui.part.ViewPart;
-import org.eclipse.ui.plugin.AbstractUIPlugin;
-import org.eclipse.ui.views.navigator.ShowInNavigatorAction;
+import org.fdesigner.ide.extensions.part.MarkerTransfer;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.internal.views.markers.ExtendedMarkersView;
+import org.fdesigner.ide.views.navigator.ShowInNavigatorAction;
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IWorkspace;
+import org.fdesigner.resources.IWorkspaceRoot;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.ui.jface.action.Action;
+import org.fdesigner.ui.jface.action.IMenuManager;
+import org.fdesigner.ui.jface.action.IToolBarManager;
+import org.fdesigner.ui.jface.action.MenuManager;
+import org.fdesigner.ui.jface.action.Separator;
+import org.fdesigner.ui.jface.dialogs.IDialogSettings;
+import org.fdesigner.ui.jface.viewers.ColumnLayoutData;
+import org.fdesigner.ui.jface.viewers.ColumnPixelData;
+import org.fdesigner.ui.jface.viewers.ColumnWeightData;
+import org.fdesigner.ui.jface.viewers.ILabelProvider;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.ui.jface.viewers.StructuredSelection;
+import org.fdesigner.ui.jface.viewers.StructuredViewer;
+import org.fdesigner.ui.jface.viewers.TableLayout;
+import org.fdesigner.ui.jface.viewers.TableViewer;
+import org.fdesigner.workbench.IActionBars;
+import org.fdesigner.workbench.IMemento;
+import org.fdesigner.workbench.IPageLayout;
+import org.fdesigner.workbench.ISharedImages;
+import org.fdesigner.workbench.IViewSite;
+import org.fdesigner.workbench.IWorkbenchActionConstants;
+import org.fdesigner.workbench.PartInitException;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.actions.ActionFactory;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
+import org.fdesigner.workbench.part.IShowInSource;
+import org.fdesigner.workbench.part.IShowInTargetList;
+import org.fdesigner.workbench.part.ShowInContext;
+import org.fdesigner.workbench.part.ViewPart;
+import org.fdesigner.workbench.plugin.AbstractUIPlugin;
 
+import org.fdesigner.ide.internal.views.bookmarkexplorer.BookmarkMessages;
 /**
  * Main class for the bookmark navigator for displaying bookmarks on resources
  * and opening an editor on the bookmarked resource when the user commands.

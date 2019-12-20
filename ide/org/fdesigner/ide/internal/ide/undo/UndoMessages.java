@@ -12,9 +12,9 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.ide.undo;
+package org.fdesigner.ide.internal.ide.undo;
 
-import org.eclipse.osgi.util.NLS;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * UndoMessages is the class that handles the messages for performing workspace

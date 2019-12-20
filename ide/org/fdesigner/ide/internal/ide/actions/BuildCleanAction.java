@@ -11,14 +11,14 @@
  * Contributors:
  * IBM - Initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.actions;
+package org.fdesigner.ide.internal.ide.actions;
 
-import org.eclipse.core.resources.IProject;
-import org.eclipse.jface.action.Action;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.actions.ActionFactory;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
-import org.eclipse.ui.internal.ide.dialogs.CleanDialog;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.dialogs.CleanDialog;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.ui.jface.action.Action;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.actions.ActionFactory;
 
 /**
  * The clean action replaces the rebuild actions. Clean will discard all built

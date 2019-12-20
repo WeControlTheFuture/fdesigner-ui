@@ -11,16 +11,16 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.dialogs;
+package org.fdesigner.ide.internal.ide.dialogs;
 
 import java.lang.reflect.InvocationTargetException;
 
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.jface.action.IAction;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.osgi.framework.Bundle;
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.ui.jface.action.IAction;
+import org.fdesigner.workbench.PlatformUI;
 
 /**
  * Holds the information for an item appearing in the welcome editor

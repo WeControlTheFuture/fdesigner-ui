@@ -12,10 +12,10 @@
  *     IBM Corporation - initial API and implementation
  *     Lars Vogel <Lars.Vogel@gmail.com> - Bug 430694
  *******************************************************************************/
-package org.eclipse.ui.internal.ide;
+package org.fdesigner.ide.internal.ide;
 
-import org.eclipse.core.resources.IMarker;
-import org.eclipse.core.runtime.CoreException;
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.runtime.common.runtime.CoreException;
 
 /**
  * Implementation of IMarkerImageProvider to provide the image

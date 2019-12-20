@@ -14,7 +14,7 @@
  *     Alexander Fedorov <alexander.fedorov@arsysop.ru> - Bug 549409
  ******************************************************************************/
 
-package org.eclipse.ui.internal.ide.filesystem;
+package org.fdesigner.ide.internal.ide.filesystem;
 
 import java.io.File;
 import java.net.URI;
@@ -22,25 +22,25 @@ import java.util.Collection;
 import java.util.HashSet;
 import java.util.stream.Stream;
 
-import org.eclipse.core.filesystem.IFileInfo;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.core.runtime.IExtension;
-import org.eclipse.core.runtime.IExtensionPoint;
-import org.eclipse.core.runtime.ISafeRunnable;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.core.runtime.SafeRunner;
-import org.eclipse.core.runtime.dynamichelpers.ExtensionTracker;
-import org.eclipse.core.runtime.dynamichelpers.IExtensionChangeHandler;
-import org.eclipse.core.runtime.dynamichelpers.IExtensionTracker;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.DirectoryDialog;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.ide.fileSystem.FileSystemContributor;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.eclipse.ui.internal.ide.dialogs.IDEResourceInfoUtils;
+import org.fdesigner.filesystem.IFileInfo;
+import org.fdesigner.ide.fileSystem.FileSystemContributor;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.internal.ide.dialogs.IDEResourceInfoUtils;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.ISafeRunnable;
+import org.fdesigner.runtime.common.runtime.SafeRunner;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.runtime.registry.runtime.IExtension;
+import org.fdesigner.runtime.registry.runtime.IExtensionPoint;
+import org.fdesigner.runtime.registry.runtime.dynamichelpers.ExtensionTracker;
+import org.fdesigner.runtime.registry.runtime.dynamichelpers.IExtensionChangeHandler;
+import org.fdesigner.runtime.registry.runtime.dynamichelpers.IExtensionTracker;
+import org.fdesigner.workbench.PlatformUI;
 
 /**
  * @since 3.2

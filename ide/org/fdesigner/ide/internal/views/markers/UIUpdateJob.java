@@ -13,16 +13,16 @@
  *     Stefan Winkler <stefan@winklerweb.net> - Bug 537099
  ******************************************************************************/
 
-package org.eclipse.ui.internal.views.markers;
+package org.fdesigner.ide.internal.views.markers;
 
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.jface.viewers.IContentProvider;
-import org.eclipse.jface.viewers.TreeViewer;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.progress.WorkbenchJob;
-import org.eclipse.ui.views.markers.internal.MarkerMessages;
+import org.fdesigner.ide.views.markers.internal.MarkerMessages;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.ui.jface.viewers.IContentProvider;
+import org.fdesigner.ui.jface.viewers.TreeViewer;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.progress.WorkbenchJob;
 
 /**
  * The UIUpdateJob runs in the UI thread and is responsible updating the Markers

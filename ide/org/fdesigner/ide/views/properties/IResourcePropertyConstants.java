@@ -11,9 +11,9 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.views.properties;
+package org.fdesigner.ide.views.properties;
 
-import org.eclipse.ui.internal.views.properties.IDEPropertiesMessages;
+import org.fdesigner.ide.internal.views.properties.IDEPropertiesMessages;
 
 /**
  * This interface documents the property constants used by the resource

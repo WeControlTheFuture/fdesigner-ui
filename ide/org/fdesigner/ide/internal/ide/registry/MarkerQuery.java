@@ -12,14 +12,14 @@
  *     IBM Corporation - initial API and implementation
  *     Tim Neumann <tim.neumann@advantest.com> - Bug 543570
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.registry;
+package org.fdesigner.ide.internal.ide.registry;
 
 import java.util.Arrays;
 import java.util.Objects;
 
-import org.eclipse.core.resources.IMarker;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.ui.internal.ide.Policy;
+import org.fdesigner.ide.internal.ide.Policy;
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.runtime.common.runtime.CoreException;
 
 /**
  * Instances of this class hold a marker type id and/or

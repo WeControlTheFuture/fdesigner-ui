@@ -14,24 +14,24 @@
  *     Alexander Fedorov <alexander.fedorov@arsysop.ru> - Bug 460381
  *******************************************************************************/
 
-package org.eclipse.ui.internal.ide;
+package org.fdesigner.ide.internal.ide;
 
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Locale;
 
-import org.eclipse.jface.dialogs.AbstractSelectionDialog;
-import org.eclipse.jface.dialogs.IDialogConstants;
-import org.eclipse.jface.viewers.ArrayContentProvider;
-import org.eclipse.jface.viewers.LabelProvider;
-import org.eclipse.jface.viewers.ListViewer;
-import org.eclipse.jface.viewers.StructuredSelection;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.PlatformUI;
+import org.fdesigner.ui.jface.dialogs.AbstractSelectionDialog;
+import org.fdesigner.ui.jface.dialogs.IDialogConstants;
+import org.fdesigner.ui.jface.viewers.ArrayContentProvider;
+import org.fdesigner.ui.jface.viewers.LabelProvider;
+import org.fdesigner.ui.jface.viewers.ListViewer;
+import org.fdesigner.ui.jface.viewers.StructuredSelection;
+import org.fdesigner.workbench.PlatformUI;
 
 import com.ibm.icu.text.Collator;
 

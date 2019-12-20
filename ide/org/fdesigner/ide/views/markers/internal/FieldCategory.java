@@ -11,11 +11,11 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.views.markers.internal;
+package org.fdesigner.ide.views.markers.internal;
 
-import org.eclipse.core.runtime.CoreException;
 import org.eclipse.swt.graphics.Image;
-import org.eclipse.ui.internal.ide.Policy;
+import org.fdesigner.ide.internal.ide.Policy;
+import org.fdesigner.runtime.common.runtime.CoreException;
 
 /**
  * FieldCategory is the field for showing categories of markers.

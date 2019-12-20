@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal.ide.model;
+package org.fdesigner.ide.internal.ide.model;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -20,16 +20,16 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.resources.mapping.ModelProvider;
-import org.eclipse.core.resources.mapping.ResourceMapping;
-import org.eclipse.core.resources.mapping.ResourceMappingContext;
-import org.eclipse.core.resources.mapping.ResourceTraversal;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IAdaptable;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.SubMonitor;
-import org.eclipse.ui.IWorkingSet;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.mapping.ModelProvider;
+import org.fdesigner.resources.mapping.ResourceMapping;
+import org.fdesigner.resources.mapping.ResourceMappingContext;
+import org.fdesigner.resources.mapping.ResourceTraversal;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IAdaptable;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.SubMonitor;
+import org.fdesigner.workbench.IWorkingSet;
 
 /**
  * A resource mapping for working sets

@@ -12,12 +12,12 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.views.markers;
+package org.fdesigner.ide.views.markers;
 
-import org.eclipse.core.resources.IMarker;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.ui.IMarkerResolution2;
-import org.eclipse.ui.views.markers.internal.Util;
+import org.fdesigner.ide.extensions.IMarkerResolution2;
+import org.fdesigner.ide.views.markers.internal.Util;
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
 
 /**
  * WorkbenchMarkerResolution is the resolution that can be grouped

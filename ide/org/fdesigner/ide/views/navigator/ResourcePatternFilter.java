@@ -11,19 +11,19 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.views.navigator;
+package org.fdesigner.ide.views.navigator;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
 
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.runtime.Adapters;
-import org.eclipse.jface.preference.IPreferenceStore;
-import org.eclipse.jface.viewers.Viewer;
-import org.eclipse.jface.viewers.ViewerFilter;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.eclipse.ui.internal.util.PrefUtil;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.runtime.common.runtime.Adapters;
+import org.fdesigner.ui.jface.preference.IPreferenceStore;
+import org.fdesigner.ui.jface.viewers.Viewer;
+import org.fdesigner.ui.jface.viewers.ViewerFilter;
+import org.fdesigner.workbench.internal.util.PrefUtil;
 
 /**
  * Filter used to determine whether resources are to be shown or not.

@@ -11,14 +11,14 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.model;
+package org.fdesigner.ide.internal.ide.model;
 
-import org.eclipse.core.resources.IWorkspaceRoot;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.ui.ISharedImages;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
-import org.eclipse.ui.model.WorkbenchAdapter;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.resources.IWorkspaceRoot;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.workbench.ISharedImages;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.model.WorkbenchAdapter;
 
 /**
  * An IWorkbenchAdapter implementation for IWorkspaceRoot objects.

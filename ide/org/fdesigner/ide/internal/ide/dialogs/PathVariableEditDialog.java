@@ -12,19 +12,19 @@
  *     IBM Corporation - initial API and implementation
  *     Serge Beauchamp (Freescale Semiconductor) - [229633] Project Path Variable Support
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.dialogs;
+package org.fdesigner.ide.internal.ide.dialogs;
 
-import org.eclipse.core.resources.IResource;
-import org.eclipse.jface.dialogs.IDialogConstants;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.dialogs.SelectionDialog;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.eclipse.ui.internal.ide.IIDEHelpContextIds;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.internal.ide.IIDEHelpContextIds;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.ui.jface.dialogs.IDialogConstants;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.dialogs.SelectionDialog;
 
 /**
  * A dialog that allows a user to browse, edit, add, and remove path variables

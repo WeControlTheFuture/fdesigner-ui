@@ -12,13 +12,13 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.views.markers;
+package org.fdesigner.ide.internal.views.markers;
 
 import java.util.Date;
 
-import org.eclipse.jface.viewers.ViewerCell;
-import org.eclipse.ui.views.markers.MarkerField;
-import org.eclipse.ui.views.markers.MarkerItem;
+import org.fdesigner.ide.views.markers.MarkerField;
+import org.fdesigner.ide.views.markers.MarkerItem;
+import org.fdesigner.ui.jface.viewers.ViewerCell;
 
 import com.ibm.icu.text.DateFormat;
 

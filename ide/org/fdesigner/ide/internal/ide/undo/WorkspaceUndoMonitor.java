@@ -12,23 +12,23 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal.ide.undo;
+package org.fdesigner.ide.internal.ide.undo;
 
-import org.eclipse.core.commands.ExecutionException;
-import org.eclipse.core.commands.operations.IAdvancedUndoableOperation;
-import org.eclipse.core.commands.operations.IAdvancedUndoableOperation2;
-import org.eclipse.core.commands.operations.IOperationHistory;
-import org.eclipse.core.commands.operations.IOperationHistoryListener;
-import org.eclipse.core.commands.operations.IUndoableOperation;
-import org.eclipse.core.commands.operations.OperationHistoryEvent;
-import org.eclipse.core.resources.IResourceChangeEvent;
-import org.eclipse.core.resources.IResourceChangeListener;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.ide.undo.WorkspaceUndoUtil;
-import org.eclipse.ui.internal.ide.Policy;
+import org.fdesigner.commands.ExecutionException;
+import org.fdesigner.commands.operations.IAdvancedUndoableOperation;
+import org.fdesigner.commands.operations.IAdvancedUndoableOperation2;
+import org.fdesigner.commands.operations.IOperationHistory;
+import org.fdesigner.commands.operations.IOperationHistoryListener;
+import org.fdesigner.commands.operations.IUndoableOperation;
+import org.fdesigner.commands.operations.OperationHistoryEvent;
+import org.fdesigner.ide.internal.ide.Policy;
+import org.fdesigner.ide.undo.WorkspaceUndoUtil;
+import org.fdesigner.resources.IResourceChangeEvent;
+import org.fdesigner.resources.IResourceChangeListener;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.workbench.PlatformUI;
 
 /**
  * WorkspaceUndoMonitor monitors the workspace for resource changes and

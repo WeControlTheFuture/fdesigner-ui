@@ -12,35 +12,35 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.ide;
+package org.fdesigner.ide.internal.ide;
 
-import org.eclipse.core.filesystem.EFS;
-import org.eclipse.core.filesystem.IFileStore;
-import org.eclipse.core.resources.IFile;
-import org.eclipse.core.resources.IMarker;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.Path;
 import org.eclipse.swt.dnd.DND;
 import org.eclipse.swt.dnd.DropTargetAdapter;
 import org.eclipse.swt.dnd.DropTargetEvent;
 import org.eclipse.swt.dnd.FileTransfer;
 import org.eclipse.swt.widgets.Display;
-import org.eclipse.ui.IEditorDescriptor;
-import org.eclipse.ui.IEditorInput;
-import org.eclipse.ui.IEditorPart;
-import org.eclipse.ui.IEditorRegistry;
-import org.eclipse.ui.IWorkbenchPage;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.PartInitException;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.ide.IDE;
-import org.eclipse.ui.part.EditorInputTransfer;
-import org.eclipse.ui.part.EditorInputTransfer.EditorInputData;
-import org.eclipse.ui.part.FileEditorInput;
-import org.eclipse.ui.part.MarkerTransfer;
-import org.eclipse.ui.part.ResourceTransfer;
+import org.fdesigner.filesystem.EFS;
+import org.fdesigner.filesystem.IFileStore;
+import org.fdesigner.ide.IDE;
+import org.fdesigner.ide.extensions.part.FileEditorInput;
+import org.fdesigner.ide.extensions.part.MarkerTransfer;
+import org.fdesigner.ide.extensions.part.ResourceTransfer;
+import org.fdesigner.resources.IFile;
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.Path;
+import org.fdesigner.workbench.IEditorDescriptor;
+import org.fdesigner.workbench.IEditorInput;
+import org.fdesigner.workbench.IEditorPart;
+import org.fdesigner.workbench.IEditorRegistry;
+import org.fdesigner.workbench.IWorkbenchPage;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.PartInitException;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.part.EditorInputTransfer;
+import org.fdesigner.workbench.part.EditorInputTransfer.EditorInputData;
 
 /**
  * An editor area drop adapter to handle transfer types

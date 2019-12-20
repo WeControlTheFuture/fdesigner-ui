@@ -11,7 +11,9 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui;
+package org.fdesigner.ide.extensions;
+
+import org.fdesigner.workbench.IActionFilter;
 
 /**
  * Describes the public attributes for a resource and the acceptable values

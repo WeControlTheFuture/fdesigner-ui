@@ -16,21 +16,8 @@
  *     - Fix for bug 82541 - [Dialogs] SaveAsDialog should better handle closed projects
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 472784
  *******************************************************************************/
-package org.eclipse.ui.dialogs;
+package org.fdesigner.ide.extensions.dialogs;
 
-import org.eclipse.core.resources.IFile;
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.IWorkspace;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.runtime.IPath;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.jface.dialogs.IDialogConstants;
-import org.eclipse.jface.dialogs.IDialogSettings;
-import org.eclipse.jface.dialogs.MessageDialog;
-import org.eclipse.jface.dialogs.TitleAreaDialog;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.osgi.util.NLS;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.layout.GridData;
@@ -40,12 +27,25 @@ import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Listener;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.ide.IDEInternalWorkbenchImages;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.eclipse.ui.internal.ide.IIDEHelpContextIds;
-import org.eclipse.ui.internal.ide.misc.ResourceAndContainerGroup;
+import org.fdesigner.ide.internal.ide.IDEInternalWorkbenchImages;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.internal.ide.IIDEHelpContextIds;
+import org.fdesigner.ide.internal.ide.misc.ResourceAndContainerGroup;
+import org.fdesigner.resources.IFile;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IWorkspace;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.ui.jface.dialogs.IDialogConstants;
+import org.fdesigner.ui.jface.dialogs.IDialogSettings;
+import org.fdesigner.ui.jface.dialogs.MessageDialog;
+import org.fdesigner.ui.jface.dialogs.TitleAreaDialog;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.workbench.PlatformUI;
 
 /**
  * A standard "Save As" dialog which solicits a path from the user. The

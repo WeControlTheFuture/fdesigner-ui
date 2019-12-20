@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.views.markers;
+package org.fdesigner.ide.views.markers;
 
 import java.util.Map;
 

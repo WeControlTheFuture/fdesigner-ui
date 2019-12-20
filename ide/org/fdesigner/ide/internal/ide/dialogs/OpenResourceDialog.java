@@ -11,25 +11,10 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.dialogs;
+package org.fdesigner.ide.internal.ide.dialogs;
 
 import java.util.Collections;
 
-import org.eclipse.core.resources.IContainer;
-import org.eclipse.core.runtime.Adapters;
-import org.eclipse.core.runtime.IAdaptable;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.jface.action.Action;
-import org.eclipse.jface.action.ActionContributionItem;
-import org.eclipse.jface.action.IContributionItem;
-import org.eclipse.jface.action.IMenuManager;
-import org.eclipse.jface.action.MenuManager;
-import org.eclipse.jface.action.Separator;
-import org.eclipse.jface.dialogs.IDialogConstants;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.jface.util.Util;
-import org.eclipse.jface.viewers.IStructuredSelection;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.MouseAdapter;
 import org.eclipse.swt.events.MouseEvent;
@@ -42,26 +27,41 @@ import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Menu;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.IEditorDescriptor;
-import org.eclipse.ui.IViewPart;
-import org.eclipse.ui.IWorkbenchPage;
-import org.eclipse.ui.IWorkbenchPart;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.PartInitException;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.actions.ContributionItemFactory;
-import org.eclipse.ui.actions.OpenFileAction;
-import org.eclipse.ui.actions.OpenWithMenu;
-import org.eclipse.ui.dialogs.FilteredResourcesSelectionDialog;
-import org.eclipse.ui.internal.IWorkbenchGraphicConstants;
-import org.eclipse.ui.internal.ShowInMenu;
-import org.eclipse.ui.internal.WorkbenchImages;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.eclipse.ui.part.IShowInTarget;
-import org.eclipse.ui.part.ShowInContext;
-import org.eclipse.ui.statushandlers.StatusManager;
-import org.eclipse.ui.views.IViewDescriptor;
+import org.fdesigner.ide.extensions.actions.OpenFileAction;
+import org.fdesigner.ide.extensions.actions.OpenWithMenu;
+import org.fdesigner.ide.extensions.dialogs.FilteredResourcesSelectionDialog;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.resources.IContainer;
+import org.fdesigner.runtime.common.runtime.Adapters;
+import org.fdesigner.runtime.common.runtime.IAdaptable;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.ui.jface.action.Action;
+import org.fdesigner.ui.jface.action.ActionContributionItem;
+import org.fdesigner.ui.jface.action.IContributionItem;
+import org.fdesigner.ui.jface.action.IMenuManager;
+import org.fdesigner.ui.jface.action.MenuManager;
+import org.fdesigner.ui.jface.action.Separator;
+import org.fdesigner.ui.jface.dialogs.IDialogConstants;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.ui.jface.util.Util;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.workbench.IEditorDescriptor;
+import org.fdesigner.workbench.IViewPart;
+import org.fdesigner.workbench.IWorkbenchPage;
+import org.fdesigner.workbench.IWorkbenchPart;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.PartInitException;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.actions.ContributionItemFactory;
+import org.fdesigner.workbench.internal.IWorkbenchGraphicConstants;
+import org.fdesigner.workbench.internal.ShowInMenu;
+import org.fdesigner.workbench.internal.WorkbenchImages;
+import org.fdesigner.workbench.part.IShowInTarget;
+import org.fdesigner.workbench.part.ShowInContext;
+import org.fdesigner.workbench.statushandlers.StatusManager;
+import org.fdesigner.workbench.views.IViewDescriptor;
 
 
 /**

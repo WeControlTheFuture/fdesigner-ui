@@ -12,17 +12,17 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.views.markers;
+package org.fdesigner.ide.internal.views.markers;
 
-import org.eclipse.jface.action.ContributionItem;
-import org.eclipse.jface.action.IContributionItem;
-import org.eclipse.jface.action.Separator;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Listener;
 import org.eclipse.swt.widgets.Menu;
 import org.eclipse.swt.widgets.MenuItem;
-import org.eclipse.ui.views.markers.MarkerField;
-import org.eclipse.ui.views.markers.internal.MarkerMessages;
+import org.fdesigner.ide.views.markers.MarkerField;
+import org.fdesigner.ide.views.markers.internal.MarkerMessages;
+import org.fdesigner.ui.jface.action.ContributionItem;
+import org.fdesigner.ui.jface.action.IContributionItem;
+import org.fdesigner.ui.jface.action.Separator;
 
 /**
  * SortFieldContribution is the contribution that allows the user to choose

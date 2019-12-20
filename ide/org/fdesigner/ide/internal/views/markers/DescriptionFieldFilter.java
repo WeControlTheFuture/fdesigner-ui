@@ -12,15 +12,15 @@
  *     IBM Corporation - initial API and implementation
  *     Mickael Istria (Red Hat Inc.) - Bug 486901
  *******************************************************************************/
-package org.eclipse.ui.internal.views.markers;
+package org.fdesigner.ide.internal.views.markers;
 
 import java.util.Map;
 
-import org.eclipse.ui.IMemento;
-import org.eclipse.ui.views.markers.MarkerFieldFilter;
-import org.eclipse.ui.views.markers.MarkerItem;
-import org.eclipse.ui.views.markers.MarkerSupportConstants;
-import org.eclipse.ui.views.markers.internal.ProblemFilter;
+import org.fdesigner.ide.views.markers.MarkerFieldFilter;
+import org.fdesigner.ide.views.markers.MarkerItem;
+import org.fdesigner.ide.views.markers.MarkerSupportConstants;
+import org.fdesigner.ide.views.markers.internal.ProblemFilter;
+import org.fdesigner.workbench.IMemento;
 
 /**
  * DescriptionFieldFilter is the filter for descriptions.

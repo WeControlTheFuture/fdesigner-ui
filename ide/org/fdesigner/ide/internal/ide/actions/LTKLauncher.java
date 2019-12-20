@@ -13,25 +13,25 @@
  *     Lars Vogel <Lars.Vogel@gmail.com> - Bug 440810
  *******************************************************************************/
 
-package org.eclipse.ui.internal.ide.actions;
+package org.fdesigner.ide.internal.ide.actions;
 
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import org.eclipse.core.commands.Command;
-import org.eclipse.core.commands.ExecutionException;
-import org.eclipse.core.commands.NotEnabledException;
-import org.eclipse.core.commands.NotHandledException;
-import org.eclipse.core.commands.ParameterizedCommand;
-import org.eclipse.core.commands.common.NotDefinedException;
-import org.eclipse.core.expressions.EvaluationContext;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.ui.ISources;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.commands.ICommandService;
-import org.eclipse.ui.handlers.IHandlerService;
+import org.fdesigner.commands.Command;
+import org.fdesigner.commands.ExecutionException;
+import org.fdesigner.commands.NotEnabledException;
+import org.fdesigner.commands.NotHandledException;
+import org.fdesigner.commands.ParameterizedCommand;
+import org.fdesigner.commands.common.NotDefinedException;
+import org.fdesigner.expressions.EvaluationContext;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.workbench.ISources;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.commands.ICommandService;
+import org.fdesigner.workbench.handlers.IHandlerService;
 
 /**
  * Launch the LTK aware resource operations ... but sneaky!

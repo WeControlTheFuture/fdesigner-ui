@@ -14,16 +14,16 @@
  *     		Fix for Bug 2369 [Workbench] Would like to be able to save workspace without exiting
  *     		Implemented workbench auto-save to correctly restore state in case of crash.
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.dialogs;
+package org.fdesigner.ide.internal.ide.dialogs;
 
-import org.eclipse.jface.preference.IPreferenceStore;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
-import org.eclipse.ui.IWorkbenchPreferencePage;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.IWorkbenchHelpContextIds;
-import org.eclipse.ui.internal.dialogs.WorkbenchPreferencePage;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ui.jface.preference.IPreferenceStore;
+import org.fdesigner.workbench.IWorkbenchPreferencePage;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.internal.IWorkbenchHelpContextIds;
+import org.fdesigner.workbench.internal.dialogs.WorkbenchPreferencePage;
 
 /**
  * The IDE workbench main preference page.

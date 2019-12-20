@@ -12,12 +12,12 @@
  *     IBM Corporation - initial API and implementation
  *     Alexander Fedorov <alexander.fedorov@arsysop.ru> - Bug 548799
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.registry;
+package org.fdesigner.ide.internal.ide.registry;
 
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.core.runtime.IExtensionRegistry;
-import org.eclipse.jface.resource.ResourceLocator;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.runtime.registry.runtime.IExtensionRegistry;
+import org.fdesigner.ui.jface.resource.ResourceLocator;
 
 /**
  * A strategy to project nature image extensions from the registry.

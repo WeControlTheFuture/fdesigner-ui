@@ -11,11 +11,11 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.ide.dialogs;
+package org.fdesigner.ide.dialogs;
 
 import java.util.Collection;
 
-import org.eclipse.core.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
 
 /**
  * The {@link IElementFilter} is a interface that defines the API for filtering the current selection of

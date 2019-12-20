@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *     Andrey Loskutov <loskutov@gmx.de> - generified interface, bug 462760
  ******************************************************************************/
-package org.eclipse.ui.internal.ide.misc;
+package org.fdesigner.ide.internal.ide.misc;
 
 import java.util.HashMap;
 import java.util.Iterator;

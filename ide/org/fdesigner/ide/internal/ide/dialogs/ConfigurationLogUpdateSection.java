@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.dialogs;
+package org.fdesigner.ide.internal.ide.dialogs;
 
 import java.io.PrintWriter;
 import java.text.DateFormat;
@@ -25,15 +25,15 @@ import org.eclipse.equinox.p2.engine.IProfileRegistry;
 import org.eclipse.equinox.p2.metadata.IInstallableUnit;
 import org.eclipse.equinox.p2.query.IQueryResult;
 import org.eclipse.equinox.p2.query.QueryUtil;
-import org.eclipse.osgi.service.resolver.BundleDescription;
-import org.eclipse.osgi.service.resolver.PlatformAdmin;
-import org.eclipse.osgi.service.resolver.State;
-import org.eclipse.osgi.util.NLS;
-import org.eclipse.ui.about.ISystemSummarySection;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.osgi.framework.BundleContext;
-import org.osgi.framework.ServiceReference;
+import org.fdesigner.container.service.resolver.BundleDescription;
+import org.fdesigner.container.service.resolver.PlatformAdmin;
+import org.fdesigner.container.service.resolver.State;
+import org.fdesigner.framework.framework.BundleContext;
+import org.fdesigner.framework.framework.ServiceReference;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.workbench.about.ISystemSummarySection;
 
 /**
  * Writes information about the update configurer into the system summary.

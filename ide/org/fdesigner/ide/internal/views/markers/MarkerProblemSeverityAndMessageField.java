@@ -12,14 +12,14 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal.views.markers;
+package org.fdesigner.ide.internal.views.markers;
 
-import org.eclipse.jface.resource.DeviceResourceException;
-import org.eclipse.jface.resource.JFaceResources;
-import org.eclipse.jface.viewers.ViewerCell;
 import org.eclipse.swt.graphics.Image;
-import org.eclipse.ui.internal.ide.IDEInternalWorkbenchImages;
-import org.eclipse.ui.views.markers.MarkerItem;
+import org.fdesigner.ide.internal.ide.IDEInternalWorkbenchImages;
+import org.fdesigner.ide.views.markers.MarkerItem;
+import org.fdesigner.ui.jface.resource.DeviceResourceException;
+import org.fdesigner.ui.jface.resource.JFaceResources;
+import org.fdesigner.ui.jface.viewers.ViewerCell;
 
 /**
  * MarkerSeverityAndMessageField is the field for severity and messages.

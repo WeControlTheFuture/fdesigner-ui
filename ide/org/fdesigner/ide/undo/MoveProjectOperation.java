@@ -12,23 +12,23 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.ide.undo;
+package org.fdesigner.ide.undo;
 
 import java.net.URI;
 
-import org.eclipse.core.filesystem.URIUtil;
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.resources.IProjectDescription;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.mapping.IResourceChangeDescriptionFactory;
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IAdaptable;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.ui.internal.ide.undo.UndoMessages;
+import org.fdesigner.filesystem.URIUtil;
+import org.fdesigner.ide.internal.ide.undo.UndoMessages;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IProjectDescription;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.mapping.IResourceChangeDescriptionFactory;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IAdaptable;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.core.Platform;
 
 /**
  * A MoveProjectOperation represents an undoable operation for moving a

@@ -13,17 +13,17 @@
  *     Lars Vogel <Lars.Vogel@gmail.com> - Bug 430694
  *     Alexander Fedorov <alexander.fedorov@arsysop.ru> - Bug 548799
  *******************************************************************************/
-package org.eclipse.ui.internal.ide;
+package org.fdesigner.ide.internal.ide;
 
 import java.util.Optional;
 
-import org.eclipse.core.resources.IFolder;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.jface.resource.ResourceLocator;
-import org.eclipse.jface.viewers.IDecoration;
-import org.eclipse.jface.viewers.ILabelProviderListener;
-import org.eclipse.jface.viewers.ILightweightLabelDecorator;
+import org.fdesigner.resources.IFolder;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.ui.jface.resource.ResourceLocator;
+import org.fdesigner.ui.jface.viewers.IDecoration;
+import org.fdesigner.ui.jface.viewers.ILabelProviderListener;
+import org.fdesigner.ui.jface.viewers.ILightweightLabelDecorator;
 
 /**
  * A VirtualResourceDecorator replaces an element's image, if it is a virtual

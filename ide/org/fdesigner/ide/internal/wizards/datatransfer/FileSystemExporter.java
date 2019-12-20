@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *     Taimoor Mirza <taimoor.mrza@gmail.com> - Bug 549486
  *******************************************************************************/
-package org.eclipse.ui.internal.wizards.datatransfer;
+package org.fdesigner.ide.internal.wizards.datatransfer;
 
 import java.io.File;
 import java.io.IOException;
@@ -20,11 +20,11 @@ import java.nio.file.Files;
 import java.nio.file.LinkOption;
 import java.nio.file.StandardCopyOption;
 
-import org.eclipse.core.resources.IContainer;
-import org.eclipse.core.resources.IFile;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IPath;
+import org.fdesigner.resources.IContainer;
+import org.fdesigner.resources.IFile;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IPath;
 
 /**
  * Helper class for exporting resources to the file system.

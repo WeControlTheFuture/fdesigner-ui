@@ -11,13 +11,13 @@
  * Contributors:
  *     Sergey Prigogin (Google) - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.model;
+package org.fdesigner.ide.internal.ide.model;
 
-import org.eclipse.core.filesystem.EFS;
-import org.eclipse.core.filesystem.IFileStore;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IAdapterFactory;
-import org.eclipse.ui.ide.FileStoreEditorInput;
+import org.fdesigner.filesystem.EFS;
+import org.fdesigner.filesystem.IFileStore;
+import org.fdesigner.ide.FileStoreEditorInput;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IAdapterFactory;
 
 /**
  * The adapter factory for {@link FileStoreEditorInput}.

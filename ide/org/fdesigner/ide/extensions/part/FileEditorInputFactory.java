@@ -11,16 +11,14 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.part;
+package org.fdesigner.ide.extensions.part;
 
-import org.eclipse.core.runtime.IAdaptable;
-import org.eclipse.core.runtime.Path;
-
-import org.eclipse.core.resources.IFile;
-import org.eclipse.core.resources.ResourcesPlugin;
-
-import org.eclipse.ui.IElementFactory;
-import org.eclipse.ui.IMemento;
+import org.fdesigner.resources.IFile;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.runtime.common.runtime.IAdaptable;
+import org.fdesigner.runtime.common.runtime.Path;
+import org.fdesigner.workbench.IElementFactory;
+import org.fdesigner.workbench.IMemento;
 
 /**
  * Factory for saving and restoring a <code>FileEditorInput</code>.

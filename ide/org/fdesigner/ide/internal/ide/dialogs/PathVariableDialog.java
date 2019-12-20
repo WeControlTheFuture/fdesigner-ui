@@ -15,25 +15,11 @@
  *     Serge Beauchamp (Freescale Semiconductor) - [229633] Group and Project Path Variable Support
  *     Helena Halperin (IBM) - bug #299212
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.dialogs;
+package org.fdesigner.ide.internal.ide.dialogs;
 
 import java.net.URI;
 import java.util.Set;
 
-import org.eclipse.core.filesystem.IFileInfo;
-import org.eclipse.core.filesystem.URIUtil;
-import org.eclipse.core.resources.IPathVariableManager;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IPath;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Path;
-import org.eclipse.jface.dialogs.Dialog;
-import org.eclipse.jface.dialogs.IDialogConstants;
-import org.eclipse.jface.dialogs.IMessageProvider;
-import org.eclipse.jface.dialogs.TitleAreaDialog;
-import org.eclipse.osgi.util.TextProcessor;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
@@ -47,8 +33,22 @@ import org.eclipse.swt.widgets.FileDialog;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Text;
-import org.eclipse.ui.ide.dialogs.PathVariableSelectionDialog;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.container.util.TextProcessor;
+import org.fdesigner.filesystem.IFileInfo;
+import org.fdesigner.filesystem.URIUtil;
+import org.fdesigner.ide.dialogs.PathVariableSelectionDialog;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.resources.IPathVariableManager;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Path;
+import org.fdesigner.ui.jface.dialogs.Dialog;
+import org.fdesigner.ui.jface.dialogs.IDialogConstants;
+import org.fdesigner.ui.jface.dialogs.IMessageProvider;
+import org.fdesigner.ui.jface.dialogs.TitleAreaDialog;
 
 /**
  * Dialog that prompts the user for defining a variable's name and value. It

@@ -12,33 +12,34 @@
  *     IBM Corporation - initial API and implementation
  *     Anton Leherbauer (Wind River) -  [296800] UI build actions should not lock the workspace
  *******************************************************************************/
-package org.eclipse.ui.actions;
+package org.fdesigner.ide.extensions.actions;
 
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.resources.IncrementalProjectBuilder;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.core.runtime.SubMonitor;
-import org.eclipse.core.runtime.jobs.Job;
-import org.eclipse.jface.action.Action;
-import org.eclipse.jface.dialogs.ErrorDialog;
-import org.eclipse.jface.dialogs.MessageDialog;
-import org.eclipse.osgi.util.NLS;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.IWorkbench;
-import org.eclipse.ui.IWorkbenchCommandConstants;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.internal.ide.IDEInternalWorkbenchImages;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.eclipse.ui.internal.ide.IIDEHelpContextIds;
-import org.eclipse.ui.internal.ide.actions.BuildUtilities;
-import org.eclipse.ui.progress.IProgressConstants2;
-import org.eclipse.ui.statushandlers.StatusManager;
+import org.fdesigner.ide.internal.ide.IDEInternalWorkbenchImages;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.internal.ide.IIDEHelpContextIds;
+import org.fdesigner.ide.internal.ide.actions.BuildUtilities;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IncrementalProjectBuilder;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.common.runtime.SubMonitor;
+import org.fdesigner.runtime.jobs.runtime.jobs.Job;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.ui.jface.action.Action;
+import org.fdesigner.ui.jface.dialogs.ErrorDialog;
+import org.fdesigner.ui.jface.dialogs.MessageDialog;
+import org.fdesigner.workbench.IWorkbench;
+import org.fdesigner.workbench.IWorkbenchCommandConstants;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.actions.ActionFactory;
+import org.fdesigner.workbench.progress.IProgressConstants2;
+import org.fdesigner.workbench.statushandlers.StatusManager;
 
 /**
  * Standard action for full and incremental builds of all projects within the

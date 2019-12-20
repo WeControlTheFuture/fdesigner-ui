@@ -11,13 +11,14 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.views.navigator;
+package org.fdesigner.ide.views.navigator;
 
-import org.eclipse.core.resources.IContainer;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.dialogs.FilteredResourcesSelectionDialog;
-import org.eclipse.ui.internal.views.navigator.ResourceNavigatorMessages;
+import org.fdesigner.ide.extensions.dialogs.FilteredResourcesSelectionDialog;
+import org.fdesigner.resources.IContainer;
+import org.fdesigner.workbench.PlatformUI;
+
+import org.fdesigner.ide.internal.views.navigator.ResourceNavigatorMessages;
 
 /**
  * Shows a list of resources to the user with a text entry field for a string

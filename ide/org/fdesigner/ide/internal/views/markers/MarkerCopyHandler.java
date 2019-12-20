@@ -13,15 +13,15 @@
  *     Benjamin Cabe <benjamin.cabe@anyware-tech.com> -
  *     	Fix for Bug 222375 [Markers] copy markers from markers view should 'pretty print'
  *******************************************************************************/
-package org.eclipse.ui.internal.views.markers;
+package org.fdesigner.ide.internal.views.markers;
 
-import org.eclipse.core.commands.ExecutionEvent;
-import org.eclipse.core.resources.IMarker;
 import org.eclipse.swt.dnd.TextTransfer;
 import org.eclipse.swt.dnd.Transfer;
-import org.eclipse.ui.part.MarkerTransfer;
-import org.eclipse.ui.views.markers.MarkerField;
-import org.eclipse.ui.views.markers.MarkerViewHandler;
+import org.fdesigner.commands.ExecutionEvent;
+import org.fdesigner.ide.extensions.part.MarkerTransfer;
+import org.fdesigner.ide.views.markers.MarkerField;
+import org.fdesigner.ide.views.markers.MarkerViewHandler;
+import org.fdesigner.resources.IMarker;
 
 /**
  * MarkerCopyHandler is the handler for the copy action when the markers view is

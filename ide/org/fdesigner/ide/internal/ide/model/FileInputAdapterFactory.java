@@ -12,12 +12,12 @@
  *     IBM Corporation - initial API and implementation
  *     Andrey Loskutov <loskutov@gmx.de> - generified interface, bug 461762
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.model;
+package org.fdesigner.ide.internal.ide.model;
 
-import org.eclipse.core.resources.IFile;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.runtime.IAdapterFactory;
-import org.eclipse.ui.IFileEditorInput;
+import org.fdesigner.ide.extensions.IFileEditorInput;
+import org.fdesigner.resources.IFile;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.runtime.common.runtime.IAdapterFactory;
 
 /**
  * FileInputAdapterFactory is the adapter factory for the

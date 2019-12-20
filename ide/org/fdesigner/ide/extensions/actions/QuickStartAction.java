@@ -13,34 +13,35 @@
  *     Mickael Istria (Red Hat Inc.) - [486901] Avoid blocking URL.equals
  *     Alexander Fedorov <alexander.fedorov@arsysop.ru> - Bug 460381
  *******************************************************************************/
-package org.eclipse.ui.actions;
+package org.fdesigner.ide.extensions.actions;
 
 import java.net.URL;
 import java.util.ArrayList;
 
-import org.eclipse.core.runtime.IProduct;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.jface.action.Action;
-import org.eclipse.jface.dialogs.ErrorDialog;
-import org.eclipse.jface.dialogs.MessageDialog;
-import org.eclipse.jface.window.Window;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.IEditorPart;
-import org.eclipse.ui.IWorkbenchCommandConstants;
-import org.eclipse.ui.IWorkbenchPage;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.PartInitException;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.WorkbenchException;
-import org.eclipse.ui.internal.ProductProperties;
-import org.eclipse.ui.internal.ide.AboutInfo;
-import org.eclipse.ui.internal.ide.FeatureSelectionDialog;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.eclipse.ui.internal.ide.IIDEHelpContextIds;
-import org.eclipse.ui.internal.ide.dialogs.WelcomeEditorInput;
+import org.fdesigner.ide.internal.ide.AboutInfo;
+import org.fdesigner.ide.internal.ide.FeatureSelectionDialog;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.internal.ide.IIDEHelpContextIds;
+import org.fdesigner.ide.internal.ide.dialogs.WelcomeEditorInput;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.core.IProduct;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.ui.jface.action.Action;
+import org.fdesigner.ui.jface.dialogs.ErrorDialog;
+import org.fdesigner.ui.jface.dialogs.MessageDialog;
+import org.fdesigner.ui.jface.window.Window;
+import org.fdesigner.workbench.IEditorPart;
+import org.fdesigner.workbench.IWorkbenchCommandConstants;
+import org.fdesigner.workbench.IWorkbenchPage;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.PartInitException;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.WorkbenchException;
+import org.fdesigner.workbench.actions.ActionFactory;
+import org.fdesigner.workbench.internal.ProductProperties;
 
 /**
  * The quick start (Welcome...) action.

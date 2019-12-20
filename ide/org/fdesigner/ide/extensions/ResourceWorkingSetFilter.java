@@ -11,14 +11,16 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui;
+package org.fdesigner.ide.extensions;
 
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.runtime.Adapters;
-import org.eclipse.core.runtime.IAdaptable;
-import org.eclipse.core.runtime.IPath;
-import org.eclipse.jface.viewers.Viewer;
-import org.eclipse.jface.viewers.ViewerFilter;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.runtime.common.runtime.Adapters;
+import org.fdesigner.runtime.common.runtime.IAdaptable;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.ui.jface.viewers.Viewer;
+import org.fdesigner.ui.jface.viewers.ViewerFilter;
+import org.fdesigner.workbench.IContainmentAdapter;
+import org.fdesigner.workbench.IWorkingSet;
 
 /**
  * A resource working set filter filters resources from a view that

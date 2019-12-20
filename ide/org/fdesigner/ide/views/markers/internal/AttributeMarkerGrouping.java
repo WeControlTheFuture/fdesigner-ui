@@ -12,13 +12,13 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.views.markers.internal;
+package org.fdesigner.ide.views.markers.internal;
 
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Iterator;
 
-import org.eclipse.core.runtime.IConfigurationElement;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
 
 /**
  * AttributeMarkerGrouping is the configuration element for the

@@ -12,11 +12,8 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal.views.markers;
+package org.fdesigner.ide.internal.views.markers;
 
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.jface.dialogs.Dialog;
-import org.eclipse.jface.resource.JFaceResources;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.Color;
 import org.eclipse.swt.graphics.Image;
@@ -29,7 +26,10 @@ import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Text;
-import org.eclipse.ui.preferences.ViewSettingsDialog;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.ui.jface.dialogs.Dialog;
+import org.fdesigner.ui.jface.resource.JFaceResources;
+import org.fdesigner.workbench.preferences.ViewSettingsDialog;
 
 /**
  * @since 3.7

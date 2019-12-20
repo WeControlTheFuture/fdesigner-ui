@@ -11,31 +11,26 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.actions;
-
-import org.eclipse.osgi.util.NLS;
+package org.fdesigner.ide.internal.ide.actions;
 
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.FileDialog;
-
-import org.eclipse.core.filesystem.EFS;
-import org.eclipse.core.filesystem.IFileInfo;
-import org.eclipse.core.filesystem.IFileStore;
-
-import org.eclipse.core.runtime.Path;
-
-import org.eclipse.jface.action.Action;
-import org.eclipse.jface.action.IAction;
-import org.eclipse.jface.dialogs.MessageDialog;
-import org.eclipse.jface.viewers.ISelection;
-
-import org.eclipse.ui.IWorkbenchPage;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.IWorkbenchWindowActionDelegate;
-import org.eclipse.ui.PartInitException;
-import org.eclipse.ui.ide.IDE;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.filesystem.EFS;
+import org.fdesigner.filesystem.IFileInfo;
+import org.fdesigner.filesystem.IFileStore;
+import org.fdesigner.ide.IDE;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.runtime.common.runtime.Path;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.ui.jface.action.Action;
+import org.fdesigner.ui.jface.action.IAction;
+import org.fdesigner.ui.jface.dialogs.MessageDialog;
+import org.fdesigner.ui.jface.viewers.ISelection;
+import org.fdesigner.workbench.IWorkbenchPage;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.IWorkbenchWindowActionDelegate;
+import org.fdesigner.workbench.PartInitException;
 
 
 /**

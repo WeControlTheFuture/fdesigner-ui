@@ -11,31 +11,32 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.actions;
+package org.fdesigner.ide.internal.ide.actions;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.equinox.app.IApplication;
-import org.eclipse.jface.action.Action;
-import org.eclipse.jface.action.ActionContributionItem;
-import org.eclipse.jface.action.IAction;
-import org.eclipse.jface.action.IContributionItem;
-import org.eclipse.jface.action.IMenuCreator;
-import org.eclipse.jface.action.MenuManager;
-import org.eclipse.jface.action.Separator;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Menu;
 import org.eclipse.swt.widgets.MenuItem;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.actions.ActionFactory;
-import org.eclipse.ui.internal.Workbench;
-import org.eclipse.ui.internal.ide.ChooseWorkspaceData;
-import org.eclipse.ui.internal.ide.ChooseWorkspaceDialog;
-import org.eclipse.ui.internal.ide.ChooseWorkspaceWithSettingsDialog;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.ChooseWorkspaceData;
+import org.fdesigner.ide.internal.ide.ChooseWorkspaceDialog;
+import org.fdesigner.ide.internal.ide.ChooseWorkspaceWithSettingsDialog;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.actions.OpenWorkspaceAction.OpenDialogAction;
+import org.fdesigner.runtime.app.IApplication;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.ui.jface.action.Action;
+import org.fdesigner.ui.jface.action.ActionContributionItem;
+import org.fdesigner.ui.jface.action.IAction;
+import org.fdesigner.ui.jface.action.IContributionItem;
+import org.fdesigner.ui.jface.action.IMenuCreator;
+import org.fdesigner.ui.jface.action.MenuManager;
+import org.fdesigner.ui.jface.action.Separator;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.actions.ActionFactory;
+import org.fdesigner.workbench.internal.Workbench;
 
 /**
  * Implements the open workspace action. Opens a dialog prompting for a

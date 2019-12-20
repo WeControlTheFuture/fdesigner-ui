@@ -12,22 +12,22 @@
  *     IBM Corporation - initial API and implementation
  *     Sebastian Davids <sdavids@gmx.de> - Images for menu items (27481)
  *******************************************************************************/
-package org.eclipse.ui.views.navigator;
+package org.fdesigner.ide.views.navigator;
 
-import org.eclipse.core.resources.IResource;
-import org.eclipse.jface.action.IMenuManager;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.jface.viewers.TreeViewer;
-import org.eclipse.jface.window.IShellProvider;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.dnd.Clipboard;
 import org.eclipse.swt.events.KeyEvent;
-import org.eclipse.ui.IActionBars;
-import org.eclipse.ui.ISharedImages;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.actions.ActionFactory;
-import org.eclipse.ui.actions.DeleteResourceAction;
-import org.eclipse.ui.actions.TextActionHandler;
+import org.fdesigner.ide.extensions.actions.DeleteResourceAction;
+import org.fdesigner.ide.extensions.actions.TextActionHandler;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.ui.jface.action.IMenuManager;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.ui.jface.viewers.TreeViewer;
+import org.fdesigner.ui.jface.window.IShellProvider;
+import org.fdesigner.workbench.IActionBars;
+import org.fdesigner.workbench.ISharedImages;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.actions.ActionFactory;
 
 /**
  * This is the action group for refactor actions, including global action

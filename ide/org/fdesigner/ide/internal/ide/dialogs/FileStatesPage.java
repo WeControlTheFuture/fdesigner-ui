@@ -12,19 +12,12 @@
  *     IBM Corporation - initial API and implementation
  *     Patrik Suzzi <psuzzi@gmail.com> - Bug 489250
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.dialogs;
+package org.fdesigner.ide.internal.ide.dialogs;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
 
-import org.eclipse.core.resources.IWorkspaceDescription;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.Preferences;
-import org.eclipse.jface.dialogs.ErrorDialog;
-import org.eclipse.jface.preference.PreferencePage;
-import org.eclipse.osgi.util.NLS;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.layout.GridLayout;
@@ -35,10 +28,17 @@ import org.eclipse.swt.widgets.Event;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Listener;
 import org.eclipse.swt.widgets.Text;
-import org.eclipse.ui.IWorkbenchPreferencePage;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
-import org.eclipse.ui.internal.ide.IIDEHelpContextIds;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.IIDEHelpContextIds;
+import org.fdesigner.resources.IWorkspaceDescription;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.core.Preferences;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.ui.jface.dialogs.ErrorDialog;
+import org.fdesigner.ui.jface.preference.PreferencePage;
+import org.fdesigner.workbench.IWorkbenchPreferencePage;
+import org.fdesigner.workbench.PlatformUI;
 
 import com.ibm.icu.text.MessageFormat;
 
@@ -238,7 +238,7 @@ public class FileStatesPage extends PreferencePage implements
 	 * @param workbench the workbench
 	 */
 	@Override
-	public void init(org.eclipse.ui.IWorkbench workbench) {
+	public void init(org.fdesigner.workbench.IWorkbench workbench) {
 	}
 
 	/**

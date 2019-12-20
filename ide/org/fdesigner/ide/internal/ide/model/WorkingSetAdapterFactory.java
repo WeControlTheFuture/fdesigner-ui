@@ -12,18 +12,18 @@
  *     IBM Corporation - initial API and implementation
  *     Andrey Loskutov <loskutov@gmx.de> - generified interface, bug 461762
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.model;
+package org.fdesigner.ide.internal.ide.model;
 
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.mapping.ResourceMapping;
-import org.eclipse.core.runtime.Adapters;
-import org.eclipse.core.runtime.IAdaptable;
-import org.eclipse.core.runtime.IAdapterFactory;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.ui.IContributorResourceAdapter;
-import org.eclipse.ui.IWorkingSet;
-import org.eclipse.ui.ide.IContributorResourceAdapter2;
-import org.eclipse.ui.model.IWorkbenchAdapter;
+import org.fdesigner.ide.IContributorResourceAdapter2;
+import org.fdesigner.ide.extensions.IContributorResourceAdapter;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.mapping.ResourceMapping;
+import org.fdesigner.runtime.common.runtime.Adapters;
+import org.fdesigner.runtime.common.runtime.IAdaptable;
+import org.fdesigner.runtime.common.runtime.IAdapterFactory;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.workbench.IWorkingSet;
+import org.fdesigner.workbench.model.IWorkbenchAdapter;
 
 /**
  * Adapter factory which provides a ResourceMapping for a working set

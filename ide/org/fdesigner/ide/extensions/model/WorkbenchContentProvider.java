@@ -11,22 +11,23 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.model;
+package org.fdesigner.ide.extensions.model;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 
-import org.eclipse.core.resources.IContainer;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.IResourceChangeEvent;
-import org.eclipse.core.resources.IResourceChangeListener;
-import org.eclipse.core.resources.IResourceDelta;
-import org.eclipse.core.resources.IWorkspace;
-import org.eclipse.jface.viewers.AbstractTreeViewer;
-import org.eclipse.jface.viewers.StructuredViewer;
-import org.eclipse.jface.viewers.Viewer;
 import org.eclipse.swt.widgets.Control;
+import org.fdesigner.resources.IContainer;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IResourceChangeEvent;
+import org.fdesigner.resources.IResourceChangeListener;
+import org.fdesigner.resources.IResourceDelta;
+import org.fdesigner.resources.IWorkspace;
+import org.fdesigner.ui.jface.viewers.AbstractTreeViewer;
+import org.fdesigner.ui.jface.viewers.StructuredViewer;
+import org.fdesigner.ui.jface.viewers.Viewer;
+import org.fdesigner.workbench.model.BaseWorkbenchContentProvider;
 
 /**
  * Tree content provider for resource objects that can be adapted to the

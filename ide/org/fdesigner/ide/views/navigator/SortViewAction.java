@@ -11,10 +11,11 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.views.navigator;
+package org.fdesigner.ide.views.navigator;
 
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.views.navigator.ResourceNavigatorMessages;
+import org.fdesigner.workbench.PlatformUI;
+
+import org.fdesigner.ide.internal.views.navigator.ResourceNavigatorMessages;
 
 /**
  * Implementation of the view sorting actions.

@@ -11,23 +11,23 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
-package org.eclipse.ui.internal.views.markers;
+package org.fdesigner.ide.internal.views.markers;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.eclipse.core.commands.ExecutionEvent;
-import org.eclipse.core.commands.operations.IUndoableOperation;
-import org.eclipse.core.resources.IMarker;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.SubMonitor;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.ide.undo.UpdateMarkersOperation;
-import org.eclipse.ui.internal.ide.StatusUtil;
-import org.eclipse.ui.statushandlers.StatusManager;
-import org.eclipse.ui.views.markers.MarkerViewHandler;
-import org.eclipse.ui.views.markers.internal.MarkerMessages;
+import org.fdesigner.commands.ExecutionEvent;
+import org.fdesigner.commands.operations.IUndoableOperation;
+import org.fdesigner.ide.internal.ide.StatusUtil;
+import org.fdesigner.ide.undo.UpdateMarkersOperation;
+import org.fdesigner.ide.views.markers.MarkerViewHandler;
+import org.fdesigner.ide.views.markers.internal.MarkerMessages;
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.SubMonitor;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.statushandlers.StatusManager;
 
 /**
  * MarkCompletedHandler is the handler for marking the current selection as

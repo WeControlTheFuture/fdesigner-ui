@@ -11,9 +11,9 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui;
+package org.fdesigner.ide.extensions;
 
-import org.eclipse.core.resources.IFile;
+import org.fdesigner.resources.IFile;
 
 /**
  * This interface defines a file-oriented input to an editor.

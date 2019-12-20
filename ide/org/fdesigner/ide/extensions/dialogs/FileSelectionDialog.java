@@ -14,7 +14,7 @@
  *      font should be activated and used by other components.
  *******************************************************************************/
 
-package org.eclipse.ui.dialogs;
+package org.fdesigner.ide.extensions.dialogs;
 
 import java.util.ArrayList;
 import java.util.Iterator;

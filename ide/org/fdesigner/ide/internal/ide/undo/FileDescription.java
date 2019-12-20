@@ -12,22 +12,22 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.ide.undo;
+package org.fdesigner.ide.internal.ide.undo;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 import java.net.URI;
 
-import org.eclipse.core.resources.IFile;
-import org.eclipse.core.resources.IFileState;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.IResourceStatus;
-import org.eclipse.core.resources.IWorkspaceRoot;
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IPath;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.SubMonitor;
+import org.fdesigner.resources.IFile;
+import org.fdesigner.resources.IFileState;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IResourceStatus;
+import org.fdesigner.resources.IWorkspaceRoot;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.SubMonitor;
 
 /**
  * FileDescription is a lightweight description that describes a file to be

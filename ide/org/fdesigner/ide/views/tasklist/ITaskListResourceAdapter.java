@@ -12,10 +12,10 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.views.tasklist;
+package org.fdesigner.ide.views.tasklist;
 
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.runtime.IAdaptable;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.runtime.common.runtime.IAdaptable;
 
 /**
  * <code>ITaskListResourceAdapter</code> is an adapter interface that

@@ -13,32 +13,11 @@
  *  	Sebastian Davids <sdavids@gmx.de> - Fix for bug 19346 - Dialog font
  * 		should be activated and used by other components.
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.dialogs;
+package org.fdesigner.ide.internal.ide.dialogs;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import org.eclipse.core.resources.IContainer;
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.runtime.Adapters;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IAdaptable;
-import org.eclipse.core.runtime.IPath;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.jface.dialogs.Dialog;
-import org.eclipse.jface.dialogs.ErrorDialog;
-import org.eclipse.jface.dialogs.IDialogConstants;
-import org.eclipse.jface.dialogs.MessageDialog;
-import org.eclipse.jface.viewers.CheckStateChangedEvent;
-import org.eclipse.jface.viewers.CheckboxTreeViewer;
-import org.eclipse.jface.viewers.DecoratingLabelProvider;
-import org.eclipse.jface.viewers.ISelection;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.jface.viewers.ITreeContentProvider;
-import org.eclipse.jface.viewers.ITreeViewerListener;
-import org.eclipse.jface.viewers.TreeExpansionEvent;
-import org.eclipse.jface.wizard.WizardPage;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.custom.BusyIndicator;
 import org.eclipse.swt.events.SelectionAdapter;
@@ -50,18 +29,39 @@ import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Text;
-import org.eclipse.ui.IWorkbenchPage;
-import org.eclipse.ui.IWorkbenchPart;
-import org.eclipse.ui.IWorkingSet;
-import org.eclipse.ui.IWorkingSetManager;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.dialogs.IWorkingSetPage;
-import org.eclipse.ui.internal.ide.IDEInternalWorkbenchImages;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.eclipse.ui.internal.ide.IIDEHelpContextIds;
-import org.eclipse.ui.model.WorkbenchContentProvider;
-import org.eclipse.ui.model.WorkbenchLabelProvider;
+import org.fdesigner.ide.extensions.model.WorkbenchContentProvider;
+import org.fdesigner.ide.internal.ide.IDEInternalWorkbenchImages;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.internal.ide.IIDEHelpContextIds;
+import org.fdesigner.resources.IContainer;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.runtime.common.runtime.Adapters;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IAdaptable;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.ui.jface.dialogs.Dialog;
+import org.fdesigner.ui.jface.dialogs.ErrorDialog;
+import org.fdesigner.ui.jface.dialogs.IDialogConstants;
+import org.fdesigner.ui.jface.dialogs.MessageDialog;
+import org.fdesigner.ui.jface.viewers.CheckStateChangedEvent;
+import org.fdesigner.ui.jface.viewers.CheckboxTreeViewer;
+import org.fdesigner.ui.jface.viewers.DecoratingLabelProvider;
+import org.fdesigner.ui.jface.viewers.ISelection;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.ui.jface.viewers.ITreeContentProvider;
+import org.fdesigner.ui.jface.viewers.ITreeViewerListener;
+import org.fdesigner.ui.jface.viewers.TreeExpansionEvent;
+import org.fdesigner.ui.jface.wizard.WizardPage;
+import org.fdesigner.workbench.IWorkbenchPage;
+import org.fdesigner.workbench.IWorkbenchPart;
+import org.fdesigner.workbench.IWorkingSet;
+import org.fdesigner.workbench.IWorkingSetManager;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.dialogs.IWorkingSetPage;
+import org.fdesigner.workbench.model.WorkbenchLabelProvider;
 
 /**
  * A resource working set page allows the user to edit an existing working set

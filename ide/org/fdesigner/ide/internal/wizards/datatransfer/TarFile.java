@@ -13,7 +13,7 @@
  * Remy Chi Jian Suen <remy.suen@gmail.com> - Bug 243347 TarFile should not throw NPE in finalize()
  * Marc-Andre Laperle <marc-andre.laperle@ericsson.com> - Bug 463633
  *******************************************************************************/
-package org.eclipse.ui.internal.wizards.datatransfer;
+package org.fdesigner.ide.internal.wizards.datatransfer;
 
 import java.io.File;
 import java.io.FileInputStream;

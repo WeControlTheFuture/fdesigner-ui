@@ -11,20 +11,20 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.model;
+package org.fdesigner.ide.internal.ide.model;
 
-import org.eclipse.core.resources.IFile;
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.runtime.Adapters;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.QualifiedName;
-import org.eclipse.core.runtime.content.IContentDescription;
-import org.eclipse.core.runtime.content.IContentType;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.ui.IResourceActionFilter;
-import org.eclipse.ui.actions.SimpleWildcardTester;
-import org.eclipse.ui.model.WorkbenchAdapter;
+import org.fdesigner.ide.extensions.IResourceActionFilter;
+import org.fdesigner.resources.IFile;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.runtime.common.runtime.Adapters;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.QualifiedName;
+import org.fdesigner.runtime.contenttype.runtime.content.IContentDescription;
+import org.fdesigner.runtime.contenttype.runtime.content.IContentType;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.workbench.actions.SimpleWildcardTester;
+import org.fdesigner.workbench.model.WorkbenchAdapter;
 
 /**
  * An IWorkbenchAdapter that represents IResources.

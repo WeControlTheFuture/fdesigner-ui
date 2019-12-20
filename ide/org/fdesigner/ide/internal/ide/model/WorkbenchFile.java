@@ -11,18 +11,18 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.model;
+package org.fdesigner.ide.internal.ide.model;
 
-import org.eclipse.core.resources.IFile;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.QualifiedName;
-import org.eclipse.core.runtime.content.IContentType;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.ui.ISharedImages;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.ide.IDE;
-import org.eclipse.ui.internal.WorkbenchPlugin;
+import org.fdesigner.ide.IDE;
+import org.fdesigner.resources.IFile;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.QualifiedName;
+import org.fdesigner.runtime.contenttype.runtime.content.IContentType;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.workbench.ISharedImages;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
 
 /**
  * An IWorkbenchAdapter that represents IFiles.

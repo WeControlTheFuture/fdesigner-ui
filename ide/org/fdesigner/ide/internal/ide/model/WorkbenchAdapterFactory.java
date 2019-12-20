@@ -13,21 +13,21 @@
  *     Fair Isaac Corporation <Hemant.Singh@Gmail.com> - http://bugs.eclipse.org/333590
  *     Andrey Loskutov <loskutov@gmx.de> - generified interface, bug 461762
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.model;
+package org.fdesigner.ide.internal.ide.model;
 
-import org.eclipse.core.commands.operations.IUndoContext;
-import org.eclipse.core.resources.IMarker;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.IWorkspace;
-import org.eclipse.core.resources.IWorkspaceRoot;
-import org.eclipse.core.runtime.IAdapterFactory;
-import org.eclipse.ui.IActionFilter;
-import org.eclipse.ui.IElementFactory;
-import org.eclipse.ui.IPersistableElement;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.model.IWorkbenchAdapter;
-import org.eclipse.ui.model.IWorkbenchAdapter2;
-import org.eclipse.ui.model.IWorkbenchAdapter3;
+import org.fdesigner.commands.operations.IUndoContext;
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IWorkspace;
+import org.fdesigner.resources.IWorkspaceRoot;
+import org.fdesigner.runtime.common.runtime.IAdapterFactory;
+import org.fdesigner.workbench.IActionFilter;
+import org.fdesigner.workbench.IElementFactory;
+import org.fdesigner.workbench.IPersistableElement;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.model.IWorkbenchAdapter;
+import org.fdesigner.workbench.model.IWorkbenchAdapter2;
+import org.fdesigner.workbench.model.IWorkbenchAdapter3;
 
 /**
  * Dispenses adapters for various core objects.

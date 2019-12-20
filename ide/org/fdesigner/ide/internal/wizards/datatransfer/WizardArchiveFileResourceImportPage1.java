@@ -14,26 +14,26 @@
  *     Oliver Schaefer <oliver.schaefer@mbtech-services.com> - Fix for
  *     		 Bug 221649 [Import/Export] ZipFileImportWizard has no option to change the FILE_IMPORT_MASK
  *******************************************************************************/
-package org.eclipse.ui.internal.wizards.datatransfer;
+package org.fdesigner.ide.internal.wizards.datatransfer;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
 import java.util.zip.ZipFile;
 
-import org.eclipse.jface.dialogs.IDialogSettings;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.jface.viewers.ITreeContentProvider;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.FileDialog;
 import org.eclipse.swt.widgets.Listener;
-import org.eclipse.ui.IWorkbench;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.model.AdaptableList;
-import org.eclipse.ui.model.WorkbenchContentProvider;
-import org.eclipse.ui.wizards.datatransfer.ImportOperation;
+import org.fdesigner.ide.extensions.model.WorkbenchContentProvider;
+import org.fdesigner.ide.wizards.datatransfer.ImportOperation;
+import org.fdesigner.ui.jface.dialogs.IDialogSettings;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.ui.jface.viewers.ITreeContentProvider;
+import org.fdesigner.workbench.IWorkbench;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.model.AdaptableList;
 
 
 /**

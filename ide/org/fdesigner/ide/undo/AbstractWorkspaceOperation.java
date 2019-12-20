@@ -12,35 +12,35 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.ide.undo;
+package org.fdesigner.ide.undo;
 
-import org.eclipse.core.commands.ExecutionException;
-import org.eclipse.core.commands.operations.AbstractOperation;
-import org.eclipse.core.commands.operations.IAdvancedUndoableOperation;
-import org.eclipse.core.commands.operations.IAdvancedUndoableOperation2;
-import org.eclipse.core.commands.operations.OperationHistoryEvent;
-import org.eclipse.core.commands.operations.OperationStatus;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.IResourceRuleFactory;
-import org.eclipse.core.resources.IWorkspace;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.resources.mapping.IResourceChangeDescriptionFactory;
-import org.eclipse.core.resources.mapping.ResourceChangeValidator;
-import org.eclipse.core.runtime.Adapters;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IAdaptable;
-import org.eclipse.core.runtime.ICoreRunnable;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.core.runtime.jobs.ISchedulingRule;
-import org.eclipse.jface.action.Action;
-import org.eclipse.osgi.util.NLS;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.ide.IDE;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.eclipse.ui.internal.ide.undo.UndoMessages;
+import org.fdesigner.commands.ExecutionException;
+import org.fdesigner.commands.operations.AbstractOperation;
+import org.fdesigner.commands.operations.IAdvancedUndoableOperation;
+import org.fdesigner.commands.operations.IAdvancedUndoableOperation2;
+import org.fdesigner.commands.operations.OperationHistoryEvent;
+import org.fdesigner.commands.operations.OperationStatus;
+import org.fdesigner.ide.IDE;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.internal.ide.undo.UndoMessages;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IResourceRuleFactory;
+import org.fdesigner.resources.IWorkspace;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.resources.mapping.IResourceChangeDescriptionFactory;
+import org.fdesigner.resources.mapping.ResourceChangeValidator;
+import org.fdesigner.runtime.common.runtime.Adapters;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IAdaptable;
+import org.fdesigner.runtime.common.runtime.ICoreRunnable;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.jobs.runtime.jobs.ISchedulingRule;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.ui.jface.action.Action;
+import org.fdesigner.workbench.PlatformUI;
 
 /**
  * An AbstractWorkspaceOperation represents an undoable operation that affects

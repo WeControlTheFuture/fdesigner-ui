@@ -12,9 +12,9 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.views.markers;
+package org.fdesigner.ide.views.markers;
 
-import org.eclipse.ui.internal.views.markers.ExtendedMarkersView;
+import org.fdesigner.ide.internal.views.markers.ExtendedMarkersView;
 
 /**
  * The MarkerSupportView is a view that supports the extensions

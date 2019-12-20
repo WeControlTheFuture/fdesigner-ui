@@ -11,14 +11,14 @@
  * Contributors:
  *     Martin Karpisek <martin.karpisek@gmail.com> - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.views.markers;
+package org.fdesigner.ide.internal.views.markers;
 
-import org.eclipse.core.commands.ExecutionEvent;
-import org.eclipse.core.resources.IMarker;
 import org.eclipse.swt.dnd.TextTransfer;
 import org.eclipse.swt.dnd.Transfer;
-import org.eclipse.ui.part.MarkerTransfer;
-import org.eclipse.ui.views.markers.MarkerViewHandler;
+import org.fdesigner.commands.ExecutionEvent;
+import org.fdesigner.ide.extensions.part.MarkerTransfer;
+import org.fdesigner.ide.views.markers.MarkerViewHandler;
+import org.fdesigner.resources.IMarker;
 
 /**
  * Handler to copy from selected marker its description into clipboard.

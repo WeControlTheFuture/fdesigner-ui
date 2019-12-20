@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.filesystem;
+package org.fdesigner.ide.internal.ide.filesystem;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -23,8 +23,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.eclipse.ui.wizards.datatransfer.IImportStructureProvider;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.wizards.datatransfer.IImportStructureProvider;
 
 /**
  * This class provides information regarding the structure and

@@ -11,20 +11,20 @@
  * Contributors:
  *     Mickael Istria (Red Hat Inc.) - initial API and implementation
  ******************************************************************************/
-package org.eclipse.ui.internal.wizards.datatransfer.expressions;
+package org.fdesigner.ide.internal.wizards.datatransfer.expressions;
 
 import java.io.File;
 import java.util.Arrays;
 import java.util.LinkedList;
 
-import org.eclipse.core.expressions.EvaluationResult;
-import org.eclipse.core.expressions.Expression;
-import org.eclipse.core.expressions.IEvaluationContext;
-import org.eclipse.core.resources.IContainer;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IAdaptable;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.ui.wizards.datatransfer.RecursiveFileFinder;
+import org.fdesigner.expressions.EvaluationResult;
+import org.fdesigner.expressions.Expression;
+import org.fdesigner.expressions.IEvaluationContext;
+import org.fdesigner.ide.wizards.datatransfer.RecursiveFileFinder;
+import org.fdesigner.resources.IContainer;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IAdaptable;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
 
 /**
  * Expression to check whether a given container contains a file with provided

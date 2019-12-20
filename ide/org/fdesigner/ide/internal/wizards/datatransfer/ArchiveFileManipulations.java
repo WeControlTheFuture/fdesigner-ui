@@ -13,16 +13,16 @@
  *     Red Hat, Inc - Extracted methods from WizardArchiveFileResourceImportPage1
  *******************************************************************************/
 
-package org.eclipse.ui.internal.wizards.datatransfer;
+package org.fdesigner.ide.internal.wizards.datatransfer;
 
 import java.io.IOException;
 import java.util.zip.ZipFile;
 
-import org.eclipse.jface.dialogs.MessageDialog;
-import org.eclipse.osgi.util.NLS;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.ui.jface.dialogs.MessageDialog;
 
 /**
  * @since 3.1

@@ -11,17 +11,11 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.dialogs;
+package org.fdesigner.ide.extensions.dialogs;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 
-import org.eclipse.core.resources.IContainer;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IAdaptable;
-import org.eclipse.jface.viewers.CheckStateChangedEvent;
-import org.eclipse.jface.viewers.ITreeContentProvider;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.ControlEvent;
 import org.eclipse.swt.events.ControlListener;
@@ -29,13 +23,20 @@ import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.TableColumn;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
-import org.eclipse.ui.internal.ide.IIDEHelpContextIds;
-import org.eclipse.ui.internal.ide.misc.CheckboxTreeAndListGroup;
-import org.eclipse.ui.model.WorkbenchContentProvider;
-import org.eclipse.ui.model.WorkbenchLabelProvider;
-import org.eclipse.ui.views.navigator.ResourceComparator;
+import org.fdesigner.ide.extensions.model.WorkbenchContentProvider;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.IIDEHelpContextIds;
+import org.fdesigner.ide.internal.ide.misc.CheckboxTreeAndListGroup;
+import org.fdesigner.ide.views.navigator.ResourceComparator;
+import org.fdesigner.resources.IContainer;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IAdaptable;
+import org.fdesigner.ui.jface.viewers.CheckStateChangedEvent;
+import org.fdesigner.ui.jface.viewers.ITreeContentProvider;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.dialogs.SelectionDialog;
+import org.fdesigner.workbench.model.WorkbenchLabelProvider;
 
 /**
  * A standard resource selection dialog which solicits a list of resources from

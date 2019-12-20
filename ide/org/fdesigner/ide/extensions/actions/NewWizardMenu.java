@@ -12,26 +12,27 @@
  *     IBM Corporation - initial API and implementation
  *     Alexander Fedorov <alexander.fedorov@arsysop.ru> - Bug 548428
  *******************************************************************************/
-package org.eclipse.ui.actions;
+package org.fdesigner.ide.extensions.actions;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import org.eclipse.jface.action.ActionContributionItem;
-import org.eclipse.jface.action.IAction;
-import org.eclipse.jface.action.IContributionItem;
-import org.eclipse.jface.action.IContributionManager;
-import org.eclipse.jface.action.IMenuManager;
-import org.eclipse.jface.action.Separator;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.activities.WorkbenchActivityHelper;
-import org.eclipse.ui.internal.WorkbenchPlugin;
-import org.eclipse.ui.internal.actions.NewWizardShortcutAction;
-import org.eclipse.ui.internal.dialogs.WorkbenchWizardElement;
-import org.eclipse.ui.internal.registry.WizardsRegistryReader;
-import org.eclipse.ui.wizards.IWizardCategory;
-import org.eclipse.ui.wizards.IWizardDescriptor;
+import org.fdesigner.ui.jface.action.ActionContributionItem;
+import org.fdesigner.ui.jface.action.IAction;
+import org.fdesigner.ui.jface.action.IContributionItem;
+import org.fdesigner.ui.jface.action.IContributionManager;
+import org.fdesigner.ui.jface.action.IMenuManager;
+import org.fdesigner.ui.jface.action.Separator;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.actions.BaseNewWizardMenu;
+import org.fdesigner.workbench.activities.WorkbenchActivityHelper;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
+import org.fdesigner.workbench.internal.actions.NewWizardShortcutAction;
+import org.fdesigner.workbench.internal.dialogs.WorkbenchWizardElement;
+import org.fdesigner.workbench.internal.registry.WizardsRegistryReader;
+import org.fdesigner.workbench.wizards.IWizardCategory;
+import org.fdesigner.workbench.wizards.IWizardDescriptor;
 
 /**
  * A <code>NewWizardMenu</code> augments <code>BaseNewWizardMenu</code> with IDE-specific

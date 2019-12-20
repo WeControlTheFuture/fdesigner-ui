@@ -12,24 +12,24 @@
  *     IBM Corporation - initial API and implementation
  *     Stefan Winkler <stefan@winklerweb.net> - Bug 537099
  *******************************************************************************/
-package org.eclipse.ui.internal.views.markers;
+package org.fdesigner.ide.internal.views.markers;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.Iterator;
 
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.runtime.jobs.Job;
-import org.eclipse.jface.util.IPropertyChangeListener;
-import org.eclipse.jface.util.PropertyChangeEvent;
-import org.eclipse.ui.IMemento;
-import org.eclipse.ui.IWorkingSet;
-import org.eclipse.ui.IWorkingSetManager;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.ide.StatusUtil;
-import org.eclipse.ui.progress.IWorkbenchSiteProgressService;
-import org.eclipse.ui.statushandlers.StatusManager;
-import org.eclipse.ui.views.markers.MarkerField;
-import org.eclipse.ui.views.markers.internal.MarkerGroup;
+import org.fdesigner.ide.internal.ide.StatusUtil;
+import org.fdesigner.ide.views.markers.MarkerField;
+import org.fdesigner.ide.views.markers.internal.MarkerGroup;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.runtime.jobs.runtime.jobs.Job;
+import org.fdesigner.ui.jface.util.IPropertyChangeListener;
+import org.fdesigner.ui.jface.util.PropertyChangeEvent;
+import org.fdesigner.workbench.IMemento;
+import org.fdesigner.workbench.IWorkingSet;
+import org.fdesigner.workbench.IWorkingSetManager;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.progress.IWorkbenchSiteProgressService;
+import org.fdesigner.workbench.statushandlers.StatusManager;
 
 /**
  * The CachedMarkerBuilder is the object that generates the list of markers from

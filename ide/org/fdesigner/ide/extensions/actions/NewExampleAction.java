@@ -11,24 +11,24 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.actions;
+package org.fdesigner.ide.extensions.actions;
 
-import org.eclipse.jface.action.Action;
-import org.eclipse.jface.dialogs.IDialogSettings;
-import org.eclipse.jface.viewers.ISelection;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.jface.viewers.StructuredSelection;
-import org.eclipse.jface.wizard.WizardDialog;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.ISharedImages;
-import org.eclipse.ui.IWorkbench;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.dialogs.NewWizard;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.eclipse.ui.internal.ide.IIDEHelpContextIds;
-import org.eclipse.ui.internal.registry.WizardsRegistryReader;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.internal.ide.IIDEHelpContextIds;
+import org.fdesigner.ui.jface.action.Action;
+import org.fdesigner.ui.jface.dialogs.IDialogSettings;
+import org.fdesigner.ui.jface.viewers.ISelection;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.ui.jface.viewers.StructuredSelection;
+import org.fdesigner.ui.jface.wizard.WizardDialog;
+import org.fdesigner.workbench.ISharedImages;
+import org.fdesigner.workbench.IWorkbench;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.internal.dialogs.NewWizard;
+import org.fdesigner.workbench.internal.registry.WizardsRegistryReader;
 
 /**
  * Standard action for launching the create project selection
@@ -82,7 +82,7 @@ public class NewExampleAction extends Action {
 				.getImageDescriptor(ISharedImages.IMG_TOOL_NEW_WIZARD_DISABLED));
 		setToolTipText(IDEWorkbenchMessages.NewExampleAction_toolTip);
 		PlatformUI.getWorkbench().getHelpSystem().setHelp(this,
-				org.eclipse.ui.internal.IWorkbenchHelpContextIds.NEW_ACTION);
+				org.fdesigner.workbench.internal.IWorkbenchHelpContextIds.NEW_ACTION);
 	}
 
 	@Override

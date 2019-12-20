@@ -12,23 +12,22 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.views.bookmarkexplorer;
+package org.fdesigner.ide.views.bookmarkexplorer;
 
 import java.util.List;
 
-import org.eclipse.core.resources.IMarker;
-import org.eclipse.jface.dialogs.MessageDialog;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.jface.viewers.StructuredViewer;
-import org.eclipse.osgi.util.NLS;
 import org.eclipse.swt.SWTError;
 import org.eclipse.swt.dnd.DND;
 import org.eclipse.swt.dnd.TextTransfer;
 import org.eclipse.swt.dnd.Transfer;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.views.bookmarkexplorer.BookmarkMessages;
-import org.eclipse.ui.part.MarkerTransfer;
-
+import org.fdesigner.ide.extensions.part.MarkerTransfer;
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.ui.jface.dialogs.MessageDialog;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.ui.jface.viewers.StructuredViewer;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.ide.internal.views.bookmarkexplorer.BookmarkMessages;
 /**
  * Copies one or more bookmark(s) to the clipboard.
  *

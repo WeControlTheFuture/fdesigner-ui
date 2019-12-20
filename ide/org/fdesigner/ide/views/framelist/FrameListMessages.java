@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.views.framelist;
+package org.fdesigner.ide.views.framelist;
 
 
 /**

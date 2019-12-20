@@ -12,17 +12,17 @@
  *     IBM Corporation - initial API and implementation
  *     Andrey Loskutov <loskutov@gmx.de> - generified interface, bug 461762
  *******************************************************************************/
-package org.eclipse.ui.internal.ide;
+package org.fdesigner.ide.internal.ide;
 
-import org.eclipse.core.filesystem.EFS;
-import org.eclipse.core.filesystem.IFileStore;
-import org.eclipse.core.filesystem.URIUtil;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IAdapterFactory;
-import org.eclipse.core.runtime.IPath;
-import org.eclipse.ui.IPathEditorInput;
-import org.eclipse.ui.IURIEditorInput;
-import org.eclipse.ui.ide.FileStoreEditorInput;
+import org.fdesigner.filesystem.EFS;
+import org.fdesigner.filesystem.IFileStore;
+import org.fdesigner.filesystem.URIUtil;
+import org.fdesigner.ide.FileStoreEditorInput;
+import org.fdesigner.ide.extensions.IURIEditorInput;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IAdapterFactory;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.workbench.IPathEditorInput;
 
 
 /**

@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.views.markers;
+package org.fdesigner.ide.internal.views.markers;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -21,15 +21,15 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.StringTokenizer;
 
-import org.eclipse.core.resources.IMarker;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.ui.IMemento;
-import org.eclipse.ui.views.markers.MarkerFieldFilter;
-import org.eclipse.ui.views.markers.MarkerItem;
-import org.eclipse.ui.views.markers.internal.MarkerFilter;
-import org.eclipse.ui.views.markers.internal.MarkerType;
-import org.eclipse.ui.views.markers.internal.MarkerTypesModel;
-import org.eclipse.ui.views.markers.internal.ProblemFilter;
+import org.fdesigner.ide.views.markers.MarkerFieldFilter;
+import org.fdesigner.ide.views.markers.MarkerItem;
+import org.fdesigner.ide.views.markers.internal.MarkerFilter;
+import org.fdesigner.ide.views.markers.internal.MarkerType;
+import org.fdesigner.ide.views.markers.internal.MarkerTypesModel;
+import org.fdesigner.ide.views.markers.internal.ProblemFilter;
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.workbench.IMemento;
 
 /**
  * MarkerTypeFieldFilter is the field filter for filtering on types.

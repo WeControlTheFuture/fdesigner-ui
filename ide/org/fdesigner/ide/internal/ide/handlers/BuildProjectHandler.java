@@ -13,23 +13,23 @@
  *     Freescale - Bug 411287 - Quick Access > Build Project is offered even if no valid selection exists
  ******************************************************************************/
 
-package org.eclipse.ui.internal.ide.handlers;
+package org.fdesigner.ide.internal.ide.handlers;
 
-import org.eclipse.core.commands.AbstractHandler;
-import org.eclipse.core.commands.ExecutionEvent;
-import org.eclipse.core.commands.ExecutionException;
-import org.eclipse.core.expressions.IEvaluationContext;
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.resources.IncrementalProjectBuilder;
-import org.eclipse.jface.viewers.ISelection;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.jface.viewers.StructuredSelection;
-import org.eclipse.ui.IEditorInput;
-import org.eclipse.ui.ISources;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.actions.BuildAction;
-import org.eclipse.ui.handlers.HandlerUtil;
-import org.eclipse.ui.part.FileEditorInput;
+import org.fdesigner.commands.AbstractHandler;
+import org.fdesigner.commands.ExecutionEvent;
+import org.fdesigner.commands.ExecutionException;
+import org.fdesigner.expressions.IEvaluationContext;
+import org.fdesigner.ide.extensions.actions.BuildAction;
+import org.fdesigner.ide.extensions.part.FileEditorInput;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IncrementalProjectBuilder;
+import org.fdesigner.ui.jface.viewers.ISelection;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.ui.jface.viewers.StructuredSelection;
+import org.fdesigner.workbench.IEditorInput;
+import org.fdesigner.workbench.ISources;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.handlers.HandlerUtil;
 
 /**
  * Default Handler for 'Build Project' command

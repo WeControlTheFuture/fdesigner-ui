@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *     Mickael Istria (Red Hat Inc.) - Bug 486901
  *******************************************************************************/
-package org.eclipse.ui.internal.ide;
+package org.fdesigner.ide.internal.ide;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -20,15 +20,15 @@ import java.net.URL;
 import java.util.zip.CRC32;
 import java.util.zip.CheckedInputStream;
 
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.core.runtime.IBundleGroup;
-import org.eclipse.core.runtime.IBundleGroupProvider;
-import org.eclipse.core.runtime.IProduct;
-import org.eclipse.core.runtime.Path;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.ui.internal.BundleGroupProperties;
-import org.eclipse.ui.internal.ProductProperties;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.IBundleGroup;
+import org.fdesigner.runtime.common.runtime.IBundleGroupProvider;
+import org.fdesigner.runtime.common.runtime.Path;
+import org.fdesigner.runtime.core.IProduct;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.workbench.internal.BundleGroupProperties;
+import org.fdesigner.workbench.internal.ProductProperties;
 
 /**
  * The information within this object is obtained from the about INI file.

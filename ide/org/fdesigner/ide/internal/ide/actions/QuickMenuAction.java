@@ -11,16 +11,16 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.actions;
+package org.fdesigner.ide.internal.ide.actions;
 
-import org.eclipse.core.runtime.Adapters;
-import org.eclipse.jface.action.Action;
-import org.eclipse.jface.action.IMenuManager;
-import org.eclipse.jface.bindings.TriggerSequence;
-import org.eclipse.ui.IWorkbench;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.actions.QuickMenuCreator;
-import org.eclipse.ui.keys.IBindingService;
+import org.fdesigner.runtime.common.runtime.Adapters;
+import org.fdesigner.ui.jface.action.Action;
+import org.fdesigner.ui.jface.action.IMenuManager;
+import org.fdesigner.ui.jface.bindings.TriggerSequence;
+import org.fdesigner.workbench.IWorkbench;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.actions.QuickMenuCreator;
+import org.fdesigner.workbench.keys.IBindingService;
 
 /**
  * A quick menu actions provides support to assign short cuts

@@ -11,11 +11,11 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.views.framelist;
+package org.fdesigner.ide.views.framelist;
 
-import org.eclipse.jface.action.Action;
-import org.eclipse.jface.util.IPropertyChangeListener;
-import org.eclipse.jface.util.PropertyChangeEvent;
+import org.fdesigner.ui.jface.action.Action;
+import org.fdesigner.ui.jface.util.IPropertyChangeListener;
+import org.fdesigner.ui.jface.util.PropertyChangeEvent;
 
 /**
  * Abstract superclass for actions dealing with frames or a frame list.

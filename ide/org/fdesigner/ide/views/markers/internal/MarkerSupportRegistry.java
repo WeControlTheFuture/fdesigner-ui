@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.views.markers.internal;
+package org.fdesigner.ide.views.markers.internal;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -23,23 +23,23 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 
-import org.eclipse.core.resources.IMarker;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.core.runtime.IExtension;
-import org.eclipse.core.runtime.IExtensionPoint;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.core.runtime.dynamichelpers.ExtensionTracker;
-import org.eclipse.core.runtime.dynamichelpers.IExtensionChangeHandler;
-import org.eclipse.core.runtime.dynamichelpers.IExtensionTracker;
-import org.eclipse.osgi.util.NLS;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.eclipse.ui.internal.ide.Policy;
-import org.eclipse.ui.internal.views.markers.MarkerSupportInternalUtilities;
-import org.eclipse.ui.views.markers.MarkerField;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.internal.ide.Policy;
+import org.fdesigner.ide.internal.views.markers.MarkerSupportInternalUtilities;
+import org.fdesigner.ide.views.markers.MarkerField;
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.runtime.registry.runtime.IExtension;
+import org.fdesigner.runtime.registry.runtime.IExtensionPoint;
+import org.fdesigner.runtime.registry.runtime.dynamichelpers.ExtensionTracker;
+import org.fdesigner.runtime.registry.runtime.dynamichelpers.IExtensionChangeHandler;
+import org.fdesigner.runtime.registry.runtime.dynamichelpers.IExtensionTracker;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.workbench.PlatformUI;
 
 /**
  * The ProblemFilterRegistryReader is the registry reader for declarative

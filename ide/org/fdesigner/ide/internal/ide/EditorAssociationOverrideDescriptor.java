@@ -12,22 +12,22 @@
  *     IBM Corporation - initial API and implementation
  *     Lars Vogel <Lars.Vogel@gmail.com> - Bug XXXXXX
  *******************************************************************************/
-package org.eclipse.ui.internal.ide;
+package org.fdesigner.ide.internal.ide;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.core.runtime.IExtensionRegistry;
-import org.eclipse.core.runtime.ISafeRunnable;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.core.runtime.SafeRunner;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.jface.util.SafeRunnable;
-import org.eclipse.ui.ide.IEditorAssociationOverride;
+import org.fdesigner.ide.IEditorAssociationOverride;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.ISafeRunnable;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.SafeRunner;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.runtime.registry.runtime.IExtensionRegistry;
+import org.fdesigner.ui.jface.util.SafeRunnable;
 
 import com.ibm.icu.text.MessageFormat;
 

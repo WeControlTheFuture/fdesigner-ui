@@ -12,15 +12,12 @@
  *     IBM Corporation - initial API and implementation
  *     Daniel Megert daniel_megert@ch.ibm.com Bug 169696
  *******************************************************************************/
-package org.eclipse.ui.ide.dialogs;
+package org.fdesigner.ide.dialogs;
 
 import java.nio.charset.Charset;
 import java.nio.charset.IllegalCharsetNameException;
 import java.util.List;
 
-import org.eclipse.jface.preference.FieldEditor;
-import org.eclipse.jface.preference.IPreferenceStore;
-import org.eclipse.osgi.util.NLS;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.KeyAdapter;
 import org.eclipse.swt.events.KeyEvent;
@@ -32,9 +29,12 @@ import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Combo;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Group;
-import org.eclipse.ui.WorkbenchEncoding;
-import org.eclipse.ui.ide.IDEEncoding;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.IDEEncoding;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.ui.jface.preference.FieldEditor;
+import org.fdesigner.ui.jface.preference.IPreferenceStore;
+import org.fdesigner.workbench.WorkbenchEncoding;
 
 /**
  * The abstract superclass of field editors used to set an encoding. Any user

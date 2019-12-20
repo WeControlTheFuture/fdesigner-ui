@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal.views.markers;
+package org.fdesigner.ide.internal.views.markers;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -20,23 +20,23 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
-import org.eclipse.core.resources.IFile;
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.IWorkspaceRoot;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.resources.mapping.ResourceMapping;
-import org.eclipse.core.resources.mapping.ResourceMappingContext;
-import org.eclipse.core.resources.mapping.ResourceTraversal;
-import org.eclipse.core.runtime.Adapters;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IAdaptable;
-import org.eclipse.core.runtime.NullProgressMonitor;
-import org.eclipse.ui.internal.ide.Policy;
-import org.eclipse.ui.internal.util.Util;
-import org.eclipse.ui.views.markers.internal.MarkerType;
-import org.eclipse.ui.views.markers.internal.MarkerTypesModel;
-import org.eclipse.ui.views.tasklist.ITaskListResourceAdapter;
+import org.fdesigner.ide.internal.ide.Policy;
+import org.fdesigner.ide.views.markers.internal.MarkerType;
+import org.fdesigner.ide.views.markers.internal.MarkerTypesModel;
+import org.fdesigner.ide.views.tasklist.ITaskListResourceAdapter;
+import org.fdesigner.resources.IFile;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IWorkspaceRoot;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.resources.mapping.ResourceMapping;
+import org.fdesigner.resources.mapping.ResourceMappingContext;
+import org.fdesigner.resources.mapping.ResourceTraversal;
+import org.fdesigner.runtime.common.runtime.Adapters;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IAdaptable;
+import org.fdesigner.runtime.common.runtime.NullProgressMonitor;
+import org.fdesigner.workbench.internal.util.Util;
 
 /**
  * A Resource helper class for the markers view code.

@@ -11,22 +11,20 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.views.navigator;
+package org.fdesigner.ide.views.navigator;
 
-import org.eclipse.core.resources.IContainer;
-import org.eclipse.core.resources.IFile;
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.resources.IResource;
-
-import org.eclipse.jface.action.IMenuManager;
-import org.eclipse.jface.action.MenuManager;
-import org.eclipse.jface.viewers.IStructuredSelection;
-
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.actions.OpenFileAction;
-import org.eclipse.ui.actions.OpenInNewWindowAction;
-import org.eclipse.ui.actions.OpenWithMenu;
-import org.eclipse.ui.internal.views.navigator.ResourceNavigatorMessages;
+import org.fdesigner.ide.extensions.actions.OpenFileAction;
+import org.fdesigner.ide.extensions.actions.OpenWithMenu;
+import org.fdesigner.resources.IContainer;
+import org.fdesigner.resources.IFile;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.ui.jface.action.IMenuManager;
+import org.fdesigner.ui.jface.action.MenuManager;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.actions.OpenInNewWindowAction;
+import org.fdesigner.ide.internal.views.navigator.ResourceNavigatorMessages;
 
 /**
  * This is the action group for the open actions.

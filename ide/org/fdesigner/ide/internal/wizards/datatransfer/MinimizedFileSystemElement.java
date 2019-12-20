@@ -11,14 +11,14 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.wizards.datatransfer;
+package org.fdesigner.ide.internal.wizards.datatransfer;
 
 import java.util.Iterator;
 import java.util.List;
 
-import org.eclipse.ui.dialogs.FileSystemElement;
-import org.eclipse.ui.model.AdaptableList;
-import org.eclipse.ui.wizards.datatransfer.IImportStructureProvider;
+import org.fdesigner.ide.wizards.datatransfer.IImportStructureProvider;
+import org.fdesigner.workbench.dialogs.FileSystemElement;
+import org.fdesigner.workbench.model.AdaptableList;
 
 /**
  * The <code>MinimizedFileSystemElement</code> is a <code>FileSystemElement</code> that knows

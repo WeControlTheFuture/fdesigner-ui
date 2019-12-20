@@ -12,23 +12,23 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.views.markers;
+package org.fdesigner.ide.internal.views.markers;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.Collection;
 import java.util.Map;
 
-import org.eclipse.core.resources.IMarker;
-import org.eclipse.core.runtime.SubMonitor;
-import org.eclipse.jface.operation.IRunnableWithProgress;
-import org.eclipse.jface.wizard.IWizardPage;
-import org.eclipse.jface.wizard.Wizard;
-import org.eclipse.ui.IMarkerResolution;
-import org.eclipse.ui.IWorkbenchPartSite;
-import org.eclipse.ui.internal.ide.IDEInternalWorkbenchImages;
-import org.eclipse.ui.internal.ide.StatusUtil;
-import org.eclipse.ui.statushandlers.StatusManager;
-import org.eclipse.ui.views.markers.internal.MarkerMessages;
+import org.fdesigner.ide.extensions.IMarkerResolution;
+import org.fdesigner.ide.internal.ide.IDEInternalWorkbenchImages;
+import org.fdesigner.ide.internal.ide.StatusUtil;
+import org.fdesigner.ide.views.markers.internal.MarkerMessages;
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.runtime.common.runtime.SubMonitor;
+import org.fdesigner.ui.jface.operation.IRunnableWithProgress;
+import org.fdesigner.ui.jface.wizard.IWizardPage;
+import org.fdesigner.ui.jface.wizard.Wizard;
+import org.fdesigner.workbench.IWorkbenchPartSite;
+import org.fdesigner.workbench.statushandlers.StatusManager;
 
 /**
  * QuickFixWizard is the wizard for quick fixes.

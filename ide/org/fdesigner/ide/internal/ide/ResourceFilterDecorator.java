@@ -13,15 +13,15 @@
  *     IBM Corporation - ongoing implementation
  *     Lars Vogel <Lars.Vogel@gmail.com> - Bug 430694
  *******************************************************************************/
-package org.eclipse.ui.internal.ide;
+package org.fdesigner.ide.internal.ide;
 
-import org.eclipse.core.resources.IContainer;
-import org.eclipse.core.resources.IResourceFilterDescription;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.jface.viewers.IDecoration;
-import org.eclipse.jface.viewers.ILabelProviderListener;
-import org.eclipse.jface.viewers.ILightweightLabelDecorator;
+import org.fdesigner.resources.IContainer;
+import org.fdesigner.resources.IResourceFilterDescription;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.ui.jface.viewers.IDecoration;
+import org.fdesigner.ui.jface.viewers.ILabelProviderListener;
+import org.fdesigner.ui.jface.viewers.ILightweightLabelDecorator;
 
 /**
  * Lightweight decorator for filtered container.

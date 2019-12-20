@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal.ide.dialogs;
+package org.fdesigner.ide.internal.ide.dialogs;
 
 /**
  * internal class, do not use.
@@ -21,6 +21,6 @@ package org.eclipse.ui.internal.ide.dialogs;
  * @noextend This interface is not intended to be extended by clients.
  */
 public interface IElementFilter extends
-		org.eclipse.ui.ide.dialogs.IElementFilter {
+	org.fdesigner.ide.dialogs.IElementFilter {
 
 }

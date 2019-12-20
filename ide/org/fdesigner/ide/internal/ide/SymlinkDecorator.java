@@ -12,19 +12,19 @@
  *     Lars Vogel <Lars.Vogel@gmail.com> - Bug 430694
  *     Alexander Fedorov <alexander.fedorov@arsysop.ru> - Bug 548799
  *******************************************************************************/
-package org.eclipse.ui.internal.ide;
+package org.fdesigner.ide.internal.ide;
 
 import java.util.Optional;
 
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.ResourceAttributes;
-import org.eclipse.core.resources.mapping.ResourceMapping;
-import org.eclipse.core.runtime.Adapters;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.jface.resource.ResourceLocator;
-import org.eclipse.jface.viewers.IDecoration;
-import org.eclipse.jface.viewers.ILabelProviderListener;
-import org.eclipse.jface.viewers.ILightweightLabelDecorator;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.ResourceAttributes;
+import org.fdesigner.resources.mapping.ResourceMapping;
+import org.fdesigner.runtime.common.runtime.Adapters;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.ui.jface.resource.ResourceLocator;
+import org.fdesigner.ui.jface.viewers.IDecoration;
+import org.fdesigner.ui.jface.viewers.ILabelProviderListener;
+import org.fdesigner.ui.jface.viewers.ILightweightLabelDecorator;
 
 /**
  * Decorate symbolic links

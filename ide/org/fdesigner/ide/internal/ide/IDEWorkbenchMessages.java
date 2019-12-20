@@ -27,9 +27,9 @@
  * Gunnar Wagenknecht - [102527] Project Natures property page
  * Mickael Istria (Red Hat Inc) - [102527] Project Natures property page
  *******************************************************************************/
-package org.eclipse.ui.internal.ide;
+package org.fdesigner.ide.internal.ide;
 
-import org.eclipse.osgi.util.NLS;
+import org.fdesigner.supplement.util.NLS;
 
 public class IDEWorkbenchMessages extends NLS {
 	private static final String BUNDLE_NAME = "org.eclipse.ui.internal.ide.messages";//$NON-NLS-1$

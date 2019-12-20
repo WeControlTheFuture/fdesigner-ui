@@ -12,18 +12,17 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.views.bookmarkexplorer;
+package org.fdesigner.ide.views.bookmarkexplorer;
 
 import java.util.List;
 
-import org.eclipse.core.commands.operations.IUndoableOperation;
-import org.eclipse.core.resources.IMarker;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.ide.undo.DeleteMarkersOperation;
-import org.eclipse.ui.ide.undo.WorkspaceUndoUtil;
-import org.eclipse.ui.internal.views.bookmarkexplorer.BookmarkMessages;
-
+import org.fdesigner.commands.operations.IUndoableOperation;
+import org.fdesigner.ide.undo.DeleteMarkersOperation;
+import org.fdesigner.ide.undo.WorkspaceUndoUtil;
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.ide.internal.views.bookmarkexplorer.BookmarkMessages;
 /**
  * Action to remove the selected bookmarks.
  *

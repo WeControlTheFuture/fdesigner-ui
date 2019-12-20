@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *     Mickael Istria (Red Hat Inc.) - Bug 486901
  *******************************************************************************/
-package org.eclipse.ui.dialogs;
+package org.fdesigner.ide.extensions.dialogs;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -21,15 +21,6 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import org.eclipse.core.resources.IContainer;
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.jface.dialogs.IDialogConstants;
-import org.eclipse.jface.viewers.ICheckStateListener;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.jface.viewers.ITreeContentProvider;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.custom.BusyIndicator;
 import org.eclipse.swt.events.SelectionAdapter;
@@ -41,13 +32,23 @@ import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.ide.IDE;
-import org.eclipse.ui.ide.dialogs.ResourceTreeAndListGroup;
-import org.eclipse.ui.internal.ide.DialogUtil;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
-import org.eclipse.ui.model.WorkbenchContentProvider;
-import org.eclipse.ui.model.WorkbenchLabelProvider;
+import org.fdesigner.ide.IDE;
+import org.fdesigner.ide.dialogs.ResourceTreeAndListGroup;
+import org.fdesigner.ide.extensions.model.WorkbenchContentProvider;
+import org.fdesigner.ide.internal.ide.DialogUtil;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.resources.IContainer;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.ui.jface.dialogs.IDialogConstants;
+import org.fdesigner.ui.jface.viewers.ICheckStateListener;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.ui.jface.viewers.ITreeContentProvider;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.dialogs.TypeFilteringDialog;
+import org.fdesigner.workbench.model.WorkbenchLabelProvider;
 
 /**
  * Abstract superclass for a typical export wizard's main page.

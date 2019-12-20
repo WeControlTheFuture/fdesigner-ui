@@ -12,29 +12,29 @@
  *     IBM Corporation - initial API and implementation
  *     Andrey Loskutov <loskutov@gmx.de> - generified interface, bug 461762
  *******************************************************************************/
-package org.eclipse.ui.part;
+package org.fdesigner.ide.extensions.part;
 
 import java.net.URI;
 
-import org.eclipse.core.filesystem.EFS;
-import org.eclipse.core.filesystem.IFileStore;
-import org.eclipse.core.resources.IFile;
-import org.eclipse.core.resources.IStorage;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IPath;
-import org.eclipse.core.runtime.Path;
-import org.eclipse.core.runtime.PlatformObject;
-import org.eclipse.core.runtime.content.IContentType;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.ui.IFileEditorInput;
-import org.eclipse.ui.IMemento;
-import org.eclipse.ui.IPathEditorInput;
-import org.eclipse.ui.IPersistableElement;
-import org.eclipse.ui.IURIEditorInput;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.ide.IDE;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.eclipse.ui.model.IWorkbenchAdapter;
+import org.fdesigner.filesystem.EFS;
+import org.fdesigner.filesystem.IFileStore;
+import org.fdesigner.ide.IDE;
+import org.fdesigner.ide.extensions.IFileEditorInput;
+import org.fdesigner.ide.extensions.IURIEditorInput;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.resources.IFile;
+import org.fdesigner.resources.IStorage;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.Path;
+import org.fdesigner.runtime.common.runtime.PlatformObject;
+import org.fdesigner.runtime.contenttype.runtime.content.IContentType;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.workbench.IMemento;
+import org.fdesigner.workbench.IPathEditorInput;
+import org.fdesigner.workbench.IPersistableElement;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.model.IWorkbenchAdapter;
 
 /**
  * Adapter for making a file resource a suitable input for an editor.

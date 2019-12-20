@@ -11,12 +11,12 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.views.markers;
+package org.fdesigner.ide.internal.views.markers;
 
-import org.eclipse.core.commands.ExecutionEvent;
-import org.eclipse.ui.views.markers.MarkerViewHandler;
-import org.eclipse.ui.views.markers.internal.DialogTaskProperties;
-import org.eclipse.ui.views.markers.internal.MarkerMessages;
+import org.fdesigner.commands.ExecutionEvent;
+import org.fdesigner.ide.views.markers.MarkerViewHandler;
+import org.fdesigner.ide.views.markers.internal.DialogTaskProperties;
+import org.fdesigner.ide.views.markers.internal.MarkerMessages;
 
 /**
  * AddTaskHandler is the handler for adding a new task to the task list.

@@ -12,9 +12,9 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal.ide.filesystem;
+package org.fdesigner.ide.internal.ide.filesystem;
 
-import org.eclipse.ui.ide.fileSystem.FileSystemContributor;
+import org.fdesigner.ide.fileSystem.FileSystemContributor;
 
 /**
  * FileSystemContribution is the representation of the configuration element

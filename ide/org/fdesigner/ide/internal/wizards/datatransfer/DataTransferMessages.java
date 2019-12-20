@@ -12,9 +12,9 @@
  * IBM - Initial API and implementation
  * Red Hat, Inc - WizardProjectsImportPage[_ArchiveSelectTitle, _SelectArchiveDialogTitle]
  *******************************************************************************/
-package org.eclipse.ui.internal.wizards.datatransfer;
+package org.fdesigner.ide.internal.wizards.datatransfer;
 
-import org.eclipse.osgi.util.NLS;
+import org.fdesigner.supplement.util.NLS;
 
 public class DataTransferMessages extends NLS {
 	private static final String BUNDLE_NAME = "org.eclipse.ui.internal.wizards.datatransfer.messages";//$NON-NLS-1$

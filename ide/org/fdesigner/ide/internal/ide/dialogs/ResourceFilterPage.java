@@ -12,16 +12,16 @@
  *     Serge Beauchamp (Freescale Semiconductor) - [252996] initial API and implementation
  *     IBM Corporation - ongoing implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.dialogs;
+package org.fdesigner.ide.internal.ide.dialogs;
 
-import org.eclipse.core.resources.IContainer;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.runtime.Adapters;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.dialogs.PropertyPage;
-import org.eclipse.ui.internal.ide.IIDEHelpContextIds;
+import org.fdesigner.ide.internal.ide.IIDEHelpContextIds;
+import org.fdesigner.resources.IContainer;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.runtime.common.runtime.Adapters;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.dialogs.PropertyPage;
 
 /**
  * The ResourceInfoPage is the page that shows the basic info about the

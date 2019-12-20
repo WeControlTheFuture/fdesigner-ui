@@ -13,43 +13,43 @@
  *     Andrey Loskutov <loskutov@gmx.de> - Bug 41431, 462760, 461786
  *     Lucas Bullen (Red Hat Inc.) - Bug 522096 - "Close Projects" on working set
  *******************************************************************************/
-package org.eclipse.ui.actions;
+package org.fdesigner.ide.extensions.actions;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import org.eclipse.core.resources.IFile;
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.IResourceChangeEvent;
-import org.eclipse.core.resources.IResourceChangeListener;
-import org.eclipse.core.resources.IResourceDelta;
-import org.eclipse.core.resources.IResourceRuleFactory;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.resources.mapping.IResourceChangeDescriptionFactory;
-import org.eclipse.core.resources.mapping.ResourceChangeValidator;
-import org.eclipse.core.runtime.Adapters;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.SafeRunner;
-import org.eclipse.core.runtime.jobs.ISchedulingRule;
-import org.eclipse.core.runtime.jobs.MultiRule;
-import org.eclipse.jface.util.SafeRunnable;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.jface.window.IShellProvider;
-import org.eclipse.osgi.util.NLS;
 import org.eclipse.swt.custom.BusyIndicator;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.IEditorInput;
-import org.eclipse.ui.IEditorReference;
-import org.eclipse.ui.IWorkbenchPage;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.PartInitException;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.ide.IDE;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
-import org.eclipse.ui.internal.ide.IIDEHelpContextIds;
+import org.fdesigner.ide.IDE;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.IIDEHelpContextIds;
+import org.fdesigner.resources.IFile;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IResourceChangeEvent;
+import org.fdesigner.resources.IResourceChangeListener;
+import org.fdesigner.resources.IResourceDelta;
+import org.fdesigner.resources.IResourceRuleFactory;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.resources.mapping.IResourceChangeDescriptionFactory;
+import org.fdesigner.resources.mapping.ResourceChangeValidator;
+import org.fdesigner.runtime.common.runtime.Adapters;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.SafeRunner;
+import org.fdesigner.runtime.jobs.runtime.jobs.ISchedulingRule;
+import org.fdesigner.runtime.jobs.runtime.jobs.MultiRule;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.ui.jface.util.SafeRunnable;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.ui.jface.window.IShellProvider;
+import org.fdesigner.workbench.IEditorInput;
+import org.fdesigner.workbench.IEditorReference;
+import org.fdesigner.workbench.IWorkbenchPage;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.PartInitException;
+import org.fdesigner.workbench.PlatformUI;
 
 /**
  * Standard action for closing the currently selected project(s).

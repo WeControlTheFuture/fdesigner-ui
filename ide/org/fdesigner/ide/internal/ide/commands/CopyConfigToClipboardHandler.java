@@ -12,15 +12,15 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal.ide.commands;
+package org.fdesigner.ide.internal.ide.commands;
 
-import org.eclipse.core.commands.AbstractHandler;
-import org.eclipse.core.commands.ExecutionEvent;
 import org.eclipse.swt.dnd.Clipboard;
 import org.eclipse.swt.dnd.TextTransfer;
 import org.eclipse.swt.dnd.Transfer;
-import org.eclipse.ui.handlers.HandlerUtil;
-import org.eclipse.ui.internal.ConfigurationInfo;
+import org.fdesigner.commands.AbstractHandler;
+import org.fdesigner.commands.ExecutionEvent;
+import org.fdesigner.workbench.handlers.HandlerUtil;
+import org.fdesigner.workbench.internal.ConfigurationInfo;
 
 /**
  * Copies the configuration data present in the about dialog to the clipboard.

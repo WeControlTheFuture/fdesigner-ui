@@ -13,17 +13,17 @@
  *     Andrey Loskutov <loskutov@gmx.de> - generified interface, bug 461762
  *     Rolf Theunissen <rolf.theunissen@gmail.com> - Bug 23862
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.model;
+package org.fdesigner.ide.internal.ide.model;
 
-import org.eclipse.core.resources.IFile;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.runtime.IAdapterFactory;
-import org.eclipse.ui.IEditorInput;
-import org.eclipse.ui.IEditorPart;
-import org.eclipse.ui.IFileEditorInput;
-import org.eclipse.ui.views.properties.FilePropertySource;
 import org.eclipse.ui.views.properties.IPropertySource;
-import org.eclipse.ui.views.properties.ResourcePropertySource;
+import org.fdesigner.ide.extensions.IFileEditorInput;
+import org.fdesigner.ide.views.properties.FilePropertySource;
+import org.fdesigner.ide.views.properties.ResourcePropertySource;
+import org.fdesigner.resources.IFile;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.runtime.common.runtime.IAdapterFactory;
+import org.fdesigner.workbench.IEditorInput;
+import org.fdesigner.workbench.IEditorPart;
 
 /**
  * Dispenses an <code>IPropertySource</code> adapter for the core resource objects.

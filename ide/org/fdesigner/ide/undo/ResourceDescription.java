@@ -12,17 +12,17 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.ide.undo;
+package org.fdesigner.ide.undo;
 
-import org.eclipse.core.resources.IFile;
-import org.eclipse.core.resources.IFolder;
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.ui.internal.ide.undo.FileDescription;
-import org.eclipse.ui.internal.ide.undo.FolderDescription;
-import org.eclipse.ui.internal.ide.undo.ProjectDescription;
+import org.fdesigner.ide.internal.ide.undo.FileDescription;
+import org.fdesigner.ide.internal.ide.undo.FolderDescription;
+import org.fdesigner.ide.internal.ide.undo.ProjectDescription;
+import org.fdesigner.resources.IFile;
+import org.fdesigner.resources.IFolder;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
 
 /**
  * ResourceDescription is a lightweight description that describes the common

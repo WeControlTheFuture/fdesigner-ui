@@ -13,28 +13,11 @@
  *     Serge Beauchamp (Freescale Semiconductor) - [229633] Project Path Variable Support
  *******************************************************************************/
 
-package org.eclipse.ui.internal.ide.dialogs;
+package org.fdesigner.ide.internal.ide.dialogs;
 
 import java.net.URI;
 import java.net.URISyntaxException;
 
-import org.eclipse.core.filesystem.EFS;
-import org.eclipse.core.filesystem.IFileInfo;
-import org.eclipse.core.filesystem.IFileStore;
-import org.eclipse.core.filesystem.URIUtil;
-import org.eclipse.core.resources.IPathVariableManager;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.IWorkspace;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IPath;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Path;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.equinox.bidi.StructuredTextTypeHandlerFactory;
-import org.eclipse.jface.dialogs.Dialog;
-import org.eclipse.jface.dialogs.IDialogConstants;
-import org.eclipse.jface.util.BidiUtils;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
@@ -53,11 +36,28 @@ import org.eclipse.swt.widgets.FileDialog;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Listener;
 import org.eclipse.swt.widgets.Text;
-import org.eclipse.ui.ide.dialogs.PathVariableSelectionDialog;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.eclipse.ui.internal.ide.filesystem.FileSystemConfiguration;
-import org.eclipse.ui.internal.ide.filesystem.FileSystemSupportRegistry;
+import org.fdesigner.bidi.StructuredTextTypeHandlerFactory;
+import org.fdesigner.filesystem.EFS;
+import org.fdesigner.filesystem.IFileInfo;
+import org.fdesigner.filesystem.IFileStore;
+import org.fdesigner.filesystem.URIUtil;
+import org.fdesigner.ide.dialogs.PathVariableSelectionDialog;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.internal.ide.filesystem.FileSystemConfiguration;
+import org.fdesigner.ide.internal.ide.filesystem.FileSystemSupportRegistry;
+import org.fdesigner.resources.IPathVariableManager;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IWorkspace;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Path;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.ui.jface.dialogs.Dialog;
+import org.fdesigner.ui.jface.dialogs.IDialogConstants;
+import org.fdesigner.ui.jface.util.BidiUtils;
 
 /**
  * Widget group for specifying a linked file or folder target.

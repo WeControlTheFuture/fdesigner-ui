@@ -12,15 +12,15 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.views.markers;
+package org.fdesigner.ide.internal.views.markers;
 
-import org.eclipse.jface.fieldassist.FieldDecorationRegistry;
-import org.eclipse.jface.resource.LocalResourceManager;
-import org.eclipse.jface.resource.ResourceManager;
-import org.eclipse.jface.viewers.ColumnLabelProvider;
-import org.eclipse.jface.viewers.ViewerCell;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.eclipse.ui.views.markers.MarkerField;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.views.markers.MarkerField;
+import org.fdesigner.ui.jface.fieldassist.FieldDecorationRegistry;
+import org.fdesigner.ui.jface.resource.LocalResourceManager;
+import org.fdesigner.ui.jface.resource.ResourceManager;
+import org.fdesigner.ui.jface.viewers.ColumnLabelProvider;
+import org.fdesigner.ui.jface.viewers.ViewerCell;
 
 /**
  * The MarkerColumnLabelProvider is a label provider for an individual column.

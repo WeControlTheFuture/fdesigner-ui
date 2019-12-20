@@ -12,13 +12,13 @@
  *     Serge Beauchamp (Freescale Semiconductor) - [252996] initial API and implementation
  *     IBM Corporation - ongoing implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.misc;
+package org.fdesigner.ide.internal.ide.misc;
 
-import org.eclipse.core.filesystem.IFileInfo;
-import org.eclipse.core.resources.IContainer;
-import org.eclipse.core.resources.filtermatchers.AbstractFileInfoMatcher;
-import org.eclipse.core.resources.filtermatchers.CompoundFileInfoMatcher;
-import org.eclipse.core.runtime.CoreException;
+import org.fdesigner.filesystem.IFileInfo;
+import org.fdesigner.resources.IContainer;
+import org.fdesigner.resources.filtermatchers.AbstractFileInfoMatcher;
+import org.fdesigner.resources.filtermatchers.CompoundFileInfoMatcher;
+import org.fdesigner.runtime.common.runtime.CoreException;
 
 /**
  * A Resource Filter Type Factory for supporting the NOT logical preposition

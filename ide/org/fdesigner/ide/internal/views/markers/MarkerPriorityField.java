@@ -13,23 +13,23 @@
  *     Lars Vogel <Lars.Vogel@gmail.com> - Bug 430694
  *     Mickael Istria (Red Hat Inc.) - Bug 486901
  *******************************************************************************/
-package org.eclipse.ui.internal.views.markers;
+package org.fdesigner.ide.internal.views.markers;
 
-import org.eclipse.core.resources.IMarker;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.jface.viewers.CellEditor;
-import org.eclipse.jface.viewers.ColumnViewer;
-import org.eclipse.jface.viewers.ComboBoxCellEditor;
-import org.eclipse.jface.viewers.EditingSupport;
-import org.eclipse.jface.viewers.ViewerCell;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
-import org.eclipse.ui.internal.ide.Policy;
-import org.eclipse.ui.views.markers.MarkerField;
-import org.eclipse.ui.views.markers.MarkerItem;
-import org.eclipse.ui.views.markers.internal.MarkerMessages;
+import org.fdesigner.ide.internal.ide.Policy;
+import org.fdesigner.ide.views.markers.MarkerField;
+import org.fdesigner.ide.views.markers.MarkerItem;
+import org.fdesigner.ide.views.markers.internal.MarkerMessages;
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.ui.jface.viewers.CellEditor;
+import org.fdesigner.ui.jface.viewers.ColumnViewer;
+import org.fdesigner.ui.jface.viewers.ComboBoxCellEditor;
+import org.fdesigner.ui.jface.viewers.EditingSupport;
+import org.fdesigner.ui.jface.viewers.ViewerCell;
 
 /**
  * MarkerPriorityField is the field for task priority.

@@ -12,19 +12,19 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.views.markers;
+package org.fdesigner.ide.internal.views.markers;
 
-import org.eclipse.core.commands.ExecutionEvent;
-import org.eclipse.core.commands.ExecutionException;
-import org.eclipse.jface.dialogs.IInputValidator;
-import org.eclipse.jface.dialogs.InputDialog;
-import org.eclipse.jface.window.Window;
-import org.eclipse.osgi.util.NLS;
-import org.eclipse.ui.IViewPart;
-import org.eclipse.ui.IWorkbenchPage;
-import org.eclipse.ui.PartInitException;
-import org.eclipse.ui.views.markers.MarkerViewHandler;
-import org.eclipse.ui.views.markers.internal.MarkerMessages;
+import org.fdesigner.commands.ExecutionEvent;
+import org.fdesigner.commands.ExecutionException;
+import org.fdesigner.ide.views.markers.MarkerViewHandler;
+import org.fdesigner.ide.views.markers.internal.MarkerMessages;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.ui.jface.dialogs.IInputValidator;
+import org.fdesigner.ui.jface.dialogs.InputDialog;
+import org.fdesigner.ui.jface.window.Window;
+import org.fdesigner.workbench.IViewPart;
+import org.fdesigner.workbench.IWorkbenchPage;
+import org.fdesigner.workbench.PartInitException;
 
 /**
  * OpenMarkersViewHandler is used to open another markers view.

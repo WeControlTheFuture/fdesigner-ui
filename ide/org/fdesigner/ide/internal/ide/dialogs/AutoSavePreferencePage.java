@@ -12,17 +12,8 @@
  *     Axel Richard <axel.richard@obeo.fr> - initial API and implementation, Bug 492401
  *     Patrik Suzzi <psuzzi@gmail.com> - Bug 498760
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.dialogs;
+package org.fdesigner.ide.internal.ide.dialogs;
 
-import org.eclipse.jface.dialogs.Dialog;
-import org.eclipse.jface.preference.FieldEditor;
-import org.eclipse.jface.preference.IPreferenceStore;
-import org.eclipse.jface.preference.IntegerFieldEditor;
-import org.eclipse.jface.preference.PreferencePage;
-import org.eclipse.jface.preference.StringFieldEditor;
-import org.eclipse.jface.resource.JFaceResources;
-import org.eclipse.jface.util.IPropertyChangeListener;
-import org.eclipse.jface.util.PropertyChangeEvent;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.events.SelectionListener;
@@ -35,11 +26,20 @@ import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Event;
 import org.eclipse.swt.widgets.Group;
 import org.eclipse.swt.widgets.Label;
-import org.eclipse.ui.IWorkbench;
-import org.eclipse.ui.IWorkbenchPreferencePage;
-import org.eclipse.ui.internal.IPreferenceConstants;
-import org.eclipse.ui.internal.WorkbenchPlugin;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ui.jface.dialogs.Dialog;
+import org.fdesigner.ui.jface.preference.FieldEditor;
+import org.fdesigner.ui.jface.preference.IPreferenceStore;
+import org.fdesigner.ui.jface.preference.IntegerFieldEditor;
+import org.fdesigner.ui.jface.preference.PreferencePage;
+import org.fdesigner.ui.jface.preference.StringFieldEditor;
+import org.fdesigner.ui.jface.resource.JFaceResources;
+import org.fdesigner.ui.jface.util.IPropertyChangeListener;
+import org.fdesigner.ui.jface.util.PropertyChangeEvent;
+import org.fdesigner.workbench.IWorkbench;
+import org.fdesigner.workbench.IWorkbenchPreferencePage;
+import org.fdesigner.workbench.internal.IPreferenceConstants;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
 
 /**
  * Preference page that allows to enable auto-save for textual editors.

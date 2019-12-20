@@ -11,15 +11,15 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.views.framelist;
+package org.fdesigner.ide.views.framelist;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import org.eclipse.core.commands.common.EventManager;
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.jface.util.IPropertyChangeListener;
-import org.eclipse.jface.util.PropertyChangeEvent;
+import org.fdesigner.commands.common.EventManager;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.ui.jface.util.IPropertyChangeListener;
+import org.fdesigner.ui.jface.util.PropertyChangeEvent;
 
 /**
  * Supports a web-browser style of navigation by maintaining a list

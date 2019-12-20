@@ -13,7 +13,7 @@
  *******************************************************************************/
 package org.fdesigner.ide;
 
-import org.eclipse.core.resources.IMarker;
+import org.fdesigner.resources.IMarker;
 
 /**
  * An adapter interface for editors, which allows the editor

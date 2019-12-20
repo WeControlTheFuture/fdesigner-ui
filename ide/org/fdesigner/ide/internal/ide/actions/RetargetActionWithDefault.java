@@ -11,10 +11,10 @@
  * Contributors:
  * IBM - Initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.actions;
+package org.fdesigner.ide.internal.ide.actions;
 
-import org.eclipse.jface.action.IAction;
-import org.eclipse.ui.actions.RetargetAction;
+import org.fdesigner.ui.jface.action.IAction;
+import org.fdesigner.workbench.actions.RetargetAction;
 
 /**
  * A specialization of RetargetAction that allows for specification of a default

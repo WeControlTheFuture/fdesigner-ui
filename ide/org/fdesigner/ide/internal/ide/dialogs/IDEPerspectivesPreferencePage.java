@@ -12,19 +12,19 @@
  *     IBM Corporation - initial API and implementation
  *     Denis Zygann <d.zygann@web.de> - Bug 330453
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.dialogs;
+package org.fdesigner.ide.internal.ide.dialogs;
 
-import org.eclipse.jface.preference.IPreferenceStore;
-import org.eclipse.jface.preference.RadioGroupFieldEditor;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.dialogs.PerspectivesPreferencePage;
-import org.eclipse.ui.internal.ide.IDEInternalPreferences;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.internal.ide.IDEInternalPreferences;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ui.jface.preference.IPreferenceStore;
+import org.fdesigner.ui.jface.preference.RadioGroupFieldEditor;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.internal.dialogs.PerspectivesPreferencePage;
 
 /**
  * Extends the Perspectives preference page with IDE-specific settings.
@@ -56,7 +56,7 @@ public class IDEPerspectivesPreferencePage extends PerspectivesPreferencePage {
 				.getHelpSystem()
 				.setHelp(
 						parent,
-						org.eclipse.ui.internal.IWorkbenchHelpContextIds.PERSPECTIVES_PREFERENCE_PAGE);
+						org.fdesigner.workbench.internal.IWorkbenchHelpContextIds.PERSPECTIVES_PREFERENCE_PAGE);
 
 		Composite composite = createComposite(parent);
 

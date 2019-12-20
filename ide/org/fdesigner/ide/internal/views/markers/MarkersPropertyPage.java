@@ -12,21 +12,11 @@
  *     IBM Corporation - initial API and implementation
  *     Mickael Istria (Red Hat Inc.) - Bug 486901
  *******************************************************************************/
-package org.eclipse.ui.internal.views.markers;
+package org.fdesigner.ide.internal.views.markers;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import org.eclipse.core.commands.ExecutionException;
-import org.eclipse.core.commands.operations.IUndoableOperation;
-import org.eclipse.core.resources.IMarker;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.runtime.Adapters;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.NullProgressMonitor;
-import org.eclipse.jface.dialogs.Dialog;
-import org.eclipse.osgi.util.NLS;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.dnd.Clipboard;
 import org.eclipse.swt.dnd.TextTransfer;
@@ -39,16 +29,26 @@ import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Text;
-import org.eclipse.ui.ISharedImages;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.dialogs.PropertyPage;
-import org.eclipse.ui.ide.undo.UpdateMarkersOperation;
-import org.eclipse.ui.ide.undo.WorkspaceUndoUtil;
-import org.eclipse.ui.internal.ide.Policy;
-import org.eclipse.ui.internal.ide.StatusUtil;
-import org.eclipse.ui.statushandlers.StatusManager;
-import org.eclipse.ui.views.markers.internal.MarkerMessages;
-import org.eclipse.ui.views.markers.internal.Util;
+import org.fdesigner.commands.ExecutionException;
+import org.fdesigner.commands.operations.IUndoableOperation;
+import org.fdesigner.ide.internal.ide.Policy;
+import org.fdesigner.ide.internal.ide.StatusUtil;
+import org.fdesigner.ide.undo.UpdateMarkersOperation;
+import org.fdesigner.ide.undo.WorkspaceUndoUtil;
+import org.fdesigner.ide.views.markers.internal.MarkerMessages;
+import org.fdesigner.ide.views.markers.internal.Util;
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.runtime.common.runtime.Adapters;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.NullProgressMonitor;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.ui.jface.dialogs.Dialog;
+import org.fdesigner.workbench.ISharedImages;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.dialogs.PropertyPage;
+import org.fdesigner.workbench.statushandlers.StatusManager;
 
 /**
  * MarkersPropertyPage is the property page for a marker.

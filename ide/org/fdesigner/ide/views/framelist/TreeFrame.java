@@ -11,22 +11,22 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.views.framelist;
+package org.fdesigner.ide.views.framelist;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import org.eclipse.core.runtime.Adapters;
-import org.eclipse.core.runtime.IAdaptable;
-import org.eclipse.jface.viewers.AbstractTreeViewer;
-import org.eclipse.jface.viewers.ILabelProvider;
-import org.eclipse.jface.viewers.ISelection;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.jface.viewers.StructuredSelection;
-import org.eclipse.ui.IElementFactory;
-import org.eclipse.ui.IMemento;
-import org.eclipse.ui.IPersistableElement;
-import org.eclipse.ui.PlatformUI;
+import org.fdesigner.runtime.common.runtime.Adapters;
+import org.fdesigner.runtime.common.runtime.IAdaptable;
+import org.fdesigner.ui.jface.viewers.AbstractTreeViewer;
+import org.fdesigner.ui.jface.viewers.ILabelProvider;
+import org.fdesigner.ui.jface.viewers.ISelection;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.ui.jface.viewers.StructuredSelection;
+import org.fdesigner.workbench.IElementFactory;
+import org.fdesigner.workbench.IMemento;
+import org.fdesigner.workbench.IPersistableElement;
+import org.fdesigner.workbench.PlatformUI;
 
 /**
  * Frame for tree viewers.  This capture the viewer's input element, selection,

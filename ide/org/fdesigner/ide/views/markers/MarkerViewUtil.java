@@ -12,17 +12,17 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.views.markers;
+package org.fdesigner.ide.views.markers;
 
 import java.util.ArrayList;
 
-import org.eclipse.core.resources.IMarker;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.ui.IPageLayout;
-import org.eclipse.ui.IViewPart;
-import org.eclipse.ui.IWorkbenchPage;
-import org.eclipse.ui.internal.ide.Policy;
-import org.eclipse.ui.internal.views.markers.MarkerSupportInternalUtilities;
+import org.fdesigner.ide.internal.ide.Policy;
+import org.fdesigner.ide.internal.views.markers.MarkerSupportInternalUtilities;
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.workbench.IPageLayout;
+import org.fdesigner.workbench.IViewPart;
+import org.fdesigner.workbench.IWorkbenchPage;
 
 /**
  * Utility class for showing markers in the marker views.

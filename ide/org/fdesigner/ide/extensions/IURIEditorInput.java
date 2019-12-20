@@ -11,11 +11,11 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui;
+package org.fdesigner.ide.extensions;
 
 import java.net.URI;
 
-import org.eclipse.ui.IEditorInput;
+import org.fdesigner.workbench.IEditorInput;
 
 /**
  * This interface defines an editor input based on a URI.

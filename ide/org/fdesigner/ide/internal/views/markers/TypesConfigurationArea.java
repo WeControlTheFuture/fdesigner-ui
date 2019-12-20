@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.views.markers;
+package org.fdesigner.ide.internal.views.markers;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -21,14 +21,6 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 
-import org.eclipse.jface.dialogs.Dialog;
-import org.eclipse.jface.viewers.CheckStateChangedEvent;
-import org.eclipse.jface.viewers.CheckboxTreeViewer;
-import org.eclipse.jface.viewers.ICheckStateListener;
-import org.eclipse.jface.viewers.ITreeContentProvider;
-import org.eclipse.jface.viewers.LabelProvider;
-import org.eclipse.jface.viewers.Viewer;
-import org.eclipse.jface.viewers.ViewerComparator;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
@@ -38,10 +30,18 @@ import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Tree;
-import org.eclipse.ui.views.markers.MarkerFieldFilter;
-import org.eclipse.ui.views.markers.internal.MarkerMessages;
-import org.eclipse.ui.views.markers.internal.MarkerSupportRegistry;
-import org.eclipse.ui.views.markers.internal.MarkerType;
+import org.fdesigner.ide.views.markers.MarkerFieldFilter;
+import org.fdesigner.ide.views.markers.internal.MarkerMessages;
+import org.fdesigner.ide.views.markers.internal.MarkerSupportRegistry;
+import org.fdesigner.ide.views.markers.internal.MarkerType;
+import org.fdesigner.ui.jface.dialogs.Dialog;
+import org.fdesigner.ui.jface.viewers.CheckStateChangedEvent;
+import org.fdesigner.ui.jface.viewers.CheckboxTreeViewer;
+import org.fdesigner.ui.jface.viewers.ICheckStateListener;
+import org.fdesigner.ui.jface.viewers.ITreeContentProvider;
+import org.fdesigner.ui.jface.viewers.LabelProvider;
+import org.fdesigner.ui.jface.viewers.Viewer;
+import org.fdesigner.ui.jface.viewers.ViewerComparator;
 
 /**
  * TypesConfigurationArea is the FilterConfigurationArea that handles type

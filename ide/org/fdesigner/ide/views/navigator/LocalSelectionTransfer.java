@@ -11,10 +11,10 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.views.navigator;
+package org.fdesigner.ide.views.navigator;
 
-import org.eclipse.jface.viewers.ISelection;
 import org.eclipse.swt.dnd.TransferData;
+import org.fdesigner.ui.jface.viewers.ISelection;
 
 /**
  * A LocalSelectionTransfer may be used for drag and drop operations within the
@@ -30,7 +30,7 @@ import org.eclipse.swt.dnd.TransferData;
  *             {@link org.eclipse.jface.util.LocalSelectionTransfer} instead
  */
 @Deprecated
-public class LocalSelectionTransfer extends org.eclipse.jface.util.LocalSelectionTransfer {
+public class LocalSelectionTransfer extends org.fdesigner.ui.jface.util.LocalSelectionTransfer {
 
 	private static final LocalSelectionTransfer INSTANCE = new LocalSelectionTransfer();
 
@@ -40,7 +40,7 @@ public class LocalSelectionTransfer extends org.eclipse.jface.util.LocalSelectio
 	 * JFace's LocalSelectionTransfer. Protected methods such as getTypeIds() are
 	 * handled via inheritance, not delegation due to visibility constraints.
 	 */
-	private org.eclipse.jface.util.LocalSelectionTransfer jfaceTransfer = org.eclipse.jface.util.LocalSelectionTransfer
+	private org.fdesigner.ui.jface.util.LocalSelectionTransfer jfaceTransfer = org.fdesigner.ui.jface.util.LocalSelectionTransfer
 			.getTransfer();
 
 	/**

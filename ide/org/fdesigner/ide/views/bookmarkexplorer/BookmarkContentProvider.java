@@ -12,23 +12,23 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.views.bookmarkexplorer;
+package org.fdesigner.ide.views.bookmarkexplorer;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import org.eclipse.core.resources.IMarker;
-import org.eclipse.core.resources.IMarkerDelta;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.IResourceChangeEvent;
-import org.eclipse.core.resources.IResourceChangeListener;
-import org.eclipse.core.resources.IResourceDelta;
-import org.eclipse.core.resources.IWorkspace;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.jface.viewers.IBasicPropertyConstants;
-import org.eclipse.jface.viewers.IStructuredContentProvider;
-import org.eclipse.jface.viewers.Viewer;
 import org.eclipse.swt.widgets.Control;
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.resources.IMarkerDelta;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IResourceChangeEvent;
+import org.fdesigner.resources.IResourceChangeListener;
+import org.fdesigner.resources.IResourceDelta;
+import org.fdesigner.resources.IWorkspace;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.ui.jface.viewers.IBasicPropertyConstants;
+import org.fdesigner.ui.jface.viewers.IStructuredContentProvider;
+import org.fdesigner.ui.jface.viewers.Viewer;
 
 /*
 *

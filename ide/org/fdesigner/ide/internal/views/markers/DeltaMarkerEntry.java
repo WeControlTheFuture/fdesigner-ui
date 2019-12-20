@@ -12,12 +12,12 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.views.markers;
+package org.fdesigner.ide.internal.views.markers;
 
-import org.eclipse.core.resources.IMarkerDelta;
-import org.eclipse.core.runtime.IPath;
-import org.eclipse.ui.views.markers.MarkerViewUtil;
-import org.eclipse.ui.views.markers.internal.MarkerTypesModel;
+import org.fdesigner.ide.views.markers.MarkerViewUtil;
+import org.fdesigner.ide.views.markers.internal.MarkerTypesModel;
+import org.fdesigner.resources.IMarkerDelta;
+import org.fdesigner.runtime.common.runtime.IPath;
 
 import com.ibm.icu.text.CollationKey;
 

@@ -13,7 +13,7 @@
  *     Mickael Istria (Red Hat Inc.) - Bug 486901
  ******************************************************************************/
 
-package org.eclipse.ui.internal.views.markers;
+package org.fdesigner.ide.internal.views.markers;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -27,14 +27,14 @@ import java.util.Map.Entry;
 import java.util.Objects;
 import java.util.TreeMap;
 
-import org.eclipse.core.resources.IMarker;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.eclipse.ui.views.markers.MarkerItem;
-import org.eclipse.ui.views.markers.internal.MarkerGroup;
-import org.eclipse.ui.views.markers.internal.MarkerGroupingEntry;
-import org.eclipse.ui.views.markers.internal.MarkerMessages;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.views.markers.MarkerItem;
+import org.fdesigner.ide.views.markers.internal.MarkerGroup;
+import org.fdesigner.ide.views.markers.internal.MarkerGroupingEntry;
+import org.fdesigner.ide.views.markers.internal.MarkerMessages;
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
 
 /**
  * The Markers object contains the MarkerEntry(s) collected and updated by the

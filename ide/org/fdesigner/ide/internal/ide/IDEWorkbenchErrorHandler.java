@@ -13,29 +13,29 @@
  *     Patrik Suzzi <psuzzi@gmail.com> - Bug 489250
  *******************************************************************************/
 
-package org.eclipse.ui.internal.ide;
+package org.fdesigner.ide.internal.ide;
 
 import java.util.Collections;
 import java.util.Map;
 import java.util.WeakHashMap;
 
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.jface.dialogs.IDialogConstants;
-import org.eclipse.jface.dialogs.MessageDialog;
-import org.eclipse.osgi.util.NLS;
 import org.eclipse.swt.SWTError;
 import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.application.IWorkbenchConfigurer;
-import org.eclipse.ui.internal.ide.dialogs.InternalErrorDialog;
-import org.eclipse.ui.progress.IProgressConstants;
-import org.eclipse.ui.progress.UIJob;
-import org.eclipse.ui.statushandlers.StatusAdapter;
-import org.eclipse.ui.statushandlers.StatusManager;
-import org.eclipse.ui.statushandlers.WorkbenchErrorHandler;
+import org.fdesigner.ide.internal.ide.dialogs.InternalErrorDialog;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.ui.jface.dialogs.IDialogConstants;
+import org.fdesigner.ui.jface.dialogs.MessageDialog;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.application.IWorkbenchConfigurer;
+import org.fdesigner.workbench.progress.IProgressConstants;
+import org.fdesigner.workbench.progress.UIJob;
+import org.fdesigner.workbench.statushandlers.StatusAdapter;
+import org.fdesigner.workbench.statushandlers.StatusManager;
+import org.fdesigner.workbench.statushandlers.WorkbenchErrorHandler;
 
 import com.ibm.icu.text.MessageFormat;
 

@@ -11,9 +11,9 @@
  * Contributors:
  * IBM - Initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.views.bookmarkexplorer;
+package org.fdesigner.ide.internal.views.bookmarkexplorer;
 
-import org.eclipse.osgi.util.NLS;
+import org.fdesigner.supplement.util.NLS;
 
 public class BookmarkMessages extends NLS {
 	private static final String BUNDLE_NAME = "org.eclipse.ui.internal.views.bookmarkexplorer.messages";//$NON-NLS-1$

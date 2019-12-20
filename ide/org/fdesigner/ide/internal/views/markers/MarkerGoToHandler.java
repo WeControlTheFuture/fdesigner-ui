@@ -1,4 +1,4 @@
-package org.eclipse.ui.internal.views.markers;
+package org.fdesigner.ide.internal.views.markers;
 /*******************************************************************************
  * Copyright (c) 2007, 2015 IBM Corporation and others.
  *
@@ -13,8 +13,8 @@ package org.eclipse.ui.internal.views.markers;
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-import org.eclipse.core.commands.ExecutionEvent;
-import org.eclipse.ui.views.markers.MarkerViewHandler;
+import org.fdesigner.commands.ExecutionEvent;
+import org.fdesigner.ide.views.markers.MarkerViewHandler;
 
 /**
  * MarkerGoToHandler is the handler for the go to action.

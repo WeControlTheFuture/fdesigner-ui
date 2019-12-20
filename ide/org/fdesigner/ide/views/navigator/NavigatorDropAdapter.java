@@ -12,44 +12,44 @@
  *     IBM Corporation - initial API and implementation
  *     Patrik Suzzi <psuzzi@gmail.com> - Bug 490700
  *******************************************************************************/
-package org.eclipse.ui.views.navigator;
+package org.fdesigner.ide.views.navigator;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 
-import org.eclipse.core.resources.IContainer;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.runtime.Adapters;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.MultiStatus;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.jface.dialogs.ErrorDialog;
-import org.eclipse.jface.dialogs.IDialogConstants;
-import org.eclipse.jface.dialogs.MessageDialog;
-import org.eclipse.jface.preference.IPreferenceStore;
-import org.eclipse.jface.viewers.ISelection;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.jface.viewers.StructuredViewer;
-import org.eclipse.jface.window.Window;
-import org.eclipse.osgi.util.NLS;
 import org.eclipse.swt.dnd.DND;
 import org.eclipse.swt.dnd.DropTargetEvent;
 import org.eclipse.swt.dnd.FileTransfer;
 import org.eclipse.swt.dnd.TransferData;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.actions.CopyFilesAndFoldersOperation;
-import org.eclipse.ui.actions.MoveFilesAndFoldersOperation;
-import org.eclipse.ui.actions.ReadOnlyStateChecker;
-import org.eclipse.ui.dialogs.IOverwriteQuery;
-import org.eclipse.ui.ide.dialogs.ImportTypeDialog;
-import org.eclipse.ui.internal.ide.IDEInternalPreferences;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.eclipse.ui.internal.views.navigator.ResourceNavigatorMessages;
-import org.eclipse.ui.part.PluginDropAdapter;
-import org.eclipse.ui.part.ResourceTransfer;
+import org.fdesigner.ide.dialogs.ImportTypeDialog;
+import org.fdesigner.ide.extensions.actions.CopyFilesAndFoldersOperation;
+import org.fdesigner.ide.extensions.actions.MoveFilesAndFoldersOperation;
+import org.fdesigner.ide.extensions.actions.ReadOnlyStateChecker;
+import org.fdesigner.ide.extensions.part.ResourceTransfer;
+import org.fdesigner.ide.internal.ide.IDEInternalPreferences;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.resources.IContainer;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.runtime.common.runtime.Adapters;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.MultiStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.ui.jface.dialogs.ErrorDialog;
+import org.fdesigner.ui.jface.dialogs.IDialogConstants;
+import org.fdesigner.ui.jface.dialogs.MessageDialog;
+import org.fdesigner.ui.jface.preference.IPreferenceStore;
+import org.fdesigner.ui.jface.viewers.ISelection;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.ui.jface.viewers.StructuredViewer;
+import org.fdesigner.ui.jface.window.Window;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.dialogs.IOverwriteQuery;
+import org.fdesigner.workbench.part.PluginDropAdapter;
 
+import org.fdesigner.ide.internal.views.navigator.ResourceNavigatorMessages;
 /**
  * Implements drop behaviour for drag and drop operations that land on the
  * resource navigator.

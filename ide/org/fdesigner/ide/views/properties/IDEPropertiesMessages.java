@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.views.properties;
+package org.fdesigner.ide.views.properties;
 
 
 /**

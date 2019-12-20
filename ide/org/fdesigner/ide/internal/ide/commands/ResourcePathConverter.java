@@ -12,14 +12,14 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.internal.ide.commands;
+package org.fdesigner.ide.internal.ide.commands;
 
-import org.eclipse.core.commands.AbstractParameterValueConverter;
-import org.eclipse.core.commands.ParameterValueConversionException;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.IWorkspaceRoot;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.runtime.Path;
+import org.fdesigner.commands.AbstractParameterValueConverter;
+import org.fdesigner.commands.ParameterValueConversionException;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IWorkspaceRoot;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.runtime.common.runtime.Path;
 
 /**
  * A command parameter value converter to convert between IResources and strings

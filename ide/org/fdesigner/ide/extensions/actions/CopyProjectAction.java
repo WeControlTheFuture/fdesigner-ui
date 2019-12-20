@@ -11,37 +11,37 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.actions;
+package org.fdesigner.ide.extensions.actions;
 
 import java.lang.reflect.InvocationTargetException;
 import java.net.URI;
 import java.util.List;
 
-import org.eclipse.core.commands.ExecutionException;
-import org.eclipse.core.filesystem.URIUtil;
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.resources.IProjectDescription;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IPath;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.jface.dialogs.ErrorDialog;
-import org.eclipse.jface.dialogs.MessageDialog;
-import org.eclipse.jface.operation.IRunnableWithProgress;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.jface.window.IShellProvider;
-import org.eclipse.osgi.util.NLS;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.dialogs.ProjectLocationSelectionDialog;
-import org.eclipse.ui.ide.undo.WorkspaceUndoUtil;
-import org.eclipse.ui.internal.WorkbenchPlugin;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.eclipse.ui.internal.ide.IIDEHelpContextIds;
-import org.eclipse.ui.internal.progress.ProgressMonitorJobsDialog;
+import org.fdesigner.commands.ExecutionException;
+import org.fdesigner.filesystem.URIUtil;
+import org.fdesigner.ide.extensions.dialogs.ProjectLocationSelectionDialog;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.internal.ide.IIDEHelpContextIds;
+import org.fdesigner.ide.undo.WorkspaceUndoUtil;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IProjectDescription;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.ui.jface.dialogs.ErrorDialog;
+import org.fdesigner.ui.jface.dialogs.MessageDialog;
+import org.fdesigner.ui.jface.operation.IRunnableWithProgress;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.ui.jface.window.IShellProvider;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
+import org.fdesigner.workbench.internal.progress.ProgressMonitorJobsDialog;
 
 /**
  * The CopyProjectAction is the action designed to copy projects specifically as
@@ -207,7 +207,7 @@ public class CopyProjectAction extends SelectionListenerAction {
 	 *
 	 * @return AbstractUIPlugin
 	 */
-	protected org.eclipse.ui.plugin.AbstractUIPlugin getPlugin() {
+	protected org.fdesigner.workbench.plugin.AbstractUIPlugin getPlugin() {
 		return WorkbenchPlugin.getDefault();
 	}
 
@@ -226,7 +226,7 @@ public class CopyProjectAction extends SelectionListenerAction {
 	boolean performCopy(final IProject project, final String projectName,
 			final URI newLocation) {
 		IRunnableWithProgress op = monitor -> {
-			org.eclipse.ui.ide.undo.CopyProjectOperation op1 = new org.eclipse.ui.ide.undo.CopyProjectOperation(
+			org.fdesigner.ide.undo.CopyProjectOperation op1 = new org.fdesigner.ide.undo.CopyProjectOperation(
 					project, projectName, newLocation, getText());
 			op1.setModelProviderIds(getModelProviderIds());
 			try {

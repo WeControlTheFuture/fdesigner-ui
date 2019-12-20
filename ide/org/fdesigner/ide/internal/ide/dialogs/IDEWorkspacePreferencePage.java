@@ -18,33 +18,12 @@
 *     Mickael Istria (Red Hat Inc.) - Bug 486901
 *     Patrik Suzzi <psuzzi@gmail.com> - Bug 502050
 *******************************************************************************/
-package org.eclipse.ui.internal.ide.dialogs;
+package org.fdesigner.ide.internal.ide.dialogs;
 
 import java.util.Collections;
 import java.util.List;
 import java.util.stream.Stream;
 
-import org.eclipse.core.resources.IMarker;
-import org.eclipse.core.resources.IWorkspaceDescription;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.core.runtime.Preferences;
-import org.eclipse.core.runtime.preferences.InstanceScope;
-import org.eclipse.e4.core.contexts.IEclipseContext;
-import org.eclipse.e4.ui.internal.workbench.E4Workbench;
-import org.eclipse.jface.action.Action;
-import org.eclipse.jface.layout.GridDataFactory;
-import org.eclipse.jface.layout.GridLayoutFactory;
-import org.eclipse.jface.preference.ComboFieldEditor;
-import org.eclipse.jface.preference.FieldEditor;
-import org.eclipse.jface.preference.IPreferenceStore;
-import org.eclipse.jface.preference.IntegerFieldEditor;
-import org.eclipse.jface.preference.PreferencePage;
-import org.eclipse.jface.preference.StringFieldEditor;
-import org.eclipse.jface.util.BidiUtils;
-import org.eclipse.osgi.util.NLS;
-import org.eclipse.osgi.util.TextProcessor;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.layout.GridLayout;
@@ -54,20 +33,41 @@ import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Group;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Text;
-import org.eclipse.ui.IWorkbenchPreferencePage;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.WorkbenchEncoding;
-import org.eclipse.ui.dialogs.PreferenceLinkArea;
-import org.eclipse.ui.ide.IDEEncoding;
-import org.eclipse.ui.ide.dialogs.ResourceEncodingFieldEditor;
-import org.eclipse.ui.internal.ide.IDEInternalPreferences;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.eclipse.ui.internal.ide.IIDEHelpContextIds;
-import org.eclipse.ui.internal.ide.LineDelimiterEditor;
-import org.eclipse.ui.preferences.IWorkbenchPreferenceContainer;
-import org.eclipse.ui.preferences.ScopedPreferenceStore;
-import org.eclipse.ui.views.markers.internal.MarkerMessages;
+import org.fdesigner.container.util.TextProcessor;
+import org.fdesigner.e4.core.contexts.IEclipseContext;
+import org.fdesigner.e4.ui.workbench.internal.workbench.E4Workbench;
+import org.fdesigner.ide.IDEEncoding;
+import org.fdesigner.ide.dialogs.ResourceEncodingFieldEditor;
+import org.fdesigner.ide.internal.ide.IDEInternalPreferences;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.internal.ide.IIDEHelpContextIds;
+import org.fdesigner.ide.internal.ide.LineDelimiterEditor;
+import org.fdesigner.ide.views.markers.internal.MarkerMessages;
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.resources.IWorkspaceDescription;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.runtime.core.Preferences;
+import org.fdesigner.runtime.preferences.runtime.preferences.InstanceScope;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.ui.jface.action.Action;
+import org.fdesigner.ui.jface.layout.GridDataFactory;
+import org.fdesigner.ui.jface.layout.GridLayoutFactory;
+import org.fdesigner.ui.jface.preference.ComboFieldEditor;
+import org.fdesigner.ui.jface.preference.FieldEditor;
+import org.fdesigner.ui.jface.preference.IPreferenceStore;
+import org.fdesigner.ui.jface.preference.IntegerFieldEditor;
+import org.fdesigner.ui.jface.preference.PreferencePage;
+import org.fdesigner.ui.jface.preference.StringFieldEditor;
+import org.fdesigner.ui.jface.util.BidiUtils;
+import org.fdesigner.workbench.IWorkbenchPreferencePage;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.WorkbenchEncoding;
+import org.fdesigner.workbench.dialogs.PreferenceLinkArea;
+import org.fdesigner.workbench.preferences.IWorkbenchPreferenceContainer;
+import org.fdesigner.workbench.preferences.ScopedPreferenceStore;
 
 /**
  * The IDEWorkspacePreferencePage is the page used to set IDE-specific preferences settings
@@ -497,7 +497,7 @@ public class IDEWorkspacePreferencePage extends PreferencePage implements IWorkb
 	}
 
 	@Override
-	public void init(org.eclipse.ui.IWorkbench workbench) {
+	public void init(org.fdesigner.workbench.IWorkbench workbench) {
 		e4Context = workbench.getService(IEclipseContext.class);
 		showLocationIsSetOnCommandLine = e4Context.containsKey(E4Workbench.FORCED_SHOW_LOCATION);
 	}

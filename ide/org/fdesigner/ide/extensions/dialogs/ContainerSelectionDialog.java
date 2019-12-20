@@ -14,13 +14,11 @@
  *     font should be activated and used by other components.
  *******************************************************************************/
 
-package org.eclipse.ui.dialogs;
+package org.fdesigner.ide.extensions.dialogs;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import org.eclipse.core.resources.IContainer;
-import org.eclipse.core.runtime.IPath;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.widgets.Composite;
@@ -28,10 +26,14 @@ import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Listener;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
-import org.eclipse.ui.internal.ide.IIDEHelpContextIds;
-import org.eclipse.ui.internal.ide.misc.ContainerSelectionGroup;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.IIDEHelpContextIds;
+import org.fdesigner.ide.internal.ide.misc.ContainerSelectionGroup;
+import org.fdesigner.resources.IContainer;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.dialogs.ISelectionValidator;
+import org.fdesigner.workbench.dialogs.SelectionDialog;
 
 /**
  * A standard selection dialog which solicits a container resource from the

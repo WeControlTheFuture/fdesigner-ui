@@ -11,9 +11,9 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.views.markers.internal;
+package org.fdesigner.ide.views.markers.internal;
 
-import org.eclipse.core.resources.IMarker;
+import org.fdesigner.resources.IMarker;
 
 /**
  *

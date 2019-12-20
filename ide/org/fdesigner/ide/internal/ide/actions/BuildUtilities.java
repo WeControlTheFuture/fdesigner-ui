@@ -11,32 +11,32 @@
  * Contributors:
  * IBM - Initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.actions;
+package org.fdesigner.ide.internal.ide.actions;
 
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashSet;
 
-import org.eclipse.core.resources.ICommand;
-import org.eclipse.core.resources.IFile;
-import org.eclipse.core.resources.IMarker;
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.resources.IProjectDescription;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.IncrementalProjectBuilder;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.resources.mapping.ResourceMapping;
-import org.eclipse.core.runtime.Adapters;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.jface.viewers.ISelection;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.ui.IEditorPart;
-import org.eclipse.ui.IWorkbenchPage;
-import org.eclipse.ui.IWorkbenchPart;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.actions.BuildAction;
-import org.eclipse.ui.ide.ResourceUtil;
+import org.fdesigner.ide.ResourceUtil;
+import org.fdesigner.ide.extensions.actions.BuildAction;
+import org.fdesigner.resources.ICommand;
+import org.fdesigner.resources.IFile;
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IProjectDescription;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IncrementalProjectBuilder;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.resources.mapping.ResourceMapping;
+import org.fdesigner.runtime.common.runtime.Adapters;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.ui.jface.viewers.ISelection;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.workbench.IEditorPart;
+import org.fdesigner.workbench.IWorkbenchPage;
+import org.fdesigner.workbench.IWorkbenchPart;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.PlatformUI;
 
 /**
  * This class contains convenience methods used by the various build commands

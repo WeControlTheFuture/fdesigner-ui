@@ -11,12 +11,12 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.views.framelist;
+package org.fdesigner.ide.views.framelist;
 
-import org.eclipse.jface.util.PropertyChangeEvent;
-import org.eclipse.jface.viewers.AbstractTreeViewer;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.jface.viewers.ITreeContentProvider;
+import org.fdesigner.ui.jface.util.PropertyChangeEvent;
+import org.fdesigner.ui.jface.viewers.AbstractTreeViewer;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.ui.jface.viewers.ITreeContentProvider;
 
 /**
  * Frame source for tree viewers, which uses <code>TreeFrame</code> to capture

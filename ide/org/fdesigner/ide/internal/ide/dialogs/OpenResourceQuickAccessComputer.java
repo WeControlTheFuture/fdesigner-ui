@@ -8,26 +8,26 @@
  *
  * SPDX-License-Identifier: EPL-2.0
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.dialogs;
+package org.fdesigner.ide.internal.ide.dialogs;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import org.eclipse.core.resources.IFile;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.ui.PartInitException;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.dialogs.SearchPattern;
-import org.eclipse.ui.ide.IDE;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.eclipse.ui.model.WorkbenchLabelProvider;
-import org.eclipse.ui.quickaccess.IQuickAccessComputer;
-import org.eclipse.ui.quickaccess.IQuickAccessComputerExtension;
-import org.eclipse.ui.quickaccess.QuickAccessElement;
+import org.fdesigner.ide.IDE;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.resources.IFile;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.workbench.PartInitException;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.dialogs.SearchPattern;
+import org.fdesigner.workbench.model.WorkbenchLabelProvider;
+import org.fdesigner.workbench.quickaccess.IQuickAccessComputer;
+import org.fdesigner.workbench.quickaccess.IQuickAccessComputerExtension;
+import org.fdesigner.workbench.quickaccess.QuickAccessElement;
 
 /**
  * @since 3.16.100

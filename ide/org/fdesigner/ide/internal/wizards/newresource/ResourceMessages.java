@@ -11,9 +11,9 @@
  * Contributors:
  * IBM - Initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.wizards.newresource;
+package org.fdesigner.ide.internal.wizards.newresource;
 
-import org.eclipse.osgi.util.NLS;
+import org.fdesigner.supplement.util.NLS;
 
 public class ResourceMessages extends NLS {
 	private static final String BUNDLE_NAME = "org.eclipse.ui.internal.wizards.newresource.messages";//$NON-NLS-1$

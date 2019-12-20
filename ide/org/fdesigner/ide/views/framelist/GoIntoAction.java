@@ -11,10 +11,10 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.views.framelist;
+package org.fdesigner.ide.views.framelist;
 
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.views.framelist.FrameListMessages;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.ide.internal.views.framelist.FrameListMessages;
 
 /**
  * Generic "Go Into" action which goes to the frame for the current selection.

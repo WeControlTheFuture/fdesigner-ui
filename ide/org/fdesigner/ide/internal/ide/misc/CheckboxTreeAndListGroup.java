@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.misc;
+package org.fdesigner.ide.internal.ide.misc;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -22,23 +22,6 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 
-import org.eclipse.core.commands.common.EventManager;
-import org.eclipse.core.runtime.SafeRunner;
-import org.eclipse.jface.util.SafeRunnable;
-import org.eclipse.jface.viewers.CheckStateChangedEvent;
-import org.eclipse.jface.viewers.CheckboxTableViewer;
-import org.eclipse.jface.viewers.CheckboxTreeViewer;
-import org.eclipse.jface.viewers.ICheckStateListener;
-import org.eclipse.jface.viewers.ILabelProvider;
-import org.eclipse.jface.viewers.ISelectionChangedListener;
-import org.eclipse.jface.viewers.IStructuredContentProvider;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.jface.viewers.ITreeContentProvider;
-import org.eclipse.jface.viewers.ITreeViewerListener;
-import org.eclipse.jface.viewers.SelectionChangedEvent;
-import org.eclipse.jface.viewers.StructuredSelection;
-import org.eclipse.jface.viewers.TreeExpansionEvent;
-import org.eclipse.jface.viewers.ViewerComparator;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.custom.BusyIndicator;
 import org.eclipse.swt.layout.GridData;
@@ -46,6 +29,23 @@ import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Table;
 import org.eclipse.swt.widgets.Tree;
+import org.fdesigner.commands.common.EventManager;
+import org.fdesigner.runtime.common.runtime.SafeRunner;
+import org.fdesigner.ui.jface.util.SafeRunnable;
+import org.fdesigner.ui.jface.viewers.CheckStateChangedEvent;
+import org.fdesigner.ui.jface.viewers.CheckboxTableViewer;
+import org.fdesigner.ui.jface.viewers.CheckboxTreeViewer;
+import org.fdesigner.ui.jface.viewers.ICheckStateListener;
+import org.fdesigner.ui.jface.viewers.ILabelProvider;
+import org.fdesigner.ui.jface.viewers.ISelectionChangedListener;
+import org.fdesigner.ui.jface.viewers.IStructuredContentProvider;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.ui.jface.viewers.ITreeContentProvider;
+import org.fdesigner.ui.jface.viewers.ITreeViewerListener;
+import org.fdesigner.ui.jface.viewers.SelectionChangedEvent;
+import org.fdesigner.ui.jface.viewers.StructuredSelection;
+import org.fdesigner.ui.jface.viewers.TreeExpansionEvent;
+import org.fdesigner.ui.jface.viewers.ViewerComparator;
 
 /**
  *	Workbench-level composite that combines a CheckboxTreeViewer and CheckboxListViewer.

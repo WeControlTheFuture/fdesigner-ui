@@ -14,42 +14,42 @@
  *     Alexander Fedorov <alexander.fedorov@arsysop.ru> - Bug 548799
  *******************************************************************************/
 
-package org.eclipse.ui.internal.ide;
+package org.fdesigner.ide.internal.ide;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import org.eclipse.core.resources.IWorkspace;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IBundleGroup;
-import org.eclipse.core.runtime.IBundleGroupProvider;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.core.runtime.jobs.Job;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.jface.resource.JFaceResources;
-import org.eclipse.jface.resource.LocalResourceManager;
-import org.eclipse.jface.resource.ResourceLocator;
-import org.eclipse.jface.resource.ResourceManager;
 import org.eclipse.swt.custom.BusyIndicator;
 import org.eclipse.swt.widgets.Display;
-import org.eclipse.ui.IPageLayout;
-import org.eclipse.ui.IViewReference;
-import org.eclipse.ui.IWorkbench;
-import org.eclipse.ui.IWorkbenchPage;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.PartInitException;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.ide.registry.MarkerImageProviderRegistry;
-import org.eclipse.ui.internal.ide.registry.ProjectImageRegistry;
-import org.eclipse.ui.internal.ide.registry.UnassociatedEditorStrategyRegistry;
-import org.eclipse.ui.plugin.AbstractUIPlugin;
-import org.osgi.framework.Bundle;
-import org.osgi.framework.BundleContext;
+import org.fdesigner.e4.ui.workbench.IWorkbench;
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.framework.framework.BundleContext;
+import org.fdesigner.ide.internal.ide.registry.MarkerImageProviderRegistry;
+import org.fdesigner.ide.internal.ide.registry.ProjectImageRegistry;
+import org.fdesigner.ide.internal.ide.registry.UnassociatedEditorStrategyRegistry;
+import org.fdesigner.resources.IWorkspace;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IBundleGroup;
+import org.fdesigner.runtime.common.runtime.IBundleGroupProvider;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.runtime.jobs.runtime.jobs.Job;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.ui.jface.resource.JFaceResources;
+import org.fdesigner.ui.jface.resource.LocalResourceManager;
+import org.fdesigner.ui.jface.resource.ResourceLocator;
+import org.fdesigner.ui.jface.resource.ResourceManager;
+import org.fdesigner.workbench.IPageLayout;
+import org.fdesigner.workbench.IViewReference;
+import org.fdesigner.workbench.IWorkbenchPage;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.PartInitException;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.plugin.AbstractUIPlugin;
 
 import com.ibm.icu.text.MessageFormat;
 

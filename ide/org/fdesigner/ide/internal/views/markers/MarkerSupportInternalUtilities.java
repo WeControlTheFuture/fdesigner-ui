@@ -13,40 +13,40 @@
  *     Lars Vogel <Lars.Vogel@gmail.com> - Bug 430694
  ******************************************************************************/
 
-package org.eclipse.ui.internal.views.markers;
+package org.fdesigner.ide.internal.views.markers;
 
 import java.net.URL;
 
-import org.eclipse.core.resources.IMarker;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.jface.resource.JFaceResources;
-import org.eclipse.jface.resource.ResourceManager;
-import org.eclipse.jface.viewers.StructuredSelection;
 import org.eclipse.swt.graphics.GC;
 import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.widgets.Control;
-import org.eclipse.ui.IViewPart;
-import org.eclipse.ui.internal.ide.IDEInternalPreferences;
-import org.eclipse.ui.internal.ide.IDEInternalWorkbenchImages;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.eclipse.ui.internal.ide.Policy;
-import org.eclipse.ui.internal.ide.StatusUtil;
-import org.eclipse.ui.internal.util.BundleUtility;
-import org.eclipse.ui.statushandlers.StatusAdapter;
-import org.eclipse.ui.statushandlers.StatusManager;
-import org.eclipse.ui.views.markers.FilterConfigurationArea;
-import org.eclipse.ui.views.markers.MarkerField;
-import org.eclipse.ui.views.markers.MarkerFieldFilter;
-import org.eclipse.ui.views.markers.MarkerItem;
-import org.eclipse.ui.views.markers.internal.MarkerGroup;
-import org.eclipse.ui.views.markers.internal.MarkerGroupingEntry;
-import org.eclipse.ui.views.markers.internal.MarkerMessages;
+import org.fdesigner.ide.internal.ide.IDEInternalPreferences;
+import org.fdesigner.ide.internal.ide.IDEInternalWorkbenchImages;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.internal.ide.Policy;
+import org.fdesigner.ide.internal.ide.StatusUtil;
+import org.fdesigner.ide.views.markers.FilterConfigurationArea;
+import org.fdesigner.ide.views.markers.MarkerField;
+import org.fdesigner.ide.views.markers.MarkerFieldFilter;
+import org.fdesigner.ide.views.markers.MarkerItem;
+import org.fdesigner.ide.views.markers.internal.MarkerGroup;
+import org.fdesigner.ide.views.markers.internal.MarkerGroupingEntry;
+import org.fdesigner.ide.views.markers.internal.MarkerMessages;
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.ui.jface.resource.JFaceResources;
+import org.fdesigner.ui.jface.resource.ResourceManager;
+import org.fdesigner.ui.jface.viewers.StructuredSelection;
+import org.fdesigner.workbench.IViewPart;
+import org.fdesigner.workbench.internal.util.BundleUtility;
+import org.fdesigner.workbench.statushandlers.StatusAdapter;
+import org.fdesigner.workbench.statushandlers.StatusManager;
 
 import com.ibm.icu.text.CollationKey;
 import com.ibm.icu.text.Collator;

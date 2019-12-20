@@ -11,12 +11,12 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.views.navigator;
+package org.fdesigner.ide.views.navigator;
 
-import org.eclipse.jface.viewers.TreeViewer;
-import org.eclipse.ui.IViewPart;
-import org.eclipse.ui.IWorkingSet;
-import org.eclipse.ui.views.framelist.FrameList;
+import org.fdesigner.ide.views.framelist.FrameList;
+import org.fdesigner.ui.jface.viewers.TreeViewer;
+import org.fdesigner.workbench.IViewPart;
+import org.fdesigner.workbench.IWorkingSet;
 
 /**
  * This interface defines the API for the resource navigator. The action groups

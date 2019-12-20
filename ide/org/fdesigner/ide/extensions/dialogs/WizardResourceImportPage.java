@@ -14,27 +14,12 @@
  *     		Bug 183013 [Wizards] Error importing into linked EFS folder - "undefined path variable"
  *     Marc-Andre Laperle (Ericsson) - Bug 279902 - [Import/Export] WizardResourceImportPage.createDestinationGroup is final
  *******************************************************************************/
-package org.eclipse.ui.dialogs;
+package org.fdesigner.ide.extensions.dialogs;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Map;
 
-import org.eclipse.core.resources.IContainer;
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.IWorkspace;
-import org.eclipse.core.resources.IWorkspaceRoot;
-import org.eclipse.core.runtime.Adapters;
-import org.eclipse.core.runtime.IPath;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Path;
-import org.eclipse.equinox.bidi.StructuredTextTypeHandlerFactory;
-import org.eclipse.jface.util.BidiUtils;
-import org.eclipse.jface.viewers.ICheckStateListener;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.jface.viewers.ITreeContentProvider;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.custom.BusyIndicator;
 import org.eclipse.swt.layout.GridData;
@@ -45,13 +30,30 @@ import org.eclipse.swt.widgets.Event;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Text;
 import org.eclipse.swt.widgets.Widget;
-import org.eclipse.ui.ide.dialogs.IElementFilter;
-import org.eclipse.ui.ide.dialogs.ResourceTreeAndListGroup;
-import org.eclipse.ui.internal.ide.DialogUtil;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.eclipse.ui.model.WorkbenchLabelProvider;
-import org.eclipse.ui.model.WorkbenchViewerComparator;
+import org.fdesigner.bidi.StructuredTextTypeHandlerFactory;
+import org.fdesigner.ide.dialogs.IElementFilter;
+import org.fdesigner.ide.dialogs.ResourceTreeAndListGroup;
+import org.fdesigner.ide.internal.ide.DialogUtil;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.resources.IContainer;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IWorkspace;
+import org.fdesigner.resources.IWorkspaceRoot;
+import org.fdesigner.runtime.common.runtime.Adapters;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Path;
+import org.fdesigner.ui.jface.util.BidiUtils;
+import org.fdesigner.ui.jface.viewers.ICheckStateListener;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.ui.jface.viewers.ITreeContentProvider;
+import org.fdesigner.workbench.dialogs.FileSystemElement;
+import org.fdesigner.workbench.dialogs.TypeFilteringDialog;
+import org.fdesigner.workbench.model.WorkbenchLabelProvider;
+import org.fdesigner.workbench.model.WorkbenchViewerComparator;
 
 /**
  * The abstract superclass for a typical import wizard's main page.
@@ -335,7 +337,7 @@ public abstract class WizardResourceImportPage extends WizardDataTransferPage {
 	 * @deprecated Should use the API {@link IElementFilter}
 	 */
 	@Deprecated
-	protected void getSelectedResources(org.eclipse.ui.internal.ide.dialogs.IElementFilter filter,
+	protected void getSelectedResources(org.fdesigner.ide.internal.ide.dialogs.IElementFilter filter,
 			IProgressMonitor monitor) throws InterruptedException {
 		this.selectionGroup.getAllCheckedListItems(filter, monitor);
 	}

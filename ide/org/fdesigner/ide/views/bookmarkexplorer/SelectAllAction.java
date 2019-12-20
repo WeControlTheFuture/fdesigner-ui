@@ -12,14 +12,13 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.views.bookmarkexplorer;
+package org.fdesigner.ide.views.bookmarkexplorer;
 
-import org.eclipse.jface.viewers.Viewer;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Table;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.views.bookmarkexplorer.BookmarkMessages;
-
+import org.fdesigner.ui.jface.viewers.Viewer;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.ide.internal.views.bookmarkexplorer.BookmarkMessages;
 /**
  * Action to select all bookmarks.
  *

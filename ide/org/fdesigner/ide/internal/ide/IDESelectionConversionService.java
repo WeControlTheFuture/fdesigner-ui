@@ -12,24 +12,24 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.ide;
+package org.fdesigner.ide.internal.ide;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.mapping.ResourceMapping;
-import org.eclipse.core.resources.mapping.ResourceMappingContext;
-import org.eclipse.core.resources.mapping.ResourceTraversal;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.NullProgressMonitor;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.jface.viewers.StructuredSelection;
-import org.eclipse.ui.ide.ResourceUtil;
-import org.eclipse.ui.internal.ISelectionConversionService;
-import org.eclipse.ui.statushandlers.StatusManager;
+import org.fdesigner.ide.ResourceUtil;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.mapping.ResourceMapping;
+import org.fdesigner.resources.mapping.ResourceMappingContext;
+import org.fdesigner.resources.mapping.ResourceTraversal;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.NullProgressMonitor;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.ui.jface.viewers.StructuredSelection;
+import org.fdesigner.workbench.internal.ISelectionConversionService;
+import org.fdesigner.workbench.statushandlers.StatusManager;
 
 /**
  * The IDESelectionConversionService is the selection service that uses the

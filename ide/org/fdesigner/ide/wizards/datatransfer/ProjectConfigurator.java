@@ -12,18 +12,18 @@
  *     Mickael Istria (Red Hat Inc.) - initial API and implementation
  *     Markus Keller (IBM Corp.) - Cleanup and documentation
  ******************************************************************************/
-package org.eclipse.ui.wizards.datatransfer;
+package org.fdesigner.ide.wizards.datatransfer;
 
 import java.io.File;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import org.eclipse.core.resources.IContainer;
-import org.eclipse.core.resources.IFolder;
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.runtime.IPath;
-import org.eclipse.core.runtime.IProgressMonitor;
+import org.fdesigner.resources.IContainer;
+import org.fdesigner.resources.IFolder;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
 
 /**
  * This interface contains a set of methods that allow to configure an existing

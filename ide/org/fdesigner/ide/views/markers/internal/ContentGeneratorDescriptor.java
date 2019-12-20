@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.views.markers.internal;
+package org.fdesigner.ide.views.markers.internal;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -23,10 +23,10 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.TreeSet;
 
-import org.eclipse.core.resources.IMarker;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.ui.internal.views.markers.MarkerSupportInternalUtilities;
-import org.eclipse.ui.views.markers.MarkerField;
+import org.fdesigner.ide.internal.views.markers.MarkerSupportInternalUtilities;
+import org.fdesigner.ide.views.markers.MarkerField;
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
 
 /**
  * ContentGeneratorDescriptor is the direct representation of the markerContentGenerator

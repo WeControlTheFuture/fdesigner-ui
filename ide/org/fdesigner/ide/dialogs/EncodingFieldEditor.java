@@ -11,12 +11,11 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.ide.dialogs;
+package org.fdesigner.ide.dialogs;
 
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Group;
-
-import org.eclipse.ui.ide.IDEEncoding;
+import org.fdesigner.ide.IDEEncoding;
 
 /**
  * The EncodingFieldEditor is a field editor that allows the

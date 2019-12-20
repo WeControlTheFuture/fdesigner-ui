@@ -13,20 +13,20 @@
  *     Mickael Istria (Red Hat Inc.) - Bug 486901
  *******************************************************************************/
 
-package org.eclipse.ui.views.markers.internal;
+package org.fdesigner.ide.views.markers.internal;
 
-import org.eclipse.core.resources.IMarker;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.jface.dialogs.IDialogSettings;
-import org.eclipse.ui.IMemento;
-import org.eclipse.ui.IPluginContribution;
-import org.eclipse.ui.IWorkbenchPage;
-import org.eclipse.ui.IWorkbenchPreferenceConstants;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.activities.IIdentifier;
-import org.eclipse.ui.activities.WorkbenchActivityHelper;
-import org.eclipse.ui.internal.views.markers.MarkerSupportInternalUtilities;
+import org.fdesigner.ide.internal.views.markers.MarkerSupportInternalUtilities;
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.ui.jface.dialogs.IDialogSettings;
+import org.fdesigner.workbench.IMemento;
+import org.fdesigner.workbench.IPluginContribution;
+import org.fdesigner.workbench.IWorkbenchPage;
+import org.fdesigner.workbench.IWorkbenchPreferenceConstants;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.activities.IIdentifier;
+import org.fdesigner.workbench.activities.WorkbenchActivityHelper;
 
 /**
  * ProblemFilters are the filters used in the problems view.

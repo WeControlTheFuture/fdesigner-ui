@@ -13,9 +13,9 @@
  *******************************************************************************/
 package org.fdesigner.ide;
 
-import org.eclipse.core.resources.mapping.ResourceMapping;
-import org.eclipse.core.runtime.IAdaptable;
-import org.eclipse.ui.IContributorResourceAdapter;
+import org.fdesigner.ide.extensions.IContributorResourceAdapter;
+import org.fdesigner.resources.mapping.ResourceMapping;
+import org.fdesigner.runtime.common.runtime.IAdaptable;
 
 /**
  * An extension to the <code>IContributorResourceAdapter</code> that adapts

@@ -12,33 +12,33 @@
  *     IBM Corporation - initial API and implementation
  ******************************************************************************/
 
-package org.eclipse.ui.views.markers;
+package org.fdesigner.ide.views.markers;
 
 import java.net.URL;
 
-import org.eclipse.core.resources.IMarker;
-import org.eclipse.core.runtime.IConfigurationElement;
-import org.eclipse.core.runtime.Platform;
 import org.eclipse.help.HelpSystem;
-import org.eclipse.jface.dialogs.Dialog;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.jface.resource.JFaceResources;
-import org.eclipse.jface.resource.ResourceManager;
-import org.eclipse.jface.viewers.ColumnViewer;
-import org.eclipse.jface.viewers.DecorationOverlayIcon;
-import org.eclipse.jface.viewers.EditingSupport;
-import org.eclipse.jface.viewers.IDecoration;
-import org.eclipse.jface.viewers.ViewerCell;
 import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.widgets.Control;
-import org.eclipse.ui.ISharedImages;
-import org.eclipse.ui.ide.IDE;
-import org.eclipse.ui.internal.WorkbenchPlugin;
-import org.eclipse.ui.internal.ide.IDEInternalPreferences;
-import org.eclipse.ui.internal.ide.IDEInternalWorkbenchImages;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.eclipse.ui.internal.util.BundleUtility;
-import org.eclipse.ui.internal.views.markers.MarkerSupportInternalUtilities;
+import org.fdesigner.ide.IDE;
+import org.fdesigner.ide.internal.ide.IDEInternalPreferences;
+import org.fdesigner.ide.internal.ide.IDEInternalWorkbenchImages;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.internal.views.markers.MarkerSupportInternalUtilities;
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.ui.jface.dialogs.Dialog;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.ui.jface.resource.JFaceResources;
+import org.fdesigner.ui.jface.resource.ResourceManager;
+import org.fdesigner.ui.jface.viewers.ColumnViewer;
+import org.fdesigner.ui.jface.viewers.DecorationOverlayIcon;
+import org.fdesigner.ui.jface.viewers.EditingSupport;
+import org.fdesigner.ui.jface.viewers.IDecoration;
+import org.fdesigner.ui.jface.viewers.ViewerCell;
+import org.fdesigner.workbench.ISharedImages;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
+import org.fdesigner.workbench.internal.util.BundleUtility;
 
 /**
  * MarkerField is the abstract superclass of the definition of the content

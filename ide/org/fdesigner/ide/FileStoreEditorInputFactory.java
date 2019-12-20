@@ -16,7 +16,7 @@ package org.fdesigner.ide;
 import java.net.URI;
 import java.net.URISyntaxException;
 
-import org.eclipse.core.filesystem.EFS;
+import org.fdesigner.filesystem.EFS;
 import org.fdesigner.runtime.common.runtime.CoreException;
 import org.fdesigner.runtime.common.runtime.IAdaptable;
 import org.fdesigner.workbench.IElementFactory;

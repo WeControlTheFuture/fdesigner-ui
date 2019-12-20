@@ -13,18 +13,18 @@
  ******************************************************************************/
 package org.fdesigner.ide;
 
-import org.eclipse.core.resources.IFile;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.mapping.ResourceMapping;
-import org.eclipse.core.resources.mapping.ResourceMappingContext;
-import org.eclipse.core.resources.mapping.ResourceTraversal;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.osgi.util.NLS;
-import org.eclipse.ui.IEditorPart;
-import org.eclipse.ui.ISaveableFilter;
-import org.eclipse.ui.IWorkbenchPart;
-import org.eclipse.ui.Saveable;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.resources.IFile;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.mapping.ResourceMapping;
+import org.fdesigner.resources.mapping.ResourceMappingContext;
+import org.fdesigner.resources.mapping.ResourceTraversal;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.workbench.IEditorPart;
+import org.fdesigner.workbench.ISaveableFilter;
+import org.fdesigner.workbench.IWorkbenchPart;
+import org.fdesigner.workbench.Saveable;
 
 
 /**

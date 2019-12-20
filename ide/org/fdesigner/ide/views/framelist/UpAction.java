@@ -11,13 +11,13 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.views.framelist;
+package org.fdesigner.ide.views.framelist;
 
-import org.eclipse.osgi.util.NLS;
-import org.eclipse.ui.ISharedImages;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.views.framelist.FrameListMessages;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.workbench.ISharedImages;
+import org.fdesigner.workbench.PlatformUI;
 
+import org.fdesigner.ide.internal.views.framelist.FrameListMessages;
 /**
  * Generic "Up" action which goes to the parent frame for the current frame.
  */

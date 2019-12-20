@@ -12,10 +12,10 @@
  *   IBM Corporation - initial API and implementation
  *   Sebastian Davids <sdavids@gmx.de> - Collapse all action (25826)
  *******************************************************************************/
-package org.eclipse.ui.views.navigator;
+package org.fdesigner.ide.views.navigator;
 
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.handlers.CollapseAllHandler;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.handlers.CollapseAllHandler;
 
 /**
  * Collapse all project nodes.

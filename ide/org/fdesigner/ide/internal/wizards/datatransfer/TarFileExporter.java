@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.wizards.datatransfer;
+package org.fdesigner.ide.internal.wizards.datatransfer;
 
 import java.io.BufferedOutputStream;
 import java.io.FileNotFoundException;
@@ -21,12 +21,12 @@ import java.io.InputStream;
 import java.net.URI;
 import java.util.zip.GZIPOutputStream;
 
-import org.eclipse.core.filesystem.EFS;
-import org.eclipse.core.resources.IContainer;
-import org.eclipse.core.resources.IFile;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.ResourceAttributes;
-import org.eclipse.core.runtime.CoreException;
+import org.fdesigner.filesystem.EFS;
+import org.fdesigner.resources.IContainer;
+import org.fdesigner.resources.IFile;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.ResourceAttributes;
+import org.fdesigner.runtime.common.runtime.CoreException;
 
 /**
  * Exports resources to a .tar.gz file.

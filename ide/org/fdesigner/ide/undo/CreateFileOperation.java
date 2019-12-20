@@ -12,19 +12,19 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.ide.undo;
+package org.fdesigner.ide.undo;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 import java.net.URI;
 
-import org.eclipse.core.resources.IFile;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.ui.internal.ide.undo.ContainerDescription;
-import org.eclipse.ui.internal.ide.undo.FileDescription;
-import org.eclipse.ui.internal.ide.undo.IFileContentDescription;
+import org.fdesigner.ide.internal.ide.undo.ContainerDescription;
+import org.fdesigner.ide.internal.ide.undo.FileDescription;
+import org.fdesigner.ide.internal.ide.undo.IFileContentDescription;
+import org.fdesigner.resources.IFile;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
 
 /**
  * A CreateFileOperation represents an undoable operation for creating a file in

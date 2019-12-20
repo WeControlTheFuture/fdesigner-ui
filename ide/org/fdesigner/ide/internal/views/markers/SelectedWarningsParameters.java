@@ -13,13 +13,13 @@
  *     Mickael Istria (Red Hat Inc.) - Bug 486901
  *******************************************************************************/
 
-package org.eclipse.ui.internal.views.markers;
+package org.fdesigner.ide.internal.views.markers;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import org.eclipse.core.resources.IMarker;
-import org.eclipse.ui.views.markers.FiltersContributionParameters;
+import org.fdesigner.ide.views.markers.FiltersContributionParameters;
+import org.fdesigner.resources.IMarker;
 
 /**
  * SelectedWarningsParameters is the parameters for warnings.

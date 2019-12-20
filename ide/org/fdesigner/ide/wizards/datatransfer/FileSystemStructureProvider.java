@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.wizards.datatransfer;
+package org.fdesigner.ide.wizards.datatransfer;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -20,7 +20,7 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
 
 /**
  * This class provides information regarding the structure and

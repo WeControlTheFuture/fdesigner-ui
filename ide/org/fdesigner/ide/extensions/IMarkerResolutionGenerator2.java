@@ -12,9 +12,9 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui;
+package org.fdesigner.ide.extensions;
 
-import org.eclipse.core.resources.IMarker;
+import org.fdesigner.resources.IMarker;
 
 /**
  * A marker resolution generator should implement this interface rather than

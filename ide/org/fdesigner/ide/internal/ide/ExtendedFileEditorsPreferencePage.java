@@ -12,23 +12,12 @@
  *     Mickael Istria (Red Hat Inc.) - initial API and implementation
  *     Patrik Suzzi <psuzzi@gmail.com> - Bug 497156
  *******************************************************************************/
-package org.eclipse.ui.internal.ide;
+package org.fdesigner.ide.internal.ide;
 
 import java.io.IOException;
 import java.util.Optional;
 import java.util.stream.Stream;
 
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.jface.preference.IPersistentPreferenceStore;
-import org.eclipse.jface.preference.IPreferenceStore;
-import org.eclipse.jface.resource.JFaceResources;
-import org.eclipse.jface.util.Policy;
-import org.eclipse.jface.viewers.ArrayContentProvider;
-import org.eclipse.jface.viewers.ComboViewer;
-import org.eclipse.jface.viewers.LabelProvider;
-import org.eclipse.jface.viewers.StructuredSelection;
-import org.eclipse.osgi.util.NLS;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.layout.GridLayout;
@@ -36,9 +25,20 @@ import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Link;
-import org.eclipse.ui.ide.IDE;
-import org.eclipse.ui.internal.dialogs.FileEditorsPreferencePage;
-import org.eclipse.ui.internal.ide.registry.UnassociatedEditorStrategyRegistry;
+import org.fdesigner.ide.IDE;
+import org.fdesigner.ide.internal.ide.registry.UnassociatedEditorStrategyRegistry;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.ui.jface.preference.IPersistentPreferenceStore;
+import org.fdesigner.ui.jface.preference.IPreferenceStore;
+import org.fdesigner.ui.jface.resource.JFaceResources;
+import org.fdesigner.ui.jface.viewers.ArrayContentProvider;
+import org.fdesigner.ui.jface.viewers.ComboViewer;
+import org.fdesigner.ui.jface.viewers.LabelProvider;
+import org.fdesigner.ui.jface.viewers.StructuredSelection;
+import org.fdesigner.ui.jface.util.Policy;
+import org.fdesigner.workbench.internal.dialogs.FileEditorsPreferencePage;
 
 /**
  * @since 3.12

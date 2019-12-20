@@ -12,14 +12,14 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.ide.model;
+package org.fdesigner.ide.internal.ide.model;
 
-import org.eclipse.core.resources.IMarker;
-import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.ui.IMarkerActionFilter;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.eclipse.ui.internal.views.markers.MarkerPropertyTester;
-import org.eclipse.ui.model.WorkbenchAdapter;
+import org.fdesigner.ide.extensions.IMarkerActionFilter;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.internal.views.markers.MarkerPropertyTester;
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.ui.jface.resource.ImageDescriptor;
+import org.fdesigner.workbench.model.WorkbenchAdapter;
 
 /**
  * Model object for adapting IMarker objects to the IWorkbenchAdapter

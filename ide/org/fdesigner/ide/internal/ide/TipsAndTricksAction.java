@@ -14,25 +14,25 @@
  *     		TipsAndTricksAction should not use magic numbers
  *     Alexander Fedorov <alexander.fedorov@arsysop.ru> - Bug 460381
  *******************************************************************************/
-package org.eclipse.ui.internal.ide;
+package org.fdesigner.ide.internal.ide;
 
 import java.util.ArrayList;
 
-import org.eclipse.core.runtime.IProduct;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.jface.dialogs.ErrorDialog;
-import org.eclipse.jface.dialogs.MessageDialog;
-import org.eclipse.jface.window.Window;
 import org.eclipse.swt.custom.BusyIndicator;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.IWorkbenchCommandConstants;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.actions.ActionFactory;
-import org.eclipse.ui.actions.PartEventAction;
-import org.eclipse.ui.internal.IWorkbenchGraphicConstants;
-import org.eclipse.ui.internal.WorkbenchImages;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.core.IProduct;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.ui.jface.dialogs.ErrorDialog;
+import org.fdesigner.ui.jface.dialogs.MessageDialog;
+import org.fdesigner.ui.jface.window.Window;
+import org.fdesigner.workbench.IWorkbenchCommandConstants;
+import org.fdesigner.workbench.IWorkbenchWindow;
+import org.fdesigner.workbench.actions.ActionFactory;
+import org.fdesigner.workbench.actions.PartEventAction;
+import org.fdesigner.workbench.internal.IWorkbenchGraphicConstants;
+import org.fdesigner.workbench.internal.WorkbenchImages;
 
 /**
  * Launch the tips and tricks action.

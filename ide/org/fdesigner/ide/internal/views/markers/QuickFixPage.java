@@ -12,33 +12,12 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.views.markers;
+package org.fdesigner.ide.internal.views.markers;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.Collection;
 import java.util.Map;
 
-import org.eclipse.core.resources.IFile;
-import org.eclipse.core.resources.IMarker;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.jface.dialogs.Dialog;
-import org.eclipse.jface.dialogs.IDialogConstants;
-import org.eclipse.jface.viewers.ArrayContentProvider;
-import org.eclipse.jface.viewers.CheckboxTableViewer;
-import org.eclipse.jface.viewers.ColumnWeightData;
-import org.eclipse.jface.viewers.ILabelProviderListener;
-import org.eclipse.jface.viewers.ISelection;
-import org.eclipse.jface.viewers.IStructuredContentProvider;
-import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.jface.viewers.ITableLabelProvider;
-import org.eclipse.jface.viewers.LabelProvider;
-import org.eclipse.jface.viewers.StructuredSelection;
-import org.eclipse.jface.viewers.TableLayout;
-import org.eclipse.jface.viewers.TableViewer;
-import org.eclipse.jface.viewers.Viewer;
-import org.eclipse.jface.viewers.ViewerComparator;
-import org.eclipse.jface.wizard.WizardPage;
-import org.eclipse.osgi.util.NLS;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
@@ -53,19 +32,40 @@ import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Table;
 import org.eclipse.swt.widgets.TableColumn;
-import org.eclipse.ui.IMarkerResolution;
-import org.eclipse.ui.IMarkerResolution2;
-import org.eclipse.ui.IMarkerResolutionRelevance;
-import org.eclipse.ui.IWorkbenchPartSite;
-import org.eclipse.ui.OpenAndLinkWithEditorHelper;
-import org.eclipse.ui.PartInitException;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.ide.IDE;
-import org.eclipse.ui.internal.IWorkbenchHelpContextIds;
-import org.eclipse.ui.statushandlers.StatusManager;
-import org.eclipse.ui.views.markers.WorkbenchMarkerResolution;
-import org.eclipse.ui.views.markers.internal.MarkerMessages;
-import org.eclipse.ui.views.markers.internal.Util;
+import org.fdesigner.ide.IDE;
+import org.fdesigner.ide.extensions.IMarkerResolution;
+import org.fdesigner.ide.extensions.IMarkerResolution2;
+import org.fdesigner.ide.extensions.IMarkerResolutionRelevance;
+import org.fdesigner.ide.views.markers.WorkbenchMarkerResolution;
+import org.fdesigner.ide.views.markers.internal.MarkerMessages;
+import org.fdesigner.ide.views.markers.internal.Util;
+import org.fdesigner.resources.IFile;
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.ui.jface.dialogs.Dialog;
+import org.fdesigner.ui.jface.dialogs.IDialogConstants;
+import org.fdesigner.ui.jface.viewers.ArrayContentProvider;
+import org.fdesigner.ui.jface.viewers.CheckboxTableViewer;
+import org.fdesigner.ui.jface.viewers.ColumnWeightData;
+import org.fdesigner.ui.jface.viewers.ILabelProviderListener;
+import org.fdesigner.ui.jface.viewers.ISelection;
+import org.fdesigner.ui.jface.viewers.IStructuredContentProvider;
+import org.fdesigner.ui.jface.viewers.IStructuredSelection;
+import org.fdesigner.ui.jface.viewers.ITableLabelProvider;
+import org.fdesigner.ui.jface.viewers.LabelProvider;
+import org.fdesigner.ui.jface.viewers.StructuredSelection;
+import org.fdesigner.ui.jface.viewers.TableLayout;
+import org.fdesigner.ui.jface.viewers.TableViewer;
+import org.fdesigner.ui.jface.viewers.Viewer;
+import org.fdesigner.ui.jface.viewers.ViewerComparator;
+import org.fdesigner.ui.jface.wizard.WizardPage;
+import org.fdesigner.workbench.IWorkbenchPartSite;
+import org.fdesigner.workbench.OpenAndLinkWithEditorHelper;
+import org.fdesigner.workbench.PartInitException;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.internal.IWorkbenchHelpContextIds;
+import org.fdesigner.workbench.statushandlers.StatusManager;
 
 /**
  * QuickFixPage is a page for the quick fixes of a marker.

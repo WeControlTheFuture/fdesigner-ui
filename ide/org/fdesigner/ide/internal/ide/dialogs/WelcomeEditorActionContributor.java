@@ -12,12 +12,12 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.ui.internal.ide.dialogs;
+package org.fdesigner.ide.internal.ide.dialogs;
 
-import org.eclipse.ui.IActionBars;
-import org.eclipse.ui.IEditorPart;
-import org.eclipse.ui.actions.ActionFactory;
-import org.eclipse.ui.part.EditorActionBarContributor;
+import org.fdesigner.workbench.IActionBars;
+import org.fdesigner.workbench.IEditorPart;
+import org.fdesigner.workbench.actions.ActionFactory;
+import org.fdesigner.workbench.part.EditorActionBarContributor;
 
 /**
  * Manages the installation and deinstallation of global actions for

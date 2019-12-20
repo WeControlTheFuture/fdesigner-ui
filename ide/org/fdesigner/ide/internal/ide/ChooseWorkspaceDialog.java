@@ -13,7 +13,7 @@
  *     Jan-Ove Weichel <janove.weichel@vogella.com> - Bugs 411578, 486842, 487673
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 492918
  *******************************************************************************/
-package org.eclipse.ui.internal.ide;
+package org.fdesigner.ide.internal.ide;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -26,16 +26,6 @@ import java.util.function.Function;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
-import org.eclipse.core.runtime.IProduct;
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.jface.dialogs.Dialog;
-import org.eclipse.jface.dialogs.IDialogConstants;
-import org.eclipse.jface.dialogs.IDialogSettings;
-import org.eclipse.jface.dialogs.TitleAreaDialog;
-import org.eclipse.jface.util.Geometry;
-import org.eclipse.jface.window.Window;
-import org.eclipse.osgi.util.NLS;
-import org.eclipse.osgi.util.TextProcessor;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.custom.CLabel;
 import org.eclipse.swt.events.SelectionAdapter;
@@ -61,6 +51,16 @@ import org.eclipse.ui.forms.events.ExpansionEvent;
 import org.eclipse.ui.forms.widgets.ExpandableComposite;
 import org.eclipse.ui.forms.widgets.Form;
 import org.eclipse.ui.forms.widgets.FormToolkit;
+import org.fdesigner.container.util.TextProcessor;
+import org.fdesigner.runtime.core.IProduct;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.supplement.util.NLS;
+import org.fdesigner.ui.jface.dialogs.Dialog;
+import org.fdesigner.ui.jface.dialogs.IDialogConstants;
+import org.fdesigner.ui.jface.dialogs.IDialogSettings;
+import org.fdesigner.ui.jface.dialogs.TitleAreaDialog;
+import org.fdesigner.ui.jface.util.Geometry;
+import org.fdesigner.ui.jface.window.Window;
 
 /**
  * A dialog that prompts for a directory to use as a workspace.
