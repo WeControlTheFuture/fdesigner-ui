@@ -24,32 +24,32 @@ import java.util.Map;
 
 import javax.inject.Inject;
 
-import org.eclipse.e4.core.di.annotations.Optional;
-import org.eclipse.e4.core.di.extensions.EventTopic;
-import org.eclipse.e4.core.services.log.Logger;
-import org.eclipse.e4.ui.internal.workbench.URIHelper;
-import org.eclipse.e4.ui.model.application.MApplication;
-import org.eclipse.e4.ui.model.application.descriptor.basic.MPartDescriptor;
-import org.eclipse.e4.ui.model.application.ui.basic.MPart;
-import org.eclipse.e4.ui.workbench.UIEvents;
-import org.eclipse.e4.ui.workbench.UIEvents.UILifeCycle;
-import org.eclipse.e4.ui.workbench.modeling.EModelService;
-import org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor;
-import org.eclipse.ui.internal.registry.ViewRegistry;
-import org.osgi.framework.Bundle;
-import org.osgi.framework.BundleContext;
-import org.osgi.framework.Constants;
-import org.osgi.framework.FrameworkUtil;
-import org.osgi.framework.namespace.HostNamespace;
-import org.osgi.framework.namespace.IdentityNamespace;
-import org.osgi.framework.wiring.BundleCapability;
-import org.osgi.framework.wiring.BundleRevision;
-import org.osgi.framework.wiring.BundleWiring;
-import org.osgi.framework.wiring.FrameworkWiring;
-import org.osgi.resource.Namespace;
-import org.osgi.resource.Requirement;
-import org.osgi.resource.Resource;
-import org.osgi.service.event.Event;
+import org.fdesigner.e4.core.di.annotations.Optional;
+import org.fdesigner.e4.core.di.extensions.EventTopic;
+import org.fdesigner.e4.core.services.log.Logger;
+import org.fdesigner.e4.ui.model.application.MApplication;
+import org.fdesigner.e4.ui.model.application.descriptor.basic.MPartDescriptor;
+import org.fdesigner.e4.ui.model.application.ui.basic.MPart;
+import org.fdesigner.e4.ui.workbench.UIEvents;
+import org.fdesigner.e4.ui.workbench.UIEvents.UILifeCycle;
+import org.fdesigner.e4.ui.workbench.internal.workbench.URIHelper;
+import org.fdesigner.e4.ui.workbench.modeling.EModelService;
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.framework.framework.BundleContext;
+import org.fdesigner.framework.framework.Constants;
+import org.fdesigner.framework.framework.FrameworkUtil;
+import org.fdesigner.framework.framework.namespace.HostNamespace;
+import org.fdesigner.framework.framework.namespace.IdentityNamespace;
+import org.fdesigner.framework.framework.wiring.BundleCapability;
+import org.fdesigner.framework.framework.wiring.BundleRevision;
+import org.fdesigner.framework.framework.wiring.BundleWiring;
+import org.fdesigner.framework.framework.wiring.FrameworkWiring;
+import org.fdesigner.framework.resource.Namespace;
+import org.fdesigner.framework.resource.Requirement;
+import org.fdesigner.resources.internal.resources.Resource;
+import org.fdesigner.services.event.Event;
+import org.fdesigner.workbench.internal.e4.compatibility.CompatibilityEditor;
+import org.fdesigner.workbench.internal.registry.ViewRegistry;
 
 /**
  * The model-addon searches for model contributions in the runtime application

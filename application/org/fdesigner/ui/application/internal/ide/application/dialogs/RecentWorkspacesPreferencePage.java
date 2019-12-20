@@ -12,15 +12,11 @@
  *     Eric Rizzo - initial API and implementation
  *     Helena Halperin (IBM) - bug 299031 [BiDi] Incorrect file path display
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.application.dialogs;
+package org.fdesigner.ui.application.internal.ide.application.dialogs;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import org.eclipse.core.runtime.Platform;
-import org.eclipse.jface.dialogs.Dialog;
-import org.eclipse.jface.preference.PreferencePage;
-import org.eclipse.osgi.util.TextProcessor;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
@@ -33,12 +29,16 @@ import org.eclipse.swt.widgets.Group;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.List;
 import org.eclipse.swt.widgets.Spinner;
-import org.eclipse.ui.IWorkbench;
-import org.eclipse.ui.IWorkbenchPreferencePage;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.IWorkbenchHelpContextIds;
-import org.eclipse.ui.internal.ide.ChooseWorkspaceData;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.container.util.TextProcessor;
+import org.fdesigner.ide.internal.ide.ChooseWorkspaceData;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.ui.jface.dialogs.Dialog;
+import org.fdesigner.ui.jface.preference.PreferencePage;
+import org.fdesigner.workbench.IWorkbench;
+import org.fdesigner.workbench.IWorkbenchPreferencePage;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.internal.IWorkbenchHelpContextIds;
 
 /**
  * Preference page for editing the list of recent workspaces and whether or not

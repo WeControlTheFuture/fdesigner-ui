@@ -32,19 +32,14 @@ import java.util.Properties;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.IWorkbench;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.Workbench;
-import org.eclipse.ui.internal.WorkbenchPlugin;
-import org.eclipse.ui.internal.ide.ChooseWorkspaceData;
-import org.eclipse.ui.internal.ide.ChooseWorkspaceDialog;
-import org.eclipse.ui.internal.ide.IDEInternalPreferences;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
-import org.eclipse.ui.internal.ide.IDEWorkbenchPlugin;
-import org.eclipse.ui.internal.ide.StatusUtil;
-import org.eclipse.ui.preferences.ScopedPreferenceStore;
 import org.fdesigner.framework.framework.Bundle;
 import org.fdesigner.framework.framework.Version;
+import org.fdesigner.ide.internal.ide.ChooseWorkspaceData;
+import org.fdesigner.ide.internal.ide.ChooseWorkspaceDialog;
+import org.fdesigner.ide.internal.ide.IDEInternalPreferences;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.ide.internal.ide.StatusUtil;
 import org.fdesigner.runtime.app.IApplication;
 import org.fdesigner.runtime.app.IApplicationContext;
 import org.fdesigner.runtime.common.runtime.IStatus;
@@ -62,6 +57,11 @@ import org.fdesigner.ui.jface.dialogs.MessageDialog;
 import org.fdesigner.ui.jface.dialogs.MessageDialogWithToggle;
 import org.fdesigner.ui.jface.preference.IPersistentPreferenceStore;
 import org.fdesigner.ui.jface.window.Window;
+import org.fdesigner.workbench.IWorkbench;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.internal.Workbench;
+import org.fdesigner.workbench.internal.WorkbenchPlugin;
+import org.fdesigner.workbench.preferences.ScopedPreferenceStore;
 
 /**
  * The "main program" for the Eclipse IDE.

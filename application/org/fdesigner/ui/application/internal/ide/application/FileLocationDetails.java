@@ -11,15 +11,15 @@
  * Contributors:
  *     Brian de Alwis - initial API and implementation
  *******************************************************************************/
-package org.eclipse.ui.internal.ide.application;
+package org.fdesigner.ui.application.internal.ide.application;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.eclipse.core.filesystem.EFS;
-import org.eclipse.core.filesystem.IFileInfo;
-import org.eclipse.core.filesystem.IFileStore;
-import org.eclipse.core.runtime.Path;
+import org.fdesigner.filesystem.EFS;
+import org.fdesigner.filesystem.IFileInfo;
+import org.fdesigner.filesystem.IFileStore;
+import org.fdesigner.runtime.common.runtime.Path;
 
 /**
  * @since 3.3
