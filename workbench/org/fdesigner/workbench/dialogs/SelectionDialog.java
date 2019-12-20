@@ -58,9 +58,9 @@ public abstract class SelectionDialog extends TrayDialog {
 	// dialog settings for storing bounds (since 3.2)
 	private IDialogSettings dialogBoundsSettings = null;
 
-	static String SELECT_ALL_TITLE = WorkbenchMessages.SelectionDialog_selectLabel;
+	protected static String SELECT_ALL_TITLE = WorkbenchMessages.SelectionDialog_selectLabel;
 
-	static String DESELECT_ALL_TITLE = WorkbenchMessages.SelectionDialog_deselectLabel;
+	protected static String DESELECT_ALL_TITLE = WorkbenchMessages.SelectionDialog_deselectLabel;
 
 	/**
 	 * Creates a dialog instance. Note that the dialog will have no visual

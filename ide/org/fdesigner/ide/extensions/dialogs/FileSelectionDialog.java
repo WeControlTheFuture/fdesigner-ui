@@ -19,8 +19,6 @@ package org.fdesigner.ide.extensions.dialogs;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-import org.eclipse.jface.viewers.ICheckStateListener;
-import org.eclipse.jface.viewers.ITreeContentProvider;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
@@ -31,13 +29,17 @@ import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.ide.IDEWorkbenchMessages;
-import org.eclipse.ui.internal.ide.IIDEHelpContextIds;
-import org.eclipse.ui.internal.ide.misc.CheckboxTreeAndListGroup;
-import org.eclipse.ui.model.WorkbenchContentProvider;
-import org.eclipse.ui.model.WorkbenchLabelProvider;
-import org.eclipse.ui.model.WorkbenchViewerComparator;
+import org.fdesigner.ide.extensions.model.WorkbenchContentProvider;
+import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
+import org.fdesigner.ide.internal.ide.IIDEHelpContextIds;
+import org.fdesigner.ide.internal.ide.misc.CheckboxTreeAndListGroup;
+import org.fdesigner.ui.jface.viewers.ICheckStateListener;
+import org.fdesigner.ui.jface.viewers.ITreeContentProvider;
+import org.fdesigner.workbench.PlatformUI;
+import org.fdesigner.workbench.dialogs.FileSystemElement;
+import org.fdesigner.workbench.dialogs.SelectionDialog;
+import org.fdesigner.workbench.model.WorkbenchLabelProvider;
+import org.fdesigner.workbench.model.WorkbenchViewerComparator;
 
 /**
  * A standard file selection dialog which solicits a list of files from the
