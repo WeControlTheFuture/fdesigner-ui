@@ -21,7 +21,6 @@ import java.util.List;
 
 import org.eclipse.swt.custom.BusyIndicator;
 import org.eclipse.swt.widgets.Display;
-import org.fdesigner.e4.ui.workbench.IWorkbench;
 import org.fdesigner.framework.framework.Bundle;
 import org.fdesigner.framework.framework.BundleContext;
 import org.fdesigner.ide.internal.ide.registry.MarkerImageProviderRegistry;
@@ -45,6 +44,7 @@ import org.fdesigner.ui.jface.resource.ResourceLocator;
 import org.fdesigner.ui.jface.resource.ResourceManager;
 import org.fdesigner.workbench.IPageLayout;
 import org.fdesigner.workbench.IViewReference;
+import org.fdesigner.workbench.IWorkbench;
 import org.fdesigner.workbench.IWorkbenchPage;
 import org.fdesigner.workbench.IWorkbenchWindow;
 import org.fdesigner.workbench.PartInitException;

@@ -36,7 +36,6 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.TreeMap;
 
-import org.eclipse.jface.text.FindReplaceDocumentAdapterContentProposalProvider;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.dnd.ByteArrayTransfer;
 import org.eclipse.swt.dnd.DND;
@@ -104,6 +103,7 @@ import org.fdesigner.ui.jface.fieldassist.TextContentAdapter;
 import org.fdesigner.ui.jface.layout.TreeColumnLayout;
 import org.fdesigner.ui.jface.resource.JFaceResources;
 import org.fdesigner.ui.jface.resource.ResourceLocator;
+import org.fdesigner.ui.jface.text.FindReplaceDocumentAdapterContentProposalProvider;
 import org.fdesigner.ui.jface.viewers.CellEditor;
 import org.fdesigner.ui.jface.viewers.CheckboxCellEditor;
 import org.fdesigner.ui.jface.viewers.ColumnWeightData;

@@ -15,8 +15,6 @@ package org.fdesigner.ide.internal.views.helpers;
 
 import java.util.ArrayList;
 
-import javax.swing.event.HyperlinkEvent;
-
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.custom.StackLayout;
 import org.eclipse.swt.events.DisposeEvent;
@@ -26,12 +24,14 @@ import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Link;
-import org.eclipse.ui.internal.navigator.wizards.WizardShortcutAction;
 import org.fdesigner.forms.events.HyperlinkAdapter;
+import org.fdesigner.forms.events.HyperlinkEvent;
 import org.fdesigner.forms.widgets.FormToolkit;
+import org.fdesigner.forms.widgets.Hyperlink;
 import org.fdesigner.ide.extensions.actions.NewProjectAction;
 import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
 import org.fdesigner.ide.internal.views.navigator.ResourceNavigatorMessages;
+import org.fdesigner.navigator.internal.navigator.wizards.WizardShortcutAction;
 import org.fdesigner.resources.IProject;
 import org.fdesigner.resources.IResource;
 import org.fdesigner.resources.IResourceChangeEvent;
@@ -64,7 +64,6 @@ import org.fdesigner.workbench.internal.dialogs.WorkbenchWizardElement;
 import org.fdesigner.workbench.wizards.IWizardDescriptor;
 import org.fdesigner.workbench.wizards.IWizardRegistry;
 
-import javafx.scene.control.Hyperlink;
 
 /**
  * This class can be re-used by views that show the workspace's projects (like

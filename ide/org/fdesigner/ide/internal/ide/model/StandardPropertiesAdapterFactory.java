@@ -15,13 +15,13 @@
  *******************************************************************************/
 package org.fdesigner.ide.internal.ide.model;
 
-import org.eclipse.ui.views.properties.IPropertySource;
 import org.fdesigner.ide.extensions.IFileEditorInput;
 import org.fdesigner.ide.views.properties.FilePropertySource;
 import org.fdesigner.ide.views.properties.ResourcePropertySource;
 import org.fdesigner.resources.IFile;
 import org.fdesigner.resources.IResource;
 import org.fdesigner.runtime.common.runtime.IAdapterFactory;
+import org.fdesigner.views.properties.IPropertySource;
 import org.fdesigner.workbench.IEditorInput;
 import org.fdesigner.workbench.IEditorPart;
 
