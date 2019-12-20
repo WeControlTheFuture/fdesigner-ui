@@ -11,9 +11,9 @@
  *  Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.internal.resources;
+package org.fdesigner.resources.internal.resources;
 
-import org.eclipse.core.runtime.QualifiedName;
+import org.fdesigner.runtime.common.runtime.QualifiedName;
 
 public class RootInfo extends ResourceInfo {
 	/** The property store for this resource */

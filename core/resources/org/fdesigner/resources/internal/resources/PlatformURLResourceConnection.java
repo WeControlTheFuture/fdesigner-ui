@@ -11,17 +11,23 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.internal.resources;
+package org.fdesigner.resources.internal.resources;
 
 import java.io.IOException;
-import java.net.*;
-import org.eclipse.core.internal.boot.PlatformURLConnection;
-import org.eclipse.core.internal.boot.PlatformURLHandler;
-import org.eclipse.core.internal.utils.Messages;
-import org.eclipse.core.resources.*;
-import org.eclipse.core.runtime.IPath;
-import org.eclipse.core.runtime.Path;
-import org.eclipse.osgi.util.NLS;
+import java.net.MalformedURLException;
+import java.net.URI;
+import java.net.URL;
+import java.net.URLDecoder;
+
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.resources.internal.utils.Messages;
+import org.fdesigner.runtime.common.internal.boot.PlatformURLConnection;
+import org.fdesigner.runtime.common.internal.boot.PlatformURLHandler;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.Path;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * Platform URL support {@literal platform:/resource/<path>/<resource>} maps to

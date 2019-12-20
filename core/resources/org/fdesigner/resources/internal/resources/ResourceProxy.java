@@ -11,12 +11,14 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.internal.resources;
+package org.fdesigner.resources.internal.resources;
 
-import org.eclipse.core.internal.watson.IPathRequestor;
-import org.eclipse.core.resources.*;
-import org.eclipse.core.runtime.IPath;
-import org.eclipse.core.runtime.QualifiedName;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IResourceProxy;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.resources.internal.watson.IPathRequestor;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.QualifiedName;
 
 /**
  * Implements a resource proxy given a path requestor and the resource

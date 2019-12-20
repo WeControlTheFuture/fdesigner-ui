@@ -42,12 +42,12 @@ import org.fdesigner.runtime.common.runtime.OperationCanceledException;
 import org.fdesigner.runtime.common.runtime.Path;
 import org.fdesigner.runtime.common.runtime.Status;
 import org.fdesigner.runtime.core.Platform;
-import org.fdesigner.runtime.core.Preferences;
 import org.fdesigner.runtime.jobs.runtime.jobs.ISchedulingRule;
 import org.fdesigner.runtime.jobs.runtime.jobs.Job;
 import org.fdesigner.runtime.preferences.runtime.preferences.IEclipsePreferences;
 import org.fdesigner.runtime.preferences.runtime.preferences.InstanceScope;
 import org.fdesigner.runtime.preferences.service.prefs.BackingStoreException;
+import org.fdesigner.runtime.preferences.service.prefs.Preferences;
 
 /**
  * Manages user-defined encodings as preferences in the project content area.

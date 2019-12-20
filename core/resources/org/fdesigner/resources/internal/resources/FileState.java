@@ -12,17 +12,29 @@
  *     IBM Corporation - initial API and implementation
  *     James Blackburn (Broadcom Corp.) - ongoing development
  *******************************************************************************/
-package org.eclipse.core.internal.resources;
+package org.fdesigner.resources.internal.resources;
 
-import java.io.*;
-import org.eclipse.core.internal.localstore.IHistoryStore;
-import org.eclipse.core.internal.utils.Messages;
-import org.eclipse.core.internal.utils.UniversalUniqueIdentifier;
-import org.eclipse.core.resources.*;
-import org.eclipse.core.runtime.*;
-import org.eclipse.core.runtime.content.IContentDescription;
-import org.eclipse.core.runtime.content.IContentTypeManager;
-import org.eclipse.osgi.util.NLS;
+import java.io.BufferedInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+
+import org.fdesigner.resources.IFile;
+import org.fdesigner.resources.IFileState;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IResourceStatus;
+import org.fdesigner.resources.IWorkspace;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.resources.internal.localstore.IHistoryStore;
+import org.fdesigner.resources.internal.utils.Messages;
+import org.fdesigner.resources.internal.utils.UniversalUniqueIdentifier;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.PlatformObject;
+import org.fdesigner.runtime.common.runtime.QualifiedName;
+import org.fdesigner.runtime.contenttype.runtime.content.IContentDescription;
+import org.fdesigner.runtime.contenttype.runtime.content.IContentTypeManager;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.supplement.util.NLS;
 
 public class FileState extends PlatformObject implements IFileState {
 	private static final IWorkspace workspace = ResourcesPlugin.getWorkspace();

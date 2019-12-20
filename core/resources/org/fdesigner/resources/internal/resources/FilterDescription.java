@@ -13,11 +13,17 @@
  *     IBM Corporation - ongoing implementation
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 473427
  *******************************************************************************/
-package org.eclipse.core.internal.resources;
+package org.fdesigner.resources.internal.resources;
 
 import java.util.LinkedList;
-import org.eclipse.core.resources.*;
-import org.eclipse.core.runtime.*;
+
+import org.fdesigner.resources.FileInfoMatcherDescription;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IResourceFilterDescription;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
 
 /**
  * Class for describing the characteristics of filters that are stored

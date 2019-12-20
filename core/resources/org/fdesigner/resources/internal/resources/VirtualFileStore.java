@@ -12,14 +12,19 @@
  *     IBM Corporation - initial API and implementation
  *     James Blackburn - Fix for bug 266712
  *******************************************************************************/
-package org.eclipse.core.internal.resources;
+package org.fdesigner.resources.internal.resources;
 
 import java.io.InputStream;
 import java.net.URI;
-import org.eclipse.core.filesystem.*;
-import org.eclipse.core.filesystem.provider.FileInfo;
-import org.eclipse.core.filesystem.provider.FileStore;
-import org.eclipse.core.runtime.*;
+
+import org.fdesigner.filesystem.EFS;
+import org.fdesigner.filesystem.IFileInfo;
+import org.fdesigner.filesystem.IFileStore;
+import org.fdesigner.filesystem.provider.FileInfo;
+import org.fdesigner.filesystem.provider.FileStore;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.Path;
 
 /**
  * A file store representing a virtual resource.

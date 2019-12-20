@@ -11,12 +11,15 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.internal.resources;
+package org.fdesigner.resources.internal.resources;
 
-import org.eclipse.core.resources.*;
-import org.eclipse.core.resources.team.IMoveDeleteHook;
-import org.eclipse.core.resources.team.IResourceTree;
-import org.eclipse.core.runtime.IProgressMonitor;
+import org.fdesigner.resources.IFile;
+import org.fdesigner.resources.IFolder;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IProjectDescription;
+import org.fdesigner.resources.team.IMoveDeleteHook;
+import org.fdesigner.resources.team.IResourceTree;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
 
 /**
  * @since 2.0

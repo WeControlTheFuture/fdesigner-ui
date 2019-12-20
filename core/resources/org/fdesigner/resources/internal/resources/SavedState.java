@@ -11,15 +11,19 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.internal.resources;
+package org.fdesigner.resources.internal.resources;
 
-import org.eclipse.core.internal.events.ResourceDelta;
-import org.eclipse.core.internal.events.ResourceDeltaFactory;
-import org.eclipse.core.internal.utils.Policy;
-import org.eclipse.core.internal.watson.ElementTree;
-import org.eclipse.core.resources.*;
-import org.eclipse.core.runtime.*;
-import org.eclipse.core.runtime.jobs.ISchedulingRule;
+import org.fdesigner.resources.IResourceChangeEvent;
+import org.fdesigner.resources.IResourceChangeListener;
+import org.fdesigner.resources.ISavedState;
+import org.fdesigner.resources.internal.events.ResourceDelta;
+import org.fdesigner.resources.internal.events.ResourceDeltaFactory;
+import org.fdesigner.resources.internal.utils.Policy;
+import org.fdesigner.resources.internal.watson.ElementTree;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.Path;
+import org.fdesigner.runtime.jobs.runtime.jobs.ISchedulingRule;
 
 /**
  * Standard implementation of the ISavedState interface.

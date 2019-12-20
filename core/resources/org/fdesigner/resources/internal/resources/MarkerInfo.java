@@ -14,14 +14,17 @@
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 473427
  *     Mickael Istria (Red Hat Inc.) - Bug 488938, 488937
  *******************************************************************************/
-package org.eclipse.core.internal.resources;
+package org.fdesigner.resources.internal.resources;
 
 import java.nio.charset.StandardCharsets;
 import java.util.Map;
 import java.util.Map.Entry;
-import org.eclipse.core.internal.utils.*;
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.osgi.util.NLS;
+
+import org.fdesigner.resources.internal.utils.IStringPoolParticipant;
+import org.fdesigner.resources.internal.utils.Messages;
+import org.fdesigner.resources.internal.utils.StringPool;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.supplement.util.NLS;
 
 public class MarkerInfo implements IMarkerSetElement, Cloneable, IStringPoolParticipant {
 

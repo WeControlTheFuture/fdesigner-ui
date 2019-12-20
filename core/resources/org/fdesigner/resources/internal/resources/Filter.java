@@ -14,17 +14,25 @@
  *     James Blackburn (Broadcom Corp.) - ongoing development
  *     Sergey Prigogin (Google) - bug 424972
  *******************************************************************************/
-package org.eclipse.core.internal.resources;
+package org.fdesigner.resources.internal.resources;
 
 import java.util.Iterator;
 import java.util.LinkedList;
-import org.eclipse.core.filesystem.IFileInfo;
-import org.eclipse.core.internal.utils.Messages;
-import org.eclipse.core.internal.utils.Policy;
-import org.eclipse.core.resources.*;
-import org.eclipse.core.resources.filtermatchers.AbstractFileInfoMatcher;
-import org.eclipse.core.runtime.*;
-import org.eclipse.osgi.util.NLS;
+
+import org.fdesigner.filesystem.IFileInfo;
+import org.fdesigner.resources.IContainer;
+import org.fdesigner.resources.IFilterMatcherDescriptor;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IResourceFilterDescription;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.resources.filtermatchers.AbstractFileInfoMatcher;
+import org.fdesigner.resources.internal.utils.Messages;
+import org.fdesigner.resources.internal.utils.Policy;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * Class that instantiate IResourceFilter's  that are stored in the project description.

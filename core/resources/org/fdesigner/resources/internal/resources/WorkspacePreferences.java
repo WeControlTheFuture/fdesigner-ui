@@ -13,11 +13,14 @@
  *     James Blackburn (Broadcom Corp.) - ongoing development
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 473427
  *******************************************************************************/
-package org.eclipse.core.internal.resources;
+package org.fdesigner.resources.internal.resources;
 
-import java.util.*;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.runtime.Preferences;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.StringTokenizer;
+
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.runtime.core.Preferences;
 
 /**
  * This class provides the same interface as <code>WorkspaceDescription</code>

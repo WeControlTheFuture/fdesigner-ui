@@ -13,16 +13,17 @@
  * Francis Lynch (Wind River) - [305718] Allow reading snapshot into renamed project
  *     Mickael Istria (Red Hat Inc.) - Bug 488937
  *******************************************************************************/
-package org.eclipse.core.internal.resources;
+package org.fdesigner.resources.internal.resources;
 
 import java.io.DataInputStream;
-import org.eclipse.core.internal.utils.Messages;
-import org.eclipse.core.internal.watson.ElementTree;
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.resources.IResourceStatus;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.osgi.util.NLS;
+
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IResourceStatus;
+import org.fdesigner.resources.internal.utils.Messages;
+import org.fdesigner.resources.internal.watson.ElementTree;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * Default tree reader that does not read anything. This is used in cases

@@ -14,18 +14,26 @@
  *     James Blackburn (Broadcom Corp.) - ongoing development
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 473427
  *******************************************************************************/
-package org.eclipse.core.internal.resources;
+package org.fdesigner.resources.internal.resources;
 
-import java.io.*;
-import java.util.*;
-import org.eclipse.core.internal.events.BuilderPersistentInfo;
-import org.eclipse.core.internal.utils.Messages;
-import org.eclipse.core.internal.utils.Policy;
-import org.eclipse.core.internal.watson.ElementTree;
-import org.eclipse.core.internal.watson.ElementTreeReader;
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.resources.IResourceStatus;
-import org.eclipse.core.runtime.*;
+import java.io.DataInputStream;
+import java.io.EOFException;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IResourceStatus;
+import org.fdesigner.resources.internal.events.BuilderPersistentInfo;
+import org.fdesigner.resources.internal.utils.Messages;
+import org.fdesigner.resources.internal.utils.Policy;
+import org.fdesigner.resources.internal.watson.ElementTree;
+import org.fdesigner.resources.internal.watson.ElementTreeReader;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.Path;
 
 /**
  * Reads version 1 of the workspace tree file format.

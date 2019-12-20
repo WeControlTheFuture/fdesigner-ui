@@ -11,11 +11,12 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.internal.resources;
+package org.fdesigner.resources.internal.resources;
 
 import java.net.URI;
-import org.eclipse.core.filesystem.IFileStore;
-import org.eclipse.core.filesystem.provider.FileSystem;
+
+import org.fdesigner.filesystem.IFileStore;
+import org.fdesigner.filesystem.provider.FileSystem;
 
 /**
  * A file system for virtual resources

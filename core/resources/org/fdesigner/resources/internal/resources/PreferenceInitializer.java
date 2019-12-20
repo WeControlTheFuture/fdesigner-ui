@@ -12,11 +12,13 @@
  *     IBM Corporation - initial API and implementation
  *     James Blackburn (Broadcom Corp.) - ongoing development
  *******************************************************************************/
-package org.eclipse.core.internal.resources;
+package org.fdesigner.resources.internal.resources;
 
-import org.eclipse.core.resources.IMarker;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.runtime.preferences.*;
+import org.fdesigner.resources.IMarker;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.runtime.preferences.runtime.preferences.AbstractPreferenceInitializer;
+import org.fdesigner.runtime.preferences.runtime.preferences.DefaultScope;
+import org.fdesigner.runtime.preferences.runtime.preferences.IEclipsePreferences;
 
 /**
  * @since 3.1

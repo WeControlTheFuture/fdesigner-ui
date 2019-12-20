@@ -14,16 +14,23 @@
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 473427
  *     Mickael Istria (Red Hat Inc.) - Bug 488937
  *******************************************************************************/
-package org.eclipse.core.internal.resources;
+package org.fdesigner.resources.internal.resources;
 
 import java.net.URI;
 import java.util.ArrayList;
 import java.util.LinkedList;
-import org.eclipse.core.filesystem.URIUtil;
-import org.eclipse.core.internal.resources.projectvariables.*;
-import org.eclipse.core.resources.IPathVariableManager;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.runtime.*;
+
+import org.fdesigner.filesystem.URIUtil;
+import org.fdesigner.resources.IPathVariableManager;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.internal.resources.projectvariables.ParentVariableResolver;
+import org.fdesigner.resources.internal.resources.projectvariables.ProjectLocationVariableResolver;
+import org.fdesigner.resources.internal.resources.projectvariables.WorkspaceLocationVariableResolver;
+import org.fdesigner.resources.internal.resources.projectvariables.WorkspaceParentLocationVariableResolver;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.Path;
+import org.fdesigner.runtime.core.Platform;
 
 public class PathVariableUtil {
 

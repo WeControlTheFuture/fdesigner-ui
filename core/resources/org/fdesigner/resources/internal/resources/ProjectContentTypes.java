@@ -13,19 +13,27 @@
  *     James Blackburn (Broadcom Corp.) - ongoing development
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 473427
  *******************************************************************************/
-package org.eclipse.core.internal.resources;
+package org.fdesigner.resources.internal.resources;
 
-import java.util.*;
-import org.eclipse.core.internal.utils.Cache;
-import org.eclipse.core.resources.IProject;
-import org.eclipse.core.resources.ProjectScope;
-import org.eclipse.core.runtime.*;
-import org.eclipse.core.runtime.content.IContentType;
-import org.eclipse.core.runtime.content.IContentTypeManager.ISelectionPolicy;
-import org.eclipse.core.runtime.content.IContentTypeMatcher;
-import org.eclipse.core.runtime.preferences.*;
-import org.osgi.service.prefs.BackingStoreException;
-import org.osgi.service.prefs.Preferences;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Set;
+
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.ProjectScope;
+import org.fdesigner.resources.internal.utils.Cache;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.contenttype.runtime.content.IContentType;
+import org.fdesigner.runtime.contenttype.runtime.content.IContentTypeManager.ISelectionPolicy;
+import org.fdesigner.runtime.contenttype.runtime.content.IContentTypeMatcher;
+import org.fdesigner.runtime.core.Platform;
+import org.fdesigner.runtime.preferences.runtime.preferences.IEclipsePreferences;
+import org.fdesigner.runtime.preferences.runtime.preferences.IScopeContext;
+import org.fdesigner.runtime.preferences.runtime.preferences.InstanceScope;
+import org.fdesigner.runtime.preferences.service.prefs.BackingStoreException;
+import org.fdesigner.runtime.preferences.service.prefs.Preferences;
 
 /**
  * Manages project-specific content type behavior.

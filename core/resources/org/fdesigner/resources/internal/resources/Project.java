@@ -976,7 +976,7 @@ public class Project extends Container implements IProject {
 			}
 			// copy the snapshot from the URI into the project metadata
 			IPath snapshotPath = workspace.getMetaArea().getRefreshLocationFor(this);
-			IFileStore snapshotFileStore = EFS.getStore(org.eclipse.core.filesystem.URIUtil.toURI(snapshotPath));
+			IFileStore snapshotFileStore = EFS.getStore(org.fdesigner.filesystem.URIUtil.toURI(snapshotPath));
 			EFS.getStore(snapshotLocation).copy(snapshotFileStore, EFS.OVERWRITE, monitor);
 		}
 	}

@@ -14,13 +14,19 @@
  *     James Blackburn (Broadcom Corp.) - ongoing development
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 473427
  *******************************************************************************/
-package org.eclipse.core.internal.resources;
+package org.fdesigner.resources.internal.resources;
 
 import java.util.HashMap;
-import org.eclipse.core.resources.IFilterMatcherDescriptor;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.resources.filtermatchers.AbstractFileInfoMatcher;
-import org.eclipse.core.runtime.*;
+
+import org.fdesigner.resources.IFilterMatcherDescriptor;
+import org.fdesigner.resources.ResourcesPlugin;
+import org.fdesigner.resources.filtermatchers.AbstractFileInfoMatcher;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.runtime.registry.runtime.IExtension;
+import org.fdesigner.runtime.registry.runtime.IExtensionPoint;
+import org.fdesigner.runtime.registry.runtime.IRegistryEventListener;
+import org.fdesigner.runtime.registry.runtime.RegistryFactory;
 
 /**
  *  This class collects all the registered {@link AbstractFileInfoMatcher} instances along

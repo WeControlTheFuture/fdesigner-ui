@@ -17,18 +17,29 @@
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 473427
  *     Mickael Istria (Red Hat Inc.) - Bug 488937
  *******************************************************************************/
-package org.eclipse.core.internal.resources;
+package org.fdesigner.resources.internal.resources;
 
 import java.io.IOException;
 import java.io.OutputStream;
 import java.net.URI;
-import java.util.*;
-import org.eclipse.core.filesystem.EFS;
-import org.eclipse.core.internal.events.BuildCommand;
-import org.eclipse.core.internal.localstore.SafeFileOutputStream;
-import org.eclipse.core.internal.utils.FileUtil;
-import org.eclipse.core.resources.*;
-import org.eclipse.core.runtime.IPath;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+
+import org.fdesigner.filesystem.EFS;
+import org.fdesigner.resources.FileInfoMatcherDescription;
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IResourceFilterDescription;
+import org.fdesigner.resources.IncrementalProjectBuilder;
+import org.fdesigner.resources.internal.events.BuildCommand;
+import org.fdesigner.resources.internal.localstore.SafeFileOutputStream;
+import org.fdesigner.resources.internal.utils.FileUtil;
+import org.fdesigner.runtime.common.runtime.IPath;
 
 public class ModelObjectWriter implements IModelObjectConstants {
 

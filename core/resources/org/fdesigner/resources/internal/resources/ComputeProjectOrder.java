@@ -14,14 +14,28 @@
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 473427
  *     Mickael Istria (Red Hat Inc.) - Bug 488937
  *******************************************************************************/
-package org.eclipse.core.internal.resources;
+package org.fdesigner.resources.internal.resources;
 
 import java.lang.reflect.Array;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Objects;
+import java.util.Set;
+import java.util.SortedSet;
 import java.util.function.Function;
 import java.util.function.Predicate;
-import org.eclipse.core.internal.resources.ComputeProjectOrder.Digraph.Vertex;
-import org.eclipse.core.runtime.Assert;
+
+import org.fdesigner.resources.internal.resources.ComputeProjectOrder.Digraph.Vertex;
+import org.fdesigner.runtime.common.runtime.Assert;
 
 /**
  * Implementation of a sort algorithm for computing the order of vertexes that are part

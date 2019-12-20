@@ -13,12 +13,15 @@
  *     James Blackburn (Broadcom Corp.) - ongoing development
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 473427
  *******************************************************************************/
-package org.eclipse.core.internal.resources;
+package org.fdesigner.resources.internal.resources;
 
 import java.io.DataInputStream;
 import java.io.IOException;
-import org.eclipse.core.internal.utils.ObjectMap;
-import org.eclipse.core.runtime.*;
+
+import org.fdesigner.resources.internal.utils.ObjectMap;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.Path;
+import org.fdesigner.runtime.common.runtime.QualifiedName;
 
 public class SyncInfoSnapReader_3 extends SyncInfoSnapReader {
 

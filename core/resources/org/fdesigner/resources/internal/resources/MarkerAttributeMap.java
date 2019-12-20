@@ -13,11 +13,16 @@
  *     James Blackburn (Broadcom Corp.) - ongoing development
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 473427
  *******************************************************************************/
-package org.eclipse.core.internal.resources;
+package org.fdesigner.resources.internal.resources;
 
-import java.util.*;
-import org.eclipse.core.internal.utils.IStringPoolParticipant;
-import org.eclipse.core.internal.utils.StringPool;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+
+import org.fdesigner.resources.internal.utils.IStringPoolParticipant;
+import org.fdesigner.resources.internal.utils.StringPool;
 
 /**
  * A specialized map implementation that is optimized for a

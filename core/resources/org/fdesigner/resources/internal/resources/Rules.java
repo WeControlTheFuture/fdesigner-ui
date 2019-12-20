@@ -13,16 +13,23 @@
  *     James Blackburn (Broadcom Corp.) - ongoing development
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 473427
  *******************************************************************************/
-package org.eclipse.core.internal.resources;
+package org.fdesigner.resources.internal.resources;
 
-import java.util.*;
-import org.eclipse.core.internal.events.ILifecycleListener;
-import org.eclipse.core.internal.events.LifecycleEvent;
-import org.eclipse.core.resources.*;
-import org.eclipse.core.resources.team.ResourceRuleFactory;
-import org.eclipse.core.resources.team.TeamHook;
-import org.eclipse.core.runtime.jobs.ISchedulingRule;
-import org.eclipse.core.runtime.jobs.MultiRule;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+
+import org.fdesigner.resources.IProject;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.IResourceRuleFactory;
+import org.fdesigner.resources.IWorkspaceRoot;
+import org.fdesigner.resources.internal.events.ILifecycleListener;
+import org.fdesigner.resources.internal.events.LifecycleEvent;
+import org.fdesigner.resources.team.ResourceRuleFactory;
+import org.fdesigner.resources.team.TeamHook;
+import org.fdesigner.runtime.jobs.runtime.jobs.ISchedulingRule;
+import org.fdesigner.runtime.jobs.runtime.jobs.MultiRule;
 
 /**
  * Class for calculating scheduling rules for resource changing operations.

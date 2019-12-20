@@ -11,10 +11,11 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.internal.resources;
+package org.fdesigner.resources.internal.resources;
 
 import java.util.Properties;
-import org.eclipse.core.resources.ResourcesPlugin;
+
+import org.fdesigner.resources.ResourcesPlugin;
 
 /**
  * Provides special internal access to the workspace resource implementation.

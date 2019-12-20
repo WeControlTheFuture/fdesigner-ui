@@ -40,16 +40,9 @@ import java.util.TreeSet;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.function.Predicate;
 
-import org.eclipse.core.filesystem.URIUtil;
-import org.eclipse.core.internal.events.*;
-import org.eclipse.core.internal.utils.*;
-import org.eclipse.core.internal.watson.*;
-import org.eclipse.core.resources.*;
-import org.eclipse.core.resources.team.*;
-import org.eclipse.core.runtime.*;
-import org.eclipse.core.runtime.jobs.*;
 import org.fdesigner.filesystem.EFS;
 import org.fdesigner.filesystem.IFileStore;
+import org.fdesigner.filesystem.URIUtil;
 import org.fdesigner.framework.framework.Bundle;
 import org.fdesigner.resources.IBuildConfiguration;
 import org.fdesigner.resources.IContainer;
@@ -71,7 +64,6 @@ import org.fdesigner.resources.ISaveParticipant;
 import org.fdesigner.resources.ISavedState;
 import org.fdesigner.resources.ISynchronizer;
 import org.fdesigner.resources.IWorkspace;
-import org.fdesigner.resources.IWorkspace.ProjectOrder;
 import org.fdesigner.resources.IWorkspaceDescription;
 import org.fdesigner.resources.IWorkspaceRoot;
 import org.fdesigner.resources.IWorkspaceRunnable;
@@ -89,6 +81,8 @@ import org.fdesigner.resources.internal.properties.PropertyManager2;
 import org.fdesigner.resources.internal.refresh.RefreshManager;
 import org.fdesigner.resources.internal.resources.ComputeProjectOrder.Digraph;
 import org.fdesigner.resources.internal.resources.ComputeProjectOrder.VertexOrder;
+import org.fdesigner.resources.internal.utils.Messages;
+import org.fdesigner.resources.internal.utils.Policy;
 import org.fdesigner.resources.internal.utils.StringPoolJob;
 import org.fdesigner.resources.internal.watson.ElementTree;
 import org.fdesigner.resources.internal.watson.ElementTreeIterator;
@@ -1254,11 +1248,11 @@ public class Workspace extends PlatformObject implements IWorkspace, ICoreConsta
 
 	URI toURI(IPath path) {
 		if (path.isAbsolute())
-			return org.eclipse.core.filesystem.URIUtil.toURI(path);
+			return org.fdesigner.filesystem.URIUtil.toURI(path);
 		try {
 			return new URI(null, null, path.toPortableString(), null);
 		} catch (URISyntaxException e) {
-			return org.eclipse.core.filesystem.URIUtil.toURI(path);
+			return org.fdesigner.filesystem.URIUtil.toURI(path);
 		}
 	}
 

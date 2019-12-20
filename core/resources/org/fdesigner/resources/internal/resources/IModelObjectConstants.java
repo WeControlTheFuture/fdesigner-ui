@@ -14,7 +14,7 @@
  *     Serge Beauchamp (Freescale Semiconductor) - [229633] Project Path Variable Support
  * Markus Schorn (Wind River) - [306575] Save snapshot location with project
  *******************************************************************************/
-package org.eclipse.core.internal.resources;
+package org.fdesigner.resources.internal.resources;
 
 public interface IModelObjectConstants {
 	String ARGUMENTS = "arguments"; //$NON-NLS-1$
