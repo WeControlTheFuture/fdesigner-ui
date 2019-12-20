@@ -11,10 +11,7 @@
  * Contributors:
  *     Anton Leherbauer (anton.leherbauer@windriver.com) - initial API and implementation
  *******************************************************************************/
-package org.eclipse.jface.text;
-
-import org.eclipse.core.runtime.Assert;
-
+package org.fdesigner.ui.jface.text;
 
 /**
  * Copy-on-write <code>ITextStore</code> wrapper.

@@ -11,14 +11,14 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.jface.text.templates;
+package org.fdesigner.ui.jface.text.templates;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-import org.eclipse.core.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.Assert;
 
 
 /**

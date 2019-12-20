@@ -11,10 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.jface.text;
-
-import org.eclipse.core.runtime.Assert;
-
+package org.fdesigner.ui.jface.text;
 
 /**
  * Description of the state of document rewrite sessions.

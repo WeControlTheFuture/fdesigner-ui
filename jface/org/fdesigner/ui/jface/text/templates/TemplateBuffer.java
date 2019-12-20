@@ -11,9 +11,9 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.jface.text.templates;
+package org.fdesigner.ui.jface.text.templates;
 
-import org.eclipse.core.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.Assert;
 
 /**
  * A template buffer is a container for a string and variables.

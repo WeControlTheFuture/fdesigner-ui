@@ -14,7 +14,7 @@
  *     Jeremie Bresson <jbr@bsiag.com> - Allow to specify format for date variable - https://bugs.eclipse.org/75981
  *     Lars Vogel <Lars.Vogel@vogella.com> - Bug 486903, 487327, 487901
  *******************************************************************************/
-package org.eclipse.jface.text.templates;
+package org.fdesigner.ui.jface.text.templates;
 
 import java.util.List;
 

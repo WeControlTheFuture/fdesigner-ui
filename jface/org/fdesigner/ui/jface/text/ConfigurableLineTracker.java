@@ -12,11 +12,9 @@
  *     IBM Corporation - initial API and implementation
  *     Thomas Wolf - Bug 545252: improved search performance for multiple delimiters
  *******************************************************************************/
-package org.eclipse.jface.text;
+package org.fdesigner.ui.jface.text;
 
-import org.eclipse.core.runtime.Assert;
-
-import org.eclipse.jface.text.MultiStringMatcher.Match;
+import org.fdesigner.ui.jface.text.MultiStringMatcher.Match;
 
 
 /**

@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.jface.text.link;
+package org.fdesigner.ui.jface.text.link;
 
 /**
  * Protocol used by {@link LinkedModeModel}s to communicate state changes, such

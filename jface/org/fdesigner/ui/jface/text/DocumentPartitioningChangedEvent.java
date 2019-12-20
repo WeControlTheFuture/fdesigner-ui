@@ -11,13 +11,11 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.jface.text;
+package org.fdesigner.ui.jface.text;
 
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
-
-import org.eclipse.core.runtime.Assert;
 
 /**
  * Event describing the change of document partitionings.

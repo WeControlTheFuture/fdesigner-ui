@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.jface.text.templates;
+package org.fdesigner.ui.jface.text.templates;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -20,17 +20,15 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import org.eclipse.core.runtime.Assert;
-
-import org.eclipse.text.edits.MalformedTreeException;
-import org.eclipse.text.edits.MultiTextEdit;
-import org.eclipse.text.edits.RangeMarker;
-import org.eclipse.text.edits.ReplaceEdit;
-import org.eclipse.text.edits.TextEdit;
-
-import org.eclipse.jface.text.BadLocationException;
-import org.eclipse.jface.text.Document;
-import org.eclipse.jface.text.IDocument;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.text.edits.MalformedTreeException;
+import org.fdesigner.text.edits.MultiTextEdit;
+import org.fdesigner.text.edits.RangeMarker;
+import org.fdesigner.text.edits.ReplaceEdit;
+import org.fdesigner.text.edits.TextEdit;
+import org.fdesigner.ui.jface.text.BadLocationException;
+import org.fdesigner.ui.jface.text.Document;
+import org.fdesigner.ui.jface.text.IDocument;
 
 
 /**

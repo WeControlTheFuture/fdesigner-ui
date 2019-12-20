@@ -11,13 +11,12 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.jface.text.templates;
+package org.fdesigner.ui.jface.text.templates;
 
-import org.eclipse.core.runtime.Assert;
-
-import org.eclipse.jface.text.BadLocationException;
-import org.eclipse.jface.text.IDocument;
-import org.eclipse.jface.text.Position;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.ui.jface.text.BadLocationException;
+import org.fdesigner.ui.jface.text.IDocument;
+import org.fdesigner.ui.jface.text.Position;
 
 /**
  * Instances of this class describe the context of a template as a region of

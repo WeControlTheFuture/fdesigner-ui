@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *     Anton Leherbauer <anton.leherbauer@windriver.com> - [implementation] AnnotationModel.fModificationStamp leaks annotations - http://bugs.eclipse.org/345715
  *******************************************************************************/
-package org.eclipse.jface.text.source;
+package org.fdesigner.ui.jface.text.source;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -24,16 +24,15 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.NoSuchElementException;
 
-import org.eclipse.core.runtime.Assert;
-
-import org.eclipse.jface.text.AbstractDocument;
-import org.eclipse.jface.text.BadLocationException;
-import org.eclipse.jface.text.BadPositionCategoryException;
-import org.eclipse.jface.text.DocumentEvent;
-import org.eclipse.jface.text.IDocument;
-import org.eclipse.jface.text.IDocumentListener;
-import org.eclipse.jface.text.ISynchronizable;
-import org.eclipse.jface.text.Position;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.ui.jface.text.AbstractDocument;
+import org.fdesigner.ui.jface.text.BadLocationException;
+import org.fdesigner.ui.jface.text.BadPositionCategoryException;
+import org.fdesigner.ui.jface.text.DocumentEvent;
+import org.fdesigner.ui.jface.text.IDocument;
+import org.fdesigner.ui.jface.text.IDocumentListener;
+import org.fdesigner.ui.jface.text.ISynchronizable;
+import org.fdesigner.ui.jface.text.Position;
 
 
 /**

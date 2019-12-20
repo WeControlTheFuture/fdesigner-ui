@@ -11,11 +11,10 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.jface.text.templates;
+package org.fdesigner.ui.jface.text.templates;
 
-import org.eclipse.core.runtime.Assert;
-
-import org.eclipse.jface.text.TextUtilities;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.ui.jface.text.TextUtilities;
 
 /**
  * A <code>TemplateVariable</code> represents a set of positions into a

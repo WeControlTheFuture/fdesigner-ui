@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.jface.text.templates;
+package org.fdesigner.ui.jface.text.templates;
 
 
 /**

@@ -13,16 +13,16 @@
  *******************************************************************************/
 package org.fdesigner.ui.jface.text;
 
-import org.eclipse.text.edits.CopyTargetEdit;
-import org.eclipse.text.edits.DeleteEdit;
-import org.eclipse.text.edits.InsertEdit;
-import org.eclipse.text.edits.MalformedTreeException;
-import org.eclipse.text.edits.MoveTargetEdit;
-import org.eclipse.text.edits.ReplaceEdit;
-import org.eclipse.text.edits.TextEdit;
-import org.eclipse.text.edits.TextEditProcessor;
-import org.eclipse.text.edits.TextEditVisitor;
-import org.eclipse.text.edits.UndoEdit;
+import org.fdesigner.text.edits.CopyTargetEdit;
+import org.fdesigner.text.edits.DeleteEdit;
+import org.fdesigner.text.edits.InsertEdit;
+import org.fdesigner.text.edits.MalformedTreeException;
+import org.fdesigner.text.edits.MoveTargetEdit;
+import org.fdesigner.text.edits.ReplaceEdit;
+import org.fdesigner.text.edits.TextEdit;
+import org.fdesigner.text.edits.TextEditProcessor;
+import org.fdesigner.text.edits.TextEditVisitor;
+import org.fdesigner.text.edits.UndoEdit;
 
 /**
  * A text edit processor that brackets the application of edits into a document rewrite session.

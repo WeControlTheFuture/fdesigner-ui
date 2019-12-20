@@ -11,12 +11,12 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.jface.text.link;
+package org.fdesigner.ui.jface.text.link;
 
-import org.eclipse.jface.text.BadPositionCategoryException;
-import org.eclipse.jface.text.DocumentEvent;
-import org.eclipse.jface.text.IPositionUpdater;
-import org.eclipse.jface.text.Position;
+import org.fdesigner.ui.jface.text.BadPositionCategoryException;
+import org.fdesigner.ui.jface.text.DocumentEvent;
+import org.fdesigner.ui.jface.text.IPositionUpdater;
+import org.fdesigner.ui.jface.text.Position;
 
 
 /**

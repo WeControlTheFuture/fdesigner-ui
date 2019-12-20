@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.jface.text.link;
+package org.fdesigner.ui.jface.text.link;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -21,19 +21,17 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import org.eclipse.core.runtime.Assert;
-
-import org.eclipse.text.edits.MalformedTreeException;
-import org.eclipse.text.edits.MultiTextEdit;
-import org.eclipse.text.edits.ReplaceEdit;
-import org.eclipse.text.edits.TextEdit;
-
-import org.eclipse.jface.text.BadLocationException;
-import org.eclipse.jface.text.DocumentEvent;
-import org.eclipse.jface.text.IDocument;
-import org.eclipse.jface.text.IRegion;
-import org.eclipse.jface.text.Position;
-import org.eclipse.jface.text.Region;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.text.edits.MalformedTreeException;
+import org.fdesigner.text.edits.MultiTextEdit;
+import org.fdesigner.text.edits.ReplaceEdit;
+import org.fdesigner.text.edits.TextEdit;
+import org.fdesigner.ui.jface.text.BadLocationException;
+import org.fdesigner.ui.jface.text.DocumentEvent;
+import org.fdesigner.ui.jface.text.IDocument;
+import org.fdesigner.ui.jface.text.IRegion;
+import org.fdesigner.ui.jface.text.Position;
+import org.fdesigner.ui.jface.text.Region;
 
 
 /**

@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.jface.text.link;
+package org.fdesigner.ui.jface.text.link;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -20,9 +20,8 @@ import java.util.Map;
 import java.util.Set;
 import java.util.Stack;
 
-import org.eclipse.core.runtime.Assert;
-
-import org.eclipse.jface.text.IDocument;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.ui.jface.text.IDocument;
 
 
 /**

@@ -11,14 +11,13 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.jface.text.link;
+package org.fdesigner.ui.jface.text.link;
 
-import org.eclipse.core.runtime.Assert;
-
-import org.eclipse.jface.text.BadLocationException;
-import org.eclipse.jface.text.DocumentEvent;
-import org.eclipse.jface.text.IDocument;
-import org.eclipse.jface.text.Position;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.ui.jface.text.BadLocationException;
+import org.fdesigner.ui.jface.text.DocumentEvent;
+import org.fdesigner.ui.jface.text.IDocument;
+import org.fdesigner.ui.jface.text.Position;
 
 /**
  * A <code>Position</code> on a document that knows which document it is

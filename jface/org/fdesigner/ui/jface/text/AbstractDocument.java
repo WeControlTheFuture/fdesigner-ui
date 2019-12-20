@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.jface.text;
+package org.fdesigner.ui.jface.text;
 
 
 import java.util.ArrayList;
@@ -24,10 +24,9 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.regex.PatternSyntaxException;
 
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.core.runtime.ISafeRunnable;
-import org.eclipse.core.runtime.ListenerList;
-import org.eclipse.core.runtime.SafeRunner;
+import org.fdesigner.runtime.common.runtime.ISafeRunnable;
+import org.fdesigner.runtime.common.runtime.ListenerList;
+import org.fdesigner.runtime.common.runtime.SafeRunner;
 
 
 /**

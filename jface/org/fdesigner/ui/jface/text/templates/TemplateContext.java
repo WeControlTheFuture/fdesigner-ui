@@ -11,14 +11,13 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.jface.text.templates;
+package org.fdesigner.ui.jface.text.templates;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import org.eclipse.core.runtime.IAdaptable;
-
-import org.eclipse.jface.text.BadLocationException;
+import org.fdesigner.runtime.common.runtime.IAdaptable;
+import org.fdesigner.ui.jface.text.BadLocationException;
 
 /**
  * Provides the context for a <code>Template</code> being resolved. Keeps track

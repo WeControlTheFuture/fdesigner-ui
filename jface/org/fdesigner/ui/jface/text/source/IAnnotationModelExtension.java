@@ -11,12 +11,12 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.jface.text.source;
+package org.fdesigner.ui.jface.text.source;
 
 
 import java.util.Map;
 
-import org.eclipse.jface.text.Position;
+import org.fdesigner.ui.jface.text.Position;
 
 
 /**

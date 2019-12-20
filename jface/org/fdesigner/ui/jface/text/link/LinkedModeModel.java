@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.jface.text.link;
+package org.fdesigner.ui.jface.text.link;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -21,20 +21,18 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 
-import org.eclipse.core.runtime.Assert;
-
-import org.eclipse.text.edits.MalformedTreeException;
-import org.eclipse.text.edits.TextEdit;
-
-import org.eclipse.jface.text.BadLocationException;
-import org.eclipse.jface.text.BadPositionCategoryException;
-import org.eclipse.jface.text.DocumentEvent;
-import org.eclipse.jface.text.IDocument;
-import org.eclipse.jface.text.IDocumentExtension;
-import org.eclipse.jface.text.IDocumentExtension.IReplace;
-import org.eclipse.jface.text.IDocumentListener;
-import org.eclipse.jface.text.IPositionUpdater;
-import org.eclipse.jface.text.Position;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.text.edits.MalformedTreeException;
+import org.fdesigner.text.edits.TextEdit;
+import org.fdesigner.ui.jface.text.BadLocationException;
+import org.fdesigner.ui.jface.text.BadPositionCategoryException;
+import org.fdesigner.ui.jface.text.DocumentEvent;
+import org.fdesigner.ui.jface.text.IDocument;
+import org.fdesigner.ui.jface.text.IDocumentExtension;
+import org.fdesigner.ui.jface.text.IDocumentExtension.IReplace;
+import org.fdesigner.ui.jface.text.IDocumentListener;
+import org.fdesigner.ui.jface.text.IPositionUpdater;
+import org.fdesigner.ui.jface.text.Position;
 
 
 /**

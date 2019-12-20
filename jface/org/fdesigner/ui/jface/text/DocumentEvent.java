@@ -12,10 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.jface.text;
-
-import org.eclipse.core.runtime.Assert;
-
+package org.fdesigner.ui.jface.text;
 
 /**
  * Specification of changes applied to documents. All changes are represented as

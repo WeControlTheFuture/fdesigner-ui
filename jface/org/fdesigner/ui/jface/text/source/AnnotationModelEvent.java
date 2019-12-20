@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.jface.text.source;
+package org.fdesigner.ui.jface.text.source;
 
 
 import java.util.HashMap;
@@ -19,7 +19,7 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-import org.eclipse.jface.text.Position;
+import org.fdesigner.ui.jface.text.Position;
 
 
 /**
