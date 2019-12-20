@@ -15,7 +15,8 @@
 package org.fdesigner.p2.metadata.query;
 
 import java.util.Iterator;
-import org.eclipse.equinox.p2.metadata.expression.IExpression;
+
+import org.fdesigner.p2.metadata.expression.IExpression;
 
 /**
  * The root interface for all queries that can be performed on an {@link IQueryable}.

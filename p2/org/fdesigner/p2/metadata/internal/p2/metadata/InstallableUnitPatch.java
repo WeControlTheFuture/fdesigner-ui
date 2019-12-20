@@ -11,12 +11,15 @@
  * 
  * Contributors: IBM Corporation - initial API and implementation
  ******************************************************************************/
-package org.eclipse.equinox.internal.p2.metadata;
+package org.fdesigner.p2.metadata.internal.p2.metadata;
 
 import java.util.Arrays;
 import java.util.List;
-import org.eclipse.equinox.internal.p2.core.helpers.CollectionUtils;
-import org.eclipse.equinox.p2.metadata.*;
+
+import org.fdesigner.p2.core.internal.p2.core.helpers.CollectionUtils;
+import org.fdesigner.p2.metadata.IInstallableUnitPatch;
+import org.fdesigner.p2.metadata.IRequirement;
+import org.fdesigner.p2.metadata.IRequirementChange;
 
 public class InstallableUnitPatch extends InstallableUnit implements IInstallableUnitPatch {
 	public static final String MEMBER_APPLICABILITY_SCOPE = "applicabilityScope"; //$NON-NLS-1$

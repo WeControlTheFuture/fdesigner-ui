@@ -16,7 +16,8 @@
 package org.fdesigner.p2.metadata.query;
 
 import java.util.Iterator;
-import org.eclipse.equinox.p2.metadata.expression.IExpression;
+
+import org.fdesigner.p2.metadata.expression.IExpression;
 
 /**
  * This class represents a simple Java-based query. Clients may subclass and

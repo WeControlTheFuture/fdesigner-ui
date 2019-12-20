@@ -14,16 +14,17 @@
 package org.fdesigner.p2.metadata.query;
 
 import java.util.Iterator;
-import org.eclipse.equinox.internal.p2.metadata.expression.ContextExpression;
-import org.eclipse.equinox.internal.p2.metadata.expression.ExpressionFactory;
-import org.eclipse.equinox.internal.p2.metadata.expression.MatchExpression;
-import org.eclipse.equinox.internal.p2.metadata.expression.QueryResult;
-import org.eclipse.equinox.p2.metadata.expression.ExpressionUtil;
-import org.eclipse.equinox.p2.metadata.expression.IContextExpression;
-import org.eclipse.equinox.p2.metadata.expression.IExpression;
-import org.eclipse.equinox.p2.metadata.expression.IExpressionFactory;
-import org.eclipse.equinox.p2.metadata.index.IIndexProvider;
-import org.eclipse.equinox.p2.metadata.index.IQueryWithIndex;
+
+import org.fdesigner.p2.metadata.expression.ExpressionUtil;
+import org.fdesigner.p2.metadata.expression.IContextExpression;
+import org.fdesigner.p2.metadata.expression.IExpression;
+import org.fdesigner.p2.metadata.expression.IExpressionFactory;
+import org.fdesigner.p2.metadata.index.IIndexProvider;
+import org.fdesigner.p2.metadata.index.IQueryWithIndex;
+import org.fdesigner.p2.metadata.internal.p2.metadata.expression.ContextExpression;
+import org.fdesigner.p2.metadata.internal.p2.metadata.expression.ExpressionFactory;
+import org.fdesigner.p2.metadata.internal.p2.metadata.expression.MatchExpression;
+import org.fdesigner.p2.metadata.internal.p2.metadata.expression.QueryResult;
 
 /**
  * A query that evaluates using an iterator as input and produces a new iterator.

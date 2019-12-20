@@ -11,9 +11,9 @@
  * Contributors:
  *     Cloudsmith Inc. - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.p2.metadata.expression;
+package org.fdesigner.p2.metadata.expression;
 
-import org.eclipse.equinox.p2.metadata.index.IIndexProvider;
+import org.fdesigner.p2.metadata.index.IIndexProvider;
 
 /**
  * The evaluation context. Contexts can be nested and new contexts are pushed for each closure

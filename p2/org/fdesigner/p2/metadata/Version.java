@@ -12,12 +12,17 @@
  *     Cloudsmith Inc - initial API and implementation.
  *******************************************************************************/
 
-package org.eclipse.equinox.p2.metadata;
+package org.fdesigner.p2.metadata;
 
 import java.io.Serializable;
 import java.lang.ref.SoftReference;
 import java.util.WeakHashMap;
-import org.eclipse.equinox.internal.p2.metadata.*;
+
+import org.fdesigner.p2.metadata.internal.p2.metadata.OSGiVersion;
+import org.fdesigner.p2.metadata.internal.p2.metadata.OmniVersion;
+import org.fdesigner.p2.metadata.internal.p2.metadata.VersionFormat;
+import org.fdesigner.p2.metadata.internal.p2.metadata.VersionParser;
+import org.fdesigner.p2.metadata.internal.p2.metadata.VersionVector;
 
 /**
  * A class that represents a Version in the Omni Version format. A Version can be thought of as an

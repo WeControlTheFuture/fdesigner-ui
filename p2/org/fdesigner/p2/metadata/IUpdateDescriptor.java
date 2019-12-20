@@ -11,11 +11,12 @@
  *  Contributors:
  *      IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.p2.metadata;
+package org.fdesigner.p2.metadata;
 
 import java.net.URI;
 import java.util.Collection;
-import org.eclipse.equinox.p2.metadata.expression.IMatchExpression;
+
+import org.fdesigner.p2.metadata.expression.IMatchExpression;
 
 /**
  * An update descriptor is attached to an installable unit to describe what that

@@ -11,10 +11,10 @@
  * Contributors:
  *     Cloudsmith Inc. - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.p2.metadata.index;
+package org.fdesigner.p2.metadata.index;
 
-import org.eclipse.equinox.p2.query.IQuery;
-import org.eclipse.equinox.p2.query.IQueryResult;
+import org.fdesigner.p2.metadata.query.IQuery;
+import org.fdesigner.p2.metadata.query.IQueryResult;
 
 /**
  * An extension of the {@link IQuery} that allows use of indexes.

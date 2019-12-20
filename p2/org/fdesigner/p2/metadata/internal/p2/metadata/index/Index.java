@@ -11,13 +11,22 @@
  * Contributors:
  *     Cloudsmith Inc. - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.metadata.index;
+package org.fdesigner.p2.metadata.internal.p2.metadata.index;
 
 import java.util.ArrayList;
 import java.util.Iterator;
-import org.eclipse.equinox.internal.p2.metadata.expression.*;
-import org.eclipse.equinox.p2.metadata.expression.*;
-import org.eclipse.equinox.p2.metadata.index.IIndex;
+
+import org.fdesigner.p2.metadata.expression.ExpressionUtil;
+import org.fdesigner.p2.metadata.expression.IEvaluationContext;
+import org.fdesigner.p2.metadata.expression.IExpression;
+import org.fdesigner.p2.metadata.expression.IMatchExpression;
+import org.fdesigner.p2.metadata.index.IIndex;
+import org.fdesigner.p2.metadata.internal.p2.metadata.expression.Binary;
+import org.fdesigner.p2.metadata.internal.p2.metadata.expression.CollectionFilter;
+import org.fdesigner.p2.metadata.internal.p2.metadata.expression.LambdaExpression;
+import org.fdesigner.p2.metadata.internal.p2.metadata.expression.Member;
+import org.fdesigner.p2.metadata.internal.p2.metadata.expression.Unary;
+import org.fdesigner.p2.metadata.internal.p2.metadata.expression.Variable;
 
 public abstract class Index<T> implements IIndex<T> {
 

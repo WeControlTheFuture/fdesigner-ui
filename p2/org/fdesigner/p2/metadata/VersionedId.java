@@ -14,9 +14,9 @@
  *     Thomas Hallgren - Fix for bug 268659
  *     IBM - ongoing development
  *******************************************************************************/
-package org.eclipse.equinox.p2.metadata;
+package org.fdesigner.p2.metadata;
 
-import org.eclipse.equinox.internal.p2.core.helpers.StringHelper;
+import org.fdesigner.p2.core.internal.p2.core.helpers.StringHelper;
 
 /**
  * An object representing a (id,version) pair. An instance of this class can be constructed

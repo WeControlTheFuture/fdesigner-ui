@@ -12,13 +12,17 @@
  *     Cloudsmith Inc. - initial API and implementation
  *     IBM - ongoing development
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.metadata.expression;
+package org.fdesigner.p2.metadata.internal.p2.metadata.expression;
 
 import java.util.Dictionary;
 import java.util.Map;
-import org.eclipse.equinox.p2.metadata.expression.*;
-import org.osgi.framework.Filter;
-import org.osgi.framework.ServiceReference;
+
+import org.fdesigner.framework.framework.Filter;
+import org.fdesigner.framework.framework.ServiceReference;
+import org.fdesigner.p2.metadata.expression.ExpressionUtil;
+import org.fdesigner.p2.metadata.expression.IEvaluationContext;
+import org.fdesigner.p2.metadata.expression.IExpressionVisitor;
+import org.fdesigner.p2.metadata.expression.IFilterExpression;
 
 public class LDAPFilter extends Unary implements IFilterExpression {
 

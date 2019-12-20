@@ -12,7 +12,7 @@
  *     IBM Corporation - initial API and implementation
  *     Cloudsmith Inc. - rewrite for smaller memory footprint
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.metadata;
+package org.fdesigner.p2.metadata.internal.p2.metadata;
 
 import java.util.Collection;
 import java.util.Collections;
@@ -21,15 +21,16 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.NoSuchElementException;
-import org.eclipse.equinox.internal.p2.core.helpers.CollectionUtils;
-import org.eclipse.equinox.p2.core.IPool;
-import org.eclipse.equinox.p2.metadata.IInstallableUnit;
-import org.eclipse.equinox.p2.metadata.Version;
-import org.eclipse.equinox.p2.query.CollectionResult;
-import org.eclipse.equinox.p2.query.Collector;
-import org.eclipse.equinox.p2.query.IQuery;
-import org.eclipse.equinox.p2.query.IQueryResult;
-import org.eclipse.equinox.p2.query.QueryUtil;
+
+import org.fdesigner.p2.core.IPool;
+import org.fdesigner.p2.core.internal.p2.core.helpers.CollectionUtils;
+import org.fdesigner.p2.metadata.IInstallableUnit;
+import org.fdesigner.p2.metadata.Version;
+import org.fdesigner.p2.metadata.query.CollectionResult;
+import org.fdesigner.p2.metadata.query.Collector;
+import org.fdesigner.p2.metadata.query.IQuery;
+import org.fdesigner.p2.metadata.query.IQueryResult;
+import org.fdesigner.p2.metadata.query.QueryUtil;
 
 /**
  * A map that stores {@link IInstallableUnit} instances in a way that is efficient to query

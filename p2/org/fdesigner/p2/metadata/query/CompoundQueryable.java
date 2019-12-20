@@ -18,17 +18,18 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Iterator;
-import org.eclipse.core.runtime.NullProgressMonitor;
-import org.eclipse.equinox.internal.p2.metadata.InstallableUnit;
-import org.eclipse.equinox.internal.p2.metadata.expression.CompoundIterator;
-import org.eclipse.equinox.internal.p2.metadata.index.CompoundIndex;
-import org.eclipse.equinox.internal.p2.metadata.index.IndexProvider;
-import org.eclipse.equinox.p2.metadata.IInstallableUnit;
-import org.eclipse.equinox.p2.metadata.KeyWithLocale;
-import org.eclipse.equinox.p2.metadata.expression.IEvaluationContext;
-import org.eclipse.equinox.p2.metadata.expression.IExpression;
-import org.eclipse.equinox.p2.metadata.index.IIndex;
-import org.eclipse.equinox.p2.metadata.index.IIndexProvider;
+
+import org.fdesigner.p2.metadata.IInstallableUnit;
+import org.fdesigner.p2.metadata.KeyWithLocale;
+import org.fdesigner.p2.metadata.expression.IEvaluationContext;
+import org.fdesigner.p2.metadata.expression.IExpression;
+import org.fdesigner.p2.metadata.index.IIndex;
+import org.fdesigner.p2.metadata.index.IIndexProvider;
+import org.fdesigner.p2.metadata.internal.p2.metadata.InstallableUnit;
+import org.fdesigner.p2.metadata.internal.p2.metadata.expression.CompoundIterator;
+import org.fdesigner.p2.metadata.internal.p2.metadata.index.CompoundIndex;
+import org.fdesigner.p2.metadata.internal.p2.metadata.index.IndexProvider;
+import org.fdesigner.runtime.common.runtime.NullProgressMonitor;
 
 /**
  * A queryable that holds a number of other IQueryables and provides

@@ -14,7 +14,7 @@
  *     SAP - ongoing development
  *     Todor Boev
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.metadata;
+package org.fdesigner.p2.metadata.internal.p2.metadata;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -22,11 +22,12 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.equinox.p2.metadata.IProvidedCapability;
-import org.eclipse.equinox.p2.metadata.Version;
-import org.eclipse.equinox.p2.metadata.expression.IMemberProvider;
-import org.eclipse.osgi.util.NLS;
+
+import org.fdesigner.p2.metadata.IProvidedCapability;
+import org.fdesigner.p2.metadata.Version;
+import org.fdesigner.p2.metadata.expression.IMemberProvider;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * Describes a capability as exposed or required by an installable unit

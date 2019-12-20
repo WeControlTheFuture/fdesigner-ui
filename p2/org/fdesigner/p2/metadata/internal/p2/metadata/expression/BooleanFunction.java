@@ -11,7 +11,7 @@
  * Contributors:
  *     Cloudsmith Inc. - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.metadata.expression;
+package org.fdesigner.p2.metadata.internal.p2.metadata.expression;
 
 /**
  * A function that obtains a class based on a String

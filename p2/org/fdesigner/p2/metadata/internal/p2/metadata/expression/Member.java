@@ -11,11 +11,18 @@
  * Contributors:
  *     Cloudsmith Inc. - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.metadata.expression;
+package org.fdesigner.p2.metadata.internal.p2.metadata.expression;
 
-import java.lang.reflect.*;
-import java.util.*;
-import org.eclipse.equinox.p2.metadata.expression.*;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.lang.reflect.Modifier;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.Map;
+
+import org.fdesigner.p2.metadata.expression.IEvaluationContext;
+import org.fdesigner.p2.metadata.expression.IExpressionVisitor;
+import org.fdesigner.p2.metadata.expression.IMemberProvider;
 
 /**
  * <p>An expression that performs member calls to obtain some value

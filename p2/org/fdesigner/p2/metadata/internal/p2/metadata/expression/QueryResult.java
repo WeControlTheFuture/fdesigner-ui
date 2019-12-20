@@ -11,14 +11,20 @@
  * Contributors:
  *     Cloudsmith Inc. - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.metadata.expression;
+package org.fdesigner.p2.metadata.internal.p2.metadata.expression;
 
 import java.lang.reflect.Array;
-import java.util.*;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.equinox.p2.metadata.index.IIndexProvider;
-import org.eclipse.equinox.p2.query.IQuery;
-import org.eclipse.equinox.p2.query.IQueryResult;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
+
+import org.fdesigner.p2.metadata.index.IIndexProvider;
+import org.fdesigner.p2.metadata.query.IQuery;
+import org.fdesigner.p2.metadata.query.IQueryResult;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
 
 /**
  * A result optimized for dealing with iterators returned from

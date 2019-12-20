@@ -12,26 +12,27 @@
  * 		IBM Corporation - initial API and implementation
  * 		Genuitec, LLC - added license support
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.metadata;
+package org.fdesigner.p2.metadata.internal.p2.metadata;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Map;
-import org.eclipse.equinox.p2.metadata.IArtifactKey;
-import org.eclipse.equinox.p2.metadata.ICopyright;
-import org.eclipse.equinox.p2.metadata.IInstallableUnit;
-import org.eclipse.equinox.p2.metadata.IInstallableUnitFragment;
-import org.eclipse.equinox.p2.metadata.ILicense;
-import org.eclipse.equinox.p2.metadata.IProvidedCapability;
-import org.eclipse.equinox.p2.metadata.IRequirement;
-import org.eclipse.equinox.p2.metadata.ITouchpointData;
-import org.eclipse.equinox.p2.metadata.ITouchpointType;
-import org.eclipse.equinox.p2.metadata.IUpdateDescriptor;
-import org.eclipse.equinox.p2.metadata.Version;
-import org.eclipse.equinox.p2.metadata.expression.IMatchExpression;
-import org.eclipse.equinox.p2.metadata.expression.IMemberProvider;
+
+import org.fdesigner.p2.metadata.IArtifactKey;
+import org.fdesigner.p2.metadata.ICopyright;
+import org.fdesigner.p2.metadata.IInstallableUnit;
+import org.fdesigner.p2.metadata.IInstallableUnitFragment;
+import org.fdesigner.p2.metadata.ILicense;
+import org.fdesigner.p2.metadata.IProvidedCapability;
+import org.fdesigner.p2.metadata.IRequirement;
+import org.fdesigner.p2.metadata.ITouchpointData;
+import org.fdesigner.p2.metadata.ITouchpointType;
+import org.fdesigner.p2.metadata.IUpdateDescriptor;
+import org.fdesigner.p2.metadata.Version;
+import org.fdesigner.p2.metadata.expression.IMatchExpression;
+import org.fdesigner.p2.metadata.expression.IMemberProvider;
 
 public class ResolvedInstallableUnit implements IInstallableUnit, IMemberProvider {
 	private static IInstallableUnitFragment[] NO_IU = new IInstallableUnitFragment[0];

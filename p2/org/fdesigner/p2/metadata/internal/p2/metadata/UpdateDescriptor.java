@@ -11,13 +11,14 @@
  * 
  * Contributors: IBM Corporation - initial API and implementation
  ******************************************************************************/
-package org.eclipse.equinox.internal.p2.metadata;
+package org.fdesigner.p2.metadata.internal.p2.metadata;
 
 import java.net.URI;
 import java.util.Collection;
-import org.eclipse.equinox.p2.metadata.IInstallableUnit;
-import org.eclipse.equinox.p2.metadata.IUpdateDescriptor;
-import org.eclipse.equinox.p2.metadata.expression.IMatchExpression;
+
+import org.fdesigner.p2.metadata.IInstallableUnit;
+import org.fdesigner.p2.metadata.IUpdateDescriptor;
+import org.fdesigner.p2.metadata.expression.IMatchExpression;
 
 public class UpdateDescriptor implements IUpdateDescriptor {
 	private Collection<IMatchExpression<IInstallableUnit>> descriptors;

@@ -11,14 +11,17 @@
  * Contributors:
  *     Cloudsmith Inc. - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.metadata.index;
+package org.fdesigner.p2.metadata.internal.p2.metadata.index;
 
-import java.util.*;
-import org.eclipse.equinox.internal.p2.metadata.IUMap;
-import org.eclipse.equinox.internal.p2.metadata.InstallableUnit;
-import org.eclipse.equinox.p2.metadata.IInstallableUnit;
-import org.eclipse.equinox.p2.metadata.expression.IEvaluationContext;
-import org.eclipse.equinox.p2.metadata.expression.IExpression;
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.Iterator;
+
+import org.fdesigner.p2.metadata.IInstallableUnit;
+import org.fdesigner.p2.metadata.expression.IEvaluationContext;
+import org.fdesigner.p2.metadata.expression.IExpression;
+import org.fdesigner.p2.metadata.internal.p2.metadata.IUMap;
+import org.fdesigner.p2.metadata.internal.p2.metadata.InstallableUnit;
 
 public class IdIndex extends Index<IInstallableUnit> {
 	private final IUMap iuMap;

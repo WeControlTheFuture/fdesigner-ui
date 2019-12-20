@@ -19,7 +19,8 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
-import org.eclipse.core.runtime.IProgressMonitor;
+
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
 
 /**
  * This class allows to adapt java collections to a p2 a query result  and as such something queryable  

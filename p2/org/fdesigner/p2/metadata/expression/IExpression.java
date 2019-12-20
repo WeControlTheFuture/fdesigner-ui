@@ -11,7 +11,7 @@
  * Contributors:
  *     Cloudsmith Inc. - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.p2.metadata.expression;
+package org.fdesigner.p2.metadata.expression;
 
 /**
  * A node in the expression tree

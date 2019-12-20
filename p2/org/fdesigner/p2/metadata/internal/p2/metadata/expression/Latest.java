@@ -11,11 +11,14 @@
  * Contributors:
  *     Cloudsmith Inc. - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.metadata.expression;
+package org.fdesigner.p2.metadata.internal.p2.metadata.expression;
 
-import java.util.*;
-import org.eclipse.equinox.p2.metadata.IVersionedId;
-import org.eclipse.equinox.p2.metadata.expression.IEvaluationContext;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Iterator;
+
+import org.fdesigner.p2.metadata.IVersionedId;
+import org.fdesigner.p2.metadata.expression.IEvaluationContext;
 
 /**
  * An expression that is especially targeted towards {@link IVersionedId} instances. It will

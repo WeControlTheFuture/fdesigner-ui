@@ -11,12 +11,13 @@
  * Contributors:
  *     Cloudsmith Inc. - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.metadata.expression;
+package org.fdesigner.p2.metadata.internal.p2.metadata.expression;
 
 import java.util.Iterator;
-import org.eclipse.equinox.p2.metadata.expression.IEvaluationContext;
-import org.eclipse.equinox.p2.query.IMatchQuery;
-import org.eclipse.equinox.p2.query.IQuery;
+
+import org.fdesigner.p2.metadata.expression.IEvaluationContext;
+import org.fdesigner.p2.metadata.query.IMatchQuery;
+import org.fdesigner.p2.metadata.query.IQuery;
 
 public final class WrappedIQuery extends Function {
 

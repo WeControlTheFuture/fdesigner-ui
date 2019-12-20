@@ -11,14 +11,17 @@
  * Contributors:
  *     Cloudsmith Inc. - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.metadata;
+package org.fdesigner.p2.metadata.internal.p2.metadata;
 
 import java.io.Serializable;
-import java.util.*;
-import org.eclipse.equinox.internal.p2.metadata.EnumDefinition.EnumSegment;
-import org.eclipse.equinox.internal.p2.metadata.VersionFormat.TreeInfo;
-import org.eclipse.equinox.p2.metadata.VersionFormatException;
-import org.eclipse.osgi.util.NLS;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+
+import org.fdesigner.p2.metadata.VersionFormatException;
+import org.fdesigner.p2.metadata.internal.p2.metadata.EnumDefinition.EnumSegment;
+import org.fdesigner.p2.metadata.internal.p2.metadata.VersionFormat.TreeInfo;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * This is the Omni Version Format parser. It will parse a version format in string form

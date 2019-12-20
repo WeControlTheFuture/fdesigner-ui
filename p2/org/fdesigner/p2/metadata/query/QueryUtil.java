@@ -16,20 +16,20 @@ package org.fdesigner.p2.metadata.query;
 
 import java.util.ArrayList;
 import java.util.Collection;
-import org.eclipse.equinox.internal.p2.metadata.InstallableUnit;
-import org.eclipse.equinox.internal.p2.metadata.expression.ContextExpression;
-import org.eclipse.equinox.internal.p2.metadata.expression.Expression.VariableFinder;
-import org.eclipse.equinox.internal.p2.metadata.expression.ExpressionFactory;
-import org.eclipse.equinox.p2.metadata.IInstallableUnit;
-import org.eclipse.equinox.p2.metadata.IInstallableUnitFragment;
-import org.eclipse.equinox.p2.metadata.IVersionedId;
-import org.eclipse.equinox.p2.metadata.MetadataFactory;
-import org.eclipse.equinox.p2.metadata.Version;
-import org.eclipse.equinox.p2.metadata.VersionRange;
-import org.eclipse.equinox.p2.metadata.expression.ExpressionUtil;
-import org.eclipse.equinox.p2.metadata.expression.IContextExpression;
-import org.eclipse.equinox.p2.metadata.expression.IExpression;
-import org.eclipse.equinox.p2.metadata.expression.IExpressionFactory;
+
+import org.fdesigner.p2.metadata.IInstallableUnit;
+import org.fdesigner.p2.metadata.IInstallableUnitFragment;
+import org.fdesigner.p2.metadata.IVersionedId;
+import org.fdesigner.p2.metadata.MetadataFactory;
+import org.fdesigner.p2.metadata.Version;
+import org.fdesigner.p2.metadata.VersionRange;
+import org.fdesigner.p2.metadata.expression.ExpressionUtil;
+import org.fdesigner.p2.metadata.expression.IContextExpression;
+import org.fdesigner.p2.metadata.expression.IExpression;
+import org.fdesigner.p2.metadata.expression.IExpressionFactory;
+import org.fdesigner.p2.metadata.internal.p2.metadata.expression.ContextExpression;
+import org.fdesigner.p2.metadata.internal.p2.metadata.expression.Expression.VariableFinder;
+import org.fdesigner.p2.metadata.internal.p2.metadata.expression.ExpressionFactory;
 
 /**
  * Helper class for query related tasks.

@@ -12,10 +12,10 @@
  *     IBM Corporation - initial API and implementation
  *     EclipseSource - ongoing Development
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.metadata;
+package org.fdesigner.p2.metadata.internal.p2.metadata;
 
-import org.eclipse.equinox.p2.metadata.ITouchpointType;
-import org.eclipse.equinox.p2.metadata.Version;
+import org.fdesigner.p2.metadata.ITouchpointType;
+import org.fdesigner.p2.metadata.Version;
 
 /**
  * Identifies a particular touchpoint. A touchpoint is identified by an id 

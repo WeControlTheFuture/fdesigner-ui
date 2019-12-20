@@ -11,12 +11,12 @@
  * Contributors:
  *     Cloudsmith Inc. - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.p2.metadata.expression;
+package org.fdesigner.p2.metadata.expression;
 
 import java.util.List;
 import java.util.Map;
-import org.eclipse.equinox.p2.metadata.IVersionedId;
-import org.eclipse.equinox.p2.query.IQuery;
+
+import org.fdesigner.p2.metadata.query.IQuery;
 
 /**
  * This interface provides all the factory methods needed to create the

@@ -11,21 +11,19 @@
  *  Contributors:
  *     Todor Boev
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.metadata;
+package org.fdesigner.p2.metadata.internal.p2.metadata;
 
-import static org.eclipse.equinox.internal.p2.metadata.InstallableUnit.MEMBER_PROVIDED_CAPABILITIES;
-import static org.eclipse.equinox.internal.p2.metadata.ProvidedCapability.MEMBER_NAMESPACE;
-import static org.eclipse.equinox.internal.p2.metadata.ProvidedCapability.MEMBER_PROPERTIES;
+import static org.fdesigner.p2.metadata.internal.p2.metadata.InstallableUnit.MEMBER_PROVIDED_CAPABILITIES;
+import static org.fdesigner.p2.metadata.internal.p2.metadata.ProvidedCapability.MEMBER_NAMESPACE;
+import static org.fdesigner.p2.metadata.internal.p2.metadata.ProvidedCapability.MEMBER_PROPERTIES;
 
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.equinox.p2.metadata.IInstallableUnit;
-import org.eclipse.equinox.p2.metadata.IProvidedCapability;
-import org.eclipse.equinox.p2.metadata.IRequirement;
-import org.eclipse.equinox.p2.metadata.expression.ExpressionUtil;
-import org.eclipse.equinox.p2.metadata.expression.IExpression;
-import org.eclipse.equinox.p2.metadata.expression.IExpressionFactory;
-import org.eclipse.equinox.p2.metadata.expression.IFilterExpression;
-import org.eclipse.equinox.p2.metadata.expression.IMatchExpression;
+import org.fdesigner.p2.metadata.IInstallableUnit;
+import org.fdesigner.p2.metadata.expression.ExpressionUtil;
+import org.fdesigner.p2.metadata.expression.IExpression;
+import org.fdesigner.p2.metadata.expression.IExpressionFactory;
+import org.fdesigner.p2.metadata.expression.IFilterExpression;
+import org.fdesigner.p2.metadata.expression.IMatchExpression;
+import org.fdesigner.runtime.common.runtime.Assert;
 
 /**
  * A required capability match represents some external constraint on an {@link IInstallableUnit}.

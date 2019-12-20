@@ -12,32 +12,33 @@
  *     IBM Corporation - initial API and implementation
  *     Genuitec, LLC - added license support
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.metadata;
+package org.fdesigner.p2.metadata.internal.p2.metadata;
 
 import java.util.Collection;
 import java.util.Collections;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
-import org.eclipse.equinox.internal.p2.core.helpers.CollectionUtils;
-import org.eclipse.equinox.internal.p2.core.helpers.OrderedProperties;
-import org.eclipse.equinox.p2.metadata.IArtifactKey;
-import org.eclipse.equinox.p2.metadata.ICopyright;
-import org.eclipse.equinox.p2.metadata.IInstallableUnit;
-import org.eclipse.equinox.p2.metadata.IInstallableUnitFragment;
-import org.eclipse.equinox.p2.metadata.ILicense;
-import org.eclipse.equinox.p2.metadata.IProvidedCapability;
-import org.eclipse.equinox.p2.metadata.IRequirement;
-import org.eclipse.equinox.p2.metadata.ITouchpointData;
-import org.eclipse.equinox.p2.metadata.ITouchpointType;
-import org.eclipse.equinox.p2.metadata.IUpdateDescriptor;
-import org.eclipse.equinox.p2.metadata.Version;
-import org.eclipse.equinox.p2.metadata.expression.ExpressionUtil;
-import org.eclipse.equinox.p2.metadata.expression.IExpression;
-import org.eclipse.equinox.p2.metadata.expression.IExpressionFactory;
-import org.eclipse.equinox.p2.metadata.expression.IFilterExpression;
-import org.eclipse.equinox.p2.metadata.expression.IMatchExpression;
-import org.eclipse.equinox.p2.metadata.expression.IMemberProvider;
+
+import org.fdesigner.p2.core.internal.p2.core.helpers.CollectionUtils;
+import org.fdesigner.p2.core.internal.p2.core.helpers.OrderedProperties;
+import org.fdesigner.p2.metadata.IArtifactKey;
+import org.fdesigner.p2.metadata.ICopyright;
+import org.fdesigner.p2.metadata.IInstallableUnit;
+import org.fdesigner.p2.metadata.IInstallableUnitFragment;
+import org.fdesigner.p2.metadata.ILicense;
+import org.fdesigner.p2.metadata.IProvidedCapability;
+import org.fdesigner.p2.metadata.IRequirement;
+import org.fdesigner.p2.metadata.ITouchpointData;
+import org.fdesigner.p2.metadata.ITouchpointType;
+import org.fdesigner.p2.metadata.IUpdateDescriptor;
+import org.fdesigner.p2.metadata.Version;
+import org.fdesigner.p2.metadata.expression.ExpressionUtil;
+import org.fdesigner.p2.metadata.expression.IExpression;
+import org.fdesigner.p2.metadata.expression.IExpressionFactory;
+import org.fdesigner.p2.metadata.expression.IFilterExpression;
+import org.fdesigner.p2.metadata.expression.IMatchExpression;
+import org.fdesigner.p2.metadata.expression.IMemberProvider;
 
 public class InstallableUnit implements IInstallableUnit, IMemberProvider {
 	@SuppressWarnings("serial")

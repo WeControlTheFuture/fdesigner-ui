@@ -11,7 +11,7 @@
  * Contributors:
  *     Cloudsmith Inc. - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.metadata.expression;
+package org.fdesigner.p2.metadata.internal.p2.metadata.expression;
 
 public interface IExpressionConstants {
 	String KEYWORD_ALL = "all"; //$NON-NLS-1$

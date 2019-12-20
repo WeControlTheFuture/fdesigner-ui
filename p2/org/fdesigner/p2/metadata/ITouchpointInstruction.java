@@ -12,7 +12,7 @@
 * Contributors:
 *   EclipseSource - initial API and implementation
 ******************************************************************************/
-package org.eclipse.equinox.p2.metadata;
+package org.fdesigner.p2.metadata;
 
 /**
  * A touchpoint instruction contains either a sequence of instruction statements

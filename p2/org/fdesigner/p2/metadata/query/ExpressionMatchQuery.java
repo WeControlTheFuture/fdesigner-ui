@@ -16,18 +16,19 @@ package org.fdesigner.p2.metadata.query;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
-import org.eclipse.equinox.internal.p2.metadata.expression.Expression;
-import org.eclipse.equinox.internal.p2.metadata.expression.ExpressionFactory;
-import org.eclipse.equinox.internal.p2.metadata.expression.MatchExpression;
-import org.eclipse.equinox.internal.p2.metadata.expression.QueryResult;
-import org.eclipse.equinox.internal.p2.metadata.expression.RepeatableIterator;
-import org.eclipse.equinox.p2.metadata.expression.ExpressionUtil;
-import org.eclipse.equinox.p2.metadata.expression.IEvaluationContext;
-import org.eclipse.equinox.p2.metadata.expression.IExpression;
-import org.eclipse.equinox.p2.metadata.expression.IMatchExpression;
-import org.eclipse.equinox.p2.metadata.index.IIndex;
-import org.eclipse.equinox.p2.metadata.index.IIndexProvider;
-import org.eclipse.equinox.p2.metadata.index.IQueryWithIndex;
+
+import org.fdesigner.p2.metadata.expression.ExpressionUtil;
+import org.fdesigner.p2.metadata.expression.IEvaluationContext;
+import org.fdesigner.p2.metadata.expression.IExpression;
+import org.fdesigner.p2.metadata.expression.IMatchExpression;
+import org.fdesigner.p2.metadata.index.IIndex;
+import org.fdesigner.p2.metadata.index.IIndexProvider;
+import org.fdesigner.p2.metadata.index.IQueryWithIndex;
+import org.fdesigner.p2.metadata.internal.p2.metadata.expression.Expression;
+import org.fdesigner.p2.metadata.internal.p2.metadata.expression.ExpressionFactory;
+import org.fdesigner.p2.metadata.internal.p2.metadata.expression.MatchExpression;
+import org.fdesigner.p2.metadata.internal.p2.metadata.expression.QueryResult;
+import org.fdesigner.p2.metadata.internal.p2.metadata.expression.RepeatableIterator;
 
 /**
  * A query that matches candidates against an expression.

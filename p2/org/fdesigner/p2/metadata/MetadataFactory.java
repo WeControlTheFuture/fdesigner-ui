@@ -13,7 +13,7 @@
  *     Genuitec, LLC
  *		EclipseSource - ongoing development
  *******************************************************************************/
-package org.eclipse.equinox.p2.metadata;
+package org.fdesigner.p2.metadata;
 
 import java.net.URI;
 import java.util.ArrayList;
@@ -24,26 +24,27 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.equinox.internal.p2.metadata.Copyright;
-import org.eclipse.equinox.internal.p2.metadata.IRequiredCapability;
-import org.eclipse.equinox.internal.p2.metadata.InstallableUnit;
-import org.eclipse.equinox.internal.p2.metadata.InstallableUnitFragment;
-import org.eclipse.equinox.internal.p2.metadata.InstallableUnitPatch;
-import org.eclipse.equinox.internal.p2.metadata.License;
-import org.eclipse.equinox.internal.p2.metadata.ProvidedCapability;
-import org.eclipse.equinox.internal.p2.metadata.RequiredCapability;
-import org.eclipse.equinox.internal.p2.metadata.RequiredPropertiesMatch;
-import org.eclipse.equinox.internal.p2.metadata.Requirement;
-import org.eclipse.equinox.internal.p2.metadata.RequirementChange;
-import org.eclipse.equinox.internal.p2.metadata.ResolvedInstallableUnit;
-import org.eclipse.equinox.internal.p2.metadata.TouchpointData;
-import org.eclipse.equinox.internal.p2.metadata.TouchpointInstruction;
-import org.eclipse.equinox.internal.p2.metadata.TouchpointType;
-import org.eclipse.equinox.internal.p2.metadata.UpdateDescriptor;
-import org.eclipse.equinox.p2.metadata.expression.ExpressionUtil;
-import org.eclipse.equinox.p2.metadata.expression.IFilterExpression;
-import org.eclipse.equinox.p2.metadata.expression.IMatchExpression;
+
+import org.fdesigner.p2.metadata.expression.ExpressionUtil;
+import org.fdesigner.p2.metadata.expression.IFilterExpression;
+import org.fdesigner.p2.metadata.expression.IMatchExpression;
+import org.fdesigner.p2.metadata.internal.p2.metadata.Copyright;
+import org.fdesigner.p2.metadata.internal.p2.metadata.IRequiredCapability;
+import org.fdesigner.p2.metadata.internal.p2.metadata.InstallableUnit;
+import org.fdesigner.p2.metadata.internal.p2.metadata.InstallableUnitFragment;
+import org.fdesigner.p2.metadata.internal.p2.metadata.InstallableUnitPatch;
+import org.fdesigner.p2.metadata.internal.p2.metadata.License;
+import org.fdesigner.p2.metadata.internal.p2.metadata.ProvidedCapability;
+import org.fdesigner.p2.metadata.internal.p2.metadata.RequiredCapability;
+import org.fdesigner.p2.metadata.internal.p2.metadata.RequiredPropertiesMatch;
+import org.fdesigner.p2.metadata.internal.p2.metadata.Requirement;
+import org.fdesigner.p2.metadata.internal.p2.metadata.RequirementChange;
+import org.fdesigner.p2.metadata.internal.p2.metadata.ResolvedInstallableUnit;
+import org.fdesigner.p2.metadata.internal.p2.metadata.TouchpointData;
+import org.fdesigner.p2.metadata.internal.p2.metadata.TouchpointInstruction;
+import org.fdesigner.p2.metadata.internal.p2.metadata.TouchpointType;
+import org.fdesigner.p2.metadata.internal.p2.metadata.UpdateDescriptor;
+import org.fdesigner.runtime.common.runtime.Assert;
 
 /**
  * A factory class for instantiating various p2 metadata objects.

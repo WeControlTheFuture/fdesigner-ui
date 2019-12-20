@@ -11,11 +11,17 @@
  * Contributors:
  *     Cloudsmith Inc. - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.p2.metadata.expression;
+package org.fdesigner.p2.metadata.expression;
 
-import org.eclipse.equinox.internal.p2.metadata.expression.*;
-import org.eclipse.equinox.internal.p2.metadata.expression.parser.LDAPFilterParser;
-import org.eclipse.equinox.internal.p2.metadata.expression.parser.QLParser;
+import org.fdesigner.p2.metadata.internal.p2.metadata.expression.Binary;
+import org.fdesigner.p2.metadata.internal.p2.metadata.expression.ExpressionFactory;
+import org.fdesigner.p2.metadata.internal.p2.metadata.expression.Literal;
+import org.fdesigner.p2.metadata.internal.p2.metadata.expression.Member;
+import org.fdesigner.p2.metadata.internal.p2.metadata.expression.NAry;
+import org.fdesigner.p2.metadata.internal.p2.metadata.expression.Unary;
+import org.fdesigner.p2.metadata.internal.p2.metadata.expression.Variable;
+import org.fdesigner.p2.metadata.internal.p2.metadata.expression.parser.LDAPFilterParser;
+import org.fdesigner.p2.metadata.internal.p2.metadata.expression.parser.QLParser;
 
 /**
  * Global access to factory, parser, and methods for introspection

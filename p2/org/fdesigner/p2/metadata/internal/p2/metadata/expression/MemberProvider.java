@@ -11,12 +11,19 @@
  * Contributors:
  *     Cloudsmith Inc. - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.metadata.expression;
+package org.fdesigner.p2.metadata.internal.p2.metadata.expression;
 
-import java.util.*;
+import java.util.Collections;
+import java.util.Dictionary;
+import java.util.Enumeration;
+import java.util.HashMap;
+import java.util.Hashtable;
+import java.util.Map;
 import java.util.Map.Entry;
-import org.eclipse.equinox.p2.metadata.expression.IMemberProvider;
-import org.osgi.framework.ServiceReference;
+import java.util.Set;
+
+import org.fdesigner.framework.framework.ServiceReference;
+import org.fdesigner.p2.metadata.expression.IMemberProvider;
 
 public abstract class MemberProvider implements IMemberProvider {
 

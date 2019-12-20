@@ -11,10 +11,11 @@
  * Contributors:
  *     Cloudsmith Inc. - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.metadata.expression;
+package org.fdesigner.p2.metadata.internal.p2.metadata.expression;
 
 import java.util.Iterator;
-import org.eclipse.equinox.p2.metadata.expression.IEvaluationContext;
+
+import org.fdesigner.p2.metadata.expression.IEvaluationContext;
 
 /**
  * A collection filter that yields the first element of the <code>collection</code> for which

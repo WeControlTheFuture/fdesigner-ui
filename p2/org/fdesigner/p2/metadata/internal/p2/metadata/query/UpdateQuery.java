@@ -12,13 +12,14 @@
  *     IBM Corporation - initial API and implementation
  *     Cloudsmith Inc. - converted into expression based query
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.metadata.query;
+package org.fdesigner.p2.metadata.internal.p2.metadata.query;
 
-import org.eclipse.equinox.p2.query.ExpressionMatchQuery;
-
-import org.eclipse.equinox.p2.metadata.IInstallableUnit;
-import org.eclipse.equinox.p2.metadata.IInstallableUnitPatch;
-import org.eclipse.equinox.p2.metadata.expression.*;
+import org.fdesigner.p2.metadata.IInstallableUnit;
+import org.fdesigner.p2.metadata.IInstallableUnitPatch;
+import org.fdesigner.p2.metadata.expression.ExpressionUtil;
+import org.fdesigner.p2.metadata.expression.IExpression;
+import org.fdesigner.p2.metadata.expression.IExpressionParser;
+import org.fdesigner.p2.metadata.query.ExpressionMatchQuery;
 
 /**
  * A query that finds all IUs that are considered an "Update" of the 

@@ -12,9 +12,10 @@
 * Contributors:
 *   EclipseSource - initial API and implementation
 ******************************************************************************/
-package org.eclipse.equinox.internal.p2.metadata;
+package org.fdesigner.p2.metadata.internal.p2.metadata;
 
-import org.eclipse.equinox.p2.metadata.*;
+import org.fdesigner.p2.metadata.IRequirement;
+import org.fdesigner.p2.metadata.VersionRange;
 
 /**
  * A required capability represents some external constraint on an {@link IInstallableUnit}.

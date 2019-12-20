@@ -12,9 +12,9 @@
  *     Cloudsmith Inc. - initial API and implementation
  *     SAP - ongoing development
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.metadata;
+package org.fdesigner.p2.metadata.internal.p2.metadata;
 
-import org.eclipse.osgi.util.NLS;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * TODO Shouldn't be a public class in an API package.

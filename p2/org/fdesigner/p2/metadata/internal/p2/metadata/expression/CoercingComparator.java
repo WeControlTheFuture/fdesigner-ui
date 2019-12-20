@@ -11,15 +11,15 @@
  * Contributors:
  *     Cloudsmith Inc. - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.metadata.expression;
+package org.fdesigner.p2.metadata.internal.p2.metadata.expression;
 
 import java.lang.reflect.AccessibleObject;
 import java.lang.reflect.Constructor;
 import java.security.AccessController;
 import java.security.PrivilegedAction;
-import java.util.Comparator;
-import org.eclipse.equinox.p2.metadata.Version;
-import org.osgi.framework.FrameworkUtil;
+
+import org.fdesigner.framework.framework.FrameworkUtil;
+import org.fdesigner.p2.metadata.Version;
 
 /**
  * A comparator that performs coercion if needed before comparison.

@@ -14,14 +14,15 @@
  * 		IBM Corporation - ongoing development
  *      EclipseSource - ongoing development
  ******************************************************************************/
-package org.eclipse.equinox.internal.p2.metadata;
+package org.fdesigner.p2.metadata.internal.p2.metadata;
 
 import java.math.BigInteger;
 import java.net.URI;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-import org.eclipse.equinox.p2.metadata.ILicense;
+
+import org.fdesigner.p2.metadata.ILicense;
 
 /**
  * The <code>License</code> class represents a software license.  A license has required body text

@@ -11,14 +11,18 @@
  * Contributors:
  *     Cloudsmith Inc. - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.metadata.expression;
+package org.fdesigner.p2.metadata.internal.p2.metadata.expression;
 
-import java.util.*;
-import org.eclipse.equinox.internal.p2.metadata.InstallableUnit;
-import org.eclipse.equinox.internal.p2.metadata.expression.Member.DynamicMember;
-import org.eclipse.equinox.p2.metadata.IInstallableUnit;
-import org.eclipse.equinox.p2.metadata.expression.IEvaluationContext;
-import org.eclipse.equinox.p2.metadata.index.IIndexProvider;
+import java.util.Dictionary;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+
+import org.fdesigner.p2.metadata.IInstallableUnit;
+import org.fdesigner.p2.metadata.expression.IEvaluationContext;
+import org.fdesigner.p2.metadata.index.IIndexProvider;
+import org.fdesigner.p2.metadata.internal.p2.metadata.InstallableUnit;
+import org.fdesigner.p2.metadata.internal.p2.metadata.expression.Member.DynamicMember;
 
 /**
  * This class represents indexed or keyed access to an indexed collection
@@ -30,7 +34,7 @@ class At extends Binary {
 	}
 
 	@Override
-	public Object evaluate(org.eclipse.equinox.p2.metadata.expression.IEvaluationContext context) {
+	public Object evaluate(org.fdesigner.p2.metadata.expression.IEvaluationContext context) {
 		Object lval;
 		if (lhs instanceof DynamicMember) {
 			DynamicMember lm = (DynamicMember) lhs;

@@ -12,12 +12,12 @@
  *     IBM Corporation - initial API and implementation
  *     EclipseSource - ongoing development
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.metadata;
+package org.fdesigner.p2.metadata.internal.p2.metadata;
 
 import java.util.Map;
 import java.util.Map.Entry;
-import org.eclipse.equinox.p2.metadata.ITouchpointInstruction;
-import org.eclipse.equinox.p2.metadata.MetadataFactory;
+
+import org.fdesigner.p2.metadata.ITouchpointInstruction;
 
 /**
  * A touchpoint instruction contains either a sequence of instruction statements

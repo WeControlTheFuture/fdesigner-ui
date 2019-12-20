@@ -11,10 +11,11 @@
  * Contributors:
  *     Cloudsmith Inc. - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.p2.metadata.expression;
+package org.fdesigner.p2.metadata.expression;
 
 import java.util.Map;
-import org.osgi.framework.Filter;
+
+import org.fdesigner.framework.framework.Filter;
 
 /**
  * An interface that combines the IExpression with the LDAP filter. The

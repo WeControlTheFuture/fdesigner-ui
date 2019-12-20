@@ -11,9 +11,9 @@
  * Contributors:
  *     Cloudsmith Inc. - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.metadata;
+package org.fdesigner.p2.metadata.internal.p2.metadata;
 
-import org.eclipse.equinox.p2.metadata.Version;
+import org.fdesigner.p2.metadata.Version;
 
 /**
  * The abstract BasicVersion class adds the methods necessary to to compare and serialize

@@ -12,12 +12,14 @@
  *     IBM Corporation - initial API and implementation
  *     EclipseSource - ongoing development
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.metadata;
+package org.fdesigner.p2.metadata.internal.p2.metadata;
 
 import java.util.Collections;
 import java.util.Map;
 import java.util.Map.Entry;
-import org.eclipse.equinox.p2.metadata.*;
+
+import org.fdesigner.p2.metadata.ITouchpointData;
+import org.fdesigner.p2.metadata.ITouchpointInstruction;
 
 /**
  * Touchpoint data instances contain the additional information needed by a touchpoint

@@ -12,9 +12,9 @@
 * Contributors:
 *   IBM - initial API and implementation
 ******************************************************************************/
-package org.eclipse.equinox.p2.metadata;
+package org.fdesigner.p2.metadata;
 
-import org.eclipse.equinox.p2.metadata.expression.IMatchExpression;
+import org.fdesigner.p2.metadata.expression.IMatchExpression;
 
 /**
  * A requirement represents some external constraint on an {@link IInstallableUnit}.

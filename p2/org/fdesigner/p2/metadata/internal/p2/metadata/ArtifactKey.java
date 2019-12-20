@@ -11,14 +11,15 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.metadata;
+package org.fdesigner.p2.metadata.internal.p2.metadata;
 
 import java.util.ArrayList;
 import java.util.StringTokenizer;
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.equinox.p2.metadata.IArtifactKey;
-import org.eclipse.equinox.p2.metadata.Version;
-import org.eclipse.equinox.p2.metadata.expression.IMemberProvider;
+
+import org.fdesigner.p2.metadata.IArtifactKey;
+import org.fdesigner.p2.metadata.Version;
+import org.fdesigner.p2.metadata.expression.IMemberProvider;
+import org.fdesigner.runtime.common.runtime.Assert;
 
 /** 
  * The concrete type for representing IArtifactKey's.

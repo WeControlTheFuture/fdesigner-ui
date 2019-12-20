@@ -14,10 +14,9 @@
 *   IBM - ongoing development
 *   Todor Boev
 ******************************************************************************/
-package org.eclipse.equinox.p2.metadata;
+package org.fdesigner.p2.metadata;
 
 import java.util.Map;
-import org.eclipse.equinox.p2.metadata.expression.IFilterExpression;
 
 /**
  * Describes a capability that is exposed by an installable unit. These capabilities

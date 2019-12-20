@@ -11,12 +11,15 @@
  * Contributors:
  *     Cloudsmith Inc. - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.metadata;
+package org.fdesigner.p2.metadata.internal.p2.metadata;
 
-import java.util.*;
-import org.eclipse.equinox.p2.metadata.Version;
-import org.eclipse.equinox.p2.metadata.VersionFormatException;
-import org.eclipse.osgi.util.NLS;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+import org.fdesigner.p2.metadata.Version;
+import org.fdesigner.p2.metadata.VersionFormatException;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * The Omni Version parser. Not intended for public API. Instead use

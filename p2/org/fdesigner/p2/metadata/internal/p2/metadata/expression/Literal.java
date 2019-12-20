@@ -11,14 +11,17 @@
  * Contributors:
  *     Cloudsmith Inc. - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.metadata.expression;
+package org.fdesigner.p2.metadata.internal.p2.metadata.expression;
 
-import java.util.*;
-import org.eclipse.equinox.p2.metadata.Version;
-import org.eclipse.equinox.p2.metadata.VersionRange;
-import org.eclipse.equinox.p2.metadata.expression.IEvaluationContext;
-import org.eclipse.equinox.p2.metadata.expression.SimplePattern;
-import org.osgi.framework.Filter;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.Set;
+
+import org.fdesigner.framework.framework.Filter;
+import org.fdesigner.p2.metadata.Version;
+import org.fdesigner.p2.metadata.VersionRange;
+import org.fdesigner.p2.metadata.expression.IEvaluationContext;
+import org.fdesigner.p2.metadata.expression.SimplePattern;
 
 /**
  * An expression that represents a constant value.

@@ -11,10 +11,11 @@
  * Contributors:
  *     Cloudsmith Inc. - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.p2.metadata.expression;
+package org.fdesigner.p2.metadata.expression;
 
 import java.util.Iterator;
-import org.eclipse.equinox.p2.metadata.index.IIndexProvider;
+
+import org.fdesigner.p2.metadata.index.IIndexProvider;
 
 /**
  * This is an expression that will need access to the global variable

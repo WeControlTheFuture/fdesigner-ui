@@ -12,7 +12,7 @@
 * Contributors:
 *   EclipseSource - initial API and implementation
 ******************************************************************************/
-package org.eclipse.equinox.p2.metadata;
+package org.fdesigner.p2.metadata;
 
 /**
  * Identifies a particular touchpoint. A touchpoint is identified by an id 

@@ -11,12 +11,22 @@
  * Contributors:
  *     Cloudsmith Inc. - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.metadata.expression;
+package org.fdesigner.p2.metadata.internal.p2.metadata.expression;
 
-import java.util.*;
-import org.eclipse.equinox.p2.metadata.*;
-import org.eclipse.equinox.p2.metadata.expression.*;
-import org.osgi.framework.Filter;
+import java.util.Dictionary;
+import java.util.Hashtable;
+import java.util.Locale;
+import java.util.Map;
+
+import org.fdesigner.framework.framework.Filter;
+import org.fdesigner.p2.metadata.IInstallableUnit;
+import org.fdesigner.p2.metadata.IRequirement;
+import org.fdesigner.p2.metadata.IUpdateDescriptor;
+import org.fdesigner.p2.metadata.Version;
+import org.fdesigner.p2.metadata.VersionRange;
+import org.fdesigner.p2.metadata.expression.IEvaluationContext;
+import org.fdesigner.p2.metadata.expression.IMatchExpression;
+import org.fdesigner.p2.metadata.expression.SimplePattern;
 
 /**
  * <p>A class that performs &quot;matching&quot; The actual algorithm used for

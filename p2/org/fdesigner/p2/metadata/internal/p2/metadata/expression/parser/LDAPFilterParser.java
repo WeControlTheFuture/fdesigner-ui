@@ -11,21 +11,22 @@
  * Contributors:
  *     Cloudsmith Inc. - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.metadata.expression.parser;
+package org.fdesigner.p2.metadata.internal.p2.metadata.expression.parser;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.LinkedHashMap;
 import java.util.Map;
-import org.eclipse.equinox.internal.p2.metadata.Messages;
-import org.eclipse.equinox.internal.p2.metadata.expression.IExpressionConstants;
-import org.eclipse.equinox.internal.p2.metadata.expression.LDAPApproximation;
-import org.eclipse.equinox.p2.metadata.expression.ExpressionParseException;
-import org.eclipse.equinox.p2.metadata.expression.IExpression;
-import org.eclipse.equinox.p2.metadata.expression.IExpressionFactory;
-import org.eclipse.equinox.p2.metadata.expression.IFilterExpression;
-import org.eclipse.equinox.p2.metadata.expression.SimplePattern;
-import org.eclipse.osgi.util.NLS;
+
+import org.fdesigner.p2.metadata.expression.ExpressionParseException;
+import org.fdesigner.p2.metadata.expression.IExpression;
+import org.fdesigner.p2.metadata.expression.IExpressionFactory;
+import org.fdesigner.p2.metadata.expression.IFilterExpression;
+import org.fdesigner.p2.metadata.expression.SimplePattern;
+import org.fdesigner.p2.metadata.internal.p2.metadata.Messages;
+import org.fdesigner.p2.metadata.internal.p2.metadata.expression.IExpressionConstants;
+import org.fdesigner.p2.metadata.internal.p2.metadata.expression.LDAPApproximation;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * Parser class for OSGi filter strings. This class parses the complete filter string and builds a tree of Filter

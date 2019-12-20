@@ -13,7 +13,7 @@
  *******************************************************************************/
 package org.fdesigner.p2.metadata.query;
 
-import org.eclipse.core.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
 
 /**
  * An IQueryable contains objects, and is able to perform queries on those objects.

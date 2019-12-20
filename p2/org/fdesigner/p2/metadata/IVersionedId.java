@@ -12,7 +12,7 @@
  *     Cloudsmith Inc. - initial API and implementation
  *     IBM - Ongoing development
  *******************************************************************************/
-package org.eclipse.equinox.p2.metadata;
+package org.fdesigner.p2.metadata;
 
 
 /**

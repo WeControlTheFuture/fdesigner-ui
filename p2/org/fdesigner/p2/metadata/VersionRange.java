@@ -12,13 +12,17 @@
  *     IBM Corporation - initial API and implementation
  *     Cloudsmith Inc - rewrite to handle non-OSGi versions.
  *******************************************************************************/
-package org.eclipse.equinox.p2.metadata;
+package org.fdesigner.p2.metadata;
 
 import java.io.Serializable;
 import java.lang.ref.SoftReference;
 import java.util.WeakHashMap;
-import org.eclipse.equinox.internal.p2.metadata.*;
-import org.eclipse.osgi.util.NLS;
+
+import org.fdesigner.p2.metadata.internal.p2.metadata.BasicVersion;
+import org.fdesigner.p2.metadata.internal.p2.metadata.Messages;
+import org.fdesigner.p2.metadata.internal.p2.metadata.VersionFormat;
+import org.fdesigner.p2.metadata.internal.p2.metadata.VersionParser;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * This class represents a version range with Omni Version bounds. It is signature

@@ -11,7 +11,7 @@
  * Contributors:
  *     Cloudsmith Inc. - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.p2.metadata.index;
+package org.fdesigner.p2.metadata.index;
 
 import java.util.Iterator;
 

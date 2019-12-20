@@ -14,11 +14,12 @@
  * 		Genuitec, LLC - added license support
  * 		EclipseSource - ongoing development
  ******************************************************************************/
-package org.eclipse.equinox.p2.metadata;
+package org.fdesigner.p2.metadata;
 
 import java.util.Collection;
 import java.util.Map;
-import org.eclipse.equinox.p2.metadata.expression.IMatchExpression;
+
+import org.fdesigner.p2.metadata.expression.IMatchExpression;
 
 /**
  * An installable unit represents an atomic, indivisible unit of installable functionality

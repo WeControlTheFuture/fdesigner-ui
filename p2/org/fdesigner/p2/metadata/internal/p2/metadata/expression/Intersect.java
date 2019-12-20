@@ -11,10 +11,13 @@
  * Contributors:
  *     Cloudsmith Inc. - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.metadata.expression;
+package org.fdesigner.p2.metadata.internal.p2.metadata.expression;
 
-import java.util.*;
-import org.eclipse.equinox.p2.metadata.expression.IEvaluationContext;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
+import org.fdesigner.p2.metadata.expression.IEvaluationContext;
 
 /**
  * n-ary <code>intersect</code> operator. The result is the set of elements that were found in all operands. 

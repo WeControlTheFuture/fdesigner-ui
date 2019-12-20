@@ -11,9 +11,9 @@
  * Contributors:
  *     Cloudsmith Inc. - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.metadata.expression;
+package org.fdesigner.p2.metadata.internal.p2.metadata.expression;
 
-import org.eclipse.equinox.p2.metadata.Version;
+import org.fdesigner.p2.metadata.Version;
 
 /**
  * A function that creates a {@link Version} from a string

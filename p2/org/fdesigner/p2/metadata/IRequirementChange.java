@@ -12,9 +12,9 @@
 * Contributors:
 *   EclipseSource - initial API and implementation
 ******************************************************************************/
-package org.eclipse.equinox.p2.metadata;
+package org.fdesigner.p2.metadata;
 
-import org.eclipse.equinox.internal.p2.metadata.IRequiredCapability;
+import org.fdesigner.p2.metadata.internal.p2.metadata.IRequiredCapability;
 
 /**
  * @noimplement This interface is not intended to be implemented by clients.

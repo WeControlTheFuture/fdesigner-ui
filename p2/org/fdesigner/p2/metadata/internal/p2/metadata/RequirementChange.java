@@ -11,9 +11,9 @@
  *  Contributors:
  *      IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.metadata;
+package org.fdesigner.p2.metadata.internal.p2.metadata;
 
-import org.eclipse.equinox.p2.metadata.IRequirementChange;
+import org.fdesigner.p2.metadata.IRequirementChange;
 
 public class RequirementChange implements IRequirementChange {
 	private IRequiredCapability applyOn;

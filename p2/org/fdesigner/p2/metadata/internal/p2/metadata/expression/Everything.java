@@ -11,12 +11,13 @@
  * Contributors:
  *     Cloudsmith Inc. - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.metadata.expression;
+package org.fdesigner.p2.metadata.internal.p2.metadata.expression;
 
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Iterator;
-import org.eclipse.equinox.p2.metadata.index.IIndexProvider;
+
+import org.fdesigner.p2.metadata.index.IIndexProvider;
 
 /**
  * The immutable context used when evaluating an expression.

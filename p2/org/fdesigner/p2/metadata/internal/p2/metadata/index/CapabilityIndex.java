@@ -11,7 +11,7 @@
  * Contributors:
  *     Cloudsmith Inc. - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.metadata.index;
+package org.fdesigner.p2.metadata.internal.p2.metadata.index;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -21,25 +21,26 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
-import org.eclipse.equinox.internal.p2.metadata.IRequiredCapability;
-import org.eclipse.equinox.internal.p2.metadata.InstallableUnit;
-import org.eclipse.equinox.internal.p2.metadata.ProvidedCapability;
-import org.eclipse.equinox.internal.p2.metadata.RequiredCapability;
-import org.eclipse.equinox.internal.p2.metadata.expression.CollectionFilter;
-import org.eclipse.equinox.internal.p2.metadata.expression.Expression;
-import org.eclipse.equinox.internal.p2.metadata.expression.ExpressionFactory;
-import org.eclipse.equinox.internal.p2.metadata.expression.LambdaExpression;
-import org.eclipse.equinox.internal.p2.metadata.expression.Matches;
-import org.eclipse.equinox.internal.p2.metadata.expression.Member;
-import org.eclipse.equinox.internal.p2.metadata.expression.Parameter;
-import org.eclipse.equinox.internal.p2.metadata.expression.Unary;
-import org.eclipse.equinox.p2.metadata.IInstallableUnit;
-import org.eclipse.equinox.p2.metadata.IProvidedCapability;
-import org.eclipse.equinox.p2.metadata.IRequirement;
-import org.eclipse.equinox.p2.metadata.expression.ExpressionUtil;
-import org.eclipse.equinox.p2.metadata.expression.IEvaluationContext;
-import org.eclipse.equinox.p2.metadata.expression.IExpression;
-import org.eclipse.equinox.p2.metadata.expression.IMatchExpression;
+
+import org.fdesigner.p2.metadata.IInstallableUnit;
+import org.fdesigner.p2.metadata.IProvidedCapability;
+import org.fdesigner.p2.metadata.IRequirement;
+import org.fdesigner.p2.metadata.expression.ExpressionUtil;
+import org.fdesigner.p2.metadata.expression.IEvaluationContext;
+import org.fdesigner.p2.metadata.expression.IExpression;
+import org.fdesigner.p2.metadata.expression.IMatchExpression;
+import org.fdesigner.p2.metadata.internal.p2.metadata.IRequiredCapability;
+import org.fdesigner.p2.metadata.internal.p2.metadata.InstallableUnit;
+import org.fdesigner.p2.metadata.internal.p2.metadata.ProvidedCapability;
+import org.fdesigner.p2.metadata.internal.p2.metadata.RequiredCapability;
+import org.fdesigner.p2.metadata.internal.p2.metadata.expression.CollectionFilter;
+import org.fdesigner.p2.metadata.internal.p2.metadata.expression.Expression;
+import org.fdesigner.p2.metadata.internal.p2.metadata.expression.ExpressionFactory;
+import org.fdesigner.p2.metadata.internal.p2.metadata.expression.LambdaExpression;
+import org.fdesigner.p2.metadata.internal.p2.metadata.expression.Matches;
+import org.fdesigner.p2.metadata.internal.p2.metadata.expression.Member;
+import org.fdesigner.p2.metadata.internal.p2.metadata.expression.Parameter;
+import org.fdesigner.p2.metadata.internal.p2.metadata.expression.Unary;
 
 /**
  * An in-memory implementation of a CapabilityIndex based on a Map.

@@ -12,12 +12,14 @@
  *     Cloudsmith Inc. - initial API and implementation
  *     IBM Corporation - ongoing development and bug fixes
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.metadata.index;
+package org.fdesigner.p2.metadata.internal.p2.metadata.index;
 
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.equinox.p2.metadata.index.IIndexProvider;
-import org.eclipse.equinox.p2.metadata.index.IQueryWithIndex;
-import org.eclipse.equinox.p2.query.*;
+import org.fdesigner.p2.metadata.index.IIndexProvider;
+import org.fdesigner.p2.metadata.index.IQueryWithIndex;
+import org.fdesigner.p2.metadata.query.IQuery;
+import org.fdesigner.p2.metadata.query.IQueryResult;
+import org.fdesigner.p2.metadata.query.IQueryable;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
 
 public abstract class IndexProvider<T> implements IIndexProvider<T>, IQueryable<T> {
 	public static <Q> IQueryResult<Q> query(IIndexProvider<Q> indexProvider, IQuery<Q> query, IProgressMonitor monitor) {

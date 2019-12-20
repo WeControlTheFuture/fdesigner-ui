@@ -11,12 +11,21 @@
  * Contributors:
  *     Cloudsmith Inc. - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.metadata.expression.parser;
+package org.fdesigner.p2.metadata.internal.p2.metadata.expression.parser;
 
-import java.util.*;
-import org.eclipse.equinox.internal.p2.metadata.expression.IExpressionConstants;
-import org.eclipse.equinox.internal.p2.metadata.expression.LDAPApproximation;
-import org.eclipse.equinox.p2.metadata.expression.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Stack;
+
+import org.fdesigner.p2.metadata.expression.ExpressionParseException;
+import org.fdesigner.p2.metadata.expression.ExpressionUtil;
+import org.fdesigner.p2.metadata.expression.IExpression;
+import org.fdesigner.p2.metadata.expression.IExpressionFactory;
+import org.fdesigner.p2.metadata.expression.IExpressionParser;
+import org.fdesigner.p2.metadata.expression.SimplePattern;
+import org.fdesigner.p2.metadata.internal.p2.metadata.expression.IExpressionConstants;
+import org.fdesigner.p2.metadata.internal.p2.metadata.expression.LDAPApproximation;
 
 public class ExpressionParser extends Stack<IExpression> implements IExpressionConstants, IExpressionParser {
 	private static final long serialVersionUID = 5481439062356612378L;

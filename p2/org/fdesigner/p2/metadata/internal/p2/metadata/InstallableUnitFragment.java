@@ -11,11 +11,12 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.metadata;
+package org.fdesigner.p2.metadata.internal.p2.metadata;
 
 import java.util.Collection;
-import org.eclipse.equinox.p2.metadata.IInstallableUnitFragment;
-import org.eclipse.equinox.p2.metadata.IRequirement;
+
+import org.fdesigner.p2.metadata.IInstallableUnitFragment;
+import org.fdesigner.p2.metadata.IRequirement;
 
 public class InstallableUnitFragment extends InstallableUnit implements IInstallableUnitFragment {
 

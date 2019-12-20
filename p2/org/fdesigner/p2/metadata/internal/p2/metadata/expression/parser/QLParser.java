@@ -11,12 +11,16 @@
  * Contributors:
  *     Cloudsmith Inc. - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.metadata.expression.parser;
+package org.fdesigner.p2.metadata.internal.p2.metadata.expression.parser;
 
-import java.util.*;
-import org.eclipse.equinox.internal.p2.metadata.expression.Variable;
-import org.eclipse.equinox.p2.metadata.expression.IExpression;
-import org.eclipse.equinox.p2.metadata.expression.IExpressionFactory;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.fdesigner.p2.metadata.expression.IExpression;
+import org.fdesigner.p2.metadata.expression.IExpressionFactory;
+import org.fdesigner.p2.metadata.internal.p2.metadata.expression.Variable;
 
 public class QLParser extends ExpressionParser {
 	private static final long serialVersionUID = 882034383978853143L;
