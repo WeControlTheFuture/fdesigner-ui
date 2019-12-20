@@ -30,8 +30,6 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.eclipse.jface.text.ITextSelection;
-import org.eclipse.jface.text.Position;
 import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.graphics.TextStyle;
 import org.eclipse.swt.widgets.Composite;
@@ -62,6 +60,8 @@ import org.fdesigner.ui.jface.action.IMenuManager;
 import org.fdesigner.ui.jface.action.Separator;
 import org.fdesigner.ui.jface.dialogs.IDialogSettings;
 import org.fdesigner.ui.jface.resource.JFaceResources;
+import org.fdesigner.ui.jface.text.ITextSelection;
+import org.fdesigner.ui.jface.text.Position;
 import org.fdesigner.ui.jface.viewers.DelegatingStyledCellLabelProvider.IStyledLabelProvider;
 import org.fdesigner.ui.jface.viewers.ILabelProviderListener;
 import org.fdesigner.ui.jface.viewers.ISelection;

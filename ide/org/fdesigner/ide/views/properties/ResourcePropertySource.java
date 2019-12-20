@@ -14,15 +14,18 @@
 package org.fdesigner.ide.views.properties;
 
 import java.io.File;
-import org.eclipse.core.resources.IResource;
-import org.eclipse.core.resources.ResourceAttributes;
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.core.runtime.IPath;
-import org.eclipse.jface.viewers.IBasicPropertyConstants;
-import org.eclipse.osgi.util.TextProcessor;
-import org.eclipse.ui.internal.ide.dialogs.IDEResourceInfoUtils;
-import org.eclipse.ui.internal.views.properties.IDEPropertiesMessages;
 
+import org.fdesigner.container.util.TextProcessor;
+import org.fdesigner.ide.internal.ide.dialogs.IDEResourceInfoUtils;
+import org.fdesigner.resources.IResource;
+import org.fdesigner.resources.ResourceAttributes;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.ui.jface.viewers.IBasicPropertyConstants;
+import org.fdesigner.views.properties.IPropertyDescriptor;
+import org.fdesigner.views.properties.IPropertySource;
+import org.fdesigner.views.properties.PropertyDescriptor;
+import org.fdesigner.ide.internal.views.properties.IDEPropertiesMessages;
 /**
  * A Resource property source.
  */

@@ -13,10 +13,12 @@
  *******************************************************************************/
 package org.fdesigner.ide.views.properties;
 
-import org.eclipse.core.resources.IFile;
-import org.eclipse.jface.viewers.IBasicPropertyConstants;
-import org.eclipse.osgi.util.TextProcessor;
-import org.eclipse.ui.internal.ide.dialogs.IDEResourceInfoUtils;
+import org.fdesigner.container.util.TextProcessor;
+import org.fdesigner.ide.internal.ide.dialogs.IDEResourceInfoUtils;
+import org.fdesigner.resources.IFile;
+import org.fdesigner.ui.jface.viewers.IBasicPropertyConstants;
+import org.fdesigner.views.properties.IPropertyDescriptor;
+import org.fdesigner.views.properties.PropertyDescriptor;
 
 /**
  * The FilePropertySource gives the extra information that is shown for files
