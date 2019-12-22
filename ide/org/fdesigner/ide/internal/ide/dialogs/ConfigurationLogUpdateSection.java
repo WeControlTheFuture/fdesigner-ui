@@ -20,11 +20,6 @@ import java.util.Iterator;
 import java.util.SortedSet;
 import java.util.TreeSet;
 
-import org.eclipse.equinox.p2.engine.IProfile;
-import org.eclipse.equinox.p2.engine.IProfileRegistry;
-import org.eclipse.equinox.p2.metadata.IInstallableUnit;
-import org.eclipse.equinox.p2.query.IQueryResult;
-import org.eclipse.equinox.p2.query.QueryUtil;
 import org.fdesigner.container.service.resolver.BundleDescription;
 import org.fdesigner.container.service.resolver.PlatformAdmin;
 import org.fdesigner.container.service.resolver.State;
@@ -32,6 +27,11 @@ import org.fdesigner.framework.framework.BundleContext;
 import org.fdesigner.framework.framework.ServiceReference;
 import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
 import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
+import org.fdesigner.p2.engine.IProfile;
+import org.fdesigner.p2.engine.IProfileRegistry;
+import org.fdesigner.p2.metadata.IInstallableUnit;
+import org.fdesigner.p2.metadata.query.IQueryResult;
+import org.fdesigner.p2.metadata.query.QueryUtil;
 import org.fdesigner.supplement.util.NLS;
 import org.fdesigner.workbench.about.ISystemSummarySection;
 
