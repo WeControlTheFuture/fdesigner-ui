@@ -11,20 +11,25 @@
  *  Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.engine.phases;
+package org.fdesigner.p2.engine.internal.p2.engine.phases;
 
 import java.io.File;
-import java.util.*;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.equinox.internal.p2.engine.InstallableUnitOperand;
-import org.eclipse.equinox.internal.p2.engine.InstallableUnitPhase;
-import org.eclipse.equinox.p2.core.IProvisioningAgent;
-import org.eclipse.equinox.p2.engine.IProfile;
-import org.eclipse.equinox.p2.engine.PhaseSetFactory;
-import org.eclipse.equinox.p2.engine.spi.ProvisioningAction;
-import org.eclipse.equinox.p2.metadata.IInstallableUnit;
-import org.eclipse.equinox.p2.metadata.ITouchpointType;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
+import java.util.Map;
+
+import org.fdesigner.p2.core.IProvisioningAgent;
+import org.fdesigner.p2.engine.IProfile;
+import org.fdesigner.p2.engine.PhaseSetFactory;
+import org.fdesigner.p2.engine.internal.p2.engine.InstallableUnitOperand;
+import org.fdesigner.p2.engine.internal.p2.engine.InstallableUnitPhase;
+import org.fdesigner.p2.engine.spi.ProvisioningAction;
+import org.fdesigner.p2.metadata.IInstallableUnit;
+import org.fdesigner.p2.metadata.ITouchpointType;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
 
 /**
  * An install phase that checks if the certificates used to sign the artifacts

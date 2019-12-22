@@ -11,11 +11,11 @@
  *  Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.engine;
+package org.fdesigner.p2.engine.internal.p2.engine;
 
-import org.eclipse.equinox.internal.p2.persistence.XMLConstants;
-import org.eclipse.equinox.p2.metadata.Version;
-import org.eclipse.equinox.p2.metadata.VersionRange;
+import org.fdesigner.p2.metadata.Version;
+import org.fdesigner.p2.metadata.VersionRange;
+import org.fdesigner.p2.repository.internal.p2.persistence.XMLConstants;
 
 /**
  *	Constants defining the structure of the XML for a Profile

@@ -11,13 +11,12 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.engine;
+package org.fdesigner.p2.engine.internal.p2.engine;
 
-import org.eclipse.equinox.internal.provisional.p2.core.eventbus.IProvisioningEventBus;
-import org.eclipse.equinox.p2.core.IAgentLocation;
-import org.eclipse.equinox.p2.core.IProvisioningAgent;
-import org.eclipse.equinox.p2.core.spi.IAgentServiceFactory;
-import org.eclipse.equinox.p2.engine.IProfileRegistry;
+import org.fdesigner.p2.core.IAgentLocation;
+import org.fdesigner.p2.core.IProvisioningAgent;
+import org.fdesigner.p2.core.internal.provisional.p2.core.eventbus.IProvisioningEventBus;
+import org.fdesigner.p2.core.spi.IAgentServiceFactory;
 
 /**
  * Instantiates default instances of {@link IProfileRegistry}.

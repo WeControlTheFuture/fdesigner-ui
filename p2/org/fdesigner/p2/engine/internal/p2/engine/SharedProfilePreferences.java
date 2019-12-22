@@ -11,12 +11,12 @@
  * Contributors:
  *     Ericsson AB - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.engine;
+package org.fdesigner.p2.engine.internal.p2.engine;
 
-import org.eclipse.core.internal.preferences.EclipsePreferences;
-import org.eclipse.core.runtime.preferences.IEclipsePreferences;
-import org.eclipse.equinox.p2.core.IProvisioningAgent;
-import org.osgi.service.prefs.BackingStoreException;
+import org.fdesigner.p2.core.IProvisioningAgent;
+import org.fdesigner.runtime.preferences.internal.preferences.EclipsePreferences;
+import org.fdesigner.runtime.preferences.runtime.preferences.IEclipsePreferences;
+import org.fdesigner.runtime.preferences.service.prefs.BackingStoreException;
 
 /**
  * A preference implementation that stores preferences in the engine's profile

@@ -12,10 +12,11 @@
  *     IBM Corporation - initial API and implementation
  *     Landmark Graphics Corporation - bug 397183
  *******************************************************************************/
-package org.eclipse.equinox.p2.engine.spi;
+package org.fdesigner.p2.engine.spi;
 
 import java.util.Map;
-import org.eclipse.core.runtime.IStatus;
+
+import org.fdesigner.runtime.common.runtime.IStatus;
 
 /**
  * An action that performs one step of a provisioning operation for a particular

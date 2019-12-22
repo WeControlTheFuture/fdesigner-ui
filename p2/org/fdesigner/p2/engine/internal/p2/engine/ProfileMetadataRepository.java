@@ -11,27 +11,36 @@
  *  Contributors:
  *      IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.engine;
+package org.fdesigner.p2.engine.internal.p2.engine;
 
 import java.io.File;
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.util.*;
-import org.eclipse.core.runtime.*;
-import org.eclipse.equinox.internal.p2.core.helpers.LogHelper;
-import org.eclipse.equinox.internal.provisional.p2.core.eventbus.IProvisioningEventBus;
-import org.eclipse.equinox.internal.provisional.p2.repository.RepositoryEvent;
-import org.eclipse.equinox.p2.core.IProvisioningAgent;
-import org.eclipse.equinox.p2.core.ProvisionException;
-import org.eclipse.equinox.p2.engine.IProfile;
-import org.eclipse.equinox.p2.metadata.IInstallableUnit;
-import org.eclipse.equinox.p2.query.IQuery;
-import org.eclipse.equinox.p2.query.IQueryResult;
-import org.eclipse.equinox.p2.repository.IRepository;
-import org.eclipse.equinox.p2.repository.IRepositoryReference;
-import org.eclipse.equinox.p2.repository.metadata.spi.AbstractMetadataRepository;
-import org.eclipse.equinox.p2.repository.spi.RepositoryReference;
-import org.eclipse.osgi.util.NLS;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.List;
+import java.util.StringTokenizer;
+
+import org.fdesigner.p2.core.IProvisioningAgent;
+import org.fdesigner.p2.core.ProvisionException;
+import org.fdesigner.p2.core.internal.p2.core.helpers.LogHelper;
+import org.fdesigner.p2.core.internal.provisional.p2.core.eventbus.IProvisioningEventBus;
+import org.fdesigner.p2.engine.IProfile;
+import org.fdesigner.p2.metadata.IInstallableUnit;
+import org.fdesigner.p2.metadata.query.IQuery;
+import org.fdesigner.p2.metadata.query.IQueryResult;
+import org.fdesigner.p2.repository.IRepository;
+import org.fdesigner.p2.repository.IRepositoryReference;
+import org.fdesigner.p2.repository.internal.provisional.p2.repository.RepositoryEvent;
+import org.fdesigner.p2.repository.metadata.spi.AbstractMetadataRepository;
+import org.fdesigner.p2.repository.metadata.spi.AbstractMetadataRepository.RepositoryState;
+import org.fdesigner.p2.repository.spi.RepositoryReference;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.supplement.util.NLS;
 
 public class ProfileMetadataRepository extends AbstractMetadataRepository {
 

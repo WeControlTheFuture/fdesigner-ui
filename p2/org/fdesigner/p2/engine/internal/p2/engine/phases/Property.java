@@ -11,14 +11,22 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.engine.phases;
+package org.fdesigner.p2.engine.internal.p2.engine.phases;
 
-import java.util.*;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.equinox.internal.p2.engine.*;
-import org.eclipse.equinox.p2.engine.PhaseSetFactory;
-import org.eclipse.equinox.p2.engine.spi.ProvisioningAction;
-import org.eclipse.equinox.p2.metadata.IInstallableUnit;
+import java.util.Collections;
+import java.util.List;
+import java.util.Map;
+
+import org.fdesigner.p2.engine.PhaseSetFactory;
+import org.fdesigner.p2.engine.internal.p2.engine.InstallableUnitOperand;
+import org.fdesigner.p2.engine.internal.p2.engine.InstallableUnitPropertyOperand;
+import org.fdesigner.p2.engine.internal.p2.engine.Operand;
+import org.fdesigner.p2.engine.internal.p2.engine.Phase;
+import org.fdesigner.p2.engine.internal.p2.engine.Profile;
+import org.fdesigner.p2.engine.internal.p2.engine.PropertyOperand;
+import org.fdesigner.p2.engine.spi.ProvisioningAction;
+import org.fdesigner.p2.metadata.IInstallableUnit;
+import org.fdesigner.runtime.common.runtime.IStatus;
 
 public class Property extends Phase {
 

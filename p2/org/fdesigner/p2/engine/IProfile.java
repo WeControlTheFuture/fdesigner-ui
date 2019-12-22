@@ -12,13 +12,16 @@
  *     IBM Corporation - initial API and implementation
  *     Ericsson AB - ongoing development
  *******************************************************************************/
-package org.eclipse.equinox.p2.engine;
+package org.fdesigner.p2.engine;
 
 import java.util.Map;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.equinox.p2.core.IProvisioningAgent;
-import org.eclipse.equinox.p2.metadata.IInstallableUnit;
-import org.eclipse.equinox.p2.query.*;
+
+import org.fdesigner.p2.core.IProvisioningAgent;
+import org.fdesigner.p2.metadata.IInstallableUnit;
+import org.fdesigner.p2.metadata.query.IQuery;
+import org.fdesigner.p2.metadata.query.IQueryResult;
+import org.fdesigner.p2.metadata.query.IQueryable;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
 
 /**
  * Represents the state of a profile in a profile registry at a given moment in time.

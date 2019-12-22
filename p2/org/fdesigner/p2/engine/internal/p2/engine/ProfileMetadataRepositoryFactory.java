@@ -11,15 +11,16 @@
  *  Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.engine;
+package org.fdesigner.p2.engine.internal.p2.engine;
 
 import java.net.URI;
 import java.util.Map;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.equinox.p2.core.ProvisionException;
-import org.eclipse.equinox.p2.repository.IRepositoryManager;
-import org.eclipse.equinox.p2.repository.metadata.IMetadataRepository;
-import org.eclipse.equinox.p2.repository.metadata.spi.MetadataRepositoryFactory;
+
+import org.fdesigner.p2.core.ProvisionException;
+import org.fdesigner.p2.repository.IRepositoryManager;
+import org.fdesigner.p2.repository.metadata.IMetadataRepository;
+import org.fdesigner.p2.repository.metadata.spi.MetadataRepositoryFactory;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
 
 public class ProfileMetadataRepositoryFactory extends MetadataRepositoryFactory {
 

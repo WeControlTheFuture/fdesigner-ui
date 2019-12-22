@@ -14,31 +14,65 @@
  *     Ericsson AB - ongoing development
  *     Red Hat, Inc. - fragments support added, Bug 460967
  ******************************************************************************/
-package org.eclipse.equinox.internal.p2.engine;
+package org.fdesigner.p2.engine.internal.p2.engine;
 
-import java.io.*;
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
+import java.io.File;
+import java.io.FileFilter;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.lang.ref.SoftReference;
 import java.net.URI;
-import java.util.*;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Enumeration;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.Map.Entry;
+import java.util.Properties;
 import java.util.zip.GZIPInputStream;
 import java.util.zip.GZIPOutputStream;
+
 import javax.xml.parsers.ParserConfigurationException;
-import org.eclipse.core.runtime.*;
-import org.eclipse.core.runtime.jobs.Job;
-import org.eclipse.equinox.internal.p2.core.helpers.*;
-import org.eclipse.equinox.internal.p2.metadata.TranslationSupport;
-import org.eclipse.equinox.internal.provisional.p2.core.eventbus.IProvisioningEventBus;
-import org.eclipse.equinox.p2.core.*;
-import org.eclipse.equinox.p2.core.spi.IAgentService;
-import org.eclipse.equinox.p2.engine.*;
-import org.eclipse.equinox.p2.metadata.*;
-import org.eclipse.equinox.p2.query.IQueryResult;
-import org.eclipse.equinox.p2.query.QueryUtil;
-import org.eclipse.osgi.service.datalocation.Location;
-import org.eclipse.osgi.util.NLS;
-import org.osgi.framework.BundleContext;
-import org.osgi.framework.ServiceReference;
+
+import org.fdesigner.framework.framework.BundleContext;
+import org.fdesigner.framework.framework.ServiceReference;
+import org.fdesigner.p2.core.IAgentLocation;
+import org.fdesigner.p2.core.IProvisioningAgent;
+import org.fdesigner.p2.core.ProvisionException;
+import org.fdesigner.p2.core.internal.p2.core.helpers.FileUtils;
+import org.fdesigner.p2.core.internal.p2.core.helpers.LogHelper;
+import org.fdesigner.p2.core.internal.p2.core.helpers.ServiceHelper;
+import org.fdesigner.p2.core.internal.provisional.p2.core.eventbus.IProvisioningEventBus;
+import org.fdesigner.p2.core.spi.IAgentService;
+import org.fdesigner.p2.engine.IProfile;
+import org.fdesigner.p2.engine.IProfileEvent;
+import org.fdesigner.p2.engine.IProfileRegistry;
+import org.fdesigner.p2.metadata.IInstallableUnit;
+import org.fdesigner.p2.metadata.Version;
+import org.fdesigner.p2.metadata.VersionRange;
+import org.fdesigner.p2.metadata.internal.p2.metadata.TranslationSupport;
+import org.fdesigner.p2.metadata.query.IQueryResult;
+import org.fdesigner.p2.metadata.query.QueryUtil;
+import org.fdesigner.p2.repository.internal.p2.persistence.XMLParser.DocHandler;
+import org.fdesigner.p2.repository.internal.p2.persistence.XMLParser.RootHandler;
+import org.fdesigner.p2.repository.internal.p2.persistence.XMLWriter.ProcessingInstruction;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.common.runtime.URIUtil;
+import org.fdesigner.runtime.jobs.runtime.jobs.Job;
+import org.fdesigner.supplement.service.datalocation.Location;
+import org.fdesigner.supplement.util.NLS;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 

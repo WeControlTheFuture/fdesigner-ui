@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.p2.engine;
+package org.fdesigner.p2.engine;
 
 /**
  * Describes a set of provisioning phases to be performed by an {@link IEngine}.

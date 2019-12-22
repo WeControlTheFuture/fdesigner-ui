@@ -11,16 +11,30 @@
  *  Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.engine;
+package org.fdesigner.p2.engine.internal.p2.engine;
 
 import java.io.File;
-import java.util.*;
-import org.eclipse.core.runtime.*;
-import org.eclipse.equinox.p2.core.IProvisioningAgent;
-import org.eclipse.equinox.p2.engine.*;
-import org.eclipse.equinox.p2.engine.spi.ProvisioningAction;
-import org.eclipse.equinox.p2.engine.spi.Touchpoint;
-import org.eclipse.osgi.util.NLS;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.ListIterator;
+import java.util.Map;
+import java.util.Set;
+
+import org.fdesigner.p2.core.IProvisioningAgent;
+import org.fdesigner.p2.engine.IProfile;
+import org.fdesigner.p2.engine.IProfileRegistry;
+import org.fdesigner.p2.engine.ProvisioningContext;
+import org.fdesigner.p2.engine.spi.ProvisioningAction;
+import org.fdesigner.p2.engine.spi.Touchpoint;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.MultiStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.common.runtime.SubMonitor;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * TODO: not API

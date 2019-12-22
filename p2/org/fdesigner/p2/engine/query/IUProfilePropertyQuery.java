@@ -12,11 +12,14 @@
  *     IBM Corporation - initial API and implementation
  *     Cloudsmith Inc. - converted into expression based query
  *******************************************************************************/
-package org.eclipse.equinox.p2.engine.query;
+package org.fdesigner.p2.engine.query;
 
-import org.eclipse.equinox.p2.metadata.IInstallableUnit;
-import org.eclipse.equinox.p2.metadata.expression.*;
-import org.eclipse.equinox.p2.query.ExpressionMatchQuery;
+import org.fdesigner.p2.metadata.IInstallableUnit;
+import org.fdesigner.p2.metadata.expression.ExpressionUtil;
+import org.fdesigner.p2.metadata.expression.IExpression;
+import org.fdesigner.p2.metadata.expression.IExpressionFactory;
+import org.fdesigner.p2.metadata.expression.IMatchExpression;
+import org.fdesigner.p2.metadata.query.ExpressionMatchQuery;
 
 /**
  * A query that searches for {@link IInstallableUnit} instances that have

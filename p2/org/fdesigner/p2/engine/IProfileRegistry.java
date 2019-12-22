@@ -12,12 +12,13 @@
  *     IBM Corporation - initial API and implementation
  *     Ericsson AB - ongoing development
  *******************************************************************************/
-package org.eclipse.equinox.p2.engine;
+package org.fdesigner.p2.engine;
 
 import java.util.Collection;
 import java.util.Map;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.equinox.p2.core.ProvisionException;
+
+import org.fdesigner.p2.core.ProvisionException;
+import org.fdesigner.runtime.common.runtime.IStatus;
 
 /**
  * This encapsulates the access to the profile registry. 

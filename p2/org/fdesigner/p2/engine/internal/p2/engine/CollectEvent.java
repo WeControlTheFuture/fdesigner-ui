@@ -11,12 +11,13 @@
  * Contributors:
  *     Wind River - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.engine;
+package org.fdesigner.p2.engine.internal.p2.engine;
 
 import java.util.EventObject;
-import org.eclipse.equinox.p2.engine.ProvisioningContext;
-import org.eclipse.equinox.p2.repository.artifact.IArtifactRepository;
-import org.eclipse.equinox.p2.repository.artifact.IArtifactRequest;
+
+import org.fdesigner.p2.engine.ProvisioningContext;
+import org.fdesigner.p2.repository.artifact.IArtifactRepository;
+import org.fdesigner.p2.repository.artifact.IArtifactRequest;
 
 public class CollectEvent extends EventObject {
 

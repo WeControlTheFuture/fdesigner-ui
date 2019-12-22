@@ -11,7 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.p2.engine.spi;
+package org.fdesigner.p2.engine.spi;
 
 import java.util.*;
 

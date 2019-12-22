@@ -11,13 +11,25 @@
  *  Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.engine;
+package org.fdesigner.p2.engine.internal.p2.engine;
 
-import java.util.*;
-import org.eclipse.core.runtime.*;
-import org.eclipse.equinox.p2.engine.*;
-import org.eclipse.equinox.p2.metadata.IInstallableUnit;
-import org.eclipse.equinox.p2.query.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.List;
+
+import org.fdesigner.p2.engine.IProfile;
+import org.fdesigner.p2.engine.IProvisioningPlan;
+import org.fdesigner.p2.engine.ProvisioningContext;
+import org.fdesigner.p2.metadata.IInstallableUnit;
+import org.fdesigner.p2.metadata.query.Collector;
+import org.fdesigner.p2.metadata.query.IQuery;
+import org.fdesigner.p2.metadata.query.IQueryResult;
+import org.fdesigner.p2.metadata.query.IQueryable;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
 
 /**
  * @since 2.0

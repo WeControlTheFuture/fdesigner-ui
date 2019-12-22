@@ -12,10 +12,10 @@
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
 
-package org.eclipse.equinox.internal.p2.engine;
+package org.fdesigner.p2.engine.internal.p2.engine;
 
-import org.eclipse.equinox.internal.p2.engine.phases.Sizing;
-import org.eclipse.equinox.p2.engine.ISizingPhaseSet;
+import org.fdesigner.p2.engine.ISizingPhaseSet;
+import org.fdesigner.p2.engine.internal.p2.engine.phases.Sizing;
 
 public class SizingPhaseSet extends PhaseSet implements ISizingPhaseSet {
 

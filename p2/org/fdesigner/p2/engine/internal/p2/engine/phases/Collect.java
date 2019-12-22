@@ -12,20 +12,33 @@
  *     IBM Corporation - initial API and implementation
  *     WindRiver - https://bugs.eclipse.org/bugs/show_bug.cgi?id=227372
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.engine.phases;
+package org.fdesigner.p2.engine.internal.p2.engine.phases;
 
-import java.util.*;
-import org.eclipse.core.runtime.*;
-import org.eclipse.equinox.internal.p2.engine.*;
-import org.eclipse.equinox.internal.p2.repository.DownloadPauseResumeEvent;
-import org.eclipse.equinox.internal.provisional.p2.core.eventbus.IProvisioningEventBus;
-import org.eclipse.equinox.p2.core.IProvisioningAgent;
-import org.eclipse.equinox.p2.engine.*;
-import org.eclipse.equinox.p2.engine.spi.ProvisioningAction;
-import org.eclipse.equinox.p2.metadata.IInstallableUnit;
-import org.eclipse.equinox.p2.metadata.ITouchpointType;
-import org.eclipse.equinox.p2.repository.artifact.IArtifactRequest;
-import org.eclipse.osgi.util.NLS;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Map;
+
+import org.fdesigner.p2.core.IProvisioningAgent;
+import org.fdesigner.p2.core.internal.provisional.p2.core.eventbus.IProvisioningEventBus;
+import org.fdesigner.p2.engine.IProfile;
+import org.fdesigner.p2.engine.PhaseSetFactory;
+import org.fdesigner.p2.engine.ProvisioningContext;
+import org.fdesigner.p2.engine.internal.p2.engine.CollectEvent;
+import org.fdesigner.p2.engine.internal.p2.engine.DownloadManager;
+import org.fdesigner.p2.engine.internal.p2.engine.EngineActivator;
+import org.fdesigner.p2.engine.internal.p2.engine.InstallableUnitOperand;
+import org.fdesigner.p2.engine.internal.p2.engine.InstallableUnitPhase;
+import org.fdesigner.p2.engine.internal.p2.engine.Messages;
+import org.fdesigner.p2.engine.spi.ProvisioningAction;
+import org.fdesigner.p2.metadata.IInstallableUnit;
+import org.fdesigner.p2.metadata.ITouchpointType;
+import org.fdesigner.p2.repository.artifact.IArtifactRequest;
+import org.fdesigner.p2.repository.internal.p2.repository.DownloadPauseResumeEvent;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * The goal of the collect phase is to ask the touchpoints if the artifacts associated with an IU need to be downloaded.

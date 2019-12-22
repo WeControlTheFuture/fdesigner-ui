@@ -12,17 +12,27 @@
  *     IBM Corporation - initial API and implementation
  *     Landmark Graphics Corporation - bug 397183
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.engine;
+package org.fdesigner.p2.engine.internal.p2.engine;
 
-import java.util.*;
-import org.eclipse.core.runtime.*;
-import org.eclipse.equinox.internal.p2.core.helpers.LogHelper;
-import org.eclipse.equinox.internal.provisional.p2.core.eventbus.IProvisioningEventBus;
-import org.eclipse.equinox.p2.engine.IProfile;
-import org.eclipse.equinox.p2.engine.ProvisioningContext;
-import org.eclipse.equinox.p2.engine.spi.ProvisioningAction;
-import org.eclipse.equinox.p2.engine.spi.Touchpoint;
-import org.eclipse.osgi.util.NLS;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.fdesigner.p2.core.internal.p2.core.helpers.LogHelper;
+import org.fdesigner.p2.core.internal.provisional.p2.core.eventbus.IProvisioningEventBus;
+import org.fdesigner.p2.engine.IProfile;
+import org.fdesigner.p2.engine.ProvisioningContext;
+import org.fdesigner.p2.engine.spi.ProvisioningAction;
+import org.fdesigner.p2.engine.spi.Touchpoint;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.MultiStatus;
+import org.fdesigner.runtime.common.runtime.NullProgressMonitor;
+import org.fdesigner.runtime.common.runtime.OperationCanceledException;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.common.runtime.SubMonitor;
+import org.fdesigner.supplement.util.NLS;
 
 public abstract class Phase {
 	protected static final String PARM_OPERAND = "operand"; //$NON-NLS-1$

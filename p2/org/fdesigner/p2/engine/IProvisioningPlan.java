@@ -11,11 +11,11 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.p2.engine;
+package org.fdesigner.p2.engine;
 
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.equinox.p2.metadata.IInstallableUnit;
-import org.eclipse.equinox.p2.query.IQueryable;
+import org.fdesigner.p2.metadata.IInstallableUnit;
+import org.fdesigner.p2.metadata.query.IQueryable;
+import org.fdesigner.runtime.common.runtime.IStatus;
 
 /**
  * A provisioning plan describes a proposed set of changes to a profile. The

@@ -12,10 +12,10 @@
  *     IBM Corporation - initial API and implementation
  *     Cloudsmith Inc. - converted into expression based query
  *******************************************************************************/
-package org.eclipse.equinox.p2.engine.query;
+package org.fdesigner.p2.engine.query;
 
-import org.eclipse.equinox.p2.engine.IProfile;
-import org.eclipse.equinox.p2.metadata.IInstallableUnit;
+import org.fdesigner.p2.engine.IProfile;
+import org.fdesigner.p2.metadata.IInstallableUnit;
 
 /**
  * A query matching all the {@link IInstallableUnit}s that are marked visible to the user. 

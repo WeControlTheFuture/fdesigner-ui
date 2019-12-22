@@ -11,15 +11,15 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.p2.engine;
+package org.fdesigner.p2.engine;
 
-import org.eclipse.core.internal.preferences.PreferencesService;
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.core.runtime.IPath;
-import org.eclipse.core.runtime.preferences.IEclipsePreferences;
-import org.eclipse.core.runtime.preferences.IScopeContext;
-import org.eclipse.equinox.internal.p2.engine.SlashEncode;
-import org.eclipse.equinox.p2.core.IAgentLocation;
+import org.fdesigner.p2.core.IAgentLocation;
+import org.fdesigner.p2.engine.internal.p2.engine.SlashEncode;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.preferences.internal.preferences.PreferencesService;
+import org.fdesigner.runtime.preferences.runtime.preferences.IEclipsePreferences;
+import org.fdesigner.runtime.preferences.runtime.preferences.IScopeContext;
 
 /**
  * A profile scope contains the preferences associated with a particular profile

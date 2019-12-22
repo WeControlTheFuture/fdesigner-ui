@@ -12,20 +12,30 @@
  *     IBM Corporation - initial API and implementation
  *     Wind River - ongoing development
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.engine.phases;
+package org.fdesigner.p2.engine.internal.p2.engine.phases;
 
-import java.util.*;
-import org.eclipse.core.runtime.*;
-import org.eclipse.equinox.internal.p2.engine.*;
-import org.eclipse.equinox.internal.provisional.p2.core.eventbus.IProvisioningEventBus;
-import org.eclipse.equinox.p2.core.IProvisioningAgent;
-import org.eclipse.equinox.p2.engine.IProfile;
-import org.eclipse.equinox.p2.engine.PhaseSetFactory;
-import org.eclipse.equinox.p2.engine.spi.ProvisioningAction;
-import org.eclipse.equinox.p2.engine.spi.Touchpoint;
-import org.eclipse.equinox.p2.metadata.IArtifactKey;
-import org.eclipse.equinox.p2.metadata.IInstallableUnit;
-import org.eclipse.equinox.p2.query.QueryUtil;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+import java.util.Map;
+
+import org.fdesigner.p2.core.IProvisioningAgent;
+import org.fdesigner.p2.core.internal.provisional.p2.core.eventbus.IProvisioningEventBus;
+import org.fdesigner.p2.engine.IProfile;
+import org.fdesigner.p2.engine.PhaseSetFactory;
+import org.fdesigner.p2.engine.internal.p2.engine.InstallableUnitEvent;
+import org.fdesigner.p2.engine.internal.p2.engine.InstallableUnitOperand;
+import org.fdesigner.p2.engine.internal.p2.engine.InstallableUnitPhase;
+import org.fdesigner.p2.engine.internal.p2.engine.Messages;
+import org.fdesigner.p2.engine.internal.p2.engine.Profile;
+import org.fdesigner.p2.engine.spi.ProvisioningAction;
+import org.fdesigner.p2.engine.spi.Touchpoint;
+import org.fdesigner.p2.metadata.IArtifactKey;
+import org.fdesigner.p2.metadata.IInstallableUnit;
+import org.fdesigner.p2.metadata.query.QueryUtil;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
 
 public class Unconfigure extends InstallableUnitPhase {
 

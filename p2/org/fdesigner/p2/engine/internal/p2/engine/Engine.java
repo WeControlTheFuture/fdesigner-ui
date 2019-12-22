@@ -11,13 +11,23 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.engine;
+package org.fdesigner.p2.engine.internal.p2.engine;
 
-import org.eclipse.core.runtime.*;
-import org.eclipse.equinox.internal.p2.core.helpers.LogHelper;
-import org.eclipse.equinox.internal.provisional.p2.core.eventbus.IProvisioningEventBus;
-import org.eclipse.equinox.p2.core.IProvisioningAgent;
-import org.eclipse.equinox.p2.engine.*;
+import org.fdesigner.p2.core.IProvisioningAgent;
+import org.fdesigner.p2.core.internal.p2.core.helpers.LogHelper;
+import org.fdesigner.p2.core.internal.provisional.p2.core.eventbus.IProvisioningEventBus;
+import org.fdesigner.p2.engine.IEngine;
+import org.fdesigner.p2.engine.IPhaseSet;
+import org.fdesigner.p2.engine.IProfile;
+import org.fdesigner.p2.engine.IProfileRegistry;
+import org.fdesigner.p2.engine.IProvisioningPlan;
+import org.fdesigner.p2.engine.PhaseSetFactory;
+import org.fdesigner.p2.engine.ProvisioningContext;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.MultiStatus;
+import org.fdesigner.runtime.common.runtime.NullProgressMonitor;
+import org.fdesigner.runtime.common.runtime.Status;
 
 /**
  * Concrete implementation of the {@link IEngine} API.

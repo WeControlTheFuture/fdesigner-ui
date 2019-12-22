@@ -14,25 +14,37 @@
  *    Cloudsmith Inc. - query indexes
  * 
  ******************************************************************************/
-package org.eclipse.equinox.internal.p2.engine;
+package org.fdesigner.p2.engine.internal.p2.engine;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
 import java.util.Map.Entry;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.NullProgressMonitor;
-import org.eclipse.equinox.internal.p2.core.helpers.OrderedProperties;
-import org.eclipse.equinox.internal.p2.metadata.*;
-import org.eclipse.equinox.internal.p2.metadata.index.*;
-import org.eclipse.equinox.p2.core.IProvisioningAgent;
-import org.eclipse.equinox.p2.engine.IProfile;
-import org.eclipse.equinox.p2.metadata.IInstallableUnit;
-import org.eclipse.equinox.p2.metadata.KeyWithLocale;
-import org.eclipse.equinox.p2.metadata.expression.IEvaluationContext;
-import org.eclipse.equinox.p2.metadata.expression.IExpression;
-import org.eclipse.equinox.p2.metadata.index.IIndex;
-import org.eclipse.equinox.p2.query.IQuery;
-import org.eclipse.equinox.p2.query.IQueryResult;
-import org.eclipse.osgi.util.NLS;
+import java.util.Set;
+
+import org.fdesigner.p2.core.IProvisioningAgent;
+import org.fdesigner.p2.core.internal.p2.core.helpers.OrderedProperties;
+import org.fdesigner.p2.engine.IProfile;
+import org.fdesigner.p2.metadata.IInstallableUnit;
+import org.fdesigner.p2.metadata.KeyWithLocale;
+import org.fdesigner.p2.metadata.expression.IEvaluationContext;
+import org.fdesigner.p2.metadata.expression.IExpression;
+import org.fdesigner.p2.metadata.index.IIndex;
+import org.fdesigner.p2.metadata.internal.p2.metadata.IUMap;
+import org.fdesigner.p2.metadata.internal.p2.metadata.InstallableUnit;
+import org.fdesigner.p2.metadata.internal.p2.metadata.TranslationSupport;
+import org.fdesigner.p2.metadata.internal.p2.metadata.index.CapabilityIndex;
+import org.fdesigner.p2.metadata.internal.p2.metadata.index.IdIndex;
+import org.fdesigner.p2.metadata.internal.p2.metadata.index.IndexProvider;
+import org.fdesigner.p2.metadata.query.IQuery;
+import org.fdesigner.p2.metadata.query.IQueryResult;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.NullProgressMonitor;
+import org.fdesigner.supplement.util.NLS;
 
 public class Profile extends IndexProvider<IInstallableUnit> implements IProfile {
 

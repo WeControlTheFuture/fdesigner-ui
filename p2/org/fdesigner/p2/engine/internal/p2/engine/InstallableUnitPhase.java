@@ -12,14 +12,24 @@
  *     IBM Corporation - initial API and implementation
  *     WindRiver - https://bugs.eclipse.org/bugs/show_bug.cgi?id=227372
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.engine;
+package org.fdesigner.p2.engine.internal.p2.engine;
 
-import java.util.*;
-import org.eclipse.core.runtime.*;
-import org.eclipse.equinox.p2.engine.IProfile;
-import org.eclipse.equinox.p2.engine.spi.ProvisioningAction;
-import org.eclipse.equinox.p2.engine.spi.Touchpoint;
-import org.eclipse.equinox.p2.metadata.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
+import java.util.Map;
+
+import org.fdesigner.p2.engine.IProfile;
+import org.fdesigner.p2.engine.spi.ProvisioningAction;
+import org.fdesigner.p2.engine.spi.Touchpoint;
+import org.fdesigner.p2.metadata.IInstallableUnit;
+import org.fdesigner.p2.metadata.ITouchpointData;
+import org.fdesigner.p2.metadata.ITouchpointInstruction;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.MultiStatus;
+import org.fdesigner.runtime.common.runtime.Status;
 
 public abstract class InstallableUnitPhase extends Phase {
 	public static final String PARM_ARTIFACT = "artifact"; //$NON-NLS-1$

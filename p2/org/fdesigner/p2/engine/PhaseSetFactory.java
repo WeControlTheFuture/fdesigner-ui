@@ -11,11 +11,23 @@
  *  Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.p2.engine;
+package org.fdesigner.p2.engine;
 
-import java.util.*;
-import org.eclipse.equinox.internal.p2.engine.*;
-import org.eclipse.equinox.internal.p2.engine.phases.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import org.fdesigner.p2.engine.internal.p2.engine.EngineActivator;
+import org.fdesigner.p2.engine.internal.p2.engine.Phase;
+import org.fdesigner.p2.engine.internal.p2.engine.PhaseSet;
+import org.fdesigner.p2.engine.internal.p2.engine.SizingPhaseSet;
+import org.fdesigner.p2.engine.internal.p2.engine.phases.CheckTrust;
+import org.fdesigner.p2.engine.internal.p2.engine.phases.Collect;
+import org.fdesigner.p2.engine.internal.p2.engine.phases.Configure;
+import org.fdesigner.p2.engine.internal.p2.engine.phases.Install;
+import org.fdesigner.p2.engine.internal.p2.engine.phases.Property;
+import org.fdesigner.p2.engine.internal.p2.engine.phases.Unconfigure;
+import org.fdesigner.p2.engine.internal.p2.engine.phases.Uninstall;
 
 /**
  * @since 2.0

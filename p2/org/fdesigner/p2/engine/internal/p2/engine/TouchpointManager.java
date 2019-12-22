@@ -11,15 +11,27 @@
  *  Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.engine;
+package org.fdesigner.p2.engine.internal.p2.engine;
 
 import java.util.HashMap;
 import java.util.Map;
-import org.eclipse.core.runtime.*;
-import org.eclipse.equinox.internal.p2.core.helpers.LogHelper;
-import org.eclipse.equinox.p2.engine.spi.Touchpoint;
-import org.eclipse.equinox.p2.metadata.*;
-import org.eclipse.osgi.util.NLS;
+
+import org.fdesigner.p2.core.internal.p2.core.helpers.LogHelper;
+import org.fdesigner.p2.engine.spi.Touchpoint;
+import org.fdesigner.p2.metadata.ITouchpointType;
+import org.fdesigner.p2.metadata.Version;
+import org.fdesigner.p2.metadata.VersionRange;
+import org.fdesigner.runtime.common.runtime.CoreException;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
+import org.fdesigner.runtime.registry.runtime.IExtension;
+import org.fdesigner.runtime.registry.runtime.IExtensionPoint;
+import org.fdesigner.runtime.registry.runtime.IRegistryChangeEvent;
+import org.fdesigner.runtime.registry.runtime.IRegistryChangeListener;
+import org.fdesigner.runtime.registry.runtime.InvalidRegistryObjectException;
+import org.fdesigner.runtime.registry.runtime.RegistryFactory;
+import org.fdesigner.supplement.util.NLS;
 
 //TODO This needs to support multiple version of each touchpoint and have a lookup that supports version semantics
 public class TouchpointManager implements IRegistryChangeListener {

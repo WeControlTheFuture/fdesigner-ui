@@ -12,21 +12,33 @@
  *     IBM Corporation - initial API and implementation
  *     Ericsson AB (Pascal Rapicault) - reading preferences from base in shared install
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.engine;
+package org.fdesigner.p2.engine.internal.p2.engine;
 
 import java.io.File;
-import java.util.*;
-import org.eclipse.core.internal.preferences.EclipsePreferences;
-import org.eclipse.core.runtime.*;
-import org.eclipse.core.runtime.jobs.Job;
-import org.eclipse.core.runtime.preferences.IEclipsePreferences;
-import org.eclipse.equinox.internal.p2.core.helpers.LogHelper;
-import org.eclipse.equinox.internal.p2.core.helpers.Tracing;
-import org.eclipse.equinox.p2.core.IAgentLocation;
-import org.eclipse.equinox.p2.core.IProvisioningAgent;
-import org.eclipse.equinox.p2.engine.IProfileRegistry;
-import org.osgi.framework.*;
-import org.osgi.service.prefs.BackingStoreException;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Set;
+
+import org.fdesigner.framework.framework.Bundle;
+import org.fdesigner.framework.framework.BundleContext;
+import org.fdesigner.framework.framework.InvalidSyntaxException;
+import org.fdesigner.framework.framework.ServiceReference;
+import org.fdesigner.p2.core.IAgentLocation;
+import org.fdesigner.p2.core.IProvisioningAgent;
+import org.fdesigner.p2.core.internal.p2.core.helpers.LogHelper;
+import org.fdesigner.p2.core.internal.p2.core.helpers.Tracing;
+import org.fdesigner.p2.engine.IProfileRegistry;
+import org.fdesigner.runtime.common.runtime.IPath;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Path;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.common.runtime.URIUtil;
+import org.fdesigner.runtime.jobs.runtime.jobs.Job;
+import org.fdesigner.runtime.preferences.internal.preferences.EclipsePreferences;
+import org.fdesigner.runtime.preferences.runtime.preferences.IEclipsePreferences;
+import org.fdesigner.runtime.preferences.service.prefs.BackingStoreException;
 
 /**
  * A preference implementation that stores preferences in the engine's profile

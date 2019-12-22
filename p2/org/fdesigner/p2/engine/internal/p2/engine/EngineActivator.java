@@ -12,19 +12,28 @@
  *     IBM Corporation - initial API and implementation
  *     Red Hat, Inc - fragments support added
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.engine;
+package org.fdesigner.p2.engine.internal.p2.engine;
 
-import java.io.*;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.nio.file.Files;
-import java.util.*;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.equinox.internal.p2.core.helpers.LogHelper;
-import org.eclipse.osgi.util.NLS;
-import org.osgi.framework.BundleActivator;
-import org.osgi.framework.BundleContext;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Properties;
+import java.util.Set;
+
+import org.fdesigner.framework.framework.BundleActivator;
+import org.fdesigner.framework.framework.BundleContext;
+import org.fdesigner.p2.core.internal.p2.core.helpers.LogHelper;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.supplement.util.NLS;
 
 public class EngineActivator implements BundleActivator {
 	private static BundleContext context;

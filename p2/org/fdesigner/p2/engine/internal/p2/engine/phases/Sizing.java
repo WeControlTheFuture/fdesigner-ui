@@ -11,20 +11,36 @@
  *  Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.engine.phases;
+package org.fdesigner.p2.engine.internal.p2.engine.phases;
 
-import java.util.*;
-import org.eclipse.core.runtime.*;
-import org.eclipse.equinox.internal.p2.engine.*;
-import org.eclipse.equinox.p2.core.ProvisionException;
-import org.eclipse.equinox.p2.engine.IProfile;
-import org.eclipse.equinox.p2.engine.ProvisioningContext;
-import org.eclipse.equinox.p2.engine.spi.ProvisioningAction;
-import org.eclipse.equinox.p2.metadata.IInstallableUnit;
-import org.eclipse.equinox.p2.metadata.ITouchpointType;
-import org.eclipse.equinox.p2.metadata.expression.ExpressionUtil;
-import org.eclipse.equinox.p2.query.*;
-import org.eclipse.equinox.p2.repository.artifact.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+import org.fdesigner.p2.core.ProvisionException;
+import org.fdesigner.p2.engine.IProfile;
+import org.fdesigner.p2.engine.ProvisioningContext;
+import org.fdesigner.p2.engine.internal.p2.engine.EngineActivator;
+import org.fdesigner.p2.engine.internal.p2.engine.InstallableUnitOperand;
+import org.fdesigner.p2.engine.internal.p2.engine.InstallableUnitPhase;
+import org.fdesigner.p2.engine.internal.p2.engine.Messages;
+import org.fdesigner.p2.engine.spi.ProvisioningAction;
+import org.fdesigner.p2.metadata.IInstallableUnit;
+import org.fdesigner.p2.metadata.ITouchpointType;
+import org.fdesigner.p2.metadata.expression.ExpressionUtil;
+import org.fdesigner.p2.metadata.query.ExpressionMatchQuery;
+import org.fdesigner.p2.metadata.query.IQuery;
+import org.fdesigner.p2.metadata.query.IQueryable;
+import org.fdesigner.p2.repository.artifact.IArtifactDescriptor;
+import org.fdesigner.p2.repository.artifact.IArtifactRepository;
+import org.fdesigner.p2.repository.artifact.IArtifactRequest;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.common.runtime.SubMonitor;
 
 public class Sizing extends InstallableUnitPhase {
 	private static final String PHASE_ID = "sizing"; //$NON-NLS-1$

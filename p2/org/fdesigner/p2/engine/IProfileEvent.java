@@ -11,9 +11,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.p2.engine;
-
-import org.eclipse.equinox.internal.provisional.p2.core.eventbus.IProvisioningEventBus;
+package org.fdesigner.p2.engine;
 
 /**
  * An event indicating that a profile has been added, removed, or changed.

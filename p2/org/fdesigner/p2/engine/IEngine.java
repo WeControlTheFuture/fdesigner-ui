@@ -12,10 +12,10 @@
  *   Band XI - initial API and implementation
  *   IBM - ongoing development
  *******************************************************************************/
-package org.eclipse.equinox.p2.engine;
+package org.fdesigner.p2.engine;
 
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
 
 /**
  * The engine is a service that naively performs a set of requested changes to a provisioned

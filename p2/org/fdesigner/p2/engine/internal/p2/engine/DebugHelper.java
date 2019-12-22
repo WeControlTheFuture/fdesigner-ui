@@ -12,18 +12,23 @@
  *     IBM Corporation - initial API and implementation
  *     Red Hat Inc. - Bug 460967
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.engine;
+package org.fdesigner.p2.engine.internal.p2.engine;
 
 import java.io.File;
-import java.util.*;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Date;
+import java.util.Iterator;
+import java.util.Map;
 import java.util.Map.Entry;
-import org.eclipse.equinox.internal.p2.core.helpers.ServiceHelper;
-import org.eclipse.equinox.p2.engine.IProfile;
-import org.eclipse.equinox.p2.engine.ProvisioningContext;
-import org.eclipse.equinox.p2.engine.spi.ProvisioningAction;
-import org.eclipse.equinox.p2.metadata.IArtifactKey;
-import org.eclipse.equinox.p2.metadata.IInstallableUnit;
-import org.eclipse.osgi.service.debug.DebugOptions;
+
+import org.fdesigner.p2.core.internal.p2.core.helpers.ServiceHelper;
+import org.fdesigner.p2.engine.IProfile;
+import org.fdesigner.p2.engine.ProvisioningContext;
+import org.fdesigner.p2.engine.spi.ProvisioningAction;
+import org.fdesigner.p2.metadata.IArtifactKey;
+import org.fdesigner.p2.metadata.IInstallableUnit;
+import org.fdesigner.supplement.service.debug.DebugOptions;
 
 public class DebugHelper {
 	public static final String LINE_SEPARATOR = System.getProperty("line.separator"); //$NON-NLS-1$

@@ -12,7 +12,7 @@
  *     Landmark Graphics Corporation - initial API and implementation
  *     IBM Corporation - ongoing maintenance
  *******************************************************************************/
-package org.eclipse.equinox.p2.engine.spi;
+package org.fdesigner.p2.engine.spi;
 
 /**
  * An object that encapsulates the result of performing a provisioning action.

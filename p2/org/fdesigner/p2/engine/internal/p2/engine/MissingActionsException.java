@@ -11,10 +11,10 @@
  *  Contributors:
  *      IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.engine;
+package org.fdesigner.p2.engine.internal.p2.engine;
 
-import org.eclipse.equinox.p2.core.ProvisionException;
-import org.eclipse.osgi.util.NLS;
+import org.fdesigner.p2.core.ProvisionException;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * @since 2.0

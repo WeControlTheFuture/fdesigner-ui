@@ -13,29 +13,48 @@
  *      Ericsson AB - Bug 400011 - [shared] Cleanup the SurrogateProfileHandler code
  *      Red Hat, Inc. - fragments support added., Bug 460967
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.engine;
+package org.fdesigner.p2.engine.internal.p2.engine;
 
 import java.io.File;
 import java.lang.ref.SoftReference;
-import java.net.*;
-import java.util.*;
-import org.eclipse.core.runtime.*;
-import org.eclipse.equinox.internal.p2.core.helpers.LogHelper;
-import org.eclipse.equinox.internal.p2.core.helpers.ServiceHelper;
-import org.eclipse.equinox.p2.core.IProvisioningAgent;
-import org.eclipse.equinox.p2.core.ProvisionException;
-import org.eclipse.equinox.p2.engine.IProfile;
-import org.eclipse.equinox.p2.metadata.*;
-import org.eclipse.equinox.p2.metadata.MetadataFactory.InstallableUnitDescription;
-import org.eclipse.equinox.p2.metadata.expression.ExpressionUtil;
-import org.eclipse.equinox.p2.metadata.expression.IMatchExpression;
-import org.eclipse.equinox.p2.query.*;
-import org.eclipse.equinox.p2.repository.IRepositoryManager;
-import org.eclipse.equinox.p2.repository.artifact.IArtifactRepositoryManager;
-import org.eclipse.equinox.p2.repository.metadata.IMetadataRepository;
-import org.eclipse.equinox.p2.repository.metadata.IMetadataRepositoryManager;
-import org.eclipse.osgi.service.datalocation.Location;
-import org.eclipse.osgi.util.NLS;
+import java.net.MalformedURLException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+
+import org.fdesigner.p2.core.IProvisioningAgent;
+import org.fdesigner.p2.core.ProvisionException;
+import org.fdesigner.p2.core.internal.p2.core.helpers.LogHelper;
+import org.fdesigner.p2.core.internal.p2.core.helpers.ServiceHelper;
+import org.fdesigner.p2.engine.IProfile;
+import org.fdesigner.p2.metadata.IInstallableUnit;
+import org.fdesigner.p2.metadata.IProvidedCapability;
+import org.fdesigner.p2.metadata.IRequirement;
+import org.fdesigner.p2.metadata.MetadataFactory;
+import org.fdesigner.p2.metadata.MetadataFactory.InstallableUnitDescription;
+import org.fdesigner.p2.metadata.Version;
+import org.fdesigner.p2.metadata.expression.ExpressionUtil;
+import org.fdesigner.p2.metadata.expression.IMatchExpression;
+import org.fdesigner.p2.metadata.query.Collector;
+import org.fdesigner.p2.metadata.query.IQuery;
+import org.fdesigner.p2.metadata.query.IQueryResult;
+import org.fdesigner.p2.metadata.query.QueryUtil;
+import org.fdesigner.p2.repository.IRepositoryManager;
+import org.fdesigner.p2.repository.artifact.IArtifactRepositoryManager;
+import org.fdesigner.p2.repository.metadata.IMetadataRepository;
+import org.fdesigner.p2.repository.metadata.IMetadataRepositoryManager;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.NullProgressMonitor;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.runtime.common.runtime.URIUtil;
+import org.fdesigner.supplement.service.datalocation.Location;
+import org.fdesigner.supplement.util.NLS;
 
 public class SurrogateProfileHandler implements ISurrogateProfileHandler {
 

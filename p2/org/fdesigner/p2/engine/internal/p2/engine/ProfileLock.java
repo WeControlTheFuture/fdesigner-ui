@@ -13,15 +13,16 @@
  *     IBM Corporation - initial API and implementation
  *     Red Hat Inc. - Bug 460967
  ******************************************************************************/
-package org.eclipse.equinox.internal.p2.engine;
+package org.fdesigner.p2.engine.internal.p2.engine;
 
 import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
-import org.eclipse.equinox.internal.p2.core.helpers.ServiceHelper;
-import org.eclipse.osgi.service.datalocation.Location;
-import org.eclipse.osgi.util.NLS;
+
+import org.fdesigner.p2.core.internal.p2.core.helpers.ServiceHelper;
+import org.fdesigner.supplement.service.datalocation.Location;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * The purpose of this class is to enable cross process locking.

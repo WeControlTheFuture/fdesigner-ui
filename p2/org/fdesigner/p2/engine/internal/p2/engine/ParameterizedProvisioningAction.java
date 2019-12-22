@@ -12,12 +12,17 @@
  *     IBM Corporation - initial API and implementation
  *     Landmark Graphics Corporation - bug 397183
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.engine;
+package org.fdesigner.p2.engine.internal.p2.engine;
 
-import java.util.*;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Map.Entry;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.equinox.p2.engine.spi.*;
+
+import org.fdesigner.p2.engine.spi.ProvisioningAction;
+import org.fdesigner.p2.engine.spi.Touchpoint;
+import org.fdesigner.p2.engine.spi.Value;
+import org.fdesigner.runtime.common.runtime.IStatus;
 
 public class ParameterizedProvisioningAction extends ProvisioningAction {
 	private ProvisioningAction action;

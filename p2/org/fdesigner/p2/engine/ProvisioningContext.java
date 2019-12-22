@@ -14,21 +14,40 @@
  *	Sonatype, Inc. - ongoing development
  *  Karsten Thoms - Bug#527874
  *******************************************************************************/
-package org.eclipse.equinox.p2.engine;
+package org.fdesigner.p2.engine;
 
 import java.net.URI;
-import java.util.*;
-import org.eclipse.core.runtime.*;
-import org.eclipse.equinox.internal.p2.engine.DebugHelper;
-import org.eclipse.equinox.p2.core.IProvisioningAgent;
-import org.eclipse.equinox.p2.core.ProvisionException;
-import org.eclipse.equinox.p2.metadata.IArtifactKey;
-import org.eclipse.equinox.p2.metadata.IInstallableUnit;
-import org.eclipse.equinox.p2.query.*;
-import org.eclipse.equinox.p2.repository.*;
-import org.eclipse.equinox.p2.repository.artifact.*;
-import org.eclipse.equinox.p2.repository.metadata.IMetadataRepository;
-import org.eclipse.equinox.p2.repository.metadata.IMetadataRepositoryManager;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+import org.fdesigner.p2.core.IProvisioningAgent;
+import org.fdesigner.p2.core.ProvisionException;
+import org.fdesigner.p2.engine.internal.p2.engine.DebugHelper;
+import org.fdesigner.p2.metadata.IArtifactKey;
+import org.fdesigner.p2.metadata.IInstallableUnit;
+import org.fdesigner.p2.metadata.query.IQuery;
+import org.fdesigner.p2.metadata.query.IQueryResult;
+import org.fdesigner.p2.metadata.query.IQueryable;
+import org.fdesigner.p2.metadata.query.QueryUtil;
+import org.fdesigner.p2.repository.IRepository;
+import org.fdesigner.p2.repository.IRepositoryManager;
+import org.fdesigner.p2.repository.IRepositoryReference;
+import org.fdesigner.p2.repository.artifact.IArtifactDescriptor;
+import org.fdesigner.p2.repository.artifact.IArtifactRepository;
+import org.fdesigner.p2.repository.artifact.IArtifactRepositoryManager;
+import org.fdesigner.p2.repository.metadata.IMetadataRepository;
+import org.fdesigner.p2.repository.metadata.IMetadataRepositoryManager;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.OperationCanceledException;
+import org.fdesigner.runtime.common.runtime.SubMonitor;
 
 /**
  * A provisioning context defines the scope in which a provisioning operation

@@ -11,13 +11,21 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.engine;
+package org.fdesigner.p2.engine.internal.p2.engine;
 
-import java.util.*;
-import org.eclipse.core.runtime.Assert;
-import org.eclipse.equinox.p2.engine.spi.ProvisioningAction;
-import org.eclipse.equinox.p2.metadata.*;
-import org.eclipse.osgi.util.NLS;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.StringTokenizer;
+
+import org.fdesigner.p2.engine.spi.ProvisioningAction;
+import org.fdesigner.p2.metadata.ITouchpointInstruction;
+import org.fdesigner.p2.metadata.ITouchpointType;
+import org.fdesigner.p2.metadata.VersionRange;
+import org.fdesigner.runtime.common.runtime.Assert;
+import org.fdesigner.supplement.util.NLS;
 
 public class InstructionParser {
 

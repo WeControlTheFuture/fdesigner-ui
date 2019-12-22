@@ -11,12 +11,12 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.engine;
-
-import org.eclipse.equinox.p2.engine.IEngine;
-import org.eclipse.equinox.p2.engine.IProfile;
+package org.fdesigner.p2.engine.internal.p2.engine;
 
 import java.util.EventObject;
+
+import org.fdesigner.p2.engine.IEngine;
+import org.fdesigner.p2.engine.IProfile;
 
 /**
  * @since 2.0

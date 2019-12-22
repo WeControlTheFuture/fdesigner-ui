@@ -12,13 +12,13 @@
  *      IBM Corporation - initial API and implementation
  *      Ericsson AB - Bug 400011 - [shared] Cleanup the SurrogateProfileHandler code
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.engine;
+package org.fdesigner.p2.engine.internal.p2.engine;
 
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.equinox.p2.engine.IProfile;
-import org.eclipse.equinox.p2.metadata.IInstallableUnit;
-import org.eclipse.equinox.p2.query.IQuery;
-import org.eclipse.equinox.p2.query.IQueryResult;
+import org.fdesigner.p2.engine.IProfile;
+import org.fdesigner.p2.metadata.IInstallableUnit;
+import org.fdesigner.p2.metadata.query.IQuery;
+import org.fdesigner.p2.metadata.query.IQueryResult;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
 
 /**
  * @since 2.0

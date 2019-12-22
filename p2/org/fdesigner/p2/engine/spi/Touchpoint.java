@@ -11,11 +11,14 @@
  *  Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.p2.engine.spi;
+package org.fdesigner.p2.engine.spi;
 
 import java.util.Map;
-import org.eclipse.core.runtime.*;
-import org.eclipse.equinox.p2.engine.*;
+
+import org.fdesigner.p2.engine.IProfile;
+import org.fdesigner.runtime.common.runtime.IProgressMonitor;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
 
 /**
  * A touchpoint is responsible for executing the required provisioning steps

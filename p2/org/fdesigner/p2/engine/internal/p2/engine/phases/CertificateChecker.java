@@ -11,25 +11,34 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.engine.phases;
+package org.fdesigner.p2.engine.internal.p2.engine.phases;
 
 import java.io.File;
 import java.io.IOException;
 import java.security.GeneralSecurityException;
 import java.security.cert.Certificate;
-import java.util.*;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.equinox.internal.p2.engine.*;
-import org.eclipse.equinox.p2.core.IProvisioningAgent;
-import org.eclipse.equinox.p2.core.UIServices;
-import org.eclipse.equinox.p2.core.UIServices.TrustInfo;
-import org.eclipse.osgi.service.security.TrustEngine;
-import org.eclipse.osgi.signedcontent.*;
-import org.eclipse.osgi.util.NLS;
-import org.osgi.framework.BundleContext;
-import org.osgi.framework.ServiceReference;
-import org.osgi.util.tracker.ServiceTracker;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Map;
+
+import org.fdesigner.container.service.security.TrustEngine;
+import org.fdesigner.container.signedcontent.SignedContent;
+import org.fdesigner.container.signedcontent.SignedContentFactory;
+import org.fdesigner.container.signedcontent.SignerInfo;
+import org.fdesigner.framework.framework.BundleContext;
+import org.fdesigner.framework.framework.ServiceReference;
+import org.fdesigner.framework.util.tracker.ServiceTracker;
+import org.fdesigner.p2.core.IProvisioningAgent;
+import org.fdesigner.p2.core.UIServices;
+import org.fdesigner.p2.core.UIServices.TrustInfo;
+import org.fdesigner.p2.engine.internal.p2.engine.DebugHelper;
+import org.fdesigner.p2.engine.internal.p2.engine.EngineActivator;
+import org.fdesigner.p2.engine.internal.p2.engine.Messages;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
+import org.fdesigner.supplement.util.NLS;
 
 /**
  * Checks the certificates on a set of files or artifacts and reports back any problems

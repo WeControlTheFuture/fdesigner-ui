@@ -1,4 +1,4 @@
-package org.eclipse.equinox.internal.p2.engine;
+package org.fdesigner.p2.engine.internal.p2.engine;
 
 /**
  * Utility class to encode forward slash characters so that strings containing

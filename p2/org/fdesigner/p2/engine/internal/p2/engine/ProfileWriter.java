@@ -11,14 +11,20 @@
  *  Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.engine;
+package org.fdesigner.p2.engine.internal.p2.engine;
 
 import java.io.OutputStream;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.Iterator;
+import java.util.Map;
+
 import org.eclipse.equinox.internal.p2.metadata.repository.io.MetadataWriter;
-import org.eclipse.equinox.p2.engine.IProfile;
-import org.eclipse.equinox.p2.metadata.IInstallableUnit;
-import org.eclipse.equinox.p2.query.QueryUtil;
+import org.fdesigner.p2.engine.IProfile;
+import org.fdesigner.p2.metadata.IInstallableUnit;
+import org.fdesigner.p2.metadata.query.QueryUtil;
+import org.fdesigner.p2.repository.internal.p2.persistence.XMLWriter.ProcessingInstruction;
 
 public class ProfileWriter extends MetadataWriter implements ProfileXMLConstants {
 

@@ -12,14 +12,15 @@
  *     IBM Corporation - initial API and implementation
  *     Wind River - ongoing development
  *******************************************************************************/
-package org.eclipse.equinox.internal.p2.engine;
+package org.fdesigner.p2.engine.internal.p2.engine;
 
 import java.util.EventObject;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Status;
-import org.eclipse.equinox.p2.engine.IProfile;
-import org.eclipse.equinox.p2.engine.spi.Touchpoint;
-import org.eclipse.equinox.p2.metadata.IInstallableUnit;
+
+import org.fdesigner.p2.engine.IProfile;
+import org.fdesigner.p2.engine.spi.Touchpoint;
+import org.fdesigner.p2.metadata.IInstallableUnit;
+import org.fdesigner.runtime.common.runtime.IStatus;
+import org.fdesigner.runtime.common.runtime.Status;
 
 /**
  * @since 2.0

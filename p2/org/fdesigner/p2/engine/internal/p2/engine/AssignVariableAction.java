@@ -1,8 +1,9 @@
-package org.eclipse.equinox.internal.p2.engine;
+package org.fdesigner.p2.engine.internal.p2.engine;
 
 import java.util.Map;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.equinox.p2.engine.spi.ProvisioningAction;
+
+import org.fdesigner.p2.engine.spi.ProvisioningAction;
+import org.fdesigner.runtime.common.runtime.IStatus;
 
 public class AssignVariableAction extends ProvisioningAction {
 
