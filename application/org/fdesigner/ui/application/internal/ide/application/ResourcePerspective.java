@@ -16,11 +16,11 @@
  *******************************************************************************/
 package org.fdesigner.ui.application.internal.ide.application;
 
-import org.eclipse.ui.IFolderLayout;
-import org.eclipse.ui.IPageLayout;
-import org.eclipse.ui.IPerspectiveFactory;
-import org.eclipse.ui.wizards.newresource.BasicNewFileResourceWizard;
-import org.eclipse.ui.wizards.newresource.BasicNewFolderResourceWizard;
+import org.fdesigner.ide.wizards.newresource.BasicNewFileResourceWizard;
+import org.fdesigner.ide.wizards.newresource.BasicNewFolderResourceWizard;
+import org.fdesigner.workbench.IFolderLayout;
+import org.fdesigner.workbench.IPageLayout;
+import org.fdesigner.workbench.IPerspectiveFactory;
 
 /**
  */
