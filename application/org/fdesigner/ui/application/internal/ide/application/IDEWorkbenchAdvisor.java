@@ -23,7 +23,6 @@ import java.util.ArrayList;
 import java.util.Map;
 import java.util.TreeMap;
 
-import org.eclipse.core.net.proxy.IProxyService;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
@@ -46,6 +45,7 @@ import org.fdesigner.ide.internal.ide.IDEWorkbenchErrorHandler;
 import org.fdesigner.ide.internal.ide.IDEWorkbenchMessages;
 import org.fdesigner.ide.internal.ide.IDEWorkbenchPlugin;
 import org.fdesigner.ide.internal.ide.undo.WorkspaceUndoMonitor;
+import org.fdesigner.net.proxy.IProxyService;
 import org.fdesigner.resources.IContainer;
 import org.fdesigner.resources.IResource;
 import org.fdesigner.resources.IWorkspace;
