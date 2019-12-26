@@ -16,13 +16,10 @@ package org.fdesigner.p2.engine.internal.p2.engine;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-import org.eclipse.equinox.internal.p2.metadata.repository.io.MetadataParser;
+import org.fdesigner.p2.metadata.internal.p2.metadata.io.MetadataParser;
 import org.fdesigner.framework.framework.BundleContext;
 import org.fdesigner.p2.metadata.IInstallableUnit;
 import org.fdesigner.p2.metadata.Version;
-import org.fdesigner.p2.repository.internal.p2.persistence.XMLParser.AbstractHandler;
-import org.fdesigner.p2.repository.internal.p2.persistence.XMLParser.PropertiesHandler;
-import org.fdesigner.p2.repository.internal.p2.persistence.XMLParser.RootHandler;
 import org.xml.sax.Attributes;
 
 /**

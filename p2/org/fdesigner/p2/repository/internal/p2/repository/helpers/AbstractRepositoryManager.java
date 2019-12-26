@@ -36,7 +36,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.StringTokenizer;
 
-import org.eclipse.equinox.security.storage.EncodingUtils;
 import org.fdesigner.p2.core.IAgentLocation;
 import org.fdesigner.p2.core.IProvisioningAgent;
 import org.fdesigner.p2.core.ProvisionException;
@@ -71,6 +70,7 @@ import org.fdesigner.runtime.registry.runtime.IConfigurationElement;
 import org.fdesigner.runtime.registry.runtime.IExtension;
 import org.fdesigner.runtime.registry.runtime.IExtensionRegistry;
 import org.fdesigner.runtime.registry.runtime.RegistryFactory;
+import org.fdesigner.security.storage.EncodingUtils;
 import org.fdesigner.supplement.util.NLS;
 
 /**

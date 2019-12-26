@@ -159,4 +159,18 @@ public class Messages extends NLS {
 	private Messages() {
 		// Prevent instance creation
 	}
+	
+	// 从p2 metadata io 库中的Message类中合并过来的代码
+	public static String io_failedRead;
+	public static String io_failedWrite;
+
+	public static String io_IncompatibleVersion;
+	public static String io_parseError;
+
+	public static String no_provisioning_agent;
+
+	public static String repo_loading;
+
+	public static String repoMan_internalError;
+	public static String repoMan_invalidLocation;
 }

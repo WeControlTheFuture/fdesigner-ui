@@ -21,9 +21,6 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.eclipse.core.runtime.*;
-import org.eclipse.equinox.p2.core.*;
-import org.eclipse.equinox.security.storage.*;
 import org.fdesigner.container.storage.Storage.StorageException;
 import org.fdesigner.p2.core.IProvisioningAgent;
 import org.fdesigner.p2.core.ProvisionException;
@@ -36,6 +33,8 @@ import org.fdesigner.runtime.common.runtime.IStatus;
 import org.fdesigner.runtime.common.runtime.Path;
 import org.fdesigner.runtime.common.runtime.Status;
 import org.fdesigner.runtime.common.runtime.URIUtil;
+import org.fdesigner.security.storage.ISecurePreferences;
+import org.fdesigner.security.storage.SecurePreferencesFactory;
 
 /**
  * Credentials handles AuthenticationInfo that can be used to established an
@@ -185,7 +184,7 @@ public class Credentials {
 									new Object[] {"host", location, "prompt", Boolean.toString(prompt)}); //$NON-NLS-1$ //$NON-NLS-2$
 						}
 						return restoreFromMemory(nodeName);
-					} catch (StorageException e) {
+					} catch (StorageException | org.fdesigner.security.storage.StorageException e) {
 						throw internalError(e);
 					}
 				}
@@ -274,6 +273,9 @@ public class Credentials {
 									throw internalError(e1);
 								} catch (IOException e) {
 									throw internalError(e);
+								} catch (org.fdesigner.security.storage.StorageException e) {
+									// TODO Auto-generated catch block
+									e.printStackTrace();
 								}
 							} else {
 								// if persisted earlier - the preference should be removed

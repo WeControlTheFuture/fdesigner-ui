@@ -20,9 +20,9 @@ import java.util.Comparator;
 import java.util.Iterator;
 import java.util.Map;
 
-import org.eclipse.equinox.internal.p2.metadata.repository.io.MetadataWriter;
 import org.fdesigner.p2.engine.IProfile;
 import org.fdesigner.p2.metadata.IInstallableUnit;
+import org.fdesigner.p2.metadata.internal.p2.metadata.io.MetadataWriter;
 import org.fdesigner.p2.metadata.query.QueryUtil;
 import org.fdesigner.p2.repository.internal.p2.persistence.XMLWriter.ProcessingInstruction;
 
