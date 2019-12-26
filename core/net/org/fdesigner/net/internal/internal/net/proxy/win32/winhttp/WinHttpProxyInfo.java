@@ -11,7 +11,7 @@
  * Contributors:
  * 	compeople AG (Stefan Liebig) - initial API and implementation
  *******************************************************************************/
-package org.eclipse.core.internal.net.proxy.win32.winhttp;
+package org.fdesigner.net.internal.internal.net.proxy.win32.winhttp;
 
 /**
  * Wrapper for Win32 WINHTTP_PROXY_INFO Structure.

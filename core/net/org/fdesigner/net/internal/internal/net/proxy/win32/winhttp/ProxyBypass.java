@@ -12,11 +12,11 @@
  * 	compeople AG (Stefan Liebig) - initial API and implementation
  *  IBM Corporation - Add proxy providers layer on the top of ProxyManager (bug 255616)
  *******************************************************************************/
-package org.eclipse.core.internal.net.proxy.win32.winhttp;
+package org.fdesigner.net.internal.internal.net.proxy.win32.winhttp;
 
 import java.net.URI;
 
-import org.eclipse.core.internal.net.StringUtil;
+import org.fdesigner.net.internal.internal.net.StringUtil;
 
 /**
  * Encapsulates the windows specific proxy bypass list. It transforms the native
