@@ -46,7 +46,7 @@ import org.fdesigner.framework.framework.wiring.BundleWiring;
 import org.fdesigner.framework.framework.wiring.FrameworkWiring;
 import org.fdesigner.framework.resource.Namespace;
 import org.fdesigner.framework.resource.Requirement;
-import org.fdesigner.resources.internal.resources.Resource;
+import org.fdesigner.framework.resource.Resource;
 import org.fdesigner.services.event.Event;
 import org.fdesigner.workbench.internal.e4.compatibility.CompatibilityEditor;
 import org.fdesigner.workbench.internal.registry.ViewRegistry;
