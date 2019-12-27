@@ -77,7 +77,7 @@ public class JFaceResources {
 	 * The JFace resource bundle; eagerly initialized.
 	 */
 	private static final ResourceBundle bundle = ResourceBundle
-			.getBundle("org.eclipse.jface.messages"); //$NON-NLS-1$
+			.getBundle("org.fdesigner.ui.jface.messages"); //$NON-NLS-1$
 
 	/**
 	 * The JFace color registry; <code>null</code> until lazily initialized or
@@ -338,7 +338,7 @@ public class JFaceResources {
 	 */
 	public static FontRegistry getFontRegistry() {
 		if (fontRegistry == null) {
-			fontRegistry = new FontRegistry("org.eclipse.jface.resource.jfacefonts"); //$NON-NLS-1$
+			fontRegistry = new FontRegistry("org.fdesigner.ui.jface.resource.jfacefonts"); //$NON-NLS-1$
 		}
 		return fontRegistry;
 	}
